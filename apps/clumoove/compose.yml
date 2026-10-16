@@ -36,7 +36,7 @@ services:
         aliases:
           - clumoove-api
   migration-worker:
-    image: ghcr.io/xxroxxerxx/clumoove-worker:v0.18.0@sha256:76ea62f213b117a66083a1414704fdde3f40216231ce2a69f3a396595c85b405
+    image: ghcr.io/xxroxxerxx/clumoove-worker:v0.19.0@sha256:680ba9935621eb032b6abd5d0d25472eddd2738222f35778fce86914d6a47662
     restart: unless-stopped
     command:
       - /app/worker
