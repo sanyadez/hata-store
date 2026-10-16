@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { bindMounts, brokenLine, checkCompose, checkHata, checkIcon, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
+import { bindMounts, brokenLine, checkCompose, checkDependabot, checkHata, checkIcon, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
 
 const svg = (body: string) => `data:image/svg+xml;base64,${Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg">${body}</svg>`).toString("base64")}`;
 const store = { categories: { media: { en: "Media" } } };
@@ -142,4 +142,14 @@ test("a line broken inside a paragraph is told, a list is not", () => {
   expect(brokenLine("One line\nand the next")).toBe(true);
   expect(brokenLine("A paragraph.\n\nAnother one.\n")).toBe(false);
   expect(brokenLine("Before:\n- one\n- two\n1. three")).toBe(false);
+});
+
+describe("dependabot.yml", () => {
+  test("every app in exactly one list", () => {
+    const config = { updates: [{ directories: ["/apps/a*", "/apps/b*"] }, { directories: ["/apps/b*"] }] };
+    expect(checkDependabot(config, ["alpha", "beta", "gamma"]).map((p) => p.text)).toEqual([
+      "apps/beta is in 2 of its lists",
+      "apps/gamma is in none of its lists: Dependabot would never update it",
+    ]);
+  });
 });

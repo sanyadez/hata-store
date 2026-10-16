@@ -11,7 +11,7 @@
 import { existsSync, lstatSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import {
-  APP_ID_RE, type AppFiles, checkCompose, checkHata, checkShipped, checkStore, type Shipped, textOf, common, isObject, type Obj, platformsOf, type Problem, parseImage, services,
+  APP_ID_RE, type AppFiles, checkCompose, checkDependabot, checkHata, checkShipped, checkStore, type Shipped, textOf, common, isObject, type Obj, platformsOf, type Problem, parseImage, services,
 } from "./lib.ts";
 
 const ROOT = join(import.meta.dir, "..");
@@ -38,6 +38,7 @@ const appsDir = join(ROOT, "apps");
 const ids = existsSync(appsDir) ? readdirSync(appsDir).filter((n) => statSync(join(appsDir, n)).isDirectory()).sort() : [];
 const store = readYaml(join(ROOT, "store.yml"));
 problems.push(...checkStore(store, ids));
+if (!only.length) problems.push(...checkDependabot(readYaml(join(ROOT, ".github", "dependabot.yml")), ids));
 
 interface App {
   id: string;
