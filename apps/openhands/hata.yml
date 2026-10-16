@@ -1,50 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: OpenHands
-  it: OpenHands
-  nb: OpenHands
-  zh: OpenHands
-  ja: OpenHands
-  ko: OpenHands
-  fr: OpenHands
-  de: OpenHands
-  sv: OpenHands
-  el: OpenHands
-  hr: OpenHands
-  pt: OpenHands
-  ru: OpenHands
-  tr: OpenHands
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: OpenHands
 tagline:
   en: Open-source AI-powered coding assistant
-  it: Assistente per la programmazione basato su AI open source
-  nb: Åpen kildekode AI-drevet kodeassistent
-  zh: 开源AI驱动的编程助手
-  ja: オープンソースAI駆動型コーディングアシスタント
-  ko: 오픈소스 AI 기반 코딩 어시스턴트
-  fr: "Assistant de codage open source alimenté par l'IA"
-  de: Open-Source-KI-gestützter Codierungsassistent
-  sv: Open source AI-driven kodningsassistent
-  el: Βοηθός προγραμματισμού ανοιχτού κώδικα με βάση την τεχνητή νοημοσύνη
-  hr: Open-source AI pokretani asistent za kodiranje
-  pt: Assistente de Codificação de Código Aberto Alimentado por IA
-  ru: Ассистент программирования с открытым исходным кодом на основе ИИ
-  tr: Açık Kaynaklı AI Destekli Kodlama Asistanı
   uk: ШІ-помічник для програмування з відкритим кодом
 description:
   en: "OpenHands is an open-source AI-powered coding assistant that provides developers with intelligent code completion, generation, and debugging capabilities. It runs in a sandboxed environment to ensure security and isolation while allowing access to various development tools and resources.\n\n**Key Features:**\n- AI-powered code completion and generation\n- Interactive debugging and error resolution\n- Support for multiple programming languages\n- Secure sandboxed execution environment\n- Customizable runtime configurations\n- Integration with Docker for containerized workflows\n\n**Learn More:**\n- [OpenHands Official Website](https://www.all-hands.dev)\n- [OpenHands GitHub Repository](https://github.com/All-Hands-AI/OpenHands)\n- [Documentation](https://docs.all-hands.dev)"
-  it: "OpenHands è un assistente per la programmazione open source basato su AI che fornisce agli sviluppatori funzionalità intelligenti di completamento, generazione e debug del codice. Funziona in un ambiente sandbox per garantire sicurezza e isolamento, consentendo al contempo l'accesso a vari strumenti e risorse di sviluppo.\n\n**Caratteristiche principali:**\n- Completamento e generazione del codice basati su AI\n- Debug interattivo e risoluzione degli errori\n- Supporto per più linguaggi di programmazione\n- Ambiente di esecuzione sandbox sicuro\n- Configurazioni di runtime personalizzabili\n- Integrazione con Docker per flussi di lavoro containerizzati\n\n**Scopri di più:**\n- [Sito web ufficiale di OpenHands](https://www.all-hands.dev)\n- [Repository GitHub di OpenHands](https://github.com/All-Hands-AI/OpenHands)\n- [Documentazione](https://docs.all-hands.dev)"
-  nb: "OpenHands er en åpen kildekode AI-drevet kodeassistent som gir utviklere intelligent kodedekning, generering og feilsøkingsmuligheter. Det kjører i et sandkasse-miljø for å sikre sikkerhet og isolasjon, samtidig som det gir tilgang til ulike utviklingsverktøy og ressurser.\n\n**Nøkkelegenskaper:**\n- AI-drevet kodedekning og generering\n- Interaktiv feilsøking og feilløsning\n- Støtte for flere programmeringsspråk\n- Sikkert sandkasse-kjøremiljø\n- Tilpassbare kjøretidskonfigurasjoner\n- Integrasjon med Docker for containeriserte arbeidsflyter\n\n**Lær mer:**\n- [OpenHands offisielt nettsted](https://www.all-hands.dev)\n- [OpenHands GitHub Repository](https://github.com/All-Hands-AI/OpenHands)\n- [Dokumentasjon](https://docs.all-hands.dev)"
-  zh: "OpenHands是一个开源的AI驱动编程助手，为开发人员提供智能代码补全、生成和调试功能。它在沙盒环境中运行，确保安全和隔离，同时允许访问各种开发工具和资源。\n\n**主要功能：**\n- AI驱动的代码补全和生成\n- 交互式调试和错误解决\n- 支持多种编程语言\n- 安全的沙盒执行环境\n- 可定制的运行时配置\n- 与Docker集成，实现容器化工作流\n\n**了解更多：**\n- [OpenHands官方网站](https://www.all-hands.dev)\n- [OpenHands GitHub仓库](https://github.com/All-Hands-AI/OpenHands)\n- [文档](https://docs.all-hands.dev)"
-  ja: "OpenHandsは、開発者にインテリジェントなコード補完、生成、デバッグ機能を提供するオープンソースのAI駆動型コーディングアシスタントです。セキュリティと分離を確保しながら、さまざまな開発ツールやリソースへのアクセスを可能にするサンドボックス環境で実行されます。\n\n**主な機能：**\n- AI駆動のコード補完と生成\n- インタラクティブなデバッグとエラー解決\n- 複数のプログラミング言語のサポート\n- 安全なサンドボックス実行環境\n- カスタマイズ可能なランタイム構成\n- コンテナ化されたワークフローのためのDockerとの統合\n\n**詳細情報：**\n- [OpenHands公式ウェブサイト](https://www.all-hands.dev)\n- [OpenHands GitHubリポジトリ](https://github.com/All-Hands-AI/OpenHands)\n- [ドキュメント](https://docs.all-hands.dev)"
-  ko: "OpenHands는 개발자에게 지능적인 코드 완성, 생성 및 디버깅 기능을 제공하는 오픈소스 AI 기반 코딩 어시스턴트입니다. 다양한 개발 도구와 리소스에 대한 액세스를 허용하면서 보안과 격리를 보장하는 샌드박스 환경에서 실행됩니다.\n\n**주요 기능:**\n- AI 기반 코드 완성 및 생성\n- 대화형 디버깅 및 오류 해결\n- 다양한 프로그래밍 언어 지원\n- 안전한 샌드박스 실행 환경\n- 사용자 정의 가능한 런타임 구성\n- 컨테이너화된 워크플로우를 위한 Docker 통합\n\n**더 알아보기:**\n- [OpenHands 공식 웹사이트](https://www.all-hands.dev)\n- [OpenHands GitHub 저장소](https://github.com/All-Hands-AI/OpenHands)\n- [문서](https://docs.all-hands.dev)"
-  fr: "OpenHands est un assistant de codage open source alimenté par l'IA qui fournit aux développeurs des capacités intelligentes de complétion, de génération et de débogage de code. Il s'exécute dans un environnement de bac à sable pour assurer la sécurité et l'isolement tout en permettant l'accès à divers outils et ressources de développement.\n\n**Fonctionnalités clés :**\n- Complétion et génération de code alimentées par l'IA\n- Débogage interactif et résolution d'erreurs\n- Prise en charge de plusieurs langages de programmation\n- Environnement d'exécution sécurisé en bac à sable\n- Configurations d'exécution personnalisables\n- Intégration avec Docker pour les flux de travail conteneurisés\n\n**En savoir plus :**\n- [Site officiel d'OpenHands](https://www.all-hands.dev)\n- [Dépôt GitHub d'OpenHands](https://github.com/All-Hands-AI/OpenHands)\n- [Documentation](https://docs.all-hands.dev)"
-  de: "OpenHands ist ein Open-Source-KI-gestützter Codierungsassistent, der Entwicklern intelligente Code-Vervollständigung, -Generierung und Debugging-Fähigkeiten bietet. Er läuft in einer Sandbox-Umgebung, um Sicherheit und Isolation zu gewährleisten, während der Zugriff auf verschiedene Entwicklungstools und Ressourcen ermöglicht wird.\n\n**Hauptmerkmale:**\n- KI-gestützte Code-Vervollständigung und -Generierung\n- Interaktives Debugging und Fehlerbehebung\n- Unterstützung für mehrere Programmiersprachen\n- Sichere Sandbox-Ausführungsumgebung\n- Anpassbare Laufzeitkonfigurationen\n- Integration mit Docker für containerisierte Workflows\n\n**Mehr erfahren:**\n- [OpenHands offizielle Website](https://www.all-hands.dev)\n- [OpenHands GitHub Repository](https://github.com/All-Hands-AI/OpenHands)\n- [Dokumentation](https://docs.all-hands.dev)"
-  sv: "OpenHands är en öppen källkod AI-driven kodningsassistent som ger utvecklare intelligent kodkomplettering, generering och felsökningsförmåga. Den körs i en sandlådemiljö för att säkerställa säkerhet och isolering samtidigt som den ger tillgång till olika utvecklingsverktyg och resurser.\n\n**Nyckelfunktioner:**\n- AI-driven kodkomplettering och generering\n- Interaktiv felsökning och felresolution\n- Stöd för flera programmeringsspråk\n- Säker sandlådekörningsmiljö\n- Anpassningsbara körtidskonfigurationer\n- Integration med Docker för containeriserade arbetsflöden\n\n**Läs mer:**\n- [OpenHands officiella webbplats](https://www.all-hands.dev)\n- [OpenHands GitHub Repository](https://github.com/All-Hands-AI/OpenHands)\n- [Dokumentation](https://docs.all-hands.dev)"
-  el: "Το OpenHands είναι ένας βοηθός προγραμματισμού ανοιχτού κώδικα με βάση την τεχνητή νοημοσύνη που παρέχει στους προγραμματιστές έξυπνες δυνατότητες συμπλήρωσης, δημιουργίας και αποσφαλμάτωσης κώδικα. Εκτελείται σε περιβάλλον sandbox για να εξασφαλίσει ασφάλεια και απομόνωση, επιτρέποντας ταυτόχρονα την πρόσβαση σε διάφορα εργαλεία και πόρους ανάπτυξης.\n\n**Βασικά Χαρακτηριστικά:**\n- Συμπλήρωση και δημιουργία κώδικα με βάση την τεχνητή νοημοσύνη\n- Διαδραστική αποσφάλματωση και επίλυση σφαλμάτων\n- Υποστήριξη για πολλαπλές γλώσσες προγραμματισμού\n- Ασφαλές περιβάλλον εκτέλεσης sandbox\n- Προσαρμόσιμες διαμορφώσεις χρόνου εκτέλεσης\n- Ενσωμάτωση με Docker για containerized workflows\n\n**Μάθετε Περισσότερα:**\n- [Επίσημη Ιστοσελίδα OpenHands](https://www.all-hands.dev)\n- [Αποθήκη GitHub OpenHands](https://github.com/All-Hands-AI/OpenHands)\n- [Τεκμηρίωση](https://docs.all-hands.dev)"
-  hr: "OpenHands je open-source AI pokretani asistent za kodiranje koji pruža programerima inteligentno dovršavanje koda, generiranje i mogućnosti otklanjanja pogrešaka. Radi u sandbox okruženju kako bi osigurao sigurnost i izolaciju, istovremeno dopuštajući pristup raznim razvojnim alatima i resursima.\n\n**Ključne značajke:**\n- AI pokretano dovršavanje i generiranje koda\n- Interaktivno otklanjanje pogrešaka i rješavanje problema\n- Podrška za više programskih jezika\n- Sigurno sandbox izvršno okruženje\n- Prilagodljive konfiguracije izvršavanja\n- Integracija s Dockerom za containerizirane radne tijekove\n\n**Saznajte više:**\n- [Službena web stranica OpenHands](https://www.all-hands.dev)\n- [OpenHands GitHub Repozitorij](https://github.com/All-Hands-AI/OpenHands)\n- [Dokumentacija](https://docs.all-hands.dev)"
-  pt: "OpenHands é um assistente de codificação de código aberto alimentado por IA que fornece aos programadores capacidades inteligentes de conclusão, geração e depuração de código. Ele é executado num ambiente sandbox para garantir segurança e isolamento, permitindo ao mesmo tempo o acesso a várias ferramentas e recursos de desenvolvimento.\n\n**Características Principais:**\n- Conclusão e geração de código alimentadas por IA\n- Depuração interativa e resolução de erros\n- Suporte para múltiplas linguagens de programação\n- Ambiente de execução sandbox seguro\n- Configurações de runtime personalizáveis\n- Integração com Docker para fluxos de trabalho contentorizados\n\n**Saiba Mais:**\n- [Website Oficial OpenHands](https://www.all-hands.dev)\n- [Repositório GitHub OpenHands](https://github.com/All-Hands-AI/OpenHands)\n- [Documentação](https://docs.all-hands.dev)"
-  ru: "OpenHands - это ассистент программирования с открытым исходным кодом на основе ИИ, который предоставляет разработчикам интеллектуальные возможности автодополнения, генерации и отладки кода. Он работает в изолированной среде для обеспечения безопасности и изоляции, позволяя при этом доступ к различным инструментам и ресурсам разработки.\n\n**Ключевые особенности:**\n- Автодополнение и генерация кода на основе ИИ\n- Интерактивная отладка и устранение ошибок\n- Поддержка нескольких языков программирования\n- Безопасная изолированная среда выполнения\n- Настраиваемые конфигурации среды выполнения\n- Интеграция с Docker для контейнеризированных рабочих процессов\n\n**Узнать больше:**\n- [Официальный сайт OpenHands](https://www.all-hands.dev)\n- [Репозиторий OpenHands на GitHub](https://github.com/All-Hands-AI/OpenHands)\n- [Документация](https://docs.all-hands.dev)"
-  tr: "OpenHands, geliştiricilere akıllı kod tamamlama, oluşturma ve hata ayıklama yetenekleri sağlayan açık kaynaklı bir AI destekli kodlama asistanıdır. Güvenlik ve izolasyonu sağlamak için sandbox bir ortamda çalışırken çeşitli geliştirme araçlarına ve kaynaklara erişime izin verir.\n\n**Ana Özellikler:**\n- AI destekli kod tamamlama ve oluşturma\n- Etkileşimli hata ayıklama ve sorun çözme\n- Çoklu programlama dili desteği\n- Güvenli sandbox yürütme ortamı\n- Özelleştirilebilir çalışma zamanı yapılandırmaları\n- Kapsayıcılı iş akışları için Docker entegrasyonu\n\n**Daha Fazla Bilgi Edinin:**\n- [OpenHands Resmi Web Sitesi](https://www.all-hands.dev)\n- [OpenHands GitHub Deposu](https://github.com/All-Hands-AI/OpenHands)\n- [Belgeler](https://docs.all-hands.dev)"
   uk: "OpenHands — ШІ-помічник для програмування з відкритим кодом: він пропонує розробникам розумне доповнення й генерацію коду та допомагає з налагодженням. Працює в ізольованому середовищі, що забезпечує безпеку, і водночас дає доступ до різних інструментів та ресурсів розробки.\n\n**Основні можливості:**\n- Доповнення й генерація коду за допомогою ШІ\n- Інтерактивне налагодження та виправлення помилок\n- Підтримка багатьох мов програмування\n- Безпечне ізольоване середовище виконання\n- Налаштовувані конфігурації середовища виконання\n- Інтеграція з Docker для робочих процесів у контейнерах\n\n**Докладніше:**\n- [Офіційний сайт OpenHands](https://www.all-hands.dev)\n- [Репозиторій OpenHands на GitHub](https://github.com/All-Hands-AI/OpenHands)\n- [Документація](https://docs.all-hands.dev)"
 category: ai
 developer: All-Hands-AI
@@ -70,19 +30,6 @@ settings:
     default: ghcr.io/all-hands-ai/runtime:main-nikolaik
     label:
       en: Container Image for Runtime Environment
-      it: "Immagine container per l'ambiente di runtime"
-      nb: Container-bilde for kjøretidsmiljø
-      zh: 运行时环境的容器镜像
-      ja: ランタイム環境用コンテナイメージ
-      ko: 런타임 환경용 컨테이너 이미지
-      fr: "Image de conteneur pour l'environnement d'exécution"
-      de: Container-Image für die Laufzeitumgebung
-      sv: Container-avbildning för körmiljö
-      el: Εικόνα περιεκτή για το περιβάλλον εκτέλεσης
-      hr: Slika kontejnera za izvršno okruženje
-      pt: Imagem de Contentor para o Ambiente de Execução
-      ru: Образ контейнера для среды выполнения
-      tr: Çalışma Ortamı için Kapsayıcı İmajı
       uk: Образ контейнера для середовища виконання
 permissions:
   docker:

@@ -1,17 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Stremio
-  pt: Stremio
-  zh: Stremio
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Stremio
 tagline:
   en: Stremio is a modern media center that gives you the freedom to watch everything you want.
-  pt: Stremio é um centro de mídia moderno que lhe dá a liberdade de assistir a tudo o que você quiser.
-  zh: 现代的媒体中心，提供自由观看您喜欢的一切的体验。
   uk: "Stremio — сучасний медіацентр, що дає свободу дивитися все, що хочете."
 description:
   en: "Stremio offers a secure, modern and seamless entertainment experience. With its easy-to-use interface and diverse content library, including 4K HDR support, users can enjoy their favorite movies and TV shows across all their devices. And with its commitment to security, Stremio is the ultimate choice for a worry-free, high-quality streaming experience."
-  pt: "Stremio oferece uma experiência de entretenimento segura, moderna e perfeita. Com sua interface fácil de usar e uma biblioteca de conteúdo diversificada, incluindo suporte a 4K HDR, os usuários podem curtir seus filmes e programas de TV favoritos em todos os seus dispositivos. E com seu compromisso com a segurança, o Stremio é a escolha definitiva para uma experiência de streaming sem preocupações e de alta qualidade."
-  zh: Stremio提供了一个安全、现代且无缝的娱乐体验。通过其易于使用的界面和多样化的内容库，包括对4K HDR的支持，用户可以在所有设备上欣赏他们喜爱的电影和电视节目。并且凭借其对安全的承诺，Stremio是一个无忧、高质量的流媒体体验的最佳选择。
   uk: "Stremio дарує безпечні, сучасні та бездоганні розваги. Завдяки зручному інтерфейсу та різноманітній бібліотеці вмісту, зокрема з підтримкою 4K HDR, ви можете дивитися улюблені фільми й серіали на всіх своїх пристроях. А турбота про безпеку робить Stremio найкращим вибором для якісного стрімінгу без зайвих турбот."
 category: media
 developer: Andreas Tsarida / Stremio
@@ -31,8 +24,6 @@ settings:
     default: 11470
     label:
       en: Server Port
-      pt: Porta do Server
-      zh: Server HTTP端口
       uk: Порт сервера
     advanced: true
   - name: WEB_PORT
@@ -46,16 +37,12 @@ settings:
     default: "1"
     label:
       en: CORS config
-      zh: CORS配置
-      pt: Configuração do CORS
       uk: Налаштування CORS
   - name: AUTO_SERVER_URL
     type: text
     default: "1"
     label:
       en: Enables automatic server URL detection for remote clients
-      zh: 为远程客户端启用自动服务器 URL 检测
-      pt: Habilita a detecção automática da URL do servidor para clientes remotos
       uk: Автоматично визначати адресу сервера для віддалених клієнтів
 permissions:
   devices:

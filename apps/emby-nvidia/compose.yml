@@ -1,4 +1,4 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+# Apache-2.0, changed for Hata Store: see NOTICE
 services:
   emby:
     devices:

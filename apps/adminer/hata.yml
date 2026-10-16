@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Adminer
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Adminer
 tagline:
   en: Database management in a single PHP file
-  zh: 单PHP文件的数据库管理工具
   uk: Керування базами даних в одному PHP-файлі
 description:
   en: "Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP. Conversely to phpMyAdmin, it consist of a single file ready to deploy to the target server. Adminer is available for MySQL, PostgreSQL, SQLite, MS SQL, Oracle, Firebird, SimpleDB, Elasticsearch and MongoDB."
-  zh: Adminer（前身为phpMinAdmin）是一个用PHP编写的功能齐全的数据库管理工具。区别于phpMyAdmin，它仅为单个部署到目标服务器的文件（轻量）。Adminer可用于MySQL、PostgreSQL、SQLite、MS SQL、Oracle、Firebird、SimpleDB、Elasticsearch和MongoDB。
   uk: "Adminer (раніше phpMinAdmin) — повнофункціональний інструмент для керування базами даних, написаний на PHP. На відміну від phpMyAdmin, він складається з єдиного файлу, готового до розгортання на цільовому сервері. Adminer працює з MySQL, PostgreSQL, SQLite, MS SQL, Oracle, Firebird, SimpleDB, Elasticsearch і MongoDB."
 category: development
 developer: Jakub Vrána

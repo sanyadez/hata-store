@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Logseq
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Logseq
 tagline:
   en: "A privacy-first, open-source platform for knowledge management and collaboration."
-  zh: "A privacy-first, open-source platform for knowledge management and collaboration."
   uk: "Платформа з відкритим кодом для керування знаннями та співпраці, де на першому місці приватність."
 description:
   en: "A privacy-first, open-source platform for knowledge management and collaboration."
-  zh: "A privacy-first, open-source platform for knowledge management and collaboration."
   uk: "Платформа з відкритим кодом для керування знаннями та співпраці, де на першому місці приватність."
 category: productivity
 developer: Logseq  Team

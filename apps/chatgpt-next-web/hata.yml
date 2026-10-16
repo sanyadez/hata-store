@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: ChatGPT Next Web
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: ChatGPT Next Web
 tagline:
   en: A well-designed cross-platform ChatGPT UI.
-  zh: 精心设计的跨平台 ChatGPT UI
   uk: Продуманий кросплатформний інтерфейс ChatGPT.
 description:
   en: "An intelligent chat application based on ChatGPT, supports fast deployment, Markdown, beautiful UI, fluid response, privacy and security, and allows customization of preset roles for quick creation, sharing, and debugging of personalized conversations."
-  zh: 一个基于 ChatGPT 的智能聊天应用，支持快速部署、Markdown 支持、精美 UI、流式响应、隐私安全等多个功能，并且能够自定义预制角色快速创建、分享和调试个性化对话。
   uk: "Розумний чат-застосунок на основі ChatGPT: швидке розгортання, підтримка Markdown, гарний інтерфейс, плавні відповіді, приватність і безпека. Дає змогу налаштовувати готові ролі, щоб швидко створювати, поширювати й налагоджувати персоналізовані розмови."
 category: ai
 developer: Yidadaa
@@ -31,18 +28,15 @@ settings:
     type: text
     label:
       en: "Access password, separated by comma"
-      zh: 访问密码，用英文逗号分隔
       uk: Пароль доступу (кілька — через кому)
   - name: PROXY_URL
     type: text
     label:
       en: http proxy
-      zh: http 代理
       uk: HTTP-проксі
   - name: BASE_URL
     type: text
     default: https://api.openai.com
     label:
       en: Override OpenAI API request base URL
-      zh: 覆盖 OpenAI API 请求基础 URL
       uk: Інша базова адреса для запитів до API OpenAI

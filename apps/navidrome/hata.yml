@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Navidrome
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Navidrome
 tagline:
   en: Music Collection and Streaming Server
-  zh: 音乐收藏和流媒体服务器
   uk: Сервер музичної колекції та стримінгу
 description:
   en: "Navidrome is an open source web-based music collection server and streamer. It gives you freedom to listen to your music collection from any browser or mobile device. It's like your personal Spotify!"
-  zh: Navidrome是一个开源的基于Web的音乐收藏服务器和流媒体服务器。它让您可以在任何浏览器或移动设备上自由收听音乐收藏。就像您个人的Spotify一样！
   uk: Navidrome — вебсервер музичної колекції та стримінгу з відкритим кодом. Він дає змогу слухати вашу музику з будь-якого браузера чи мобільного пристрою. Це як ваш особистий Spotify!
 category: media
 developer: The Navidrome Authors
@@ -32,7 +29,6 @@ settings:
     default: "${DATA_ROOT}/Media/Music"
     label:
       en: Music folder
-      zh: 音乐文件夹
       uk: Тека з музикою
     hint:
       en: Inside the app it is /music
@@ -42,14 +38,12 @@ settings:
     default: 1h
     label:
       en: Configure periodic scans using cron syntax
-      zh: 使用cron语法配置定期扫描
       uk: Налаштуйте періодичне сканування у синтаксисі cron
   - name: ND_LOGLEVEL
     type: text
     default: info
     label:
       en: Log level
-      zh: 日志级别
       uk: Рівень журналу
   - name: ND_SESSIONTIMEOUT
     type: text
@@ -59,7 +53,6 @@ settings:
       uk: Тайм-аут сеансу
     hint:
       en: How long Navidrome will wait before closing web ui idle sessions
-      zh: Navidrome在关闭Web UI空闲会话之前等待多长时间
       uk: "Скільки Navidrome чекатиме, перш ніж закрити неактивні сеанси вебінтерфейсу."
   - name: ND_BASEURL
     type: text
@@ -68,5 +61,4 @@ settings:
       uk: Базова адреса
     hint:
       en: "Base URL (only the path part) to configure Navidrome behind a proxy (ex: /music)"
-      zh: 配置Navidrome在代理后面的基本URL（仅路径部分）（例如：/music）
       uk: "Базова адреса (лише шлях) для роботи Navidrome за проксі (наприклад: /music)."

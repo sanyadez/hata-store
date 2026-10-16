@@ -1,14 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Threadfin
-  zh: Threadfin
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Threadfin
 tagline:
   en: M3U proxy server
-  zh: M3U代理服务器
   uk: Проксі-сервер M3U
 description:
   en: "Threadfin is a M3U proxy server for Plex, Emby, Jellyfin and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats."
-  zh: Threadfin是一个M3U代理服务器，适用于Plex、Emby、Jellyfin以及任何支持的客户端和提供商。TS和。M3U8（HLS）流格式。
   uk: "Threadfin — проксі-сервер M3U для Plex, Emby, Jellyfin та будь-якого клієнта й провайдера, що підтримує потокові формати .TS і .M3U8 (HLS)."
 category: media
 developer: jdownloader
@@ -31,12 +27,10 @@ settings:
     default: main
     label:
       en: "Set Threadfin git branch [ main, beta, dev ] Default: beta"
-      zh: "设置Threadfin git分支 [ main, beta, dev ] 默认: beta"
       uk: "Гілка git Threadfin [ main, beta, dev ], типово: beta"
   - name: THREADFIN_DEBUG
     type: text
     default: "0"
     label:
       en: "Set Threadfin debug level [ 0-3 ] Default: 0=OFF"
-      zh: "设置Threadfin调试级别 [ 0-3 ] 默认: 0=关闭"
       uk: "Рівень налагодження Threadfin [ 0-3 ], типово: 0 (вимкнено)"

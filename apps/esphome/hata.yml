@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: ESPHome
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: ESPHome
 tagline:
   en: Home Automation systems
-  zh: 家庭自动化系统
   uk: Системи розумного дому
 description:
   en: ESPHome is a system to control your microcontrollers by simple yet powerful configuration files and control them remotely through Home Automation systems.
-  zh: ESPHome 是一个通过简单而强大的配置文件控制微控制器并通过家庭自动化系统远程控制它们的系统。
   uk: "ESPHome — система для керування мікроконтролерами за допомогою простих, але потужних файлів конфігурації, яку можна дистанційно контролювати через системи розумного дому."
 category: home
 developer: kd9lsv
@@ -32,7 +29,6 @@ settings:
     default: "false"
     label:
       en: Ping IP addresses instead of mDNS
-      zh: Ping IP 地址而不是 mDNS
       uk: Пінгувати IP-адреси замість mDNS
 permissions:
   host-network:

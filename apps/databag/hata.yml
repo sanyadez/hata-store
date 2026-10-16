@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Databag
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Databag
 tagline:
   en: Messenger for the Decentralized Web
-  zh: 分布式网络的通讯应用
   uk: Месенджер для децентралізованого вебу
 description:
   en: "Databag is a federated chat app for self-hosting that focuses on user privacy and security; the service includes clients for iOS, Android, and browser."
-  zh: Databag是一个自托管的联邦聊天应用，专注于用户隐私和安全；该服务包括iOS、Android和浏览器的客户端。
   uk: "Databag — федеративний чат для самостійного розгортання, який дбає про приватність і безпеку користувачів. Є клієнти для iOS, Android і браузера."
 category: social
 developer: balzack

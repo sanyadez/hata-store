@@ -1,17 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Anaconda3
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Anaconda3
 tagline:
   en: Your machine learning Env work with Jupyter Lab
-  zh: 私有炼丹炉
   uk: Ваше середовище машинного навчання з Jupyter Lab
 description:
   en: Your machine learning Env work with Jupyter Lab
-  zh: 私有炼丹炉
   uk: Ваше середовище машинного навчання з Jupyter Lab
 notes:
   en: "After installation, please check the token in the container log (Settings - TopRight - Terminal and Logs - Logs)."
-  zh: 安装完成后，请在容器日志（应用-设置-右上角-终端与日志-日志）中查看token。
   uk: Після встановлення перевірте токен у журналі контейнера (Налаштування — праворуч угорі — Термінал і журнали — Журнали).
 category: ai
 developer: LisonEvf

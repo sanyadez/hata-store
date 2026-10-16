@@ -1,33 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Playit Agent
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Playit Agent
 tagline:
   en: A free reverse proxy for tunneling services (not self-hosted).
-  zh: 用于隧道服务的免费反向代理（非自托管）。
-  de: Ein kostenloser Reverse-Proxy für Tunneling-Dienste (nicht selbst gehostet).
-  nl: Een gratis reverse proxy voor tunnelingdiensten (niet zelf gehost).
-  es: Un proxy inverso gratuito para servicios de túnel (no autoalojado).
-  fr: Un proxy inverse gratuit pour les services de tunneling (non auto-hébergé).
-  hu: Ingyenes fordított proxy az alagutas szolgáltatásokhoz (nem saját üzemeltetésű).
-  it: Un reverse proxy gratuito per servizi di tunneling (non self-hosted).
-  ru: Бесплатный обратный прокси-сервер для туннельных сервисов (не самостоятельный хостинг).
-  pl: Darmowy odwrotny serwer proxy dla usług tunelowania (nie hostowany samodzielnie).
-  pt: Um proxy reverso gratuito para serviços de tunelamento (não auto-hospedado).
-  sv: En gratis omvänd proxy för tunneltjänster (inte självhostad).
   uk: Безкоштовний зворотний проксі для тунелювання сервісів (не на власному сервері).
 description:
   en: A free reverse proxy for tunneling services (not self-hosted).
-  zh: 用于隧道服务的免费反向代理（非自托管）。
-  de: Ein kostenloser Reverse-Proxy für Tunneling-Dienste (nicht selbst gehostet).
-  nl: Een gratis reverse proxy voor tunnelingdiensten (niet zelf gehost).
-  es: Un proxy inverso gratuito para servicios de túnel (no autoalojado).
-  fr: Un proxy inverse gratuit pour les services de tunneling (non auto-hébergé).
-  hu: Ingyenes fordított proxy az alagutas szolgáltatásokhoz (nem saját üzemeltetésű).
-  it: Un reverse proxy gratuito per servizi di tunneling (non self-hosted).
-  ru: Бесплатный обратный прокси-сервер для туннельных сервисов (не самостоятельный хостинг).
-  pl: Darmowy odwrotny serwer proxy dla usług tunelowania (nie hostowany samodzielnie).
-  pt: Um proxy reverso gratuito para serviços de tunelamento (não auto-hospedado).
-  sv: En gratis omvänd proxy för tunneltjänster (inte självhostad).
   uk: Безкоштовний зворотний проксі для тунелювання сервісів (не на власному сервері).
 notes:
   en: "This is the agent for use with playit.gg's reverse proxy. After having installed the container/app, you have to go to the settings of the container/app and go to the logs. The logs will tell you to click a link to activate the agent. Copy the link (you will have to do it manually with your cursor) and paste it in your web browser in a new tab. This will open a page asking you to login or register. If you have an account already then you can login. If not, register an account. Once you're logged in, it will ask to allow the agent. Allow the agent and remember the agent name. Then head over to https://playit.gg/account/agents. From there you need to select the correct agent, according to the agent name you just were to remember. From there you can add tunnels. Choose the options for the tunnel as you need, and a port in case of doing it manually with TCP, UDP and TCP+UDP. After that use the provided domain and port to connect to the tunnel and use that to get access to your tunneled service!"

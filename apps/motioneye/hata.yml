@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Motioneye
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Motioneye
 tagline:
   en: A web frontend for the motion daemon.
-  zh: 用于motion的Web前端守护程序。
   uk: Вебінтерфейс для демона motion.
 description:
   en: motionEye is a web-based frontend for motion. Check out the wiki for more details. Changelog is available on the releases page. https://github.com/motioneye-project/motioneye
-  zh: motionEye是motion的基于Web的前端。查看Wiki以获取更多详细信息。更改日志请参阅发布页面。https://github.com/motioneye-project/motioneye
   uk: motionEye — вебінтерфейс для motion. Докладніше читайте у вікі. Список змін є на сторінці випусків. https://github.com/motioneye-project/motioneye
 category: home
 developer: Motioneye
@@ -33,7 +30,6 @@ settings:
     default: "${DATA_ROOT}/Media/motioneye"
     label:
       en: Media files
-      zh: 媒体文件
       uk: Медіафайли
     hint:
       en: Inside the app it is /var/lib/motioneye

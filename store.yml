@@ -14,7 +14,6 @@ categories:
   finance: { en: Finance, uk: Фінанси }
   social: { en: Social, uk: Спілкування }
   development: { en: Development, uk: Розробка }
-  utilities: { en: Utilities, uk: Утиліти }
 
 recommended:
   - immich

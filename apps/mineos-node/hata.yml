@@ -1,47 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: MineOS
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: MineOS
 tagline:
   en: Free and easy to use Minecraft server management tool.
-  zh: 免费且易于使用的Minecraft服务器管理工具。
-  ar: أداة إدارة خادم Minecraft مجانية وسهلة الاستخدام.
-  de: Kostenloses und einfach zu bedienendes Minecraft-Server-Verwaltungstool.
-  es: Herramienta de administración de servidores de Minecraft gratuita y fácil de usar.
-  fr: Outil de gestion de serveur Minecraft gratuit et facile à utiliser.
-  hu: Ingyenes és könnyen használható Minecraft szerverkezelő eszköz.
-  it: Strumento gratuito e facile da usare per la gestione del server Minecraft.
-  ru: Бесплатный и простой в использовании инструмент управления сервером Minecraft.
-  pl: Darmowe i łatwe w użyciu narzędzie do zarządzania serwerem Minecraft.
-  pt: Ferramenta gratuita e fácil de usar para gerenciamento de servidor Minecraft.
-  sv: Gratis och enkelt att använda Minecraft serverhanteringsverktyg.
   uk: Безкоштовний і простий у користуванні інструмент керування сервером Minecraft.
 description:
   en: "MineOS is a server front-end to ease managing Minecraft administrative tasks. This iteration using Node.js aims to enhance previous MineOS scripts (Python-based), by leveraging the event-triggering, asyncronous model of Node.JS and websockets."
-  zh: MineOS是一个服务器前端，用于简化Minecraft管理任务。这个使用Node.js的迭代旨在通过利用Node.JS和websockets的事件触发、异步模型来增强以前的MineOS脚本（基于Python）。
-  ar: MineOS هو واجهة خادم لتسهيل إدارة مهام إدارة Minecraft. تهدف هذه التكرار باستخدام Node.js إلى تعزيز البرامج النصية MineOS السابقة (التي تعتمد على Python) ، من خلال استغلال نموذج الحدث والتجزئة اللامتزامن لـ Node.JS و websockets.
-  de: "MineOS ist eine Server-Front-End, um die Verwaltung von Minecraft-Administrationsaufgaben zu erleichtern. Diese Iteration mit Node.js zielt darauf ab, frühere MineOS-Skripte (Python-basiert) zu verbessern, indem das ereignisgesteuerte, asynchrone Modell von Node.JS und Websockets genutzt wird."
-  es: "MineOS es una interfaz de servidor para facilitar la gestión de las tareas administrativas de Minecraft. Esta iteración que utiliza Node.js tiene como objetivo mejorar los scripts anteriores de MineOS (basados en Python), aprovechando el modelo asincrónico de activación de eventos de Node.JS y websockets."
-  fr: "MineOS est une interface de serveur pour faciliter la gestion des tâches administratives de Minecraft. Cette itération utilisant Node.js vise à améliorer les scripts MineOS précédents (basés sur Python), en tirant parti du modèle asynchrone de déclenchement d'événements de Node.JS et des websockets."
-  hu: "A MineOS egy szerver front-end, amely megkönnyíti a Minecraft adminisztratív feladatok kezelését. Ez az iteráció a Node.js használatával az előző MineOS parancsfájlok (Python alapú) javítására törekszik, kihasználva a Node.JS és a websockets eseményvezérelt, aszinkron modelljét."
-  it: "MineOS è un front-end del server per facilitare la gestione dei compiti amministrativi di Minecraft. Questa iterazione che utilizza Node.js mira a migliorare gli script precedenti di MineOS (basati su Python), sfruttando il modello asincrono di attivazione degli eventi di Node.JS e websockets."
-  ru: "MineOS - это серверный фронт-энд, который облегчает управление административными задачами Minecraft. Эта итерация с использованием Node.js направлена на улучшение предыдущих сценариев MineOS (на основе Python), используя событийно-ориентированную, асинхронную модель Node.JS и websockets."
-  pl: "MineOS to interfejs serwera ułatwiający zarządzanie zadaniami administracyjnymi Minecraft. Ta iteracja z wykorzystaniem Node.js ma na celu ulepszenie poprzednich skryptów MineOS (opartych na Pythonie), wykorzystując model asynchroniczny wyzwalania zdarzeń Node.JS i websockets."
-  pt: "MineOS é uma interface de servidor para facilitar a gestão de tarefas administrativas do Minecraft. Esta iteração usando o Node.js visa aprimorar os scripts anteriores do MineOS (baseados em Python), aproveitando o modelo assíncrono de acionamento de eventos do Node.JS e websockets."
-  sv: "MineOS är ett serverfront som underlättar hanteringen av administrativa uppgifter för Minecraft. Denna iteration med Node.js syftar till att förbättra tidigare MineOS-skript (baserade på Python), genom att utnyttja Node.JS och websockets händelseutlösningsmodell."
   uk: "MineOS — серверна оболонка, що полегшує адміністрування Minecraft. Ця версія на Node.js покращує попередні скрипти MineOS (на Python), використовуючи подієву асинхронну модель Node.JS і вебсокети."
 notes:
   en: "Default Account\n\n| Username | Password | |----------|----------| | `mc`    | `root` |"
-  zh: "默认账号\n\n| 用户名 | 密码 | |----------|----------| | `mc`    | `root` |"
-  ar: "الحساب الافتراضي\n\n| اسم المستخدم | كلمة المرور | |----------|----------| | `mc`    | `root` |"
-  de: "Standardkonto\n\n| Benutzername | Passwort | |----------|----------| | `mc`    | `root` |"
-  es: "Cuenta predeterminada\n\n| Nombre de usuario | Contraseña | |----------|----------| | `mc`    | `root` |"
-  fr: "Compte par défaut\n\n| Nom d'utilisateur | Mot de passe | |----------|----------| | `mc`    | `root` |"
-  hu: "Alapértelmezett fiók\n\n| Felhasználónév | Jelszó | |----------|----------| | `mc`    | `root` |"
-  it: "Account predefinito\n\n| Nome utente | Password | |----------|----------| | `mc`    | `root` |"
-  ru: "Учетная запись по умолчанию\n\n| Имя пользователя | Пароль | |----------|----------| | `mc`    | `root` |"
-  pl: "Konto domyślne\n\n| Nazwa użytkownika | Hasło | |----------|----------| | `mc`    | `root` |"
-  pt: "Conta padrão\n\n| Nome de usuário | Senha | |----------|----------| | `mc`    | `root` |"
-  sv: "Standardkonto\n\n| Användarnamn | Lösenord | |----------|----------| | `mc`    | `root` |"
   uk: "Обліковий запис за замовчуванням\n\n| Ім’я користувача | Пароль | |----------|----------| | `mc`    | `root` |"
 category: media
 developer: hexparrot
@@ -70,7 +36,6 @@ settings:
       uk: Використовувати HTTPS
     hint:
       en: "Should the web interface use HTTPS or HTTP? Valid entries are \"true\" and \"false\" (with quotes)"
-      es: "¿Debe la interfaz web usar HTTPS o HTTP? Las entradas válidas son \"true\" y \"false\" (con comillas)"
       uk: "Чи має вебінтерфейс працювати через HTTPS, чи через HTTP? Допустимі значення \"true\" і \"false\" (з лапками)."
   - name: SERVER_PORT
     type: text
@@ -80,7 +45,6 @@ settings:
       uk: Порт сервера
     hint:
       en: What port should the web interface listen on? This is independent of the USE_HTTPS setting.
-      es: ¿En qué puerto debe escuchar la interfaz web? Esto es independiente de la configuración USE_HTTPS.
       uk: На якому порту слухатиме вебінтерфейс? Не залежить від налаштування USE_HTTPS.
   - name: USER_NAME
     type: text
@@ -90,7 +54,6 @@ settings:
       uk: "Ім'я користувача"
     hint:
       en: "On startup, mineos will check if an account of the name \"mc\" exists. If it does not exist, one will be created. This account, and any other created with this variable will be permitted to login to the web interface."
-      es: "Al iniciar, mineos verificará si existe una cuenta con el nombre \"mc\". Si no existe, se creará una. Esta cuenta y cualquier otra creada con esta variable podrán iniciar sesión en la interfaz web."
       uk: "Під час запуску mineos перевіряє, чи існує обліковий запис \"mc\". Якщо його немає, його буде створено. Цей запис і будь-які інші, створені через цю змінну, зможуть входити у вебінтерфейс."
   - name: USER_UID
     type: text
@@ -100,7 +63,6 @@ settings:
       uk: UID користувача
     hint:
       en: "If the \"mc\" account does not already exist, when mineos creates it, it will do so with UID same as the value of the variable. If an account with this UID already exists, account creation will be aborted."
-      es: "Si la cuenta \"mc\" aún no existe, cuando mineos la cree, lo hará con el mismo UID que el valor de la variable. Si ya existe una cuenta con este UID, se cancelará la creación de la cuenta."
       uk: "Якщо облікового запису \"mc\" ще немає, mineos створить його з UID, що дорівнює значенню цієї змінної. Якщо обліковий запис із таким UID уже існує, створення буде скасовано."
   - name: USER_PASSWORD
     type: password
@@ -110,7 +72,6 @@ settings:
       uk: Пароль користувача
     hint:
       en: "If the \"mc\" account is being created, it will use the default password \"root\" (without quotes). It is recommended to change this to something more secure."
-      es: "Si se está creando la cuenta \"mc\", utilizará la contraseña \"root\" (sin comillas) por defecto. Es recomendable cambiar esto por algo más seguro."
       uk: "Якщо обліковий запис \"mc\" створюється, він отримає типовий пароль \"root\" (без лапок). Рекомендовано змінити його на щось надійніше."
 permissions:
   host-files:

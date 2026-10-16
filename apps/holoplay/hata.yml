@@ -1,15 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: HoloPlay
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: HoloPlay
 tagline:
   en: A web app to listen Youtube audio source.
-  fr: Une application Web pour écouter les sources audio de Youtube.
-  zh: 一个用于收听Youtube音频源的Web应用。
   uk: Вебзастосунок для прослуховування аудіо з YouTube.
 description:
   en: HoloPlay is a web based self-hosted using Invidious API for listening Youtube audio source.
-  fr: "HoloPlay est une alternative qui utilise l'API Invidious pour écouter des sources audio de Youtube."
-  zh: HoloPlay是一个基于Web的自托管应用，使用Invidious API来播放Youtube音频源。
   uk: "HoloPlay — вебзастосунок для власного сервера, який через API Invidious дає змогу слухати аудіо з YouTube."
 category: media
 developer: Stéphane Richin

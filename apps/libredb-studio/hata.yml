@@ -1,14 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: LibreDB Studio
-  zh: LibreDB Studio
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: LibreDB Studio
 tagline:
   en: Open-source self-hosted SQL IDE.
-  zh: 开源自托管 SQL IDE。
   uk: SQL IDE з відкритим кодом для власного сервера.
 description:
   en: "LibreDB Studio is an open-source (MIT), self-hosted SQL IDE. It provides a modern web-based interface to connect to twenty-seven database engines (PostgreSQL, MySQL, Oracle, Db2, SQL Server, MongoDB, Redis, ClickHouse, Cassandra, Elasticsearch, Prometheus, Apache Kafka, Neo4j, Qdrant, Milvus, InfluxDB, etcd and more), browse schemas, and write and run queries from any browser on your LAN. Three of the twenty-seven are read-only because their own SQL is. Druid, Elasticsearch and OpenSearch have no `UPDATE` and no `CREATE TABLE` at all. Several more are read-only by construction. Data is stored locally in a SQLite database, so everything stays under your control."
-  zh: "LibreDB Studio 是一款开源（MIT）的自托管 SQL IDE。它提供现代化的基于 Web 的界面，支持连接 27 种数据库引擎（PostgreSQL、MySQL、Oracle、Db2、SQL Server、MongoDB、Redis、ClickHouse、Cassandra、Elasticsearch、Prometheus、Apache Kafka、Neo4j、Qdrant、Milvus、InfluxDB、etcd 等），浏览架构，并可通过局域网中的任意浏览器编写和运行查询。其中三种（Druid、Elasticsearch、OpenSearch）为只读，因为它们自身的 SQL 完全没有 `UPDATE`，也没有 `CREATE TABLE`；另有数种出于设计为只读。数据本地存储于 SQLite 数据库中，一切尽在您的掌控之中。"
   uk: "LibreDB Studio — SQL IDE з відкритим кодом (MIT) для власного сервера. Сучасний вебінтерфейс дає змогу підключатися до двадцяти семи СУБД (PostgreSQL, MySQL, Oracle, Db2, SQL Server, MongoDB, Redis, ClickHouse, Cassandra, Elasticsearch, Prometheus, Apache Kafka, Neo4j, Qdrant, Milvus, InfluxDB, etcd та інших), переглядати схеми, писати й виконувати запити з будь-якого браузера у вашій локальній мережі. Три з двадцяти семи доступні лише для читання, бо такий їхній власний SQL. У Druid, Elasticsearch і OpenSearch узагалі немає `UPDATE` і `CREATE TABLE`. Кілька інших також доступні лише для читання за своєю будовою. Дані зберігаються локально в базі SQLite, тож усе лишається під вашим контролем."
 category: development
 developer: libredb
@@ -37,7 +33,6 @@ settings:
       uk: Пошта адміністратора
     hint:
       en: Email address for the initial admin account created on first start.
-      zh: 首次启动时创建的初始管理员账户的电子邮件地址。
       uk: "Адреса пошти для облікового запису адміністратора, який створюється під час першого запуску."
   - name: ADMIN_PASSWORD
     type: text
@@ -46,7 +41,6 @@ settings:
       uk: Пароль адміністратора
     hint:
       en: "Leave empty and the app generates a strong password on first start and prints it once to the container log. Set your own only if you prefer to choose it. It applies on the first start only. To change the password later, set this to the new value, add ADMIN_PASSWORD_RESET=true, restart, then remove that variable."
-      zh: 留空时，应用会在首次启动时生成强密码并在容器日志中打印一次。仅在希望自行指定时填写。该值仅在首次启动时生效：之后如需更改密码，请将其设为新值并添加 ADMIN_PASSWORD_RESET=true，重启后再删除该变量。
       uk: "Залиште порожнім — застосунок сам створить надійний пароль під час першого запуску й один раз виведе його в журнал контейнера. Вказуйте свій, лише якщо хочете обрати його самі. Діє тільки під час першого запуску. Щоб змінити пароль пізніше, укажіть тут новий, додайте ADMIN_PASSWORD_RESET=true, перезапустіть і приберіть цю змінну."
   - name: JWT_SECRET
     type: password
@@ -55,7 +49,6 @@ settings:
       uk: Секрет JWT
     hint:
       en: "Leave empty and a strong secret is generated on first start. This value also encrypts saved connection passwords, so never reuse a value published anywhere. If you set your own it must be at least 32 characters, or the container exits at boot."
-      zh: 留空时会在首次启动时生成强密钥。该值同时用于加密已保存的连接密码，因此切勿使用任何公开过的值。如自行设置，长度至少为 32 个字符，否则容器将在启动时退出。
       uk: "Залиште порожнім — міцний секрет створиться під час першого запуску. Це значення також шифрує збережені паролі підключень, тому ніколи не беріть значення, опубліковане десь у відкритому доступі. Власний секрет має містити щонайменше 32 символи, інакше контейнер завершиться під час запуску."
   - name: STORAGE_PROVIDER
     type: text
@@ -65,7 +58,6 @@ settings:
       uk: Сховище даних
     hint:
       en: "Storage backend. Keep as \"sqlite\" for a self-contained setup."
-      zh: "存储后端。独立部署请保持为 \"sqlite\"。"
       uk: "Тип сховища. Залиште \"sqlite\" для самодостатнього налаштування."
   - name: STORAGE_SQLITE_PATH
     type: text
@@ -75,7 +67,6 @@ settings:
       uk: Шлях до файлу SQLite
     hint:
       en: Path to the SQLite database file inside the persistent data volume.
-      zh: 持久化数据卷内 SQLite 数据库文件的路径。
       uk: Шлях до файлу бази SQLite на постійному томі з даними.
   - name: AUTH_COOKIE_SECURE
     type: text
@@ -85,5 +76,4 @@ settings:
       uk: Захищені cookie входу
     hint:
       en: "Keep \"false\" so the auth cookie works over plain HTTP on the LAN, otherwise login fails."
-      zh: "请保持为 \"false\"，以便身份验证 Cookie 在局域网的普通 HTTP 下正常工作，否则将无法登录。"
       uk: "Залиште \"false\", щоб cookie входу працювали через звичайний HTTP у домашній мережі, інакше вхід не вдасться."

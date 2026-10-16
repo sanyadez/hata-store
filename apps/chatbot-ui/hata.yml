@@ -1,33 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Chatbot UI
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Chatbot UI
 tagline:
   en: Open source chat UI for AI models
-  zh: 用于AI模型的开源聊天界面
-  ar: واجهة محادثة مفتوحة المصدر لنماذج الذكاء الاصطناعي
-  de: Open-Source-Chat-Benutzeroberfläche für KI-Modelle
-  es: Interfaz de chat de código abierto para modelos de IA
-  fr: "Interface de chat open source pour les modèles d'IA"
-  hu: Nyílt forráskódú chat UI az AI modellekhez
-  it: Interfaccia di chat open source per modelli AI
-  ru: Открытый чат-интерфейс для моделей ИИ
-  pl: Otwarty interfejs czatu dla modeli AI
-  pt: Interface de chat de código aberto para modelos de IA
-  sv: Öppen källkod chattgränssnitt för AI-modeller
   uk: Чат із відкритим кодом для моделей ШІ
 description:
   en: Chatbot UI is an open source chat UI for AI models.
-  zh: Chatbot UI是一个开源的AI模型聊天界面。
-  ar: Chatbot UI هو واجهة محادثة مفتوحة المصدر لنماذج الذكاء الاصطناعي.
-  de: Chatbot UI ist eine Open-Source-Chat-Benutzeroberfläche für KI-Modelle.
-  es: Chatbot UI es una interfaz de chat de código abierto para modelos de IA.
-  fr: "Chatbot UI est une interface de chat open source pour les modèles d'IA."
-  hu: A Chatbot UI egy nyílt forráskódú chat UI az AI modellekhez.
-  it: "Chatbot UI è un'interfaccia di chat open source per modelli AI."
-  ru: Chatbot UI - это открытый чат-интерфейс для моделей ИИ.
-  pl: Chatbot UI to otwarty interfejs czatu dla modeli AI.
-  pt: Chatbot UI é uma interface de chat de código aberto para modelos de IA.
-  sv: Chatbot UI är ett öppen källkod chattgränssnitt för AI-modeller.
   uk: Chatbot UI — чат із відкритим кодом для моделей ШІ.
 category: ai
 developer: Mckay Wrigley

@@ -1,16 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: CloudBeaver
-  pt: CloudBeaver
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: CloudBeaver
 tagline:
   en: Cloud Database Manager.
-  pt: Administrador de Banco de Dados na Nuvem.
-  zh: 云数据库管理器。
   uk: Хмарний менеджер баз даних.
 description:
   en: "CloudBeaver is a web-based database GUI tool which provides rich web interface. You can use it to manage PostgreSQL, MySQL, MariaDB, SQL Server, Oracle, DB2, Firebird, H2, Trino."
-  pt: "CloudBeaver é uma ferramenta GUI de banco de dados baseada na web que oferece uma interface web abrangente. Você pode usá-lo para gerenciar PostgreSQL, MySQL, MariaDB, SQL Server, Oracle, DB2, Firebird, H2 e Trino."
-  zh: CloudBeaver是一个基于Web的数据库GUI工具，提供丰富的Web界面。您可以使用它来管理PostgreSQL、MySQL、MariaDB、SQL Server、Oracle、DB2、Firebird、H2和Trino。
   uk: "CloudBeaver — вебінструмент із графічним інтерфейсом для баз даних, який має багатий вебінтерфейс. З його допомогою можна керувати PostgreSQL, MySQL, MariaDB, SQL Server, Oracle, DB2, Firebird, H2, Trino."
 category: development
 developer: dbeaver

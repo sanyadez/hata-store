@@ -1,33 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Smokeping
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Smokeping
 tagline:
   en: Free open source network performance monitoring tool
-  zh: 免费开源的网络性能监控工具
-  ar: أداة مراقبة أداء الشبكة مفتوحة المصدر مجانًا
-  de: Kostenlose Open-Source-Netzwerkleistungsüberwachungswerkzeug
-  es: Herramienta de monitoreo de rendimiento de red de código abierto gratuita
-  fr: Outil de surveillance de la performance réseau open source gratuit
-  hu: Ingyenes nyílt forráskódú hálózati teljesítményfigyelő eszköz
-  it: Strumento di monitoraggio delle prestazioni di rete open source gratuito
-  ru: Бесплатный инструмент мониторинга производительности сети с открытым исходным кодом
-  pl: Darmowe narzędzie do monitorowania wydajności sieci otwartego kodu źródłowego
-  pt: Ferramenta de monitoramento de desempenho de rede de código aberto gratuita
-  sv: Gratis öppen källkodsnätverksprestandamonteringsverktyg
   uk: Безкоштовний інструмент моніторингу продуктивності мережі з відкритим кодом
 description:
   en: keeps track of your network latency.
-  zh: 用于跟踪您的网络延迟。
-  ar: يبقي تتبع تأخير شبكتك.
-  de: hält die Verfolgung Ihrer Netzwerklatenz.
-  es: mantiene un registro de su latencia de red.
-  fr: garde une trace de votre latence réseau.
-  hu: nyomon követi a hálózati késleltetését.
-  it: tiene traccia della latenza della rete.
-  ru: отслеживает задержку сети.
-  pl: śledzi opóźnienia sieci.
-  pt: mantém um registro de sua latência de rede.
-  sv: håller reda på din nätverkslatens.
   uk: стежить за затримками у вашій мережі.
 category: network
 developer: Lazylibrarian Team

@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: gateway-go
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: gateway-go
 tagline:
   en: "A third-party client for casaos and zimaOS, remote access management interface, remote access to installed applications."
-  zh: 支持内网穿透，作为开源第三方客户端支持客户端远程管理casaOS、zimaOS，远程访问你的所有应用。
   uk: Сторонній клієнт з інтерфейсом керування віддаленим доступом і віддаленим доступом до встановлених застосунків.
 description:
   en: "A third-party client for casaos and zimaOS, remote access management interface, remote access to installed applications."
-  zh: 支持内网穿透，作为开源第三方客户端支持客户端远程管理casaOS、zimaOS，远程访问你的所有应用。
   uk: Сторонній клієнт з інтерфейсом керування віддаленим доступом і віддаленим доступом до встановлених застосунків.
 category: network
 developer: iotserv

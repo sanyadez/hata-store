@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Downtify
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Downtify
 tagline:
   en: Download Spotify music with album art and metadata
-  pt: Baixe músicas do Spotify com a capa do álbum e metadados
   uk: Завантажуйте музику зі Spotify з обкладинками та метаданими
 description:
   en: "With Downtify you can download Spotify musics containing album art, track names, album title and other metadata about the songs. Just copy the Spotify link, whether it's a single song, an album, etc. As soon as your downloads are complete you will be notified!"
-  pt: "Com o Downtify você pode baixar músicas do Spotify contendo capas de álbuns, nomes de faixas, títulos de álbuns e outros metadados sobre as músicas. Basta copiar o link do Spotify, seja uma música única, um álbum, etc. Assim que seus downloads forem concluídos, você será notificado!"
   uk: "За допомогою Downtify можна завантажувати музику зі Spotify разом з обкладинками, назвами треків, назвами альбомів та іншими метаданими. Просто скопіюйте посилання на Spotify — на окрему пісню, альбом тощо. Щойно завантаження завершиться, ви отримаєте сповіщення!"
 category: media
 developer: Henrique Sebastião
@@ -33,7 +30,6 @@ settings:
     default: "${DATA_ROOT}/Downloads/downtify"
     label:
       en: Directory where the files will be saved
-      pt: Diretório onde os arquivos serão salvos
       uk: Тека для збереження файлів
     hint:
       en: Inside the app it is /downloads

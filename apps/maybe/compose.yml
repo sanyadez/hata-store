@@ -1,4 +1,4 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+# Apache-2.0, changed for Hata Store: see NOTICE
 services:
   maybe-web:
     image: ghcr.io/maybe-finance/maybe:latest@sha256:c2d398bfc334db4d9862f268401dbb46f97848eaaaad8295d1221f2d99d631cc

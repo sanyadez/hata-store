@@ -1,17 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Alist-Sync
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Alist-Sync
 tagline:
   en: An Alist storage synchronization tool based on the Web interface.
-  zh: 一个基于 Web 界面的 Alist 存储同步工具。
   uk: Засіб синхронізації сховищ Alist із вебінтерфейсом.
 description:
   en: "Alist-Sync is a storage synchronization tool based on the Web interface. It can achieve data synchronization and mutual backup among multiple network disks, and also has practical functions such as multi-task management, scheduled synchronization and difference handling."
-  zh: Alist-Sync 是一款基于 Web 界面的存储同步工具，它能够在多个网盘之间实现数据同步以及相互备份，并且具备多任务管理、定时同步、差异处理等实用功能。
   uk: "Alist-Sync — засіб синхронізації сховищ із вебінтерфейсом. Він синхронізує дані та створює взаємні резервні копії між кількома мережевими дисками, а також має корисні функції: керування кількома завданнями, синхронізацію за розкладом і обробку відмінностей."
 notes:
   en: The default login password is admin/admin.
-  zh: 默认登录密码 admin/admin。
   uk: "Типовий логін і пароль для входу: admin/admin."
 category: productivity
 developer: xjxjin

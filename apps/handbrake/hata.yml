@@ -1,37 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: handbrake
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: handbrake
 tagline:
   en: Liberate your videos and unleash infinite possibilities.
-  zh: 解放你的视频，创造无限可能。
-  ar: أطلق سراح فيديوهاتك واستفد من إمكانيات لا حصر لها.
-  de: Befreie deine Videos und entfessle unbegrenzte Möglichkeiten.
-  es: Libera tus videos y desata infinitas posibilidades.
-  fr: Libérez vos vidéos et créez des possibilités infinies.
-  hu: Szabadítsd fel videóidat és nyisd meg a végtelen lehetőségeket.
-  it: Libera i tuoi video e scopri possibilità infinite.
-  ru: Освободите ваши видео и раскройте бесконечные возможности.
-  pl: Uwolnij swoje filmy i odkryj nieskończone możliwości.
-  pt: Liberte seus vídeos e crie possibilidades infinitas.
-  sv: Frigör dina videor och låt fantasin flöda fritt.
   uk: Звільніть свої відео й відкрийте безмежні можливості.
 description:
   en: "Handbrake is a Docker-based application for video transcoding and compression, offering powerful and flexible multimedia processing across multiple platforms."
-  zh: Handbrake是一个基于Docker的视频转码和压缩应用，为多平台提供强大而灵活的多媒体处理功能。
-  ar: Handbrake هو تطبيق مبني على دوكر لتحويل وضغط الفيديو، ويوفر معالجة متعددة المنصات قوية ومرنة للوسائط المتعددة.
-  de: "Handbrake ist eine auf Docker basierende Anwendung für Video-Transkodierung und -Kompression, die leistungsstarke und flexible Multimedia-Verarbeitung für verschiedene Plattformen bietet."
-  es: "Handbrake es una aplicación basada en Docker para transcodificar y comprimir videos, ofreciendo un potente y flexible procesamiento multimedia en múltiples plataformas."
-  fr: "Handbrake est une application basée sur Docker pour la transcodification et la compression vidéo, offrant une puissante et flexible gestion multimédia sur plusieurs plateformes."
-  hu: "A Handbrake egy Docker-alapú alkalmazás a videó átkódolásához és tömörítéséhez, erőteljes és rugalmas multimédia feldolgozást kínál több platformon."
-  it: "Handbrake è un'applicazione basata su Docker per la transcodifica e la compressione video, offrendo potenti e flessibili funzionalità di elaborazione multimediale su più piattaforme."
-  ru: "Handbrake - это приложение на основе Docker для транскодирования и сжатия видео, предоставляющее мощную и гибкую обработку мультимедиа на различных платформах."
-  pl: "Handbrake to aplikacja oparta na Dockerze do transkodowania i kompresowania wideo, oferująca potężne i elastyczne przetwarzanie multimediów na wielu platformach."
-  pt: "Handbrake é um aplicativo baseado em Docker para transcodificação e compressão de vídeo, oferecendo recursos poderosos e flexíveis de processamento de mídia em várias plataformas."
-  sv: "Handbrake är en Docker-baserad applikation för videoomkodning och komprimering, som erbjuder kraftfull och flexibel multimediebehandling över flera plattformar."
   uk: Handbrake — застосунок у Docker для перекодування та стиснення відео. Він пропонує потужну й гнучку обробку мультимедіа на різних платформах.
 notes:
   en: "## Handbrake\n#### Professional video transcoding."
-  zh: "## Handbrake\n#### 专业视频转码"
   uk: "## Handbrake\n#### Професійне перекодування відео."
 category: media
 developer: self

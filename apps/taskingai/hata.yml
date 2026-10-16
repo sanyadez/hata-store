@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: TaskingAI
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: TaskingAI
 tagline:
   en: The developer-friendly cloud platform for building and running LLM agents for AI-native applications.
-  zh: 开发人员友好的云平台，用于构建和运行AI原生应用程序的LLM代理。
   uk: "Хмарна платформа для розробників, щоб створювати й запускати LLM-агентів для AI-застосунків."
 description:
   en: The developer-friendly cloud platform for building and running LLM agents for AI-native applications.
-  zh: 开发人员友好的云平台，用于构建和运行AI原生应用程序的LLM代理。
   uk: "Хмарна платформа для розробників, щоб створювати й запускати LLM-агентів для AI-застосунків."
 notes:
   en: "| Username | Password   | | -------- | ---------- | | admin    | TaskingAI321 |"
@@ -33,7 +30,8 @@ settings:
     length: 64
     chars: hex
     label:
-      en: JWT_SECRET_KEY
+      en: Key that signs its sign-in tokens
+      uk: "Ключ, яким підписуються токени входу"
   - name: DB_PASSWORD_2
     type: secret
     label:

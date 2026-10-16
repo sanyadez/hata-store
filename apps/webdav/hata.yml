@@ -1,37 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: WebDAV
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: WebDAV
 tagline:
   en: A web-based file sharing and management protocol
-  zh: 基于 Web 的文件共享和管理协议
-  ar: بروتوكول مشاركة وإدارة الملفات قائم على الويب
-  de: Ein webbasiertes Dateifreigabe- und Verwaltungsprotokoll
-  es: Un protocolo de intercambio y gestión de archivos basado en web
-  fr: Un protocole de partage et de gestion de fichiers basé sur le web
-  hu: Webalapú fájlmegosztási és -kezelési protokoll
-  it: Un protocollo di condivisione e gestione dei file basato sul web
-  ru: Веб-протокол обмена и управления файлами
-  pl: Protokół udostępniania i zarządzania plikami oparty na sieci web
-  pt: Um protocolo de compartilhamento e gerenciamento de arquivos baseado na web
-  sv: Ett webbaserat protokoll för fildelning och hantering
   uk: Вебпротокол для обміну файлами та керування ними
 description:
   en: "WebDAV is a web-based protocol that allows you to share and manage files over the internet, providing a collaborative environment for file editing and versioning."
-  zh: WebDAV 是一个基于 Web 的协议，允许您通过互联网共享和管理文件，提供一个协作环境来进行文件编辑和版本控制。
-  ar: WebDAV هو بروتوكول قائم على الويب يسمح لك بمشاركة وإدارة الملفات عبر الإنترنت، مما يوفر بيئة تعاونية لتحرير الملفات والتحكم في الإصدارات.
-  de: "WebDAV ist ein webbasiertes Protokoll, das es Ihnen ermöglicht, Dateien über das Internet zu teilen und zu verwalten und eine kollaborative Umgebung für die Dateibearbeitung und Versionskontrolle bietet."
-  es: "WebDAV es un protocolo basado en web que le permite compartir y administrar archivos a través de Internet, proporcionando un entorno colaborativo para la edición y el control de versiones de archivos."
-  fr: "WebDAV est un protocole basé sur le web qui vous permet de partager et de gérer des fichiers sur Internet, offrant un environnement collaboratif pour l'édition et le contrôle de version des fichiers."
-  hu: "A WebDAV egy webalapú protokoll, amely lehetővé teszi a fájlok megosztását és kezelését az interneten keresztül, együttműködési környezetet biztosítva a fájlszerkesztéshez és a verziókövetéshez."
-  it: "WebDAV è un protocollo basato sul web che consente di condividere e gestire file su Internet, fornendo un ambiente collaborativo per la modifica e il controllo delle versioni dei file."
-  ru: "WebDAV - это веб-протокол, который позволяет вам обмениваться файлами и управлять ими через Интернет, обеспечивая совместную среду для редактирования файлов и контроля версий."
-  pl: "WebDAV to protokół oparty na sieci web, który umożliwia udostępnianie i zarządzanie plikami przez Internet, zapewniając środowisko współpracy do edycji plików i kontroli wersji."
-  pt: "WebDAV é um protocolo baseado na web que permite compartilhar e gerenciar arquivos pela Internet, fornecendo um ambiente colaborativo para edição e controle de versão de arquivos."
-  sv: "WebDAV är ett webbaserat protokoll som låter dig dela och hantera filer över internet, vilket ger en samarbetsmiljö för filredigering och versionskontroll."
   uk: "WebDAV — вебпротокол, який дає змогу ділитися файлами та керувати ними через інтернет, створюючи середовище для спільного редагування файлів і ведення їхніх версій."
 notes:
   en: Default Account
-  zh: 默认账号
   uk: Типовий обліковий запис
 category: productivity
 developer: ugeek

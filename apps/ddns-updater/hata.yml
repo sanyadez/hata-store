@@ -1,9 +1,7 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: ddns-updater
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: ddns-updater
 tagline:
   en: Simple and easy to use DDNS
-  zh: 简单好用的DDNS
   uk: Простий і зручний DDNS
 description:
   en: Program to keep DNS A and/or AAAA records updated for multiple DNS providers

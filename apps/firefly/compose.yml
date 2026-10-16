@@ -1,4 +1,4 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+# Apache-2.0, changed for Hata Store: see NOTICE
 services:
   firefly:
     image: uusec/firefly:latest@sha256:6d32aa84560ba81786d708b7c67b2f20c8321caf1bb164156335ccd1765c87d4

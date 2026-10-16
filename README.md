@@ -4,14 +4,8 @@ The app store of [Hata](https://github.com/sanyadez/hata), a home server with a 
 
 Every app here is a plain Docker Compose file that runs as it is with `docker compose up`, with or
 without Hata, and a `hata.yml` next to it that tells Hata what the compose file cannot: the app's name
-and description in several languages, its icon, which page to open, and what to ask the person before
+and description in English and Ukrainian, its icon, which page to open, and what to ask the person before
 installing.
-
-The files of this repository are under the MIT licence, except the apps that came from the
-[CasaOS AppStore](https://github.com/IceWhaleTech/CasaOS-AppStore): those are under the Apache License 2.0
-and changed for this store — see [NOTICE](NOTICE). The apps themselves belong to their authors and
-come under their own licences; names and logos are their owners' trademarks. Most icons are taken from
-[dashboard-icons](https://github.com/homarr-labs/dashboard-icons) (Apache-2.0).
 
 ## Layout
 
@@ -94,7 +88,8 @@ settings: [ … ]                      # see Settings
 permissions: { … }                   # see Permissions
 ```
 
-Every text is either a plain string (English) or a map of languages, where `en` is required. Write a
+Every text is either a plain string (English) or `{ en, uk }` — the languages Hata speaks; `en` is
+required, and a text in another language is refused, as it would never be shown. Write a
 long text as a folded block (`en: >`): its lines are joined, and the page lays it out itself; a blank line
 starts a new paragraph.
 
@@ -200,3 +195,11 @@ https://raw.githubusercontent.com/sanyadez/hata-store/index/index.json
 2. `bun scripts/check.ts` until it says all is well.
 3. `sudo bun scripts/smoke.ts <app>` on a machine with Docker.
 4. Open a pull request.
+
+## Licence
+
+The files of this repository are under the MIT licence, except the apps that came from the
+[CasaOS AppStore](https://github.com/IceWhaleTech/CasaOS-AppStore): those are under the Apache License 2.0
+and changed for this store — see [NOTICE](NOTICE). The apps themselves belong to their authors and
+come under their own licences; names and logos are their owners' trademarks. Most icons are taken from
+[dashboard-icons](https://github.com/homarr-labs/dashboard-icons) (Apache-2.0).

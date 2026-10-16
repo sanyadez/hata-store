@@ -1,35 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: WireGuard Easy
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: WireGuard Easy
 tagline:
   en: WEB UI to manage WireGuard VPN.
-  zh: 管理 WireGuard VPN 的 WEB UI。
-  de: WEB UI zur Verwaltung von WireGuard VPN.
-  es: WEB UI para gestionar WireGuard VPN.
-  fr: WEB UI pour gérer WireGuard VPN.
-  hu: WEB felhasználói felület a WireGuard VPN kezeléséhez.
-  it: Interfaccia WEB per la gestione di WireGuard VPN.
-  ru: WEB-интерфейс для управления WireGuard VPN.
-  pl: WEB UI do zarządzania WireGuard VPN.
-  pt: WEB UI para gerenciar o WireGuard VPN.
-  sv: WEB UI för att hantera WireGuard VPN.
   uk: Вебінтерфейс для керування VPN WireGuard.
 description:
   en: You have found the easiest way to install & manage WireGuard on any Linux host!
-  zh: 您已经找到了在任何 Linux 主机上安装和管理 WireGuard 的最简单方法！
-  de: "Sie haben den einfachsten Weg gefunden, WireGuard auf jedem Linux-Host zu installieren und zu verwalten!"
-  es: Ha encontrado la forma más sencilla de instalar y gestionar WireGuard en cualquier host Linux.
-  fr: "Vous avez trouvé le moyen le plus simple d'installer et de gérer WireGuard sur n'importe quel hôte Linux !"
-  hu: Megtalálta a WireGuard telepítésének és kezelésének legegyszerűbb módját bármely Linux hoszton!
-  it: Avete trovato il modo più semplice per installare e gestire WireGuard su qualsiasi host Linux!
-  ru: Вы нашли самый простой способ установки и управления WireGuard на любом Linux-хосте!
-  pl: Znalazłeś najłatwiejszy sposób instalacji i zarządzania WireGuard na dowolnym hoście z systemem Linux!
-  pt: Você encontrou a maneira mais fácil de instalar e gerenciar o WireGuard em qualquer host Linux!
-  sv: Du har hittat det enklaste sättet att installera och hantera WireGuard på en Linux-värd!
   uk: Ви знайшли найпростіший спосіб установити WireGuard на будь-який хост Linux і керувати ним!
 notes:
   en: "🔧 Settings\n\n⚠️ Warning!\n\nYou need to change at least change the mandatory parameter `WG_HOST` for this app to work properly. It's value has to be a domain (or an IP address) that points to this server (accesible from WAN).\n\nSame applies to the `WG_PORT` parameter. Change it to the port accessible from outside your LAN if it differs from the default 51820."
-  zh: "🔧 设置\n\n⚠️ 警告！\n\n您至少需要更改强制参数 `WG_HOST` 才能使本应用程序正常工作。 其值必须是指向本服务器的域（或 IP 地址）（可从广域网访问）。\n\n同样，`WG_PORT` 参数也是如此。如果与默认的 51820 不同，请将其更改为局域网外可以访问的端口。"
   uk: "🔧 Налаштування\n\n⚠️ Увага!\n\nЩоб застосунок працював правильно, потрібно змінити принаймні обов'язковий параметр `WG_HOST`. Його значення має бути доменом (або IP-адресою), що вказує на цей сервер і доступний із WAN.\n\nТе саме стосується параметра `WG_PORT`: змініть його на порт, доступний ззовні вашої локальної мережі, якщо він відрізняється від типового 51820."
 category: network
 developer: WeejeWel

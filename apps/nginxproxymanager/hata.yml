@@ -1,38 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Nginx Proxy Manager
-  zh: Nginx 代理管理器
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Nginx Proxy Manager
 tagline:
   en: "Managing Nginx proxy hosts with a simple, powerful interface."
-  zh: 通过简单、强大的界面管理 Nginx 代理主机。
-  ar: إدارة مضيفي Nginx proxy بواسطة واجهة بسيطة وقوية.
-  de: Verwalten von Nginx-Proxy-Hosts mit einer einfachen und leistungsstarken Schnittstelle.
-  es: Administración de hosts proxy de Nginx con una interfaz simple y poderosa.
-  fr: Gestion des hôtes proxy Nginx avec une interface simple et puissante.
-  hu: "Nginx proxy kiszolgálók kezelése egyszerű, erőteljes felülettel."
-  it: "Gestione degli host proxy Nginx con un'interfaccia semplice e potente."
-  ru: Управление хостами прокси Nginx с помощью простого и мощного интерфейса.
-  pl: Zarządzanie hostami proxy Nginx za pomocą prostego i potężnego interfejsu.
-  pt: Gerenciando hosts proxy do Nginx com uma interface simples e poderosa.
-  sv: Hantering av Nginx-proxyvärdar med ett enkelt och kraftfullt gränssnitt.
   uk: Керування проксі-вузлами Nginx через простий і потужний інтерфейс.
 description:
   en: "Nginx Proxy Manager is a simple, powerful tool to help you host multiple websites on a single server."
-  zh: Nginx 代理管理器是一个简单、强大的工具，可帮助您在单个服务器上托管多个网站。
-  ar: Nginx Proxy Manager هو أداة بسيطة وقوية تساعدك على استضافة مواقع ويب متعددة على خادم واحد.
-  de: "Nginx Proxy Manager ist ein einfaches und leistungsstarkes Tool, mit dem Sie mehrere Websites auf einem Server hosten können."
-  es: Nginx Proxy Manager es una herramienta simple y poderosa para ayudarlo a alojar varios sitios web en un solo servidor.
-  fr: Nginx Proxy Manager est un outil simple et puissant pour vous aider à héberger plusieurs sites Web sur un seul serveur.
-  hu: "A Nginx Proxy Manager egy egyszerű, erőteljes eszköz, amely segít több webhelyet egyetlen kiszolgálón tárolni."
-  it: Nginx Proxy Manager è un semplice strumento potente per ospitare più siti Web su un singolo server.
-  ru: "Nginx Proxy Manager - это простой и мощный инструмент, который поможет вам разместить несколько веб-сайтов на одном сервере."
-  pl: "Nginx Proxy Manager to prosty, potężny narzędzie do hostowania wielu witryn na jednym serwerze."
-  pt: O Nginx Proxy Manager é uma ferramenta simples e poderosa para ajudá-lo a hospedar vários sites em um único servidor.
-  sv: Nginx Proxy Manager är ett enkelt och kraftfullt verktyg som hjälper dig att hosta flera webbplatser på en server.
   uk: "Nginx Proxy Manager — простий і потужний інструмент, який допомагає розмістити кілька вебсайтів на одному сервері."
 notes:
   en: "Default Administrator User\n\n| Username | Password | | -------- | -------- | | `admin@example.com` | `changeme` |"
-  zh: "默认管理员用户\n\n| 用户名 | 密码 | | -------- | -------- | | `admin@example.com` | `changeme` |"
   uk: "Типовий адміністратор\n\n| Ім'я користувача | Пароль | | -------- | -------- | | `admin@example.com` | `changeme` |"
 category: network
 developer: Nginx Proxy Manager
@@ -52,7 +27,6 @@ settings:
     default: 80
     label:
       en: Nginx HTTP Port
-      zh: Nginx HTTP 端口
       uk: HTTP-порт Nginx
     advanced: true
   - name: PORT_443
@@ -60,7 +34,6 @@ settings:
     default: 443
     label:
       en: Nginx HTTPS Port
-      zh: Nginx HTTPS 端口
       uk: HTTPS-порт Nginx
     advanced: true
   - name: WEB_PORT

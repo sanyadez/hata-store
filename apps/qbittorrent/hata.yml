@@ -1,37 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: qBittorrent
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: qBittorrent
 tagline:
   en: P2P bittorrent download
-  zh: P2P BT 下载
-  ar: مُنزِّل BitTorrent مجاني
-  de: Kostenloser BitTorrent-Downloader
-  es: Descargador de BitTorrent gratuito
-  fr: Téléchargeur BitTorrent gratuit
-  hu: Ingyenes BitTorrent letöltő
-  it: Downloader BitTorrent gratuito
-  ru: Бесплатный загрузчик BitTorrent
-  pl: Darmowy downloader BitTorrent
-  pt: Downloader BitTorrent gratuito
-  sv: Gratis BitTorrent-downladdare
   uk: Завантаження через торенти (P2P BitTorrent)
 description:
   en: "**Elevate Your Home Media Experience**. qBittorrent transforms your home media setup with a polished interface reminiscent of µTorrent, minus the ads. Unlike traditional download tools, it offers a streamlined, efficient, and ad-free experience. This makes it a perfect fit for those seeking a hassle-free way to manage and enjoy their media collections at home.\n\n**Feature-Rich and User-Friendly**. With qBittorrent, you gain access to a well-integrated and extensible search engine, allowing simultaneous searches across multiple torrent sites, and category-specific searches for books, music, and software. Its support for RSS feeds with advanced filters, magnet links, encrypted connections, and more, ensures you have complete control over your downloads. Available on all major platforms and in around 70 languages, qBittorrent is both versatile and accessible."
-  zh: "**提升家庭媒体体验**。qBittorrent 通过一个类似于 µTorrent 的精美界面来改造您的家庭媒体设置，但没有广告。与传统下载工具不同，它提供了简洁、高效且无广告的体验，非常适合那些希望在家中轻松管理和享受媒体收藏的人。\n\n**功能丰富且用户友好**。使用 qBittorrent，您可以访问一个集成良好的可扩展搜索引擎，允许同时在多个种子站点进行搜索，并针对书籍、音乐和软件进行分类搜索。它支持带有高级过滤器的 RSS 提要、磁力链接、加密连接等功能，确保您完全控制下载过程。qBittorrent 在所有主要平台上可用，并支持约 70 种语言，既多功能又易于访问。"
-  ar: يهدف مشروع qBittorrent إلى توفير بديل مفتوح المصدر لـ µTorrent.
-  de: "Das qBittorrent-Projekt zielt darauf ab, eine Open-Source-Software-Alternative zu µTorrent zu bieten."
-  es: El objetivo del proyecto qBittorrent es proporcionar una alternativa de software de código abierto a µTorrent.
-  fr: Le projet qBittorrent vise à fournir une alternative open source à µTorrent.
-  hu: "A qBittorrent projekt célja, hogy nyílt forráskódú szoftver alternatívát nyújtson a µTorrent számára."
-  it: "Il progetto qBittorrent mira a fornire un'alternativa open source a µTorrent."
-  ru: Проект qBittorrent стремится предоставить альтернативу с открытым исходным кодом для µTorrent.
-  pl: Projekt qBittorrent ma na celu zapewnienie otwartoźródłowej alternatywy dla µTorrent.
-  pt: O objetivo do projeto qBittorrent é fornecer uma alternativa de software de código aberto ao µTorrent.
-  sv: qBittorrent-projektets mål är att erbjuda en öppen källkodsalternativ till µTorrent.
   uk: "**Зручні домашні медіа**. qBittorrent оновлює ваші домашні медіа завдяки охайному інтерфейсу, схожому на µTorrent, але без реклами. На відміну від звичайних завантажувачів, він простий, ефективний і не показує реклами. Тому він ідеально підходить для тих, хто хоче без клопоту керувати своїми медіаколекціями вдома.\n\n**Багато можливостей і зручність**. У qBittorrent є добре інтегрований розширюваний пошук: можна одночасно шукати на багатьох торентових сайтах і за окремими категоріями — книги, музика, програми. Підтримка RSS-стрічок із розширеними фільтрами, magnet-посилань, шифрованих з’єднань та іншого дає вам повний контроль над завантаженнями. Застосунок доступний на всіх основних платформах приблизно 70 мовами, тож він і гнучкий, і зручний."
 notes:
   en: "Default Account\n\n| Username | Password | |----------|----------| | `admin`    | Get from log |\n\nPasswords need to be viewed in the log\n\nDefault Accessible Path in qBittorrent\n\n| Name | Value | | ---- | ----- | | DATA Path | `/DATA` | | Downloads Path | `/DATA/Downloads` | | Media Path | `/DATA/Media` |"
-  zh: "默认账号\n\n| Username | Password   | | -------- | ---------- | | admin    | 从日志中获取 |\n\n需要在日志中查看密码\n\nqBittorrent 默认可访问路径\n\n| 名称 | 值 | | ---- | ----- | | DATA 路径 | `/DATA` | | 下载路径 | `/DATA/Downloads` | | 媒体路径 | `/DATA/Media` |\n\n使用教程\n1. [QB使用教程](https://blog.scio.icu/index.php/archives/12/#cl-13)\n\nFQA:\n1. 下载没有速度怎么办 可以添加tracker。教程：https://www.bilibili.com/read/cv5734112/\n\n2. 如何重置密码 WIP"
   uk: "Обліковий запис за промовчанням\n\n| Ім'я користувача | Пароль | |----------|----------| | `admin`    | Дивіться в журналі |\n\nПароль потрібно подивитися в журналі\n\nТеки за промовчанням, доступні в qBittorrent\n\n| Назва | Значення | | ---- | ----- | | Тека DATA | `/DATA` | | Тека завантажень | `/DATA/Downloads` | | Тека медіа | `/DATA/Media` |"
 category: media
 developer: qBittorrent
@@ -63,5 +39,4 @@ settings:
     default: "002"
     label:
       en: Run qBittorrent as specified UMASK
-      zh: 以指定的 UMASK 运行 qBittorrent
       uk: "UMASK, з яким запускати qBittorrent"

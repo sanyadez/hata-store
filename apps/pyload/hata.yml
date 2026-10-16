@@ -1,22 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: PyLoad
-  zh: PyLoad
-  pt: PyLoad
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: PyLoad
 tagline:
   en: Free Downloader Manager.
-  zh: 免费下载管理器。
-  pt: Gerenciador de download gratuito.
   uk: Безкоштовний менеджер завантажень.
 description:
   en: "pyLoad is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web."
-  zh: pyLoad是一款用Python编写的免费开源下载管理器，设计极轻量，易于扩展，并通过Web完全可管理。
-  pt: "pyLoad é um gerenciador de download gratuito e de código aberto escrito em Python e projetado para ser extremamente leve, facilmente extensível e totalmente gerenciável via web."
   uk: "pyLoad — безкоштовний менеджер завантажень з відкритим кодом, написаний на Python. Він дуже легкий, його просто розширювати, а керувати ним можна повністю через вебінтерфейс."
 notes:
   en: "Default Account\n\n| Username | Password | |----------|----------| | `pyload`    | `pyload` |\n\nDefault Accessible Path in Pyload\n\n| Name | Value | | ---- | ----- | | Downloads Path | `/DATA/Downloads` |"
-  zh: "默认账户\n\n| 用户名 | 密码 | |----------|----------| | `pyload`    | `pyload` |\n\nPyload中的默认可访问路径\n\n| 名称 | 值 | | ---- | ----- | | 下载路径 | `/DATA/Downloads` |"
-  pt: "Conta Padrão\n\n| Usuário | Senha | |----------|----------| | `pyload`    | `pyload` |\n\nDiretório padrão no Pyload\n\n| Nome | Valor | | ---- | ----- | | Diretório de Download | `/DATA/Downloads` |"
   uk: "Обліковий запис за промовчанням\n\n| Ім'я користувача | Пароль | |----------|----------| | `pyload`    | `pyload` |\n\nТека за промовчанням, доступна в PyLoad\n\n| Назва | Значення | | ---- | ----- | | Тека завантажень | `/DATA/Downloads` |"
 category: media
 developer: linuxserver
@@ -42,7 +33,6 @@ settings:
     default: 9666
     label:
       en: PyLoad listening Port (TCP)
-      zh: PyLoad监听端口（TCP）
       uk: Порт PyLoad (TCP)
     advanced: true
   - name: DOWNLOADS_DIR
@@ -50,7 +40,6 @@ settings:
     default: "${DATA_ROOT}/Downloads"
     label:
       en: PyLoad Download Directory
-      zh: PyLoad下载目录
       uk: Тека завантажень PyLoad
     hint:
       en: Inside the app it is /downloads

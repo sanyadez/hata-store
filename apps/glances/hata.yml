@@ -1,17 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Glances
-  zh: Glances
-  pt: Glances
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Glances
 tagline:
   en: Cross-platform monitoring tool.
-  zh: 跨平台监控工具
-  pt: Ferramenta de monitoramento multiplataforma.
   uk: Кросплатформений інструмент моніторингу.
 description:
   en: "Glances is an open-source system cross-platform monitoring tool. It allows real-time monitoring of various aspects of your system such as CPU, memory, disk, network usage etc."
-  zh: "Glances\_是一个开源的跨平台系统监控工具。它允许实时监控系统的各个方面，如 CPU、内存、磁盘、网络使用情况等。"
-  pt: "Glances é uma ferramenta de monitoramento de sistema de plataforma cruzada de código aberto. Ele permite o monitoramento em tempo real de vários aspectos do seu sistema, como CPU, memória, disco, uso da rede, etc."
   uk: "Glances — кросплатформений інструмент моніторингу системи з відкритим кодом. Він показує в реальному часі навантаження процесора, пам’ять, диски, мережу та інші показники вашої системи."
 category: productivity
 developer: Nicolas Hennion
@@ -35,7 +28,6 @@ settings:
     default: 61209
     label:
       en: Glances API port
-      zh: Glances API 端口
       uk: Порт API Glances
     advanced: true
   - name: GLANCES_OPT
@@ -43,7 +35,6 @@ settings:
     default: "-w"
     label:
       en: Glances mode
-      zh: Glances模式
       uk: Режим Glances
 permissions:
   host-pid:

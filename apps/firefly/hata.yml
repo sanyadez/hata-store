@@ -1,18 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Firefly
-  zh: 萤火虫
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Firefly
 tagline:
   en: "Firefly, the easiest using of WireGuard VPN server, plus version of wg-easy."
-  zh: 最简单易用的WireGuard服务器。可广泛应用于内网穿透、异地组网、远程办公等场景。
   uk: "Firefly — найпростіший у використанні VPN-сервер WireGuard, розширена версія wg-easy."
 description:
   en: "Firefly is a simple and easy to install WireGuard server software, which can be widely used in scenarios such as remote networking, remote work, and expose a local server behind a NAT or firewall to the internet.  🎯 Features 🟢 Provide a simple and easy-to-use web management UI  🟣 Supports access to all WireGuard clients  🟡 No need for system installation of WireGuard components  🟠 Single file, no additional library dependencies  🔴 Automatically apply for free SSL certificate"
-  zh: 萤火虫是一款简单、易架设的 WireGuard 服务端软件，可广泛用于异地组网、远程办公、内网穿透等场景。  🎯 特色 🟢 提供简单、易用的web管理后台  🟣 支持所有 WireGuard 客户端接入  🟡 无需系统安装 WireGuard 组件  🟠 单文件、无额外库依赖  🔴 自动申请免费SSL证书
   uk: "Firefly — проста у встановленні серверна програма WireGuard, яку можна застосовувати для віддаленого з'єднання мереж, віддаленої роботи та відкриття в інтернет локального сервера, що стоїть за NAT або брандмауером.  🎯 Можливості 🟢 Простий і зручний вебінтерфейс керування  🟣 Підтримка всіх клієнтів WireGuard  🟡 Не потрібно встановлювати компоненти WireGuard у системі  🟠 Один файл, без додаткових бібліотек  🔴 Автоматичне отримання безкоштовного SSL-сертифіката"
 notes:
   en: "Default password for admin background `firefly`, you can modify it in environment variables."
-  zh: "管理后台默认密码 `firefly`，你可以在环境变量中修改。"
   uk: "Пароль адміністратора за замовчуванням — `firefly`, його можна змінити у змінних середовища."
 category: network
 developer: Safe3
@@ -29,7 +24,8 @@ settings:
     type: password
     required: true
     label:
-      en: FIREFLY_PASSWORD
+      en: Password to sign in
+      uk: Пароль для входу
 permissions:
   host-network:
     en: "Its authors run it on the server's own network: it reaches the devices of the home network, and its ports are the server's"

@@ -1,53 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Project NOMAD
-  it: Project NOMAD
-  nb: Project NOMAD
-  zh: Project NOMAD
-  ja: Project NOMAD
-  ko: Project NOMAD
-  fr: Project NOMAD
-  de: Project NOMAD
-  sv: Project NOMAD
-  el: Project NOMAD
-  hr: Project NOMAD
-  pt: Project NOMAD
-  es: Project NOMAD
-  ru: Project NOMAD
-  tr: Project NOMAD
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Project NOMAD
 tagline:
   en: Knowledge that never goes offline
-  it: Conoscenze disponibili anche senza connessione
-  nb: Kunnskap tilgjengelig også uten nett
-  zh: 永不离线的知识库
-  ja: オフラインでも使える知識ライブラリ
-  ko: 오프라인에서도 사용할 수 있는 지식
-  fr: Des connaissances accessibles même hors ligne
-  de: "Wissen, das auch offline verfügbar bleibt"
-  sv: Kunskap tillgänglig även utan nätanslutning
-  el: Γνώση διαθέσιμη ακόμη και χωρίς σύνδεση
-  hr: Znanje dostupno i bez interneta
-  pt: Conhecimento disponível mesmo sem ligação
-  es: Conocimiento disponible incluso sin conexión
-  ru: "Знания, доступные даже без интернета"
-  tr: İnternet olmadan da erişilebilen bilgi
   uk: "Знання, які не зникають без інтернету"
 description:
   en: "Project NOMAD is an offline knowledge and education server with a browser-based Command Center. Install and manage offline Wikipedia and ebooks with Kiwix, educational courses with Kolibri, local AI with Ollama and Qdrant, offline maps, CyberChef, and notes from one interface.\n\nThis package includes the Command Center, MySQL, Redis, Dozzle for service logs, and host disk monitoring. Optional tools, AI models, and offline content are installed separately from the NOMAD interface."
-  it: "Project NOMAD è un server per conoscenze e formazione offline con un centro di controllo accessibile dal browser. Installa e gestisci Wikipedia e libri digitali con Kiwix, corsi con Kolibri, IA locale con Ollama e Qdrant, mappe offline, CyberChef e note da una sola interfaccia.\n\nQuesto pacchetto include il centro di controllo, MySQL, Redis, Dozzle per i log dei servizi e il monitoraggio dei dischi dell’host. Gli strumenti opzionali, i modelli IA e i contenuti offline si installano separatamente dall’interfaccia NOMAD."
-  nb: "Project NOMAD er en server for kunnskap og utdanning uten nettilkobling, med et kontrollsenter i nettleseren. Installer og administrer Wikipedia og e-bøker med Kiwix, kurs med Kolibri, lokal KI med Ollama og Qdrant, kart uten nett, CyberChef og notater fra ett grensesnitt.\n\nDenne pakken inneholder kontrollsenteret, MySQL, Redis, Dozzle for tjenestelogger og overvåking av vertens disker. Valgfrie verktøy, KI-modeller og innhold installeres separat fra NOMAD."
-  zh: "Project NOMAD 是一个离线知识与教育服务器，通过浏览器中的控制中心统一管理资源。你可以按需安装 Kiwix 离线维基百科和电子书、Kolibri 教育课程、Ollama 与 Qdrant 本地 AI、离线地图、CyberChef 和笔记工具。\n\n本应用包含控制中心、MySQL、Redis、Dozzle 服务日志和主机磁盘监控。可选工具、AI 模型和离线资料需要在 NOMAD 界面中另行安装。"
-  ja: "Project NOMAD は、ブラウザーのコマンドセンターから操作できるオフラインの知識・教育サーバーです。Kiwix による Wikipedia と電子書籍、Kolibri の学習コース、Ollama と Qdrant によるローカル AI、オフライン地図、CyberChef、メモを一つの画面からインストールして管理できます。\n\nこのパッケージにはコマンドセンター、MySQL、Redis、サービスログ用の Dozzle、ホストのディスク監視が含まれます。追加ツール、AI モデル、オフラインコンテンツは NOMAD の画面から別途インストールします。"
-  ko: "Project NOMAD는 브라우저의 제어 센터로 관리하는 오프라인 지식 및 교육 서버입니다. Kiwix의 위키백과와 전자책, Kolibri의 교육 과정, Ollama와 Qdrant의 로컬 AI, 오프라인 지도, CyberChef와 메모 도구를 하나의 인터페이스에서 설치하고 관리할 수 있습니다.\n\n이 패키지에는 제어 센터, MySQL, Redis, 서비스 로그용 Dozzle과 호스트 디스크 모니터링이 포함됩니다. 선택 도구, AI 모델과 오프라인 콘텐츠는 NOMAD 인터페이스에서 별도로 설치합니다."
-  fr: "Project NOMAD est un serveur de connaissances et de formation hors ligne avec un centre de commande accessible dans le navigateur. Installez et gérez Wikipédia et des livres numériques avec Kiwix, des cours avec Kolibri, une IA locale avec Ollama et Qdrant, des cartes hors ligne, CyberChef et des notes depuis une seule interface.\n\nCe paquet comprend le centre de commande, MySQL, Redis, Dozzle pour les journaux des services et la surveillance des disques de la machine hôte. Les outils facultatifs, les modèles IA et les contenus hors ligne se téléchargent séparément depuis NOMAD."
-  de: "Project NOMAD ist ein Server für Offline-Wissen und Bildung mit einer browserbasierten Steuerzentrale. Installieren und verwalten Sie Wikipedia und E-Books mit Kiwix, Lernkurse mit Kolibri, lokale KI mit Ollama und Qdrant, Offline-Karten, CyberChef und Notizen über eine Oberfläche.\n\nDieses Paket enthält die Steuerzentrale, MySQL, Redis, Dozzle für Dienstprotokolle und die Überwachung der Host-Datenträger. Optionale Werkzeuge, KI-Modelle und Offline-Inhalte installieren Sie separat über NOMAD."
-  sv: "Project NOMAD är en server för kunskap och utbildning utan nätanslutning, med ett kontrollcenter i webbläsaren. Installera och hantera Wikipedia och e-böcker med Kiwix, kurser med Kolibri, lokal AI med Ollama och Qdrant, offlinekartor, CyberChef och anteckningar från ett gränssnitt.\n\nPaketet innehåller kontrollcentret, MySQL, Redis, Dozzle för tjänsteloggar och övervakning av värddatorns diskar. Valfria verktyg, AI-modeller och offlineinnehåll installeras separat från NOMAD."
-  el: "Το Project NOMAD είναι διακομιστής γνώσης και εκπαίδευσης χωρίς σύνδεση, με κέντρο ελέγχου στον φυλλομετρητή. Εγκαταστήστε και διαχειριστείτε τη Wikipedia και ηλεκτρονικά βιβλία με το Kiwix, μαθήματα με το Kolibri, τοπική τεχνητή νοημοσύνη με Ollama και Qdrant, χάρτες χωρίς σύνδεση, το CyberChef και σημειώσεις από μία διεπαφή.\n\nΤο πακέτο περιλαμβάνει το κέντρο ελέγχου, MySQL, Redis, Dozzle για αρχεία καταγραφής υπηρεσιών και παρακολούθηση των δίσκων του κεντρικού υπολογιστή. Τα προαιρετικά εργαλεία, τα μοντέλα τεχνητής νοημοσύνης και το περιεχόμενο εγκαθίστανται ξεχωριστά μέσω του NOMAD."
-  hr: "Project NOMAD je poslužitelj za znanje i obrazovanje bez internetske veze s upravljačkim centrom u pregledniku. Instalirajte i upravljajte Wikipedijom i e-knjigama uz Kiwix, tečajevima uz Kolibri, lokalnom umjetnom inteligencijom uz Ollama i Qdrant, kartama bez interneta, CyberChefom i bilješkama iz jednog sučelja.\n\nPaket uključuje upravljački centar, MySQL, Redis, Dozzle za zapisnike usluga i nadzor diskova glavnog računala. Dodatni alati, AI modeli i sadržaj instaliraju se zasebno kroz NOMAD."
-  pt: "O Project NOMAD é um servidor de conhecimento e educação offline com um centro de controlo acessível no navegador. Instale e faça a gestão da Wikipédia e livros digitais com Kiwix, cursos com Kolibri, IA local com Ollama e Qdrant, mapas offline, CyberChef e notas numa única interface.\n\nEste pacote inclui o centro de controlo, MySQL, Redis, Dozzle para os registos dos serviços e monitorização dos discos do anfitrião. As ferramentas opcionais, os modelos de IA e os conteúdos offline são instalados separadamente na interface NOMAD."
-  es: "Project NOMAD es un servidor de conocimiento y educación sin conexión con un centro de control accesible desde el navegador. Instala y gestiona Wikipedia y libros electrónicos con Kiwix, cursos con Kolibri, IA local con Ollama y Qdrant, mapas sin conexión, CyberChef y notas desde una sola interfaz.\n\nEste paquete incluye el centro de control, MySQL, Redis, Dozzle para los registros de los servicios y la supervisión de los discos del equipo anfitrión. Las herramientas opcionales, los modelos de IA y el contenido sin conexión se instalan por separado desde NOMAD."
-  ru: "Project NOMAD представляет собой сервер знаний и обучения без подключения к интернету с центром управления в браузере. Устанавливайте и управляйте Википедией и электронными книгами через Kiwix, курсами через Kolibri, локальным ИИ через Ollama и Qdrant, офлайн-картами, CyberChef и заметками в одном интерфейсе.\n\nПакет включает центр управления, MySQL, Redis, Dozzle для журналов служб и мониторинг дисков хоста. Дополнительные инструменты, модели ИИ и офлайн-материалы устанавливаются отдельно через NOMAD."
-  tr: "Project NOMAD, tarayıcı tabanlı bir kontrol merkeziyle yönetilen çevrimdışı bilgi ve eğitim sunucusudur. Kiwix ile Vikipedi ve e-kitapları, Kolibri ile kursları, Ollama ve Qdrant ile yerel yapay zekâyı, çevrimdışı haritaları, CyberChef ve notları tek arayüzden kurup yönetin.\n\nBu paket kontrol merkezini, MySQL, Redis, hizmet günlükleri için Dozzle ve ana makine disk izlemeyi içerir. İsteğe bağlı araçlar, yapay zekâ modelleri ve çevrimdışı içerikler NOMAD arayüzünden ayrıca kurulur."
   uk: "Project NOMAD — сервер офлайн-знань і навчання з Командним центром у браузері. З одного інтерфейсу можна встановлювати й обслуговувати офлайн-Вікіпедію та електронні книги через Kiwix, навчальні курси через Kolibri, локальний ШІ через Ollama і Qdrant, офлайн-мапи, CyberChef та нотатки.\n\nУ цей пакет входять Командний центр, MySQL, Redis, Dozzle для журналів служб і моніторинг дисків хоста. Додаткові інструменти, моделі ШІ та офлайн-вміст встановлюються окремо з інтерфейсу NOMAD."
 category: productivity
 developer: Crosstalk Solutions
@@ -83,7 +40,8 @@ settings:
   - name: MYSQL_ROOT_PASSWORD
     type: secret
     label:
-      en: MYSQL_ROOT_PASSWORD
+      en: "Database administrator's password"
+      uk: Пароль адміністратора бази даних
   - name: DOZZLE_PORT_8080
     type: port
     default: 9999

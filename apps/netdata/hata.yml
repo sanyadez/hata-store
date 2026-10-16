@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Netdata
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Netdata
 tagline:
   en: Real-time Performance Monitoring
-  zh: 实时性能监控
   uk: Моніторинг продуктивності в реальному часі
 description:
   en: Netdata is a real-time performance and health monitoring solution that helps you visualize and understand the behavior of your systems.
-  zh: Netdata是一个实时性能和健康监控解决方案，帮助您可视化并理解系统的行为。
   uk: "Netdata — рішення для моніторингу продуктивності та стану систем у реальному часі, яке допомагає наочно побачити й зрозуміти, як поводяться ваші системи."
 category: productivity
 developer: f4bio

@@ -1,22 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: AnythingLLM
-  zh: AnythingLLM
-  ja: AnythingLLM
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: AnythingLLM
 tagline:
   en: The all-in-one AI application.
-  zh: 一体化 AI 应用程序。
-  ja: オールインワン AI アプリケーション。
   uk: Універсальний застосунок зі штучним інтелектом.
 description:
   en: "AnythingLLM is the easiest to use, all-in-one AI application that can do RAG, AI Agents, and much more with no code or infrastructure headaches."
-  zh: AnythingLLM 是最易于使用的一体化 AI 应用程序，可以使用 RAG、AI 代理等功能，无需代码或基础设施麻烦。
-  ja: AnythingLLM は、コードやインフラストラクチャの問題を気にすることなく、RAG、AI エージェントなどを行う最も使いやすいオールインワン AI アプリケーションです。
   uk: "AnythingLLM — найпростіший у використанні універсальний застосунок зі штучним інтелектом, який уміє RAG, ШІ-агентів і багато іншого без коду та клопоту з інфраструктурою."
 notes:
   en: "**Usage Tips** AnythingLLM supports but does not directly provide various LLMs backends, you need to configure the backends you need yourself. Please refer to the [official documentation](https://docs.anythingllm.com) for more information."
-  zh: "**使用提示** AnythingLLM 支持但不直接提供各种LLMs后端，您需要自行配置需要的后端。 请参考[官方文档](https://docs.anythingllm.com)以获取更多信息。"
-  ja: "**使用上のヒント** AnythingLLM は、さまざまな LLMs バックエンドをサポートしていますが、必要なバックエンドを自分で構成する必要があります。 詳細については、[公式ドキュメント](https://docs.anythingllm.com)を参照してください。"
   uk: "**Поради щодо використання** AnythingLLM підтримує різні бекенди LLM, але сам їх не надає, тому потрібні бекенди слід налаштувати самостійно. Докладніше читайте в [офіційній документації](https://docs.anythingllm.com)."
 category: ai
 developer: Mintplex Labs

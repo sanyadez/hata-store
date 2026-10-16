@@ -1,6 +1,5 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: SnapOtter
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: SnapOtter
 tagline:
   en: "Self-hosted file toolkit for images, video, audio, PDFs, and files"
   uk: "Власний набір інструментів для зображень, відео, аудіо, PDF та файлів"

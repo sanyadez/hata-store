@@ -1,19 +1,7 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Alby Hub ✨
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Alby Hub ✨
 tagline:
   en: Self-custodial Bitcoin Lightning wallet with integrated node and app connections.
-  zh: 一个简单的比特币闪电节点，带有钱包、子账户和NWC连接。
-  ar: عقدة بسيكويت لايتنينغ بسيطة مع محفظة، وحسابات فرعية، واتصالات NWC.
-  de: "Ein einfacher Bitcoin-Lightning-Knoten mit einer Wallet, Unterkonten und NWC-Verbindungen."
-  es: "Un nodo de Lightning de Bitcoin simple con una cartera, subcuentas y conexiones NWC."
-  fr: "Un nœud Bitcoin Lightning simple avec un portefeuille, des sous-comptes et des connexions NWC."
-  hu: "Egy egyszerű Bitcoin Lightning csomópont pénztárcával, alszámlákkal és NWC csatlakozásokkal."
-  it: "Un semplice nodo Bitcoin Lightning con un portafoglio, sottoconti e connessioni NWC."
-  ru: "Простой узел Bitcoin Lightning с кошельком, субсчетами и подключениями NWC."
-  pl: "Samodzielny węzeł Bitcoin Lightning z portfelem, subkontami i połączeniami NWC."
-  pt: "Um nó Bitcoin Lightning simples com uma carteira, subcontas e conexões NWC."
-  sv: "En enkel Bitcoin Lightning-nod med en plånbok, underkonton och NWC-anslutningar."
   uk: "Біткоїн-гаманець Lightning з власним зберіганням ключів, вбудованим вузлом і підключенням застосунків"
 description:
   en: "Alby Hub is an open-source, self-custodial Bitcoin Lightning wallet, with the easiest-to-use Lightning Network node for everyone. Whether you're an individual, creator, or developer, Alby Hub is your centre for seamless Bitcoin payments. Effortlessly connect to a variety of apps like the Alby Browser Extension or Alby Go mobile app, create sub-wallets for family and friends, and take full control of your funds—all within an intuitive interface and developer-ready APIs.\n\n**USEFUL LINKS**\n- [Source Repository](https://github.com/getAlby/hub)\n- [Support](https://support.getalby.com/)\n- [Marketing Site](https://albyhub.com/)\n- [Community of users and developers](https://discord.getalby.com)\n- [Feedback Board, feature requests, bug reports[(https://feedback.getalby.com)"

@@ -1,33 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Tautulli
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Tautulli
 tagline:
   en: Monitor your Plex Media Server and much more.
-  zh: 监视您的Plex Media Server以及更多内容。
-  ar: اراقب خادم وسائط Plex الخاص بك والكثير من الأشياء الأخرى.
-  de: Überwachen Sie Ihren Plex Media Server und vieles mehr.
-  es: Monitoree su servidor de medios Plex y mucho más.
-  fr: Surveillez votre serveur de médias Plex et bien plus encore.
-  hu: Figyelje a Plex Media Serverét és még sok más dolgot is.
-  it: Monitora il tuo server multimediale Plex e molto altro ancora.
-  ru: Отслеживайте свой сервер мультимедиа Plex и многое другое.
-  pl: Monitoruj swój serwer mediów Plex i wiele innych.
-  pt: Monitore seu servidor de mídia Plex e muito mais.
-  sv: Övervaka din Plex Media Server och mycket mer.
   uk: Моніторинг вашого медіасервера Plex і не тільки.
 description:
   en: Tautulli is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics.
-  zh: Tautulli是您可以在Plex Media Server旁边运行的第三方应用程序，用于监视活动并跟踪各种统计信息。
-  ar: Tautulli هو تطبيق ثالث يمكنك تشغيله جنبا إلى جنب مع خادم وسائط Plex الخاص بك لمراقبة النشاط وتتبع مختلف الإحصاءات.
-  de: "Tautulli ist eine Drittanwendung, die Sie neben Ihrem Plex Media Server ausführen können, um Aktivitäten zu überwachen und verschiedene Statistiken zu verfolgen."
-  es: Tautulli es una aplicación de terceros que puede ejecutar junto con su servidor de medios Plex para monitorear la actividad y rastrear varias estadísticas.
-  fr: "Tautulli est une application tierce que vous pouvez exécuter en parallèle de votre serveur de médias Plex pour surveiller l'activité et suivre diverses statistiques."
-  hu: "A Tautulli egy harmadik fél alkalmazása, amelyet a Plex Media Server mellett futtathat, hogy nyomon követhesse az aktivitást és különböző statisztikákat nyomon követhessen."
-  it: "Tautulli è un'applicazione di terze parti che puoi eseguire insieme al tuo server multimediale Plex per monitorare l'attività e tenere traccia di varie statistiche."
-  ru: "Tautulli - это стороннее приложение, которое вы можете запустить вместе с вашим сервером мультимедиа Plex, чтобы отслеживать активность и отслеживать различные статистические данные."
-  pl: "Tautulli to aplikacja trzecia, którą możesz uruchomić obok swojego serwera mediów Plex, aby monitorować aktywność i śledzić różne statystyki."
-  pt: O Tautulli é um aplicativo de terceiros que você pode executar junto com seu servidor de mídia Plex para monitorar a atividade e rastrear várias estatísticas.
-  sv: Tautulli är en tredjepartsapplikation som du kan köra bredvid din Plex Media Server för att övervaka aktiviteten och spåra olika statistik.
   uk: "Tautulli — сторонній застосунок, який можна запустити поруч із медіасервером Plex, щоб стежити за активністю та збирати різну статистику."
 category: media
 developer: Tautulli Team

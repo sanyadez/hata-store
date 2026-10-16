@@ -1,50 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: oPodSync
-  de: oPodSync
-  el: oPodSync
-  fr: oPodSync
-  hr: oPodSync
-  it: oPodSync
-  ja: oPodSync
-  ko: oPodSync
-  nb: oPodSync
-  pt: oPodSync
-  ru: oPodSync
-  sv: oPodSync
-  tr: oPodSync
-  zh: oPodSync
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: oPodSync
 tagline:
   en: Podcast synchronization service
-  de: Podcast-Synchronisationsdienst
-  el: Υπηρεσία συγχρονισμού podcasts
-  fr: Service de synchronisation de podcasts
-  hr: Usluga sinkronizacije podcasta
-  it: Servizio di sincronizzazione podcast
-  ja: ポッドキャスト同期サービス
-  ko: 팟캐스트 동기화 서비스
-  nb: Podcast-synkroniseringstjeneste
-  pt: Serviço de sincronização de podcasts
-  ru: Сервис синхронизации подкастов
-  sv: Podcast-synkroniseringstjänst
-  tr: Podcast senkronizasyon hizmeti
-  zh: 播客同步服务
   uk: Сервіс синхронізації подкастів
 description:
   en: "oPodSync is a podcast synchronization service that allows users to sync their podcast subscriptions and listening progress across multiple devices. It provides a server-side solution for managing podcast data and ensures that users can seamlessly switch between their devices.\n\n**Key Features:**\n- Sync podcast subscriptions\n- Track listening progress across devices\n- Web-based management interface\n- Support for multiple podcast clients\n- Centralized data storage\n- Easy setup and configuration\n\n**Learn More:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  de: "oPodSync ist ein Podcast-Synchronisationsdienst, der es Benutzern ermöglicht, ihre Podcast-Abonnements und Hörfortschritte über verschiedene Geräte hinweg zu synchronisieren. Es bietet eine serverseitige Lösung für die Verwaltung von Podcast-Daten und stellt sicher, dass Benutzer nahtlos zwischen ihren Geräten wechseln können.\n\n**Hauptfunktionen:**\n- Synchronisierung von Podcast-Abonnements\n- Hörfortschritt über Geräte hinweg verfolgen\n- Web-basierte Verwaltungsoberfläche\n- Unterstützung für mehrere Podcast-Clients\n- Zentralisierte Datenspeicherung\n- Einfache Einrichtung und Konfiguration\n\n**Mehr Erfahren:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  el: "Το oPodSync είναι μια υπηρεσία συγχρονισμού podcasts που επιτρέπει στους χρήστες να συγχρονίζουν τις συνδρομές και την πρόοδο ακρόασης των podcasts τους σε διαφορετικές συσκευές. Παρέχει μια λύση από την πλευρά του διακομιστή για τη διαχείριση δεδομένων podcasts και διασφαλίζει ότι οι χρήστες μπορούν να αλλάζουν απρόσκοπτα μεταξύ των συσκευών τους.\n\n**Κύρια Χαρακτηριστικά:**\n- Συγχρονισμός συνδρομών podcasts\n- Παρακολούθηση προόδου ακρόασης μεταξύ συσκευών\n- Web-based διαχειριστικό περιβάλλον\n- Υποστήριξη για πολλαπλούς podcast clients\n- Κεντρικοποιημένη αποθήκευση δεδομένων\n- Εύκολη εγκατάσταση και διαμόρφωση\n\n**Μάθετε Περισσότερα:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  fr: "oPodSync est un service de synchronisation de podcasts qui permet aux utilisateurs de synchroniser leurs abonnements aux podcasts et leur progression d'écoute sur plusieurs appareils. Il fournit une solution côté serveur pour gérer les données des podcasts et garantit que les utilisateurs peuvent passer sans problème d'un appareil à l'autre.\n\n**Fonctionnalités Clés:**\n- Synchroniser les abonnements aux podcasts\n- Suivre la progression d'écoute sur plusieurs appareils\n- Interface de gestion basée sur le web\n- Support pour plusieurs clients de podcasts\n- Stockage de données centralisé\n- Installation et configuration faciles\n\n**En Savoir Plus:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  hr: "oPodSync je usluga sinkronizacije podcasta koja omogućuje korisnicima sinkronizaciju njihovih pretplata na podcaste i napretka slušanja na više uređaja. Pruža rješenje na strani poslužitelja za upravljanje podacima podcasta i osigurava da korisnici mogu neprimjetno prelaziti s jednog uređaja na drugi.\n\n**Ključne Značajke:**\n- Sinkroniziraj pretplate na podcaste\n- Prati napredak slušanja na više uređaja\n- Web-sučelje za upravljanje\n- Podrška za više klijenata podcasta\n- Centralizirano pohranjivanje podataka\n- Jednostavna postavka i konfiguracija\n\n**Saznajte Više:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  it: "oPodSync è un servizio di sincronizzazione di podcast che consente agli utenti di sincronizzare le loro iscrizioni ai podcast e i progressi di ascolto su più dispositivi. Fornisce una soluzione lato server per gestire i dati dei podcast e assicura che gli utenti possano passare senza problemi da un dispositivo all'altro.\n\n**Funzionalità Principali:**\n- Sincronizza le iscrizioni ai podcast\n- Traccia i progressi di ascolto su più dispositivi\n- Interfaccia di gestione basata sul web\n- Supporto per più client di podcast\n- Archiviazione dati centralizzata\n- Facile installazione e configurazione\n\n**Scopri di Più:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  ja: "oPodSyncは、複数のデバイス間でポッドキャストの購読と聴取進捗を同期できるポッドキャスト同期サービスです。ポッドキャストデータを管理するためのサーバーサイドソリューションを提供し、ユーザーがデバイス間をシームレスに切り替えられるようにします。\n\n**主な機能：**\n- ポッドキャストの購読を同期\n- デバイス間での聴取進捗を追跡\n- Webベースの管理インターフェース\n- 複数のポッドキャストクライアントをサポート\n- 集中型データストレージ\n- 簡単なセットアップと設定\n\n**詳細情報：**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  ko: "oPodSync는 사용자가 여러 장치에서 팟캐스트 구독 및 청취 진행 상황을 동기화할 수 있는 팟캐스트 동기화 서비스입니다. 팟캐스트 데이터를 관리하기 위한 서버 측 솔루션을 제공하며 사용자가 장치 간을 원활하게 전환할 수 있도록 합니다.\n\n**주요 기능:**\n- 팟캐스트 구독 동기화\n- 장치 간 청취 진행 상황 추적\n- 웹 기반 관리 인터페이스\n- 여러 팟캐스트 클라이언트 지원\n- 중앙 집중식 데이터 저장\n- 쉬운 설정 및 구성\n\n**자세히 알아보기:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  nb: "oPodSync er en podcast-synkroniseringstjeneste som lar brukere synkronisere sine podcast-abonnementer og lyttefremskritt på tvers av flere enheter. Den gir en server-side løsning for å administrere podcast-data og sikrer at brukere kan sømløst bytte mellom enhetene sine.\n\n**Nøkkelegenskaper:**\n- Synkroniser podcast-abonnementer\n- Spor lyttefremskritt på tvers av enheter\n- Web-basert administrasjonsgrensesnitt\n- Støtte for flere podcast-klienter\n- Sentralisert datalagring\n- Enkel oppsett og konfigurasjon\n\n**Lær Mer:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  pt: "O oPodSync é um serviço de sincronização de podcasts que permite aos utilizadores sincronizar as suas subscrições de podcasts e progresso de audição em múltiplos dispositivos. Fornece uma solução do lado do servidor para gerir dados de podcasts e garante que os utilizadores possam alternar sem problemas entre os seus dispositivos.\n\n**Funcionalidades Principais:**\n- Sincronizar subscrições de podcasts\n- Acompanhar o progresso de audição em múltiplos dispositivos\n- Interface de gestão baseada na web\n- Suporte para múltiplos clientes de podcasts\n- Armazenamento de dados centralizado\n- Configuração e instalação fáceis\n\n**Saiba Mais:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  ru: "oPodSync - это сервис синхронизации подкастов, который позволяет пользователям синхронизировать свои подписки на подкасты и прогресс прослушивания на нескольких устройствах. Он предоставляет серверное решение для управления данными подкастов и обеспечивает бесшовный переход пользователей между своими устройствами.\n\n**Ключевые Особенности:**\n- Синхронизация подписок на подкасты\n- Отслеживание прогресса прослушивания на нескольких устройствах\n- Веб-интерфейс для управления\n- Поддержка нескольких клиентов подкастов\n- Централизованное хранение данных\n- Простая установка и настройка\n\n**Узнать Больше:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  sv: "oPodSync är en podcast-synkroniseringstjänst som låter användare synkronisera sina podcast-prenumerationer och lyssningsframsteg över flera enheter. Den erbjuder en server-side lösning för att hantera podcast-data och säkerställer att användare kan sömlöst växla mellan sina enheter.\n\n**Nyckelfunktioner:**\n- Synkronisera podcast-prenumerationer\n- Spåra lyssningsframsteg över flera enheter\n- Webbaserat hanteringsgränssnitt\n- Stöd för flera podcast-klienter\n- Centraliserad datalagring\n- Enkel installation och konfiguration\n\n**Läs Mer:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  tr: "oPodSync, kullanıcıların podcast aboneliklerini ve dinleme ilerlemelerini birden fazla cihaz arasında senkronize etmelerine olanak tanıyan bir podcast senkronizasyon hizmetidir. Podcast verilerini yönetmek için sunucu tarafı bir çözüm sunar ve kullanıcıların cihazları arasında sorunsuz bir şekilde geçiş yapmasını sağlar.\n\n**Temel Özellikler:**\n- Podcast aboneliklerini senkronize et\n- Cihazlar arası dinleme ilerlemesini takip et\n- Web tabanlı yönetim arayüzü\n- Çoklu podcast istemcisi desteği\n- Merkezi veri depolama\n- Kolay kurulum ve yapılandırma\n\n**Daha Fazla Bilgi:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
-  zh: "oPodSync是一个播客同步服务，允许用户在多个设备间同步他们的播客订阅和收听进度。它提供了一个服务器端的解决方案来管理播客数据，并确保用户可以在他们的设备之间无缝切换。\n\n**主要功能：**\n- 同步播客订阅\n- 跨设备跟踪收听进度\n- 基于Web的管理界面\n- 支持多个播客客户端\n- 集中式数据存储\n- 易于设置和配置\n\n**了解更多：**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
   uk: "oPodSync — сервіс синхронізації подкастів, що дає змогу синхронізувати підписки на подкасти й прогрес прослуховування між кількома пристроями. Це серверне рішення для керування даними подкастів, завдяки якому можна без проблем переходити з одного пристрою на інший.\n\n**Основні можливості:**\n- Синхронізація підписок на подкасти\n- Відстеження прогресу прослуховування на різних пристроях\n- Вебінтерфейс для керування\n- Підтримка різних клієнтів подкастів\n- Централізоване зберігання даних\n- Просте встановлення й налаштування\n\n**Докладніше:**\n- [Репозиторій oPodSync на GitHub](https://github.com/kd2org/oPodSync)"
 category: media
 developer: ganeshlab

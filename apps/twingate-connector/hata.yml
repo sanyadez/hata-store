@@ -1,6 +1,5 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Twingate
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Twingate
 tagline:
   en: Twingate Connector
   uk: Конектор Twingate
@@ -12,16 +11,32 @@ developer: Twingate
 website: https://www.twingate.com
 icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IiMxMjEzMTUiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTY4IDExMy4wNzhWMTk5Ljg3NUM2OCAxOTkuODc1IDgyLjI1NzggMTkwLjE4OCA5Ny42NDg0IDE3OS40ODRWMTMzLjgyQzk3LjY0ODQgMTEwLjM4MyAxMDQuNzk3IDEwMi44MDUgMTI0LjA5NCA4OC41ODU5TDE0OC42NjQgNzAuNVYyOEMxNDguNjY0IDI4IDExMC4zODMgNTYuMTI1IDk0LjQ0NTMgNjcuODQzOEM3NS4xMDk0IDgyLjA2MjUgNjggODkuNjQwNiA2OCAxMTMuMDc4Wk0xMDcuMjk3IDIyOFYxNDEuMjQyQzEwNy4yOTcgMTE3LjgwNSAxMTQuNDA2IDExMC4yMjcgMTMzLjcwMyA5Ni4wMDc4QzE0OS42NDEgODQuMjg5MSAxODcuOTIyIDU2LjEyNSAxODcuOTIyIDU2LjEyNVYxMzEuODI4QzE4Ny45MjIgMTM0LjAxNiAxODcuOTIyIDEzNi4wODYgMTg3Ljk2MSAxMzguMDc4QzE4OC4xNTYgMTU5LjA1NSAxODguMjM0IDE3MC4yMjcgMTY2LjU5NCAxODYuNDM4QzE0OC43MDMgMTk5Ljg3NSAxMDcuMjk3IDIyOCAxMDcuMjk3IDIyOFoiIGZpbGw9IiNGQUZBRkEiLz48L3N2Zz4="
 settings:
+  - name: TWINGATE_NETWORK
+    type: text
+    required: true
+    label:
+      en: Twingate network
+      uk: Мережа Twingate
+    hint:
+      en: "The name before .twingate.com in your network's address"
+      uk: Назва перед .twingate.com в адресі вашої мережі
   - name: TWINGATE_ACCESS_TOKEN
     type: password
+    required: true
     label:
-      en: TWINGATE_ACCESS_TOKEN
+      en: Access token
+      uk: Токен доступу
+    hint:
+      en: Given by the Twingate Admin Console when a connector is added
+      uk: "Видає Twingate Admin Console, коли додаєте конектор"
   - name: TWINGATE_REFRESH_TOKEN
     type: password
+    required: true
     label:
-      en: TWINGATE_REFRESH_TOKEN
+      en: Refresh token
+      uk: Токен оновлення
   - name: HOSTNAME
     type: text
     label:
-      en: HOSTNAME
-      uk: HOSTNAME
+      en: Name of this connector
+      uk: Назва цього конектора

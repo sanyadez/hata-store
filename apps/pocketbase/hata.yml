@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: PocketBase
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: PocketBase
 tagline:
   en: Open Source realtime backend in 1 file
-  pt: Backend open source em tempo real em um único arquivo
   uk: Бекенд з відкритим кодом у реальному часі в одному файлі
 description:
   en: "PocketBase is an open-source backend solution that combines a real-time database, authentication, file storage, and an admin dashboard into a single, portable executable."
-  pt: "PocketBase é uma solução de backend de código aberto que combina um banco de dados em tempo real, autenticação, armazenamento de arquivos e um painel de administração em um único executável portátil."
   uk: "PocketBase — бекенд із відкритим кодом, який поєднує базу даних реального часу, автентифікацію, файлове сховище й адмінпанель в одному портативному виконуваному файлі."
 category: development
 developer: Gani Georgiev

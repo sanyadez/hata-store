@@ -1,33 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: DeepSeekHarness
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: DeepSeekHarness
 tagline:
   en: DeepSeek Harness “Everything is a Plugin“.
-  zh: DeepSeek Harness ”一切皆插件“。
-  ar: "DeepSeek Harness ” كل شيء هو مكون إضافي\""
-  de: "DeepSeek Harness \"Alles ist ein Plugin\"."
-  es: "DeepSeek Harness \"Todo es un plugin\"."
-  fr: "DeepSeek Harness \"Tout est un plugin\"."
-  hu: "DeepSeek Harness \"Minden egy plugin\"."
-  it: "DeepSeek Harness \"Tutto è un plugin\"."
-  ru: "DeepSeek Harness \"Всё — это плагин\"."
-  pl: "DeepSeek Harness \"Wszystko to wtyczka\"."
-  pt: "DeepSeek Harness \"Tudo é um plugin\"."
-  sv: "DeepSeek Harness \"Allt är ett plugin\"."
   uk: "DeepSeek Harness: «Усе є плагіном»."
 description:
   en: DeepSeek Harness (dsh) is an open-source agent harness developed by DeepSeek AI.
-  zh: DeepSeek Harness (dsh) 是由 DeepSeek AI 开发的开源智能体框架。
-  ar: DeepSeek Harness (dsh) هو إطار عمل وكيل مفتوح المصدر تم تطويره بواسطة DeepSeek AI.
-  de: "DeepSeek Harness (dsh) ist ein Open-Source-Agent-Harness, entwickelt von DeepSeek AI."
-  es: DeepSeek Harness (dsh) es un framework de agente de código abierto desarrollado por DeepSeek AI.
-  fr: "DeepSeek Harness (dsh) est un framework d'agent open-source développé par DeepSeek AI."
-  hu: "A DeepSeek Harness (dsh) egy nyílt forráskódú agent harness, amelyet a DeepSeek AI fejlesztett ki."
-  it: DeepSeek Harness (dsh) è un framework di agente open-source sviluppato da DeepSeek AI.
-  ru: "DeepSeek Harness (dsh) — это фреймворк агента с открытым исходным кодом, разработанный DeepSeek AI."
-  pl: DeepSeek Harness (dsh) to framework agenta open-source opracowany przez DeepSeek AI.
-  pt: DeepSeek Harness (dsh) é um framework de agente de código aberto desenvolvido pela DeepSeek AI.
-  sv: DeepSeek Harness (dsh) är ett öppen källkods-agent-harness utvecklat av DeepSeek AI.
   uk: DeepSeek Harness (dsh) — середовище для ШІ-агентів із відкритим кодом від DeepSeek AI.
 category: ai
 developer: DeepSeek

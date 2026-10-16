@@ -76,6 +76,13 @@ describe("hata.yml", () => {
   test("texts need English", () => {
     expect(texts(checkHata(app, hata({ title: { uk: "Демо" } }), store))).toContain("title has no English (en)");
   });
+  test("texts in the languages Hata speaks", () => {
+    expect(texts(checkHata(app, hata({ tagline: { en: "Demo", uk: "Демо", de: "Demo" } }), store))).toContain('tagline: Hata does not speak "de" (en, uk)');
+  });
+  test("a label in words, not the variable's name", () => {
+    const got = texts(checkHata(app, hata({ settings: [{ name: "API_TOKEN", type: "password", label: { en: "API_TOKEN", uk: "Токен" } }] }), store));
+    expect(got).toContain("API_TOKEN.label is the variable's name: say in words what it is");
+  });
   test("settings", () => {
     const got = texts(checkHata(app, hata({ settings: [
       { name: "lower", type: "text", label: "L" },

@@ -1,37 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Nzbget
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Nzbget
 tagline:
   en: Efficient Usenet downloader
-  zh: 高效的Usenet下载器
-  ar: مُنزِّل Usenet فعال
-  de: Effizienter Usenet-Downloader
-  es: Descargador de Usenet eficiente
-  fr: Téléchargeur Usenet efficace
-  hu: Hatékony Usenet letöltő
-  it: Downloader Usenet efficiente
-  ru: Эффективный загрузчик Usenet
-  pl: Wydajny pobieracz Usenet
-  pt: Downloader Usenet eficiente
-  sv: Effektiv Usenet-downladdare
   uk: Ефективний завантажувач із Usenet
 description:
   en: "NZBGet can run on almost any device - classic PC, NAS, media player, SAT-receiver, WLAN-router, etc. The download area provides precompiled binaries for Windows, macOS, Linux (compatible with many CPUs and platform variants), FreeBSD and Android. For other platforms the program can be compiled from sources."
-  zh: NZBGet可以在几乎任何设备上运行-经典PC，NAS，媒体播放器，SAT接收器，WLAN路由器等。下载区提供了Windows，macOS，Linux（兼容许多CPU和平台变体），FreeBSD和Android的预编译二进制文件。对于其他平台，可以从源代码编译程序。
-  ar: يمكن لـ NZBGet تشغيل أي جهاز - جهاز PC التقليدي و NAS و مشغل وسائط ومستقبل SAT وموجه WLAN وما إلى ذلك. يوفر المنطقة التي تحمل النسخ المسبقة الثنائية لـ Windows و macOS و Linux (متوافق مع العديد من المعالجات والمنصات المختلفة) و FreeBSD و Android. للمنصات الأخرى ، يمكن تجميع البرنامج من المصادر.
-  de: "NZBGet kann auf fast jedem Gerät ausgeführt werden - klassischer PC, NAS, Mediaplayer, SAT-Receiver, WLAN-Router usw. Das Download-Bereich bietet vorkompilierte Binärdateien für Windows, macOS, Linux (kompatibel mit vielen CPUs und Plattformvarianten), FreeBSD und Android. Für andere Plattformen kann das Programm aus den Quellen kompiliert werden."
-  es: "NZBGet puede ejecutarse en casi cualquier dispositivo PC clásico, NAS, reproductor multimedia, receptor SAT, router WLAN, etc. La zona de descarga proporciona binarios precompilados para Windows, macOS, Linux (compatible con muchas CPUs y variantes de plataforma), FreeBSD y Android. Para otras plataformas, el programa se puede compilar a partir de fuentes."
-  fr: "NZBGet peut fonctionner sur presque n'importe quel appareil - PC classique, NAS, lecteur multimédia, récepteur SAT, routeur WLAN, etc. La zone de téléchargement fournit des binaires précompilés pour Windows, macOS, Linux (compatible avec de nombreuses CPUs et variantes de plate-forme), FreeBSD et Android. Pour d'autres plates-formes, le programme peut être compilé à partir de sources."
-  hu: "A NZBGet szinte bármilyen eszközön futtatható - klasszikus PC, NAS, médialejátszó, SAT-vetítő, WLAN-router stb. A letöltési terület előre fordított bináris állományokat tartalmaz Windows, macOS, Linux (több CPU és platformváltozat kompatibilitása), FreeBSD és Android esetében. Más platformok esetén a program forráskódból fordítható."
-  it: "NZBGet può essere eseguito su quasi qualsiasi dispositivo - PC classico, NAS, lettore multimediale, ricevitore SAT, router WLAN, ecc. La zona download fornisce binari precompilati per Windows, macOS, Linux (compatibile con molte CPU e varianti di piattaforma), FreeBSD e Android. Per altre piattaforme, il programma può essere compilato dalle fonti."
-  ru: "NZBGet может работать на практически любом устройстве - классическом ПК, NAS, медиаплеере, SAT-приемнике, WLAN-маршрутизаторе и т.д. Зона загрузки предоставляет предварительно скомпилированные бинарные файлы для Windows, macOS, Linux (совместим с многими процессорами и платформенными вариантами), FreeBSD и Android. Для других платформ программу можно скомпилировать из исходных кодов."
-  pl: "NZBGet może działać na prawie każdym urządzeniu - klasycznym PC, NAS, odtwarzaczu multimedialnym, odbiorniku SAT, routerze WLAN itp. Strefa pobierania dostarcza wstępnie skompilowane pliki binarne dla systemów Windows, macOS, Linux (zgodne z wieloma procesorami i wariantami platformy), FreeBSD i Android. Dla innych platform program można skompilować z źródeł."
-  pt: "O NZBGet pode ser executado em quase qualquer dispositivo - PC clássico, NAS, leitor multimídia, receptor SAT, roteador WLAN, etc. A área de download fornece binários pré-compilados para Windows, macOS, Linux (compatível com muitos CPUs e variantes de plataforma), FreeBSD e Android. Para outras plataformas, o programa pode ser compilado a partir de fontes."
-  sv: "NZBGet kan köras på nästan vilket enhet - klassisk PC, NAS, mediaspelare, SAT-mottagare, WLAN-router, etc. Nedladdningsområdet tillhandahåller förinstallerade binära filer för Windows, macOS, Linux (kompatibel med många CPU och plattformsversioner), FreeBSD och Android. För andra plattformar kan programmet kompileras från källkod."
   uk: "NZBGet може працювати майже на будь-якому пристрої: звичайному комп’ютері, NAS, медіаплеєрі, супутниковому ресивері, Wi-Fi-маршрутизаторі тощо. У розділі завантажень є готові збірки для Windows, macOS, Linux (для багатьох процесорів і варіантів платформ), FreeBSD та Android. Для інших платформ програму можна зібрати з вихідного коду."
 notes:
   en: "Default Account\n\n| Username | Password | | -------- | -------- | | nzbget   | tegbzn6789 |"
-  zh: "默认账号\n\n| 用户名 | 密码 | | -------- | -------- | | nzbget   | tegbzn6789 |"
   uk: "Типовий обліковий запис\n\n| Ім'я користувача | Пароль | | -------- | -------- | | nzbget   | tegbzn6789 |"
 category: media
 developer: Nzbget Team
@@ -66,4 +42,5 @@ settings:
     type: password
     required: true
     label:
-      en: NZBGET_PASS
+      en: Password to sign in
+      uk: Пароль для входу

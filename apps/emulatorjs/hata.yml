@@ -1,22 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: emulatorjs
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: emulatorjs
 tagline:
   en: emulatorjs
   uk: emulatorjs
 description:
   en: "EmulatorJS is a Docker-based emulator application that can simulate various operating systems and device environments within containers for development, testing, and learning purposes."
-  zh: EmulatorJS是一个基于Docker的模拟器应用程序，可以在容器中模拟多种操作系统和设备环境，用于开发、测试和学习目的。
-  ar: EmulatorJS هو تطبيق محاكي يعتمد على Docker يمكنه محاكاة أنظمة التشغيل المتعددة وبيئات الأجهزة داخل حاويات لأغراض التطوير والاختبار والتعلم.
-  de: "EmulatorJS ist eine Docker-basierte Emulator-Anwendung, die verschiedene Betriebssysteme und Geräteumgebungen in Containern simulieren kann, um für Entwicklungs-, Test- und Lernzwecke eingesetzt zu werden."
-  es: "EmulatorJS es una aplicación de emulador basada en Docker que puede simular varios sistemas operativos y entornos de dispositivos dentro de contenedores con fines de desarrollo, pruebas y aprendizaje."
-  fr: "EmulatorJS est une application d'émulation basée sur Docker qui peut simuler divers systèmes d'exploitation et environnements de périphériques dans des conteneurs à des fins de développement, de test et d'apprentissage."
-  hu: "Az EmulatorJS egy Docker-alapú emulátor alkalmazás, amely konténerekben képes szimulálni különböző operációs rendszereket és eszközkörnyezeteket fejlesztési, tesztelési és tanulási célokra."
-  it: "EmulatorJS è un'applicazione di emulazione basata su Docker che può simulare vari sistemi operativi e ambienti dispositivi all'interno di container per scopi di sviluppo, test e apprendimento."
-  ru: "EmulatorJS - это приложение эмулятора, основанное на Docker, которое может моделировать различные операционные системы и среды устройств в контейнерах для разработки, тестирования и обучения."
-  pl: "EmulatorJS to aplikacja emulacyjna oparta na Dockerze, która może symulować różne systemy operacyjne i środowiska urządzeń w kontenerach w celu rozwoju, testowania i nauki."
-  pt: "EmulatorJS é um aplicativo de emulação baseado em Docker que pode simular vários sistemas operacionais e ambientes de dispositivos dentro de contêineres para fins de desenvolvimento, teste e aprendizado."
-  sv: "EmulatorJS är en Docker-baserad emulatorapplikation som kan simulera olika operativsystem och enhetsmiljöer i containrar för utveckling, testning och lärande."
   uk: "EmulatorJS — емулятор у Docker, який може відтворювати різні операційні системи та середовища пристроїв у контейнерах для розробки, тестування й навчання."
 category: media
 developer: self
@@ -34,7 +22,6 @@ settings:
     default: 3001
     label:
       en: Manage ROMS
-      zh: ROM 管理
       uk: Керування ROM-файлами
     advanced: true
   - name: PORT_4001

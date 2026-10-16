@@ -14,7 +14,8 @@
  * - `container_name` goes (another service that called it by that name finds it by a network alias), so
  *   do `name` and the `x-casaos` blocks;
  * - an image on a moving tag is pinned: to the version tag of the same image, else to its digest;
- * - the texts keep every language, `en_US` becoming `en`; paragraphs about the store's own devices go;
+ * - the texts keep English alone (`en_US` becoming `en`): Hata speaks English and Ukrainian, and the
+ *   store's Ukrainian is a machine's, so this store writes its own; paragraphs about its devices go;
  * - what the compose file asks of the host is explained by what it asks for (devices, paths, rights).
  *
  * An app whose folder is here already is left alone unless --force; one made here by hand (not listed
@@ -56,7 +57,7 @@ const PASSWORDISH = /PASS|SECRET|TOKEN|_KEY$|^KEY$/i;
 
 type Text = Record<string, string>;
 
-/** `{ en_US: …, uk_UA: … }` → `{ en: …, uk: … }`; the first of a language wins */
+/** `{ en_US: …, de_DE: … }` → `{ en: … }`, the Ukrainian written here is added later */
 function text(value: unknown, clean = (s: string) => s): Text | null {
   if (typeof value === "string") return value.trim() ? { en: clean(value) } : null;
   if (!isObject(value)) return null;
@@ -65,8 +66,7 @@ function text(value: unknown, clean = (s: string) => s): Text | null {
   for (const key of keys) {
     const v = value[key];
     const lang = key.split(/[_-]/)[0]!.toLowerCase();
-    // the store's Ukrainian is a machine's; this store writes its own
-    if (typeof v !== "string" || !/^[a-z]{2}$/.test(lang) || lang in out || lang === "uk") continue;
+    if (typeof v !== "string" || lang !== "en" || lang in out) continue;
     const t = clean(v);
     if (t.trim()) out[lang] = t;
   }
@@ -379,6 +379,11 @@ async function convert(dir: string): Promise<Report | null> {
           secretOf.set(value, name);
         }
         env[k] = `\${${name}:?set ${name}}`;
+        continue;
+      }
+      // "user_provided" is LibreChat's word for "each user types the key in the app": no key to make
+      if (value === "user_provided") {
+        env[k] = value;
         continue;
       }
       let desc = labelled(xs, "envs", k, k);

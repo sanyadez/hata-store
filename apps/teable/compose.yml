@@ -1,4 +1,4 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+# Apache-2.0, changed for Hata Store: see NOTICE
 services:
   teable:
     image: teableio/teable:latest@sha256:daae4151e112811f0a59b178a8076393112fbc00ed2b6490dc0d10b696bd4af8

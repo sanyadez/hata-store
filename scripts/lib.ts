@@ -288,10 +288,13 @@ export function checkCompose(id: string, compose: unknown, hata: Obj | null, shi
 
 // --- hata.yml -----------------------------------------------------------------------------------------
 
-/** A text in several languages: a plain string is English */
 /** A line broken inside a paragraph: the page would show the break (a list item may start a line) */
 export const brokenLine = (text: string): boolean => /[^\n]\n(?![\n\-*#>]|\d+\.)/.test(text.trimEnd());
 
+/** The languages Hata speaks: a text in another one would never be shown */
+export const LANGS = ["en", "uk"];
+
+/** A text in Hata's languages: a plain string is English */
 function checkText(value: unknown, what: string, say: (t: string) => void, max = 0): void {
   if (typeof value === "string") {
     if (!value.trim()) say(`${what} is empty`);
@@ -303,6 +306,7 @@ function checkText(value: unknown, what: string, say: (t: string) => void, max =
   if (typeof value.en !== "string" || !value.en.trim()) say(`${what} has no English (en)`);
   for (const [lang, text] of Object.entries(value)) {
     if (!LANG_RE.test(lang)) say(`${what}: "${lang}" is not a language code`);
+    else if (!LANGS.includes(lang)) say(`${what}: Hata does not speak "${lang}" (${LANGS.join(", ")})`);
     if (typeof text !== "string" || !text.trim()) say(`${what}.${lang} is empty`);
     else if (max && text.length > max) say(`${what}.${lang} is longer than ${max} characters`);
     else if (brokenLine(text)) say(`${what}.${lang} breaks a line inside a paragraph: write it as a folded block (>)`);
@@ -421,6 +425,8 @@ export function checkHata(app: AppFiles, hata: unknown, store: Obj): Problem[] {
         seen.add(name);
         if (!SETTING_TYPES.includes(s.type)) say(`${where}: type must be one of ${SETTING_TYPES.join(", ")}`);
         checkText(s.label, `${where}.label`, say, 80);
+        const labels = typeof s.label === "string" ? [s.label] : isObject(s.label) ? Object.values(s.label) : [];
+        if (labels.some((l) => l === name)) say(`${where}.label is the variable's name: say in words what it is`);
         if (s.hint !== undefined) checkText(s.hint, `${where}.hint`, say);
         for (const key of ["required", "advanced"]) if (s[key] !== undefined && typeof s[key] !== "boolean") say(`${where}.${key} is true or false`);
         if (s.default !== undefined) {

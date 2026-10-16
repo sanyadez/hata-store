@@ -1,37 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: FileDrop
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: FileDrop
 tagline:
   en: "FileDrop is a free, open source file sharing service"
-  zh: FileDrop 是一项免费的开放源代码文件共享服务。
-  ar: FileDrop هي خدمة مشاركة ملفات مجانية ومفتوحة المصدر
-  de: FileDrop ist ein kostenloser Open-Source-Dienst zur gemeinsamen Nutzung von Dateien.
-  es: FileDrop es un servicio gratuito de código abierto para compartir archivos.
-  fr: "FileDrop est un service de partage de fichiers, open source et gratuit"
-  hu: "A FileDrop egy ingyenes, nyílt forráskódú fájlmegosztó szolgáltatás."
-  it: FileDrop è un servizio di condivisione di file gratuito e open source.
-  ru: FileDrop - это бесплатный файлообменный сервис с открытым исходным кодом.
-  pl: FileDrop to darmowa usługa udostępniania plików typu open source.
-  pt: O FileDrop é um serviço de partilha de ficheiros gratuito e de código aberto.
-  sv: FileDrop är en gratis fildelningstjänst med öppen källkod.
-  ko: FileDrop은 무료 오픈 소스 파일 공유 서비스입니다.
   uk: FileDrop — безкоштовний сервіс обміну файлами з відкритим кодом
 description:
   en: "FileDrop is a self-hosted file sharing service that allows you to easily share files with family, friends, or colleagues. It's been designed to be easy to use and light on resources."
-  zh: FileDrop 是一种自托管文件共享服务，可让您与家人、朋友或同事轻松共享文件。它的设计简单易用，占用资源少。
-  ar: FileDrop هي خدمة مشاركة ملفات مستضافة ذاتيًا تتيح لك مشاركة الملفات بسهولة مع العائلة أو الأصدقاء أو الزملاء. لقد تم تصميمه ليكون سهل الاستخدام وخفيفًا على الموارد.
-  de: "FileDrop ist ein selbst gehosteter Dateifreigabedienst, mit dem Sie Dateien ganz einfach mit Familie, Freunden oder Kollegen austauschen können. Er ist benutzerfreundlich und ressourcenschonend gestaltet."
-  es: "FileDrop es un servicio de intercambio de archivos autoalojado que te permite compartir archivos fácilmente con familiares, amigos o compañeros de trabajo. Se ha diseñado para que sea fácil de usar y consuma pocos recursos."
-  fr: "FileDrop est un service de partage de fichiers qui vous permet de partager facilement des fichiers avec votre famille, vos amis ou vos collègues. Il a été conçu pour être facile à utiliser et peu gourmand en ressources."
-  hu: "A FileDrop egy saját tárhelyű fájlmegosztó szolgáltatás, amely lehetővé teszi, hogy egyszerűen megossza a fájlokat a családjával, barátaival vagy kollégáival. Úgy terveztük, hogy könnyen használható és kevés erőforrást igényeljen."
-  it: "FileDrop è un servizio di condivisione di file self-hosted che consente di condividere facilmente i file con familiari, amici o colleghi. È stato progettato per essere facile da usare e leggero nelle risorse."
-  ru: "FileDrop - это самодостаточная служба обмена файлами, позволяющая легко обмениваться файлами с семьей, друзьями или коллегами. Он отличается простотой использования и не требует больших затрат ресурсов."
-  pl: "FileDrop to samoobsługowa usługa udostępniania plików, która umożliwia łatwe udostępnianie plików rodzinie, znajomym lub współpracownikom. Został zaprojektowany tak, aby był łatwy w użyciu i nie wymagał dużych zasobów."
-  pt: "O FileDrop é um serviço de partilha de ficheiros auto-hospedado que lhe permite partilhar facilmente ficheiros com a família, amigos ou colegas. Foi concebido para ser fácil de utilizar e com poucos recursos."
-  tr: "FileDrop, dosyaları aileniz, arkadaşlarınız veya iş arkadaşlarınızla kolayca paylaşmanıza olanak tanıyan, kendi kendine barındırılan bir dosya paylaşım hizmetidir. Kullanımı kolay ve kaynakları hafif olacak şekilde tasarlanmıştır."
-  ja: FileDropは、家族や友人、同僚と簡単にファイルを共有できる、セルフホスト型のファイル共有サービスです。使いやすく、軽いリソースで利用できるように設計されています。
-  nl: "FileDrop is een zelf gehoste dienst voor het delen van bestanden waarmee u eenvoudig bestanden kunt delen met familie, vrienden of collega's. Het is ontworpen met het oog op gebruiksvriendelijkheid en een laag verbruik."
-  ko: "FileDrop은 가족, 친구 또는 동료와 파일을 쉽게 공유할 수 있는 자체 호스팅 파일 공유 서비스입니다. 사용하기 쉽고 리소스를 적게 사용하도록 설계되었습니다."
   uk: "FileDrop — сервіс обміну файлами для самостійного розгортання, за допомогою якого можна легко ділитися файлами з родиною, друзями чи колегами. Він простий у користуванні й невибагливий до ресурсів."
 category: productivity
 developer: Noé Favier (noe.favier@outlook.com)

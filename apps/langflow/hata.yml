@@ -1,50 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Langflow
-  it: Langflow
-  nb: Langflow
-  zh: Langflow
-  ja: Langflow
-  ko: Langflow
-  fr: Langflow
-  de: Langflow
-  sv: Langflow
-  el: Langflow
-  hr: Langflow
-  pt: Langflow
-  ru: Langflow
-  tr: Langflow
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Langflow
 tagline:
   en: Open-source UI for building and debugging multi-agent and RAG applications
-  it: Interfaccia open-source per la creazione e il debug di applicazioni multi-agente e RAG
-  nb: Åpen kildekode-grensesnitt for å bygge og feilsøke multi-agent og RAG-applikasjoner
-  zh: 用于构建和调试多智能体和RAG应用的开源UI
-  ja: マルチエージェントおよびRAGアプリケーションの構築とデバッグのためのオープンソースUI
-  ko: 다중 에이전트 및 RAG 애플리케이션을 구축하고 디버깅하기 위한 오픈 소스 UI
-  fr: "Interface open-source pour la création et le débogage d'applications multi-agents et RAG"
-  de: Open-Source-Oberfläche zum Erstellen und Debuggen von Multi-Agenten- und RAG-Anwendungen
-  sv: Open source-gränssnitt för att bygga och felsöka multi-agent och RAG-applikationer
-  el: Διεπαφή ανοιχτού κώδικα για τη δημιουργία και αποσφαλμάτωση εφαρμογών πολλαπλών πρακτόρων και RAG
-  hr: Open-source sučelje za izradu i otklanjanje pogrešaka višeagentskih i RAG aplikacija
-  pt: Interface de código aberto para criar e depurar aplicações multi-agente e RAG
-  ru: Открытый интерфейс для создания и отладки мультиагентных приложений и RAG
-  tr: Çoklu ajan ve RAG uygulamaları oluşturmak ve hata ayıklamak için açık kaynaklı UI
   uk: Інтерфейс з відкритим кодом для створення та налагодження мультиагентних застосунків і RAG
 description:
   en: "Langflow is a powerful, open-source UI designed specifically for building and debugging multi-agent and Retrieval-Augmented Generation (RAG) applications. It provides a visual, drag-and-drop interface that simplifies the process of creating complex AI workflows.\n\nThe system consists of two main components:\n- **Langflow**: The main application providing a visual interface for building AI workflows\n- **PostgreSQL**: A robust database system for storing application data and configurations\n\n**Key Features:**\n- Visual, drag-and-drop interface for building AI workflows\n- Support for multi-agent systems and RAG applications\n- Integrated debugging tools for testing and optimization\n- Persistent storage for workflows and configurations\n- Easy deployment with Docker containers\n\n**Learn More:**\n- [Langflow Official Website](https://www.langflow.org)\n- [Langflow GitHub Repository](https://github.com/langflow-ai/langflow)\n- [Documentation](https://docs.langflow.org)"
-  it: "Langflow è una potente interfaccia utente open-source progettata specificamente per la creazione e il debug di applicazioni multi-agente e di Retrieval-Augmented Generation (RAG). Fornisce un'interfaccia visuale drag-and-drop che semplifica il processo di creazione di flussi di lavoro AI complessi.\n\nIl sistema è composto da due componenti principali:\n- **Langflow**: L'applicazione principale che fornisce un'interfaccia visuale per la creazione di flussi di lavoro AI\n- **PostgreSQL**: Un robusto sistema di database per la memorizzazione di dati e configurazioni dell'applicazione\n\n**Caratteristiche principali:**\n- Interfaccia visuale drag-and-drop per la creazione di flussi di lavoro AI\n- Supporto per sistemi multi-agente e applicazioni RAG\n- Strumenti di debug integrati per test e ottimizzazione\n- Archiviazione persistente per flussi di lavoro e configurazioni\n- Distribuzione facile con container Docker\n\n**Per saperne di più:**\n- [Sito web ufficiale di Langflow](https://www.langflow.org)\n- [Repository GitHub di Langflow](https://github.com/langflow-ai/langflow)\n- [Documentazione](https://docs.langflow.org)"
-  nb: "Langflow er en kraftig, åpen kildekode UI designet spesifikt for å bygge og feilsøke multi-agent og Retrieval-Augmented Generation (RAG) applikasjoner. Det gir et visuelt dra-og-slipp-grensesnitt som forenkler prosessen med å lage komplekse AI-arbeidsflyter.\n\nSystemet består av to hovedkomponenter:\n- **Langflow**: Hovedapplikasjonen som gir et visuelt grensesnitt for å bygge AI-arbeidsflyter\n- **PostgreSQL**: Et robust databasesystem for lagring av applikasjonsdata og konfigurasjoner\n\n**Nøkkelegenskaper:**\n- Visuelt dra-og-slipp-grensesnitt for å bygge AI-arbeidsflyter\n- Støtte for multi-agent systemer og RAG-applikasjoner\n- Integrerte feilsøkingsverktøy for testing og optimalisering\n- Vedvarende lagring for arbeidsflyter og konfigurasjoner\n- Enkel distribusjon med Docker-containere\n\n**Lær mer:**\n- [Langflow offisielt nettsted](https://www.langflow.org)\n- [Langflow GitHub Repository](https://github.com/langflow-ai/langflow)\n- [Dokumentasjon](https://docs.langflow.org)"
-  zh: "Langflow是一个强大的开源UI，专门设计用于构建和调试多智能体和检索增强生成（RAG）应用程序。它提供了一个可视化的拖放界面，简化了创建复杂AI工作流的过程。\n\n该系统由两个主要组件组成：\n- **Langflow**: 主应用程序，提供用于构建AI工作流的可视化界面\n- **PostgreSQL**: 用于存储应用程序数据和配置的强大数据库系统\n\n**主要功能：**\n- 可视化拖放界面，用于构建AI工作流\n- 支持多智能体系统和RAG应用程序\n- 集成调试工具，用于测试和优化\n- 工作流和配置的持久化存储\n- 使用Docker容器轻松部署\n\n**了解更多：**\n- [Langflow官方网站](https://www.langflow.org)\n- [Langflow GitHub仓库](https://github.com/langflow-ai/langflow)\n- [文档](https://docs.langflow.org)"
-  ja: "Langflowは、マルチエージェントおよび検索拡張生成（RAG）アプリケーションの構築とデバッグに特化して設計された、強力なオープンソースUIです。複雑なAIワークフローを作成するプロセスを簡素化する、視覚的なドラッグアンドドロップインターフェースを提供します。\n\nこのシステムは2つの主要コンポーネントで構成されています：\n- **Langflow**: AIワークフローを構築するための視覚的インターフェースを提供するメインアプリケーション\n- **PostgreSQL**: アプリケーションデータと設定を保存するための堅牢なデータベースシステム\n\n**主な機能：**\n- AIワークフロー構築のための視覚的ドラッグアンドドロップインターフェース\n- マルチエージェントシステムとRAGアプリケーションのサポート\n- テストと最適化のための統合デバッグツール\n- ワークフローと設定の永続的ストレージ\n- Dockerコンテナによる簡単なデプロイメント\n\n**詳細情報：**\n- [Langflow公式ウェブサイト](https://www.langflow.org)\n- [Langflow GitHubリポジトリ](https://github.com/langflow-ai/langflow)\n- [ドキュメント](https://docs.langflow.org)"
-  ko: "Langflow는 다중 에이전트 및 검색 증강 생성(RAG) 애플리케이션을 구축하고 디버깅하기 위해 특별히 설계된 강력한 오픈 소스 UI입니다. 복잡한 AI 워크플로우를 만드는 과정을 단순화하는 시각적 드래그 앤 드롭 인터페이스를 제공합니다.\n\n이 시스템은 두 가지 주요 구성 요소로 이루어져 있습니다:\n- **Langflow**: AI 워크플로우를 구축하기 위한 시각적 인터페이스를 제공하는 주요 애플리케이션\n- **PostgreSQL**: 애플리케이션 데이터와 구성을 저장하기 위한 강력한 데이터베이스 시스템\n\n**주요 기능:**\n- AI 워크플로우 구축을 위한 시각적 드래그 앤 드롭 인터페이스\n- 다중 에이전트 시스템 및 RAG 애플리케이션 지원\n- 테스트 및 최적화를 위한 통합 디버깅 도구\n- 워크플로우 및 구성을 위한 영구 저장소\n- Docker 컨테이너를 통한 쉬운 배포\n\n**더 알아보기:**\n- [Langflow 공식 웹사이트](https://www.langflow.org)\n- [Langflow GitHub 저장소](https://github.com/langflow-ai/langflow)\n- [문서](https://docs.langflow.org)"
-  fr: "Langflow est une interface utilisateur open-source puissante, conçue spécifiquement pour créer et déboguer des applications multi-agents et de génération augmentée par récupération (RAG). Elle fournit une interface visuelle glisser-déposer qui simplifie le processus de création de flux de travail d'IA complexes.\n\nLe système se compose de deux composants principaux :\n- **Langflow** : L'application principale fournissant une interface visuelle pour créer des flux de travail d'IA\n- **PostgreSQL** : Un système de base de données robuste pour stocker les données et configurations de l'application\n\n**Fonctionnalités clés :**\n- Interface visuelle glisser-déposer pour créer des flux de travail d'IA\n- Prise en charge des systèmes multi-agents et des applications RAG\n- Outils de débogage intégrés pour les tests et l'optimisation\n- Stockage persistant pour les flux de travail et configurations\n- Déploiement facile avec des conteneurs Docker\n\n**En savoir plus :**\n- [Site officiel de Langflow](https://www.langflow.org)\n- [Dépôt GitHub de Langflow](https://github.com/langflow-ai/langflow)\n- [Documentation](https://docs.langflow.org)"
-  de: "Langflow ist eine leistungsstarke, Open-Source-Benutzeroberfläche, die speziell für die Erstellung und das Debugging von Multi-Agenten- und Retrieval-Augmented-Generation-(RAG)-Anwendungen entwickelt wurde. Sie bietet eine visuelle Drag-and-Drop-Oberfläche, die den Prozess der Erstellung komplexer KI-Workflows vereinfacht.\n\nDas System besteht aus zwei Hauptkomponenten:\n- **Langflow**: Die Hauptanwendung, die eine visuelle Oberfläche zum Erstellen von KI-Workflows bietet\n- **PostgreSQL**: Ein robustes Datenbanksystem zur Speicherung von Anwendungsdaten und Konfigurationen\n\n**Hauptmerkmale:**\n- Visuelle Drag-and-Drop-Oberfläche zum Erstellen von KI-Workflows\n- Unterstützung für Multi-Agenten-Systeme und RAG-Anwendungen\n- Integrierte Debugging-Tools für Tests und Optimierung\n- Persistente Speicherung für Workflows und Konfigurationen\n- Einfache Bereitstellung mit Docker-Containern\n\n**Mehr erfahren:**\n- [Langflow offizielle Website](https://www.langflow.org)\n- [Langflow GitHub-Repository](https://github.com/langflow-ai/langflow)\n- [Dokumentation](https://docs.langflow.org)"
-  sv: "Langflow är ett kraftfullt, öppen källkodsgränssnitt designat specifikt för att bygga och felsöka multi-agent och Retrieval-Augmented Generation (RAG) applikationer. Det ger ett visuellt dra-och-släpp-gränssnitt som förenklar processen att skapa komplexa AI-arbetsflöden.\n\nSystemet består av två huvudkomponenter:\n- **Langflow**: Huvudapplikationen som ger ett visuellt gränssnitt för att bygga AI-arbetsflöden\n- **PostgreSQL**: Ett robust databassystem för lagring av applikationsdata och konfigurationer\n\n**Nyckelfunktioner:**\n- Visuellt dra-och-släpp-gränssnitt för att bygga AI-arbetsflöden\n- Stöd för multi-agent system och RAG-applikationer\n- Integrerade felsökningsverktyg för testning och optimering\n- Beständig lagring för arbetsflöden och konfigurationer\n- Enkel distribution med Docker-containrar\n\n**Läs mer:**\n- [Langflow officiell webbplats](https://www.langflow.org)\n- [Langflow GitHub Repository](https://github.com/langflow-ai/langflow)\n- [Dokumentation](https://docs.langflow.org)"
-  el: "Το Langflow είναι μια ισχυρή, ανοιχτού κώδικα διεπαφή χρήστη που σχεδιάστηκε ειδικά για τη δημιουργία και αποσφαλμάτωση εφαρμογών πολλαπλών πρακτόρων και Αυξημένης Παραγωγής Ανάκτησης (RAG). Παρέχει μια οπτική διεπαφή drag-and-drop που απλοποιεί τη διαδικασία δημιουργίας σύνθετων ροών εργασίας AI.\n\nΤο σύστημα αποτελείται από δύο κύρια στοιχεία:\n- **Langflow**: Η κύρια εφαρμογή που παρέχει μια οπτική διεπαφή για τη δημιουργία ροών εργασίας AI\n- **PostgreSQL**: Ένα ισχυρό σύστημα βάσης δεδομένων για την αποθήκευση δεδομένων και ρυθμίσεων εφαρμογής\n\n**Βασικά Χαρακτηριστικά:**\n- Οπτική διεπαφή drag-and-drop για τη δημιουργία ροών εργασίας AI\n- Υποστήριξη για συστήματα πολλαπλών πρακτόρων και εφαρμογές RAG\n- Ενσωματωμένα εργαλεία αποσφαλμάτωσης για δοκιμή και βελτιστοποίηση\n- Μόνιμη αποθήκευση για ροές εργασίας και ρυθμίσεις\n- Εύκολη ανάπτυξη με περιέκτες Docker\n\n**Μάθετε Περισσότερα:**\n- [Επίσημη ιστοσελίδα Langflow](https://www.langflow.org)\n- [Αποθήκη GitHub Langflow](https://github.com/langflow-ai/langflow)\n- [Τεκμηρίωση](https://docs.langflow.org)"
-  hr: "Langflow je moćno, open-source sučelje dizajnirano posebno za izradu i otklanjanje pogrešaka u višeagentskim aplikacijama i aplikacijama za Poboljšanu Generaciju Dohvaćanjem (RAG). Pruža vizualno sučelje povuci-i-spusti koje pojednostavljuje proces stvaranja složenih AI tijekova rada.\n\nSustav se sastoji od dva glavna dijela:\n- **Langflow**: Glavna aplikacija koja pruža vizualno sučelje za izradu AI tijekova rada\n- **PostgreSQL**: Robustan sustav baze podataka za pohranu podataka aplikacije i konfiguracija\n\n**Ključne značajke:**\n- Vizualno sučelje povuci-i-spusti za izradu AI tijekova rada\n- Podrška za višeagentske sustave i RAG aplikacije\n- Integrirani alati za otklanjanje pogrešaka za testiranje i optimizaciju\n- Trajna pohrana za tijekove rada i konfiguracije\n- Jednostavno implementiranje s Docker kontejnerima\n\n**Saznajte više:**\n- [Službena web stranica Langflowa](https://www.langflow.org)\n- [Langflow GitHub Repozitorij](https://github.com/langflow-ai/langflow)\n- [Dokumentacija](https://docs.langflow.org)"
-  pt: "Langflow é uma poderosa interface de utilizador de código aberto, projetada especificamente para construir e depurar aplicações multi-agente e de Geração Aumentada por Recuperação (RAG). Fornece uma interface visual de arrastar e largar que simplifica o processo de criação de fluxos de trabalho de IA complexos.\n\nO sistema consiste em dois componentes principais:\n- **Langflow**: A aplicação principal que fornece uma interface visual para construir fluxos de trabalho de IA\n- **PostgreSQL**: Um sistema de base de dados robusto para armazenar dados de aplicação e configurações\n\n**Características Principais:**\n- Interface visual de arrastar e largar para construir fluxos de trabalho de IA\n- Suporte para sistemas multi-agente e aplicações RAG\n- Ferramentas de depuração integradas para teste e otimização\n- Armazenamento persistente para fluxos de trabalho e configurações\n- Implementação fácil com contentores Docker\n\n**Saiba Mais:**\n- [Website Oficial do Langflow](https://www.langflow.org)\n- [Repositório GitHub do Langflow](https://github.com/langflow-ai/langflow)\n- [Documentação](https://docs.langflow.org)"
-  ru: "Langflow - это мощный открытый интерфейс, разработанный специально для создания и отладки мультиагентных приложений и приложений с генерацией, усиленной поиском (RAG). Он предоставляет визуальный интерфейс перетаскивания, который упрощает процесс создания сложных рабочих процессов ИИ.\n\nСистема состоит из двух основных компонентов:\n- **Langflow**: Основное приложение, предоставляющее визуальный интерфейс для создания рабочих процессов ИИ\n- **PostgreSQL**: Надежная система баз данных для хранения данных приложения и конфигураций\n\n**Ключевые особенности:**\n- Визуальный интерфейс перетаскивания для создания рабочих процессов ИИ\n- Поддержка мультиагентных систем и RAG-приложений\n- Интегрированные инструменты отладки для тестирования и оптимизации\n- Постоянное хранение для рабочих процессов и конфигураций\n- Простое развертывание с помощью контейнеров Docker\n\n**Узнать больше:**\n- [Официальный сайт Langflow](https://www.langflow.org)\n- [Репозиторий Langflow на GitHub](https://github.com/langflow-ai/langflow)\n- [Документация](https://docs.langflow.org)"
-  tr: "Langflow, çoklu ajan ve Retrieval-Augmented Generation (RAG) uygulamaları oluşturmak ve hata ayıklamak için özel olarak tasarlanmış güçlü, açık kaynaklı bir kullanıcı arayüzüdür. Karmaşık AI iş akışları oluşturma sürecini basitleştiren görsel bir sürükle-bırak arayüzü sağlar.\n\nSistem iki ana bileşenden oluşur:\n- **Langflow**: AI iş akışları oluşturmak için görsel bir arayüz sağlayan ana uygulama\n- **PostgreSQL**: Uygulama verilerini ve yapılandırmalarını depolamak için sağlam bir veritabanı sistemi\n\n**Ana Özellikler:**\n- AI iş akışları oluşturmak için görsel sürükle-bırak arayüzü\n- Çoklu ajan sistemleri ve RAG uygulamaları için destek\n- Test ve optimizasyon için entegre hata ayıklama araçları\n- İş akışları ve yapılandırmalar için kalıcı depolama\n- Docker konteynerları ile kolay dağıtım\n\n**Daha Fazla Bilgi Edinin:**\n- [Langflow Resmi Web Sitesi](https://www.langflow.org)\n- [Langflow GitHub Deposu](https://github.com/langflow-ai/langflow)\n- [Belgeler](https://docs.langflow.org)"
   uk: "Langflow — потужний інтерфейс з відкритим кодом, створений спеціально для побудови та налагодження мультиагентних застосунків і застосунків із генерацією з доповненням пошуком (RAG). Візуальний інтерфейс із перетягуванням спрощує створення складних ШІ-процесів.\n\nСистема складається з двох основних компонентів:\n- **Langflow**: головний застосунок із візуальним інтерфейсом для створення ШІ-процесів\n- **PostgreSQL**: надійна система баз даних для зберігання даних і конфігурацій застосунку\n\n**Основні можливості:**\n- Візуальний інтерфейс із перетягуванням для створення ШІ-процесів\n- Підтримка мультиагентних систем і застосунків RAG\n- Вбудовані інструменти налагодження для тестування та оптимізації\n- Постійне зберігання процесів і конфігурацій\n- Просте розгортання в контейнерах Docker\n\n**Докладніше:**\n- [Офіційний сайт Langflow](https://www.langflow.org)\n- [Репозиторій Langflow на GitHub](https://github.com/langflow-ai/langflow)\n- [Документація](https://docs.langflow.org)"
 category: ai
 developer: langflowai
@@ -70,86 +30,34 @@ settings:
     default: admin
     required: true
     label:
-      en: Administrator's user name
-      uk: Ім'я адміністратора
+      en: "Administrator's user name"
+      uk: "Ім'я адміністратора"
   - name: LANGFLOW_SUPERUSER_PASSWORD
     type: password
     required: true
     label:
-      en: Administrator's password
+      en: "Administrator's password"
       uk: Пароль адміністратора
   - name: LANGFLOW_CONFIG_DIR
     type: text
     default: /app/langflow
     label:
       en: Directory for Langflow Configuration Files
-      it: Directory per i File di Configurazione di Langflow
-      nb: Mappe for Langflow konfigurasjonsfiler
-      zh: Langflow配置文件目录
-      ja: Langflow設定ファイルディレクトリ
-      ko: Langflow 구성 파일 디렉토리
-      fr: Répertoire pour les fichiers de configuration Langflow
-      de: Verzeichnis für Langflow-Konfigurationsdateien
-      sv: Katalog för Langflow konfigurationsfiler
-      el: Κατάλογος για Αρχεία Ρυθμίσεων Langflow
-      hr: Direktorij za Langflow Konfiguracijske Datoteke
-      pt: Diretório para Arquivos de Configuração Langflow
-      ru: Каталог для файлов конфигурации Langflow
-      tr: Langflow Yapılandırma Dosyaları Dizini
       uk: Тека файлів конфігурації Langflow
   - name: POSTGRES_USER
     type: text
     default: langflow
     label:
       en: PostgreSQL Username
-      it: Nome Utente PostgreSQL
-      nb: PostgreSQL Brukernavn
-      zh: PostgreSQL用户名
-      ja: PostgreSQLユーザー名
-      ko: PostgreSQL 사용자 이름
-      fr: "Nom d'utilisateur PostgreSQL"
-      de: PostgreSQL-Benutzername
-      sv: PostgreSQL Användarnamn
-      el: Όνομα Χρήστη PostgreSQL
-      hr: PostgreSQL Korisničko Ime
-      pt: Nome de Utilizador PostgreSQL
-      ru: Имя пользователя PostgreSQL
-      tr: PostgreSQL Kullanıcı Adı
       uk: Користувач PostgreSQL
   - name: POSTGRES_PASSWORD
     type: secret
     label:
       en: PostgreSQL Password
-      it: Password PostgreSQL
-      nb: PostgreSQL Passord
-      zh: PostgreSQL密码
-      ja: PostgreSQLパスワード
-      ko: PostgreSQL 비밀번호
-      fr: Mot de passe PostgreSQL
-      de: PostgreSQL-Passwort
-      sv: PostgreSQL Lösenord
-      el: Κωδικός Πρόσβασης PostgreSQL
-      hr: PostgreSQL Zaporka
-      pt: Palavra-passe PostgreSQL
-      ru: Пароль PostgreSQL
-      tr: PostgreSQL Şifresi
       uk: Пароль PostgreSQL
   - name: POSTGRES_DB
     type: text
     default: langflow
     label:
       en: PostgreSQL Database Name
-      it: Nome Database PostgreSQL
-      nb: PostgreSQL Databasenavn
-      zh: PostgreSQL数据库名称
-      ja: PostgreSQLデータベース名
-      ko: PostgreSQL 데이터베이스 이름
-      fr: Nom de la base de données PostgreSQL
-      de: PostgreSQL-Datenbankname
-      sv: PostgreSQL Databasnamn
-      el: Όνομα Βάσης Δεδομένων PostgreSQL
-      hr: PostgreSQL Ime Baze Podataka
-      pt: Nome da Base de Dados PostgreSQL
-      ru: Имя базы данных PostgreSQL
-      tr: PostgreSQL Veritabanı Adı
       uk: Назва бази даних PostgreSQL

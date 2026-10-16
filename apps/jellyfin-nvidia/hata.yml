@@ -1,33 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Jellyfin(Nvidia GPU)
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Jellyfin(Nvidia GPU)
 tagline:
   en: The personal Media System
-  zh: 个人媒体系统
-  ar: يضعك تحت سيطرتك على وسائطك.
-  de: Stellt Sie in den Mittelpunkt Ihrer Medien.
-  es: Le pone en control de sus medios.
-  fr: Vous met en contrôle de vos médias.
-  hu: Ön a média sajátos kezelésében van.
-  it: Mette in tuo controllo i tuoi media.
-  ru: Помогает вам контролировать свою медиаинформацию.
-  pl: Umieszcza Cię w centrum swojej multimedialnej zawartości.
-  pt: Coloca você no controle de seus meios de comunicação.
-  sv: Lägger dig i centrum av dina medier.
   uk: Особиста медіасистема
 description:
   en: "Imagine having all your movies, TV shows, and music at your fingertips, ready on any device. Jellyfin transforms your media collection into a personalized entertainment hub, surpassing traditional photo albums. Your media is accessible anywhere and beautifully organized.\n\nJellyfin is free and open-source, offering high-quality streaming, detailed metadata, and personalized recommendations. Multiple users can have their own media libraries."
-  zh: "想象一下，所有的电影、电视节目和音乐触手可及，可以在任何设备上播放。Jellyfin 将您的媒体收藏转变为个性化的娱乐中心，超越传统的照片相册。您的媒体随时随地可访问，并且经过精美的组织。\n\nJellyfin 是免费的开源软件，提供高质量的流媒体播放、详细的元数据和个性化推荐。多个用户可以拥有各自的媒体库。"
-  ar: يتيح لك Jellyfin جمع وإدارة وتدفق وسائطك. قم بتشغيل خادم Jellyfin على نظامك واحصل على النظام الرائد للترفيه المجاني ، مع الأجهزة الصوتية والمزايا المتضمنة.
-  de: "Jellyfin ermöglicht es Ihnen, Ihre Medien zu sammeln, zu verwalten und zu streamen. Führen Sie den Jellyfin-Server auf Ihrem System aus und erhalten Sie Zugriff auf das führende kostenlose Softwareunterhaltungssystem, inklusive Klingelton und Dekoration."
-  es: "Jellyfin le permite recopilar, administrar y transmitir sus medios. Ejecute el servidor Jellyfin en su sistema y obtenga acceso al sistema de entretenimiento de software libre líder, con timbres y adornos incluidos."
-  fr: "Jellyfin vous permet de collecter, de gérer et de diffuser vos médias. Exécutez le serveur Jellyfin sur votre système et accédez au système de divertissement logiciel libre de pointe, avec des sonneries et des décorations incluses."
-  hu: "A Jellyfin lehetővé teszi, hogy gyűjtsön, kezeljen és adja tovább a médiaanyagait. Futtassa a Jellyfin szerverét a rendszerén, és hozzáférhet a vezető ingyenes szoftveres szórakoztató rendszerhez, csengőhangokkal és díszítésekkel."
-  it: "Jellyfin consente di raccogliere, gestire e trasmettere i tuoi media. Esegui il server Jellyfin sul tuo sistema e accedi al sistema di intrattenimento software libero leader, con suoni e decorazioni incluse."
-  ru: "Jellyfin позволяет собирать, управлять и транслировать свою медиаинформацию. Запустите сервер Jellyfin на своей системе и получите доступ к лидирующей системе развлечений с открытым исходным кодом, включая звонки и украшения."
-  pl: "Jellyfin pozwala zbierać, zarządzać i przesyłać swoją multimedialną zawartość. Uruchom serwer Jellyfin na swoim systemie i uzyskaj dostęp do liderującego systemu rozrywki z otwartym oprogramowaniem, w tym dzwonków i ozdób."
-  pt: "O Jellyfin permite que você colete, gerencie e transmita seus meios de comunicação. Execute o servidor Jellyfin em seu sistema e obtenha acesso ao sistema de entretenimento de software livre líder, com toques e decorações incluídos."
-  sv: "Jellyfin gör det möjligt att samla in, hantera och strömma dina medier. Kör Jellyfin-servern på ditt system och få tillgång till ledande underhållningssystem med fri mjukvara, med klockor och dekorationer inkluderade."
   uk: "Уявіть, що всі ваші фільми, серіали й музика завжди під рукою на будь-якому пристрої. Jellyfin перетворює вашу медіаколекцію на персональний центр розваг, значно кращий за звичайні фотоальбоми. Ваші медіа доступні звідусіль і гарно впорядковані.\n\nJellyfin безкоштовний і з відкритим кодом: якісне потокове відтворення, докладні метадані та персональні рекомендації. Кілька користувачів можуть мати власні медіабібліотеки."
 category: media
 developer: Jellyfin
@@ -49,7 +26,6 @@ settings:
     default: 8921
     label:
       en: WebUI HTTPS Port
-      zh: WebUI HTTPS端口
       uk: Порт вебінтерфейсу (HTTPS)
     advanced: true
   - name: PORT_7359
@@ -57,7 +33,6 @@ settings:
     default: 7359
     label:
       en: Jellyfin auto-discovery Port
-      zh: Jellyfin自动发现端口
       uk: Порт автовиявлення Jellyfin
     advanced: true
   - name: PORT_1900
@@ -65,7 +40,6 @@ settings:
     default: 1901
     label:
       en: Jellyfin DLNA Port
-      zh: Jellyfin DLNA端口
       uk: Порт DLNA Jellyfin
     advanced: true
   - name: MEDIA_DIR
@@ -73,7 +47,6 @@ settings:
     default: "${DATA_ROOT}/Media"
     label:
       en: Jellyfin Media directory
-      zh: Jellyfin媒体目录
       uk: Тека медіа Jellyfin
     hint:
       en: Inside the app it is /Media

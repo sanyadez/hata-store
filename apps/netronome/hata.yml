@@ -1,14 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Netronome
-  zh: Netronome
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Netronome
 tagline:
   en: "Monitor, analyze, and alert on network performance."
-  zh: 监控、分析网络性能并及时告警。
   uk: "Стежте за продуктивністю мережі, аналізуйте її та отримуйте сповіщення."
 description:
   en: "Netronome is a complete network performance monitoring solution with speed tests, continuous packet-loss monitoring, distributed server agents, automated alerts, visualizations, and historical tracking."
-  zh: Netronome 是一套完整的网络性能监控方案，支持测速、持续丢包监控、 分布式服务器代理、自动告警、可视化和历史数据追踪。
   uk: "Netronome — повноцінне рішення для моніторингу продуктивності мережі: тести швидкості, постійне стеження за втратою пакетів, розподілені серверні агенти, автоматичні сповіщення, візуалізації та історія вимірювань."
 category: network
 developer: autobrr

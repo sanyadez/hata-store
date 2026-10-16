@@ -1,4 +1,4 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+# Apache-2.0, changed for Hata Store: see NOTICE
 services:
   petio:
     image: ghcr.io/petio-team/petio@sha256:1c5a9276a844f4284601cbe332905864950545ebdeaad74bacb9097ea4f4b333

@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: ddns-go
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: ddns-go
 tagline:
   en: Simple and easy to use DDNS
-  zh: 简单好用的DDNS
   uk: Простий і зручний DDNS
 description:
   en: "A simple and easy-to-use DDNS tool. Automatically updates domain name resolution to your public IP (supports Alibaba Cloud, Tencent Cloud, Dnspod, Cloudflare, Callback, Huawei Cloud, Baidu Cloud, Porkbun, GoDaddy, and Google Domain)."
-  zh: 简单好用的 DDNS 工具。自动更新域名解析到公网IP(支持阿里云、腾讯云、Dnspod、Cloudflare、Callback、华为云、百度云、Porkbun、GoDaddy、Google Domain)。
   uk: "Простий і зручний інструмент DDNS. Автоматично оновлює DNS-запис домену на вашу публічну IP-адресу (підтримує Alibaba Cloud, Tencent Cloud, Dnspod, Cloudflare, Callback, Huawei Cloud, Baidu Cloud, Porkbun, GoDaddy і Google Domain)."
 category: network
 developer: jeessy2

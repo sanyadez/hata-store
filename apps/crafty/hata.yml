@@ -1,29 +1,13 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Crafty
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Crafty
 tagline:
   en: Take control of your Minecraft servers.
-  es: Toma el control de tus servidores de Minecraft.
-  zh: 掌控你的Minecraft服务器。
   uk: Візьміть під контроль свої сервери Minecraft.
 description:
   en: "Crafty is an open source Minecraft control panel built using Tornado and AdminLTE, featuring server scheduling, a interactive console and the ability to run almost any type of Minecraft server"
-  es: "Crafty es un panel de control de Minecraft de código abierto creado con Tornado y AdminLTE, que incluye programación de servidores, una consola interactiva y la capacidad de ejecutar casi cualquier tipo de servidor de Minecraft."
-  zh: Crafty是一个使用Tornado和AdminLTE构建的开源Minecraft控制面板，具有服务器调度、交互式控制台和运行几乎任何类型的Minecraft服务器的功能。
   uk: "Crafty — панель керування серверами Minecraft з відкритим кодом, створена на Tornado та AdminLTE. Вона вміє запускати завдання за розкладом, має інтерактивну консоль і здатна керувати майже будь-яким типом сервера Minecraft."
 notes:
   en: "Default Account | Username | Password | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  ar: "الحساب الافتراضي\n\n| اسم المستخدم | كلمة المرور | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  de: "Standardkonto | Benutzername | Passwort | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  es: "Cuenta predeterminada | Nombre de usuario | Contraseña | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  fr: "Compte par défaut | Nom d'utilisateur | Mot de passe | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  hu: "Alapértelmezett fiók | Felhasználónév | Jelszó | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  it: "Account predefinito | Nome utente | Password | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  pl: "Konto domyślne | Nazwa użytkownika | Hasło | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  pt: "Conta padrão | Nome de usuário | Senha | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  ru: "Учетная запись по умолчанию | Имя пользователя | Пароль | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  sv: "Standardkonto | Användarnamn | Lösenord | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
-  zh: "默认账号 | 用户名 | 密码 | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
   uk: "Обліковий запис за замовчуванням | Ім’я користувача | Пароль | |----------|----------| | `admin`    | `app/config/default-creds.txt` |"
 category: media
 developer: Crafty Team
@@ -62,6 +46,5 @@ settings:
     default: 19132
     label:
       en: Minecraft Bedrock listening Port (UDP)
-      zh: Minecraft Bedrock监听端口 (UDP)
       uk: Порт Minecraft Bedrock (UDP)
     advanced: true

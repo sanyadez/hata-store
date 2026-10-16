@@ -1,33 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Overseerr
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Overseerr
 tagline:
   en: Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
-  zh: Overseerr 是一个请求管理和媒体发现工具，专为与您现有的 Plex 生态系统配合使用而构建。
-  ar: Overseerr هو أداة إدارة الطلبات واكتشاف الوسائط المبنية للعمل مع نظام Plex الحالي الخاص بك.
-  de: "Overseerr ist ein Anforderungsverwaltungs- und Medienentdeckungstool, das mit Ihrem bestehenden Plex-Ökosystem…"
-  es: Overseerr es una herramienta de gestión de solicitudes y descubrimiento de medios construida para funcionar con su…
-  fr: Overseerr est un outil de gestion des demandes et de découverte de médias conçu pour fonctionner avec votre…
-  hu: "Az Overseerr egy kérelemkezelő és médiakereső eszköz, amelyet a meglévő Plex ökoszisztémáddal együtt lehet használni."
-  it: Overseerr è uno strumento di gestione delle richieste e scoperta dei media creato per funzionare con il tuo…
-  ru: "Overseerr - это инструмент управления запросами и обнаружения медиа, разработанный для работы с вашей существующей…"
-  pl: "Overseerr to narzędzie do zarządzania żądaniami i odkrywania multimediów, zaprojektowane do pracy w Twoim istniejącym…"
-  pt: O Overseerr é uma ferramenta de gerenciamento de solicitações e descoberta de mídia construída para funcionar com seu…
-  sv: Overseerr är ett verktyg för hantering av begäranden och upptäckt av medier som är utformat för att fungera med ditt…
   uk: "Overseerr — інструмент керування запитами та пошуку медіа, створений для роботи з вашою екосистемою Plex."
 description:
   en: "Overseerr is a free and open source software application for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Plex!"
-  zh: Overseerr 是一个免费开源的软件应用程序，用于管理媒体库的请求。它与您现有的服务集成，如 Sonarr、Radarr 和 Plex！
-  ar: Overseerr هو تطبيق برمجي مجاني ومفتوح المصدر لإدارة الطلبات لمكتبة الوسائط الخاصة بك. يدمج مع خدماتك الحالية ، مثل Sonarr و Radarr و Plex!
-  de: "Overseerr ist eine kostenlose und Open-Source-Softwareanwendung zur Verwaltung von Anfragen für Ihre Medienbibliothek. Es integriert sich in Ihre vorhandenen Dienste wie Sonarr, Radarr und Plex!"
-  es: "Overseerr es una aplicación de software gratuita y de código abierto para gestionar solicitudes para tu biblioteca de medios. ¡Se integra con tus servicios existentes, como Sonarr, Radarr y Plex!"
-  fr: "Overseerr est une application logicielle gratuite et open source pour la gestion des demandes de votre bibliothèque multimédia. Il s'intègre à vos services existants, tels que Sonarr, Radarr et Plex !"
-  hu: "Az Overseerr egy ingyenes és nyílt forráskódú szoftveralkalmazás a média könyvtáradban található kérések kezelésére. Integrálódik a meglévő szolgáltatásaiddal, mint például a Sonarr, Radarr és Plex!"
-  it: "Overseerr è un'applicazione software gratuita e open source per la gestione delle richieste della tua libreria multimediale. Si integra con i tuoi servizi esistenti, come Sonarr, Radarr e Plex!"
-  ru: "Overseerr - это бесплатное и открытое программное приложение для управления запросами в вашей медиатеке. Оно интегрируется с вашими существующими сервисами, такими как Sonarr, Radarr и Plex!"
-  pl: "Overseerr to darmowy i otwarty program do zarządzania żądaniami w Twojej bibliotece multimedialnej. Współpracuje z istniejącymi usługami, takimi jak Sonarr, Radarr i Plex!"
-  pt: "O Overseerr é um aplicativo de software gratuito e de código aberto para gerenciar solicitações em sua biblioteca de mídia. Ele se integra aos seus serviços existentes, como Sonarr, Radarr e Plex!"
-  sv: "Overseerr är en gratis och öppen källkodsprogramvara för att hantera förfrågningar för din mediebibliotek. Den integrerar med dina befintliga tjänster, som Sonarr, Radarr och Plex!"
   uk: "Overseerr — безкоштовний застосунок із відкритим кодом для керування запитами до вашої медіабібліотеки. Він інтегрується з вашими сервісами, як-от Sonarr, Radarr і Plex!"
 category: media
 developer: LinuxServer.io

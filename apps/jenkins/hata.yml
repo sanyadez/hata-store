@@ -1,31 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Jenkins CI/CD
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Jenkins CI/CD
 tagline:
   en: Jenkins Continuous Integration and Delivery server.
-  zh: Jenkins 持续集成和交付服务器。
-  de: Jenkins Server für kontinuierliche Integration und Bereitstellung.
-  es: Servidor de Integración Continua y Entrega de Jenkins.
-  fr: "Serveur d'Intégration Continue et de Livraison Jenkins."
-  hu: Jenkins folyamatos integrációs és szállítási szerver.
-  it: Server Jenkins per Integrazione Continua e Distribuzione.
-  ru: Сервер непрерывной интеграции и доставки Jenkins.
-  pl: Serwer ciągłej integracji i dostarczania Jenkins.
-  pt: Servidor de Integração Contínua e Entrega Jenkins.
-  sv: Jenkins server för kontinuerlig integration och leverans.
   uk: Сервер безперервної інтеграції та доставки Jenkins.
 description:
   en: A server for creating pipelines for Jenkins continuous integration and delivery.
-  zh: 用于创建 Jenkins 持续集成和交付管道的服务器。
-  de: Ein Server zum Erstellen von Pipelines für Jenkins kontinuierliche Integration und Bereitstellung.
-  es: Un servidor para crear canalizaciones para la integración y entrega continua de Jenkins.
-  fr: "Un serveur pour créer des pipelines pour l'intégration et la livraison continues de Jenkins."
-  hu: Szerver Jenkins folyamatos integrációs és szállítási folyamatok létrehozásához.
-  it: "Un server per creare pipeline per l'integrazione continua e la distribuzione di Jenkins."
-  ru: Сервер для создания конвейеров непрерывной интеграции и доставки Jenkins.
-  pl: Serwer do tworzenia potoków dla ciągłej integracji i dostarczania Jenkins.
-  pt: Um servidor para criar pipelines para integração e entrega contínua do Jenkins.
-  sv: En server för att skapa pipelines för Jenkins kontinuerliga integration och leverans.
   uk: Сервер для створення конвеєрів безперервної інтеграції та доставки в Jenkins.
 category: development
 developer: bepp-boop

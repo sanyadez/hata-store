@@ -1,33 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: AdGuard Home
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: AdGuard Home
 tagline:
   en: Network-wide ad and tracker blocking
-  zh: 在网络侧阻止广告和跟踪
-  ar: خادم DNS لمنع الإعلانات والمتتبعين على نطاق الشبكة
-  de: Netzwerkweites Werbe- und Tracker-Blockierungs-DNS-Server
-  es: Servidor DNS de bloqueo de anuncios y rastreadores a nivel de red
-  fr: Serveur DNS de blocage de publicités et de traqueurs sur tout le réseau
-  hu: Hálózati szintű hirdetések és követők blokkoló DNS szerver
-  it: Server DNS di blocco annunci e tracciatori a livello di rete
-  ru: DNS-сервер блокировки рекламы и трекеров на уровне сети
-  pl: Serwer DNS blokujący reklamy i śledzenie na poziomie sieci
-  pt: Servidor DNS de bloqueio de anúncios e rastreadores em nível de rede
-  sv: Nätverksnivå DNS-server för att blockera annonser och spårare
   uk: Блокування реклами й трекерів у всій мережі
 description:
   en: "Difference from Traditional Ad Blockers. Unlike traditional ad-blocking plugins that work only on individual devices, AdGuard Home offers a network-wide solution. By setting it up, you can block ads and trackers across all your home devices without needing to install any additional software on each device. This means comprehensive protection with minimal effort.\n\nHow AdGuard Home Works and How to Use It. AdGuard Home functions as a DNS server that reroutes tracking domains to a \"black hole,\" effectively preventing your devices from connecting to these servers. This blocks ads and trackers not only on your computer but also on your smartphone and smart home devices. To start using AdGuard Home, deploy it on your device, then change the DNS address assigned by DHCP on your router to the IP address of your AdGuard Home server."
-  zh: "与传统广告拦截器的不同之处。不同于仅在单个设备上工作的传统广告拦截插件，AdGuard Home 提供了一种网络范围的解决方案。通过设置它，您可以在所有家庭设备上屏蔽广告和跟踪器，而无需在每个设备上安装额外的软件。这意味着以最少的努力获得全面的保护。\n\nAdGuard Home 的工作原理及使用方法。AdGuard Home 作为一个 DNS 服务器，通过将跟踪域重定向到“黑洞”来有效地防止您的设备连接到这些服务器。这不仅能在您的计算机上屏蔽广告和跟踪器，还能在您的智能手机和智能家居设备上实现。要开始使用 AdGuard Home，请将其部署在您的设备上，然后将路由器通过 DHCP 分配的 DNS 地址更改为 AdGuard Home 服务器的 IP 地址。"
-  ar: AdGuard Home هو برنامج شبكة واسعة لمنع الإعلانات والتتبع. بعد إعداده، سيغطي جميع أجهزة منزلك، ولن تحتاج إلى أي برنامج جانبي للعميل. تعرف على المزيد من مستودعنا الرسمي على Github.
-  de: "AdGuard Home ist eine Netzwerksoftware zum Blockieren von Werbung und Tracking. Nachdem Sie es eingerichtet haben, deckt es alle Ihre Heimgeräte ab und Sie benötigen dafür keine Client-Software. Erfahren Sie mehr in unserem offiziellen Github-Repository."
-  es: "AdGuard Home es un software de red para bloquear anuncios y rastreo. Después de configurarlo, cubrirá todos sus dispositivos en el hogar y no necesitará ningún software cliente para ello. Obtenga más información en nuestro repositorio oficial de Github."
-  fr: "AdGuard Home est un logiciel réseau pour bloquer les publicités et le suivi. Une fois configuré, il couvrira tous vos appareils domestiques et vous n'aurez pas besoin de logiciel client pour cela. En savoir plus sur notre référentiel officiel Github."
-  hu: "Az AdGuard Home egy hálózati szintű szoftver a hirdetések és a követők blokkolására. Miután beállította, minden otthoni eszközét le fogja fedni, és erre nem lesz szüksége kliensoldali szoftverre sem. További információkért látogasson el hivatalos Github-tárolójába."
-  it: "AdGuard Home è un software a livello di rete per bloccare annunci e tracciamento. Dopo averlo configurato, coprirà tutti i tuoi dispositivi domestici e non avrai bisogno di alcun software client per questo. Ulteriori informazioni sul nostro repository ufficiale Github."
-  ru: "AdGuard Home - это программное обеспечение для блокировки рекламы и отслеживания на уровне всей сети. После настройки оно будет покрывать все ваши домашние устройства, и вам не понадобится какое-либо клиентское программное обеспечение для этого. Узнайте больше на нашем официальном репозитории Github."
-  pl: "AdGuard Home to oprogramowanie sieciowe do blokowania reklam i śledzenia. Po skonfigurowaniu obejmie wszystkie urządzenia domowe, a nie będzie potrzebny żaden oprogramowanie klienta. Dowiedz się więcej na naszym oficjalnym repozytorium Github."
-  pt: "O AdGuard Home é um software de rede para bloquear anúncios e rastreamento. Depois de configurá-lo, ele cobrirá todos os seus dispositivos domésticos e você não precisará de nenhum software cliente para isso. Saiba mais em nosso repositório oficial do Github."
-  sv: AdGuard Home är ett nätverksprogram för att blockera annonser och spårning. Efter att du har konfigurerat det kommer det att täcka alla dina hemmamaskiner och du behöver inte någon klientprogramvara för det. Läs mer på vår officiella Github-repository.
   uk: "Чим відрізняється від звичайних блокувальників реклами. Звичайні розширення для блокування реклами працюють лише на окремому пристрої, а AdGuard Home блокує рекламу й трекери в усій мережі. Налаштувавши його, ви захистите всі домашні пристрої, не встановлюючи нічого на кожен із них. Повний захист — майже без зусиль.\n\nЯк працює AdGuard Home і як ним користуватися. AdGuard Home працює як DNS-сервер: домени, що стежать за користувачем, він спрямовує в «чорну діру», і ваші пристрої просто не можуть з’єднатися з цими серверами. Так блокується реклама й трекери не лише на комп’ютері, а й на смартфоні та пристроях розумного дому. Щоб почати, запустіть AdGuard Home на своєму пристрої, а потім у налаштуваннях роутера замініть DNS-адресу, яку видає DHCP, на IP-адресу сервера з AdGuard Home."
 category: network
 developer: AdguardTeam

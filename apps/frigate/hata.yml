@@ -1,41 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Frigate
-  zh: Frigate
-  de: Frigate
-  es: Frigate
-  fr: Frigate
-  it: Frigate
-  ja: Frigate
-  ko: Frigate
-  pt: Frigate
-  ru: Frigate
-  ar: Frigate
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Frigate
 tagline:
   en: Monitor your security cameras with locally processed AI
-  zh: 使用本地处理的 AI 监控您的安防摄像头
-  de: Überwachen Sie Ihre Sicherheitskameras mit lokal verarbeiteter KI
-  es: Supervisa tus cámaras de seguridad con IA procesada localmente
-  fr: Surveillez vos caméras de sécurité avec une IA traitée localement
-  it: Monitora le tue telecamere di sicurezza con IA elaborata localmente
-  ja: ローカル処理 AI でセキュリティカメラを監視
-  ko: 로컬에서 처리되는 AI로 보안 카메라를 모니터링하세요
-  pt: Monitore suas câmeras de segurança com IA processada localmente
-  ru: "Наблюдайте за камерами безопасности с помощью ИИ, обрабатываемого локально"
-  ar: راقب كاميرات الأمان باستخدام ذكاء اصطناعي تتم معالجته محليًا
   uk: "Стежте за камерами відеоспостереження за допомогою ШІ, що працює локально"
 description:
   en: "Frigate is an open-source network video recorder (NVR) with real-time AI object detection. It provides local, private camera recording, event review, snapshots, and live viewing through a web interface."
-  zh: Frigate 是一款开源网络录像机（NVR），支持实时 AI 目标检测。它提供本地私有的摄像头录像、事件查看、快照和网页实时预览功能。
-  de: "Frigate ist ein quelloffener Netzwerk-Videorekorder (NVR) mit Echtzeit-KI-Objekterkennung für lokale, private Kameraaufnahmen und Live-Ansichten."
-  es: "Frigate es un grabador de vídeo en red (NVR) de código abierto con detección de objetos mediante IA en tiempo real, grabación local y visualización en directo."
-  fr: "Frigate est un enregistreur vidéo réseau (NVR) open source avec détection d’objets par IA en temps réel, enregistrement local et visionnage en direct."
-  it: "Frigate è un videoregistratore di rete (NVR) open source con rilevamento degli oggetti tramite IA in tempo reale, registrazione locale e visualizzazione live."
-  ja: Frigate はリアルタイム AI 物体検出に対応したオープンソースのネットワークビデオレコーダー（NVR）です。ローカル録画とライブ表示を提供します。
-  ko: "Frigate는 실시간 AI 객체 감지를 지원하는 오픈 소스 네트워크 비디오 레코더(NVR)로, 로컬 녹화와 라이브 보기를 제공합니다."
-  pt: "Frigate é um gravador de vídeo em rede (NVR) de código aberto com detecção de objetos por IA em tempo real, gravação local e visualização ao vivo."
-  ru: "Frigate — это сетевой видеорегистратор (NVR) с открытым исходным кодом и обнаружением объектов с помощью ИИ в реальном времени, локальной записью и просмотром вживую."
-  ar: Frigate هو مسجل فيديو شبكي (NVR) مفتوح المصدر مع اكتشاف الكائنات بالذكاء الاصطناعي في الوقت الفعلي وتسجيل محلي وعرض مباشر.
   uk: "Frigate — відеореєстратор (NVR) із відкритим кодом і розпізнаванням об’єктів ШІ в реальному часі. Він забезпечує локальний приватний запис з камер, перегляд подій, знімки та перегляд наживо через вебінтерфейс."
 category: home
 developer: Frigate

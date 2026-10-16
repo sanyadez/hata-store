@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: JDownloader2
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: JDownloader2
 tagline:
   en: Free & open-source download management tool
-  zh: 免费且开源的下载管理工具
   uk: Безкоштовний завантажувач із відкритим кодом
 description:
   en: "JDownloader is a free, open-source download management tool with a huge community that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwith limitations, auto-extract archives and much more. It's an easy-to-extend framework that can save hours of your valuable time every day!"
-  zh: JDownloader是一个免费的、开源的下载管理工具，拥有庞大的社区，使下载变得简单而快速。用户可以启动、停止或暂停下载，设置带宽限制，自动解压缩存档等等。它是一个易于扩展的框架，可以每天节省您宝贵时间的数小时！
   uk: "JDownloader — безкоштовний завантажувач із відкритим кодом і величезною спільнотою, який робить завантаження таким простим і швидким, яким воно має бути. Можна запускати, зупиняти чи ставити завантаження на паузу, обмежувати швидкість, автоматично розпаковувати архіви й багато іншого. Це фреймворк, який легко розширювати і який щодня економить години вашого часу!"
 category: media
 developer: jdownloader
@@ -34,7 +31,6 @@ settings:
       uk: Порт 5900
     hint:
       en: "Port to access the application's GUI via the VNC protocol. Mapping to the host is optional if access through the VNC protocol is not wanted. For a container not using the default bridge network, the port can be changed with the VNC_LISTENING_PORT environment variable."
-      zh: 通过VNC协议访问应用程序GUI的端口。如果不想通过VNC协议访问，则将其映射到主机是可选的。对于未使用默认桥接网络的容器，可以使用VNC_LISTENING_PORT环境变量更改端口。
       uk: "Порт для доступу до графічного інтерфейсу застосунку через протокол VNC. Прив'язувати його до хоста необов'язково, якщо доступ через VNC не потрібен. Якщо контейнер не використовує типову мережу bridge, порт можна змінити змінною середовища VNC_LISTENING_PORT."
     advanced: true
   - name: PORT_3129
@@ -45,7 +41,6 @@ settings:
       uk: Порт 3129
     hint:
       en: "Port used by MyJDownloader mobile applications and browser extensions to establish a direct connect to the JDownloader Docker container instance. Port needs to be exposed only if MyJDownloader is enabled and configured in Direct Connection mode. NOTE: Since this port is being reported to the MyJDownloader online service, the port mapped on the host side must be the same (i.e. 3129)."
-      zh: MyJDownloader移动应用程序和浏览器扩展使用的端口，用于与JDownloader Docker容器实例建立直接连接。仅在启用并配置了直接连接模式的情况下，才需要公开端口。注意：由于此端口正在报告给MyJDownloader在线服务，因此在主机端映射的端口必须相同（即3129）。
       uk: "Порт, яким мобільні застосунки та розширення браузера MyJDownloader встановлюють пряме з'єднання з контейнером JDownloader. Відкривати його потрібно лише тоді, коли MyJDownloader увімкнено й налаштовано в режимі прямого з'єднання. Увага: цей порт повідомляється онлайн-сервісу MyJDownloader, тому порт на боці хоста має бути таким самим (тобто 3129)."
     advanced: true
   - name: DOWNLOADS_DIR
@@ -53,7 +48,6 @@ settings:
     default: "${DATA_ROOT}/Downloads"
     label:
       en: Downloads
-      zh: 下载
       uk: Завантаження
     hint:
       en: Inside the app it is /output
@@ -61,20 +55,18 @@ settings:
   - name: MYJDOWNLOADER_EMAIL
     type: text
     label:
-      en: MYJDOWNLOADER_EMAIL
-      uk: MYJDOWNLOADER_EMAIL
+      en: MyJDownloader email
+      uk: Пошта MyJDownloader
+    hint:
+      en: "Optional: to manage it from my.jdownloader.org"
+      uk: "Необов'язково: щоб керувати ним з my.jdownloader.org"
   - name: MYJDOWNLOADER_PASSWORD
     type: password
     label:
-      en: MYJDOWNLOADER_PASSWORD
-      uk: MYJDOWNLOADER_PASSWORD
+      en: MyJDownloader password
+      uk: Пароль MyJDownloader
   - name: MYJDOWNLOADER_DEVICE_NAME
     type: text
     label:
-      en: MYJDOWNLOADER_DEVICE_NAME
-      uk: MYJDOWNLOADER_DEVICE_NAME
-  - name: JDOWNLOADER_HEADLESS
-    type: text
-    label:
-      en: JDOWNLOADER_HEADLESS
-      uk: JDOWNLOADER_HEADLESS
+      en: Device name in MyJDownloader
+      uk: Назва пристрою в MyJDownloader

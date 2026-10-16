@@ -1,4 +1,4 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+# Apache-2.0, changed for Hata Store: see NOTICE
 services:
   librechat-api:
     ports:
@@ -11,10 +11,10 @@ services:
     extra_hosts:
       - host.docker.internal:host-gateway
     environment:
-      ASSISTANTS_API_KEY: "${ASSISTANTS_API_KEY:?set ASSISTANTS_API_KEY}"
-      OPENAI_API_KEY: "${OPENAI_API_KEY:?set OPENAI_API_KEY}"
-      GOOGLE_KEY: "${GOOGLE_KEY:?set GOOGLE_KEY}"
-      ANTHROPIC_API_KEY: "${ANTHROPIC_API_KEY:?set ANTHROPIC_API_KEY}"
+      ASSISTANTS_API_KEY: user_provided
+      OPENAI_API_KEY: user_provided
+      GOOGLE_KEY: user_provided
+      ANTHROPIC_API_KEY: user_provided
       HOST: "${HOST:-0.0.0.0}"
       PORT: "3080"
       DOMAIN_CLIENT: http://0.0.0.0:3080
@@ -61,7 +61,7 @@ services:
       ALLOW_REGISTRATION: "true"
       ALLOW_SOCIAL_LOGIN: "false"
       ALLOW_SOCIAL_REGISTRATION: "false"
-      ALLOW_PASSWORD_RESET: "${ALLOW_PASSWORD_RESET:?set ALLOW_PASSWORD_RESET}"
+      ALLOW_PASSWORD_RESET: "${ALLOW_PASSWORD_RESET:-false}"
       ALLOW_UNVERIFIED_EMAIL_LOGIN: "true"
       SESSION_EXPIRY: 1000 * 60 * 15
       REFRESH_TOKEN_EXPIRY: (1000 * 60 * 60 * 24) * 7

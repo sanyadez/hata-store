@@ -1,13 +1,10 @@
-# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
-title:
-  en: Homebridge
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: Homebridge
 tagline:
   en: HomeKit support for the impatient.
-  zh: HomeKit 为急性子提供支持
   uk: Підтримка HomeKit для нетерплячих.
 description:
   en: "Homebridge is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of \"smart home\" devices."
-  zh: Homebridge是一个轻量级的NodeJS服务器，您可以在家庭网络中运行它，模拟iOS HomeKit API。它支持插件，这是由社区贡献的模块，提供了从HomeKit到各种由“智能家居”设备制造商提供的第三方API的基本桥梁。
   uk: "Homebridge — легкий сервер на NodeJS, який можна запустити у домашній мережі: він емулює API iOS HomeKit. Він підтримує плагіни — модулі від спільноти, що забезпечують простий міст між HomeKit і різними сторонніми API виробників пристроїв «розумного дому»."
 category: home
 developer: Homebridge
