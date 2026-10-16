@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   portainer:
-    image: portainer/portainer-ce:2.31.3
+    image: portainer/portainer-ce:2.45.2
     deploy:
       resources:
         reservations:
