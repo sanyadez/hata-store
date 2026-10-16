@@ -84,7 +84,7 @@ services:
         reservations:
           memory: 512M
   redis:
-    image: redis:7.4.8-alpine
+    image: redis:7.4.11-alpine
     restart: unless-stopped
     networks:
       - default
