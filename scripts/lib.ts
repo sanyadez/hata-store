@@ -586,7 +586,8 @@ export async function hubTag(ref: ImageRef): Promise<{ digest: string; platforms
 
 /** The Linux architectures an image is published for (`amd64`, `arm64`, `arm/v7`, …) */
 export async function platformsOf(image: string): Promise<string[]> {
-  const ref = parseImage(image);
+  // lscr.io serves the images of ghcr.io and runs out of patience soon
+  const ref = parseImage(image.replace(/^lscr\.io\//, "ghcr.io/"));
   // Docker Hub by its web API; an image pinned by digest too, while its tag still points there
   if (ref.registry === "docker.io" && (ref.tag || !ref.digest)) {
     const tag = await hubTag(ref);
