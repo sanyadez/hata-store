@@ -29,7 +29,7 @@ services:
     depends_on:
       - ztnet-postgres
   ztnet-postgres:
-    image: postgres:15.2-alpine
+    image: postgres:15.19-alpine
     restart: unless-stopped
     environment:
       POSTGRES_USER: "${POSTGRES_USER_2:-ztnet}"
