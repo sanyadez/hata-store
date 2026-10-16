@@ -7,7 +7,7 @@ services:
       resources:
         reservations:
           memory: 256M
-    image: triliumnext/trilium:v0.103.0
+    image: triliumnext/trilium:v0.106.0
     ports:
       - "${WEB_PORT:-8088}:8080"
     restart: unless-stopped
