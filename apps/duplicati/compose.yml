@@ -7,7 +7,7 @@ services:
       TZ: "${TZ:-UTC}"
       SETTINGS_ENCRYPTION_KEY: "${SETTINGS_ENCRYPTION_KEY:?set SETTINGS_ENCRYPTION_KEY}"
       DUPLICATI__WEBSERVICE_PASSWORD: "${WEB_PASSWORD:?set WEB_PASSWORD}"
-    image: linuxserver/duplicati:2.1.0
+    image: linuxserver/duplicati:2.4.0
     deploy:
       resources:
         reservations:
