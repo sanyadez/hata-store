@@ -5,7 +5,7 @@ services:
       resources:
         reservations:
           memory: 1024M
-    image: deluan/navidrome:0.61.2
+    image: deluan/navidrome:0.64.2
     restart: unless-stopped
     ports:
       - "${WEB_PORT:-4533}:4533"
