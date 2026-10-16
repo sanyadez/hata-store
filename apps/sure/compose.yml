@@ -89,7 +89,7 @@ services:
         reservations:
           memory: 1024M
   sure-redis:
-    image: redis:8.2.1-alpine3.22
+    image: redis:8.4.7-alpine3.22
     restart: unless-stopped
     volumes:
       - type: bind
