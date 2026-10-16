@@ -10,7 +10,7 @@ services:
       LOG_EVENTS: true
     command:
       []
-    image: ghcr.io/getalby/hub:v1.22.2
+    image: ghcr.io/getalby/hub:v1.24.3
     deploy:
       resources:
         reservations:
