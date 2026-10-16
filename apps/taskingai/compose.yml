@@ -9,7 +9,7 @@ services:
       - taskingai_network
     restart: unless-stopped
   backend-inference:
-    image: taskingai/taskingai-inference:v0.2.14
+    image: taskingai/taskingai-inference:v0.3.6
     environment:
       AES_ENCRYPTION_KEY: "${DB_PASSWORD:?set DB_PASSWORD}"
       ICON_URL_PREFIX: http://nginx:3080
