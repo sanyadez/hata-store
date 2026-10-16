@@ -5,7 +5,7 @@ services:
       resources:
         reservations:
           memory: 256M
-    image: dbeaver/cloudbeaver:26.0.5
+    image: dbeaver/cloudbeaver:26.2.2
     ports:
       - "${WEB_PORT:-8978}:8978"
     restart: unless-stopped
