@@ -14,7 +14,7 @@ services:
         aliases:
           - clumoove-frontend
   api-backend:
-    image: ghcr.io/xxroxxerxx/clumoove-api:v0.18.0@sha256:d9c34a1c6db8c7ffbeb942cffae849796a9c4eab267d8af2a7d1eb75c932b9bc
+    image: ghcr.io/xxroxxerxx/clumoove-api:v0.19.0@sha256:d5a30c51c5ac6684e6afc399ca5ab845338bc06ab14cc3873bdbd52e2d3478cf
     restart: unless-stopped
     environment:
       DATABASE_URL: "postgres://clumoove:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@postgres-db:5432/cloud_migration_db?sslmode=disable"
