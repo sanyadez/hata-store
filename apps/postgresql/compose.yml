@@ -8,7 +8,7 @@ services:
       POSTGRES_USER: "${POSTGRES_USER:-admin}"
       POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}"
       POSTGRES_DB: "${POSTGRES_DB:-hata}"
-    image: postgres:17.4
+    image: postgres:17.11
     deploy:
       resources:
         reservations:
