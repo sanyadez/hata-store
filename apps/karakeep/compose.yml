@@ -40,7 +40,7 @@ services:
       - "--disable-blink-features=AutomationControlled"
       - "--window-size=1440,900"
   karakeep-meilisearch:
-    image: getmeili/meilisearch:v1.41.0
+    image: getmeili/meilisearch:v1.55.0
     deploy:
       resources:
         reservations:
