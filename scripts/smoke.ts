@@ -114,16 +114,18 @@ async function smoke(id: string): Promise<boolean> {
   writeFileSync(join(appDir, ".env"), Object.entries(env).map(([k, v]) => `${k}=${v}\n`).join(""));
 
   const project = `smoke-${id}`;
-  // as Hata does it: the devices this machine has not are left out by an override
+  // as Hata does it: the devices this machine has not are left out by an override, read with the
+  // variables filled in (a device the person chooses is a setting)
   const gone: string[] = [];
   const kept: string[] = [];
   for (const [name, def] of Object.entries(services(file))) {
     if (!Array.isArray(def.devices)) continue;
+    const devices = def.devices.map((d: unknown) => (typeof d === "string" ? fill(d, env) : isObject(d) ? { ...d, source: fill(String(d.source ?? ""), env) } : d));
     const host = (d: unknown) => (typeof d === "string" ? d.split(":")[0]! : isObject(d) ? String(d.source ?? "") : "");
-    const missing = def.devices.filter((d: unknown) => host(d).startsWith("/") && !existsSync(host(d)));
+    const missing = devices.filter((d: unknown) => host(d).startsWith("/") && !existsSync(host(d)));
     if (!missing.length) continue;
     gone.push(...missing.map(host));
-    kept.push(`  ${JSON.stringify(name)}:\n    devices: !override ${JSON.stringify(def.devices.filter((d: unknown) => !missing.includes(d)))}`);
+    kept.push(`  ${JSON.stringify(name)}:\n    devices: !override ${JSON.stringify(devices.filter((d: unknown) => !missing.includes(d)))}`);
   }
   if (kept.length) {
     writeFileSync(join(appDir, "compose.override.yml"), `services:\n${kept.join("\n")}\n`);
