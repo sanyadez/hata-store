@@ -105,7 +105,7 @@ services:
         reservations:
           memory: 64M
   dozzle:
-    image: amir20/dozzle:v10.0.7
+    image: amir20/dozzle:v10.10.0
     restart: unless-stopped
     networks:
       - default
