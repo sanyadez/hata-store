@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   frigate:
-    image: ghcr.io/blakeblackshear/frigate:0.17.2
+    image: ghcr.io/blakeblackshear/frigate:0.18.2
     deploy:
       resources:
         reservations:
