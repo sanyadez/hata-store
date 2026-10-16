@@ -27,7 +27,7 @@ services:
       - taskingai_network
     restart: unless-stopped
   backend-plugin:
-    image: taskingai/taskingai-plugin:v0.2.10
+    image: taskingai/taskingai-plugin:v0.2.13
     environment:
       AES_ENCRYPTION_KEY: "${DB_PASSWORD:?set DB_PASSWORD}"
       ICON_URL_PREFIX: http://nginx:3080
