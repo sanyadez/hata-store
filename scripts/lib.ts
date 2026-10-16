@@ -528,10 +528,27 @@ export const MANIFEST_TYPES = [
 ].join(", ");
 
 /** A GET against a registry, with the anonymous token it asks for */
+/** A request again after a dropped connection or a busy answer: registries do both now and then */
+async function fetchAgain(url: string, init: RequestInit = {}): Promise<Response> {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const res = await fetch(url, { ...init, signal: AbortSignal.timeout(20_000) });
+      if ((res.status === 429 || res.status >= 500) && attempt < 4) {
+        await Bun.sleep(attempt * 3000);
+        continue;
+      }
+      return res;
+    } catch (e) {
+      if (attempt >= 4) throw e;
+      await Bun.sleep(attempt * 3000);
+    }
+  }
+}
+
 export async function registryGet(ref: ImageRef, path: string, accept: string, method = "GET"): Promise<Response> {
   const host = ref.registry === "docker.io" ? "registry-1.docker.io" : ref.registry;
   const url = `https://${host}/v2/${ref.repo}/${path}`;
-  let res = await fetch(url, { method, headers: { accept }, signal: AbortSignal.timeout(20_000) });
+  let res = await fetchAgain(url, { method, headers: { accept } });
   if (res.status === 401) {
     const challenge = res.headers.get("www-authenticate") ?? "";
     const param = (k: string) => new RegExp(`${k}="([^"]*)"`).exec(challenge)?.[1];
@@ -541,10 +558,10 @@ export async function registryGet(ref: ImageRef, path: string, accept: string, m
     const service = param("service");
     if (service) q.set("service", service);
     q.set("scope", param("scope") ?? `repository:${ref.repo}:pull`);
-    const t = await fetch(`${realm}?${q}`, { signal: AbortSignal.timeout(20_000) });
+    const t = await fetchAgain(`${realm}?${q}`);
     if (!t.ok) return t;
     const body = (await t.json()) as { token?: string; access_token?: string };
-    res = await fetch(url, { method, headers: { accept, authorization: `Bearer ${body.token ?? body.access_token}` }, signal: AbortSignal.timeout(20_000) });
+    res = await fetchAgain(url, { method, headers: { accept, authorization: `Bearer ${body.token ?? body.access_token}` } });
   }
   return res;
 }
@@ -557,7 +574,7 @@ const platformName = (p: Obj) => (p.variant && !(p.architecture === "arm64" && p
  * (the registry answers 429 after a hundred manifests): its digest and platforms. null — not there.
  */
 export async function hubTag(ref: ImageRef): Promise<{ digest: string; platforms: string[] } | null> {
-  const res = await fetch(`https://hub.docker.com/v2/repositories/${ref.repo}/tags/${encodeURIComponent(ref.tag || "latest")}`, { signal: AbortSignal.timeout(20_000) });
+  const res = await fetchAgain(`https://hub.docker.com/v2/repositories/${ref.repo}/tags/${encodeURIComponent(ref.tag || "latest")}`);
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`Docker Hub answered ${res.status} for ${ref.repo}:${ref.tag}`);
   const tag = (await res.json()) as Obj;
