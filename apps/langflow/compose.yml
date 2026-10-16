@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   langflow:
-    image: langflowai/langflow:1.9.3
+    image: langflowai/langflow:1.12.6
     user: 0:0
     ports:
       - "${WEB_PORT:-17860}:7860"
@@ -12,6 +12,9 @@ services:
     environment:
       LANGFLOW_DATABASE_URL: "postgresql://langflow:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@langflow-postgres:5432/langflow"
       LANGFLOW_CONFIG_DIR: "${LANGFLOW_CONFIG_DIR:-/app/langflow}"
+      LANGFLOW_AUTO_LOGIN: "false"
+      LANGFLOW_SUPERUSER: "${LANGFLOW_SUPERUSER:-admin}"
+      LANGFLOW_SUPERUSER_PASSWORD: "${LANGFLOW_SUPERUSER_PASSWORD:?set LANGFLOW_SUPERUSER_PASSWORD}"
     volumes:
       - "${APP_DATA:-.}/backend:/app/langflow"
     restart: unless-stopped
