@@ -5,7 +5,7 @@ services:
       resources:
         reservations:
           memory: 512M
-    image: ghcr.io/esphome/esphome:2026.5.1
+    image: ghcr.io/esphome/esphome:2026.9.1
     restart: always
     ports:
       - "${WEB_PORT:-6052}:6052"
