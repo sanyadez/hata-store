@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   ddns-go:
-    image: jeessy/ddns-go:v6.17.1
+    image: jeessy/ddns-go:v6.17.7
     deploy:
       resources:
         reservations:
