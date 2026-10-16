@@ -10,6 +10,9 @@ categories:
   monitoring: { en: Monitoring, uk: Моніторинг }
   network: { en: Network, uk: Мережа }
   productivity: { en: Productivity, uk: Продуктивність }
+  ai: { en: AI, uk: Штучний інтелект }
+  finance: { en: Finance, uk: Фінанси }
+  social: { en: Social, uk: Спілкування }
   development: { en: Development, uk: Розробка }
   utilities: { en: Utilities, uk: Утиліти }
 

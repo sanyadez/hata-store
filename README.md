@@ -7,7 +7,9 @@ without Hata, and a `hata.yml` next to it that tells Hata what the compose file 
 and description in several languages, its icon, which page to open, and what to ask the person before
 installing.
 
-The files of this repository are under the MIT licence. The apps themselves belong to their authors and
+The files of this repository are under the MIT licence, except the apps that came from the
+[CasaOS AppStore](https://github.com/IceWhaleTech/CasaOS-AppStore): those are under the Apache License 2.0
+and changed for this store — see [NOTICE](NOTICE). The apps themselves belong to their authors and
 come under their own licences; names and logos are their owners' trademarks. Most icons are taken from
 [dashboard-icons](https://github.com/homarr-labs/dashboard-icons) (Apache-2.0).
 
@@ -44,7 +46,9 @@ It must start in an empty folder with `docker compose up` alone. So:
   of the app's own files.
 - **Images are published ones, pinned to a version**: `nginx:1.27.3`, or a digest. `latest`, `stable`,
   `release`, `nightly` and the like are refused: the store's update is the change of the tag.
-- **`restart: unless-stopped`** (or `always`) on every service, or the app stays down after a reboot.
+- **`restart: unless-stopped`** (or `always`) on every service, or the app stays down after a reboot. A
+  service that only prepares something and ends has `restart: "no"`, and another one waits for it with
+  `condition: service_completed_successfully`.
 - **No `container_name`** (an app could not be installed twice), **no `env_file`** (the `.env` is
   Hata's; name the variables in `environment`), **no `build`**, **no `x-…` keys** (they go into
   `hata.yml`), and no `name:` other than the folder's.
@@ -70,7 +74,7 @@ address changes (a domain is set up, the port is changed), Hata writes the new `
 
 ```yaml
 title: Jellyfin                      # up to 40 characters
-tagline:                             # one line, up to 90
+tagline:                             # one line, up to 120
   en: Your films, series and music, streamed to any screen
   uk: Ваші фільми, серіали й музика на будь-якому екрані
 description: { en: …, uk: … }        # markdown

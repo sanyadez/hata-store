@@ -246,7 +246,9 @@ export function checkCompose(id: string, compose: unknown, hata: Obj | null, shi
     }
     if (def.container_name !== undefined) say(`service ${name} sets container_name; names come from the project, so an app can be installed twice`);
     if (def.env_file !== undefined) say(`service ${name} reads env_file; name the variables in environment instead (.env is Hata's)`);
-    if (!["unless-stopped", "always", "on-failure"].includes(def.restart)) say(`service ${name} needs restart: unless-stopped (or always), or it stays down after a reboot`);
+    // a service that only prepares something and ends is waited for by another, and is not restarted
+    const oneShot = Object.values(services(compose)).some((other) => isObject(other.depends_on) && isObject(other.depends_on[name]) && other.depends_on[name].condition === "service_completed_successfully");
+    if (!["unless-stopped", "always", "on-failure"].includes(def.restart) && !(oneShot && def.restart === "no")) say(`service ${name} needs restart: unless-stopped (or always), or it stays down after a reboot`);
   }
 
   const settings: Obj[] = Array.isArray(hata?.settings) ? hata!.settings.filter(isObject) : [];
@@ -360,7 +362,7 @@ export function checkHata(app: AppFiles, hata: unknown, store: Obj): Problem[] {
   for (const key of Object.keys(hata)) if (!HATA_KEYS.includes(key)) say(`unknown key "${key}"`);
 
   checkText(hata.title, "title", say, 40);
-  checkText(hata.tagline, "tagline", say, 90);
+  checkText(hata.tagline, "tagline", say, 120);
   checkText(hata.description, "description", say);
   if (hata.notes !== undefined) checkText(hata.notes, "notes", say);
   const categories = isObject(store.categories) ? Object.keys(store.categories) : [];
@@ -418,7 +420,7 @@ export function checkHata(app: AppFiles, hata: unknown, store: Obj): Problem[] {
         if (seen.has(name)) say(`${where} is listed twice`);
         seen.add(name);
         if (!SETTING_TYPES.includes(s.type)) say(`${where}: type must be one of ${SETTING_TYPES.join(", ")}`);
-        checkText(s.label, `${where}.label`, say, 60);
+        checkText(s.label, `${where}.label`, say, 80);
         if (s.hint !== undefined) checkText(s.hint, `${where}.hint`, say);
         for (const key of ["required", "advanced"]) if (s[key] !== undefined && typeof s[key] !== "boolean") say(`${where}.${key} is true or false`);
         if (s.default !== undefined) {
@@ -517,7 +519,7 @@ export function checkStore(store: unknown, apps: string[]): Problem[] {
 
 // --- Registries ---------------------------------------------------------------------------------------
 
-const MANIFEST_TYPES = [
+export const MANIFEST_TYPES = [
   "application/vnd.oci.image.index.v1+json",
   "application/vnd.docker.distribution.manifest.list.v2+json",
   "application/vnd.oci.image.manifest.v1+json",
@@ -525,10 +527,10 @@ const MANIFEST_TYPES = [
 ].join(", ");
 
 /** A GET against a registry, with the anonymous token it asks for */
-async function registryGet(ref: ImageRef, path: string, accept: string): Promise<Response> {
+export async function registryGet(ref: ImageRef, path: string, accept: string, method = "GET"): Promise<Response> {
   const host = ref.registry === "docker.io" ? "registry-1.docker.io" : ref.registry;
   const url = `https://${host}/v2/${ref.repo}/${path}`;
-  let res = await fetch(url, { headers: { accept }, signal: AbortSignal.timeout(20_000) });
+  let res = await fetch(url, { method, headers: { accept }, signal: AbortSignal.timeout(20_000) });
   if (res.status === 401) {
     const challenge = res.headers.get("www-authenticate") ?? "";
     const param = (k: string) => new RegExp(`${k}="([^"]*)"`).exec(challenge)?.[1];
@@ -541,7 +543,7 @@ async function registryGet(ref: ImageRef, path: string, accept: string): Promise
     const t = await fetch(`${realm}?${q}`, { signal: AbortSignal.timeout(20_000) });
     if (!t.ok) return t;
     const body = (await t.json()) as { token?: string; access_token?: string };
-    res = await fetch(url, { headers: { accept, authorization: `Bearer ${body.token ?? body.access_token}` }, signal: AbortSignal.timeout(20_000) });
+    res = await fetch(url, { method, headers: { accept, authorization: `Bearer ${body.token ?? body.access_token}` }, signal: AbortSignal.timeout(20_000) });
   }
   return res;
 }
@@ -549,9 +551,30 @@ async function registryGet(ref: ImageRef, path: string, accept: string): Promise
 /** `arm64/v8` is plain arm64: the variant is the only one there is */
 const platformName = (p: Obj) => (p.variant && !(p.architecture === "arm64" && p.variant === "v8") ? `${p.architecture}/${p.variant}` : String(p.architecture));
 
+/**
+ * A tag of Docker Hub by its own web API, which does not count against the pulls an address may make
+ * (the registry answers 429 after a hundred manifests): its digest and platforms. null — not there.
+ */
+export async function hubTag(ref: ImageRef): Promise<{ digest: string; platforms: string[] } | null> {
+  const res = await fetch(`https://hub.docker.com/v2/repositories/${ref.repo}/tags/${encodeURIComponent(ref.tag || "latest")}`, { signal: AbortSignal.timeout(20_000) });
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`Docker Hub answered ${res.status} for ${ref.repo}:${ref.tag}`);
+  const tag = (await res.json()) as Obj;
+  const platforms = (Array.isArray(tag.images) ? tag.images : []).filter((i: Obj) => i.os === "linux" && i.architecture !== "unknown").map(platformName);
+  // an image of one platform has no list: its digest is that of its one image
+  const digest = String(tag.digest || (Array.isArray(tag.images) && tag.images.length === 1 ? tag.images[0].digest : "") || "");
+  return { digest, platforms: [...new Set<string>(platforms)].sort() };
+}
+
 /** The Linux architectures an image is published for (`amd64`, `arm64`, `arm/v7`, …) */
 export async function platformsOf(image: string): Promise<string[]> {
   const ref = parseImage(image);
+  // Docker Hub by its web API; an image pinned by digest too, while its tag still points there
+  if (ref.registry === "docker.io" && (ref.tag || !ref.digest)) {
+    const tag = await hubTag(ref);
+    if (!tag && !ref.digest) throw new Error(`${image}: no such tag on Docker Hub`);
+    if (tag && tag.platforms.length && (!ref.digest || tag.digest === ref.digest)) return tag.platforms;
+  }
   const res = await registryGet(ref, `manifests/${ref.digest || ref.tag || "latest"}`, MANIFEST_TYPES);
   if (!res.ok) throw new Error(`${image}: the registry answered ${res.status}`);
   const manifest = (await res.json()) as Obj;

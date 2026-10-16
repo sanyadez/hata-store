@@ -59,6 +59,12 @@ async function smoke(id: string): Promise<boolean> {
   const source = join(ROOT, "apps", id);
   const hata = Bun.YAML.parse(readFileSync(join(source, "hata.yml"), "utf8")) as Obj;
   const file = Bun.YAML.parse(readFileSync(join(source, "compose.yml"), "utf8")) as Obj;
+  // an app for an NVIDIA card cannot start where there is none: said, and not counted as a failure
+  const gpu = Object.values(services(file)).some((d) => d.runtime === "nvidia" || JSON.stringify(d.deploy ?? {}).includes('"nvidia"'));
+  if (gpu && !existsSync("/dev/nvidiactl")) {
+    console.log(`== ${id}: needs an NVIDIA card, not started here`);
+    return true;
+  }
   const base = join("/var/tmp/hata-smoke", id);
   rmSync(base, { recursive: true, force: true });
   const dataRoot = join(base, "data");
@@ -123,9 +129,14 @@ async function smoke(id: string): Promise<boolean> {
     console.log(ok ? `   ${url} answered ${answer} after ${Math.round((Date.now() - started) / 1000)} s` : `   ${url} did not answer in ${WAIT_MS / 60_000} min`);
   }
   // a container that keeps restarting is a failure even when the page answers
-  const ps = compose(appDir, project, "ps", "-a", "--format", "{{.Service}} {{.State}} {{.Status}}").stdout.toString().trim();
+  // a container that keeps restarting, or ended with an error, is a failure even when the page answers;
+  // one that did its work and ended (exit 0) is not
+  const ps = compose(appDir, project, "ps", "-a", "--format", "{{.Service}} {{.State}} {{.ExitCode}} {{.Status}}").stdout.toString().trim();
   console.log(ps.replace(/^/gm, "   "));
-  if (/restarting|exited/i.test(ps)) ok = false;
+  for (const line of ps.split("\n")) {
+    const [, state, code] = line.split(" ");
+    if (state === "restarting" || (state === "exited" && code !== "0") || state === "dead") ok = false;
+  }
   if (!ok) console.log(compose(appDir, project, "logs", "--tail", "30").stdout.toString());
 
   if (!keep) {

@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+    inputs:
+      apps:
+        description: "Apps to start: names separated by spaces, or all"
+        default: ""
 
 permissions:
   contents: write
@@ -11,6 +16,8 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+    outputs:
+      apps: ${{ steps.changed.outputs.apps }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,21 +31,59 @@ jobs:
       - name: Apps
         run: bun scripts/check.ts --index index.json
 
-      - name: Start the apps that changed
+      - uses: actions/upload-artifact@v4
+        with:
+          name: index
+          path: index.json
+
+      - name: The apps that changed
+        id: changed
         env:
           BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+          ASKED: ${{ github.event.inputs.apps }}
         run: |
-          if git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+          if [ -n "$ASKED" ]; then
+            if [ "$ASKED" = all ]; then changed=$(ls apps); else changed=$ASKED; fi
+          elif git cat-file -e "$BASE^{commit}" 2>/dev/null; then
             changed=$(git diff --name-only "$BASE" HEAD -- apps | cut -d/ -f2 | sort -u)
           else
             changed=$(ls apps)
           fi
-          apps=""
-          for a in $changed; do [ -d "apps/$a" ] && apps="$apps $a"; done
-          if [ -n "$apps" ]; then sudo "$(which bun)" scripts/smoke.ts $apps; else echo "no app changed"; fi
+          list=""
+          for a in $changed; do [ -d "apps/$a" ] && list="$list $a"; done
+          echo "apps=$(printf '%s\n' $list | jq -R -s -c 'split("\n") | map(select(length > 0))')" >> "$GITHUB_OUTPUT"
+
+  # every app that changed is started as Hata installs it, each on a runner of its own
+  smoke:
+    needs: check
+    if: needs.check.outputs.apps != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        app: ${{ fromJSON(needs.check.outputs.apps) }}
+    steps:
+      - name: Room for large images
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL && df -h /
+
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Start ${{ matrix.app }}
+        run: sudo "$(which bun)" scripts/smoke.ts ${{ matrix.app }}
+
+  publish:
+    needs: check
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: index
 
       - name: Publish the index
-        if: github.event_name == 'push'
         run: |
           mkdir out && mv index.json out/ && cd out
           git init -q -b index
