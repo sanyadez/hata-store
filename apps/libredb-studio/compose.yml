@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   libredb-studio:
-    image: libredb/libredb-studio:0.18.2
+    image: libredb/libredb-studio:0.18.3
     restart: unless-stopped
     ports:
       - "${WEB_PORT:-3016}:3000"
