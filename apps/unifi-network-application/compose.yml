@@ -29,7 +29,7 @@ services:
       - unifi-bridge
     privileged: false
   unifi-db:
-    image: docker.io/mongo:3.6
+    image: docker.io/mongo:3.7
     configs:
       - source: init-mongo.js
         target: /docker-entrypoint-initdb.d/init-mongo.js
