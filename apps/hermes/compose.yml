@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   hermes:
-    image: nousresearch/hermes-agent:v2026.6.5
+    image: nousresearch/hermes-agent:v2026.9.24
     deploy:
       resources:
         reservations:
@@ -19,4 +19,5 @@ services:
         target: /opt/data
     environment:
       HERMES_DASHBOARD: "${HERMES_DASHBOARD:-1}"
-      HERMES_DASHBOARD_INSECURE: "${HERMES_DASHBOARD_INSECURE:-1}"
+      HERMES_DASHBOARD_BASIC_AUTH_USERNAME: "${HERMES_DASHBOARD_BASIC_AUTH_USERNAME:-admin}"
+      HERMES_DASHBOARD_BASIC_AUTH_PASSWORD: "${HERMES_DASHBOARD_BASIC_AUTH_PASSWORD:?set HERMES_DASHBOARD_BASIC_AUTH_PASSWORD}"

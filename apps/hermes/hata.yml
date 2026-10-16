@@ -91,22 +91,16 @@ settings:
       ru: Включает веб-панель Hermes
       tr: Hermes web panelini etkinleştirir
       uk: Увімкнути вебпанель Hermes
-  - name: HERMES_DASHBOARD_INSECURE
+  - name: HERMES_DASHBOARD_BASIC_AUTH_USERNAME
     type: text
-    default: "1"
+    default: admin
+    required: true
     label:
-      en: Allows dashboard access from non-loopback hosts
-      it: "Consente l'accesso alla dashboard da host non loopback"
-      nb: Tillater dashbordtilgang fra ikke-loopback-verter
-      zh: 允许从非 loopback 主机访问仪表盘
-      ja: loopback 以外のホストからのダッシュボードアクセスを許可します
-      ko: non-loopback 호스트에서 대시보드에 접근할 수 있게 합니다
-      fr: "Autorise l'acces au tableau de bord depuis des hotes non loopback"
-      de: Erlaubt den Dashboard-Zugriff von Nicht-Loopback-Hosts
-      sv: Tillater dashboardatkomst fran vardar som inte ar loopback
-      el: Επιτρέπει πρόσβαση στο dashboard από hosts εκτός loopback
-      hr: Omogucuje pristup nadzornoj ploci s hostova koji nisu loopback
-      pt: Permite o acesso ao painel a partir de hosts nao loopback
-      ru: "Разрешает доступ к панели управления с хостов, отличных от loopback"
-      tr: Panel erisimine loopback disi ana makinelerden izin verir
-      uk: Дозволити доступ до панелі з не-loopback-адрес
+      en: Dashboard user name
+      uk: Ім'я користувача панелі
+  - name: HERMES_DASHBOARD_BASIC_AUTH_PASSWORD
+    type: password
+    required: true
+    label:
+      en: Dashboard password
+      uk: Пароль панелі
