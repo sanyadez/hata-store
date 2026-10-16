@@ -3,20 +3,20 @@ tagline:
   en: Files, calendars and contacts of your own, on every device
   uk: Власні файли, календарі й контакти на всіх пристроях
 description:
-  en: |
+  en: >
     A cloud of your own: files synced between computers and phones, shared by links, edited in the
     browser; calendars and contacts that phones sync with; and hundreds of apps on top — notes,
     tasks, photos, video calls.
-  uk: |
+  uk: >
     Власна хмара: файли, синхронізовані між комп'ютерами й телефонами, спільні за посиланнями,
     редаговані в браузері; календарі й контакти, з якими синхронізуються телефони; і сотні
     застосунків поверх — нотатки, завдання, фото, відеодзвінки.
 notes:
-  en: |
+  en: >
     The first start takes a few minutes: Nextcloud sets itself up with the administrator given here.
     It answers only at the addresses it knows — the app's address in Hata and those listed in
     "Other addresses" (both read at the first start only; later they are changed in config.php).
-  uk: |
+  uk: >
     Перший запуск триває кілька хвилин: Nextcloud налаштовується сам з адміністратором, указаним тут.
     Він відповідає лише за адресами, які знає, — адресою застосунку в Hata і тими, що вписані в
     «Інші адреси» (обидві читаються лише за першого запуску; потім їх змінюють у config.php).

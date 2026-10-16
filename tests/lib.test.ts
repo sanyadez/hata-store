@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { bindMounts, checkCompose, checkHata, checkIcon, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
+import { bindMounts, brokenLine, checkCompose, checkHata, checkIcon, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
 
 const svg = (body: string) => `data:image/svg+xml;base64,${Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg">${body}</svg>`).toString("base64")}`;
 const store = { categories: { media: { en: "Media" } } };
@@ -129,4 +129,10 @@ describe("the app's other files", () => {
       "OTHER is not a variable of the compose file",
     ]);
   });
+});
+
+test("a line broken inside a paragraph is told, a list is not", () => {
+  expect(brokenLine("One line\nand the next")).toBe(true);
+  expect(brokenLine("A paragraph.\n\nAnother one.\n")).toBe(false);
+  expect(brokenLine("Before:\n- one\n- two\n1. three")).toBe(false);
 });

@@ -90,7 +90,9 @@ settings: [ … ]                      # see Settings
 permissions: { … }                   # see Permissions
 ```
 
-Every text is either a plain string (English) or a map of languages, where `en` is required.
+Every text is either a plain string (English) or a map of languages, where `en` is required. Write a
+long text as a folded block (`en: >`): its lines are joined, and the page lays it out itself; a blank line
+starts a new paragraph.
 
 ### Settings
 

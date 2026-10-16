@@ -287,10 +287,14 @@ export function checkCompose(id: string, compose: unknown, hata: Obj | null, shi
 // --- hata.yml -----------------------------------------------------------------------------------------
 
 /** A text in several languages: a plain string is English */
+/** A line broken inside a paragraph: the page would show the break (a list item may start a line) */
+export const brokenLine = (text: string): boolean => /[^\n]\n(?![\n\-*#>]|\d+\.)/.test(text.trimEnd());
+
 function checkText(value: unknown, what: string, say: (t: string) => void, max = 0): void {
   if (typeof value === "string") {
     if (!value.trim()) say(`${what} is empty`);
     else if (max && value.length > max) say(`${what} is longer than ${max} characters`);
+    else if (brokenLine(value)) say(`${what} breaks a line inside a paragraph: write it as a folded block (>)`);
     return;
   }
   if (!isObject(value)) return say(`${what} must be a text or { en: …, uk: … }`);
@@ -299,6 +303,7 @@ function checkText(value: unknown, what: string, say: (t: string) => void, max =
     if (!LANG_RE.test(lang)) say(`${what}: "${lang}" is not a language code`);
     if (typeof text !== "string" || !text.trim()) say(`${what}.${lang} is empty`);
     else if (max && text.length > max) say(`${what}.${lang} is longer than ${max} characters`);
+    else if (brokenLine(text)) say(`${what}.${lang} breaks a line inside a paragraph: write it as a folded block (>)`);
   }
 }
 

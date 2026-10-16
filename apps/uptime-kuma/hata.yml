@@ -3,11 +3,11 @@ tagline:
   en: Watches your sites and services and tells you when one goes down
   uk: Стежить за сайтами й сервісами і каже, коли щось ляже
 description:
-  en: |
+  en: >
     A self-hosted monitoring tool. Checks websites, ports, DNS records, Docker containers and more
     every minute, draws the history of each, and sends a notification to Telegram, ntfy, e-mail or
     dozens of other services when something stops answering. Public status pages included.
-  uk: |
+  uk: >
     Моніторинг на власному сервері. Щохвилини перевіряє сайти, порти, записи DNS, контейнери Docker
     тощо, малює історію кожного й надсилає сповіщення в Telegram, ntfy, на пошту чи в десятки інших
     сервісів, коли щось перестає відповідати. Є й публічні сторінки стану.

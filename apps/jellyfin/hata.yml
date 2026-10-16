@@ -3,11 +3,11 @@ tagline:
   en: Your films, series and music, streamed to any screen
   uk: Ваші фільми, серіали й музика на будь-якому екрані
 description:
-  en: |
+  en: >
     A media server that is free and has no accounts in the cloud. Point it at your folders and it
     finds posters, descriptions and subtitles, remembers where you stopped, and streams to the browser,
     phones, smart TVs, Kodi and DLNA players, converting what a device cannot play.
-  uk: |
+  uk: >
     Медіасервер, безплатний і без облікових записів у хмарі. Вкажіть йому теки, і він знайде постери,
     описи й субтитри, запам'ятає, де ви зупинились, і покаже в браузері, на телефонах, смарт-телевізорах,
     у Kodi та DLNA-програвачах, перекодувавши те, чого пристрій не відтворює.

@@ -3,17 +3,17 @@ tagline:
   en: A password manager for the family, with the Bitwarden apps
   uk: Менеджер паролів для родини, з застосунками Bitwarden
 description:
-  en: |
+  en: >
     A light server for the Bitwarden apps and browser extensions: passwords, cards, notes and
     one-time codes, shared with family members through organisations, kept on your own server.
-  uk: |
+  uk: >
     Легкий сервер для застосунків і розширень браузера Bitwarden: паролі, картки, нотатки й
     одноразові коди, спільні з родиною через організації, — на вашому власному сервері.
 notes:
-  en: |
+  en: >
     The web vault and the apps work only over **HTTPS**: open it at its address under Hata's domain.
     Once everybody has an account, turn "Anyone may sign up" off.
-  uk: |
+  uk: >
     Вебсховище й застосунки працюють лише через **HTTPS**: відкривайте його за адресою під доменом
     Hata. Коли всі матимуть облікові записи, вимкніть «Будь-хто може зареєструватися».
 category: security

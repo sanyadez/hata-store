@@ -3,18 +3,18 @@ tagline:
   en: One home for every smart device, whatever its brand
   uk: Один дім для всіх розумних пристроїв, хай якої марки
 description:
-  en: |
+  en: >
     Open-source home automation that runs at home, not in somebody's cloud. Connects lights,
     sensors, thermostats, cameras, vacuum cleaners and thousands of other devices, shows them on one
     dashboard and makes them work together through automations.
-  uk: |
+  uk: >
     Автоматизація дому з відкритим кодом, що працює вдома, а не в чиїйсь хмарі. Під'єднує світло,
     датчики, термостати, камери, пилососи й тисячі інших пристроїв, показує їх на одній панелі й
     змушує працювати разом через автоматизації.
 notes:
-  en: |
+  en: >
     It uses the server's own network, so the port 8123 cannot be changed and must be free.
-  uk: |
+  uk: >
     Він працює в мережі самого сервера, тож порт 8123 змінити не можна, і він має бути вільним.
 category: home
 developer: Open Home Foundation
