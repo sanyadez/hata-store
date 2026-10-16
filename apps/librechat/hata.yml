@@ -245,6 +245,7 @@ settings:
   - name: JWT_SECRET
     type: secret
     length: 64
+    chars: hex
     label:
       en: JWT Secret Key for Authentication
       it: Chiave Segreta JWT per Autenticazione
@@ -264,6 +265,7 @@ settings:
   - name: JWT_REFRESH_SECRET
     type: secret
     length: 64
+    chars: hex
     label:
       en: JWT Refresh Secret Key
       it: Chiave Segreta Aggiornamento JWT
@@ -283,6 +285,7 @@ settings:
   - name: CREDS_KEY
     type: secret
     length: 64
+    chars: hex
     label:
       en: CREDS_KEY
   - name: MEILI_HOST_2

@@ -40,10 +40,6 @@ settings:
     label:
       en: Password between its services
       uk: Пароль між його сервісами
-  - name: INDEXING_MAX_SEGMENTATION_TOKENS_LENGTH
-    type: secret
-    label:
-      en: INDEXING_MAX_SEGMENTATION_TOKENS_LENGTH
   - name: NGINX_PORT_80
     type: port
     default: 3701

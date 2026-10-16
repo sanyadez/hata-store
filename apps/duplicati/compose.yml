@@ -5,6 +5,8 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: "${TZ:-UTC}"
+      SETTINGS_ENCRYPTION_KEY: "${SETTINGS_ENCRYPTION_KEY:?set SETTINGS_ENCRYPTION_KEY}"
+      DUPLICATI__WEBSERVICE_PASSWORD: "${WEB_PASSWORD:?set WEB_PASSWORD}"
     image: linuxserver/duplicati:2.1.0
     deploy:
       resources:

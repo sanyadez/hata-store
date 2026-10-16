@@ -34,8 +34,8 @@ async function freePort(from: number): Promise<number> {
   throw new Error(`no free port from ${from}`);
 }
 
-function secret(length: number): string {
-  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+function secret(length: number, kind?: string): string {
+  const chars = kind === "hex" ? "0123456789abcdef" : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   return Array.from(crypto.getRandomValues(new Uint8Array(length)), (b) => chars[b % chars.length]).join("");
 }
 
@@ -101,7 +101,7 @@ async function smoke(id: string): Promise<boolean> {
   const known = { ...env, DATA_ROOT: dataRoot };
   for (const s of hata.settings ?? []) {
     // what the person would type: a password made up, a required field without a default filled
-    if (s.type === "secret" || s.type === "password") env[s.name] = secret(s.length ?? 32);
+    if (s.type === "secret" || s.type === "password") env[s.name] = secret(s.length ?? 32, s.chars);
     else if (s.type === "port") env[s.name] = String(await freePort(Number(s.default ?? 8000)));
     else if (s.default !== undefined) env[s.name] = fill(String(s.default), known);
     else if (s.required) env[s.name] = "smoke";

@@ -42,6 +42,17 @@ web:
   service: duplicati
   port: 8200
 settings:
+  - name: SETTINGS_ENCRYPTION_KEY
+    type: secret
+    label:
+      en: Key of its settings
+      uk: Ключ його налаштувань
+  - name: WEB_PASSWORD
+    type: password
+    required: true
+    label:
+      en: Password of its page
+      uk: Пароль його сторінки
   - name: WEB_PORT
     type: port
     default: 8200

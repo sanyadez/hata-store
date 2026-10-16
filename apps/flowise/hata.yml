@@ -53,11 +53,6 @@ settings:
     label:
       en: Web port
       uk: Порт вебінтерфейсу
-  - name: SECRETKEY_PATH
-    type: secret
-    length: 14
-    label:
-      en: SECRETKEY_PATH
   - name: FLOWISE_USERNAME
     type: text
     default: admin

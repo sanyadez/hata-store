@@ -384,9 +384,11 @@ async function convert(dir: string): Promise<Report | null> {
       let desc = labelled(xs, "envs", k, k);
       // a key or a token of the app's own (one the store wrote a value for) is made by Hata, as long as
       // the one written; one given by another service (left empty) is typed by the person, hidden
-      if (/SECRET|TOKEN|_KEY$|^KEY$/i.test(k) && !/PASS/i.test(k) && /^[A-Za-z0-9_+/=.-]*$/.test(value)) {
+      // (not a path to a key, a key's lifetime or its kind)
+      if (/SECRET|TOKEN|_KEY$|^KEY$/i.test(k) && !/PASS|_PATH$|_FILE$|_DIR$|_URL$|EXPIR|_TTL$|_LENGTH$|_ALGORITHM$|_TYPE$|_NAME$/i.test(k) && /^[A-Za-z0-9_+=.-]*$/.test(value)) {
+        const hex = /^[0-9a-f]{16,128}$/i.test(value) && value.length % 2 === 0;
         const name = add(value
-          ? { name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "secret", ...(value.length >= 12 && value.length <= 128 && value.length !== 32 ? { length: value.length } : {}), label: desc?.label ?? { en: k } }
+          ? { name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "secret", ...(value.length >= 12 && value.length <= 128 && value.length !== 32 ? { length: value.length } : {}), ...(hex ? { chars: "hex" } : {}), label: desc?.label ?? { en: k } }
           : { name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "password", label: desc?.label ?? { en: k }, ...(desc?.hint ? { hint: desc.hint } : {}) });
         env[k] = value ? `\${${name}:?set ${name}}` : `\${${name}:-}`;
         if (value) secretOf.set(value, name);

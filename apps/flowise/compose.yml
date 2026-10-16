@@ -11,7 +11,7 @@ services:
       PORT: "3025"
       DATABASE_PATH: /root/.flowise
       APIKEY_PATH: /root/.flowise
-      SECRETKEY_PATH: "${SECRETKEY_PATH:?set SECRETKEY_PATH}"
+      SECRETKEY_PATH: /root/.flowise
       LOG_PATH: /root/.flowise/logs
       BLOB_STORAGE_PATH: /root/.flowise/storage
       FLOWISE_USERNAME: "${FLOWISE_USERNAME:-admin}"

@@ -67,7 +67,6 @@ Those apps are:
   hermes
   holoplay
   homebridge
-  hugo
   icewhale-stable-diffusion-webui
   index-tts
   index-tts-nvidia
@@ -86,8 +85,8 @@ Those apps are:
   libredb-studio
   lidarr
   linkwarden
-  llamacpp
   llama-factory-nvidia
+  llamacpp
   logseq
   lucky
   lyrionmusicserver
@@ -96,8 +95,8 @@ Those apps are:
   medusa
   memos
   mineos-node
-  mongodb4
   mongodb
+  mongodb4
   monica
   motioneye
   mylar3
@@ -115,12 +114,12 @@ Those apps are:
   ollama
   ollama-nvidia
   ombi
+  open-webui-ollama
   openclaw
   openhab
   openhands
   openlist
   openspeedtest
-  open-webui-ollama
   opodsync
   overseerr
   pdfding

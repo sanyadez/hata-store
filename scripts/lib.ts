@@ -414,7 +414,7 @@ export function checkHata(app: AppFiles, hata: unknown, store: Obj): Problem[] {
         if (!isObject(s)) return say(`${at} is not a mapping`);
         const name = typeof s.name === "string" ? s.name : "";
         const where = name || at;
-        for (const key of Object.keys(s)) if (!["name", "type", "label", "hint", "default", "required", "options", "length", "advanced"].includes(key)) say(`${where}: unknown key "${key}"`);
+        for (const key of Object.keys(s)) if (!["name", "type", "label", "hint", "default", "required", "options", "length", "chars", "advanced"].includes(key)) say(`${where}: unknown key "${key}"`);
         if (!VAR_RE.test(name)) say(`${at}: name must be like WEB_PORT`);
         if ((DEFAULT_VARS as readonly string[]).includes(name)) say(`${where}: ${name} is Hata's own variable`);
         if (seen.has(name)) say(`${where} is listed twice`);
@@ -430,7 +430,8 @@ export function checkHata(app: AppFiles, hata: unknown, store: Obj): Problem[] {
         if (s.type === "secret") {
           if (s.default !== undefined) say(`${where}: a secret is made at install, it has no default`);
           if (s.length !== undefined && (!Number.isInteger(s.length) || s.length < 12 || s.length > 128)) say(`${where}.length is 12…128`);
-        } else if (s.length !== undefined) say(`${where}.length is for secrets`);
+          if (s.chars !== undefined && s.chars !== "hex") say(`${where}.chars is hex, or left out for letters and digits`);
+        } else if (s.length !== undefined || s.chars !== undefined) say(`${where}.length and .chars are for secrets`);
         if (s.type === "port" && s.default !== undefined && !(Number.isInteger(Number(s.default)) && Number(s.default) > 0 && Number(s.default) < 65536)) say(`${where}.default is not a port`);
         if (s.type === "switch" && s.default !== undefined && typeof s.default !== "boolean") say(`${where}.default of a switch is true or false`);
         if (s.type === "choice") {

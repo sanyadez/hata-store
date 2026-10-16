@@ -122,7 +122,7 @@ settings:
 | `folder`   | a folder of the server, with the folder picker         | the absolute path         |
 | `url`      | an address                                             | as typed                  |
 | `password` | a hidden field                                         | as typed                  |
-| `secret`   | nothing: Hata makes it (`length`, 32 by default)       | letters and digits        |
+| `secret`   | nothing: Hata makes it (`length`, 32 by default)       | letters and digits; hexadecimal digits with `chars: hex` |
 | `switch`   | a switch                                               | `true` or `false`         |
 | `choice`   | a list of `options: [{ value, label }]`                | the chosen value          |
 

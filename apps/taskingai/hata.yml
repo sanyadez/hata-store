@@ -31,6 +31,7 @@ settings:
   - name: JWT_SECRET_KEY
     type: secret
     length: 64
+    chars: hex
     label:
       en: JWT_SECRET_KEY
   - name: DB_PASSWORD_2
