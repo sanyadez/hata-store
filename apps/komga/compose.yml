@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   komga:
-    image: gotson/komga:1.24.4
+    image: gotson/komga:1.29.0
     deploy:
       resources:
         reservations:
