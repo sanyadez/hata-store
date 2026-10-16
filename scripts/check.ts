@@ -90,7 +90,12 @@ for (const id of ids) {
 if (Bun.which("docker")) {
   for (const app of apps) {
     const env: Record<string, string> = { APP_DATA: "/tmp/app", APP_URL: "http://localhost", APP_HOST: "localhost", PUID: "1000", PGID: "1000", TZ: "UTC" };
-    for (const s of app.hata.settings ?? []) env[s.name] = s.type === "secret" ? "x".repeat(32) : String(s.default ?? "").replaceAll("${DATA_ROOT}", "/tmp/data").replaceAll("${APP_DATA}", "/tmp/app");
+    for (const s of app.hata.settings ?? []) {
+      // what the person would type: a password, a required field without a default
+      if (s.type === "secret" || s.type === "password") env[s.name] = "x".repeat(32);
+      else if (s.default === undefined && s.required) env[s.name] = "x";
+      else env[s.name] = String(s.default ?? "").replaceAll("${DATA_ROOT}", "/tmp/data").replaceAll("${APP_DATA}", "/tmp/app");
+    }
     const run = Bun.spawnSync(["docker", "compose", "-p", app.id, "-f", "-", "config", "-q"], {
       stdin: new TextEncoder().encode(app.composeText),
       env: { ...process.env, ...env },
