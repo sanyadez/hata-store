@@ -1,0 +1,45 @@
+title: Immich
+tagline:
+  en: Photos and videos from every phone in the family, backed up at home
+  uk: Фото й відео з усіх телефонів родини, збережені вдома
+description:
+  en: |
+    A photo library in the spirit of Google Photos. The phone app uploads new pictures by itself;
+    the server finds faces, places and things in them, so a search for "dog on the beach" works,
+    and keeps albums, shared links and memories of this day years ago.
+  uk: |
+    Фотобібліотека на кшталт Google Photos. Застосунок на телефоні сам вивантажує нові знімки;
+    сервер знаходить на них обличчя, місця й речі, тож пошук «собака на пляжі» працює, і тримає
+    альбоми, спільні посилання й спогади про цей день кілька років тому.
+notes:
+  en: |
+    Recognising faces and things needs a few gigabytes of memory, and the first pass over a large
+    library takes hours. The database stays in the app's folder: keep it on a local disk, not on a
+    network one.
+  uk: |
+    Розпізнавання облич і речей потребує кількох гігабайтів пам'яті, а перший прохід великою
+    бібліотекою триває години. База даних лишається в теці застосунку: тримайте її на локальному
+    диску, не на мережевому.
+category: photos
+developer: Immich
+website: https://immich.app
+source: https://github.com/immich-app/immich
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMjM4LjggMTU1LjVjMzMuNSAyOS43IDYwLjUgNjEuNSA3Ny45IDkxLjUgMjkuOS01My40IDQ5LjgtMTE2LjkgNTAuMS0xNTcuM3YtLjhjMC01OS44LTU5LjctODMuMS0xMTEuMS04My4xUzE0NC42IDI5IDE0NC42IDg4LjhWOTJjMjguNyAxMi44IDYyLjYgMzUuNiA5NC4yIDYzLjUiIHN0eWxlPSJmaWxsOiNmYTI5MjEiLz48cGF0aCBkPSJNNTUuOSAzMTguNmMyMS0yMy4zIDUzLjEtNDguNiA4OS40LTY5LjkgMzguNi0yMi43IDc3LjItMzguNiAxMTEuMS00NS44LTQxLjYtNDQuOS05NS44LTgzLjUtMTM0LjEtOTYuMi0uMy0uMS0uNS0uMi0uNy0uMi01Ny0xOC43LTk3LjYgMzAuOS0xMTMuNSA3OS44Uy00LjEgMjk5LjEgNTIuOCAzMTcuNmMuOC4yIDEuOC42IDMuMSAxIiBzdHlsZT0iZmlsbDojZWQ3OWI1Ii8+PHBhdGggZD0iTTUwMy45IDE4NS40QzQ4OCAxMzYuNiA0NDcuNCA4NyAzOTAuNSAxMDUuNWMtLjguMy0xLjguNi0zLjEgMS0zLjMgMzEuMi0xNC40IDcwLjUtMzEuMiAxMDkuMS0xNy45IDQxLjEtMzkuOCA3Ni42LTYyLjkgMTAyLjQgNjAgMTEuOSAxMjYuNSAxMS4zIDE2NS4xLTEgLjMtLjEuNS0uMi43LS4yIDU3LTE4LjYgNjAuNi04Mi41IDQ0LjgtMTMxLjQiIHN0eWxlPSJmaWxsOiNmZmI0MDAiLz48cGF0aCBkPSJNMjA1IDM2Ni4zYy05LjctNDMuNy0xMi44LTg1LjMtOS4zLTExOS44LTU1LjUgMjUuNy0xMDkgNjUuMy0xMzMgOTcuOC0uMi4yLS4zLjQtLjUuNi0zNS4yIDQ4LjQtLjYgMTAyLjMgNDEgMTMyLjVzMTAzLjUgNDYuNCAxMzguNy0xLjljLjUtLjcgMS4xLTEuNSAxLjktMi42LTE1LjYtMjcuMS0yOS43LTY1LjUtMzguOC0xMDYuNiIgc3R5bGU9ImZpbGw6IzFlODNmNyIvPjxwYXRoIGQ9Ik00NDguOCAzNDEuOWMtMzAuNyA2LjUtNzEuNSA4LjEtMTEzLjQgNC00NC42LTQuMy04NS4xLTE0LjItMTE2LjgtMjguMiA3LjIgNjAuOCAyOC40IDEyMy44IDUxLjkgMTU2LjcuMi4yLjMuNC41LjYgMzUuMiA0OC40IDk3LjEgMzIuMiAxMzguNyAxLjkgNDEuNi0zMC4yIDc2LjItODQuMSA0MS0xMzIuNS0uNS0uNi0xLjEtMS40LTEuOS0yLjUiIHN0eWxlPSJmaWxsOiMxOGMyNDkiLz48L3N2Zz4=
+web:
+  service: immich-server
+  port: 2283
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 2283
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: UPLOAD_LOCATION
+    type: folder
+    default: ${DATA_ROOT}/Gallery
+    label: { en: Photo folder, uk: Тека для фото }
+    hint:
+      en: Where uploaded photos and videos are kept
+      uk: Куди складаються вивантажені фото й відео
+  - name: DB_PASSWORD
+    type: secret
+    label: { en: Database password, uk: Пароль бази даних }

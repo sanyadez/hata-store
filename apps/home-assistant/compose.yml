@@ -1,0 +1,11 @@
+services:
+  homeassistant:
+    image: ghcr.io/home-assistant/home-assistant:2026.10.1
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ${APP_DATA:-.}/config:/config
+      - /etc/localtime:/etc/localtime:ro
+      - /run/dbus:/run/dbus:ro
+    environment:
+      TZ: ${TZ:-UTC}

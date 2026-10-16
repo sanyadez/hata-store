@@ -1,0 +1,26 @@
+title: Uptime Kuma
+tagline:
+  en: Watches your sites and services and tells you when one goes down
+  uk: Стежить за сайтами й сервісами і каже, коли щось ляже
+description:
+  en: |
+    A self-hosted monitoring tool. Checks websites, ports, DNS records, Docker containers and more
+    every minute, draws the history of each, and sends a notification to Telegram, ntfy, e-mail or
+    dozens of other services when something stops answering. Public status pages included.
+  uk: |
+    Моніторинг на власному сервері. Щохвилини перевіряє сайти, порти, записи DNS, контейнери Docker
+    тощо, малює історію кожного й надсилає сповіщення в Telegram, ntfy, на пошту чи в десятки інших
+    сервісів, коли щось перестає відповідати. Є й публічні сторінки стану.
+category: monitoring
+developer: Louis Lam
+website: https://uptime.kuma.pet
+source: https://github.com/louislam/uptime-kuma
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCA2MjIgNjIyIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMjAgMzIwKSI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iLTgyLjQwNCIgeDI9IjEyMS42NjYiIHkxPSIzOC4wNzciIHkyPSItMTU3LjI2MyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAuMDAxIC0xNikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiM1Y2RkOGIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiM4NmU2YTkiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGQ9Ik0xNjEuNC05My40YzUzLjcgMTIyLjcgNTMuNyAxOTkuNyAwIDIzMC45LTgwLjUgNDYuNy0yOTAuNCA2MS0zNTAuOS0xMC45LTQwLjMtNDcuOS00MC4zLTEyMS4yIDAtMjIwIDQxLTY3LjUgOTkuMi0xMDEuMiAxNzQuNi0xMDEuMiA3NS41IDAgMTM0LjMgMzMuOCAxNzYuMyAxMDEuMnoiIHN0eWxlPSJmaWxsOnVybCgjYSk7c3Ryb2tlOiNmMmYyZjI7c3Ryb2tlLXdpZHRoOjIwMDtzdHJva2Utb3BhY2l0eTouNTEiLz48L2c+PC9zdmc+
+web:
+  service: uptime-kuma
+  port: 3001
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 3001
+    label: { en: Web port, uk: Порт вебінтерфейсу }

@@ -1,0 +1,12 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:12.2.20261005-225228
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8096}:8096
+    volumes:
+      - ${APP_DATA:-.}/config:/config
+      - ${APP_DATA:-.}/cache:/cache
+      - ${MEDIA:-./media}:/media
+    environment:
+      TZ: ${TZ:-UTC}

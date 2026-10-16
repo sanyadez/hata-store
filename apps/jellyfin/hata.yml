@@ -1,0 +1,33 @@
+title: Jellyfin
+tagline:
+  en: Your films, series and music, streamed to any screen
+  uk: Ваші фільми, серіали й музика на будь-якому екрані
+description:
+  en: |
+    A media server that is free and has no accounts in the cloud. Point it at your folders and it
+    finds posters, descriptions and subtitles, remembers where you stopped, and streams to the browser,
+    phones, smart TVs, Kodi and DLNA players, converting what a device cannot play.
+  uk: |
+    Медіасервер, безплатний і без облікових записів у хмарі. Вкажіть йому теки, і він знайде постери,
+    описи й субтитри, запам'ятає, де ви зупинились, і покаже в браузері, на телефонах, смарт-телевізорах,
+    у Kodi та DLNA-програвачах, перекодувавши те, чого пристрій не відтворює.
+category: media
+developer: Jellyfin
+website: https://jellyfin.org
+source: https://github.com/jellyfin/jellyfin
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSI5Ny41MDgiIHgyPSI1MjIuMDY5IiB5MT0iMzA4LjEzNSIgeTI9IjYzLjAxOSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDUxNCkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNhYTVjYzMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMGE0ZGMiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGQ9Ik0yNTYgMTk2LjJjLTIyLjQgMC05NC44IDEzMS4zLTgzLjggMTUzLjRzMTU2LjggMjEuOSAxNjcuNyAwLTYxLjMtMTUzLjQtODMuOS0xNTMuNCIgc3R5bGU9ImZpbGw6dXJsKCNhKSIvPjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9Ijk0LjE5MyIgeDI9IjUxOC43NTQiIHkxPSIzMDIuMzk0IiB5Mj0iNTcuMjc4IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgNTE0KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6I2FhNWNjMyIvPjxzdG9wIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6IzAwYTRkYyIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZD0iTTI1NiAwQzE4OC4zIDAtMjkuOCAzOTUuNCAzLjQgNDYyLjJzNDcyLjMgNjYgNTA1LjIgMFMzMjMuOCAwIDI1NiAwbTE2NS42IDQwNC4zYy0yMS42IDQzLjItMzA5LjMgNDMuOC0zMzEuMSAwUzIxMS43IDEwMS40IDI1NiAxMDEuNCA0NDMuMiAzNjEgNDIxLjYgNDA0LjMiIHN0eWxlPSJmaWxsOnVybCgjYikiLz48L3N2Zz4=
+web:
+  service: jellyfin
+  port: 8096
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8096
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: MEDIA
+    type: folder
+    default: ${DATA_ROOT}/Media
+    label: { en: Media folder, uk: Тека з медіа }
+    hint:
+      en: Films, series and music; inside the app it is /media
+      uk: Фільми, серіали й музика; у застосунку вона — /media

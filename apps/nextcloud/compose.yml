@@ -1,0 +1,47 @@
+services:
+  nextcloud:
+    image: nextcloud:35.0.2-apache
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8081}:80
+    volumes:
+      - ${APP_DATA:-.}/html:/var/www/html
+    environment:
+      MYSQL_HOST: db
+      MYSQL_DATABASE: nextcloud
+      MYSQL_USER: nextcloud
+      MYSQL_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD}
+      REDIS_HOST: redis
+      NEXTCLOUD_TRUSTED_DOMAINS: ${TRUSTED_DOMAINS:-}
+      PHP_UPLOAD_LIMIT: ${UPLOAD_LIMIT:-16G}
+      TZ: ${TZ:-UTC}
+    depends_on:
+      - db
+      - redis
+
+  cron:
+    image: nextcloud:35.0.2-apache
+    restart: unless-stopped
+    entrypoint: /cron.sh
+    volumes:
+      - ${APP_DATA:-.}/html:/var/www/html
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: mariadb:11.8.3
+    restart: unless-stopped
+    command: --transaction-isolation=READ-COMMITTED
+    volumes:
+      - ${APP_DATA:-.}/db:/var/lib/mysql
+    environment:
+      MARIADB_RANDOM_ROOT_PASSWORD: "1"
+      MARIADB_DATABASE: nextcloud
+      MARIADB_USER: nextcloud
+      MARIADB_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD}
+      MARIADB_AUTO_UPGRADE: "1"
+
+  redis:
+    image: redis:8.2.10
+    restart: unless-stopped

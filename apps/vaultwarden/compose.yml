@@ -1,0 +1,13 @@
+services:
+  vaultwarden:
+    image: vaultwarden/server:1.37.4
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8080}:80
+    volumes:
+      - ${APP_DATA:-.}/data:/data
+    environment:
+      DOMAIN: ${DOMAIN:-http://localhost}
+      SIGNUPS_ALLOWED: ${SIGNUPS_ALLOWED:-true}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      TZ: ${TZ:-UTC}

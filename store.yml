@@ -1,0 +1,20 @@
+# The store itself: its name, the categories apps are put in, and what the first run of Hata offers.
+name: Hata Store
+
+categories:
+  media: { en: Media, uk: Медіа }
+  photos: { en: Photos, uk: Фото }
+  files: { en: Files and sync, uk: Файли й синхронізація }
+  security: { en: Passwords and security, uk: Паролі й безпека }
+  home: { en: Smart home, uk: Розумний дім }
+  monitoring: { en: Monitoring, uk: Моніторинг }
+  network: { en: Network, uk: Мережа }
+  productivity: { en: Productivity, uk: Продуктивність }
+  development: { en: Development, uk: Розробка }
+  utilities: { en: Utilities, uk: Утиліти }
+
+recommended:
+  - immich
+  - jellyfin
+  - vaultwarden
+  - nextcloud

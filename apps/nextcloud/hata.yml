@@ -1,0 +1,47 @@
+title: Nextcloud
+tagline:
+  en: Files, calendars and contacts of your own, on every device
+  uk: Власні файли, календарі й контакти на всіх пристроях
+description:
+  en: |
+    A cloud of your own: files synced between computers and phones, shared by links, edited in the
+    browser; calendars and contacts that phones sync with; and hundreds of apps on top — notes,
+    tasks, photos, video calls.
+  uk: |
+    Власна хмара: файли, синхронізовані між комп'ютерами й телефонами, спільні за посиланнями,
+    редаговані в браузері; календарі й контакти, з якими синхронізуються телефони; і сотні
+    застосунків поверх — нотатки, завдання, фото, відеодзвінки.
+notes:
+  en: |
+    The first page asks for the administrator's name and password. Nextcloud answers only at the
+    addresses it knows: the one used at that first page, and those listed in "Other addresses".
+  uk: |
+    Перша сторінка питає ім'я й пароль адміністратора. Nextcloud відповідає лише за адресами, які
+    знає: тією, з якої відкрили першу сторінку, і тими, що вписані в «Інші адреси».
+category: files
+developer: Nextcloud
+website: https://nextcloud.com
+source: https://github.com/nextcloud/server
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMTM5LjMgNTEyLjIgMjMzLjUiPjxwYXRoIGQ9Ik0yNTYgMTM5LjNjLTUzIDAtOTcuOSAzNS44LTExMi4xIDg0LjQtMTIuMi0yNS41LTM4LjItNDMuNC02OC4yLTQzLjRDMzQuMiAxODAuMiAwIDIxNC40IDAgMjU2czM0LjIgNzUuOCA3NS44IDc1LjhjMzAgMCA1NS45LTE3LjkgNjguMi00My40IDE0LjEgNDguNiA1OS4xIDg0LjQgMTEyLjEgODQuNFMzNTQgMzM3IDM2OC4yIDI4OC40YzEyLjIgMjUuNSAzOC4yIDQzLjQgNjguMiA0My40IDQxLjYgMCA3NS44LTM0LjIgNzUuOC03NS44cy0zNC4yLTc1LjgtNzUuOC03NS44Yy0zMCAwLTU1LjkgMTcuOS02OC4yIDQzLjQtMTQuMy00OC41LTU5LjItODQuMy0xMTIuMi04NC4zbTAgNDVjMzkuOSAwIDcxLjcgMzEuOCA3MS43IDcxLjdzLTMxLjggNzEuNy03MS43IDcxLjctNzEuNy0zMS44LTcxLjctNzEuNyAzMS44LTcxLjcgNzEuNy03MS43bS0xODAuMiA0MWMxNy4yIDAgMzAuNyAxMy41IDMwLjcgMzAuN1M5MyAyODYuNyA3NS44IDI4Ni43IDQ1LjEgMjczLjIgNDUuMSAyNTZzMTMuNC0zMC43IDMwLjctMzAuN20zNjAuNCAwYzE3LjIgMCAzMC43IDEzLjUgMzAuNyAzMC43cy0xMy41IDMwLjctMzAuNyAzMC43LTMwLjctMTMuNS0zMC43LTMwLjcgMTMuNS0zMC43IDMwLjctMzAuNyIgc3R5bGU9ImZpbGw6IzM3ODRjOSIvPjwvc3ZnPg==
+web:
+  service: nextcloud
+  port: 80
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8081
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: TRUSTED_DOMAINS
+    type: text
+    label: { en: Other addresses, uk: Інші адреси }
+    hint:
+      en: Host names it is opened at besides the first one, separated by spaces (only read at the first start)
+      uk: Імена, за якими його відкривають, окрім першого, через пробіл (читаються лише за першого запуску)
+  - name: UPLOAD_LIMIT
+    type: text
+    default: 16G
+    advanced: true
+    label: { en: Largest upload, uk: Найбільший файл для вивантаження }
+  - name: DB_PASSWORD
+    type: secret
+    label: { en: Database password, uk: Пароль бази даних }

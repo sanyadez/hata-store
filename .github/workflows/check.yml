@@ -1,0 +1,47 @@
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Rules
+        run: bun test
+
+      - name: Apps
+        run: bun scripts/check.ts --index index.json
+
+      - name: Start the apps that changed
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            changed=$(git diff --name-only "$BASE" HEAD -- apps | cut -d/ -f2 | sort -u)
+          else
+            changed=$(ls apps)
+          fi
+          apps=""
+          for a in $changed; do [ -d "apps/$a" ] && apps="$apps $a"; done
+          if [ -n "$apps" ]; then sudo "$(which bun)" scripts/smoke.ts $apps; else echo "no app changed"; fi
+
+      - name: Publish the index
+        if: github.event_name == 'push'
+        run: |
+          mkdir out && mv index.json out/ && cd out
+          git init -q -b index
+          git add index.json
+          git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "Index of ${GITHUB_SHA::7}"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" index
