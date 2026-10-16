@@ -11,6 +11,9 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # below 1.0 a minor version may break as much: 0.9 changed the command line and the data of 0.7
+      - dependency-name: "archivebox/archivebox"
+        update-types: ["version-update:semver-minor"]
     groups:
       # the server and the machine learning of Immich must be of one version
       immich:
