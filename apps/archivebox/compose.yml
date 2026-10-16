@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   archivebox:
-    image: archivebox/archivebox:0.7.4
+    image: archivebox/archivebox:0.9.73
     deploy:
       resources:
         reservations:
@@ -39,7 +39,7 @@ services:
       interval: 1m
       timeout: 3s
   archivebox_scheduler:
-    image: archivebox/archivebox:0.7.4
+    image: archivebox/archivebox:0.9.73
     deploy:
       resources:
         reservations:
