@@ -7,6 +7,10 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 20
+    # a new major version of an app or its database is a change to look at by hand, not a bump
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     groups:
       # the server and the machine learning of Immich must be of one version
       immich:
