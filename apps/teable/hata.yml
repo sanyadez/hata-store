@@ -84,44 +84,6 @@ settings:
       tr: Next.js image optimization configuration
       zh: Next.js image optimization configuration
       uk: Налаштування оптимізації зображень Next.js
-  - name: PUBLIC_ORIGIN
-    type: text
-    default: http://127.0.0.1:3000
-    label:
-      en: Public URL origin for the application
-      de: Public URL origin for the application
-      el: Public URL origin for the application
-      fr: Public URL origin for the application
-      hr: Public URL origin for the application
-      it: Public URL origin for the application
-      ja: Public URL origin for the application
-      ko: Public URL origin for the application
-      nb: Public URL origin for the application
-      pt: Public URL origin for the application
-      ru: Public URL origin for the application
-      sv: Public URL origin for the application
-      tr: Public URL origin for the application
-      zh: Public URL origin for the application
-      uk: Публічна адреса (origin) застосунку
-  - name: PRISMA_DATABASE_URL
-    type: text
-    default: postgresql://example:example@teable-db:5432/teable-db
-    label:
-      en: Database connection string for Prisma ORM
-      de: Database connection string for Prisma ORM
-      el: Database connection string for Prisma ORM
-      fr: Database connection string for Prisma ORM
-      hr: Database connection string for Prisma ORM
-      it: Database connection string for Prisma ORM
-      ja: Database connection string for Prisma ORM
-      ko: Database connection string for Prisma ORM
-      nb: Database connection string for Prisma ORM
-      pt: Database connection string for Prisma ORM
-      ru: Database connection string for Prisma ORM
-      sv: Database connection string for Prisma ORM
-      tr: Database connection string for Prisma ORM
-      zh: Database connection string for Prisma ORM
-      uk: Рядок підключення до бази даних для Prisma ORM
   - name: BACKEND_CACHE_PROVIDER
     type: text
     default: redis
@@ -141,25 +103,6 @@ settings:
       tr: Cache provider for the backend service
       zh: Cache provider for the backend service
       uk: Провайдер кешу для бекенду
-  - name: BACKEND_CACHE_REDIS_URI
-    type: text
-    default: redis://default:password@teable-cache:6379/0
-    label:
-      en: Redis connection URI for caching
-      de: Redis connection URI for caching
-      el: Redis connection URI for caching
-      fr: Redis connection URI for caching
-      hr: Redis connection URI for caching
-      it: Redis connection URI for caching
-      ja: Redis connection URI for caching
-      ko: Redis connection URI for caching
-      nb: Redis connection URI for caching
-      pt: Redis connection URI for caching
-      ru: Redis connection URI for caching
-      sv: Redis connection URI for caching
-      tr: Redis connection URI for caching
-      zh: Redis connection URI for caching
-      uk: URI Redis для кешування
   - name: POSTGRES_DB
     type: text
     default: teable-db

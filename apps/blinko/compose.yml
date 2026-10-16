@@ -12,10 +12,10 @@ services:
       - "${WEB_PORT:-1111}:1111"
     environment:
       NODE_ENV: "${NODE_ENV:-production}"
-      NEXTAUTH_URL: "${NEXTAUTH_URL:-http://localhost:1111}"
-      NEXT_PUBLIC_BASE_URL: "${NEXT_PUBLIC_BASE_URL:-http://localhost:1111}"
+      NEXTAUTH_URL: "${APP_URL:-http://localhost:1111}"
+      NEXT_PUBLIC_BASE_URL: "${APP_URL:-http://localhost:1111}"
       NEXTAUTH_SECRET: "${NEXTAUTH_SECRET:?set NEXTAUTH_SECRET}"
-      DATABASE_URL: "${DATABASE_URL:-postgresql://postgres:JWD9bxUR7Um9PaGg7FQZ@blinko-postgres:5432/postgres}"
+      DATABASE_URL: "postgresql://postgres:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@blinko-postgres:5432/postgres"
     volumes:
       - type: bind
         source: "${APP_DATA:-.}/blinko_data"

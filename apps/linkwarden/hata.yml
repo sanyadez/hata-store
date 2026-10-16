@@ -89,25 +89,6 @@ settings:
     label:
       en: Password between its services
       uk: Пароль між його сервісами
-  - name: DATABASE_URL
-    type: text
-    default: postgresql://postgres:abc123@linkwarden-postgres:5432/linkwarden
-    label:
-      en: Environment variable DATABASE_URL
-      de: Umgebungsvariable DATABASE_URL
-      el: Μεταβλητή περιβάλλοντος DATABASE_URL
-      fr: Variable d’environnement DATABASE_URL
-      hr: Varijabla okruženja DATABASE_URL
-      it: Variabile d’ambiente DATABASE_URL
-      ja: 環境変数 DATABASE_URL
-      ko: 환경 변수 DATABASE_URL
-      nb: Miljøvariabel DATABASE_URL
-      pt: Variável de ambiente DATABASE_URL
-      ru: Переменная среды DATABASE_URL
-      sv: Miljövariabel DATABASE_URL
-      tr: Ortam değişkeni DATABASE_URL
-      zh: 环境变量 DATABASE_URL
-      uk: Змінна середовища DATABASE_URL
   - name: STORAGE_FOLDER
     type: text
     default: /data

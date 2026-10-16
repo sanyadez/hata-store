@@ -259,6 +259,8 @@ async function convert(dir: string): Promise<Report | null> {
     }
   }
   for (const [value, users] of seen) if (users.size > 1) shared.set(value, "");
+  /** A password or key written into the file that became a secret: its value → the setting */
+  const secretOf = new Map<string, string>();
 
   const ports = new Map<string, string>();
   const folders = new Map<string, string>();
@@ -364,11 +366,17 @@ async function convert(dir: string): Promise<Report | null> {
         env[k] = "${TZ:-UTC}";
         continue;
       }
+      // the app's own address written as localhost: Hata knows the real one
+      if (/URL|DOMAIN|HOST|ORIGIN/i.test(k) && /^https?:\/\/(localhost|127\.0\.0\.1|casaos\.local)(:\d+)?\/?$/.test(value)) {
+        env[k] = `\${APP_URL:-${value.replace(/\/$/, "")}}`;
+        continue;
+      }
       if (shared.has(value) && PASSWORDISH.test(k)) {
         let name = shared.get(value);
         if (!name) {
           name = add({ name: "DB_PASSWORD", type: "secret", label: label("Password between its services", "Пароль між його сервісами") });
           shared.set(value, name);
+          secretOf.set(value, name);
         }
         env[k] = `\${${name}:?set ${name}}`;
         continue;
@@ -381,6 +389,7 @@ async function convert(dir: string): Promise<Report | null> {
           ? { name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "secret", ...(value.length >= 12 && value.length <= 128 && value.length !== 32 ? { length: value.length } : {}), label: desc?.label ?? { en: k } }
           : { name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "password", label: desc?.label ?? { en: k }, ...(desc?.hint ? { hint: desc.hint } : {}) });
         env[k] = value ? `\${${name}:?set ${name}}` : `\${${name}:-}`;
+        if (value) secretOf.set(value, name);
         continue;
       }
       // a password written into the file: a database's own is made by Hata, one to sign in with is the
@@ -391,6 +400,7 @@ async function convert(dir: string): Promise<Report | null> {
           ? { name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "secret", label: desc?.label ?? { en: k } }
           : { name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "password", required: true, label: desc?.label ?? (k.toUpperCase() === "PASSWORD" ? label("Password", "Пароль") : { en: k }), ...(desc?.hint ? { hint: desc.hint } : {}) });
         env[k] = `\${${name}:?set ${name}}`;
+        if (internal) secretOf.set(value, name);
         continue;
       }
       // the store's own name as a user's or a database's: a user to sign in as is shown, as "admin"
@@ -401,7 +411,8 @@ async function convert(dir: string): Promise<Report | null> {
         } else env[k] = desc ? `\${${add({ name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "text", default: "hata", label: desc.label, ...(desc.hint ? { hint: desc.hint } : {}) })}:-hata}` : "hata";
         continue;
       }
-      if (!desc || /[$}\n'"]/.test(value) || !/^[A-Za-z_][A-Za-z0-9_]*$/.test(k)) continue;
+      // an address with a password in it (postgresql://user:password@db) follows the secret, see below
+      if (!desc || /[$}\n'"]/.test(value) || /:\/\/[^/\s]*:[^@/\s]*@/.test(value) || !/^[A-Za-z_][A-Za-z0-9_]*$/.test(k)) continue;
       const name = add({ name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_").replace(/^[^A-Z]+/, "") || "SETTING", type: "text", ...(value ? { default: value } : {}), label: desc.label, ...(desc.hint ? { hint: desc.hint } : {}) });
       env[k] = `\${${name}:-${value}}`;
     }
@@ -427,6 +438,15 @@ async function convert(dir: string): Promise<Report | null> {
     }
   }
 
+  // the password of an address is the secret that replaced it elsewhere in the file
+  if (secretOf.size) {
+    for (const s of Object.values(services)) {
+      const swap = (str: string) => str.replace(/(:\/\/[^/\s:@]*:)([^@/\s]+)(@)/g, (all, a, pass, b) => (secretOf.has(pass) ? `${a}\${${secretOf.get(pass)}:?set ${secretOf.get(pass)}}${b}` : all));
+      if (isObject(s.environment)) for (const [k, v] of Object.entries(s.environment)) if (typeof v === "string") s.environment[k] = swap(v);
+      if (typeof s.command === "string") s.command = swap(s.command);
+      if (Array.isArray(s.command)) s.command = s.command.map((c: unknown) => (typeof c === "string" ? swap(c) : c));
+    }
+  }
   let compose: Obj = walk({ services }, (str) => ownVars(str, id).replace(/^(Zima|ZimaOS|CasaOS)$/, "hata").replace(/\s(?:on|for) CasaOS\b/g, "")) as Obj;
   // a variable the store left for its install form to fill: a setting, empty unless given
   const unknown = new Set<string>();

@@ -68,25 +68,6 @@ settings:
     label:
       en: Web port
       uk: Порт вебінтерфейсу
-  - name: NEXTAUTH_URL
-    type: text
-    default: http://localhost:14592
-    label:
-      en: Sets the public URL used for authentication callbacks
-      it: "Imposta l'URL pubblico usato per i callback di autenticazione"
-      nb: Angir den offentlige URL-en som brukes for autentiserings-tilbakekall
-      zh: 设置认证回调使用的公开访问地址
-      ja: 認証コールバックに使用する公開URLを設定します
-      ko: 인증 콜백에 사용할 공개 URL을 설정합니다
-      fr: "Définit l'URL publique utilisée pour les rappels d'authentification"
-      de: Legt die öffentliche URL für Authentifizierungs-Callbacks fest
-      sv: Anger den publika URL som används för autentiseringsåteranrop
-      el: Ορίζει το δημόσιο URL που χρησιμοποιείται για τα callbacks πιστοποίησης
-      hr: Postavlja javni URL koji se koristi za povratne pozive autentikacije
-      pt: Define o URL público usado para callbacks de autenticação
-      ru: "Задает публичный URL, используемый для обратных вызовов аутентификации"
-      tr: "Kimlik doğrulama geri çağrıları için kullanılan genel URL'yi ayarlar"
-      uk: Публічна адреса для повернення після входу
   - name: DB_PASSWORD
     type: secret
     label:

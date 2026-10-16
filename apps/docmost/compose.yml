@@ -14,9 +14,9 @@ services:
         source: "${APP_DATA:-.}/storage"
         target: /app/data/storage
     environment:
-      APP_URL: "${APP_URL_2:-http://localhost:3000}"
+      APP_URL: "${APP_URL:-http://localhost:3000}"
       APP_SECRET: "${APP_SECRET:?set APP_SECRET}"
-      DATABASE_URL: "${DATABASE_URL:-postgresql://docmost:jcui51lw747yuuk4zrpm@docmost-db:5432/docmost?schema=public}"
+      DATABASE_URL: "postgresql://docmost:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@docmost-db:5432/docmost?schema=public"
       REDIS_URL: "${REDIS_URL:-redis://docmost-redis:6379}"
     networks:
       - docmost-network

@@ -10,7 +10,7 @@ services:
     networks:
       - langflow-net
     environment:
-      LANGFLOW_DATABASE_URL: "${LANGFLOW_DATABASE_URL:-postgresql://langflow:langflow@langflow-postgres:5432/langflow}"
+      LANGFLOW_DATABASE_URL: "postgresql://langflow:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@langflow-postgres:5432/langflow"
       LANGFLOW_CONFIG_DIR: "${LANGFLOW_CONFIG_DIR:-/app/langflow}"
     volumes:
       - "${APP_DATA:-.}/backend:/app/langflow"

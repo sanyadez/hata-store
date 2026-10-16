@@ -16,7 +16,7 @@ services:
       - "${APP_DATA:-.}/qui:/config"
     environment:
       QUI__DATABASE_ENGINE: "${QUI__DATABASE_ENGINE:-postgres}"
-      QUI__DATABASE_DSN: "${QUI__DATABASE_DSN:-postgres://qui:qui@qui-postgres:5432/qui?sslmode=disable}"
+      QUI__DATABASE_DSN: "postgres://qui:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@qui-postgres:5432/qui?sslmode=disable"
     networks:
       - qui_network
   postgres:

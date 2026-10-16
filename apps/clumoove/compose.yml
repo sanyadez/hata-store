@@ -17,7 +17,7 @@ services:
     image: ghcr.io/xxroxxerxx/clumoove-api:v0.18.0@sha256:d9c34a1c6db8c7ffbeb942cffae849796a9c4eab267d8af2a7d1eb75c932b9bc
     restart: unless-stopped
     environment:
-      DATABASE_URL: postgres://clumoove:clumoove_secure_password_default@postgres-db:5432/cloud_migration_db?sslmode=disable
+      DATABASE_URL: "postgres://clumoove:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@postgres-db:5432/cloud_migration_db?sslmode=disable"
       REDIS_URL: redis://:clumoove_secure_redis_pass@redis-queue:6379
       PORT: "8000"
       ENCRYPTION_SECRET_KEY: "${DB_PASSWORD:?set DB_PASSWORD}"
@@ -41,7 +41,7 @@ services:
     command:
       - /app/worker
     environment:
-      DATABASE_URL: postgres://clumoove:clumoove_secure_password_default@postgres-db:5432/cloud_migration_db?sslmode=disable
+      DATABASE_URL: "postgres://clumoove:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@postgres-db:5432/cloud_migration_db?sslmode=disable"
       REDIS_URL: redis://:clumoove_secure_redis_pass@redis-queue:6379
       ENCRYPTION_SECRET_KEY: "${DB_PASSWORD:?set DB_PASSWORD}"
       LOCAL_STORAGE_ROOT: /clumoove

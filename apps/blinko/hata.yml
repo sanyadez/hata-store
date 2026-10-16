@@ -71,44 +71,6 @@ settings:
       tr: "Node.js ortam modu (geliştirme, üretim veya test)"
       zh: Node.js 环境模式（开发、生产或测试）
       uk: "Режим середовища Node.js (development, production або test)"
-  - name: NEXTAUTH_URL
-    type: text
-    default: http://localhost:1111
-    label:
-      en: Base URL for NextAuth.js authentication provider
-      de: Basis-URL für den NextAuth.js-Authentifizierungsanbieter
-      el: Διεύθυνση βάσης δεδομένων για τον προμηθευτή αναγνώρισης NextAuth.js
-      fr: "URL de base pour le fournisseur d'authentification NextAuth.js"
-      hr: Osnovna URL adresa za pružatelja autentičnosti NextAuth.js
-      it: URL base per il provider di autenticazione NextAuth.js
-      ja: NextAuth.js 認証プロバイダーのベースURL
-      ko: NextAuth.js 인증 제공자를 위한 기본 URL
-      nb: Base-URL for NextAuth.js-autentiseringsleverandør
-      pt: URL base para o provedor de autenticação do NextAuth.js
-      ru: Основной URL для провайдера аутентификации NextAuth.js
-      sv: Bas-URL för NextAuth.js-autentiseringsleverantör
-      tr: NextAuth.js kimlik doğrulama sağlayıcısı için temel URL
-      zh: NextAuth.js 认证提供器的基础 URL
-      uk: Базова адреса для постачальника автентифікації NextAuth.js
-  - name: NEXT_PUBLIC_BASE_URL
-    type: text
-    default: http://localhost:1111
-    label:
-      en: Public base URL for client-side Next.js application
-      de: Öffentliche Basis-URL für eine clientseitige Next.js-Anwendung
-      el: Δημόσιο baseUrl για εφαρμογή Next.js στο πλευρό του πελάτη
-      fr: URL de base public pour une application côté client Next.js
-      hr: Javna osnovna URL adresa za klijentsku Next.js aplikaciju
-      it: "URL di base pubblico per un'applicazione Next.js lato client"
-      ja: クライアントサイドの Next.js アプリケーション用の公開ベースURL
-      ko: 클라이언트 측 Next.js 애플리케이션을 위한 공인 기본 URL
-      nb: Offentlig base-URL for klient-siden Next.js-applikasjon
-      pt: URL base público para aplicação do lado do cliente do Next.js
-      ru: Публичный базовый URL для клиентского приложения Next.js
-      sv: Public basadress för klientbaserad Next.js-app
-      tr: İstemci tarafı Next.js uygulaması için public temel URL
-      zh: 客户端 Next.js 应用的公共基础 URL
-      uk: Публічна базова адреса клієнтської частини Next.js
   - name: NEXTAUTH_SECRET
     type: secret
     length: 44
@@ -127,25 +89,6 @@ settings:
       tr: NextAuth.js JWT tokenlarını şifrelemek için kullanılan gizli anahtar
       zh: 用于加密 NextAuth.js JWT 令牌的密钥
       uk: Секретний ключ для шифрування JWT-токенів NextAuth.js
-  - name: DATABASE_URL
-    type: text
-    default: postgresql://postgres:JWD9bxUR7Um9PaGg7FQZ@blinko-postgres:5432/postgres
-    label:
-      en: PostgreSQL database connection string with credentials
-      de: Verbindungshinweis zur PostgreSQL-Datenbank mit Anmeldeinformationen
-      el: Συμβολοσειρά σύνδεσης με βάση PostgreSQL με πιστοποιητικά
-      fr: Chaîne de connexion à la base de données PostgreSQL avec les identifiants
-      hr: Veznica za bazu podataka PostgreSQL s vjerodajnicama
-      it: String di connessione al database PostgreSQL con credenziali
-      ja: PostgreSQL データベース接続文字列と認証情報
-      ko: PostgreSQL 데이터베이스 연결 문자열 및 인증 정보
-      nb: PostgreSQL-databas tilkoblingsstreng med påloggingsopplysninger
-      pt: String de ligação à base de dados PostgreSQL com credenciais
-      ru: Строка подключения к базе данных PostgreSQL с учетными данными
-      sv: Anslutningssträng för PostgreSQL-databas med autentiseringsuppgifter
-      tr: PostgreSQL veritabanı bağlantı dizini ve kimlik bilgileri
-      zh: PostgreSQL 数据库连接字符串（含凭据）
-      uk: Рядок підключення до бази PostgreSQL з обліковими даними
   - name: POSTGRES_DB
     type: text
     default: postgres

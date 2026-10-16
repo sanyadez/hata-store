@@ -55,6 +55,27 @@ function hostPort(def: Obj, target: number, env: Record<string, string>): number
   throw new Error(`port ${target} is not published`);
 }
 
+/** The user a service runs as, by number, from the compose file or the image; null — root, or unknown */
+function imageUser(def: Obj, env: Record<string, string>): { uid: number; gid: number } | null {
+  const run = (cmd: string[]) => Bun.spawnSync(cmd, { stdout: "pipe", stderr: "pipe" }).stdout.toString().trim();
+  const given = def.user != null ? fill(String(def.user), env) : run(["docker", "image", "inspect", "-f", "{{.Config.User}}", String(def.image)]);
+  if (!given) return null;
+  const [u = "", g = ""] = given.split(":");
+  const file = (path: string) => {
+    const id = run(["docker", "create", "--entrypoint", "/nonexistent", String(def.image)]);
+    if (!id) return "";
+    const text = run(["sh", "-c", `docker cp ${id}:${path} - 2>/dev/null | tar -xO 2>/dev/null`]);
+    run(["docker", "rm", "-f", id]);
+    return text;
+  };
+  const field = (text: string, name: string, n: number) => text.split("\n").map((l) => l.split(":")).find((p) => p[0] === name)?.[n];
+  const passwd = /^\d+$/.test(u) ? "" : file("/etc/passwd");
+  const uid = /^\d+$/.test(u) ? Number(u) : Number(field(passwd, u, 2) ?? NaN);
+  if (!Number.isInteger(uid) || uid === 0) return null;
+  const gid = /^\d+$/.test(g) ? Number(g) : g ? Number(field(file("/etc/group"), g, 2) ?? uid) : Number(field(passwd, u, 3) ?? uid);
+  return { uid, gid: Number.isInteger(gid) ? gid : uid };
+}
+
 async function smoke(id: string): Promise<boolean> {
   const source = join(ROOT, "apps", id);
   const hata = Bun.YAML.parse(readFileSync(join(source, "hata.yml"), "utf8")) as Obj;
@@ -92,17 +113,39 @@ async function smoke(id: string): Promise<boolean> {
   }
   writeFileSync(join(appDir, ".env"), Object.entries(env).map(([k, v]) => `${k}=${v}\n`).join(""));
 
-  // the folders Hata makes for the app before the first start, owned by the user it runs apps as
+  const project = `smoke-${id}`;
+  // as Hata does it: the devices this machine has not are left out by an override
+  const gone: string[] = [];
+  const kept: string[] = [];
+  for (const [name, def] of Object.entries(services(file))) {
+    if (!Array.isArray(def.devices)) continue;
+    const host = (d: unknown) => (typeof d === "string" ? d.split(":")[0]! : isObject(d) ? String(d.source ?? "") : "");
+    const missing = def.devices.filter((d: unknown) => host(d).startsWith("/") && !existsSync(host(d)));
+    if (!missing.length) continue;
+    gone.push(...missing.map(host));
+    kept.push(`  ${JSON.stringify(name)}:\n    devices: !override ${JSON.stringify(def.devices.filter((d: unknown) => !missing.includes(d)))}`);
+  }
+  if (kept.length) {
+    writeFileSync(join(appDir, "compose.override.yml"), `services:\n${kept.join("\n")}\n`);
+    console.log(`   left out, not on this machine: ${gone.join(", ")}`);
+  }
+  console.log(`== ${id}: pull`);
+  const pulled = compose(appDir, project, "pull", "-q");
+  if (pulled.exitCode !== 0) console.log(pulled.stderr.toString().trim());
+
+  // the folders Hata makes for the app before the first start: the user apps run as, or the one the
+  // service's image runs as when it has its own
   const folders = (hata.settings ?? []).filter((s: Obj) => s.type === "folder").map((s: Obj) => s.name);
   for (const m of bindMounts(file)) {
     if (mountKind(m, folders) !== "own" || /^[./]/.test(m.source)) continue;
     const path = fill(m.source, env);
     if (existsSync(path)) continue;
     mkdirSync(path, { recursive: true });
-    chownSync(path, 1000, 1000);
+    const who = imageUser(services(file)[m.service] ?? {}, env);
+    chownSync(path, who?.uid ?? 1000, who?.gid ?? 1000);
+    if (who) console.log(`   ${m.source} given to ${who.uid}:${who.gid}`);
   }
 
-  const project = `smoke-${id}`;
   console.log(`== ${id}: up (${Object.entries(env).filter(([k]) => k.endsWith("PORT")).map(([k, v]) => `${k}=${v}`).join(" ")})`);
   const pull = Date.now();
   const up = compose(appDir, project, "up", "-d");

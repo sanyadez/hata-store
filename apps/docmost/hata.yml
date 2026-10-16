@@ -57,25 +57,6 @@ settings:
     label:
       en: Web port
       uk: Порт вебінтерфейсу
-  - name: APP_URL_2
-    type: text
-    default: http://localhost:3000
-    label:
-      en: The base URL of your application
-      it: "L'URL base della tua applicazione"
-      nb: Basis-URL for applikasjonen din
-      zh: 应用程序的基础URL
-      ja: アプリケーションのベースURL
-      ko: 애플리케이션의 기본 URL
-      fr: "L'URL de base de votre application"
-      de: Die Basis-URL Ihrer Anwendung
-      sv: Bas-URL för din applikation
-      el: Η βασική διεύθυνση URL της εφαρμογής σας
-      hr: Osnovni URL vaše aplikacije
-      pt: O URL base da sua aplicação
-      ru: Базовый URL вашего приложения
-      tr: "Uygulamanızın temel URL'si"
-      uk: Базова URL-адреса вашого застосунку
   - name: APP_SECRET
     type: secret
     label:
@@ -94,25 +75,6 @@ settings:
       ru: Секретный ключ приложения
       tr: Uygulama gizli anahtarı
       uk: Секретний ключ застосунку
-  - name: DATABASE_URL
-    type: text
-    default: postgresql://docmost:jcui51lw747yuuk4zrpm@docmost-db:5432/docmost?schema=public
-    label:
-      en: Database Connection URL
-      it: URL di connessione al database
-      nb: Database tilkoblings-URL
-      zh: 数据库连接URL
-      ja: データベース接続URL
-      ko: 데이터베이스 연결 URL
-      fr: URL de connexion à la base de données
-      de: Datenbank-Verbindungs-URL
-      sv: Databasanslutnings-URL
-      el: URL σύνδεσης βάσης δεδομένων
-      hr: URL veze s bazom podataka
-      pt: URL de ligação à base de dados
-      ru: URL подключения к базе данных
-      tr: "Veritabanı bağlantı URL'si"
-      uk: URL підключення до бази даних
   - name: REDIS_URL
     type: text
     default: redis://docmost-redis:6379

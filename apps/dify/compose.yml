@@ -41,7 +41,7 @@ services:
       REDIS_PORT: "6379"
       REDIS_PASSWORD: "${DB_PASSWORD_2:?set DB_PASSWORD_2}"
       REDIS_DB: "0"
-      CELERY_BROKER_URL: redis://:difyai123456@redis:6379/1
+      CELERY_BROKER_URL: "redis://:${DB_PASSWORD_2:?set DB_PASSWORD_2}@redis:6379/1"
       WEB_API_CORS_ALLOW_ORIGINS: "*"
       CONSOLE_CORS_ALLOW_ORIGINS: "*"
       STORAGE_TYPE: local
@@ -90,7 +90,7 @@ services:
       REDIS_PASSWORD: "${DB_PASSWORD_2:?set DB_PASSWORD_2}"
       REDIS_DB: "0"
       REDIS_USE_SSL: "false"
-      CELERY_BROKER_URL: redis://:difyai123456@redis:6379/1
+      CELERY_BROKER_URL: "redis://:${DB_PASSWORD_2:?set DB_PASSWORD_2}@redis:6379/1"
       STORAGE_TYPE: local
       STORAGE_LOCAL_PATH: storage
       VECTOR_STORE: weaviate

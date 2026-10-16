@@ -39,13 +39,6 @@ settings:
       en: Database engine to use (postgres or sqlite)
       zh: 使用的数据库引擎（postgres 或 sqlite）
       uk: Рушій бази даних (postgres або sqlite)
-  - name: QUI__DATABASE_DSN
-    type: text
-    default: postgres://qui:qui@qui-postgres:5432/qui?sslmode=disable
-    label:
-      en: PostgreSQL connection string (DSN)
-      zh: PostgreSQL 连接字符串（DSN）
-      uk: Рядок підключення до PostgreSQL (DSN)
   - name: POSTGRES_USER
     type: text
     default: qui

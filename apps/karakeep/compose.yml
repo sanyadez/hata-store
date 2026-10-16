@@ -19,7 +19,7 @@ services:
       MEILI_ADDR: http://karakeep-meilisearch:7700
       BROWSER_WEB_URL: http://karakeep-chrome:9222
       DATA_DIR: /data
-      NEXTAUTH_URL: "${NEXTAUTH_URL:-http://localhost:14592}"
+      NEXTAUTH_URL: "${APP_URL:-http://localhost:14592}"
       NEXTAUTH_SECRET: "${DB_PASSWORD:?set DB_PASSWORD}"
       MEILI_MASTER_KEY: "${DB_PASSWORD:?set DB_PASSWORD}"
       OPENAI_API_KEY: "${OPENAI_API_KEY:-}"

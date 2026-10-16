@@ -52,8 +52,8 @@ services:
   backend-api:
     image: taskingai/taskingai-server:v0.3.0
     environment:
-      POSTGRES_URL: postgres://postgres:TaskingAI321@db:5432/taskingai
-      REDIS_URL: redis://:TaskingAI321@cache:6379/0
+      POSTGRES_URL: "postgres://postgres:${DB_PASSWORD_2:?set DB_PASSWORD_2}@db:5432/taskingai"
+      REDIS_URL: "redis://:${DB_PASSWORD_2:?set DB_PASSWORD_2}@cache:6379/0"
       TASKINGAI_INFERENCE_URL: http://backend-inference:8000
       TASKINGAI_PLUGIN_URL: http://backend-plugin:8000
       AES_ENCRYPTION_KEY: "${DB_PASSWORD:?set DB_PASSWORD}"
@@ -83,8 +83,8 @@ services:
   backend-web:
     image: taskingai/taskingai-server:v0.3.0
     environment:
-      POSTGRES_URL: postgres://postgres:TaskingAI321@db:5432/taskingai
-      REDIS_URL: redis://:TaskingAI321@cache:6379/0
+      POSTGRES_URL: "postgres://postgres:${DB_PASSWORD_2:?set DB_PASSWORD_2}@db:5432/taskingai"
+      REDIS_URL: "redis://:${DB_PASSWORD_2:?set DB_PASSWORD_2}@cache:6379/0"
       TASKINGAI_INFERENCE_URL: http://backend-inference:8000
       TASKINGAI_PLUGIN_URL: http://backend-plugin:8000
       AES_ENCRYPTION_KEY: "${DB_PASSWORD:?set DB_PASSWORD}"

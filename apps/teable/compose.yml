@@ -16,10 +16,10 @@ services:
     environment:
       TZ: "${TZ:-UTC}"
       NEXT_ENV_IMAGES_ALL_REMOTE: "${NEXT_ENV_IMAGES_ALL_REMOTE:-true}"
-      PUBLIC_ORIGIN: "${PUBLIC_ORIGIN:-http://127.0.0.1:3000}"
-      PRISMA_DATABASE_URL: "${PRISMA_DATABASE_URL:-postgresql://example:example@teable-db:5432/teable-db}"
+      PUBLIC_ORIGIN: "${APP_URL:-http://127.0.0.1:3000}"
+      PRISMA_DATABASE_URL: "postgresql://example:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@teable-db:5432/teable-db"
       BACKEND_CACHE_PROVIDER: "${BACKEND_CACHE_PROVIDER:-redis}"
-      BACKEND_CACHE_REDIS_URI: "${BACKEND_CACHE_REDIS_URI:-redis://default:password@teable-cache:6379/0}"
+      BACKEND_CACHE_REDIS_URI: redis://default:password@teable-cache:6379/0
     networks:
       - teable-network
     depends_on:

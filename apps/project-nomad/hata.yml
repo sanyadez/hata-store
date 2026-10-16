@@ -69,13 +69,6 @@ settings:
     label:
       en: Web port
       uk: Порт вебінтерфейсу
-  - name: URL
-    type: text
-    default: http://localhost:8080
-    label:
-      en: "Public URL used to access NOMAD, including the web port"
-      zh: 访问 NOMAD 的完整地址，包含 Web 端口
-      uk: "Публічна адреса для доступу до NOMAD, разом із портом вебінтерфейсу"
   - name: APP_KEY
     type: secret
     length: 33
