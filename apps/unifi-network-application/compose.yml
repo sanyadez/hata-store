@@ -23,7 +23,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: "${APP_DATA:-.}"
+        source: "${APP_DATA:-.}/config"
         target: /config
     networks:
       - unifi-bridge
@@ -42,7 +42,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: "${APP_DATA:-.}"
+        source: "${APP_DATA:-.}/db"
         target: /data/db
     networks:
       - unifi-bridge
@@ -52,4 +52,4 @@ networks:
     driver: bridge
 configs:
   init-mongo.js:
-    content: "db.getSiblingDB(\"unifi-db\").createUser({user: \"unifi\", pwd: \"pass\", roles: [{role: \"dbOwner\", db: \"unifi-db\"}]}); \ndb.getSiblingDB(\"unifi-db_stat\").createUser({user: \"unifi\", pwd: \"pass\", roles: [{role: \"dbOwner\", db: \"unifi-db_stat\"}]});\n"
+    content: "db.getSiblingDB(\"unifi-db\").createUser({user: \"unifi\", pwd: \"${MONGO_PASS:?set MONGO_PASS}\", roles: [{role: \"dbOwner\", db: \"unifi-db\"}]}); \ndb.getSiblingDB(\"unifi-db_stat\").createUser({user: \"unifi\", pwd: \"${MONGO_PASS:?set MONGO_PASS}\", roles: [{role: \"dbOwner\", db: \"unifi-db_stat\"}]});\n"
