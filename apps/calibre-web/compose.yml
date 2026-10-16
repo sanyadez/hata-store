@@ -6,7 +6,7 @@ services:
       PGID: "${PGID:-1000}"
       PUID: "${PUID:-1000}"
       TZ: "${TZ:-UTC}"
-    image: linuxserver/calibre-web:0.6.24
+    image: linuxserver/calibre-web:0.6.27
     deploy:
       resources:
         reservations:
