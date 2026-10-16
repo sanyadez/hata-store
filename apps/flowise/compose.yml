@@ -9,15 +9,15 @@ services:
           memory: 256M
     environment:
       PORT: "3025"
-      DATABASE_PATH: /root/.flowise
-      APIKEY_PATH: /root/.flowise
-      SECRETKEY_PATH: /root/.flowise
-      LOG_PATH: /root/.flowise/logs
-      BLOB_STORAGE_PATH: /root/.flowise/storage
+      DATABASE_PATH: /home/node/.flowise
+      APIKEY_PATH: /home/node/.flowise
+      SECRETKEY_PATH: /home/node/.flowise
+      LOG_PATH: /home/node/.flowise/logs
+      BLOB_STORAGE_PATH: /home/node/.flowise/storage
       FLOWISE_USERNAME: "${FLOWISE_USERNAME:-admin}"
       FLOWISE_PASSWORD: "${FLOWISE_PASSWORD:?set FLOWISE_PASSWORD}"
     ports:
       - "${WEB_PORT:-3025}:3025"
     volumes:
-      - "${APP_DATA:-.}:/root/.flowise"
+      - "${APP_DATA:-.}:/home/node/.flowise"
     entrypoint: "/bin/sh -c \"sleep 3; flowise start\""
