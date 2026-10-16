@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   v2raya:
-    image: mzz2017/v2raya:v2.2.7.5
+    image: mzz2017/v2raya:v2.5.10
     deploy:
       resources:
         reservations:
