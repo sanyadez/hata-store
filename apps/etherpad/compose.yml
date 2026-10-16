@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   etherpad:
-    image: etherpad/etherpad:3.1.0
+    image: etherpad/etherpad:3.3.8
     deploy:
       resources:
         reservations:
