@@ -13,11 +13,13 @@ description:
     застосунків поверх — нотатки, завдання, фото, відеодзвінки.
 notes:
   en: |
-    The first page asks for the administrator's name and password. Nextcloud answers only at the
-    addresses it knows: the one used at that first page, and those listed in "Other addresses".
+    The first start takes a few minutes: Nextcloud sets itself up with the administrator given here.
+    It answers only at the addresses it knows — the app's address in Hata and those listed in
+    "Other addresses" (both read at the first start only; later they are changed in config.php).
   uk: |
-    Перша сторінка питає ім'я й пароль адміністратора. Nextcloud відповідає лише за адресами, які
-    знає: тією, з якої відкрили першу сторінку, і тими, що вписані в «Інші адреси».
+    Перший запуск триває кілька хвилин: Nextcloud налаштовується сам з адміністратором, указаним тут.
+    Він відповідає лише за адресами, які знає, — адресою застосунку в Hata і тими, що вписані в
+    «Інші адреси» (обидві читаються лише за першого запуску; потім їх змінюють у config.php).
 category: files
 developer: Nextcloud
 website: https://nextcloud.com
@@ -31,12 +33,21 @@ settings:
     type: port
     default: 8081
     label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: ADMIN_USER
+    type: text
+    default: admin
+    required: true
+    label: { en: Administrator, uk: Адміністратор }
+  - name: ADMIN_PASSWORD
+    type: password
+    required: true
+    label: { en: Administrator's password, uk: Пароль адміністратора }
   - name: TRUSTED_DOMAINS
     type: text
     label: { en: Other addresses, uk: Інші адреси }
     hint:
-      en: Host names it is opened at besides the first one, separated by spaces (only read at the first start)
-      uk: Імена, за якими його відкривають, окрім першого, через пробіл (читаються лише за першого запуску)
+      en: Other host names it is opened at, separated by spaces
+      uk: Інші імена, за якими його відкривають, через пробіл
   - name: UPLOAD_LIMIT
     type: text
     default: 16G

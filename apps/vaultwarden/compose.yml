@@ -7,7 +7,7 @@ services:
     volumes:
       - ${APP_DATA:-.}/data:/data
     environment:
-      DOMAIN: ${DOMAIN:-http://localhost}
+      DOMAIN: ${APP_URL:-http://localhost}
       SIGNUPS_ALLOWED: ${SIGNUPS_ALLOWED:-true}
       ADMIN_TOKEN: ${ADMIN_TOKEN:-}
       TZ: ${TZ:-UTC}

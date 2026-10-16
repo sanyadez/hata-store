@@ -1,0 +1,14 @@
+# A pull request for every newer image of an app, once a week; the workflow checks it and starts the app.
+version: 2
+updates:
+  - package-ecosystem: docker-compose
+    directories:
+      - /apps/*
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 20
+    groups:
+      # the server and the machine learning of Immich must be of one version
+      immich:
+        patterns:
+          - "ghcr.io/immich-app/immich-*"

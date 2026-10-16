@@ -67,21 +67,29 @@ async function smoke(id: string): Promise<boolean> {
   mkdirSync(appDir, { recursive: true });
   mkdirSync(appData, { recursive: true });
   chownSync(appData, 1000, 1000);
-  cpSync(join(source, "compose.yml"), join(appDir, "compose.yml"));
+  // the compose file and the app's other files, as Hata puts them in the app's folder
+  cpSync(source, appDir, { recursive: true, filter: (from) => !/\/(hata\.yml|screenshots)$/.test(from) });
 
   const env: Record<string, string> = { APP_DATA: appData, PUID: "1000", PGID: "1000", TZ: "Europe/Kyiv" };
   const known = { ...env, DATA_ROOT: dataRoot };
   for (const s of hata.settings ?? []) {
-    if (s.type === "secret") env[s.name] = secret(s.length ?? 32);
+    // what the person would type: a password made up, a required field without a default filled
+    if (s.type === "secret" || s.type === "password") env[s.name] = secret(s.length ?? 32);
     else if (s.type === "port") env[s.name] = String(await freePort(Number(s.default ?? 8000)));
     else if (s.default !== undefined) env[s.name] = fill(String(s.default), known);
+    else if (s.required) env[s.name] = "smoke";
+  }
+  if (hata.web) {
+    const port = hostPort(services(file)[hata.web.service]!, hata.web.port, env);
+    env.APP_HOST = "127.0.0.1";
+    env.APP_URL = `${hata.web.scheme ?? "http"}://127.0.0.1:${port}`;
   }
   writeFileSync(join(appDir, ".env"), Object.entries(env).map(([k, v]) => `${k}=${v}\n`).join(""));
 
   // the folders Hata makes for the app before the first start, owned by the user it runs apps as
   const folders = (hata.settings ?? []).filter((s: Obj) => s.type === "folder").map((s: Obj) => s.name);
   for (const m of bindMounts(file)) {
-    if (mountKind(m, folders) !== "own" || m.source.startsWith("/")) continue;
+    if (mountKind(m, folders) !== "own" || /^[./]/.test(m.source)) continue;
     const path = fill(m.source, env);
     if (existsSync(path)) continue;
     mkdirSync(path, { recursive: true });
@@ -99,8 +107,7 @@ async function smoke(id: string): Promise<boolean> {
   console.log(`   up in ${Math.round((started - pull) / 1000)} s`);
 
   if (ok && hata.web) {
-    const def = services(file)[hata.web.service]!;
-    const url = `${hata.web.scheme ?? "http"}://127.0.0.1:${hostPort(def, hata.web.port, env)}${hata.web.path ?? "/"}`;
+    const url = `${env.APP_URL}${hata.web.path ?? "/"}`;
     let answer = "";
     while (Date.now() - started < WAIT_MS) {
       try {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { bindMounts, checkCompose, checkHata, checkIcon, common, fill, floating, parseImage, permissionsOf, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
+import { bindMounts, checkCompose, checkHata, checkIcon, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
 
 const svg = (body: string) => `data:image/svg+xml;base64,${Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg">${body}</svg>`).toString("base64")}`;
 const store = { categories: { media: { en: "Media" } } };
@@ -110,4 +110,23 @@ describe("icons", () => {
     expect(svgDanger('<svg><path fill="url(#a)"/></svg>')).toBe("");
   });
   test("a link is not an icon", () => expect(problems("https://example.org/x.svg")[0]).toContain("data:image"));
+});
+
+describe("the app's other files", () => {
+  const file = (name: string, text: string, link = false) => ({ name, bytes: new TextEncoder().encode(text), link });
+  test("a config it mounts is its own", () => {
+    const c = compose({ volumes: ["./nginx.conf:/etc/nginx/nginx.conf:ro", "./conf:/conf", "./data:/data"] });
+    const got = texts(checkCompose("demo", c, hata(), ["nginx.conf", "conf/a.conf"]));
+    expect(got).toEqual(["service demo mounts ./data, which is not a file of the app: data goes to ${APP_DATA:-.}/…"]);
+    expect(shippedPath("./../x", ["../x"])).toBe(false);
+  });
+  test("what cannot go with an app", () => {
+    const got = texts(checkShipped("demo", [file(".env", "A=1"), file("bin", "\0\x01"), file("l", "", true), file(".env.example", "# NOTE=x\nWEB_PORT=80\nOTHER=1\n")], compose({ ports: ["${WEB_PORT:-80}:80"] })));
+    expect(got).toEqual([
+      "is written by Hata and cannot come from the store",
+      "is not text (UTF-8): only text files go with an app",
+      "is a link; a file of the app is a plain file",
+      "OTHER is not a variable of the compose file",
+    ]);
+  });
 });

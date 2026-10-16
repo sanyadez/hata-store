@@ -20,10 +20,17 @@ apps/
     compose.yml           plain Docker Compose
     hata.yml              what Hata needs besides
     screenshots/          optional: PNG, JPEG or WebP, listed in hata.yml
+    …                     optional: other files, see below
 scripts/                  the checks (Bun, no packages)
 ```
 
-Nothing else goes into an app's folder: a compose file here does not depend on files next to it.
+### Other files
+
+Anything else in the app's folder goes with it: Hata puts it next to the compose file, so a config is
+mounted as `./nginx.conf:/etc/nginx/nginx.conf:ro`. Such files are text (UTF-8), plain files (no links),
+256 KB together at most; `.env` and `compose.override.yml` are Hata's and cannot come from here. A
+`.env.example` for those who run the app without Hata is welcome; the variables it sets must be the
+compose file's.
 
 ## The compose file
 
@@ -33,7 +40,8 @@ It must start in an empty folder with `docker compose up` alone. So:
   (a password: compose then refuses to start and says why). A default never names another variable.
 - **The app's data lives in `${APP_DATA:-.}/…`**: Hata points `APP_DATA` at the app's folder in the
   server's data folder; without Hata it is the folder of the compose file. A folder the person chooses
-  (media, photos) is a setting of type `folder`. A relative path (`./data`) is refused.
+  (media, photos) is a setting of type `folder`. A relative path (`./data`) is refused unless it is one
+  of the app's own files.
 - **Images are published ones, pinned to a version**: `nginx:1.27.3`, or a digest. `latest`, `stable`,
   `release`, `nightly` and the like are refused: the store's update is the change of the tag.
 - **`restart: unless-stopped`** (or `always`) on every service, or the app stays down after a reboot.
@@ -48,11 +56,15 @@ Variables Hata writes into the app's `.env`:
 | Variable   | Value                                                   |
 |------------|---------------------------------------------------------|
 | `APP_DATA` | the app's own data folder, `<data folder>/AppData/<app>` |
+| `APP_URL`  | the address the app is opened at, without a path: `https://<app>.<domain>` when Hata has a domain with HTTPS, else `http://<server>:<port>` |
+| `APP_HOST` | the host name of that address                           |
 | `PUID`     | the user apps run as (1000 by default)                  |
 | `PGID`     | that user's group                                       |
 | `TZ`       | the server's time zone                                  |
 
-Hata makes the app's folders before the first start and gives them to `PUID:PGID`.
+Hata makes the app's folders before the first start and gives them to `PUID:PGID`. When the app's
+address changes (a domain is set up, the port is changed), Hata writes the new `APP_URL` and
+`APP_HOST` and recreates the app.
 
 ## hata.yml
 
@@ -110,6 +122,12 @@ settings:
 
 `DATA_ROOT` (the server's data folder) can be used in defaults only, not in the compose file.
 
+## Updates
+
+Dependabot looks at the images of every app once a week and opens a pull request for a newer version;
+the workflow checks it and starts the app with it, and a merge is the update Hata offers to everybody
+who has the app.
+
 ### Permissions
 
 Whatever the compose file asks of the host beyond its own folders and ports must be explained, and Hata
@@ -162,7 +180,7 @@ value (a free port, a made-up secret), starts the app, waits up to six minutes f
 answer, and takes it down again with its volumes.
 
 On every push the workflow runs the checks, starts the apps that changed, and publishes `index.json` —
-every app with its compose file, the architectures its images exist for and the version — to the
+every app with its compose file and other files, the architectures its images exist for and the version — to the
 `index` branch. Hata downloads that one file:
 
 ```

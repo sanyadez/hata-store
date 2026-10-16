@@ -7,10 +7,10 @@
  *
  * When `docker` is on the PATH, every compose file also goes through `docker compose config`.
  */
-import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, lstatSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import {
-  APP_ID_RE, type AppFiles, checkCompose, checkHata, checkStore, common, isObject, type Obj, platformsOf, type Problem, parseImage, services,
+  APP_ID_RE, type AppFiles, checkCompose, checkHata, checkShipped, checkStore, type Shipped, textOf, common, isObject, type Obj, platformsOf, type Problem, parseImage, services,
 } from "./lib.ts";
 
 const ROOT = join(import.meta.dir, "..");
@@ -41,15 +41,25 @@ interface App {
   hata: Obj;
   composeText: string;
   compose: Obj;
+  /** The other files of the app, by their path in its folder */
+  files: Record<string, string>;
 }
 const apps: App[] = [];
 
 for (const id of ids) {
   const dir = join(appsDir, id);
   if (!APP_ID_RE.test(id)) problems.push({ file: `apps/${id}`, text: "a folder name is lowercase letters, digits and dashes, up to 40" });
-  for (const name of readdirSync(dir)) {
-    if (!["compose.yml", "hata.yml", "screenshots"].includes(name)) problems.push({ file: `apps/${id}/${name}`, text: "is not a file the store knows (compose.yml, hata.yml, screenshots/)" });
-  }
+  const shipped: Shipped[] = [];
+  const walk = (rel: string) => {
+    for (const name of readdirSync(join(dir, rel))) {
+      const path = rel ? `${rel}/${name}` : name;
+      if (!rel && ["compose.yml", "hata.yml", "screenshots"].includes(name)) continue;
+      const stat = lstatSync(join(dir, path));
+      if (stat.isDirectory()) walk(path);
+      else shipped.push({ name: path, link: stat.isSymbolicLink(), bytes: stat.isSymbolicLink() ? new Uint8Array() : readFileSync(join(dir, path)) });
+    }
+  };
+  walk("");
   if (!existsSync(join(dir, "compose.yml"))) {
     problems.push({ file: `apps/${id}`, text: "has no compose.yml" });
     continue;
@@ -61,23 +71,25 @@ for (const id of ids) {
   const composeText = readFileSync(join(dir, "compose.yml"), "utf8");
   const compose = readYaml(join(dir, "compose.yml"));
   const hata = readYaml(join(dir, "hata.yml"));
-  const files: AppFiles = { id, screenshots: new Map() };
+  const pictures: AppFiles = { id, screenshots: new Map() };
   const shots = join(dir, "screenshots");
   if (existsSync(shots)) {
     for (const name of readdirSync(shots)) {
       const bytes = readFileSync(join(shots, name));
-      files.screenshots.set(name, { head: bytes.subarray(0, 512), size: bytes.length });
+      pictures.screenshots.set(name, { head: bytes.subarray(0, 512), size: bytes.length });
     }
   }
-  problems.push(...checkHata(files, hata, isObject(store) ? store : {}));
-  problems.push(...checkCompose(id, compose, isObject(hata) ? hata : null));
-  if (isObject(compose) && isObject(hata)) apps.push({ id, hata, composeText, compose });
+  problems.push(...checkHata(pictures, hata, isObject(store) ? store : {}));
+  problems.push(...checkCompose(id, compose, isObject(hata) ? hata : null, shipped.map((f) => f.name)));
+  problems.push(...checkShipped(id, shipped, compose));
+  const files = Object.fromEntries(shipped.map((f) => [f.name, textOf(f.bytes) ?? ""]));
+  if (isObject(compose) && isObject(hata)) apps.push({ id, hata, composeText, compose, files });
 }
 
 // docker compose reads the file the way Hata will run it: every setting at its default, secrets made up
 if (Bun.which("docker")) {
   for (const app of apps) {
-    const env: Record<string, string> = { APP_DATA: "/tmp/app", PUID: "1000", PGID: "1000", TZ: "UTC" };
+    const env: Record<string, string> = { APP_DATA: "/tmp/app", APP_URL: "http://localhost", APP_HOST: "localhost", PUID: "1000", PGID: "1000", TZ: "UTC" };
     for (const s of app.hata.settings ?? []) env[s.name] = s.type === "secret" ? "x".repeat(32) : String(s.default ?? "").replaceAll("${DATA_ROOT}", "/tmp/data").replaceAll("${APP_DATA}", "/tmp/app");
     const run = Bun.spawnSync(["docker", "compose", "-p", app.id, "-f", "-", "config", "-q"], {
       stdin: new TextEncoder().encode(app.composeText),
@@ -133,6 +145,7 @@ if (indexAt) {
         architectures: architectures.get(app.id),
         images: Object.values(services(app.compose)).map((d) => d.image),
         compose: app.composeText,
+        files: app.files,
       };
     }),
   };

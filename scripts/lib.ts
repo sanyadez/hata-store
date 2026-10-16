@@ -8,7 +8,7 @@ export type Obj = Record<string, any>;
 export const isObject = (v: unknown): v is Obj => typeof v === "object" && v !== null && !Array.isArray(v);
 
 /** Variables Hata writes into every app's `.env` */
-export const HATA_VARS = ["APP_DATA", "PUID", "PGID", "TZ"] as const;
+export const HATA_VARS = ["APP_DATA", "APP_URL", "APP_HOST", "PUID", "PGID", "TZ"] as const;
 /** Variables a default value in `hata.yml` may name, besides the ones above */
 export const DEFAULT_VARS = [...HATA_VARS, "DATA_ROOT"] as const;
 
@@ -23,6 +23,11 @@ export const PERMISSIONS = ["host-network", "host-pid", "privileged", "devices",
 export const MAX_ICON = 32 * 1024;
 export const MAX_SCREENSHOT = 600 * 1024;
 export const MAX_SCREENSHOTS = 8;
+/** All the other files of an app together */
+export const MAX_SHIPPED = 256 * 1024;
+
+/** Names in an app's folder that are not the store's to ship: Hata writes them */
+const RESERVED = new Set([".env", "compose.override.yml", "compose.override.yaml", "docker-compose.override.yml"]);
 
 /** Tags that move by themselves: an app pinned to one of them updates without the store knowing */
 const FLOATING = new Set(["latest", "stable", "release", "main", "master", "nightly", "edge", "dev", "develop", "beta", "unstable", "testing", "next", "preview"]);
@@ -169,7 +174,7 @@ export function splitVolume(v: string): string[] {
 export const services = (compose: Obj): Record<string, Obj> => (isObject(compose.services) ? compose.services : {});
 
 /** What a compose file asks of the host beyond its own folders and ports */
-export function permissionsOf(compose: Obj, folders: string[]): Set<string> {
+export function permissionsOf(compose: Obj, folders: string[], shipped: string[] = []): Set<string> {
   const out = new Set<string>();
   for (const def of Object.values(services(compose))) {
     if (def.network_mode === "host") out.add("host-network");
@@ -179,19 +184,29 @@ export function permissionsOf(compose: Obj, folders: string[]): Set<string> {
     if (Array.isArray(def.cap_add) && def.cap_add.length) out.add("capabilities");
   }
   for (const m of bindMounts(compose)) {
-    const kind = mountKind(m, folders);
+    const kind = mountKind(m, folders, shipped);
     if (kind !== "own") out.add(kind);
   }
   return out;
 }
 
 /** "own" — the app's folder or a folder the person picks; else the permission it needs */
-export function mountKind(m: Mount, folders: string[]): "own" | "docker" | "host-files" {
+export function mountKind(m: Mount, folders: string[], shipped: string[] = []): "own" | "docker" | "host-files" {
+  // a relative path is the app's own file, or an error of its own (data goes to APP_DATA)
+  if (shippedPath(m.source, shipped) || /^\.{1,2}(\/|$)/.test(m.source)) return "own";
   const use = varsIn(m.source)[0];
   if (use && m.source.startsWith("${") && (use.name === "APP_DATA" || folders.includes(use.name))) return "own";
   if (/^\/(var\/)?run\/docker\.sock$/.test(m.source)) return "docker";
   if (HARMLESS.has(m.source) && m.readOnly) return "own";
   return "host-files";
+}
+
+/** `./nginx.conf` or `./conf` when the app's folder has that file, or files in that folder */
+export function shippedPath(source: string, shipped: string[]): boolean {
+  if (!source.startsWith("./")) return false;
+  const path = source.slice(2).replace(/\/+$/, "");
+  if (!path || path.split("/").includes("..")) return false;
+  return shipped.some((f) => f === path || f.startsWith(`${path}/`));
 }
 
 /** The container ports a service publishes, as numbers */
@@ -206,7 +221,7 @@ export function publishedTargets(def: Obj): number[] {
   return out;
 }
 
-export function checkCompose(id: string, compose: unknown, hata: Obj | null): Problem[] {
+export function checkCompose(id: string, compose: unknown, hata: Obj | null, shipped: string[] = []): Problem[] {
   const file = `apps/${id}/compose.yml`;
   const problems: Problem[] = [];
   const say = (text: string) => problems.push({ file, text });
@@ -249,11 +264,11 @@ export function checkCompose(id: string, compose: unknown, hata: Obj | null): Pr
 
   const folders = settings.filter((s) => s.type === "folder").map((s) => String(s.name));
   for (const m of bindMounts(compose)) {
-    if (/^[.~]/.test(m.source)) say(`service ${m.service} mounts ${m.source}: write \${APP_DATA:-.}/… so Hata can put it in the app's folder`);
+    if (/^[.~]/.test(m.source) && !shippedPath(m.source, shipped)) say(`service ${m.service} mounts ${m.source}, which is not a file of the app: data goes to \${APP_DATA:-.}/…`);
   }
 
   if (hata) {
-    const wanted = permissionsOf(compose, folders);
+    const wanted = permissionsOf(compose, folders, shipped);
     const given = isObject(hata.permissions) ? Object.keys(hata.permissions) : [];
     for (const p of wanted) if (!given.includes(p)) say(`needs the permission "${p}": say why in permissions of hata.yml`);
     for (const p of given) if (!wanted.has(p)) problems.push({ file: `apps/${id}/hata.yml`, text: `permission "${p}" is not needed by the compose file` });
@@ -433,6 +448,46 @@ export function checkHata(app: AppFiles, hata: unknown, store: Obj): Problem[] {
     }
   }
   return problems;
+}
+
+export interface Shipped {
+  /** Relative to the app's folder */
+  name: string;
+  bytes: Uint8Array;
+  link: boolean;
+}
+
+/** The app's other files: configs it mounts, `.env.example` for those who run it without Hata */
+export function checkShipped(id: string, files: Shipped[], compose: unknown): Problem[] {
+  const problems: Problem[] = [];
+  let total = 0;
+  for (const f of files) {
+    const say = (text: string) => problems.push({ file: `apps/${id}/${f.name}`, text });
+    total += f.bytes.length;
+    if (f.link) say("is a link; a file of the app is a plain file");
+    if (RESERVED.has(f.name)) say("is written by Hata and cannot come from the store");
+    if (!f.link && textOf(f.bytes) === null) say("is not text (UTF-8): only text files go with an app");
+    if (f.name === ".env.example" && isObject(compose)) {
+      const used = new Set<string>();
+      for (const text of strings(compose)) for (const v of varsIn(text)) used.add(v.name);
+      for (const line of textOf(f.bytes)?.split("\n") ?? []) {
+        const m = /^\s*(?:export\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*=/.exec(line);
+        if (m && !used.has(m[1]!)) say(`${m[1]} is not a variable of the compose file`);
+      }
+    }
+  }
+  if (total > MAX_SHIPPED) problems.push({ file: `apps/${id}`, text: `its other files are ${Math.round(total / 1024)} KB together, more than ${MAX_SHIPPED / 1024}` });
+  return problems;
+}
+
+/** The text of a file, or null when it is not UTF-8 text */
+export function textOf(bytes: Uint8Array): string | null {
+  if (bytes.includes(0)) return null;
+  try {
+    return new TextDecoder("utf-8", { fatal: true }).decode(bytes);
+  } catch {
+    return null;
+  }
 }
 
 export function checkStore(store: unknown, apps: string[]): Problem[] {

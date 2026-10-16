@@ -11,12 +11,11 @@ description:
     одноразові коди, спільні з родиною через організації, — на вашому власному сервері.
 notes:
   en: |
-    The web vault and the apps work only over **HTTPS**: open it at its address under Hata's domain
-    and write that address in "Address". Once everybody has an account, turn "Anyone may sign up" off.
+    The web vault and the apps work only over **HTTPS**: open it at its address under Hata's domain.
+    Once everybody has an account, turn "Anyone may sign up" off.
   uk: |
     Вебсховище й застосунки працюють лише через **HTTPS**: відкривайте його за адресою під доменом
-    Hata і впишіть цю адресу в «Адресу». Коли всі матимуть облікові записи, вимкніть «Будь-хто може
-    зареєструватися».
+    Hata. Коли всі матимуть облікові записи, вимкніть «Будь-хто може зареєструватися».
 category: security
 developer: Daniel García
 website: https://github.com/dani-garcia/vaultwarden
@@ -30,12 +29,6 @@ settings:
     type: port
     default: 8080
     label: { en: Web port, uk: Порт вебінтерфейсу }
-  - name: DOMAIN
-    type: url
-    label: { en: Address, uk: Адреса }
-    hint:
-      en: The https:// address it is opened at, for links in e-mails and for the apps
-      uk: Адреса https://, за якою його відкривають, — для посилань у листах і для застосунків
   - name: SIGNUPS_ALLOWED
     type: switch
     default: true
