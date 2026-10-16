@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   petio:
-    image: ghcr.io/petio-team/petio@sha256:1c5a9276a844f4284601cbe332905864950545ebdeaad74bacb9097ea4f4b333
+    image: ghcr.io/petio-team/petio@sha256:5073f5a8726d600d443efd2d24b37e7c4045e3565e338e78c7ffd46a2d524e69
     restart: unless-stopped
     networks:
       - petio-network
