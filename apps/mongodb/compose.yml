@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   mongo:
-    image: mongo:8.2.2
+    image: mongo:8.3.11
     restart: unless-stopped
     environment:
       PUID: "${PUID:-1000}"
