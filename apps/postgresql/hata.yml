@@ -53,8 +53,7 @@ settings:
       en: Postgres server username
       uk: "Ім'я користувача сервера Postgres"
   - name: POSTGRES_PASSWORD
-    type: text
-    default: hata
+    type: secret
     label:
       en: Postgres server password
       uk: Пароль користувача сервера Postgres

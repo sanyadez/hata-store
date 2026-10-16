@@ -63,8 +63,8 @@ settings:
       en: Inside the app it is /photoprism/originals
       uk: У застосунку вона — /photoprism/originals
   - name: PHOTOPRISM_ADMIN_PASSWORD
-    type: text
-    default: hata
+    type: password
+    required: true
     label:
       en: The password of admin
       zh: 管理员密码

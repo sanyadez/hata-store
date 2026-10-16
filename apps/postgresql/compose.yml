@@ -6,7 +6,7 @@ services:
       PGID: "${PGID:-1000}"
       TZ: "${TZ:-UTC}"
       POSTGRES_USER: "${POSTGRES_USER:-admin}"
-      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-hata}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}"
       POSTGRES_DB: "${POSTGRES_DB:-hata}"
     image: postgres:17.4
     deploy:

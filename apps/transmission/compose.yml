@@ -2,7 +2,7 @@
 services:
   transmission:
     environment:
-      PASS: hata
+      PASS: "${PASS:?set PASS}"
       PEERPORT: "51413"
       PGID: "1000"
       PUID: "1000"

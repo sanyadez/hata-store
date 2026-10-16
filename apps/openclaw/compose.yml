@@ -27,7 +27,7 @@ services:
       OPENCLAW_WORKSPACE_DIR: /home/node/.openclaw/workspace
       OPENCLAW_GATEWAY_PORT: "18789"
       TERM: xterm-256color
-      OPENCLAW_GATEWAY_TOKEN: hata
+      OPENCLAW_GATEWAY_TOKEN: "${OPENCLAW_GATEWAY_TOKEN:?set OPENCLAW_GATEWAY_TOKEN}"
     depends_on:
       openclaw-init:
         condition: service_completed_successfully

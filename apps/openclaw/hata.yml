@@ -73,3 +73,7 @@ settings:
       en: Port 18790
       uk: Порт 18790
     advanced: true
+  - name: OPENCLAW_GATEWAY_TOKEN
+    type: secret
+    label:
+      en: OPENCLAW_GATEWAY_TOKEN

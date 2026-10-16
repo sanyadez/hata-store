@@ -71,3 +71,8 @@ settings:
       ru: Задает маску создания файлов по умолчанию для OpenList
       tr: OpenList için varsayılan dosya oluşturma maskesini ayarlar
       uk: Маска прав для нових файлів в OpenList за замовчуванням
+  - name: OPENLIST_ADMIN_PASSWORD
+    type: password
+    required: true
+    label:
+      en: OPENLIST_ADMIN_PASSWORD

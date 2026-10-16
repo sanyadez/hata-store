@@ -10,7 +10,7 @@ services:
           memory: 15806M
     environment:
       GID: "1000"
-      PASSWORD: hata
+      PASSWORD: "${PASSWORD:?set PASSWORD}"
       TZ: "${TZ:-UTC}"
       UDI: "1000"
       USERNAME: "${USERNAME:-admin}"

@@ -59,6 +59,12 @@ settings:
     hint:
       en: Inside the app it is /media
       uk: У застосунку вона — /media
+  - name: PASSWORD
+    type: password
+    required: true
+    label:
+      en: Password
+      uk: Пароль
   - name: USERNAME
     type: text
     default: admin

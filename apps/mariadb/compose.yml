@@ -7,10 +7,10 @@ services:
       PUID: "${PUID:-1000}"
       PGID: "${PGID:-1000}"
       TZ: "${TZ:-UTC}"
-      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-hata}"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:?set MYSQL_ROOT_PASSWORD}"
       MYSQL_DATABASE: "${MYSQL_DATABASE:-hata}"
       MYSQL_USER: "${MYSQL_USER:-admin}"
-      MYSQL_PASSWORD: "${MYSQL_PASSWORD:-hata}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD:?set MYSQL_PASSWORD}"
       REMOTE_SQL: "${REMOTE_SQL:-}"
     ports:
       - "${PORT_3306:-3306}:3306"

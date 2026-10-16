@@ -4,7 +4,7 @@ services:
     image: ghcr.io/wg-easy/wg-easy:13
     restart: unless-stopped
     environment:
-      PASSWORD: hata
+      PASSWORD: "${PASSWORD:?set PASSWORD}"
       WG_HOST: "${WG_HOST:?set WG_HOST}"
       WG_PORT: "51820"
       WG_DEFAULT_DNS: 1.1.1.1

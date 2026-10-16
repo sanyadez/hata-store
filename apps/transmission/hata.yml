@@ -77,6 +77,11 @@ settings:
     hint:
       en: Inside the app it is /watch
       uk: У застосунку вона — /watch
+  - name: PASS
+    type: password
+    required: true
+    label:
+      en: PASS
   - name: USER
     type: text
     default: admin

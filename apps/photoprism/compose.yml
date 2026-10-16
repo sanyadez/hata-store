@@ -2,7 +2,7 @@
 services:
   photoprism:
     environment:
-      PHOTOPRISM_ADMIN_PASSWORD: "${PHOTOPRISM_ADMIN_PASSWORD:-hata}"
+      PHOTOPRISM_ADMIN_PASSWORD: "${PHOTOPRISM_ADMIN_PASSWORD:?set PHOTOPRISM_ADMIN_PASSWORD}"
       PHOTOPRISM_UPLOAD_NSFW: "${PHOTOPRISM_UPLOAD_NSFW:-true}"
       TZ: "${TZ:-UTC}"
     image: photoprism/photoprism:260523

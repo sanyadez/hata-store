@@ -94,8 +94,8 @@ settings:
       uk: HTTPS-порт Pi-hole
     advanced: true
   - name: FTLCONF_WEBSERVER_API_PASSWORD
-    type: text
-    default: hata
+    type: password
+    required: true
     label:
       en: Pi-hole admin password
       it: Password amministratore Pi-hole

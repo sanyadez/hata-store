@@ -42,14 +42,10 @@ settings:
       uk: Порт 3306
     advanced: true
   - name: MYSQL_ROOT_PASSWORD
-    type: text
-    default: hata
+    type: secret
     label:
       en: Mysql root password
       uk: Пароль root MySQL
-    hint:
-      en: Set this to root password for installation (minimum 4 characters & non-alphanumeric passwords must be properly escaped).
-      uk: Пароль користувача root для встановлення (щонайменше 4 символи; нелітерно-цифрові символи в паролі потрібно правильно екранувати).
   - name: MYSQL_DATABASE
     type: text
     default: hata
@@ -70,14 +66,10 @@ settings:
       en: This user will have superuser access to the database specified by MYSQL_DATABASE (do not use root here).
       uk: "Цей користувач матиме повний доступ до бази, указаної в MYSQL_DATABASE (не вказуйте тут root)."
   - name: MYSQL_PASSWORD
-    type: text
-    default: hata
+    type: secret
     label:
       en: Mysql password
       uk: Пароль MySQL
-    hint:
-      en: Set this to the password you want to use for you MYSQL_USER (minimum 4 characters & non-alphanumeric passwords must be properly escaped).
-      uk: Пароль для користувача MYSQL_USER (щонайменше 4 символи; нелітерно-цифрові символи в паролі потрібно правильно екранувати).
   - name: REMOTE_SQL
     type: text
     label:

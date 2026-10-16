@@ -65,3 +65,8 @@ settings:
     label:
       en: User name
       uk: "Ім'я користувача"
+  - name: FLOWISE_PASSWORD
+    type: password
+    required: true
+    label:
+      en: FLOWISE_PASSWORD

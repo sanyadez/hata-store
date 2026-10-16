@@ -5,11 +5,11 @@ title:
 tagline:
   en: Open-source self-hosted SQL IDE.
   zh: 开源自托管 SQL IDE。
-  uk: Self-hosted SQL IDE з відкритим кодом.
+  uk: SQL IDE з відкритим кодом для власного сервера.
 description:
   en: "LibreDB Studio is an open-source (MIT), self-hosted SQL IDE. It provides a modern web-based interface to connect to twenty-seven database engines (PostgreSQL, MySQL, Oracle, Db2, SQL Server, MongoDB, Redis, ClickHouse, Cassandra, Elasticsearch, Prometheus, Apache Kafka, Neo4j, Qdrant, Milvus, InfluxDB, etcd and more), browse schemas, and write and run queries from any browser on your LAN. Three of the twenty-seven are read-only because their own SQL is. Druid, Elasticsearch and OpenSearch have no `UPDATE` and no `CREATE TABLE` at all. Several more are read-only by construction. Data is stored locally in a SQLite database, so everything stays under your control."
   zh: "LibreDB Studio 是一款开源（MIT）的自托管 SQL IDE。它提供现代化的基于 Web 的界面，支持连接 27 种数据库引擎（PostgreSQL、MySQL、Oracle、Db2、SQL Server、MongoDB、Redis、ClickHouse、Cassandra、Elasticsearch、Prometheus、Apache Kafka、Neo4j、Qdrant、Milvus、InfluxDB、etcd 等），浏览架构，并可通过局域网中的任意浏览器编写和运行查询。其中三种（Druid、Elasticsearch、OpenSearch）为只读，因为它们自身的 SQL 完全没有 `UPDATE`，也没有 `CREATE TABLE`；另有数种出于设计为只读。数据本地存储于 SQLite 数据库中，一切尽在您的掌控之中。"
-  uk: "LibreDB Studio — self-hosted SQL IDE з відкритим кодом (MIT). Сучасний вебінтерфейс дає змогу підключатися до двадцяти семи СУБД (PostgreSQL, MySQL, Oracle, Db2, SQL Server, MongoDB, Redis, ClickHouse, Cassandra, Elasticsearch, Prometheus, Apache Kafka, Neo4j, Qdrant, Milvus, InfluxDB, etcd та інших), переглядати схеми, писати й виконувати запити з будь-якого браузера у вашій локальній мережі. Три з двадцяти семи доступні лише для читання, бо такий їхній власний SQL. У Druid, Elasticsearch і OpenSearch узагалі немає `UPDATE` і `CREATE TABLE`. Кілька інших також доступні лише для читання за своєю будовою. Дані зберігаються локально в базі SQLite, тож усе лишається під вашим контролем."
+  uk: "LibreDB Studio — SQL IDE з відкритим кодом (MIT) для власного сервера. Сучасний вебінтерфейс дає змогу підключатися до двадцяти семи СУБД (PostgreSQL, MySQL, Oracle, Db2, SQL Server, MongoDB, Redis, ClickHouse, Cassandra, Elasticsearch, Prometheus, Apache Kafka, Neo4j, Qdrant, Milvus, InfluxDB, etcd та інших), переглядати схеми, писати й виконувати запити з будь-якого браузера у вашій локальній мережі. Три з двадцяти семи доступні лише для читання, бо такий їхній власний SQL. У Druid, Elasticsearch і OpenSearch узагалі немає `UPDATE` і `CREATE TABLE`. Кілька інших також доступні лише для читання за своєю будовою. Дані зберігаються локально в базі SQLite, тож усе лишається під вашим контролем."
 category: development
 developer: libredb
 website: https://libredb.org

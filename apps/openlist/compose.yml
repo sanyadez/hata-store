@@ -16,4 +16,4 @@ services:
         target: /opt/openlist/data
     environment:
       UMASK: "${UMASK:-022}"
-      OPENLIST_ADMIN_PASSWORD: hata
+      OPENLIST_ADMIN_PASSWORD: "${OPENLIST_ADMIN_PASSWORD:?set OPENLIST_ADMIN_PASSWORD}"

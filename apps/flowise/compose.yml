@@ -15,7 +15,7 @@ services:
       LOG_PATH: /root/.flowise/logs
       BLOB_STORAGE_PATH: /root/.flowise/storage
       FLOWISE_USERNAME: "${FLOWISE_USERNAME:-admin}"
-      FLOWISE_PASSWORD: hata
+      FLOWISE_PASSWORD: "${FLOWISE_PASSWORD:?set FLOWISE_PASSWORD}"
     ports:
       - "${WEB_PORT:-3025}:3025"
     volumes:

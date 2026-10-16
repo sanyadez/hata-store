@@ -66,6 +66,12 @@ settings:
     label:
       en: Web port
       uk: Порт вебінтерфейсу
+  - name: PASSWORD
+    type: password
+    required: true
+    label:
+      en: Password
+      uk: Пароль
 permissions:
   capabilities:
     en: "It asks for extra rights of the system: NET_ADMIN, SYS_MODULE"

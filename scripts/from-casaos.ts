@@ -374,14 +374,6 @@ async function convert(dir: string): Promise<Report | null> {
         continue;
       }
       let desc = labelled(xs, "envs", k, k);
-      // the store's own name as a user's or a database's: a user to sign in as is shown, as "admin"
-      if (/^(casaos|zimaos)$/i.test(value)) {
-        if (/USER|LOGIN/i.test(k)) {
-          const name = add({ name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "text", default: "admin", required: true, label: desc?.label ?? label("User name", "Ім'я користувача"), ...(desc?.hint ? { hint: desc.hint } : {}) });
-          env[k] = `\${${name}:-admin}`;
-        } else env[k] = desc ? `\${${add({ name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "text", default: "hata", label: desc.label, ...(desc.hint ? { hint: desc.hint } : {}) })}:-hata}` : "hata";
-        continue;
-      }
       // a key or a token of the app's own (one the store wrote a value for) is made by Hata, as long as
       // the one written; one given by another service (left empty) is typed by the person, hidden
       if (/SECRET|TOKEN|_KEY$|^KEY$/i.test(k) && !/PASS/i.test(k) && /^[A-Za-z0-9_+/=.-]*$/.test(value)) {
@@ -399,6 +391,14 @@ async function convert(dir: string): Promise<Report | null> {
           ? { name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "secret", label: desc?.label ?? { en: k } }
           : { name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "password", required: true, label: desc?.label ?? (k.toUpperCase() === "PASSWORD" ? label("Password", "Пароль") : { en: k }), ...(desc?.hint ? { hint: desc.hint } : {}) });
         env[k] = `\${${name}:?set ${name}}`;
+        continue;
+      }
+      // the store's own name as a user's or a database's: a user to sign in as is shown, as "admin"
+      if (/^(casaos|zimaos)$/i.test(value)) {
+        if (/USER|LOGIN/i.test(k)) {
+          const name = add({ name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "text", default: "admin", required: true, label: desc?.label ?? label("User name", "Ім'я користувача"), ...(desc?.hint ? { hint: desc.hint } : {}) });
+          env[k] = `\${${name}:-admin}`;
+        } else env[k] = desc ? `\${${add({ name: k.toUpperCase().replace(/[^A-Z0-9_]/g, "_"), type: "text", default: "hata", label: desc.label, ...(desc.hint ? { hint: desc.hint } : {}) })}:-hata}` : "hata";
         continue;
       }
       if (!desc || /[$}\n'"]/.test(value) || !/^[A-Za-z_][A-Za-z0-9_]*$/.test(k)) continue;
