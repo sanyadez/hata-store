@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   sure-web:
-    image: ghcr.io/we-promise/sure:0.6.5-hotfix.1
+    image: ghcr.io/we-promise/sure:0.7.5-hotfix.1
     volumes:
       - type: bind
         source: "${APP_DATA:-.}/app/storage"
@@ -33,7 +33,7 @@ services:
         reservations:
           memory: 1024M
   sure-worker:
-    image: ghcr.io/we-promise/sure:0.6.5-hotfix.1
+    image: ghcr.io/we-promise/sure:0.7.5-hotfix.1
     command:
       - bundle
       - exec
