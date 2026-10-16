@@ -46,5 +46,5 @@ services:
       MARIADB_AUTO_UPGRADE: "1"
 
   redis:
-    image: redis:8.2.10
+    image: redis:8.10.2
     restart: unless-stopped
