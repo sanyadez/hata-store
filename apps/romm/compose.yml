@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   romm:
-    image: rommapp/romm:4.8.1
+    image: rommapp/romm:4.9.2
     deploy:
       resources:
         reservations:
