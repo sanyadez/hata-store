@@ -12,6 +12,9 @@ services:
     environment:
       LANGFLOW_DATABASE_URL: "postgresql://langflow:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@langflow-postgres:5432/langflow"
       LANGFLOW_CONFIG_DIR: "${LANGFLOW_CONFIG_DIR:-/app/langflow}"
+      LANGFLOW_AUTO_LOGIN: "false"
+      LANGFLOW_SUPERUSER: "${LANGFLOW_SUPERUSER:-admin}"
+      LANGFLOW_SUPERUSER_PASSWORD: "${LANGFLOW_SUPERUSER_PASSWORD:?set LANGFLOW_SUPERUSER_PASSWORD}"
     volumes:
       - "${APP_DATA:-.}/backend:/app/langflow"
     restart: unless-stopped

@@ -65,6 +65,19 @@ settings:
     label:
       en: Web port
       uk: Порт вебінтерфейсу
+  - name: LANGFLOW_SUPERUSER
+    type: text
+    default: admin
+    required: true
+    label:
+      en: Administrator's user name
+      uk: Ім'я адміністратора
+  - name: LANGFLOW_SUPERUSER_PASSWORD
+    type: password
+    required: true
+    label:
+      en: Administrator's password
+      uk: Пароль адміністратора
   - name: LANGFLOW_CONFIG_DIR
     type: text
     default: /app/langflow
