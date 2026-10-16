@@ -5,7 +5,7 @@ services:
       PGID: "${PGID:-1000}"
       PUID: "${PUID:-1000}"
       TZ: "${TZ:-UTC}"
-    image: ghcr.io/henriquesebastiao/downtify:2.7.0
+    image: ghcr.io/henriquesebastiao/downtify:2.13.0
     deploy:
       resources:
         reservations:
