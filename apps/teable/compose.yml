@@ -53,7 +53,7 @@ services:
       timeout: 3s
       retries: 3
   teable-cache:
-    image: redis:7.2.4
+    image: redis:7.4.11
     restart: unless-stopped
     deploy:
       resources:
