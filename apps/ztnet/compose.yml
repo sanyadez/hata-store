@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   ztnet:
-    image: sinamics/ztnet:0.7.18
+    image: sinamics/ztnet:0.8.5
     deploy:
       resources:
         reservations:
