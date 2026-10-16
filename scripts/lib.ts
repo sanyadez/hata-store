@@ -628,3 +628,17 @@ export function common(lists: string[][]): string[] {
   if (!lists.length) return [];
   return lists.reduce((a, b) => a.filter((x) => b.includes(x))).sort();
 }
+
+/** Every app in exactly one of Dependabot's lists of folders: one left out would never be updated */
+export function checkDependabot(config: unknown, apps: string[]): Problem[] {
+  const file = ".github/dependabot.yml";
+  const updates = isObject(config) && Array.isArray(config.updates) ? config.updates : null;
+  if (!updates) return [{ file, text: "has no updates" }];
+  const globs = updates.flatMap((u: unknown) => (isObject(u) && Array.isArray(u.directories) ? u.directories.map(String) : []));
+  const problems: Problem[] = [];
+  for (const id of apps) {
+    const n = globs.filter((g: string) => new Bun.Glob(g).match(`/apps/${id}`)).length;
+    if (n !== 1) problems.push({ file, text: n ? `apps/${id} is in ${n} of its lists` : `apps/${id} is in none of its lists: Dependabot would never update it` });
+  }
+  return problems;
+}

@@ -1,12 +1,19 @@
 # A pull request for every newer image of an app, once a week; the workflow checks it and starts the app.
+# The apps are split by their first letter over the days of the week: one job for every app at once ran
+# out of time half-way (and Docker Hub slows down a job that asks too much). check.ts makes sure every
+# app is in exactly one of the lists.
 version: 2
 updates:
   - package-ecosystem: docker-compose
     directories:
-      - /apps/*
+      - "/apps/2*"
+      - "/apps/a*"
+      - "/apps/b*"
+      - "/apps/c*"
     schedule:
       interval: weekly
-    open-pull-requests-limit: 20
+      day: monday
+    open-pull-requests-limit: 10
     # a new major version of an app or its database is a change to look at by hand, not a bump
     ignore:
       - dependency-name: "*"
@@ -14,8 +21,101 @@ updates:
       # below 1.0 a minor version may break as much: 0.9 changed the command line and the data of 0.7
       - dependency-name: "archivebox/archivebox"
         update-types: ["version-update:semver-minor"]
+  - package-ecosystem: docker-compose
+    directories:
+      - "/apps/d*"
+      - "/apps/e*"
+      - "/apps/f*"
+    schedule:
+      interval: weekly
+      day: tuesday
+    open-pull-requests-limit: 10
+    # a new major version of an app or its database is a change to look at by hand, not a bump
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: docker-compose
+    directories:
+      - "/apps/g*"
+      - "/apps/h*"
+      - "/apps/i*"
+      - "/apps/j*"
+      - "/apps/k*"
+    schedule:
+      interval: weekly
+      day: wednesday
+    open-pull-requests-limit: 10
+    # a new major version of an app or its database is a change to look at by hand, not a bump
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     groups:
       # the server and the machine learning of Immich must be of one version
       immich:
         patterns:
           - "ghcr.io/immich-app/immich-*"
+  - package-ecosystem: docker-compose
+    directories:
+      - "/apps/l*"
+      - "/apps/m*"
+    schedule:
+      interval: weekly
+      day: thursday
+    open-pull-requests-limit: 10
+    # a new major version of an app or its database is a change to look at by hand, not a bump
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: docker-compose
+    directories:
+      - "/apps/n*"
+      - "/apps/o*"
+    schedule:
+      interval: weekly
+      day: friday
+    open-pull-requests-limit: 10
+    # a new major version of an app or its database is a change to look at by hand, not a bump
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: docker-compose
+    directories:
+      - "/apps/p*"
+      - "/apps/q*"
+      - "/apps/r*"
+    schedule:
+      interval: weekly
+      day: saturday
+    open-pull-requests-limit: 10
+    # a new major version of an app or its database is a change to look at by hand, not a bump
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: docker-compose
+    directories:
+      - "/apps/s*"
+      - "/apps/t*"
+    schedule:
+      interval: weekly
+      day: sunday
+    open-pull-requests-limit: 10
+    # a new major version of an app or its database is a change to look at by hand, not a bump
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: docker-compose
+    directories:
+      - "/apps/u*"
+      - "/apps/v*"
+      - "/apps/w*"
+      - "/apps/x*"
+      - "/apps/y*"
+      - "/apps/z*"
+    schedule:
+      interval: weekly
+      day: sunday
+    open-pull-requests-limit: 10
+    # a new major version of an app or its database is a change to look at by hand, not a bump
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
