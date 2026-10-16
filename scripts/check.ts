@@ -4,6 +4,7 @@
  *   bun scripts/check.ts                  every rule, the registries asked for architectures
  *   bun scripts/check.ts --offline        without the registries (and without an index)
  *   bun scripts/check.ts --index out.json
+ *   bun scripts/check.ts jellyfin immich  these apps alone (the store's own rules still see them all)
  *
  * When `docker` is on the PATH, every compose file also goes through `docker compose config`.
  */
@@ -18,6 +19,8 @@ const args = process.argv.slice(2);
 const offline = args.includes("--offline");
 const indexAt = args.includes("--index") ? args[args.indexOf("--index") + 1] : "";
 if (offline && indexAt) throw new Error("--index needs the registries");
+const only = args.filter((a, i) => !a.startsWith("--") && args[i - 1] !== "--index");
+if (only.length && indexAt) throw new Error("--index is made of every app");
 
 const problems: Problem[] = [];
 
@@ -46,7 +49,7 @@ interface App {
 }
 const apps: App[] = [];
 
-for (const id of ids) {
+for (const id of only.length ? ids.filter((id) => only.includes(id)) : ids) {
   const dir = join(appsDir, id);
   if (!APP_ID_RE.test(id)) problems.push({ file: `apps/${id}`, text: "a folder name is lowercase letters, digits and dashes, up to 40" });
   const shipped: Shipped[] = [];
