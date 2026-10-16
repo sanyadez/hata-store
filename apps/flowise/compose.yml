@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   flowise:
-    image: flowiseai/flowise:3.1.2
+    image: flowiseai/flowise:3.1.4
     restart: unless-stopped
     deploy:
       resources:
