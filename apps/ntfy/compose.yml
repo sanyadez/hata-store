@@ -1,13 +1,15 @@
 services:
-  # Creates the administrator on the first start and keeps the password in step with the setting.
+  # Writes the administrator into the server's config as a declared user: the password is the
+  # setting's, so a changed one counts from the next start.
   admin:
     image: binwiederhier/ntfy:v2.31.0
     restart: "no"
     entrypoint: ["/bin/sh", "-c"]
     command:
-      - ntfy user add --role=admin --ignore-exists "$$ADMIN_USER" && ntfy user change-pass "$$ADMIN_USER"
+      - >-
+        hash=$$(printf '%s\n%s\n' "$$NTFY_PASSWORD" "$$NTFY_PASSWORD" | ntfy user hash 2>/dev/null) &&
+        printf 'auth-users:\n  - "%s:%s:admin"\n' "$$ADMIN_USER" "$$hash" > /var/lib/ntfy/users.yml
     environment:
-      NTFY_AUTH_FILE: /var/lib/ntfy/auth.db
       ADMIN_USER: ${ADMIN_USER:-admin}
       NTFY_PASSWORD: ${ADMIN_PASSWORD:?set ADMIN_PASSWORD, the administrator's password}
     volumes:
@@ -16,7 +18,7 @@ services:
   ntfy:
     image: binwiederhier/ntfy:v2.31.0
     restart: unless-stopped
-    command: serve
+    command: ["serve", "--config", "/var/lib/ntfy/users.yml"]
     init: true
     ports:
       - ${WEB_PORT:-8093}:80
