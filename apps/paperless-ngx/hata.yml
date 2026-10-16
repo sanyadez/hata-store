@@ -1,0 +1,63 @@
+title: Paperless-ngx
+tagline:
+  en: Paper documents turned into an archive where everything is found
+  uk: Паперові документи — в архів, де все легко знайти
+description:
+  en: >
+    A home archive for paper: bills, contracts, receipts, letters. Put a scan or a PDF into its
+    folder or upload it in the browser; Paperless reads the text, adds tags, finds the sender and the
+    date by itself, and any document is then found by any word in it.
+  uk: >
+    Домашній архів для паперів: рахунків, договорів, чеків, листів. Покладіть скан чи PDF у його
+    теку або вивантажте в браузері — Paperless розпізнає текст, сам додасть мітки, знайде
+    відправника й дату, і будь-який документ потім знайдеться за будь-яким словом із нього.
+category: productivity
+developer: Paperless-ngx
+website: https://docs.paperless-ngx.com
+source: https://github.com/paperless-ngx/paperless-ngx
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjQzLjM4IDAuMTQgNDI1LjMyIDUxMi4wMiI+PHBhdGggZD0iTTEzNi44IDQ1OS42Yy0yLjMtMTAuOC02LjktMzIuNS03LjQtMzIuNS05Ni41LTU3LjctODUuMS0xNTcuNi01My4xLTIxNC43IDYuOSA3MS45IDEzNC4yIDEyMS42IDYwIDIwOS42LS42IDEuMSAzLjQgMTQuOCA2LjkgMjcuNCAxNC44LTI1LjEgMzcuMS01NS40IDM2LTU4LjItOTEuNC0yMjIuNyAxOTQuMS0yMzkuOCAyNTMuNS0zNzggMjYuOCAxMzMuNi0xMy43IDM0MC4zLTI0My4zIDM5Mi45LTEuMS42LTQxLjcgNzEuOS00My40IDcyLjUgMC0xLjEtMTcuMS0uNi0xNC44LTYuMyAxLjEtMy42IDMuMy04LjEgNS42LTEyLjdtNTYuNi05OC44Yy0zNi04NS4xIDY5LjctMTc4LjcgMTIyLjItMjAyLjFDMjA4LjIgMjU0LjYgMTg5LjkgMzI2IDE5My40IDM2MC44TTEzNCA0MDUuOWMyOS4xLTMzLjctNS4xLTkxLjQtMjUuNy0xMTAuMiAzNC44IDYwIDMyLjUgOTQuOCAyNS43IDExMC4yIiBzdHlsZT0iZmlsbDojMTc1NDFmIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTUuMzA2IC0xNC4zNzkpc2NhbGUoMS4xMDAxNykiLz48L3N2Zz4=
+web:
+  service: webserver
+  port: 8000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8000
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: ADMIN_USER
+    type: text
+    default: admin
+    required: true
+    label: { en: Administrator's name, uk: Ім'я адміністратора }
+  - name: ADMIN_PASSWORD
+    type: password
+    required: true
+    label: { en: Administrator's password, uk: Пароль адміністратора }
+    hint:
+      en: Sets up the account at the first start; later the password is changed in the app itself
+      uk: Створює обліковий запис під час першого запуску; далі пароль змінюють у самому застосунку
+  - name: CONSUME_DIR
+    type: folder
+    default: ${DATA_ROOT}/Documents/Scans
+    label: { en: Folder for new documents, uk: Тека для нових документів }
+    hint:
+      en: Files put here are taken into the archive and disappear from the folder
+      uk: Файли, покладені сюди, потрапляють до архіву, а з теки зникають
+  - name: OCR_LANGUAGE
+    type: choice
+    default: eng
+    label: { en: Language of the documents, uk: Мова документів }
+    hint:
+      en: For recognising the text
+      uk: Для розпізнавання тексту
+    options:
+      - { value: eng, label: { en: English, uk: Англійська } }
+      - { value: ukr+eng, label: { en: Ukrainian and English, uk: Українська й англійська } }
+      - { value: ukr, label: { en: Ukrainian, uk: Українська } }
+  - name: SECRET_KEY
+    type: secret
+    length: 50
+    label: { en: Session key, uk: Ключ сеансів }
+  - name: DB_PASSWORD
+    type: secret
+    label: { en: Database password, uk: Пароль бази даних }

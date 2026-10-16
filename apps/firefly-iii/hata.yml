@@ -1,0 +1,52 @@
+title: Firefly III
+tagline:
+  en: Your money under control, from salary to the last coffee
+  uk: Ваші гроші під контролем, від зарплати до останньої кави
+description:
+  en: >
+    A personal finance manager for the household budget. Keeps your accounts, income and spending,
+    sorts transactions into categories and budgets, follows bills and savings goals, and draws
+    reports of where the money goes. Bank statements can be imported from files.
+  uk: >
+    Менеджер особистих фінансів для домашнього бюджету. Веде рахунки, доходи й витрати, розкладає
+    операції за категоріями й бюджетами, стежить за рахунками до сплати й цілями заощаджень і
+    показує звіти, куди йдуть гроші. Банківські виписки можна імпортувати з файлів.
+notes:
+  en: >
+    The first account registered on the start page becomes the administrator.
+  uk: >
+    Перший обліковий запис, зареєстрований на стартовій сторінці, стає адміністратором.
+category: finance
+developer: James Cole
+website: https://www.firefly-iii.org
+source: https://github.com/firefly-iii/firefly-iii
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJMYXllcl8xIiB4PSIwIiB5PSIwIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjgzLjM5IDAgMzQ1LjA2IDUxMS45MSI+PHN0eWxlPi5zdDF7ZmlsbDojZmZmfTwvc3R5bGU+PGcgaWQ9IkZpcmVmbHlJSUlfTG9nbyI+PGxpbmVhckdyYWRpZW50IGlkPSJmbGFtZV8wMDAwMDEwMzI2MTAxNzY2NDAwMDU4NTkyMDAwMDAxMDU0NDY5MTAxMDE2MjkzNzQ3M18iIHgxPSItNTAuODkyIiB4Mj0iLTUwLjg5MiIgeTE9IjY1MS45OTIiIHkyPSI2NTEuMjAxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDQzNi4xNzE5IDAgMCAtNjQ3LjE4MSAyMjQ1My44MDcgNDIxOTU2LjYyNSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNmZmEyODQiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdHlsZT0ic3RvcC1jb2xvcjojY2Q1MDI5Ii8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBpZD0iZmxhbWUiIGQ9Ik0yMTUuNiAwczE5LjUgNjYuMi0xOCAxMDQuNy0zMy41IDgxLjEtMTguMyAxMDEuNCAxNC4yIDM1LjUgMiA0Ni43LTIyLjMgMTkuMy0yOS40IDEtMTUuMi0xOC4zLTE4LjMtMjcuNC05LjEtMjUuNC05LjEtMjUuNC0xOS4zIDMwLjQtMzEuNCA0OC43LTEyLjIgNDYuNy00LjEgNjEuOSA1LjEgMzMuNS0xIDU4LjhjLTYuMSAyNS40IDIgNjMuOSAzMC40IDc5LjFzNjIuOSAyNy40IDc4LjEgNDEuNiA1MC43IDI3LjQgOTYuNCAxNy4yYzQ1LjYtMTAuMSAxMDMuNS01Ni44IDExMy42LTg4LjIgMCAwIDI2LjQtMjkuNCAyMS4zLTY4LTUuMS0zOC41LTIzLjMtMzcuNS0zMS40LTY2LjlzMTcuNi0yMi4yLTQuMS03Mi43YzAgMC05LjYtMjQtNDYuMi00MS40LTIzLjUtMTEuMS03LjUtNjEuNS00OS4xLTExMi4yUzIxNS42IDAgMjE1LjYgMCIgc3R5bGU9ImZpbGw6dXJsKCNmbGFtZV8wMDAwMDEwMzI2MTAxNzY2NDAwMDU4NTkyMDAwMDAxMDU0NDY5MTAxMDE2MjkzNzQ3M18pIi8+PHBhdGggaWQ9InBpZy1ib2R5IiBkPSJtMjAwLjkgMjUxLjUgMS44IDQxLjlzLTMxLjcgMjMuNC0zNiA1My44bC0xMi43IDFzLTkuMSAyLTkuMSAxMS4ydjI5LjRzMyA5LjEgMTAuMSA5LjFsMTMtLjNzNi4zIDI0LjEgMjguOSA0MHYyMC4ycy0xLjYgNi43IDEyLjMgOC43YzEzLjggMiAzMi4yIDEuOCAzNS4yLTEuMnMzLTMuNiAzLTcuMWMwIDAgMTYuOCA0IDQ3LjcgMHY0czIuOCA1LjUgMjIuOSA1LjUgMjYuMS0yLjQgMjkuNy05LjV2LTE5LjhzMjkuMy0yOC43IDI4LjMtNzIuNmMtLjktMzcuOC0xMi42LTUwLjktMjguMy02NS42LTE3LjktMTYuOC01NS4zLTI0LjctOTMuMy0yMC4xLS4xIDAtMTkuMy0zNC44LTUzLjUtMjguNiIgY2xhc3M9InN0MSIvPjxjaXJjbGUgaWQ9ImV5ZSIgY3g9IjE5NyIgY3k9IjM1OC44IiByPSI3LjUiIHN0eWxlPSJmaWxsOiMwMzM5NGQiLz48cGF0aCBpZD0idGFpbCIgZD0iTTM3NC43IDM0MHMtMTQuNC02LjktMzIuMiAzLjJjMCAwLTIxLjEtNy4xLTMyLjQgMi4xLTExLjcgOS41LTEyLjkgMjAuNy0xMi4zIDMzLjggMCAwIDEwLjItMzQuNyAzNS44LTI1LjggMCAwLTE4LjIgMzIgMTAuMSAzNy42IDAgMCA2LjcgMCAxMi4yLTMuNCA1LjMtMy4yIDkuNC05IDcuNy0xOS42IDAgMC0zLjQtMTAuNi0xMi4zLTE2LjkgMCAwIDguNy02LjIgMjUuMy0xLjd6IiBzdHlsZT0iZmlsbDojY2Q1MDI5Ii8+PHBhdGggaWQ9InRhaWwtbmVnYXRpdmUiIGQ9Ik0zNDMuMSAzNTcuOHMtMTMuMiAyNC45IDQuNCAyMy41YzAgMCA5LjQtNC41IDMuOS0xMy41LTUuNi05LjQtOC4zLTEwLTguMy0xMCIgY2xhc3M9InN0MSIvPjwvZz48L3N2Zz4=
+web:
+  service: app
+  port: 8080
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8080
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: DEFAULT_LANGUAGE
+    type: choice
+    default: en_US
+    options:
+      - { value: en_US, label: English }
+      - { value: uk_UA, label: Українська }
+    label: { en: Language, uk: Мова }
+    hint:
+      en: Each user can change it later in their preferences
+      uk: Кожен користувач може змінити її згодом у своїх налаштуваннях
+  - name: APP_KEY
+    type: secret
+    length: 32
+    label: { en: Encryption key, uk: Ключ шифрування }
+  - name: DB_PASSWORD
+    type: secret
+    label: { en: Database password, uk: Пароль бази даних }
+  - name: CRON_TOKEN
+    type: secret
+    length: 32
+    label: { en: Scheduled jobs token, uk: Ключ для запланованих завдань }

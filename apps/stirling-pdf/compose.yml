@@ -1,0 +1,16 @@
+services:
+  stirling-pdf:
+    image: stirlingtools/stirling-pdf:3.2.0
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8080}:8080
+    volumes:
+      - ${APP_DATA:-.}/configs:/configs
+      - ${APP_DATA:-.}/logs:/logs
+      - ${APP_DATA:-.}/tessdata:/usr/share/tessdata
+    environment:
+      SECURITY_ENABLELOGIN: "false"
+      SYSTEM_GOOGLEVISIBILITY: "false"
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-UTC}

@@ -1,0 +1,40 @@
+title: Forgejo
+tagline:
+  en: Your own place for Git repositories, like GitHub at home
+  uk: Власне місце для репозиторіїв Git, як GitHub удома
+description:
+  en: >
+    A light server for code and other projects kept in Git: repositories, issues, pull requests,
+    a wiki, releases and packages, and automatic builds through Forgejo Actions once a runner is
+    connected. Mirrors of repositories hosted elsewhere keep a copy of what matters to you at home.
+  uk: >
+    Легкий сервер для коду й інших проєктів у Git: репозиторії, задачі, запити на злиття, вікі,
+    випуски й пакунки, а також автоматичні збірки через Forgejo Actions, якщо під'єднати
+    виконавця. Дзеркала репозиторіїв з інших місць тримають удома копію того, що вам важливо.
+notes:
+  en: >
+    The first visit opens the setup page: everything is filled in already, just make the
+    administrator's account at the bottom of it.
+  uk: >
+    Перше відкриття показує сторінку налаштування: усе вже заповнено, лише створіть унизу
+    обліковий запис адміністратора.
+category: development
+developer: Forgejo
+website: https://forgejo.org
+source: https://codeberg.org/forgejo/forgejo
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJMYXllcl8xIiB4PSIwIiB5PSIwIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjM4LjUgMC41IDEzNSAyMTEiPjxzdHlsZT4uc3Qze2ZpbGw6bm9uZTtzdHJva2U6I2Q0MDAwMDtzdHJva2Utd2lkdGg6MTV9PC9zdHlsZT48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2IDYpIj48cGF0aCBkPSJNNTggMTY4VjcwYzAtMjcuNiAyMi40LTUwIDUwLTUwaDIwIiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZjYwO3N0cm9rZS13aWR0aDoyNSIvPjxwYXRoIGQ9Ik01OCAxNjh2LTMwYzAtMjcuNiAyMi40LTUwIDUwLTUwaDIwIiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZDQwMDAwO3N0cm9rZS13aWR0aDoyNSIvPjxjaXJjbGUgY3g9IjE0MiIgY3k9IjIwIiByPSIxOCIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6I2Y2MDtzdHJva2Utd2lkdGg6MTUiLz48Y2lyY2xlIGN4PSIxNDIiIGN5PSI4OCIgcj0iMTgiIGNsYXNzPSJzdDMiLz48Y2lyY2xlIGN4PSI1OCIgY3k9IjE4MCIgcj0iMTgiIGNsYXNzPSJzdDMiLz48L2c+PC9zdmc+
+web:
+  service: forgejo
+  port: 3000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 3000
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: SSH_PORT
+    type: port
+    default: 2222
+    label: { en: SSH port for Git, uk: Порт SSH для Git }
+    hint:
+      en: Used in the addresses to clone over SSH
+      uk: Його видно в адресах для клонування через SSH

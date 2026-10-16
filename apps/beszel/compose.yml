@@ -1,0 +1,33 @@
+services:
+  beszel:
+    image: henrygd/beszel:0.21.0
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8090}:8090
+    volumes:
+      - ${APP_DATA:-.}/data:/beszel_data
+      - ${APP_DATA:-.}/socket:/beszel_socket
+    environment:
+      APP_URL: ${APP_URL:-http://localhost:8090}
+
+  beszel-agent:
+    image: henrygd/beszel-agent:0.21.0-alpine
+    restart: unless-stopped
+    network_mode: host
+    init: true
+    volumes:
+      - ${APP_DATA:-.}/agent:/var/lib/beszel-agent
+      - ${APP_DATA:-.}/socket:/beszel_socket
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      LISTEN: /beszel_socket/beszel.sock
+      KEY: ${KEY:-}
+    # The hub's key exists only after its first start: until it is set, wait instead of restarting
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        if [ -z "$$KEY" ]; then
+          echo "No hub key yet: copy it from the hub's \"Add system\" dialog into the app's settings"
+          exec sleep 2147483647
+        fi
+        exec /agent

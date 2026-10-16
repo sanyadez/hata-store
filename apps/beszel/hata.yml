@@ -1,0 +1,49 @@
+title: Beszel
+tagline:
+  en: A light watch over the server and its containers, with history and alerts
+  uk: Легкий нагляд за сервером і його контейнерами, з історією й сповіщеннями
+description:
+  en: >
+    A small monitoring hub with an agent for this server in one app. It draws the history of the
+    processor, memory, disks, network and temperatures, and of every Docker container, and warns
+    you when something runs too hot or too full. Other machines can be added with an agent of their own.
+  uk: >
+    Невеликий центр моніторингу разом з агентом для цього сервера в одному застосунку. Малює історію
+    процесора, пам'яті, дисків, мережі й температур, а також кожного контейнера Docker, і попереджає,
+    коли щось перегрівається чи заповнюється. Інші комп'ютери можна додати з власним агентом.
+notes:
+  en: >
+    At the first visit Beszel asks to make an account. Then one more step: press **Add system**, give
+    it a name, put **/beszel_socket/beszel.sock** as the host, copy the **public key** from that dialog
+    into the "Hub key" setting of this app and save; then add the system in Beszel.
+  uk: >
+    Під час першого відкриття Beszel попросить створити обліковий запис. Далі ще один крок: натисніть
+    **Add system**, дайте назву, як адресу вкажіть **/beszel_socket/beszel.sock**, скопіюйте
+    **публічний ключ** із цього вікна в налаштування «Ключ центру» цього застосунку й збережіть; тоді
+    додайте систему в Beszel.
+category: monitoring
+developer: henrygd
+website: https://beszel.dev
+source: https://github.com/henrygd/beszel
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NiA3MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMjAlIiB4Mj0iMTAwJSIgeTI9IjEyMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM3NDdiZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMyNGViNWMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgZD0iTTM1IDcwSDBWMGgzNXE0LjQgMCA4LjIgMS43YTIxLjQgMjEuNCAwIDAgMSA2LjYgNC41cTIuOSAyLjggNC41IDYuNlE1NiAxNi43IDU2IDIxYTE1LjQgMTUuNCAwIDAgMS0uMyAzLjIgMTcuNiAxNy42IDAgMCAxLS4yLjggMTkuNCAxOS40IDAgMCAxLTEuNSA0IDE3IDE3IDAgMCAxLTIuNCAzLjQgMTMuNSAxMy41IDAgMCAxLTIuNiAyLjMgMTIuNSAxMi41IDAgMCAxLS40LjNxMS43IDEgMyAyLjVRNTMgMzkuMSA1NCA0MWExOC4zIDE4LjMgMCAwIDEgMS41IDQgMTcuNCAxNy40IDAgMCAxIC41IDMgMTUuMyAxNS4zIDAgMCAxIDAgMXEwIDQuNC0xLjcgOC4yYTIxLjQgMjEuNCAwIDAgMS00LjUgNi42cS0yLjggMi45LTYuNiA0LjZRMzkuNCA3MCAzNSA3MFpNMTQgMTR2MTRoMjFhNyA3IDAgMCAwIDIuMy0uMyA2LjYgNi42IDAgMCAwIC40LS4yUTM5IDI3IDQwIDI2YTYuOSA2LjkgMCAwIDAgMS41LTIuMnEuNS0xLjMuNS0yLjhhNyA3IDAgMCAwLS40LTIuMyA2LjYgNi42IDAgMCAwLS4xLS40UTQwLjkgMTcgNDAgMTZhNyA3IDAgMCAwLTIuMy0xLjQgNi45IDYuOSAwIDAgMC0yLjUtLjYgNy45IDcuOSAwIDAgMC0uMiAwSDE0Wm0wIDI4djE0aDIxYTcgNyAwIDAgMCAyLjMtLjQgNi42IDYuNiAwIDAgMCAuNC0uMVEzOSA1NC45IDQwIDU0YTcgNyAwIDAgMCAxLjUtMi4yIDYuOSA2LjkgMCAwIDAgLjUtMi42IDcuOSA3LjkgMCAwIDAgMC0uMiA3IDcgMCAwIDAtLjQtMi4zIDYuNiA2LjYgMCAwIDAtLjEtLjRRNDAuOSA0NSA0MCA0NGE3IDcgMCAwIDAtMi4zLTEuNSA2LjkgNi45IDAgMCAwLTIuNS0uNiA3LjkgNy45IDAgMCAwLS4yIDBIMTRaIi8+PC9zdmc+
+web:
+  service: beszel
+  port: 8090
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8090
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: KEY
+    type: text
+    label: { en: Hub key, uk: Ключ центру }
+    hint:
+      en: Leave it empty at first. The public key from Beszel's "Add system" dialog, starting with ssh-ed25519
+      uk: Спершу залиште порожнім. Публічний ключ із вікна «Add system» у Beszel, починається з ssh-ed25519
+permissions:
+  host-network:
+    en: The agent uses the server's own network to see its real traffic
+    uk: Агент працює в мережі самого сервера, щоб бачити справжній трафік
+  docker:
+    en: "The agent reads Docker's socket to show each container's use; the socket gives control of Docker, though the agent only reads"
+    uk: "Агент читає сокет Docker, щоб показувати навантаження кожного контейнера; сокет дає керування Docker, хоч агент лише читає"

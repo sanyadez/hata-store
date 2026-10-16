@@ -1,0 +1,31 @@
+services:
+  tdarr:
+    image: ghcr.io/haveagitgat/tdarr:3.01.00
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8265}:8265
+      # for Tdarr nodes on other computers; the node inside this container does not need it
+      - ${SERVER_PORT:-8266}:8266
+    volumes:
+      - ${APP_DATA:-.}/server:/app/server
+      - ${APP_DATA:-.}/configs:/app/configs
+      - ${APP_DATA:-.}/logs:/app/logs
+      - ${MEDIA:-./media}:/media
+      - ${CACHE:-./cache}:/temp
+    devices:
+      - /dev/dri:/dev/dri
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      UMASK: "002"
+      serverIP: 0.0.0.0
+      serverPort: "8266"
+      webUIPort: "8265"
+      internalNode: "true"
+      inContainer: "true"
+      ffmpegVersion: "7"
+      nodeName: InternalNode
+      # no sign-in of its own: Hata's sign-in can stand in front of it
+      auth: "false"
+      maxLogSizeMB: "10"

@@ -1,0 +1,45 @@
+title: Radicale
+tagline:
+  en: Calendars, contacts and to-do lists, synced across your devices
+  uk: Календарі, контакти й списки справ, синхронізовані між пристроями
+description:
+  en: >
+    A small CalDAV and CardDAV server. Phones, tablets and computers keep their calendars, address
+    books and tasks in it instead of somebody's cloud: Thunderbird, DAVx⁵ on Android and the built-in
+    apps of iPhone and macOS connect to it directly.
+  uk: >
+    Невеликий сервер CalDAV і CardDAV. Телефони, планшети й комп'ютери тримають у ньому календарі,
+    адресні книги й завдання замість чиєїсь хмари: Thunderbird, DAVx⁵ на Android і вбудовані
+    програми iPhone та macOS під'єднуються до нього напряму.
+notes:
+  en: >
+    Sign in with the name and password you set here. More people are added from the app's terminal:
+    `htpasswd -B /var/lib/radicale/users <name>`.
+  uk: >
+    Входьте з ім'ям і паролем, які задасте тут. Інших людей додають у терміналі застосунку:
+    `htpasswd -B /var/lib/radicale/users <ім'я>`.
+category: productivity
+developer: Kozea
+website: https://radicale.org
+source: https://github.com/Kozea/Radicale
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJMYXllcl8xIiB4PSIwIiB5PSIwIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjQ3LjkgLTMgMTgwLjYxIDI4Ni41Ij48c3R5bGU+LnN0MntmaWxsOm5vbmU7c3Ryb2tlOiM0ZTlhMDY7c3Ryb2tlLXdpZHRoOjE1fTwvc3R5bGU+PHBhdGggZD0iTTIyOC40IDE3NS41Yy0yLTkwLTE1Mi04My0xMzkgNCAxMiA4NyA4MyAxMDQgODMgMTA0czU5LTE5IDU2LTEwOCIgc3R5bGU9ImZpbGw6I2E0MDAwMCIvPjxwYXRoIGQ9Ik0xMTUuNCAyMjUuNWM0NiA0IDY3IDMgMTA0LTE2LTUgNDgtNDYgNjYtNDYgNjZzLTQzLTEyLTU3LTUweiIgc3R5bGU9ImZpbGw6I2ZmZiIvPjxwYXRoIGQ9Ik0xNDUuNCAxMjQuNWMtMjYtNjgtOTAtNzUtOTAtNzUiIGNsYXNzPSJzdDIiLz48cGF0aCBkPSJNMTQ3LjQgMTIzLjVjMC01MC02OC0xMTYtNjgtMTE2IiBjbGFzcz0ic3QyIi8+PHBhdGggZD0iTTE0Ny40IDEyMi41YzctNjItMjItMTE4LTIyLTExOCIgY2xhc3M9InN0MiIvPjwvc3ZnPg==
+web:
+  service: radicale
+  port: 5232
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 5232
+    label: { en: Port, uk: Порт }
+  - name: RADICALE_USER
+    type: text
+    default: radicale
+    required: true
+    label: { en: User name, uk: Ім'я користувача }
+    hint:
+      en: Latin letters and digits
+      uk: Латинські літери й цифри
+  - name: RADICALE_PASSWORD
+    type: password
+    required: true
+    label: { en: Password, uk: Пароль }

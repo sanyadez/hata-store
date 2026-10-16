@@ -1,0 +1,45 @@
+title: BookStack
+tagline:
+  en: A wiki for the household, laid out like books on a shelf
+  uk: Вікі для дому, впорядкована, як книжки на полиці
+description:
+  en: >
+    A simple wiki where knowledge is kept on shelves, in books, chapters and pages: manuals for the
+    appliances, recipes, notes about the house and the car. A plain editor or Markdown, pictures and
+    attachments, search across everything, and accounts with their own rights.
+  uk: >
+    Проста вікі, де знання лежать на полицях, у книжках, розділах і на сторінках: інструкції до
+    техніки, рецепти, нотатки про дім і машину. Звичайний редактор або Markdown, зображення й
+    вкладення, пошук усім вмістом і облікові записи з власними правами.
+notes:
+  en: >
+    Sign in the first time as **admin@admin.com** with the password **password** and change both at
+    once. Pictures in pages keep the address they were added at: set up Hata's domain before filling
+    the wiki.
+  uk: >
+    Уперше увійдіть як **admin@admin.com** з паролем **password** і відразу змініть обидва.
+    Зображення на сторінках зберігають адресу, з якою їх додали: налаштуйте домен Hata, перш ніж
+    наповнювати вікі.
+category: productivity
+developer: Dan Brown
+website: https://www.bookstackapp.com
+source: https://codeberg.org/bookstack/bookstack
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDUuNzU2IiBoZWlnaHQ9IjIzMy4xOTMiIHZpZXdCb3g9IjAgMCAyMzAuMzk3IDIxOC42MiI+PGcgZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiMwMjg4ZDEiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iNiI+PGcgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJtOTguNTIgMTgwLjE2NiAxMjguODgtNzQuNDA5LTkyLjA1OC01My4xNS0xMjguODggNzQuNDA5eiIvPjxwYXRoIGQ9Ik02LjQ2IDEyNy4wMTZ2MjEuMjZsOTIuMDU4IDUzLjE1IDEyOC44OC03NC40MDl2LTIxLjI2Ii8+PHBhdGggZD0ibTk4LjUyIDIxNS41OTYtOTIuMDU4LTUzLjE1cy03LjUtMTYuOTE4IDAtMjguMzQ2bDkyLjA1OCA1My4xNSAxMjguODgtNzQuNDA5djI4LjM0NnoiLz48cGF0aCBkPSJtOTguNTIgMTMwLjU1NiAxMjguODgtNzQuNDFMMTM1LjM0IDMgNi40NiA3Ny40MDZ6Ii8+PHBhdGggZD0iTTk4LjUyIDEzMC41NTYgMjI3LjQgNTYuMTQ3djI4LjM0Nkw5OC41MiAxNTguOTAybC05Mi4wNTgtNTMuMTVzLTYuMDcxLTE3LjYzMiAwLTI4LjM0NnoiLz48cGF0aCBkPSJtOTguNTIgMTg3LjI1Ni05Mi4wNTgtNTMuMTVzLTcuNS0xNi45MTggMC0yOC4zNDZsOTIuMDU4IDUzLjE1TDIyNy40IDg0LjUwMXYyOC4zNDZ6Ii8+PC9nPjxwYXRoIGQ9Im0xNTYuODIgMTUuNDAyLTU1LjIzNCAzMS44OSAyMS40OCAxLjc3MiAzLjA2OSAxMi40MDIgNTUuMjM1LTMxLjg5eiIvPjwvZz48L3N2Zz4=
+web:
+  service: bookstack
+  port: 80
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 6875
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: APP_KEY
+    type: secret
+    length: 32
+    label: { en: Encryption key, uk: Ключ шифрування }
+  - name: DB_PASSWORD
+    type: secret
+    label: { en: Database password, uk: Пароль бази даних }
+  - name: DB_ROOT_PASSWORD
+    type: secret
+    label: { en: Database administrator's password, uk: Пароль адміністратора бази даних }

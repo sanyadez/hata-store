@@ -1,0 +1,46 @@
+title: Homebox
+tagline:
+  en: An inventory of everything at home, from tools to warranties
+  uk: Облік усього, що є вдома, від інструментів до гарантій
+description:
+  en: >
+    Keeps track of what you own and where it lies: items by room and box, with photos, receipts,
+    manuals, serial numbers and warranty dates. Labels with QR codes lead from a box to its list, and
+    a search answers "where is the drill" in a second. Light enough for any server.
+  uk: >
+    Веде облік того, що у вас є і де воно лежить: речі за кімнатами й коробками, з фото, чеками,
+    інструкціями, серійними номерами й строками гарантії. Наліпки з QR-кодами ведуть від коробки до її
+    списку, а пошук за секунду відповідає, де дриль. Досить легкий для будь-якого сервера.
+notes:
+  en: >
+    The first account is made by signing up on its page. Once the family has its accounts, turn
+    "Anyone may sign up" off.
+  uk: >
+    Перший обліковий запис створюється реєстрацією на його сторінці. Коли вся родина матиме облікові
+    записи, вимкніть «Будь-хто може зареєструватися».
+category: productivity
+developer: Sysadmins Media
+website: https://homebox.software
+source: https://github.com/sysadminsmedia/homebox
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NS40MjY4MyIgdmlld0JveD0iOTAzLjMyIDM4Mi44MSA5MTA0LjM5IDg3ODIuMTEiPjxwYXRoIGQ9Ik05MzEwLjE2IDI1NjAuOWMyNDUuMzAyIDI0OS44OTQgNDE5LjcxMSA1MzkuOTE2IDU2NS4zNzMgODQ1LjIzMSA0Ny4wMzkgOTguODcyIDM2LjIyOSAyMTUuNTE0LTI4LjIgMzA0LjA1LTY0LjM5MSA4OC41MzYtMTcyLjA5OSAxMzQuNjc2LTI4MC42MzEgMTIwLjI4IDAgLjA1My0uMDM5LjA1My0uMDM5LjA1MyIgc3R5bGU9ImZpbGw6Z3JheTtzdHJva2U6IzAwMDtzdHJva2Utd2lkdGg6MjA2LjQxcHgiLz48cGF0aCBkPSJNNTQwMS41NiA0ODcuMDQ0Yy0xMjcuOTU4IDYuMjI3LTI1NC44NTUgNDAuNzctMzcwLjk5MiAxMDMuNjI4LTc2NS4yNzEgNDE0LjIyNS0yMzk3LjQ1IDEyOTcuNjgtMzE5My4wMyAxNzI4LjMyLTEzNy45NjYgNzQuNjY5LTI1MC4zMjcgMTgzLjYwNS0zMjguNzkxIDMxMy4wNDZsMzk2My4wOSAyMTIyLjQzcy0yNDkuMDQ4IDQxNi40MjgtNDcwLjU5MyA3ODYuOTI2Yy0xODkuMjQgMzE2LjQ0NS01OTIuODMzIDQyOS44MzEtOTE5LjE5OCAyNTguMjE5bC0yNjk5LjM2LTE0MTkuMzJ2MjIxNS41OWMwIDIyNi4yNzMgMTI4Ljc1MSA0MzUuMzMgMzM3Ljc1NSA1NDguNDY2IDc2NC42NDkgNDEzLjg4NSAyNjIwLjk3IDE0MTguNjYgMzM4NS41OSAxODMyLjUxIDIwOS4wMTggMTEzLjEzNyA0NjYuNDk2IDExMy4xMzcgNjc1LjUxNCAwIDc2NC42MjMtNDEzLjg1NyAyNjIwLjk0LTE0MTguNjMgMzM4NS41OS0xODMyLjUxIDIwOC45ODktMTEzLjEzNiAzMzcuNzQzLTMyMi4xOTMgMzM3Ljc0My01NDguNDY2di0zNTEzLjQ4YzAtMzE4LjY4NC0xNzQuNTktNjExLjcyMi00NTQuODUzLTc2My40MDktNzk1LjU0My00MzAuNjMyLTI0MjcuNzUtMTMxNC4wOS0zMTkzLjAyLTE3MjguMzItMTQxLjY5My03Ni42ODQtMjk5LjM2NC0xMTEuMjI3LTQ1NS40NDItMTAzLjYyOCIgc3R5bGU9ImZpbGw6I2RhZGFkYTtzdHJva2U6IzAwMDtzdHJva2Utd2lkdGg6MjA2LjQycHgiLz48cGF0aCBkPSJNNTQ3MS44MyA0NzU0LjQ2VjUwNC43MWMtMTI3Ljk1OCA2LjIyNi0zMjUuMTI3IDIzLjEtNDQxLjI2NCA4NS45NTgtNzY1LjI3MSA0MTQuMjI1LTIzOTcuNDUgMTI5Ny42OC0zMTkzLjAzIDE3MjguMzItMTM3Ljk2NiA3NC42NjktMjUwLjMyNyAxODMuNjA1LTMyOC43OTEgMzEzLjA0NmwzOTYzLjA5IDIxMjIuNDNaIiBzdHlsZT0iZmlsbDpncmF5O3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDoyMDYuNDJweCIvPjxwYXRoIGQ9Im0xNDU5LjM0IDI3MjUuOTYtMzczLjc5MSA3MTUuNjY3Yy0xNzcuMTY2IDMzOS4yOTItNDYuNDE3IDc1OCAyOTIuMzc1IDkzNi4xNjdsNC43NSAyLjVtMCAwIDI2OTkuMzcgMTQxOS4yOWMzMjYuMzc0IDE3MS42MjUgNzI5LjkxNiA1OC4yNSA5MTkuMTY1LTI1OC4yMDggMjIxLjU0Mi0zNzAuNSA0NzAuNTgzLTc4Ni45MTcgNDcwLjU4My03ODYuOTE3bC0zOTYzLjA0LTIxMjIuNDItMi4xNjcgMy40NTgtNDcuMjUgOTAuNDU4IiBzdHlsZT0iZmlsbDojZGFkYWRhO3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDoyMDYuNDJweCIvPjxwYXRoIGQ9Ik01NDQzLjc0IDUyMC44Nzl2NDE0OS43OSIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2Utd2lkdGg6MTUzLjVweCIvPjxwYXRoIGQ9Ik04OTUxLjQxIDQxMDIuNzJjMC00MS42NS0yMi4yMjEtODAuMTM2LTU4LjI5MS0xMDAuOTYxLTM2LjA2OS0yMC44MjUtODAuNTEtMjAuODI1LTExNi41OCAwbC0yNDM5LjkyIDE0MDguNjljLTM2LjA3IDIwLjgyNS01OC4yOSA1OS4zMTEtNTguMjkgMTAwLjk2MVY3MDU4YzAgNDEuNjUgMjIuMjIgODAuMTM2IDU4LjI5IDEwMC45NjEgMzYuMDcgMjAuODI1IDgwLjUxIDIwLjgyNSAxMTYuNTggMGwyNDM5LjkyLTE0MDguNjljMzYuMDctMjAuODI1IDU4LjI5MS01OS4zMTIgNTguMjkxLTEwMC45NjJ2LTE1NDYuNTlaIiBzdHlsZT0iZmlsbDojNTY3ZjY3Ii8+PHBhdGggZD0iTTg5NTEuNDEgNDEwMi43MmMwLTQxLjY1LTIyLjIyMS04MC4xMzYtNTguMjkxLTEwMC45NjEtMzYuMDY5LTIwLjgyNS04MC41MS0yMC44MjUtMTE2LjU4IDBsLTI0MzkuOTIgMTQwOC42OWMtMzYuMDcgMjAuODI1LTU4LjI5IDU5LjMxMS01OC4yOSAxMDAuOTYxVjcwNThjMCA0MS42NSAyMi4yMiA4MC4xMzYgNTguMjkgMTAwLjk2MSAzNi4wNyAyMC44MjUgODAuNTEgMjAuODI1IDExNi41OCAwbDI0MzkuOTItMTQwOC42OWMzNi4wNy0yMC44MjUgNTguMjkxLTU5LjMxMiA1OC4yOTEtMTAwLjk2MnYtMTU0Ni41OVpNNjQ2My45OCA1NTUxLjI5djEzODcuMDZsMjMwMS43Ny0xMzI4LjkyVjQyMjIuMzdMNjQ2My45OCA1NTUxLjI5WiIvPjxwYXRoIGQ9Ik01NDQzLjc2IDkwNDEuNzR2LTQyNzguNCIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2Utd2lkdGg6MjA2LjQ0cHg7c3Ryb2tlLWxpbmVqb2luOm1pdGVyIi8+PHBhdGggZD0ibTU0NzEuNzkgNDc3My44NiAzODI5LjM1LTIxODguMjIiIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDA7c3Ryb2tlLXdpZHRoOjIwNi40M3B4O3N0cm9rZS1saW5lam9pbjptaXRlciIvPjwvc3ZnPg==
+web:
+  service: homebox
+  port: 7745
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 3100
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: ALLOW_REGISTRATION
+    type: switch
+    default: true
+    label: { en: Anyone may sign up, uk: Будь-хто може зареєструватися }
+  - name: MAX_UPLOAD_MB
+    type: number
+    default: 10
+    advanced: true
+    label: { en: "Largest attachment, MB", uk: "Найбільший вкладений файл, МБ" }
+  - name: API_KEY_PEPPER
+    type: secret
+    length: 48
+    label: { en: Key for API tokens, uk: Ключ для токенів API }

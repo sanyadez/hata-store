@@ -1,0 +1,45 @@
+services:
+  webserver:
+    image: ghcr.io/paperless-ngx/paperless-ngx:3.3.2
+    restart: unless-stopped
+    depends_on:
+      - db
+      - broker
+    ports:
+      - ${WEB_PORT:-8000}:8000
+    volumes:
+      - ${APP_DATA:-.}/data:/usr/src/paperless/data
+      - ${APP_DATA:-.}/media:/usr/src/paperless/media
+      - ${APP_DATA:-.}/export:/usr/src/paperless/export
+      - ${CONSUME_DIR:-./consume}:/usr/src/paperless/consume
+    environment:
+      PAPERLESS_REDIS: redis://broker:6379
+      PAPERLESS_DBHOST: db
+      PAPERLESS_DBENGINE: postgresql
+      PAPERLESS_DBPASS: ${DB_PASSWORD:?set DB_PASSWORD}
+      PAPERLESS_SECRET_KEY: ${SECRET_KEY:?set SECRET_KEY}
+      PAPERLESS_URL: ${APP_URL:-http://localhost:8000}
+      PAPERLESS_ADMIN_USER: ${ADMIN_USER:-admin}
+      PAPERLESS_ADMIN_PASSWORD: ${ADMIN_PASSWORD:?set ADMIN_PASSWORD}
+      PAPERLESS_OCR_LANGUAGE: ${OCR_LANGUAGE:-eng}
+      # Ukrainian is not in the image; it is installed at start (skipped when offline)
+      PAPERLESS_OCR_LANGUAGES: ukr
+      PAPERLESS_TIME_ZONE: ${TZ:-UTC}
+      USERMAP_UID: ${PUID:-1000}
+      USERMAP_GID: ${PGID:-1000}
+
+  db:
+    image: postgres:18.6
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA:-.}/postgres:/var/lib/postgresql
+    environment:
+      POSTGRES_DB: paperless
+      POSTGRES_USER: paperless
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD}
+
+  broker:
+    image: valkey/valkey:9.1.2-alpine
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA:-.}/redis:/data

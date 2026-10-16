@@ -1,0 +1,78 @@
+title: Matrix
+tagline:
+  en: A family chat of your own, with Element on every device
+  uk: Власний сімейний чат з Element на кожному пристрої
+description:
+  en: >
+    A Matrix server with the Element web client: private chats and groups, files, voice messages
+    and end-to-end encryption, kept on your own server. Element for phones and computers connects
+    to it too, and with federation turned on you can talk to people on other Matrix servers.
+    The server is Continuwuity, a light one written in Rust.
+  uk: >
+    Сервер Matrix із вебклієнтом Element: особисті розмови й групи, файли, голосові повідомлення
+    та наскрізне шифрування — на вашому власному сервері. До нього під'єднується й Element для
+    телефонів і комп'ютерів, а з увімкненою федерацією можна листуватися з людьми з інших
+    серверів Matrix. Сервер — Continuwuity, легкий і написаний на Rust.
+notes:
+  en: >
+    The server's name is part of everyone's address (@anna:matrix.example.com) and **cannot be
+    changed** later. Talking to other servers needs Hata's domain with HTTPS reachable from the
+    internet on port 443: the app tells other servers to come there, so port 8448 is not needed.
+    The administrator signs in with the account from the settings; the others sign up in Element
+    with the registration code.
+  uk: >
+    Назва сервера входить в адресу кожного (@anna:matrix.example.com), і **змінити її згодом не
+    можна**. Щоб листуватися з іншими серверами, потрібен домен Hata з HTTPS, доступний з
+    інтернету на порту 443: застосунок скеровує інші сервери туди, тож порт 8448 не потрібен.
+    Адміністратор входить з обліковим записом із налаштувань, решта реєструється в Element з
+    кодом реєстрації.
+category: social
+developer: Continuwuity and Element
+website: https://continuwuity.org
+source: https://forgejo.ellis.link/continuwuation/continuwuity
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMTg0LjMgMzAuN2MwLTE3IDEzLjgtMzAuNyAzMC43LTMwLjcgMTEzLjEgMCAyMDQuOCA5MS43IDIwNC44IDIwNC44IDAgMTctMTMuOCAzMC43LTMwLjcgMzAuN3MtMzAuNy0xMy44LTMwLjctMzAuN2MwLTc5LjItNjQuMi0xNDMuNC0xNDMuNC0xNDMuNC0xNi45IDAtMzAuNy0xMy43LTMwLjctMzAuN20xNDMuNCA0NTAuNmMwIDE3LTEzLjggMzAuNy0zMC43IDMwLjctMTEzLjEgMC0yMDQuOC05MS43LTIwNC44LTIwNC44IDAtMTcgMTMuOC0zMC43IDMwLjctMzAuN3MzMC43IDEzLjggMzAuNyAzMC43YzAgNzkuMiA2NC4yIDE0My40IDE0My40IDE0My40IDE2LjkgMCAzMC43IDEzLjcgMzAuNyAzMC43bS0yOTctMTUzLjZDMTMuOCAzMjcuNyAwIDMxMy45IDAgMjk3IDAgMTgzLjkgOTEuNyA5Mi4yIDIwNC44IDkyLjJjMTcgMCAzMC43IDEzLjggMzAuNyAzMC43cy0xMy44IDMwLjctMzAuNyAzMC43Yy03OS4yIDAtMTQzLjQgNjQuMi0xNDMuNCAxNDMuNCAwIDE2LjktMTMuNyAzMC43LTMwLjcgMzAuN200NTAuNi0xNDMuNGMxNyAwIDMwLjcgMTMuOCAzMC43IDMwLjcgMCAxMTMuMS05MS43IDIwNC44LTIwNC44IDIwNC44LTE3IDAtMzAuNy0xMy44LTMwLjctMzAuNyAwLTE3IDEzLjgtMzAuNyAzMC43LTMwLjcgNzkuMiAwIDE0My40LTY0LjIgMTQzLjQtMTQzLjQgMC0xNi45IDEzLjctMzAuNyAzMC43LTMwLjciIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtmaWxsOiMwZGJkOGIiLz48L3N2Zz4=
+web:
+  service: element
+  port: 8080
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8008
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: SERVER_NAME
+    type: text
+    required: true
+    label: { en: Server name, uk: Назва сервера }
+    hint:
+      en: >
+        Usually the app's address under Hata's domain, like matrix.example.com. It cannot be
+        changed later
+      uk: >
+        Зазвичай адреса застосунку під доменом Hata, як-от matrix.example.com. Змінити її згодом
+        не можна
+  - name: ADMIN_USER
+    type: text
+    default: admin
+    required: true
+    label: { en: Administrator's name, uk: Ім'я адміністратора }
+    hint:
+      en: Small letters and digits
+      uk: Малі латинські літери й цифри
+  - name: ADMIN_PASSWORD
+    type: password
+    required: true
+    label: { en: Administrator's password, uk: Пароль адміністратора }
+    hint:
+      en: Without spaces or quotes; it can be changed in Element afterwards
+      uk: Без пробілів і лапок; згодом його можна змінити в Element
+  - name: REGISTRATION_TOKEN
+    type: password
+    required: true
+    label: { en: Registration code, uk: Код реєстрації }
+    hint:
+      en: Give it to those who may make an account on this server
+      uk: Дайте його тим, кому можна створити обліковий запис на цьому сервері
+  - name: FEDERATION
+    type: switch
+    default: true
+    label: { en: Talk to other Matrix servers, uk: Листування з іншими серверами Matrix }

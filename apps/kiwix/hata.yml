@@ -1,0 +1,42 @@
+title: Kiwix
+tagline:
+  en: Wikipedia and other sites without the internet, from your own server
+  uk: Вікіпедія та інші сайти без інтернету, з вашого сервера
+description:
+  en: >
+    Serves copies of websites packed into .zim files: the whole Wikipedia, Wiktionary, Stack
+    Exchange, the books of Project Gutenberg, TED talks and more. Download the files you want from
+    the Kiwix library, and every device at home reads them in a browser, even when the internet is
+    down.
+  uk: >
+    Віддає копії сайтів, запаковані у файли .zim: усю Вікіпедію, Вікісловник, Stack Exchange,
+    книжки проєкту «Гутенберг», лекції TED тощо. Завантажте потрібні файли з бібліотеки Kiwix, і
+    кожен пристрій удома читатиме їх у браузері, навіть коли інтернету немає.
+notes:
+  en: >
+    Put .zim files into the chosen folder: Wikipedia and other sites to download are on
+    library.kiwix.org. A file put there is served within a minute.
+  uk: >
+    Покладіть у вибрану теку файли .zim: Вікіпедію та інші сайти можна завантажити з
+    library.kiwix.org. Покладений файл з'явиться протягом хвилини.
+category: media
+developer: Kiwix
+website: https://kiwix.org
+source: https://github.com/kiwix/kiwix-tools
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9Ijg5LjU2IDE5Ny4yNiAxMDc2Ljg4IDg2MS41NCI+PHBhdGggZD0iTTExNjUgNzY0LjFjLTguMy0zNi40LTY4LjUtMTQxLjMtMTkxLjYtMjM0LjQtMjIuNS0xNy4xLTQyLjgtMzEuMy01OS43LTQyLjYgMjQuNi0xMDUuMy0xMDMuMy0yMzIuMy0yMjguMS0xNzIuNS04OS42LTg0LjMtMTg5LjUtMTE4LjctMjgxLjQtMTE3LjMtMjQzLjMgMy40LTQzMSAyNTYuOS0yMjkuMSA0OTguOGwuNC40YzMuMSAzLjcgNi4zIDcuNCA5LjUgMTEuMSAxMy4xIDE1LjcgMjEuOCAyOS42IDI5LjIgNTQuMUwyNzQuNCA5NTloLTIxLjNjLTE5LjYgMC0zNS42IDE1LjktMzUuNiAzNS42aDgwLjhsMTM1LjggNjQuMmM4LjQtMTcuOC44LTM5LTE2LjktNDcuM2wtMzUuNi0xNi44SDQ4NGMwLTE5LjYtMTUuOS0zNS42LTM1LjYtMzUuNmgtOTIuOGMtMTYuMiAwLTMwLjYtMTAuNi0zNS4zLTI2LjFsLTQ3LjctMTU2LjdjLTExLjktNDEuMiAxNS40LTY4LjEgNDEuMS03MS4zIDIzLjQtMi45IDM1LjIgMTIuMiA0Ni4yIDQ4LjhsNDIuNCAxMzlIMzgxYy0xOS42IDAtMzUuNiAxNS45LTM1LjYgMzUuNmg4MC44TDU2MiA5OTIuNmM4LjQtMTcuOC44LTM5LTE2LjktNDcuM2wtMzUuNi0xNi44aDc1LjFjNy42IDEyLjkgMTYuOSAyNS4xIDI4IDM2LjEgNzAgNzAgMTgzLjcgNzAgMjUzLjcgMHM3MC0xODMuNyAwLTI1My43LTE4My43LTcwLTI1My43IDBjLTQ5LjIgNDkuMi02My45IDEyMC00My45IDE4MmgtODVjLTE2LjIgMC0zMC42LTEwLjYtMzUuMy0yNi4xTDM3OCA2MzUuNGwxMi02LjRjMTY3LjEtNzAuMSAzNDUuOCA1NS4xIDQ3MC4yLTY1LjJsLjgtLjhjMTUuNC0xNCAzMC44LTI4LjMgNzYuMy4yIDQ5IDMwLjcgMTU3LjEgMTEwLjggMjA2LjEgMjQ3LjguMSAwIDI5LjgtMTAuNiAyMS42LTQ2LjlNODIxLjIgNDYwLjZjLS40LTE4LjctMTUuNi0zMy43LTM0LjUtMzMuNy0xOSAwLTM0LjUgMTUuNC0zNC41IDM0LjUgMCAxMC40IDQuNiAxOS42IDExLjggMjUuOS0yNS00LjgtNDMuOC0yNi42LTQzLjgtNTIuOSAwLTI5LjggMjQuMS01My45IDUzLjktNTMuOXM1My45IDI0LjEgNTMuOSA1My45YzAgOS41LTIuNSAxOC40LTYuOCAyNi4yIiBzdHlsZT0iZmlsbDojMDEwMTAxIi8+PC9zdmc+
+web:
+  service: kiwix-serve
+  port: 8080
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8080
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: ZIM_DIR
+    type: folder
+    default: ${DATA_ROOT}/Media/Kiwix
+    required: true
+    label: { en: Folder with .zim files, uk: Тека з файлами .zim }
+    hint:
+      en: The files are downloaded from library.kiwix.org
+      uk: Файли завантажують із library.kiwix.org

@@ -1,0 +1,45 @@
+title: Ghostfolio
+tagline:
+  en: All your stocks, funds and crypto in one portfolio
+  uk: Усі ваші акції, фонди й криптовалюта в одному портфелі
+description:
+  en: >
+    A wealth tracker for those who invest. Add your purchases and sales across brokers and
+    exchanges, and Ghostfolio follows the prices, shows performance, dividends and how the
+    portfolio is spread across assets, countries and currencies.
+  uk: >
+    Облік статків для тих, хто інвестує. Додавайте купівлі й продажі в різних брокерів і на
+    біржах, а Ghostfolio стежить за цінами й показує прибутковість, дивіденди та розподіл
+    портфеля за активами, країнами й валютами.
+notes:
+  en: >
+    The first account made on the start page becomes the administrator. Ghostfolio signs in with a
+    security token instead of a password: it is shown once, so save it right away.
+  uk: >
+    Перший обліковий запис, створений на стартовій сторінці, стає адміністратором. Замість пароля
+    Ghostfolio дає ключ безпеки для входу: його показують лише раз, тож одразу збережіть його.
+category: finance
+developer: Ghostfolio
+website: https://ghostfol.io
+source: https://github.com/ghostfolio/ghostfolio
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNNDMxLjYgNTEyLjFIODAuNUMzNiA1MTIuMSAwIDQ3NiAwIDQzMS42VjgwLjVDMCAzNiAzNiAwIDgwLjUgMGgzNTEuMWM0NC41IDAgODAuNSAzNiA4MC41IDgwLjV2MzUxLjFjMCA0NC40LTM2LjEgODAuNS04MC41IDgwLjUiIHN0eWxlPSJmaWxsOiM1NmNkY2EiLz48cGF0aCBkPSJNMjU1LjggNzYuOGMtNzcuMy4yLTEzOS44IDYyLjgtMTM5LjggMTQwdjE5NS4xYzAgMTAuNCAxMi42IDE1LjYgMTkuOSA4LjNsMjYuNy0yNy41IDM4LjQgMzkuMmM0LjYgNC42IDEyIDQuNiAxNi41IDBsMzguNC0zOS4yIDM4LjQgMzkuMmM0LjYgNC42IDEyIDQuNiAxNi41IDBsMzguNC0zOS4yIDI2LjcgMjcuNWM3LjQgNy40IDIwIDIuMiAyMC04LjNWMjE4Yy4xLTc3LjEtNjMtMTQxLjMtMTQwLjEtMTQxLjJtLTU4LjEgMTg2LjdjLTE5LjMgMC0zNS0xNS43LTM1LTM1czE1LjctMzUgMzUtMzUgMzUgMTUuNyAzNSAzNS0xNS43IDM1LTM1IDM1bTExNi42IDBjLTE5LjMgMC0zNS0xNS43LTM1LTM1czE1LjctMzUgMzUtMzUgMzUgMTUuNyAzNSAzNS0xNS42IDM1LTM1IDM1IiBzdHlsZT0iZmlsbDojZmZmIi8+PC9zdmc+
+web:
+  service: ghostfolio
+  port: 3333
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 3333
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: POSTGRES_PASSWORD
+    type: secret
+    label: { en: Database password, uk: Пароль бази даних }
+  - name: REDIS_PASSWORD
+    type: secret
+    label: { en: Cache password, uk: Пароль кешу }
+  - name: ACCESS_TOKEN_SALT
+    type: secret
+    label: { en: Security token salt, uk: Сіль для ключів безпеки }
+  - name: JWT_SECRET_KEY
+    type: secret
+    label: { en: Session signing key, uk: Ключ підпису сеансів }

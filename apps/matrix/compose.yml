@@ -1,0 +1,36 @@
+services:
+  homeserver:
+    image: ghcr.io/continuwuity/continuwuity:v26.9.1
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA:-.}/db:/var/lib/continuwuity
+    environment:
+      # Never change it afterwards: the database belongs to this name
+      CONTINUWUITY_SERVER_NAME: ${SERVER_NAME:?set SERVER_NAME, the name in the users' addresses}
+      CONTINUWUITY_DATABASE_PATH: /var/lib/continuwuity
+      CONTINUWUITY_ADDRESS: 0.0.0.0
+      CONTINUWUITY_PORT: "8008"
+      CONTINUWUITY_ALLOW_REGISTRATION: "true"
+      CONTINUWUITY_REGISTRATION_TOKEN: ${REGISTRATION_TOKEN:?set REGISTRATION_TOKEN, the code new users sign up with}
+      # Makes the first account, which becomes the server's administrator; once it exists the
+      # command fails at every start, and that is ignored
+      CONTINUWUITY_ADMIN_EXECUTE: '["users create ${ADMIN_USER:-admin} ${ADMIN_PASSWORD:?set ADMIN_PASSWORD, without spaces or quotes}"]'
+      CONTINUWUITY_ADMIN_EXECUTE_ERRORS_IGNORE: "true"
+      CONTINUWUITY_ALLOW_FEDERATION: ${FEDERATION:-true}
+      # Other servers are sent to port 443 of this address instead of 8448
+      CONTINUWUITY_WELL_KNOWN__SERVER: ${APP_HOST:-localhost}:443
+      CONTINUWUITY_WELL_KNOWN__CLIENT: ${APP_URL:-http://localhost:8008}
+
+  element:
+    image: vectorim/element-web:v1.12.32
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8008}:8080
+    volumes:
+      - ./element.conf.template:/etc/nginx/templates/default.conf.template:ro
+    environment:
+      ELEMENT_WEB_PORT: "8080"
+      APP_URL: ${APP_URL:-http://localhost:8008}
+      SERVER_NAME: ${SERVER_NAME:?set SERVER_NAME, the name in the users' addresses}
+    depends_on:
+      - homeserver

@@ -1,0 +1,17 @@
+services:
+  vikunja:
+    image: vikunja/vikunja:2.7.0
+    restart: unless-stopped
+    user: ${PUID:-1000}:${PGID:-1000}
+    ports:
+      - ${WEB_PORT:-3456}:3456
+    volumes:
+      - ${APP_DATA:-.}/files:/app/vikunja/files
+      - ${APP_DATA:-.}/db:/db
+    environment:
+      VIKUNJA_SERVICE_PUBLICURL: ${APP_URL:-http://localhost:3456}/
+      VIKUNJA_SERVICE_SECRET: ${JWT_SECRET:?set JWT_SECRET, a long random string}
+      VIKUNJA_SERVICE_ENABLEREGISTRATION: ${ENABLE_REGISTRATION:-true}
+      VIKUNJA_SERVICE_TIMEZONE: ${TZ:-UTC}
+      VIKUNJA_DATABASE_TYPE: sqlite
+      VIKUNJA_DATABASE_PATH: /db/vikunja.db

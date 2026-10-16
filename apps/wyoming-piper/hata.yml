@@ -1,0 +1,47 @@
+title: Piper for Home Assistant
+tagline:
+  en: A natural voice for the voice assistant, made at home
+  uk: Природний голос для голосового помічника, створений удома
+description:
+  en: >
+    Gives Home Assistant's voice assistant and its announcements a voice, on this server. The Piper
+    text-to-speech engine runs through the Wyoming protocol, is quick even on small computers and has
+    voices for dozens of languages, Ukrainian among them. Together with Whisper it makes a fully local
+    voice assistant.
+  uk: >
+    Дає голос голосовому помічнику Home Assistant і його оголошенням просто на цьому сервері. Синтез
+    мовлення Piper працює через протокол Wyoming, швидкий навіть на малих комп'ютерах і має голоси
+    для десятків мов, зокрема української. Разом із Whisper утворює повністю локального голосового
+    помічника.
+notes:
+  en: >
+    It has no web page. In Home Assistant add the **Wyoming Protocol** integration with the server's
+    address and the port chosen here, then pick it as the text-to-speech engine of a voice assistant.
+    The voice is downloaded at the first start.
+  uk: >
+    Вебсторінки в нього немає. У Home Assistant додайте інтеграцію **Wyoming Protocol** з адресою
+    сервера й обраним тут портом, а тоді виберіть її для перетворення тексту на мовлення в голосовому
+    помічнику. Голос завантажується під час першого запуску.
+category: home
+developer: Open Home Foundation
+website: https://github.com/OHF-Voice/wyoming-piper
+source: https://github.com/OHF-Voice/wyoming-piper
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij48cmVjdCB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgcng9IjU2IiBmaWxsPSIjYzI0MTBjIi8+PHBhdGggZD0iTTUyIDEwNGgzNmw0OC00MHYxMjhsLTQ4LTQwSDUyeiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjE2IiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxwYXRoIGQ9Ik0xNjQgMTAwYTQwIDQwIDAgMCAxIDAgNTZNMTg4IDc2YTcyIDcyIDAgMCAxIDAgMTA0Ii8+PC9nPjwvc3ZnPg==
+settings:
+  - name: WYOMING_PORT
+    type: port
+    default: 10200
+    label: { en: Wyoming port, uk: Порт Wyoming }
+  - name: VOICE
+    type: text
+    default: en_US-lessac-medium
+    required: true
+    label: { en: Voice, uk: Голос }
+    hint:
+      en: >
+        The default voice, by its name from the list of Piper voices: uk_UA-tetiana-high and
+        uk_UA-oleksa-high are Ukrainian. Home Assistant may ask for any other one, which is then downloaded
+      uk: >
+        Типовий голос, за назвою зі списку голосів Piper: uk_UA-tetiana-high і uk_UA-oleksa-high —
+        українські.
+        Home Assistant може попросити будь-який інший, і його буде завантажено

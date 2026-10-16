@@ -1,0 +1,12 @@
+services:
+  changedetection:
+    image: ghcr.io/dgtlmoon/changedetection.io:0.60.9
+    restart: unless-stopped
+    hostname: changedetection
+    ports:
+      - ${WEB_PORT:-5000}:5000
+    volumes:
+      - ${APP_DATA:-.}/datastore:/datastore
+    environment:
+      BASE_URL: ${APP_URL:-http://localhost:5000}
+      TZ: ${TZ:-UTC}

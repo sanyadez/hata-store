@@ -1,0 +1,38 @@
+title: Mealie
+tagline:
+  en: The family cookbook, meal plans and shopping lists
+  uk: Родинна кулінарна книга, меню на тиждень і списки покупок
+description:
+  en: >
+    A home for your recipes. Paste a link and Mealie takes the recipe off the page — without the
+    life story above it; plan the week's meals, and the shopping list makes itself from them. Every
+    member of the household has an account, and recipes scale to any number of servings.
+  uk: >
+    Дім для ваших рецептів. Вставте посилання, і Mealie забере рецепт зі сторінки — без довгої
+    передмови над ним; сплануйте страви на тиждень, і список покупок складеться сам. Кожен у родині
+    має свій обліковий запис, а рецепти перераховуються на будь-яку кількість порцій.
+notes:
+  en: >
+    The first sign-in is **changeme@example.com** with the password **MyPassword**; change both at once.
+  uk: >
+    Перший вхід — **changeme@example.com** з паролем **MyPassword**; одразу змініть обидва.
+category: productivity
+developer: Mealie
+website: https://mealie.io
+source: https://github.com/mealie-recipes/mealie
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJMYXllcl8xIiB4PSIwIiB5PSIwIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48c3R5bGU+LnN0MHtmaWxsOiNlNTgzMjV9PC9zdHlsZT48cGF0aCBkPSJNMzYzLjIgMzcuNGMtNTAuMiA1MS4zLTcyLjUgNzQuNS04NS4xIDg4LjYtMi40IDIuNy00LjcgNS4xLTQuOSA1LjNzLTIuNCAyLjctNC43IDUuNGMtOS42IDExLjQtMTEuOSAyOS42LTUuOCA0NS41IDIgNS4yIDguOSAxNy43IDEwLjQgMTguOS4zLjIgMS45IDEuOSAzLjYgMy42bDMgMy4yLTEyNy40IDEyNy4zTDI1LjEgNDYyLjQgNDMuNiA0ODEgNjIgNDk5LjhsOTEtOTEgOTAuOS05MC45IDkwLjQgOTAuNGM0OS43IDQ5LjcgOTAuOCA5MC41IDkxLjEgOTAuNi44LjIgMzUuOS0zNC44IDM2LjQtMzYuMi4yLS40LTQwLjUtNDEuNS05MC4zLTkxLjNMMjgxIDI4MC43bDE0LTEzLjljMTktMTguOCAxOS45LTE5LjYgMjIuNC0xOS42LjggMCAzLjEgMS40IDUgMy4zIDEwLjUgOS45IDI1LjEgMTUuMSA0MC44IDE0LjQgMTIuMS0uNSAyMC43LTQuOCAzNi0xNy45IDEwLTguNiAxNS4xLTEzLjYgNjQuMS02Mi4zbDQ4LjctNDguNS0xMi4yLTEyLjRjLTYuNy02LjgtMTIuMy0xMi4zLTEyLjQtMTIuMS0uMi4xLTE5LjQgMTkuMy00Mi44IDQyLjVsLTQyLjUgNDIuNC0xMi4xLTEyYy02LjctNi42LTEyLjItMTIuMy0xMi4yLTEyLjUgMC0uMyAxOS0xOS42IDQyLjQtNDNsNDIuMy00Mi41LTEyLjEtMTIuMmMtNi42LTYuNy0xMi4yLTEyLjItMTIuNC0xMi4ycy0xOS42IDE5LjEtNDIuOSA0Mi40bC00Mi41IDQyLjUtMTIuNC0xMi4zLTEyLjQtMTIuM0wzNzAuMyA4MGMyMy40LTIzLjQgNDIuNS00Mi43IDQyLjUtNDIuOSAwLS40LTE0LjctMTUuMy0yMi4xLTIyLjVsLTIuNi0yLjR6IiBjbGFzcz0ic3QwIi8+PHBhdGggZD0iTTI1LjEgMzcuM0MxNyA0NiAxMC43IDU2LjggNS45IDcwLjdjLTEuNSA0LjMtMi43IDcuOS0yLjYgNy45cy0uMiAxLjctLjcgMy44Yy0zLjIgMTMuNy0zLjUgMzAuMy0uOCA0My4xIDUuNSAyNiAxMy41IDM3LjQgNTkuMiA4My42IDE1LjEgMTUuMyA3Ny4yIDc3LjMgNzkuOSA4MCAuNS40IDczLjktNzIuOSA3My45LTczLjggMC0uNy0xMjkuMi0xMjkuOS0xNjEuNS0xNjEuNS0xMS44LTExLjUtMjIuMS0yMS0yMi43LTIxLS43LS4xLTMuMSAyLTUuNSA0LjUiIGNsYXNzPSJzdDAiLz48L3N2Zz4=
+web:
+  service: mealie
+  port: 9000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 9925
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: ALLOW_SIGNUP
+    type: switch
+    default: false
+    label: { en: Anyone may sign up, uk: Будь-хто може зареєструватися }
+    hint:
+      en: When off, new people join by an invitation link
+      uk: Коли вимкнено, нові люди приходять за посиланням-запрошенням

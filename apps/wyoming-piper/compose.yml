@@ -1,0 +1,11 @@
+services:
+  piper:
+    image: rhasspy/wyoming-piper:2.5.2
+    restart: unless-stopped
+    ports:
+      - ${WYOMING_PORT:-10200}:10200
+    volumes:
+      - ${APP_DATA:-.}/data:/data
+    environment:
+      TZ: ${TZ:-UTC}
+    command: --voice ${VOICE:-en_US-lessac-medium}

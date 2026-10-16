@@ -1,0 +1,49 @@
+title: Scrypted
+tagline:
+  en: Home cameras in Apple Home, Google Home and Alexa, fast
+  uk: Домашні камери в Apple Home, Google Home та Alexa, без затримок
+description:
+  en: >
+    A video hub for home cameras and doorbells. It takes the streams of cameras of almost any brand
+    and brings them to Apple HomeKit Secure Video, Google Home, Alexa and Home Assistant with almost
+    no delay, and finds people, cars and animals in them. Recording around the clock comes with its
+    NVR plugin.
+  uk: >
+    Відеоцентр для домашніх камер і дверних дзвінків. Бере потоки камер майже будь-якої марки й
+    передає їх в Apple HomeKit Secure Video, Google Home, Alexa та Home Assistant майже без затримки,
+    а також розпізнає на них людей, автівки й тварин. Цілодобовий запис дає його плагін NVR.
+notes:
+  en: >
+    It works in the server's own network, so its ports (11080 and 10443 among others) cannot be
+    changed and must be free. The first visit to its page makes the administrator's account.
+  uk: >
+    Він працює в мережі самого сервера, тож його порти (серед інших 11080 і 10443) змінити не можна,
+    і вони мають бути вільні. Під час першого відкриття сторінки створюється обліковий запис
+    адміністратора.
+category: home
+developer: Koushik Dutta
+website: https://www.scrypted.app
+source: https://github.com/koush/scrypted
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij48Y2lyY2xlIGN4PSIxMjgiIGN5PSIxMjgiIHI9IjEyNCIgZmlsbD0iIzY3M2FiNyIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cmVjdCB4PSI3OCIgeT0iNzgiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iMTQiLz48cmVjdCB4PSIxMDgiIHk9IjEwOCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iNCIvPjxwYXRoIGQ9Ik0xMDggNTB2MjhNMTQ4IDUwdjI4TTEwOCAxNzh2MjhNMTQ4IDE3OHYyOE01MCAxMDhoMjhNNTAgMTQ4aDI4TTE3OCAxMDhoMjhNMTc4IDE0OGgyOCIvPjwvZz48L3N2Zz4=
+web:
+  service: scrypted
+  port: 11080
+settings:
+  - name: NVR_DIR
+    type: folder
+    default: ${DATA_ROOT}/Media/Cameras
+    label: { en: Recordings folder, uk: Тека для записів }
+    hint:
+      en: Where the NVR plugin keeps camera recordings
+      uk: Куди плагін NVR складає записи з камер
+permissions:
+  host-network:
+    en: >
+      Its authors run it on the server's own network: HomeKit and the cameras find it through mDNS
+      and connect to it directly
+    uk: >
+      Автори запускають його в мережі самого сервера: HomeKit і камери знаходять його через mDNS і
+      під'єднуються до нього напряму
+  devices:
+    en: Uses the server's graphics (/dev/dri) to decode video faster, when the server has it
+    uk: Користується графікою сервера (/dev/dri), щоб швидше декодувати відео, якщо вона є

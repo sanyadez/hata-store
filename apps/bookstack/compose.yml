@@ -1,0 +1,42 @@
+services:
+  bookstack:
+    image: linuxserver/bookstack:26.09.1
+    restart: unless-stopped
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    ports:
+      - ${WEB_PORT:-6875}:80
+    volumes:
+      - ${APP_DATA:-.}/config:/config
+    environment:
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-UTC}
+      APP_URL: ${APP_URL:-http://localhost:6875}
+      APP_KEY: ${APP_KEY:?set APP_KEY, 32 letters and digits}
+      DB_HOST: mariadb
+      DB_PORT: 3306
+      DB_USERNAME: bookstack
+      DB_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD}
+      DB_DATABASE: bookstack
+
+  mariadb:
+    image: linuxserver/mariadb:11.8.8
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA:-.}/mariadb:/config
+    environment:
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-UTC}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?set DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: bookstack
+      MYSQL_USER: bookstack
+      MYSQL_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD}
+    # BookStack waits only 30 s for the database, and the first start of MariaDB can take longer
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h 127.0.0.1 --protocol=tcp --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30

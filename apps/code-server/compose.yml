@@ -1,0 +1,15 @@
+services:
+  code-server:
+    image: linuxserver/code-server:4.141.0
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8443}:8443
+    volumes:
+      - ${APP_DATA:-.}/config:/config
+      - ${PROJECTS:-./projects}:/projects
+    environment:
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-UTC}
+      PASSWORD: ${PASSWORD:?set PASSWORD, the password to sign in with}
+      DEFAULT_WORKSPACE: /projects

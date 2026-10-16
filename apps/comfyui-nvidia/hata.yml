@@ -1,0 +1,42 @@
+title: ComfyUI (NVIDIA)
+tagline:
+  en: Make pictures and videos with AI models, node by node
+  uk: Створюйте зображення й відео моделями ШІ, вузол за вузлом
+description:
+  en: >
+    A visual editor for generative AI: Stable Diffusion, Flux, video and audio models are joined
+    into a workflow of nodes on a canvas, so every step from the prompt to the finished picture can
+    be seen and changed. Models and extra nodes are added from the built-in manager.
+  uk: >
+    Візуальний редактор для генеративного ШІ: моделі Stable Diffusion, Flux, відео й звуку
+    з'єднуються на полотні в схему з вузлів, тож кожен крок від запиту до готового зображення
+    видно й можна змінити. Моделі й додаткові вузли додаються з вбудованого менеджера.
+notes:
+  en: >
+    Needs an NVIDIA graphics card from the GTX 16 or RTX 20 series on, its driver and the NVIDIA
+    Container Toolkit on the server. It comes without models: download one first (they take
+    gigabytes). The image is made by the community, not by the authors of ComfyUI.
+  uk: >
+    Потрібна відеокарта NVIDIA серії GTX 16 чи RTX 20 або новіша, її драйвер і NVIDIA Container
+    Toolkit на сервері. Моделей у комплекті немає: спершу завантажте якусь (вони займають
+    гігабайти). Образ зроблено спільнотою, а не авторами ComfyUI.
+category: ai
+developer: Comfy Org
+website: https://www.comfy.org
+source: https://github.com/Comfy-Org/ComfyUI
+icon: data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODQiIGhlaWdodD0iODQiIHZpZXdCb3g9IjAgMCA4NCA4NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODQiIGhlaWdodD0iODQiIGZpbGw9IiMxNzJERDciIHN0eWxlPSJmaWxsOiMxNzJERDc7ZmlsbDpjb2xvcihkaXNwbGF5LXAzIDAuMDkwMiAwLjE3NjUgMC44NDMxKTtmaWxsLW9wYWNpdHk6MTsiLz48cGF0aCBkPSJNMjguNTg5OSA2OS4yNzI3QzI3LjMyNDIgNjkuMjcyNyAyNi4zMDMgNjguODAyMyAyNS42MzcgNjcuOTEyOEMyNC45NTI0IDY2Ljk5ODkgMjQuNzc0IDY1LjcyMyAyNS4xNDcxIDY0LjQxMzNMMjYuNjQ1NSA1OS4xNTE4QzI2Ljc2NSA1OC43MzI5IDI2LjY4MTggNTguMjgyMSAyNi40MjEyIDU3LjkzMzZDMjYuMTYwNiA1Ny41ODU4IDI1Ljc1MjkgNTcuMzgxIDI1LjMxOTggNTcuMzgxSDIxLjAxMTZDMTkuNzQ1MyA1Ny4zODEgMTguNzI0IDU2LjkxMTIgMTguMDU4MyA1Ni4wMjE4QzE3LjM3MzggNTUuMTA3MiAxNy4xOTUzIDUzLjgzMTQgMTcuNTY4NyA1Mi41MjE2TDIyLjcxNjMgMzQuNTI4NkwyMy4yODQ3IDMyLjU1MTdDMjQuMDQ4NyAyOS44NjkgMjYuODM0OSAyNy42ODg4IDI5LjQ5NjYgMjcuNjg4OEgzNC42NTE3QzM1LjI2NjggMjcuNjg4OCAzNS44MDc5IDI3LjI3ODcgMzUuOTc3MyAyNi42ODM1TDM3LjY4MjEgMjAuNjk4N0MzOC40NDUzIDE4LjAxODcgNDEuMjMxNiAxNS44Mzg1IDQzLjg5MzMgMTUuODM4NUw1NC45MTgxIDE1LjgxODlMNjIuOTg5MSAxNS44MTgyQzY0LjI1NTEgMTUuODE4MiA2NS4yNzYzIDE2LjI4OCA2NS45NDIgMTcuMTc3NEM2Ni42MjY1IDE4LjA5MTMgNjYuODA1IDE5LjM2NzIgNjYuNDMxOSAyMC42NzY5TDY0LjEyNCAyOC43ODAzQzYzLjM2MTEgMzEuNDU5NSA2MC41NzQ4IDMzLjYzOTEgNTcuOTEzMSAzMy42MzkxTDQ2Ljg2MzcgMzMuNjYwMUg0MS43MTA0QzQxLjA5NTkgMzMuNjYwMSA0MC41NTU1IDM0LjA2OTUgNDAuMzg1MSAzNC42NjQxTDM2LjA4ODMgNDkuNjcyMkMzNS45NjgxIDUwLjA5MTkgMzYuMDUxMyA1MC41NDQxIDM2LjMxMjYgNTAuODkyNUMzNi41NzMyIDUxLjI0MDMgMzYuOTgwOSA1MS40NDUgMzcuNDEzNiA1MS40NDVMNDQuNzE1MiA1MS40MzA4SDUyLjc2MjJDNTQuMDI4MiA1MS40MzA4IDU1LjA0OTQgNTEuOTAwNiA1NS43MTUxIDUyLjc5MDFDNTYuMzk5NiA1My43MDQ2IDU2LjU3ODEgNTQuOTgwNSA1Ni4yMDQ3IDU2LjI5MDJMNTMuODk2OSA2NC4zOTIzQzUzLjEzMzkgNjcuMDcyMiA1MC4zNDc2IDY5LjI1MTcgNDcuNjg2IDY5LjI1MTdMMzYuNjM2OSA2OS4yNzI3SDI4LjU4OTlaIiBmaWxsPSIjRjBGRjQxIiBzdHlsZT0iZmlsbDojRjBGRjQxO2ZpbGw6Y29sb3IoZGlzcGxheS1wMyAwLjk0MTIgMS4wMDAwIDAuMjU0OSk7ZmlsbC1vcGFjaXR5OjE7Ii8+PC9zdmc+
+web:
+  service: comfyui
+  port: 8188
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8188
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: CLI_ARGS
+    type: text
+    advanced: true
+    label: { en: Extra launch options, uk: Додаткові параметри запуску }
+    hint:
+      en: ComfyUI's command-line options, for example --fast or --lowvram
+      uk: Параметри командного рядка ComfyUI, наприклад --fast чи --lowvram

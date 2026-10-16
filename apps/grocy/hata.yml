@@ -1,0 +1,31 @@
+title: Grocy
+tagline:
+  en: What is in the fridge and the pantry, and what to buy
+  uk: Що є в холодильнику й коморі і що треба купити
+description:
+  en: >
+    Groceries and household management for the family: stock with best-before dates, a shopping list
+    that fills itself when something runs low, recipes that know what is at home, a meal plan, chores
+    and batteries to change. A phone's camera scans barcodes straight into the stock.
+  uk: >
+    Облік продуктів і господарства для родини: запаси зі строками придатності, список покупок, що сам
+    поповнюється, коли чогось замало, рецепти, які знають, що є вдома, план харчування, хатні справи й
+    батарейки, які пора міняти. Камера телефона сканує штрихкоди одразу в запаси.
+notes:
+  en: >
+    The first sign-in is **admin** with the password **admin**; change the password right after it.
+  uk: >
+    Перший вхід — **admin** з паролем **admin**; одразу після нього змініть пароль.
+category: productivity
+developer: Bernd Bestel
+website: https://grocy.info
+source: https://github.com/grocy/grocy
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjQzLjc0IDAgNDI0LjUxIDUxMiI+PHBhdGggZD0iTTI2OTIuNSAyMjA1LjZDMTYwNS44IDIwNTIuMyA3NjkuOCAxMjM0LjkgNTAwLjQgNjkuMmMtNjcuMy0yODcuOS04My42LTgzMS4zLTM0LjgtMTExMCAxMzIuNC03NjEuNyA2MzEuNi0xNDAyLjYgMTMxMi0xNjg4LjIgMjkwLjMtMTIzLjEgNDQ4LjItMTU1LjYgODE5LjctMTY3LjIgMjYwLjEtOS4zIDM5Ny4xLTIuMyA1ODAuNSAyNy45IDU3My42IDk1LjIgMTE1MS44IDM2Mi4zIDE0MTguOCA2NTkuNWw4NS45IDk1LjItMTEuNiAzOTkuNGMtNyAyMjAuNi0xOC42IDczMy44LTI1LjUgMTE0MC4ybC0xMy45IDc0MC44LTYyMC0xOC42Yy0zMzktNy03OTQuMi0yMC45LTEwMTIuNS0zMC4ybC0zOTQuOC0xMy45LTE4LjYtNDk0LjZjLTExLjYtMjc0LTE2LjMtNDk5LjMtMTEuNi01MDMuOSA0LjYtNC42IDE4OC4xLTE2LjMgNDA4LjctMjUuNWwzOTkuNC0xNi4zVi05OTljMC0xNTAuOS0yNy45LTIwOS0xMTguNC0yNTcuOC0xMzkuMy02OS43LTM5OS40LTEwMi4yLTU1OS42LTY5LjctNTc4LjIgMTIwLjgtODA1LjggOTcwLjctNDE4IDE1NzIuMSAyNDMuOCAzNzguNSA2NzMuNCA1NjIgMTI0NyA1MzYuNCAxNTcuOS05LjMgMzU1LjMtMzQuOCA0NTIuOC01OC4xIDk1LjItMjUuNSAxNzguOC0zNy4yIDE4NS44LTI1LjUgMjAuOSAzMC4yIDk5LjkgMTIyMS41IDg1LjkgMTI1OC42LTE4LjYgNTEuMS0yODcuOSAxNDguNi01NDggMjAyLTI2NyA1My42LTc5NC4xIDc5LjEtMTAxNy4xIDQ2LjYiIHN0eWxlPSJmaWxsOiMzMzdhYjciIHRyYW5zZm9ybT0ibWF0cml4KC4xIDAgMCAtLjEgMCAyMjIpIi8+PC9zdmc+
+web:
+  service: grocy
+  port: 80
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 9283
+    label: { en: Web port, uk: Порт вебінтерфейсу }

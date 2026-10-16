@@ -1,0 +1,44 @@
+title: Mosquitto
+tagline:
+  en: The message broker smart home devices talk through
+  uk: Брокер повідомлень, через який спілкуються пристрої розумного дому
+description:
+  en: >
+    An MQTT broker from the Eclipse Foundation. Sensors, switches, Zigbee2MQTT, Tasmota and ESPHome
+    devices publish what they see to it, and Home Assistant or Node-RED read it and send commands
+    back. Small, fast and keeps retained messages across restarts.
+  uk: >
+    Брокер MQTT від Eclipse Foundation. Датчики, вимикачі, Zigbee2MQTT, пристрої з Tasmota чи ESPHome
+    надсилають до нього свої дані, а Home Assistant чи Node-RED читають їх і шлють команди назад.
+    Маленький, швидкий і зберігає зафіксовані повідомлення між перезапусками.
+notes:
+  en: >
+    It has no web page. Devices and apps connect to the server's address on the MQTT port with the
+    user name and password chosen here: anonymous access is off, so a device on the home network
+    cannot read or switch anything without them.
+  uk: >
+    Вебсторінки в нього немає. Пристрої й застосунки під'єднуються до адреси сервера на порт MQTT з
+    обраними тут іменем і паролем: анонімний доступ вимкнено, тож без них жоден пристрій у домашній
+    мережі нічого не прочитає й не перемкне.
+category: home
+developer: Eclipse Foundation
+website: https://mosquitto.org
+source: https://github.com/eclipse-mosquitto/mosquitto
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9Ii0wLjA2IDYwLjc5IDUxMi4zOCAzOTAuMzgiPjxwYXRoIGQ9Im01MTQuNSA3My4yIDUuNyA3OCA0LjYgNjMuM2M5LjYgNCAxNi4zIDEzLjUgMTYuMyAyNC41IDAgMTQuNy0xMS45IDI2LjYtMjYuNiAyNi42cy0yNi42LTExLjktMjYuNi0yNi42YzAtMTEgNi43LTIwLjUgMTYuMy0yNC41bDQuNi02My4zeiIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I2YzNzcxYyIgdHJhbnNmb3JtPSJtYXRyaXgoMS4yNSAwIDAgLTEuMjUgLTM4Ny4wNjUgNTQyLjY2NCkiLz48cGF0aCBkPSJNMzMyLjcgMjM5LjJjMC00NSAxNi41LTg3LjEgNDUtMTE5LjdsLTE3LjItMTUuNGMtMzIuMiAzNi42LTUwLjkgODQuMi01MC45IDEzNS4xIDAgNTcuMyAyMy42IDEwOS4xIDYxLjUgMTQ2LjNsLjktLjggNTAuOS00NS42Yy00Ny44LTQzLjgtNTcuNy0xMTUuMS0yNC40LTE3MGwxNy42IDE1LjdjLTI1LjQgNDUuOC0xNS43IDEwMy43IDI0LjIgMTM4LjhsMTcuNC0xNS42IDE1LjUtMTMuOSAxNi4xLTE0LjRjLTYtMy44LTExLjEtOC44LTE0LjktMTQuOC00LjctNy40LTcuNC0xNi4yLTcuNC0yNS42IDAtMjEgMTMuNi0zOC44IDMyLjQtNDUuMkw1MDEgMTcyYy0zMS40IDYuMy01NSAzNC4xLTU1IDY3LjMgMCAxNC44IDQuNyAyOC41IDEyLjcgMzkuN2wtMTUuNCAxMy44LS4xLjFjLTI1LjItMzMuNS0yMy43LTgwIDMuNS0xMTEuN0wzOTUuMSAxMzVjLTUwLjggNTguMi01Mi4yIDE0NC41LTMuNiAyMDQuM2wtMTcuMiAxNS40Yy0yMy44LTI4LjgtMzguOC02NS4xLTQxLjEtMTA0LjhsLS4xLS4xLjEtLjFjLS40LTMuNi0uNS03LS41LTEwLjVtMTk3LTQ1LjFjMTguOCA2LjQgMzIuNCAyNC4yIDMyLjQgNDUuMiAwIDkuNC0yLjcgMTguMi03LjQgMjUuNi0zLjggNi04LjkgMTEuMS0xNC45IDE0LjhsMTYuMSAxNC40IDE1LjUgMTMuOSAxNy40IDE1LjZjMzkuOS0zNS4xIDQ5LjUtOTMgMjQuMi0xMzguOGwxNy42LTE1LjdjMzMuMyA1NC45IDIzLjQgMTI2LjItMjQuNCAxNzBsNTAuOSA0NS42LjkuOGMzOC0zNy4yIDYxLjUtODkgNjEuNS0xNDYuMyAwLTUwLjktMTguNy05OC41LTUwLjktMTM1LjFsLTE3LjIgMTUuNGMyOC41IDMyLjYgNDUgNzQuNyA0NSAxMTkuNyAwIDMuNS0uMSA3LS4zIDEwLjRsLjEuMS0uMS4xYy0yLjMgMzkuNy0xNy4zIDc2LTQxLjEgMTA0LjhsLTE3LjItMTUuNGM0OC42LTU5LjggNDcuMi0xNDYuMS0zLjYtMjA0LjNsLTUxLjYgNDYuMmMyNy4xIDMxLjcgMjguNyA3OC4yIDMuNSAxMTEuN2wtLjEtLjEtMTUuNi0xMy43YzgtMTEuMiAxMi43LTI0LjkgMTIuNy0zOS43IDAtMzMuMi0yMy42LTYxLTU1LTY3LjN6IiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojM2M1MjgwIiB0cmFuc2Zvcm09Im1hdHJpeCgxLjI1IDAgMCAtMS4yNSAtMzg3LjA2NSA1NDIuNjY0KSIvPjwvc3ZnPg==
+settings:
+  - name: MQTT_PORT
+    type: port
+    default: 1883
+    label: { en: MQTT port, uk: Порт MQTT }
+  - name: MQTT_USER
+    type: text
+    default: mqtt
+    required: true
+    label: { en: User name, uk: Ім'я користувача }
+    hint:
+      en: What devices and apps sign in with
+      uk: З ним входять пристрої й застосунки
+  - name: MQTT_PASSWORD
+    type: password
+    required: true
+    label: { en: Password, uk: Пароль }

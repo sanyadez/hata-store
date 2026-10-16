@@ -1,0 +1,14 @@
+services:
+  scrypted:
+    image: koush/scrypted:v0.147.0-noble-full
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ${APP_DATA:-.}/volume:/server/volume
+      - ${NVR_DIR:-./nvr}:/nvr
+    devices:
+      # video decoding by the server's graphics; left out on a server without it
+      - /dev/dri:/dev/dri
+    environment:
+      SCRYPTED_NVR_VOLUME: /nvr
+      TZ: ${TZ:-UTC}

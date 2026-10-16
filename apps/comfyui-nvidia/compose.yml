@@ -1,0 +1,27 @@
+services:
+  comfyui:
+    image: yanwk/comfyui-boot:cu130-slim-v2-20261016
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities:
+                - gpu
+    ports:
+      - ${WEB_PORT:-8188}:8188
+    volumes:
+      - ${APP_DATA:-.}/cache:/root/.cache
+      - ${APP_DATA:-.}/config:/root/.config
+      - ${APP_DATA:-.}/local:/root/.local
+      - ${APP_DATA:-.}/custom_nodes:/root/ComfyUI/custom_nodes
+      - ${APP_DATA:-.}/models:/root/ComfyUI/models
+      - ${APP_DATA:-.}/input:/root/ComfyUI/input
+      - ${APP_DATA:-.}/output:/root/ComfyUI/output
+      - ${APP_DATA:-.}/user:/root/ComfyUI/user
+      - ${APP_DATA:-.}/user-scripts:/root/user-scripts
+    environment:
+      CLI_ARGS: ${CLI_ARGS:-}
+      TZ: ${TZ:-UTC}

@@ -1,0 +1,28 @@
+services:
+  # Puts the example config into the app's folder once, where it can be edited; an edited one is kept
+  config:
+    image: busybox:1.38.0
+    restart: "no"
+    volumes:
+      - ./config.yaml:/seed/config.yaml:ro
+      - ${APP_DATA:-.}/config:/config
+    command:
+      - sh
+      - -c
+      - |
+        [ -e /config/config.yaml ] || cp /seed/config.yaml /config/config.yaml
+        chown ${PUID:-1000}:${PGID:-1000} /config/config.yaml
+
+  gatus:
+    image: twinproduction/gatus:v5.37.0
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8080}:8080
+    volumes:
+      - ${APP_DATA:-.}/config:/config
+      - ${APP_DATA:-.}/data:/data
+    environment:
+      TZ: ${TZ:-UTC}
+    depends_on:
+      config:
+        condition: service_completed_successfully

@@ -1,0 +1,34 @@
+services:
+  # Writes the person's user into the password file Radicale reads, and gives the folder to PUID:PGID.
+  users:
+    image: ghcr.io/kozea/radicale:3.8.3
+    restart: "no"
+    user: "0:0"
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - >
+        touch /var/lib/radicale/users &&
+        htpasswd -B -b /var/lib/radicale/users "$$RADICALE_USER" "$$RADICALE_PASSWORD" &&
+        chown -R "$$OWNER" /var/lib/radicale &&
+        chmod 600 /var/lib/radicale/users
+    environment:
+      RADICALE_USER: ${RADICALE_USER:-radicale}
+      RADICALE_PASSWORD: ${RADICALE_PASSWORD:?set RADICALE_PASSWORD, the password to sign in with}
+      OWNER: ${PUID:-1000}:${PGID:-1000}
+    volumes:
+      - ${APP_DATA:-.}/data:/var/lib/radicale
+
+  radicale:
+    image: ghcr.io/kozea/radicale:3.8.3
+    restart: unless-stopped
+    user: ${PUID:-1000}:${PGID:-1000}
+    ports:
+      - ${WEB_PORT:-5232}:5232
+    volumes:
+      - ${APP_DATA:-.}/data:/var/lib/radicale
+      - ./config:/etc/radicale/config:ro
+    environment:
+      TZ: ${TZ:-UTC}
+    depends_on:
+      users:
+        condition: service_completed_successfully

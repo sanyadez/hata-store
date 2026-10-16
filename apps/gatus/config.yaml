@@ -1,0 +1,46 @@
+# Gatus checks each endpoint below on its interval and shows the result on its page.
+# Edit this file and save: Gatus reads it again by itself. Every option: https://gatus.io/docs
+
+storage:
+  type: sqlite
+  path: /data/data.db
+
+ui:
+  title: Status
+  header: Status
+
+endpoints:
+  - name: Internet
+    group: Network
+    url: https://www.cloudflare.com/cdn-cgi/trace
+    interval: 5m
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 3000"
+
+  - name: DNS
+    group: Network
+    url: 1.1.1.1
+    interval: 5m
+    dns:
+      query-name: example.com
+      query-type: A
+    conditions:
+      - "[DNS_RCODE] == NOERROR"
+
+  # An app of this server, by the server's address on the home network:
+  # - name: Jellyfin
+  #   group: Apps
+  #   url: http://192.168.1.10:8096/health
+  #   interval: 1m
+  #   conditions:
+  #     - "[STATUS] == 200"
+
+  # A web site, with a warning a week before its certificate runs out:
+  # - name: My site
+  #   group: Sites
+  #   url: https://example.com
+  #   interval: 10m
+  #   conditions:
+  #     - "[STATUS] == 200"
+  #     - "[CERTIFICATE_EXPIRATION] > 168h"

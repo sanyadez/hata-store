@@ -1,0 +1,19 @@
+services:
+  kiwix-serve:
+    image: ghcr.io/kiwix/kiwix-serve:3.8.2
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8080}:8080
+    volumes:
+      - ${ZIM_DIR:-./zim}:/data:ro
+    # a library of the .zim files in /data instead of the files themselves: the app starts with none,
+    # and a file put there later is added within a minute, without a restart
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        lib=/tmp/library.xml
+        echo '<library version="20110515"></library>' > "$$lib"
+        add() { for f in /data/*.zim; do [ -e "$$f" ] && ! grep -qF "path=\"$$f\"" "$$lib" && kiwix-manage "$$lib" add "$$f"; done; true; }
+        add
+        (while sleep 60; do add; done) &
+        exec kiwix-serve --port 8080 --library --monitorLibrary "$$lib"

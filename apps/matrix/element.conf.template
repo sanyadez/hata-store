@@ -1,0 +1,36 @@
+# Element and the Matrix server on one port. A template of the nginx image: ${…} are filled in
+# from the environment at start, the lowercase $ variables are nginx's own.
+server {
+    listen       ${ELEMENT_WEB_PORT};
+    listen  [::]:${ELEMENT_WEB_PORT};
+    server_name  localhost;
+
+    root   /usr/share/nginx/html;
+    index  index.html;
+    client_max_body_size 100M;
+
+    # Element is told to use the server at this very address
+    location = /config.json {
+        default_type application/json;
+        add_header Cache-Control "no-cache";
+        return 200 '{"default_server_config":{"m.homeserver":{"base_url":"${APP_URL}","server_name":"${SERVER_NAME}"}},"disable_custom_urls":false,"disable_guests":true,"show_labs_settings":false,"room_directory":{"servers":["${SERVER_NAME}"]}}';
+    }
+
+    location ~ ^/(_matrix|_synapse/client|_continuwuity|\.well-known/matrix)/ {
+        proxy_pass http://homeserver:8008;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_http_version 1.1;
+        proxy_read_timeout 600s;
+    }
+
+    location = /index.html {
+        add_header Cache-Control "no-cache";
+    }
+    location = /version {
+        add_header Cache-Control "no-cache";
+    }
+    location /i18n/ {
+        add_header Cache-Control "no-cache";
+    }
+}

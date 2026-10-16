@@ -1,0 +1,65 @@
+services:
+  ghostfolio:
+    image: ghostfolio/ghostfolio:3.86.0
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 1m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - ${WEB_PORT:-3333}:3333
+    environment:
+      DATABASE_URL: postgresql://ghostfolio:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD, letters and digits only}@postgres:5432/ghostfolio?connect_timeout=300
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?set REDIS_PASSWORD, letters and digits only}
+      ACCESS_TOKEN_SALT: ${ACCESS_TOKEN_SALT:?set ACCESS_TOKEN_SALT to a random string}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?set JWT_SECRET_KEY to a random string}
+      TZ: ${TZ:-UTC}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3333/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres:
+    image: postgres:15.19-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ghostfolio
+      POSTGRES_USER: ghostfolio
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD, letters and digits only}
+    volumes:
+      - ${APP_DATA:-.}/postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d ghostfolio -U ghostfolio"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:8.10.2-alpine
+    restart: unless-stopped
+    user: "999:1000"
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    command:
+      - /bin/sh
+      - -c
+      - redis-server --requirepass "$$REDIS_PASSWORD"
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?set REDIS_PASSWORD, letters and digits only}
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli --pass \"$$REDIS_PASSWORD\" ping | grep PONG"]
+      interval: 10s
+      timeout: 5s
+      retries: 5

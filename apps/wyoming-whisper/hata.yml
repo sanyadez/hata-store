@@ -1,0 +1,53 @@
+title: Whisper for Home Assistant
+tagline:
+  en: Speech recognition for the voice assistant, without a cloud
+  uk: Розпізнавання мовлення для голосового помічника без хмари
+description:
+  en: >
+    Turns what is said to Home Assistant's voice assistant into text, on this server. It runs the
+    Whisper speech recognition models through the Wyoming protocol, so nothing said at home leaves the
+    house. Together with Piper it makes a fully local voice assistant.
+  uk: >
+    Перетворює сказане голосовому помічнику Home Assistant на текст просто на цьому сервері. Працює
+    з моделями розпізнавання мовлення Whisper через протокол Wyoming, тож жодне слово не виходить за
+    межі дому. Разом із Piper утворює повністю локального голосового помічника.
+notes:
+  en: >
+    It has no web page. In Home Assistant add the **Wyoming Protocol** integration with the server's
+    address and the port chosen here, then pick it as the speech-to-text engine of a voice assistant.
+    The first start downloads the model, from tens of megabytes to over a gigabyte.
+  uk: >
+    Вебсторінки в нього немає. У Home Assistant додайте інтеграцію **Wyoming Protocol** з адресою
+    сервера й обраним тут портом, а тоді виберіть її для перетворення мовлення на текст у голосовому
+    помічнику. Під час першого запуску завантажується модель — від десятків мегабайтів до понад
+    гігабайта.
+category: home
+developer: Open Home Foundation
+website: https://github.com/OHF-Voice/wyoming-faster-whisper
+source: https://github.com/OHF-Voice/wyoming-faster-whisper
+icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij48cmVjdCB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgcng9IjU2IiBmaWxsPSIjMGY3NjZlIi8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjE2IiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxyZWN0IHg9IjEwMCIgeT0iNDQiIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDQiIHJ4PSIyOCIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik03MiAxMjBhNTYgNTYgMCAwIDAgMTEyIDBNMTI4IDE3NnYzNk05NiAyMTJoNjQiLz48L2c+PC9zdmc+
+settings:
+  - name: WYOMING_PORT
+    type: port
+    default: 10300
+    label: { en: Wyoming port, uk: Порт Wyoming }
+  - name: MODEL
+    type: choice
+    default: auto
+    label: { en: Model, uk: Модель }
+    hint:
+      en: A larger model hears better, but is slower and needs more memory
+      uk: Більша модель чує краще, але працює повільніше й потребує більше пам'яті
+    options:
+      - { value: auto, label: { en: Chosen by the language, uk: За мовою } }
+      - { value: tiny-int8, label: { en: Tiny, uk: Найменша } }
+      - { value: base-int8, label: { en: Base, uk: Базова } }
+      - { value: small-int8, label: { en: Small, uk: Мала } }
+      - { value: medium-int8, label: { en: Medium, uk: Середня } }
+  - name: LANGUAGE
+    type: text
+    default: auto
+    label: { en: Language, uk: Мова }
+    hint:
+      en: A two-letter code such as en or uk; auto guesses it from the speech
+      uk: Дволітерний код, наприклад uk чи en; auto — визначити з мовлення

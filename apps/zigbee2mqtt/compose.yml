@@ -1,0 +1,14 @@
+services:
+  zigbee2mqtt:
+    image: ghcr.io/koenkk/zigbee2mqtt:2.14.2
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8080}:8080
+    volumes:
+      - ${APP_DATA:-.}/data:/app/data
+      - /run/udev:/run/udev:ro
+    devices:
+      # the same path inside, so the first-run page offers the adapter by the name chosen here
+      - ${ZIGBEE_ADAPTER:-/dev/ttyUSB0}:${ZIGBEE_ADAPTER:-/dev/ttyUSB0}
+    environment:
+      TZ: ${TZ:-UTC}

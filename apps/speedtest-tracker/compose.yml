@@ -1,0 +1,21 @@
+services:
+  speedtest-tracker:
+    image: linuxserver/speedtest-tracker:1.15.0
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8098}:80
+    volumes:
+      - ${APP_DATA:-.}/config:/config
+    environment:
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-UTC}
+      DISPLAY_TIMEZONE: ${TZ:-UTC}
+      # Laravel takes a plain 32-character key as well as a "base64:" one
+      APP_KEY: ${APP_KEY:?set APP_KEY, 32 letters and digits}
+      APP_URL: ${APP_URL:-http://localhost:8098}
+      DB_CONNECTION: sqlite
+      ADMIN_EMAIL: ${ADMIN_EMAIL:?set ADMIN_EMAIL, the e-mail to sign in with}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?set ADMIN_PASSWORD, the password to sign in with}
+      SPEEDTEST_SCHEDULE: ${SPEEDTEST_SCHEDULE:-0 */6 * * *}
+      PRUNE_RESULTS_OLDER_THAN: ${PRUNE_DAYS:-0}

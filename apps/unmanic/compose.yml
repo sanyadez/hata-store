@@ -1,0 +1,16 @@
+services:
+  unmanic:
+    image: josh5/unmanic:0.4.1
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT:-8888}:8888
+    volumes:
+      - ${APP_DATA:-.}/config:/config
+      - ${LIBRARY:-./library}:/library
+      - ${APP_DATA:-.}/cache:/tmp/unmanic
+    devices:
+      - /dev/dri:/dev/dri
+    environment:
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-UTC}

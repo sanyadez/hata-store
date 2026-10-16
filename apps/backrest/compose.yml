@@ -1,0 +1,21 @@
+services:
+  backrest:
+    image: garethgeorge/backrest:v1.14.1
+    restart: unless-stopped
+    hostname: backrest
+    ports:
+      - ${WEB_PORT:-9898}:9898
+    volumes:
+      - ${APP_DATA:-.}/data:/data
+      - ${APP_DATA:-.}/config:/config
+      - ${APP_DATA:-.}/cache:/cache
+      - ${APP_DATA:-.}/tmp:/tmp
+      - ${APP_DATA:-.}/rclone:/root/.config/rclone
+      - ${BACKUP_SOURCE:-./userdata}:/userdata:ro
+      - ${REPOS:-./repos}:/repos
+    environment:
+      BACKREST_DATA: /data
+      BACKREST_CONFIG: /config/config.json
+      XDG_CACHE_HOME: /cache
+      TMPDIR: /tmp
+      TZ: ${TZ:-UTC}

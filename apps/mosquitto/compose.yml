@@ -1,0 +1,23 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2.1.2-alpine
+    restart: unless-stopped
+    ports:
+      - ${MQTT_PORT:-1883}:1883
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ${APP_DATA:-.}/data:/mosquitto/data
+    environment:
+      MQTT_USER: ${MQTT_USER:-mqtt}
+      MQTT_PASSWORD: ${MQTT_PASSWORD:?set MQTT_PASSWORD}
+      TZ: ${TZ:-UTC}
+    # the image's entrypoint gives /mosquitto/data to the broker's user (1883) first;
+    # the one account is written anew from the variables, so a changed password takes effect
+    command:
+      - sh
+      - -c
+      - >-
+        mosquitto_passwd -c -b /mosquitto/data/passwords "$$MQTT_USER" "$$MQTT_PASSWORD"
+        && chown 1883:1883 /mosquitto/data/passwords
+        && chmod 600 /mosquitto/data/passwords
+        && exec /usr/sbin/mosquitto -c /mosquitto/config/mosquitto.conf

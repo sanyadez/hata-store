@@ -1,0 +1,12 @@
+services:
+  whisper:
+    image: rhasspy/wyoming-whisper:3.8.1
+    restart: unless-stopped
+    ports:
+      - ${WYOMING_PORT:-10300}:10300
+    volumes:
+      - ${APP_DATA:-.}/data:/data
+    environment:
+      WYO_WHISPER_MODEL: ${MODEL:-auto}
+      WYO_WHISPER_LANGUAGE: ${LANGUAGE:-auto}
+      TZ: ${TZ:-UTC}

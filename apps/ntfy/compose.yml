@@ -1,0 +1,42 @@
+services:
+  # Creates the administrator on the first start and keeps the password in step with the setting.
+  admin:
+    image: binwiederhier/ntfy:v2.31.0
+    restart: "no"
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - ntfy user add --role=admin --ignore-exists "$$ADMIN_USER" && ntfy user change-pass "$$ADMIN_USER"
+    environment:
+      NTFY_AUTH_FILE: /var/lib/ntfy/auth.db
+      ADMIN_USER: ${ADMIN_USER:-admin}
+      NTFY_PASSWORD: ${ADMIN_PASSWORD:?set ADMIN_PASSWORD, the administrator's password}
+    volumes:
+      - ${APP_DATA:-.}/data:/var/lib/ntfy
+
+  ntfy:
+    image: binwiederhier/ntfy:v2.31.0
+    restart: unless-stopped
+    command: serve
+    init: true
+    ports:
+      - ${WEB_PORT:-8093}:80
+    volumes:
+      - ${APP_DATA:-.}/data:/var/lib/ntfy
+    environment:
+      TZ: ${TZ:-UTC}
+      NTFY_BASE_URL: ${APP_URL:-http://localhost:8093}
+      NTFY_CACHE_FILE: /var/lib/ntfy/cache.db
+      NTFY_AUTH_FILE: /var/lib/ntfy/auth.db
+      NTFY_AUTH_DEFAULT_ACCESS: ${ACCESS:-deny-all}
+      NTFY_ATTACHMENT_CACHE_DIR: /var/lib/ntfy/attachments
+      NTFY_BEHIND_PROXY: "true"
+      NTFY_ENABLE_LOGIN: "true"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --tries=1 http://localhost:80/v1/health -O - | grep -Eo '\"healthy\"\\s*:\\s*true' || exit 1"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    depends_on:
+      admin:
+        condition: service_completed_successfully
