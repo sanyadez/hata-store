@@ -33,7 +33,7 @@ services:
       - redis
 
   db:
-    image: mariadb:11.8.3
+    image: mariadb:13.0.2
     restart: unless-stopped
     command: --transaction-isolation=READ-COMMITTED
     volumes:
