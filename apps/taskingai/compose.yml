@@ -155,7 +155,7 @@ services:
     networks:
       - taskingai_network
   nginx:
-    image: nginx:1.24
+    image: nginx:1.29
     ports:
       - "${NGINX_PORT_80:-3080}:80"
     volumes:
