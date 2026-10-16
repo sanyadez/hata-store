@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   llama-factory-nvidia:
-    image: hiyouga/llamafactory:0.9.4
+    image: hiyouga/llamafactory:0.9.5
     ports:
       - "${WEB_PORT:-18877}:7860"
     tty: true
