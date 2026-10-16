@@ -5,7 +5,7 @@ services:
       CRYPTO_POLICY: "${CRYPTO_POLICY:-unlimited}"
       PGID: "${PGID:-1000}"
       PUID: "${PUID:-1000}"
-    image: openhab/openhab:5.1.4
+    image: openhab/openhab:5.2.3
     deploy:
       resources:
         reservations:
