@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   psitransfer:
-    image: psitrax/psitransfer:v2.4.1
+    image: psitrax/psitransfer:v2.4.4
     ports:
       - "${WEB_PORT:-13001}:3000"
     environment:
