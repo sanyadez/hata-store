@@ -1,0 +1,30 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  transmission:
+    environment:
+      PASS: hata
+      PEERPORT: "51413"
+      PGID: "1000"
+      PUID: "1000"
+      TZ: "${TZ:-UTC}"
+      USER: "${USER:-admin}"
+    image: linuxserver/transmission:4.1.3
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${WEB_PORT:-9091}:9091"
+      - "${PORT_51413:-51413}:51413"
+      - "${PORT_51413:-51413}:51413"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${DOWNLOADS_DIR:-./Downloads}"
+        target: /downloads
+      - type: bind
+        source: "${WATCH_DIR:-./Downloads/watch}"
+        target: /watch

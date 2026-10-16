@@ -1,0 +1,59 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: emulatorjs
+tagline:
+  en: emulatorjs
+  uk: emulatorjs
+description:
+  en: "EmulatorJS is a Docker-based emulator application that can simulate various operating systems and device environments within containers for development, testing, and learning purposes."
+  zh: EmulatorJS是一个基于Docker的模拟器应用程序，可以在容器中模拟多种操作系统和设备环境，用于开发、测试和学习目的。
+  ar: EmulatorJS هو تطبيق محاكي يعتمد على Docker يمكنه محاكاة أنظمة التشغيل المتعددة وبيئات الأجهزة داخل حاويات لأغراض التطوير والاختبار والتعلم.
+  de: "EmulatorJS ist eine Docker-basierte Emulator-Anwendung, die verschiedene Betriebssysteme und Geräteumgebungen in Containern simulieren kann, um für Entwicklungs-, Test- und Lernzwecke eingesetzt zu werden."
+  es: "EmulatorJS es una aplicación de emulador basada en Docker que puede simular varios sistemas operativos y entornos de dispositivos dentro de contenedores con fines de desarrollo, pruebas y aprendizaje."
+  fr: "EmulatorJS est une application d'émulation basée sur Docker qui peut simuler divers systèmes d'exploitation et environnements de périphériques dans des conteneurs à des fins de développement, de test et d'apprentissage."
+  hu: "Az EmulatorJS egy Docker-alapú emulátor alkalmazás, amely konténerekben képes szimulálni különböző operációs rendszereket és eszközkörnyezeteket fejlesztési, tesztelési és tanulási célokra."
+  it: "EmulatorJS è un'applicazione di emulazione basata su Docker che può simulare vari sistemi operativi e ambienti dispositivi all'interno di container per scopi di sviluppo, test e apprendimento."
+  ru: "EmulatorJS - это приложение эмулятора, основанное на Docker, которое может моделировать различные операционные системы и среды устройств в контейнерах для разработки, тестирования и обучения."
+  pl: "EmulatorJS to aplikacja emulacyjna oparta na Dockerze, która może symulować różne systemy operacyjne i środowiska urządzeń w kontenerach w celu rozwoju, testowania i nauki."
+  pt: "EmulatorJS é um aplicativo de emulação baseado em Docker que pode simular vários sistemas operacionais e ambientes de dispositivos dentro de contêineres para fins de desenvolvimento, teste e aprendizado."
+  sv: "EmulatorJS är en Docker-baserad emulatorapplikation som kan simulera olika operativsystem och enhetsmiljöer i containrar för utveckling, testning och lärande."
+  uk: "EmulatorJS — емулятор у Docker, який може відтворювати різні операційні системи та середовища пристроїв у контейнерах для розробки, тестування й навчання."
+category: media
+developer: self
+website: https://emulatorjs.org/
+source: https://github.com/linuxserver/emulatorjs
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+web:
+  service: emulatorjs
+  port: 80
+settings:
+  - name: PORT_3000
+    type: port
+    default: 3001
+    label:
+      en: Manage ROMS
+      zh: ROM 管理
+      uk: Керування ROM-файлами
+    advanced: true
+  - name: PORT_4001
+    type: port
+    default: 4001
+    label:
+      en: Port 4001
+      uk: Порт 4001
+    advanced: true
+  - name: WEB_PORT
+    type: port
+    default: 88
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+permissions:
+  privileged:
+    en: Its authors run it with full access to the server
+    uk: Автори запускають його з повним доступом до сервера
+  host-files:
+    en: "It reaches these places of the system: /ROMS/nes"
+    uk: "Він має доступ до цих місць системи: /ROMS/nes"

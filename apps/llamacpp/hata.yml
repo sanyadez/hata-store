@@ -1,0 +1,104 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: llama.cpp
+  ca: llama.cpp
+  cs: llama.cpp
+  da: llama.cpp
+  de: llama.cpp
+  el: llama.cpp
+  es: llama.cpp
+  fr: llama.cpp
+  ga: llama.cpp
+  hr: llama.cpp
+  hu: llama.cpp
+  it: llama.cpp
+  ja: llama.cpp
+  ko: llama.cpp
+  ml: llama.cpp
+  nb: llama.cpp
+  nl: llama.cpp
+  pl: llama.cpp
+  pt: llama.cpp
+  ro: llama.cpp
+  ru: llama.cpp
+  sk: llama.cpp
+  sv: llama.cpp
+  tr: llama.cpp
+  zh: llama.cpp
+tagline:
+  en: Run GGUF LLMs locally with GPU acceleration
+  ca: Executa LLMs GGUF localment amb acceleració de GPU
+  cs: Spouštějte GGUF LLM lokálně s akcelerací GPU
+  da: "Kør GGUF LLM'er lokalt med GPU-acceleration"
+  de: GGUF-LLMs lokal mit GPU-Beschleunigung ausführen
+  el: Εκτελέστε GGUF LLM τοπικά με επιτάχυνση GPU
+  es: Ejecuta LLMs GGUF localmente con aceleración de GPU
+  fr: Exécutez des LLM GGUF localement avec accélération GPU
+  ga: Rith LLManna GGUF go háitiúil le luasghéarú GPU
+  hr: Pokrenite GGUF LLM-ove lokalno uz GPU ubrzanje
+  hu: "GGUF LLM-ek futtatása helyben, GPU-gyorsítással"
+  it: Esegui LLM GGUF in locale con accelerazione GPU
+  ja: GGUF形式のLLMをGPUアクセラレーションでローカル実行
+  ko: GPU 가속으로 GGUF LLM을 로컬에서 실행
+  ml: GPU ആക്സിലറേഷനോടെ GGUF LLM-കൾ ലോക്കലായി പ്രവർത്തിപ്പിക്കുക
+  nb: Kjør GGUF LLM-er lokalt med GPU-akselerasjon
+  nl: "Draai GGUF LLM's lokaal met GPU-versnelling"
+  pl: Uruchamiaj modele GGUF LLM lokalnie z akceleracją GPU
+  pt: Execute LLMs GGUF localmente com aceleração de GPU
+  ro: "Rulează LLM-uri GGUF local, cu accelerare GPU"
+  ru: Запускайте GGUF LLM локально с GPU-ускорением
+  sk: Spúšťajte GGUF LLM lokálne s GPU akceleráciou
+  sv: Kör GGUF-LLM:er lokalt med GPU-acceleration
+  tr: "GGUF LLM'lerini GPU hızlandırmayla yerel olarak çalıştırın"
+  zh: 本地运行 GGUF 大模型，支持 GPU 加速
+  uk: Запускайте LLM у форматі GGUF локально з GPU-прискоренням
+description:
+  en: "llama.cpp is a pure C/C++ inference engine for GGUF large language models, with the official OpenAI-compatible server and a built-in Web UI.\n\n**Key Features:**\n- Run GGUF models (Llama, Qwen, DeepSeek, Gemma, Mistral and more) on CPU or GPU\n- Vulkan backend works on AMD / Intel / NVIDIA GPUs out of the box\n- Great fit for unified-memory machines (e.g. AMD Ryzen AI Max 395)\n- OpenAI-compatible API for integration with Open WebUI, ChatGPT-Next-Web and more\n- Built-in chat Web UI with runtime model loading"
+  zh: "llama.cpp 是一个纯 C/C++ 编写的大语言模型推理引擎，专为 GGUF 格式模型优化，自带 OpenAI 兼容 API 服务器和内置 Web 界面。\n\n**主要特点：**\n- 支持在 CPU 或 GPU 上运行 GGUF 模型（Llama、Qwen、DeepSeek、Gemma、Mistral 等）\n- Vulkan 后端开箱即用，兼容 AMD / Intel / NVIDIA 显卡\n- 非常适合统一内存架构机型（如 AMD Ryzen AI Max 395）\n- 提供 OpenAI 兼容 API，可对接 Open WebUI、ChatGPT-Next-Web 等\n- 内置聊天 Web 界面，支持运行时加载模型"
+  de: "llama.cpp ist eine reine C/C++-Inferenz-Engine für große Sprachmodelle im GGUF-Format, mit dem offiziellen OpenAI-kompatiblen Server und einer integrierten Web-Oberfläche.\n\n**Hauptfunktionen:**\n- GGUF-Modelle (Llama, Qwen, DeepSeek, Gemma, Mistral u. a.) auf CPU oder GPU ausführen\n- Vulkan-Backend funktioniert sofort mit AMD-, Intel- und NVIDIA-GPUs\n- Ideal für Maschinen mit Unified Memory (z. B. AMD Ryzen AI Max 395)\n- OpenAI-kompatible API zur Anbindung von Open WebUI, ChatGPT-Next-Web u. a.\n- Integrierte Chat-Web-Oberfläche mit Modell-Laden zur Laufzeit"
+  fr: "llama.cpp est un moteur d'inférence en pur C/C++ pour grands modèles de langage au format GGUF, avec le serveur officiel compatible OpenAI et une interface Web intégrée.\n\n**Fonctionnalités clés :**\n- Exécute des modèles GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral, etc.) sur CPU ou GPU\n- Le backend Vulkan fonctionne nativement sur les GPU AMD / Intel / NVIDIA\n- Parfait pour les machines à mémoire unifiée (ex. AMD Ryzen AI Max 395)\n- API compatible OpenAI pour Open WebUI, ChatGPT-Next-Web, etc.\n- Interface Web de chat intégrée avec chargement de modèles à la volée"
+  es: "llama.cpp es un motor de inferencia en C/C++ puro para grandes modelos de lenguaje GGUF, con el servidor oficial compatible con OpenAI y una interfaz web integrada.\n\n**Características clave:**\n- Ejecuta modelos GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral, etc.) en CPU o GPU\n- El backend Vulkan funciona de serie en GPU AMD / Intel / NVIDIA\n- Ideal para equipos con memoria unificada (p. ej. AMD Ryzen AI Max 395)\n- API compatible con OpenAI para Open WebUI, ChatGPT-Next-Web, etc.\n- Interfaz web de chat integrada con carga de modelos en tiempo de ejecución"
+  it: "llama.cpp è un motore di inferenza in puro C/C++ per grandi modelli linguistici GGUF, con il server ufficiale compatibile con OpenAI e un'interfaccia web integrata.\n\n**Funzionalità principali:**\n- Esegue modelli GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral e altri) su CPU o GPU\n- Il backend Vulkan funziona subito su GPU AMD / Intel / NVIDIA\n- Ottimo per macchine a memoria unificata (es. AMD Ryzen AI Max 395)\n- API compatibile con OpenAI per Open WebUI, ChatGPT-Next-Web e altro\n- Interfaccia web di chat integrata con caricamento dei modelli a runtime"
+  ja: "llama.cpp は GGUF 形式の大規模言語モデル向けの純粋な C/C++ 推論エンジンで、公式の OpenAI 互換サーバーと内蔵 Web UI を備えています。\n\n**主な機能：**\n- GGUF モデル（Llama、Qwen、DeepSeek、Gemma、Mistral など）を CPU または GPU で実行\n- Vulkan バックエンドは AMD / Intel / NVIDIA の GPU ですぐに動作\n- ユニファイドメモリ搭載機（例: AMD Ryzen AI Max 395）に最適\n- Open WebUI、ChatGPT-Next-Web などと連携できる OpenAI 互換 API\n- モデルを実行時に読み込める内蔵チャット Web UI"
+  ko: "llama.cpp는 GGUF 대형 언어 모델을 위한 순수 C/C++ 추론 엔진으로, 공식 OpenAI 호환 서버와 내장 웹 UI를 제공합니다.\n\n**주요 기능:**\n- GGUF 모델(Llama, Qwen, DeepSeek, Gemma, Mistral 등)을 CPU 또는 GPU에서 실행\n- Vulkan 백엔드가 AMD / Intel / NVIDIA GPU에서 바로 동작\n- 통합 메모리 기기(예: AMD Ryzen AI Max 395)에 최적\n- Open WebUI, ChatGPT-Next-Web 등과 연동 가능한 OpenAI 호환 API\n- 런타임 모델 로딩을 지원하는 내장 채팅 웹 UI"
+  ru: "llama.cpp — это движок логического вывода на чистом C/C++ для больших языковых моделей в формате GGUF, с официальным сервером, совместимым с OpenAI, и встроенным веб-интерфейсом.\n\n**Ключевые возможности:**\n- Запуск GGUF-моделей (Llama, Qwen, DeepSeek, Gemma, Mistral и др.) на CPU или GPU\n- Бэкенд Vulkan работает «из коробки» на GPU AMD / Intel / NVIDIA\n- Отлично подходит для машин с унифицированной памятью (например, AMD Ryzen AI Max 395)\n- API, совместимый с OpenAI, для Open WebUI, ChatGPT-Next-Web и др.\n- Встроенный чат-веб-интерфейс с загрузкой моделей во время работы"
+  pt: "O llama.cpp é um motor de inferência em C/C++ puro para grandes modelos de linguagem GGUF, com o servidor oficial compatível com OpenAI e uma interface web integrada.\n\n**Principais recursos:**\n- Execute modelos GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral e mais) na CPU ou GPU\n- O backend Vulkan funciona imediatamente em GPUs AMD / Intel / NVIDIA\n- Ótimo para máquinas com memória unificada (ex.: AMD Ryzen AI Max 395)\n- API compatível com OpenAI para Open WebUI, ChatGPT-Next-Web e mais\n- Interface web de chat integrada com carregamento de modelos em tempo de execução"
+  nl: "llama.cpp is een pure C/C++-inferentie-engine voor GGUF grote taalmodellen, met de officiële OpenAI-compatibele server en een ingebouwde webinterface.\n\n**Belangrijkste functies:**\n- Draai GGUF-modellen (Llama, Qwen, DeepSeek, Gemma, Mistral en meer) op CPU of GPU\n- Vulkan-backend werkt direct op AMD / Intel / NVIDIA GPU's\n- Uitstekend voor machines met unified memory (bijv. AMD Ryzen AI Max 395)\n- OpenAI-compatibele API voor Open WebUI, ChatGPT-Next-Web en meer\n- Ingebouwde chat-webinterface met het laden van modellen tijdens runtime"
+  pl: "llama.cpp to czysty silnik wnioskowania w C/C++ dla dużych modeli językowych GGUF, z oficjalnym serwerem zgodnym z OpenAI i wbudowanym interfejsem WWW.\n\n**Najważniejsze funkcje:**\n- Uruchamianie modeli GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral i innych) na CPU lub GPU\n- Backend Vulkan działa od razu na GPU AMD / Intel / NVIDIA\n- Świetny dla maszyn z pamięcią zunifikowaną (np. AMD Ryzen AI Max 395)\n- API zgodne z OpenAI dla Open WebUI, ChatGPT-Next-Web i innych\n- Wbudowany czat WWW z ładowaniem modeli w czasie działania"
+  sv: "llama.cpp är en ren C/C++-inferensmotor för stora språkmodeller i GGUF-format, med den officiella OpenAI-kompatibla servern och ett inbyggt webbgränssnitt.\n\n**Viktiga funktioner:**\n- Kör GGUF-modeller (Llama, Qwen, DeepSeek, Gemma, Mistral med flera) på CPU eller GPU\n- Vulkan-backend fungerar direkt på AMD / Intel / NVIDIA-GPU:er\n- Utmärkt för maskiner med unified memory (t.ex. AMD Ryzen AI Max 395)\n- OpenAI-kompatibelt API för Open WebUI, ChatGPT-Next-Web med flera\n- Inbyggt chatt-webbgränssnitt med modellinläsning under körning"
+  nb: "llama.cpp er en ren C/C++-inferensmotor for GGUF store språkmodeller, med den offisielle OpenAI-kompatible serveren og et innebygd nettgrensesnitt.\n\n**Viktige funksjoner:**\n- Kjør GGUF-modeller (Llama, Qwen, DeepSeek, Gemma, Mistral med flere) på CPU eller GPU\n- Vulkan-backend fungerer rett ut av boksen på AMD / Intel / NVIDIA-GPU-er\n- Svært godt egnet for maskiner med unified memory (f.eks. AMD Ryzen AI Max 395)\n- OpenAI-kompatibelt API for Open WebUI, ChatGPT-Next-Web med flere\n- Innebygd chat-nettgrensesnitt med modellasting under kjøring"
+  da: "llama.cpp er en ren C/C++-inferensmotor til GGUF store sprogmodeller med den officielle OpenAI-kompatible server og en indbygget webgrænseflade.\n\n**Vigtige funktioner:**\n- Kør GGUF-modeller (Llama, Qwen, DeepSeek, Gemma, Mistral m.fl.) på CPU eller GPU\n- Vulkan-backend virker direkte på AMD / Intel / NVIDIA-GPU'er\n- Fremragende til maskiner med unified memory (f.eks. AMD Ryzen AI Max 395)\n- OpenAI-kompatibelt API til Open WebUI, ChatGPT-Next-Web m.fl.\n- Indbygget chat-webgrænseflade med modelindlæsning under kørsel"
+  cs: "llama.cpp je čistý inferenční engine v C/C++ pro velké jazykové modely GGUF s oficiálním serverem kompatibilním s OpenAI a vestavěným webovým rozhraním.\n\n**Klíčové funkce:**\n- Spouštění GGUF modelů (Llama, Qwen, DeepSeek, Gemma, Mistral a další) na CPU nebo GPU\n- Backend Vulkan funguje ihned na GPU AMD / Intel / NVIDIA\n- Skvěle se hodí pro zařízení s unifikovanou pamětí (např. AMD Ryzen AI Max 395)\n- API kompatibilní s OpenAI pro Open WebUI, ChatGPT-Next-Web a další\n- Vestavěné chatovací webové rozhraní s načítáním modelů za běhu"
+  sk: "llama.cpp je čistý inferenčný engine v C/C++ pre veľké jazykové modely GGUF s oficiálnym serverom kompatibilným s OpenAI a vstavaným webovým rozhraním.\n\n**Kľúčové funkcie:**\n- Spúšťanie GGUF modelov (Llama, Qwen, DeepSeek, Gemma, Mistral a ďalšie) na CPU alebo GPU\n- Backend Vulkan funguje ihneď na GPU AMD / Intel / NVIDIA\n- Výborne sa hodí pre zariadenia s unifikovanou pamäťou (napr. AMD Ryzen AI Max 395)\n- API kompatibilné s OpenAI pre Open WebUI, ChatGPT-Next-Web a ďalšie\n- Vstavané chatovacie webové rozhranie s načítaním modelov za behu"
+  tr: "llama.cpp, GGUF büyük dil modelleri için saf C/C++ çıkarım motorudur; resmi OpenAI uyumlu sunucu ve yerleşik web arayüzü içerir.\n\n**Öne çıkan özellikler:**\n- GGUF modellerini (Llama, Qwen, DeepSeek, Gemma, Mistral ve fazlası) CPU veya GPU üzerinde çalıştırın\n- Vulkan arka ucu AMD / Intel / NVIDIA GPU'larda kutudan çıktığı gibi çalışır\n- Birleşik belleğe sahip makineler için idealdir (örn. AMD Ryzen AI Max 395)\n- Open WebUI, ChatGPT-Next-Web ve daha fazlası için OpenAI uyumlu API\n- Çalışma zamanında model yüklemeli yerleşik sohbet web arayüzü"
+  el: "Το llama.cpp είναι μια αμιγής μηχανή εξαγωγής συμπερασμάτων σε C/C++ για μεγάλα γλωσσικά μοντέλα GGUF, με τον επίσημο διακομιστή συμβατό με OpenAI και ενσωματωμένο περιβάλλον ιστού.\n\n**Βασικά χαρακτηριστικά:**\n- Εκτελέστε μοντέλα GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral κ.ά.) σε CPU ή GPU\n- Το backend Vulkan λειτουργεί άμεσα σε GPU AMD / Intel / NVIDIA\n- Ιδανικό για μηχανήματα με ενοποιημένη μνήμη (π.χ. AMD Ryzen AI Max 395)\n- API συμβατό με OpenAI για Open WebUI, ChatGPT-Next-Web κ.ά.\n- Ενσωματωμένο web UI συνομιλίας με φόρτωση μοντέλων κατά την εκτέλεση"
+  hu: "A llama.cpp egy tiszta C/C++ következtető motor GGUF nagy nyelvi modellekhez, a hivatalos OpenAI-kompatibilis szerverrel és beépített webes felülettel.\n\n**Főbb jellemzők:**\n- GGUF modellek (Llama, Qwen, DeepSeek, Gemma, Mistral és mások) futtatása CPU-n vagy GPU-n\n- A Vulkan háttér azonnal működik AMD / Intel / NVIDIA GPU-kon\n- Kiválóan alkalmas egységes memóriájú gépekhez (pl. AMD Ryzen AI Max 395)\n- OpenAI-kompatibilis API az Open WebUI, ChatGPT-Next-Web és mások számára\n- Beépített csevegő webes felület futás közbeni modellbetöltéssel"
+  ro: "llama.cpp este un motor de inferență pur C/C++ pentru modele lingvistice mari GGUF, cu serverul oficial compatibil OpenAI și o interfață web integrată.\n\n**Caracteristici cheie:**\n- Rulează modele GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral și altele) pe CPU sau GPU\n- Backend-ul Vulkan funcționează direct pe GPU-uri AMD / Intel / NVIDIA\n- Excelent pentru mașini cu memorie unificată (de ex. AMD Ryzen AI Max 395)\n- API compatibil OpenAI pentru Open WebUI, ChatGPT-Next-Web și altele\n- Interfață web de chat integrată cu încărcarea modelelor la runtime"
+  hr: "llama.cpp je čisti C/C++ mehanizam za zaključivanje velikih jezičnih modela GGUF, sa službenim poslužiteljem kompatibilnim s OpenAI i ugrađenim web sučeljem.\n\n**Ključne značajke:**\n- Pokrećite GGUF modele (Llama, Qwen, DeepSeek, Gemma, Mistral i druge) na CPU-u ili GPU-u\n- Vulkan pozadina radi odmah na AMD / Intel / NVIDIA GPU-ovima\n- Izvrsno za strojeve s unificiranom memorijom (npr. AMD Ryzen AI Max 395)\n- API kompatibilan s OpenAI za Open WebUI, ChatGPT-Next-Web i druge\n- Ugrađeno web sučelje za chat s učitavanjem modela tijekom rada"
+  ca: "llama.cpp és un motor d'inferència en C/C++ pur per a grans models de llenguatge GGUF, amb el servidor oficial compatible amb OpenAI i una interfície web integrada.\n\n**Característiques clau:**\n- Executeu models GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral i més) a la CPU o la GPU\n- El backend Vulkan funciona directament a les GPU AMD / Intel / NVIDIA\n- Ideal per a equips amb memòria unificada (p. ex. AMD Ryzen AI Max 395)\n- API compatible amb OpenAI per a Open WebUI, ChatGPT-Next-Web i més\n- Interfície web de xat integrada amb càrrega de models en temps d'execució"
+  ga: "Is inneall tátal comhardaí C/C++ íon é llama.cpp do mhúnlaí teanga móra GGUF, leis an bhfreastalaí oifigiúil atá comhoiriúnach le OpenAI agus comhéadan gréasáin ionsuite.\n\n**Príomhghnéithe:**\n- Rith samhlacha GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral agus eile) ar LAP nó GPU\n- Oibríonn inneall Vulkan as an mbosca ar GPUanna AMD / Intel / NVIDIA\n- An-oiriúnach do mheaisíní a bhfuil cuimhne aontaithe acu (m.sh. AMD Ryzen AI Max 395)\n- API comhoiriúnach le OpenAI do Open WebUI, ChatGPT-Next-Web agus eile\n- Comhéadan gréasáin comhrá ionsuite le luchtú samhlacha le linn reatha"
+  ml: "GGUF വലിയ ഭാഷാ മോഡലുകൾക്കായുള്ള ഒരു ശുദ്ധ C/C++ ഇൻഫറൻസ് എഞ്ചിനാണ് llama.cpp; ഔദ്യോഗിക OpenAI-അനുയോജ്യ സെർവറും ബിൽറ്റ്-ഇൻ വെബ് UI-യും ഉൾപ്പെടുന്നു.\n\n**പ്രധാന സവിശേഷതകൾ:**\n- GGUF മോഡലുകൾ (Llama, Qwen, DeepSeek, Gemma, Mistral തുടങ്ങിയവ) CPU-യിലോ GPU-യിലോ പ്രവർത്തിപ്പിക്കുക\n- Vulkan ബാക്കെൻഡ് AMD / Intel / NVIDIA GPU-കളിൽ നേരിട്ട് പ്രവർത്തിക്കുന്നു\n- യൂണിഫൈഡ് മെമ്മറി ഉപകരണങ്ങൾക്ക് (ഉദാ: AMD Ryzen AI Max 395) മികച്ചത്\n- Open WebUI, ChatGPT-Next-Web തുടങ്ങിയവയ്ക്കായുള്ള OpenAI-അനുയോജ്യ API\n- റൺടൈം മോഡൽ ലോഡിംഗോടുകൂടിയ ബിൽറ്റ്-ഇൻ ചാറ്റ് വെബ് UI"
+  uk: "llama.cpp — рушій інференсу на чистому C/C++ для великих мовних моделей у форматі GGUF, з офіційним сервером, сумісним з OpenAI, і вбудованим вебінтерфейсом.\n\n**Основні можливості:**\n- Запуск моделей GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral та інших) на CPU або GPU\n- Бекенд Vulkan одразу працює на GPU AMD / Intel / NVIDIA\n- Чудово підходить для машин з уніфікованою пам'яттю (наприклад, AMD Ryzen AI Max 395)\n- API, сумісний з OpenAI, для інтеграції з Open WebUI, ChatGPT-Next-Web та іншими\n- Вбудований чат-вебінтерфейс із завантаженням моделей на льоту"
+category: ai
+developer: ggml-org
+website: https://github.com/ggml-org/llama.cpp
+source: https://github.com/ggml-org/llama.cpp
+icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJtMzU2LjQgMjAxLjMtMzIuOCA1OC4zYy00My4zLTMzLjMtMTA3LjQtMzguMi0xNTAuNy0yLjQtNjkuOCA1Ny42LTY0LjkgMTkwLjggNDMuNyAxOTEuNiAzMC40IDAgNTYuMi0xNC4zIDgzLjktMjMuOGwxNC42IDU4LjFjLTI0LjYgMTEuNC00OS42IDIzLjEtNzYuNiAyNi43LTI0NiAzMy41LTIzMS45LTMyMS42LTkuNS0zNDAuMSA0Ni43LTMuOSA4Ny44IDguMyAxMjcuNiAzMS42em0tMTY5LjktNTUuOWMtMzcuNCAxMS4yLTcyLjIgMzEuOC05OC41IDYwLjgtNC45LTU4LjggOC4zLTE3Ny43IDczLjctMjAxIDkuNy0zLjQgNDMtMTEuOSA0Mi4xIDUuMy0xIDE3LjMtMjQuMSA0Ni45LTI5LjcgNjMtOS43IDI4LjItLjcgNDcuNiAxMi42IDcyLjJ6bTkyLjQgMjUyLjhoLTM2LjV2LTQxLjNoLTQxLjN2LTM0aDM3LjdsMy42LTMuNnYtNDAuMWgzNi41VjMyM2gzOC45djM0aC0zOC45em0xMzMuNy00MS4zdjQxLjNoLTM2LjV2LTQxLjNoLTM4Ljl2LTM0aDM4Ljl2LTQzLjhoMzYuNXY0MC4xbDMuNiAzLjZoMzcuN3YzNGgtNDEuM3pNMzA1LjQgMzEuNGM0LjkgNy4zLTIyLjYgMzguNy0yNyA0Ni43LTEyLjYgMjMuOC00LjEgMzcuNCA1LjMgNjAtMjcuNS00LjEtNTMtLjctODAuMiAyLjRDMjA5LjYgODguMyAyMzkgMTIuMiAzMDUuNCAzMS40IiBzdHlsZT0iZmlsbDojZmY4MjM2Ii8+PC9zdmc+"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: llamacpp
+  port: 8080
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 18080
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+permissions:
+  devices:
+    en: "It uses devices of the server: /dev/dri"
+    uk: "Він користується пристроями сервера: /dev/dri"

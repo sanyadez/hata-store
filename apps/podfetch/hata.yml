@@ -1,0 +1,58 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: PodFetch
+tagline:
+  en: Sleek podcast downloader with GPodder sync
+  uk: Витончений завантажувач подкастів із синхронізацією GPodder
+description:
+  en: "PodFetch is a sleek and efficient self-hosted podcast manager written in Rust. It automatically downloads new episodes of your favorite podcasts on a configurable interval and lets you listen to them from a clean, fast web UI on any device.\n\nIts standout feature is a GPodder-compatible sync API: keep using mobile podcast apps like AntennaPod while subscriptions, episode actions, and playback positions stay in sync with your server. PodFetch also supports multi-user setups with invites and roles, playlists, favorites, OPML import and export, podcast search via iTunes or Podcast Index, and optional OIDC or basic authentication."
+  uk: "PodFetch — витончений і ефективний менеджер подкастів для самостійного розгортання, написаний на Rust. Він автоматично завантажує нові випуски улюблених подкастів із налаштованою періодичністю, а слухати їх можна в чистому й швидкому вебінтерфейсі на будь-якому пристрої.\n\nГоловна особливість — API синхронізації, сумісний із GPodder: користуйтеся мобільними застосунками на кшталт AntennaPod, а підписки, дії з випусками й позиції відтворення залишатимуться синхронізованими з вашим сервером. PodFetch також підтримує кількох користувачів із запрошеннями й ролями, плейлисти, обране, імпорт та експорт OPML, пошук подкастів через iTunes чи Podcast Index і необов'язкову автентифікацію через OIDC або базову."
+category: media
+developer: SamTV12345
+website: https://samtv12345.github.io/PodFetch/
+source: https://github.com/SamTV12345/PodFetch
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: podfetch
+  port: 8000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8000
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DATABASE_URL
+    type: text
+    default: sqlite:///app/db/podcast.db
+    label:
+      en: SQLite database location (or a PostgreSQL connection string)
+      uk: Розташування бази SQLite (або рядок підключення до PostgreSQL)
+  - name: POLLING_INTERVAL
+    type: text
+    default: "300"
+    label:
+      en: Minutes between checks for new episodes
+      uk: Кількість хвилин між перевірками нових випусків
+  - name: BASIC_AUTH
+    type: text
+    default: "false"
+    label:
+      en: Basic auth
+      uk: Базова автентифікація
+    hint:
+      en: Set to true to enable login (required for GPodder sync); also set USERNAME and PASSWORD
+      uk: "Установіть true, щоб увімкнути вхід (потрібно для синхронізації GPodder); також укажіть USERNAME і PASSWORD."
+  - name: GPODDER_INTEGRATION_ENABLED
+    type: text
+    default: "false"
+    label:
+      en: Gpodder integration enabled
+      uk: Інтеграція з GPodder
+    hint:
+      en: Set to true to enable the GPodder-compatible sync API for apps like AntennaPod
+      uk: "Установіть true, щоб увімкнути API синхронізації, сумісний із GPodder, для застосунків на кшталт AntennaPod."

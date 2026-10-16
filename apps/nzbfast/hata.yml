@@ -1,0 +1,41 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: nzbfast
+tagline:
+  en: Fast Usenet downloader with a SABnzbd-compatible API
+  uk: Швидкий завантажувач Usenet із сумісним зі SABnzbd API
+description:
+  en: "nzbfast is a speed-focused Usenet (NZB) downloader written in Rust. It is one small binary with a low memory footprint, and it saturates a fast line with a handful of connections.\n\nArticles are verified while they arrive, so most jobs finish with no separate verify pass. Repair and unpack run only when they are actually needed, and extraction starts before the last article lands.\n\nThe web dashboard on port 6790 also serves a SABnzbd-compatible API, so Sonarr, Radarr, Prowlarr and friends work with no extra glue. Add an .nzb from the dashboard, or drop one into the watch folder.\n\nFirst run: open the dashboard, add your Usenet provider under Settings, and copy the API key it shows you into your *arr apps. If you would rather pin the key yourself so it survives a reinstall, set NZBFAST_APIKEY before the first start. Leave it empty and nzbfast generates one for you."
+  uk: "nzbfast — швидкий завантажувач Usenet (NZB), написаний на Rust. Це один невеликий бінарний файл із малим споживанням пам'яті, який повністю завантажує швидкий канал усього кількома з'єднаннями.\n\nСтатті перевіряються просто під час отримання, тому більшість завдань завершуються без окремої перевірки. Відновлення й розпакування запускаються лише за потреби, а видобування починається ще до надходження останньої статті.\n\nВебпанель на порту 6790 також надає сумісний зі SABnzbd API, тож Sonarr, Radarr, Prowlarr та інші працюють без додаткових проміжних ланок. Додайте .nzb на панелі або киньте його в теку спостереження.\n\nПерший запуск: відкрийте панель, додайте свого провайдера Usenet у налаштуваннях і скопіюйте ключ API, який вона покаже, у ваші *arr-застосунки. Якщо хочете задати ключ самостійно, щоб він пережив перевстановлення, вкажіть NZBFAST_APIKEY до першого запуску. Якщо залишити порожнім, nzbfast згенерує ключ сам."
+notes:
+  en: "Your settings, API key and queue live in the config folder. Keep that mapping pointed at the same host folder when you update or reinstall, or nzbfast comes back looking like a fresh install."
+  uk: "Ваші налаштування, ключ API та черга зберігаються в теці конфігурації. Під час оновлення чи перевстановлення залишайте для неї ту саму теку на хості, інакше nzbfast повернеться як щойно встановлений."
+category: media
+developer: nzbfast
+website: https://nzbfast.github.io/nzbfast/
+source: https://github.com/nzbfast/nzbfast
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0idGlsZWciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM1YWE4ZmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2ZDQ3ZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSI2MCIgeT0iNjAiIHdpZHRoPSI5MDQiIGhlaWdodD0iOTA0IiByeD0iMTk2IiBmaWxsPSJ1cmwoI3RpbGVnKSIvPjxnIGZpbGw9IiNmZmYiPjxyZWN0IHg9IjEzMiIgeT0iMjc0IiB3aWR0aD0iMzEyIiBoZWlnaHQ9IjUyIiByeD0iMjYiIG9wYWNpdHk9Ii40NiIvPjxyZWN0IHg9IjEzMiIgeT0iMzc0IiB3aWR0aD0iMjYyIiBoZWlnaHQ9IjUyIiByeD0iMjYiIG9wYWNpdHk9Ii4zNiIvPjxyZWN0IHg9IjEzMiIgeT0iNDc0IiB3aWR0aD0iMjEyIiBoZWlnaHQ9IjUyIiByeD0iMjYiIG9wYWNpdHk9Ii4yOCIvPjwvZz48cGF0aCBkPSJNIDUzMS4zIDIzNy4yIFEgNTQ2LjUgMjA2LjggNTgwLjUgMjA2LjggTCA3NzUuMSAyMDYuOCBRIDgwOS4xIDIwNi44IDc4OS42IDIzNC42CiAgICAgICAgICAgTCA2NjEuNyA0MTcuOCBRIDY0Mi4yIDQ0NS43IDY3Ni4yIDQ0NS43IEwgNzk4LjkgNDQ1LjcgUSA4NDYuOSA0NDUuNyA4MTEuMiA0NzcuOAogICAgICAgICAgIEwgNDQ5LjYgODAyLjggUSAzOTMgODUzLjYgNDI3LjYgNzg1LjkgTCA1MjYuOSA1OTEgUSA1NDIuMyA1NjAuNyA1MDguMyA1NjAuNwogICAgICAgICAgIEwgNDEzLjYgNTYwLjcgUSAzNjkuNiA1NjAuNyAzODkuMyA1MjEuNCBaIiBmaWxsPSIjZmZmIi8+PC9zdmc+"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+web:
+  service: nzbfast
+  port: 6789
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 6790
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Downloads
+      uk: Завантаження
+    hint:
+      en: Inside the app it is /downloads
+      uk: У застосунку вона — /downloads

@@ -1,0 +1,45 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Firefly
+  zh: 萤火虫
+tagline:
+  en: "Firefly, the easiest using of WireGuard VPN server, plus version of wg-easy."
+  zh: 最简单易用的WireGuard服务器。可广泛应用于内网穿透、异地组网、远程办公等场景。
+  uk: "Firefly — найпростіший у використанні VPN-сервер WireGuard, розширена версія wg-easy."
+description:
+  en: "Firefly is a simple and easy to install WireGuard server software, which can be widely used in scenarios such as remote networking, remote work, and expose a local server behind a NAT or firewall to the internet.  🎯 Features 🟢 Provide a simple and easy-to-use web management UI  🟣 Supports access to all WireGuard clients  🟡 No need for system installation of WireGuard components  🟠 Single file, no additional library dependencies  🔴 Automatically apply for free SSL certificate"
+  zh: 萤火虫是一款简单、易架设的 WireGuard 服务端软件，可广泛用于异地组网、远程办公、内网穿透等场景。  🎯 特色 🟢 提供简单、易用的web管理后台  🟣 支持所有 WireGuard 客户端接入  🟡 无需系统安装 WireGuard 组件  🟠 单文件、无额外库依赖  🔴 自动申请免费SSL证书
+  uk: "Firefly — проста у встановленні серверна програма WireGuard, яку можна застосовувати для віддаленого з'єднання мереж, віддаленої роботи та відкриття в інтернет локального сервера, що стоїть за NAT або брандмауером.  🎯 Можливості 🟢 Простий і зручний вебінтерфейс керування  🟣 Підтримка всіх клієнтів WireGuard  🟡 Не потрібно встановлювати компоненти WireGuard у системі  🟠 Один файл, без додаткових бібліотек  🔴 Автоматичне отримання безкоштовного SSL-сертифіката"
+notes:
+  en: "Default password for admin background `firefly`, you can modify it in environment variables."
+  zh: "管理后台默认密码 `firefly`，你可以在环境变量中修改。"
+  uk: "Пароль адміністратора за замовчуванням — `firefly`, його можна змінити у змінних середовища."
+category: network
+developer: Safe3
+website: https://qq.uusec.com/
+source: https://github.com/Safe3/firefly
+icon: "data:image/webp;base64,UklGRsoOAABXRUJQVlA4WAoAAAAgAAAA/wAA/wAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDgg3AwAAPBIAJ0BKgABAAE+MRiLRCIhoRIKRFwgAwSyt2+/Vuf9qf//j/rf9pzDroh/gNfB65+R/5RfNxWv6598v3M/yHZ5l669fzP5a/2H38f8n2UfmP/Ve4H+jP9J/L7+3f//5iP1m9937Vep3+Zf1n/d/3v3zvRP/ovUA/wn9x6xP0AP109Wv/V/uN8Gv7Nf9D++/v/9CH83/un/c6wDqf+r/ZP/isdaEp7o4O9rr+/Y+b04ZjOOn0G/pr0nfWvsH/qz/0uyB+1XtAfscLL+9In+gmNsPbLymzqh0igrLU+23fbbvxVfUrDqy8CZKf2oeTWDhX4q4PpQtdKxgU2Fsd5iuzB8qzXXbA5gW89KCOeFBQcwg08NFm9BS78VE4PoQKWvXeDipnOnravgjOr4UQQvTajisGnLaZmp+Zv6/ZgQF1zFOksIDFzRt6rFEZyBLVvWo7DDfgchQ4D6AiVXE/FDCaCDhbE3ae/5N21KLSANDTns/Q2S0D8kdKhdxRQgCDyjogPWW0RCwXFqz/9bu+FnCjsu8nZQGuLopGSskWbMBJuNryW9oDhe8cT1mLs48EmbIfUbNJSvpe38/mXA/QStBcNPtqimk3o853h9rkAN+V1zAtAkznOe/iJ0F6D1OnZd+9HN5F9YeGgy7YgdnB7pXKI7MCr/T3hs8G72dxKeqsIQ7zI5X4U6TmrwnOG4C3k1T6yP7O819Rif4xzE0hVpKS19JWXX/VS1kIyWionftt32277bcOunHXmIhDg7Bw+KpVCh1Q6RQNlj9BMbYe2XlCAA/v5oaS2XQNAAp6vIAA+FGS8Gp/PjqFFMkPHDGnzd5n2cbOxNWfWYBhuXJNlVwuqHO7k92H0wrKEOtYgBYbt42yJR8QTCymPg1db2mfs1QcUcVHc9GC2TEkYTQQ9aaCGRPp4KxupyeAEmuaf/SYGf/qYPSvpxe/I/m/mWXnk6MgP43Zpsb/jnd0WwPMT/Ztt2gI1291K7xCTKRvhEVbW/acLy45os8FitppTNMCxyz548OTl43UaMGWgm24n80hOfOYjNR96pA9f2xlRsPX3fPDzHAwa1IBi4p3ueyiB6MttwZauRMo0y5k/W41jqFImr7IoxmKd3sDRji9Gv1e7Psf/7T3OJAeFYR31ThybmmXy6lgG8CStiMqV4f0XpgKAniEsLOB5xN95idVoe5XH/PmA5d1xiK49q1p/9tokZnqHQHb23+OSrnmMMOVAfW6iBLyWb9NfvV/8GvXaYEp/x+Rm9UKBz5XtwXXiaI/+sf6E7UirYZ4t+TKpI52gP9M3kS1dO0euVs+Ee30X35ilAk2CV9CovZkXsNYLpf/9E1O/uvLyGjZWdLFgLn64zWLSgeT9OvH/6vZbv0+TDI3V51xxUHmQ0doqs2hWbNyHKWH35UhI9upsYsGz5NnAkOcvwcQlYcfMRXuT2klP+Gz+yOMX98Kg3H1G+zr/pzlHzBbPbQsmMvn3L4TKhwC7kLd0opVFKQKfMdvRcaa6Qeg9kuJzslfjIANNuq6cloYl1giNZQj/oAc/o4mmWGP5FY1VD+fjwciJIPvk3FsW9oOVtfRH3+TIiKXGwyWexEWZ2ly0A8i/0e/axoBcfihVp7q6ZfAeZzCmkf2MkxW8lhaK3Bdy5jrREjuVOMb7UYR55Pl7PRkZtZ6Z2/7476D+w6JLfVpomdWGcAyqeFwxiYLjxsiBSVYeMccQQVl+INae8xj0JLrusTOk1XKitSEeBLPxWCeYel0x6v25hoVR3dSrA59hSWjadNIMVYF1MJ9Sc9+bhIT4sTEYjWxv/NYPYJ4dv2OVHc7oR+/zofQi1A5+Lr3adwpb5stYC/J3xHZN7kuigfUeeZ60j9zpUahufCI895B/yQe5z8cM/rthjPm2vw4rEWsQQl9LhcleimyINgnIp4WWfUwfu+SK34pfFqV9nAf5l5FnpDkKQbkn0Sh32SUTL8iRXPq7UTOKppULiYOsd9N/AWEOgH+3Ou7y/227+vT5mmWm5/5vpPURsm6CZ5QjD9/HVgCChP+GUt+5IjHEpgD/BavNk07Z/x0MODniGQPUgKxrZ6a7UPTT4eq6mmT7N3fot++bVtx6xT5E+f3wQyyQUF4/MUbmyfjHHjLi96EwJJIr39jXlIyB+9hsSB9tjRqDBCBXD3BmsZXQb4jef9dL4w/CLrBKi8PvYmrct76LV+JQmowqQ2v0Et+z1y73g0qdlGROk6/LxmbvVvASuV4Zviq5kAlfZ6cyuoZcJAlcFEW0AqimxkO/jrXcgF4Q+H6HCLdPWlvjqdXHeea1rxV7dz7esR0iutg1/5RyHKBbCx8SItsD7KHIn2gEy5561QF85VnYKu3P+1u5wRHDHNAUf0v9QDDAffxS5Za8KZpaUS63Gsb84xYZ36ns4YICjUZ5vtSb+nXZEGnBQwj9bRvVn+82XzWG586O4jRuwBIwYgrWYpoyt2NNZ72ISVixLyl9w2tg6PoksvdNZPD8QWwgYe5qKECFUhe9mrlycm7/ct7ugK7sTy02Tu6B0ha/0rb0vhxK7XoWmkVFIOeIzS2mNCtSB2uEUIQBD8IfHl/0T8sPppeCl/qW9ZVX+ecZgfXH6qNgfsuqWwPa/e1zZOJYIcofvqK2AILP6MjFBLql520ikLTaLCJ3VSel9I7VlqGxRhCK6KggcEdx/8izHO2MGOayBpIDrZ5Go3UhMUd5azX+6QHrzJ96i/ibCcx5MVouqZsLroUtX5jOPISlrOgOA4eeZOYbYa1CUHS1Hq8HLlyeOMelhrNQ+szD5S89EiFAaEqReMuczU2DEBLXPqR9T2quGK+aMczAYqNheefTxRXEuXIdibY0eNZdk1hF7zjfzUMwrxAzQEZhn0qzwrh6IM29+bUlu4Yn9FYktjqhAXi5vnPmBEa9lCv9ytmScCG6UCwPGsRNekAKnOtjmW8VAjP/BmZLX8P0nnHzvG/3EHSO0pcAH8P/Vvmusa+O1N3rCjEnN/mgtNngOAAxiWtNa8KCgqghR85L8yzF0BwDUxITTwn8ajL291GF2RFV3HHB8OJpjL6iKJYo+P2DeoGrhrHrlVNe0uwJA3l1mCUNZ2EhuPVczxLdFPGyA5ffvCDButcxxFRpid0sxBccTLYqO+ZM1RjcPIIgTXgnyguKDIHuEqiCZnuQBRzHkVmMbhz0/gY6myk/Bbuoq9M2nZ7o4JPjeYu2ElKRP/OovumC3NP0Wa3Co76aTJL4d9YTWfo4Bnan451WDfqGMrBdLyKzhlyvy1wU6s+952ExQ7U18n5WYqHPhdujXlxvlhOd/rlq3rbTXrTV49VXgN9a0m336wnux0+4P6KkHvNHqP/lBLq/uhclb6a7zdSexB4tRu1L89eRPAjAN/HhyiUfT+V7oHZOBCCEVhfiDznTbazMc3YK89XCE4StuCR/W8paaKoOQGbTzmaWFNYMNtAECLX49LuvKB5+qAy8zeql1nSUJWjKmFGEtzSwooYJ4iWUZNJWDmSX6U6lwUd1C4Zb9FG0yaqqgzHHJ/927PKLXH4td6wXEGCMll5Y16EzQXeqfIdJpaDXV9rzGgpld8SS0KyvaTcRP6hEEpZhKS1Qb9EUIPbqTuxqeWAeTBWV6XqGjhWB5EoP6GcW7qmljN5cBiXIU0andQIBqqhrXOQaprtIb0p9LXF4RRo+WlMaz+pky8pTxgJmxUB6xeBHLI36ifDwFkHcXPalN3O9zcB1PXHqcApZGMjT3kHlFoqQKpgk/QPVqGZDLQ3rm/Zrk3zc99tYF9ENjtt5F1IZFlFglFjs3kRij97UblYjfU473/9lPHC/8ouCRdkxL1op/Bqecw2dw/Hnm4N8tffiFUV3F5bt4G246jXIzBr2q90gi/nak6nCC57rXwiC9qNqweAqntvkO18Qy8a+MLOgo2RGkLIdz3G7eg2FdUll4e6HBSC1qr7E+NnPNm5J2iN5XFF6VfyOqvDuSWrFY6bDISjQPoLY3Gode200agJd4/q/nUMvGON/hWR4w8IFjO61lN4KqZ+IUs4HNNCtbhcbahvKFbADk/vqwL88YIKKOt/IiqyYsKLiAw6gv+RkXUHECKUgNp8oTOCOXXMsoujvws/sRXa88L+PCEcKJ0voeLwJEoEDS8Aapy9ueoxblSysb3xAEjasGgrOUcgzYehZ3oqO/P8/5pXVX98QqLIZbPFvzX5eeuBqXrD2duj8QhpYYgH9Sj73TnqDveevHp1gzVZ01LYxE8JUFRP9Q07mAqh2UP8dCnghKRrHc+8gKgDQwKAjJPL+LdXp2wVL7VVj/s8Dnd/RbdZVcRw8ZcyGHka8Hfke84huFlbHlkIj5pcHRZcTjoxPLDyBf43+6+DqP3QSN9kpgAAAAAAAAAAA="
+screenshots:
+  - 1.webp
+web:
+  service: firefly
+  port: 50121
+settings:
+  - name: FIREFLY_PASSWORD
+    type: password
+    required: true
+    label:
+      en: FIREFLY_PASSWORD
+permissions:
+  host-network:
+    en: "Its authors run it on the server's own network: it reaches the devices of the home network, and its ports are the server's"
+    uk: "Автори запускають його в мережі самого сервера: він бачить пристрої домашньої мережі, а його порти — порти сервера"
+  devices:
+    en: "It uses devices of the server: /dev/net/tun"
+    uk: "Він користується пристроями сервера: /dev/net/tun"
+  capabilities:
+    en: "It asks for extra rights of the system: NET_ADMIN, SYS_MODULE"
+    uk: "Він просить додаткових прав у системі: NET_ADMIN, SYS_MODULE"
+  host-files:
+    en: "It reaches these places of the system: /lib/modules"
+    uk: "Він має доступ до цих місць системи: /lib/modules"

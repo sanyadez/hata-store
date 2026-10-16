@@ -1,0 +1,69 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Mylar3
+tagline:
+  en: Automatic comic book (cbr/cbz) downloader
+  zh: 自动漫画（cbr/cbz）下载程序
+  ar: محمّل كتب مصورة تلقائي (cbr/cbz)
+  de: Automatischer Comic-Download (cbr/cbz)
+  es: Descargador automático de cómics (cbr/cbz)
+  fr: Téléchargeur de bandes dessinées automatique (cbr/cbz)
+  hu: Automatikus képregény (cbr/cbz) letöltő
+  it: Download automatico di fumetti (cbr/cbz)
+  ru: Автоматическая программа загрузки комиксов (cbr/cbz)
+  pl: Automatyczny program do pobierania komiksów (cbr/cbz)
+  pt: Download automático de quadrinhos (cbr/cbz)
+  sv: Automatisk serie (cbr/cbz) nedladdare
+  uk: Автоматичне завантаження коміксів (cbr/cbz)
+description:
+  en: "Mylar is an automated Comic Book (cbr/cbz) downloader program for use with NZB and torrents. Mylar allows you to create a watchlist of series that it monitors for various things (new issues, updated information, etc). It will grab, sort, and rename downloaded issues. It will also allow you to monitor weekly pull-lists for items belonging to said watchlisted series to download, as well as being able to monitor and maintain story-arcs."
+  zh: Mylar是一个自动化的漫画（cbr/cbz）下载程序，可与NZB和torrents一起使用。 Mylar允许您创建监视列表，用于监视各种事物（新问题，更新信息等）。 它将抓取，排序和重命名下载的问题。 它还允许您监视周拉列表，以下载属于所述监视列表系列的项目，以及能够监视和维护故事弧线。
+  ar: Mylar هو برنامج تنزيل متجر الكتب المصورة (cbr / cbz) التلقائي لاستخدامه مع NZB والبيانات المرسلة. يتيح لك Mylar إنشاء قائمة مراقبة للسلسلة التي يراقبها لمختلف الأشياء (المشاكل الجديدة والمعلومات المحدثة وما إلى ذلك). سيقوم بالتقاط وفرز وإعادة تسمية المشاكل التي تم تنزيلها. سيسمح لك أيضًا بمراقبة قوائم السحب الأسبوعية للعناصر التي تنتمي إلى هذه السلسلة المراقبة للتنزيل ، بالإضافة إلى أنه يمكنك مراقبة وصيانة الأقصى القصوى للقصة.
+  de: "Mylar ist ein automatisches Comic-Book (cbr / cbz) Downloader-Programm zum Einsatz mit NZB und Torrents. Mylar ermöglicht es Ihnen, eine Beobachtungsliste von Serien zu erstellen, die für verschiedene Dinge überwacht werden (neue Ausgaben, aktualisierte Informationen usw.). Es wird heruntergeladene Ausgaben sortieren, sortieren und umbenennen. Es ermöglicht Ihnen auch, wöchentliche Pull-Listen zu überwachen, um Elemente zu überwachen, die zu den beobachteten Serien gehören, um sie herunterzuladen, sowie die Überwachung und Wartung von Story-Arcs."
+  es: "Mylar es un programa de descarga automática de cómics (cbr / cbz) para usar con NZB y torrents. Mylar le permite crear una lista de seguimiento de series que monitorea varias cosas (nuevos problemas, información actualizada, etc.). Recogerá, ordenará y renombrará los problemas descargados. También le permitirá monitorear las listas de extracción semanales para descargar elementos que pertenecen a las series de la lista de seguimiento, así como monitorear y mantener los arcos de la historia."
+  fr: "Mylar est un programme de téléchargement automatique de bandes dessinées (cbr / cbz) à utiliser avec NZB et torrents. Mylar vous permet de créer une liste de surveillance de séries qui surveille diverses choses (nouveaux problèmes, informations mises à jour, etc.). Il récupérera, triera et renommera les problèmes téléchargés. Il vous permettra également de surveiller les listes de tirage hebdomadaires pour télécharger des éléments appartenant aux séries de la liste de surveillance, ainsi que de surveiller et de maintenir les arcs de l'histoire."
+  hu: "A Mylar egy automatizált Comic Book (cbr / cbz) letöltőprogram, amelyet NZB és torrentekkel lehet használni. A Mylar lehetővé teszi, hogy létrehozzon egy sorozatok figyelőlistáját, amelyeket különböző dolgokra figyel (új kiadások, frissített információk stb.). Összegyűjti, rendez, átnevezi a letöltött kiadásokat. Lehetővé teszi számára, hogy heti pull-listákat is figyeljen, hogy letölthessen elemeket, amelyek a figyelt sorozatokhoz tartoznak, valamint történet-ívek figyelését és karbantartását."
+  it: "Mylar è un programma di download automatico di fumetti (cbr / cbz) da utilizzare con NZB e torrent. Mylar consente di creare un elenco di monitoraggio di serie che monitora varie cose (nuovi problemi, informazioni aggiornate, ecc.). Raccoglierà, ordinerà e rinominerà i problemi scaricati. Ti permetterà anche di monitorare le liste di estrazione settimanali per scaricare elementi che appartengono alle serie dell'elenco di monitoraggio, oltre a monitorare e mantenere gli archi della storia."
+  ru: "Mylar - это автоматическая программа загрузки комиксов (cbr / cbz) для использования с NZB и торрентами. Mylar позволяет вам создать список отслеживания серий, который отслеживает различные вещи (новые выпуски, обновленные сведения и т. Д.). Он соберет, отсортирует и переименует загруженные выпуски. Он также позволяет вам отслеживать недельные списки вытягивания, чтобы загрузить элементы, принадлежащие к сериям отслеживаемого списка, а также отслеживать и поддерживать арки истории."
+  pl: "Mylar to automatyczny program do pobierania komiksów (cbr / cbz) do użycia z NZB i torrentami. Mylar pozwala ci utworzyć listę obserwowanych seriali, które monitorują różne rzeczy (nowe wydania, aktualizowane informacje itp.). Zebrze, posortuje i zmieni nazwę pobranych wydań. Pozwoli ci również monitorować tygodniowe listy wyciągania, aby pobrać elementy należące do seriali na liście obserwowanych, a także monitorować i utrzymywać archiwa historii."
+  pt: "Mylar é um programa de download automático de quadrinhos (cbr / cbz) para uso com NZB e torrents. Mylar permite que você crie uma lista de acompanhamento de séries que monitora várias coisas (novos problemas, informações atualizadas, etc.). Ele coletará, classificará e renomeará os problemas baixados. Ele também permitirá que você monitore listas de extração semanais para baixar itens que pertencem às séries da lista de acompanhamento, bem como monitorar e manter arcos da história."
+  sv: "Mylar är ett automatiskt program för att ladda ner serier (cbr / cbz) för användning med NZB och torrenter. Mylar låter dig skapa en lista över serier som övervakar olika saker (nya utgåvor, uppdaterade uppgifter, etc.). Det kommer att samla in, sortera och döpa om de nedladdade utgåvorna. Det kommer också att låta dig övervaka veckovisa extraktionslistor för att ladda ner objekt som tillhör serier i övervakningslistan, samt övervaka och underhålla arkiv med historier."
+  uk: "Mylar — програма для автоматичного завантаження коміксів (cbr/cbz) через NZB і торенти. У Mylar можна скласти список серій, за якими він стежить (нові випуски, оновлення відомостей тощо). Він сам знаходить, сортує та перейменовує завантажені випуски. Також він може стежити за тижневими списками новинок, шукаючи в них випуски серій зі стеження, щоб їх завантажити, і вести сюжетні арки."
+category: media
+developer: Mylar3 Team
+website: https://github.com/mylar3/mylar3
+source: https://github.com/mylar3/mylar3
+icon: "data:image/webp;base64,UklGRuoRAABXRUJQVlA4WAoAAAAgAAAA/wAA/wAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDgg/A8AAJBMAJ0BKgABAAE+MRiLQ6IhoRMYVFggAwSxt2+H/2n//+P/uNHSe9Iavrv5Q/lj8w1X/pP39/en/N9bLUPmG+Q/of+m/vH7k/5vtAfoj/W+4B+kH+N/uX93/3X97/////+pL/Ae0/9rf9V7Av6L/Zv9b/nPeN/x3qp/wnqCf2/+7dYj+4HsEfsj/9PZx/5f7Xf+35Uf2d/9P+c+Az+Xf27/ofn/39HSrrB/0PL3TQzhP5H+Q/33DP8cNBT+ef6KDP5V3TCcVa5CS0LZVWKFsqrFC2VVimf3kpayjOIxUFgMpEV4C4Tlw99C4eRsHIILFz1BCTvarHJMu4MEv/okOTS2lyqL/885sexv1eXRSzm8xdqkm11FLNrY/r6////8NH+61sfCgOLjF2F0K/Am5rFLlpVqP1dTLOETd/KpjKbYjl7JsdKWvNX36xf1TNFWtiMcWCSKTYSZVmR+NlQGh/0ZISa4NU2WEHy2Nn7J1dToFGB60FeLcPWU84NojtXzUOkgitYQGB+jh5mrjaldsv0RN4DABH5z5lXp5qfEWRz5nEhrv7w256IvZ3Rb2Or3z8mtUK6VSfzzNlhgdBFh9hJar77YTnySy+ZlPUQH7+uvHQNR4uXQGmUxxbQanyA0OxNAyLcGWPUqseu3+JzD+D/iUWaIqDgd5xYFt/+xt3sq/2a1idP7QKhzd5qRAQdkSwQuQcCkwFJa4gPv/8BHKmRB7ZVP/2h9Bkg1heY2zPfN6oAV/relMeKfSApnqrzEqhojhFrtg0vHYTZ/ATKs1R/AqqHeM89+bd0JKUhHHHOxhSqsULZVWKFsqrEgAAD+/mhoO2twsAAi29EPdf/srEevcP3CvEsJfgKyX6gnWkHWlRVwtksNRqGpC0UcP8teMlWUVouCA1lmkAzk4MaEZ7fCntn5mghcFBHV0Jh1/Ej+aeBxvvOwCDlhzhQeNAV8CSORnrp1y692oTbQ/3zFMkYi2xXC/8fcxetvNVy0sv19hfCqMovLrDJ2n4TK1gS3bH6h786uutFWhAywlvNC/h8OFXg1SuvmcXt34gPTfX2j1z6E9nx7xasP+ew52+XftW7rb+GRe1r3eiCOPj+TTVTIzkJH1MHZIzDtdMnrmmzmZ7I0a0kccrahvUDQdjqJDR271Pbalo/j18diIq0FGuwlXY1pmz6xkd4G4RlGDXs7N8XWM6MhOGD1vFHS/8JBe33bDqBCtv/e8IZXFKOo4JFyNlNhlXMxZANrw06fXQWEA0evPrKQTWAPuwt4uEh/VngMvH2b7rhO/7thOqSqdakaAZpcNtsVSFxO2F7OEOrGlBpLbf/pTMp6gTX7dL71rEQjlgfLOjP3v3wLyK2Vyvv2Wey39aRL7iZv2T2UqB4R4ZobskM38ntqhWx93JfwQ2UrS9KAYcv4NCu7pL97Pa7g0GYyLeypg1m9ABjSuAFh9///GEY1pB+lpg/Rp3qQDaunBtjZeEKE3KM6FDRaFO2bOeO7T5z0AGipNhU8nIz/ad9rGXJ+zEezLSFq5Yw//7E5IYvXS33EjLDb7Tl5ux///AQ42icuhCxpNmbH/vGJSJGI5+6os3A/rDckFsOrANVyTsOmVWzq0YaSOLkEXN1f1UmTyensHQ+rAUK9IaHLrmThKDpML3y2u3Q5B9nA3QQvG3v5YedNwwu52hwbEIOzM0bHjWJSPL44w/yhIgIO2OuYOL6FAZVBrwx2wxB47hkVSBz7eKoV77dPBMGmgS6SZf0xuVmgV7rxnrXVgUlv5C/j27miNzrdFmLVz2WFNN6ab6mgYFMkcPVgUd4XpMrBjXefsjKm1lzJUEPH0uGI5VxkkFbVFtD+LNT8mFySFyzHYDjMG6R1mfv8P05moIOjsorVQuPtShCM5jFD1disL0O2dHjfzILrbHwT//zjZ8k88of63lsXw5Ljvdy/amSxDOHiNKYoecSDwY+ne0slifAZ+H53cVv0vQ7dGOc00cbVhTHvQjimCYuXHPDte3UHtBm7zO33e7vhhEkPRU3rVmqG7PO7MDDv6hcjUQrAOetj/UlReCKVOSpGhdzLSRVuORfzgdQ/LUElZm0p8Pcy8fYSrkykuwfB6dNATxIxHvRuxv5fcdy+cS0tZCX8IqN8bmBLWQkuZUNzcTtu/V6MSE5mx9bz4L9XuN4uUxWFPTPKogN2mwI1I3x4r2YkKLQKm6dfSLv1wK+f+nBCx/hjlf4f3aP3oVZf2eG+7W1+Y1ptrUE4Fzcn+fPoPMc8YO9+FEpHhZFPP0HdDWIpttMV5qaloD6V20Kh4ckCRRUTZ5WAsqPeiRHiZ9xoXWgkvkpE7z/anZSVMCjrGTiQfjuMlKoWWlGyjhCZcIBC/pghJIx+SUgkUzP42FjDJT7YbjXZyKf8wyz/W1CkvQkgbHmiWfDlnF1AWCQYAbJLF4M7+ACoxZHghqk0ekYxOsb+46k3yyf0ZN0n2h//41CxngrL+ZVSwzaruMukYRR3czAYNGBgzHbLSX+u/k8+wcsCwHXDWmZfiLVpbBrZQ5w+VZnD/VlsebKPi8svbXqztZD2W8/HQi6r26FTdSXkTIIDoVHQT92JYvdKpGlbTdWI9VPt5d62Iff5wOfkGbIMU2G0urM2ECDZWjaev5zuqmGPtPnHOOPauEUUoyqjLjdKRc9ykzBbyPI/EQQfZ/PAzIz3E7/ogQxN3WkCZ4GCykzxhhua+YWEw0e396cQbgJI5UoHGmOtj03RNG+KFl5zspORKb33BoToy21QQAEn166pVO+Zi4TDrv4Tu4cSpq3zayG5wRjvv++ZIzQB3Ys+5jNzJM9zy4thv+1xgziVph/ujkaD+fuO+5XyKdgl2CtgvLSzTEgKwS410M+7rwr8wu9OGyF7p2Nh2dgSkjxb9YUBYDdzoCVVw8X9qtSMxnxH+M/DA2V+Q2ZdfI/7ZhQV9gl2jYB0dU0/TFxtLYZPUaP5Li//+ccAZ/22ls8oUxpgiKSFkfbl47VvfRohOP/vd3gvrag6tekQSPMXHsh1CuvCaSg33mZlzN6NeVXUPabQK7eoE5ES9K3HrgIUwXEO0LHe0DTE/bNpqFpGaTIDl6p/hrj4F8t6+eFV2apvO+5+88MlAo/AM5RN91iN8q0/p9RCneYgF/Tqe7qX53bXlS8EopzEc/Db9kQspqzJLMHA2cMzyANmdzZp0sh8YirCJkoCZlFKZCw1fhTuGg4Jl0f+xjnhV6x/uNhPpwsLjDuKUvL33nnYA1LjfvrVYQX/Mk5yPXt4NkjQ+T4+kdODZMzdPXKWGZEh6Dx3VqNyOiffhNtULJzQswdmeuODr/z8vMAnCgvWYpJk5PQYR1kpMn7aJ1NGt3kMKk2F4V5WKKFxG0hrfsmKv10skhemdwJ/aJKfxieg763+fSyi/VfJO177jEBsbJSyzy4FhmkoYYQGPPgMGv1MIum0hVrvkwuX3fm8K3Z8E+d6yoQ8UKwQ/f8jP50CVAie42KGHPTCtK1r1tWA/7IQFdLTUSKqi9lpPw8LLJsVg3yT0SytXwVzHZ0RPyorRSSE1BlN5KpWVrU91ECCEwvkHR4G6wVu1XaKUBO/cViVB7GedO3cTbrYBa5pi1zo6RxZmxgc2NwR4KkbAcfE1HaX8Vq7RmWmWGdpQcCCy8vvtaf8TttK+Z3G+DDoVgXWLjIjkpnPgu1ZrKLDV+32HKQQzw4GOzlUQ20FIPYuPZL8MjfW7VrY8arNVfsiHK/bsl0oB0rN7MyiYYFn/fwLAxttzlQbAsw8LzD8T6vJjVuvaMU3VtTHygYv0k1ApOD1LDpwSUpN4rhTuubGxE5iZQcK6/R6v7KwSpufF7Y34BMp1wasDkrNXIBkg3Dhl3XzBEB/Yhk/HV30TcIkmNg4MHUN94xDdEBRqN7xY/fJ/8accwH26cgEN5r5pmerJtiVeyNt0rvxB4bfVpAdcdNG263NjegsKAg3WtCLhH+YVzDhaTKa6gSLDZNTZ0556rX3rc9qt21rrn8smATXZ0g+4cE3zuKBLQRZCQEC1ntjSN4Ny39Ix80QkqNNeGyeiWjA9eUHEVN3TGZP6ETyf9J4XUvE2V0bnmwWnieWsj49PPiKmWFGXv5MpgtvyGPTt8zwU8t9mTLY2H86PHxGBPEhiAW5/saNBT5Y4squj8zDOZN5COMxC70AxTQGTrijbHogrBuLQOK5I3vApMGrm2sz1BW+xIzbY+Ad5ZQ+Ivn+EELmQGTlZpaJL7pqgtxzb5iTMJ+W6ruYEEWz184F4jGC1nuvgLyWr1092SGxfp7H+BhXMmUoO5yh3grVBR+6h1IwsrYUZxGuPAq8VKrxgyYrRwTc/ndj+5eZ+VC8Cx4ugAX1k1z+2K6f7x3tekhKKKxYWLdEZruzDBMrLVh7Xsw7XMY33+uJNpdXhtr0uEPUHziJUiHs/vo3+mswftt8/GXtkYSoJHK5emJAQ+D3FHt8hxjA+hzgv2568+uwpoIEBw+sQ/2p6g80Unszk1RHzYcGpllOcUfduqaDTXzjatSItjbjw/dkPWi0/cPr/KdyzNMlekKNwgClECGO3pvtDQn9kQkAqlhxC5XqxESD2Y0NV3FwGTj32SlLc4AejmAwdknpHcx/ewmVpAemVd64balIThwPeNokGamFP8ef6fE59DxW5pqMrcohJGu/vUvXOJYhj2BkZ4ITgjRy5vD7+tKaxLPLsOKY/qJEOAKIpD1WWoAjm7qsE55XBeqGp7VdTgL0aVD28ad1/slwz6RlKZ5Ff8RTY4lOw9Uldy12IYbEbK9Kepz+mY3wugrkR3W1Hp5sBazdC1p6yRjIIccYweBE5cLFKknJqn3JippPCCnOLIrEkv6pwCjhbnGuAFDmBOuWp6GNrQ9Q7foNc69HDnROYEjP7+0hO+cPQQI0dndJO6vPnkAp5+stic6Lr/nqmusMPt5E6l/DPcX7W3LRUn04W4Xnm/W40WIYyA84ziwGM/HSi1jCPuXkv5czltHO19+7ZZ/zbx2NuPCSO/FL081IgQr6G/pWfiYYNqhKcxgwR+GHJoBTxh9sDfyzlLM5S81Nvg9W4Lckym2sSS7woTUVha9+xmvOYxHJ4gHdMcrqLYmNFjpSMdefVaZ/PI5x4sgKk8VzNMr5n3aJklTd3/1HUnTkAwABLZjDvKtr+q6DOur45AmJbMrSLb8nFekY3ALw0LdI8URixpUXjZmZ+nvYKox30DJ1JutcRYVnExNxMrnkplfA1uOX/vaP8rNkxLftZHYwxQSz1DFCBolHTrgxYwwyK80mBcMDULEaXajFdtFtidNlGJUXkolr0YMCzgtlaQ24TOhI4LYcANT5Ta3ImewhVLmlXmAWz0GCzdVLelO6xbXsZra3JpWe14qccRFlP3zZZm5yZfPxf0lJKE1sEdzpEC3OXsCeKY2tjcOpgW/ksoFwTKQ7+4z+vg9Gj4gP92ioAAAAAAAAAA=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+web:
+  service: mylar3
+  port: 8090
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8090
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: COMICS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media/Comics"
+    label:
+      en: Mylar3 Comics directory
+      uk: Тека коміксів Mylar3
+    hint:
+      en: Inside the app it is /comics
+      uk: У застосунку вона — /comics
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Mylar3 downloads directory
+      uk: Тека завантажень Mylar3
+    hint:
+      en: Inside the app it is /downloads
+      uk: У застосунку вона — /downloads

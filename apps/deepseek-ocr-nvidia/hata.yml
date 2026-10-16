@@ -1,0 +1,275 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: DeepSeek OCR(Nvidia GPU)
+  de: DeepSeek OCR(Nvidia GPU)
+  el: DeepSeek OCR(Nvidia GPU)
+  fr: DeepSeek OCR(Nvidia GPU)
+  hr: DeepSeek OCR(Nvidia GPU)
+  it: DeepSeek OCR(Nvidia GPU)
+  ja: DeepSeek OCR(Nvidia GPU)
+  ko: DeepSeek OCR(Nvidia GPU)
+  nb: DeepSeek OCR(Nvidia GPU)
+  pt: DeepSeek OCR(Nvidia GPU)
+  ru: DeepSeek OCR(Nvidia GPU)
+  sv: DeepSeek OCR(Nvidia GPU)
+  tr: DeepSeek OCR(Nvidia GPU)
+  zh: DeepSeek OCR(Nvidia GPU)
+tagline:
+  en: Powerful OCR powered by DeepSeek AI
+  de: Leistungsstarkes OCR mit DeepSeek AI
+  el: Ισχυρό OCR με DeepSeek AI
+  fr: OCR puissant propulsé par DeepSeek AI
+  hr: Moćan OCR napajan DeepSeek AI
+  it: OCR potente alimentato da DeepSeek AI
+  ja: DeepSeek AI搭載の強力なOCR
+  ko: DeepSeek AI 기반 강력한 OCR
+  nb: Kraftig OCR drevet av DeepSeek AI
+  pt: OCR poderoso alimentado por DeepSeek AI
+  ru: Мощный OCR на базе DeepSeek AI
+  sv: Kraftfull OCR drivet av DeepSeek AI
+  tr: DeepSeek AI ile Güçlü OCR
+  zh: DeepSeek AI 驱动的强大 OCR
+  uk: Потужне розпізнавання тексту на основі DeepSeek AI
+description:
+  en: "DeepSeek OCR is a powerful open-source OCR (Optical Character Recognition) tool based on the advanced DeepSeek-AI model. It enables accurate text extraction from images and document scans via a user-friendly web interface and API. Supports various image formats and offers configurations for image size, cropping, and upload limits. Additionally, DeepSeek OCR features four core recognition modes: Plain OCR for raw text extraction, Describe for intelligent image content descriptions, Find for keyword localization with visual bounding box returns, and Freeform for flexible image understanding tasks based on custom prompts.\n\n**Key Features:**\n- High-accuracy text recognition with DeepSeek-OCR, supporting images and multi-page PDF documents\n- Preserves document layout including tables, formulas, and structural formatting\n- Web frontend (React) and REST API (FastAPI) for easy usage and system integration\n- Export results to Markdown, HTML, DOCX, or JSON formats\n- Automatic extraction and embedding of images from PDF files\n- GPU acceleration and Docker deployment for fast and scalable processing\n\n**Learn More:**\n- [DeepSeek OCR App (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  de: "DeepSeek OCR ist ein leistungsstarkes Open-Source-OCR-Tool (Optical Character Recognition), das auf dem fortschrittlichen DeepSeek-AI-Modell basiert. Es ermöglicht die präzise Extraktion von Text aus Bildern und Dokumentenscans über eine benutzerfreundliche Weboberfläche und API. Unterstützt verschiedene Bildformate und bietet Konfigurationen für Bildgröße, Zuschneiden und Upload-Limits. Gleichzeitig bietet DeepSeek OCR vier grundlegende Erkennungsmodi: Plain OCR für die ursprüngliche Textextraktion, Describe für intelligente Bildinhaltsbeschreibungen, Find zur Unterstützung der Schlüsselwortlokalisierung mit Rückgabe visueller Begrenzungsrahmen und Freeform für flexible Bildverständnisaufgaben basierend auf benutzerdefinierten Hinweisen.\n\n**Hauptfunktionen:**\n- Hochgenaue Texterkennung mit DeepSeek-OCR, unterstützt Bilder und mehrseitige PDF-Dokumente\n- Behält das Dokumentenlayout einschließlich Tabellen, Formeln und strukturierter Formatierung bei\n- Web-Frontend (React) und REST-API (FastAPI) für einfache Nutzung und Systemintegration\n- Exportieren Sie Ergebnisse in Markdown, HTML, DOCX oder JSON-Formate\n- Automatische Extraktion und Einbettung von Bildern aus PDF-Dateien\n- GPU-Beschleunigung und Docker-Bereitstellung für schnelle und skalierbare Verarbeitung\n\n**Mehr Erfahren:**\n- [DeepSeek OCR App (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  el: "Το DeepSeek OCR είναι ένα ισχυρό εργαλείο OCR (Optical Character Recognition) ανοιχτού κώδικα βασισμένο στο προηγμένο μοντέλο DeepSeek-AI. Επιτρέπει την ακριβή εξαγωγή κειμένου από εικόνες και σαρώσεις εγγράφων μέσω φιλικής προς τον χρήστη web διεπαφής και API. Υποστηρίζει διάφορες μορφές εικόνων και προσφέρει ρυθμίσεις για μέγεθος εικόνας, περικοπή και όρια ανεβάσματος. Παράλληλα, το DeepSeek OCR διαθέτει τέσσερις βασικές λειτουργίες αναγνώρισης: Plain OCR για την αρχική εξαγωγή κειμένου, Describe για έξυπνες περιγραφές περιεχομένου εικόνας, Find για την υποστήριξη εντοπισμού λέξεων-κλειδιών με επιστροφή οπτικών πλαισίων οριοθέτησης και Freeform για ευέλικτες εργασίες κατανόησης εικόνας με βάση προσαρμοσμένες υποδείξεις.\n\n**Κύρια Χαρακτηριστικά:**\n- Υψηλή ακρίβεια αναγνώρισης κειμένου με DeepSeek-OCR, υποστηρίζει εικόνες και πολύσελιδα έγγραφα PDF\n- Διατηρεί τη διάταξη του εγγράφου συμπεριλαμβανομένων πινάκων, τύπων και δομημένης μορφοποίησης\n- Web Frontend (React) και REST API (FastAPI) για εύκολη χρήση και ενσωμάτωση συστήματος\n- Εξαγωγή αποτελεσμάτων σε μορφές Markdown, HTML, DOCX ή JSON\n- Αυτόματη εξαγωγή και ενσωμάτωση εικόνων από αρχεία PDF\n- Επιτάχυνση GPU και ανάπτυξη Docker για γρήγορη και κλιμακούμενη επεξεργασία\n\n**Μάθετε Περισσότερα:**\n- [DeepSeek OCR App (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  fr: "DeepSeek OCR est un outil OCR (Reconnaissance Optique de Caractères) open source puissant basé sur le modèle avancé DeepSeek-AI. Il permet l'extraction précise de texte à partir d'images et de scans de documents via une interface web conviviale et une API. Prend en charge divers formats d'images et offre des configurations pour la taille d'image, le recadrage et les limites de téléversement. De plus, DeepSeek OCR propose quatre modes de reconnaissance principaux : Plain OCR pour l'extraction de texte brut, Describe pour les descriptions intelligentes du contenu des images, Find pour la localisation de mots-clés avec retour de cadres de délimitation visuels, et Freeform pour des tâches flexibles de compréhension d'images basées sur des invites personnalisées.\n\n**Fonctionnalités Clés:**\n- Reconnaissance de texte haute précision avec DeepSeek-OCR, supportant les images et les documents PDF multipages\n- Préserve la mise en page du document y compris les tableaux, les formules et le formatage structurel\n- Frontend web (React) et API REST (FastAPI) pour une utilisation facile et l'intégration système\n- Exporter les résultats aux formats Markdown, HTML, DOCX ou JSON\n- Extraction et intégration automatiques d'images à partir de fichiers PDF\n- Accélération GPU et déploiement Docker pour un traitement rapide et évolutif\n\n**En Savoir Plus:**\n- [Application DeepSeek OCR (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  hr: "DeepSeek OCR je moćan alat za OCR (Optical Character Recognition) otvorenog koda temeljen na naprednom modelu DeepSeek-AI. Omogućuje precizno izvlačenje teksta iz slika i skeniranih dokumenata putem korisničkog web sučelja i API-ja. Podržava različite formate slika i nudi konfiguracije za veličinu slike, rezanje i limite učitavanja. Dodatno, DeepSeek OCR sadrži četiri osnovna načina prepoznavanja: Plain OCR za izvorno izvlačenje teksta, Describe za inteligentne opise sadržaja slike, Find za lokalizaciju ključnih riječi s povratom vizualnih okvira ograničenja i Freeform za fleksibilne zadatke razumijevanja slika temeljene na prilagođenim uputama.\n\n**Ključne Značajke:**\n- Visoka točnost prepoznavanja teksta s DeepSeek-OCR, podržava slike i višestranične PDF dokumente\n- Očuvava izgled dokumenta uključujući tablice, formule i strukturno formatiranje\n- Web frontend (React) i REST API (FastAPI) za lako korištenje i integraciju sustava\n- Izvoz rezultata u Markdown, HTML, DOCX ili JSON formate\n- Automatsko izvlačenje i ugradnja slika iz PDF datoteka\n- GPU ubrzanje i Docker implementacija za brzo i skalabilno procesiranje\n\n**Saznajte Više:**\n- [DeepSeek OCR aplikacija (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  it: "DeepSeek OCR è uno strumento OCR (Optical Character Recognition) open source potente basato sul modello avanzato DeepSeek-AI. Consente l'estrazione precisa del testo da immagini e scansioni di documenti tramite un'interfaccia web user-friendly e API. Supporta vari formati immagine e offre configurazioni per dimensione immagine, ritaglio e limiti di upload. Inoltre, DeepSeek OCR presenta quattro modalità di riconoscimento principali: Plain OCR per l'estrazione di testo grezzo, Describe per descrizioni intelligenti del contenuto delle immagini, Find per la localizzazione di parole chiave con restituzione di bounding box visivi e Freeform per compiti flessibili di comprensione delle immagini basati su prompt personalizzati.\n\n**Funzionalità Principali:**\n- Riconoscimento testo ad alta precisione con DeepSeek-OCR, supporta immagini e documenti PDF multipagina\n- Mantiene il layout del documento inclusi tabelle, formule e formattazione strutturale\n- Frontend web (React) e API REST (FastAPI) per facile utilizzo e integrazione del sistema\n- Esporta risultati in formati Markdown, HTML, DOCX o JSON\n- Estrazione e incorporamento automatici di immagini da file PDF\n- Accelerazione GPU e distribuzione Docker per elaborazione rapida e scalabile\n\n**Scopri di Più:**\n- [DeepSeek OCR App (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  ja: "DeepSeek OCRは、先進的なDeepSeek-AIモデルに基づく強力なオープンソースOCR（Optical Character Recognition）ツールです。ユーザー友好なWebインターフェースとAPI経由で、画像やドキュメントスキャンから正確にテキストを抽出します。さまざまな画像形式をサポートし、画像サイズ、クロップ、アップロード制限の設定を提供します。同時に、DeepSeek OCRには4つのコア認識モードがあります：生のテキスト抽出のためのPlain OCR、画像コンテンツのインテリジェントな説明のためのDescribe、視覚的境界ボックスを返すキーワードローカライゼーションのためのFind、カスタムプロンプトに基づく柔軟な画像理解タスクのためのFreeformです。\n\n**主な機能：**\n- DeepSeek-OCRによる高精度テキスト認識、画像と複数ページのPDFドキュメントをサポート\n- 表、数式、構造的フォーマットを含むドキュメントレイアウトを保持\n- 簡単な使用とシステム統合のためのWebフロントエンド（React）とREST API（FastAPI）\n- Markdown、HTML、DOCX、またはJSON形式で結果をエクスポート\n- PDFファイルからの画像の自動抽出と埋め込み\n- 高速でスケーラブルな処理のためのGPUアクセラレーションとDockerデプロイメント\n\n**詳細情報：**\n- [DeepSeek OCR アプリ (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  ko: "DeepSeek OCR은 고급 DeepSeek-AI 모델을 기반으로 한 강력한 오픈소스 OCR(광학 문자 인식) 도구입니다. 사용자 친화적인 웹 인터페이스와 API를 통해 이미지와 문서 스캔에서 정확한 텍스트 추출을 가능하게 합니다. 다양한 이미지 형식을 지원하며 이미지 크기, 자르기, 업로드 제한 등의 구성 옵션을 제공합니다. 또한 DeepSeek OCR은 네 가지 핵심 인식 모드를 제공합니다: 원시 텍스트 추출을 위한 Plain OCR, 이미지 콘텐츠의 지능적 설명을 위한 Describe, 시각적 경계 상자 반환과 함께 키워드 위치 지정을 위한 Find, 사용자 정의 프롬프트를 기반으로 한 유연한 이미지 이해 작업을 위한 Freeform입니다.\n\n**주요 기능:**\n- DeepSeek-OCR의 고정밀 텍스트 인식, 이미지와 다중 페이지 PDF 문서 지원\n- 표, 수식, 구조적 서식을 포함한 문서 레이아웃 보존\n- 쉬운 사용 및 시스템 통합을 위한 웹 프론트엔드(React) 및 REST API(FastAPI)\n- Markdown, HTML, DOCX 또는 JSON 형식으로 결과 내보내기\n- PDF 파일에서 이미지 자동 추출 및 임베딩\n- 빠르고 확장 가능한 처리를 위한 GPU 가속 및 Docker 배포\n\n**자세히 알아보기:**\n- [DeepSeek OCR 앱 (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  nb: "DeepSeek OCR er et kraftig open-source OCR-verktøy (Optical Character Recognition) basert på det avanserte DeepSeek-AI-modellen. Det muliggjør nøyaktig tekstuttrekking fra bilder og documentskanninger via et brukervennlig web-grensesnitt og API. Støtter ulike bildeformater og tilbyr konfigurasjoner for bildestørrelse, beskjæring og opplastingsgrenser. I tillegg har DeepSeek OCR fire kjerne gjenkjenningsmoduser: Plain OCR for rå tekstuttrekking, Describe for intelligente bildeinnholdsbeskrivelser, Find for nøkkelordlokalisering med visuelle avgrensningsbokser, og Freeform for fleksible bildeforståelsesoppgaver basert på tilpassede ledetekster.\n\n**Nøkkelegenskaper:**\n- Høy nøyaktighet tekstgjenkjenning med DeepSeek-OCR, støtter bilder og flersidige PDF-dokumenter\n- Bevarer dokumentlayout inkludert tabeller, formler og strukturert formatering\n- Web-frontend (React) og REST API (FastAPI) for enkel bruk og systemintegrasjon\n- Eksporter resultater til Markdown, HTML, DOCX eller JSON-formater\n- Automatisk uttrekking og innbygging av bilder fra PDF-filer\n- GPU-akselerasjon og Docker-distribusjon for rask og skalerbar behandling\n\n**Lær Mer:**\n- [DeepSeek OCR App (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  pt: "DeepSeek OCR é uma ferramenta OCR (Reconhecimento Ótico de Caracteres) open source poderosa baseada no modelo avançado DeepSeek-AI. Permite a extração precisa de texto de imagens e digitalizações de documentos via interface web amigável ao usuário e API. Suporta vários formatos de imagem e oferece configurações para tamanho de imagem, corte e limites de upload. Além disso, o DeepSeek OCR apresenta quatro modos de reconhecimento principais: Plain OCR para extração de texto bruto, Describe para descrições inteligentes de conteúdo de imagem, Find para localização de palavras-chave com retorno de caixas delimitadoras visuais e Freeform para tarefas flexíveis de compreensão de imagem baseadas em prompts personalizados.\n\n**Funcionalidades Principais:**\n- Reconhecimento de texto de alta precisão com DeepSeek-OCR, suportando imagens e documentos PDF de múltiplas páginas\n- Preserva o layout do documento incluindo tabelas, fórmulas e formatação estrutural\n- Frontend web (React) e API REST (FastAPI) para uso fácil e integração do sistema\n- Exporte resultados para formatos Markdown, HTML, DOCX ou JSON\n- Extração e incorporação automáticas de imagens de arquivos PDF\n- Aceleração GPU e implantação Docker para processamento rápido e escalável\n\n**Saiba Mais:**\n- [Aplicação DeepSeek OCR (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  ru: "DeepSeek OCR — мощный инструмент OCR (Optical Character Recognition) с открытым исходным кодом на базе продвинутой модели DeepSeek-AI. Позволяет точно извлекать текст из изображений и сканов документов через удобный веб-интерфейс и API. Поддерживает различные форматы изображений и предлагает настройки размера изображения, обрезки и лимитов загрузки. Кроме того, DeepSeek OCR имеет четыре основных режима распознавания: Plain OCR для извлечения необработанного текста, Describe для интеллектуальных описаний содержимого изображений, Find для локализации ключевых слов с возвратом визуальных ограничивающих рамок и Freeform для гибких задач понимания изображений на основе настраиваемых подсказок.\n\n**Ключевые Особенности:**\n- Высокоточное распознавание текста с DeepSeek-OCR, поддерживает изображения и многостраничные PDF-документы\n- Сохраняет макет документа, включая таблицы, формулы и структурное форматирование\n- Веб-фронтенд (React) и REST API (FastAPI) для простого использования и интеграции системы\n- Экспорт результатов в форматы Markdown, HTML, DOCX или JSON\n- Автоматическое извлечение и встраивание изображений из PDF-файлов\n- Ускорение GPU и развертывание Docker для быстрой и масштабируемой обработки\n\n**Узнать Больше:**\n- [Приложение DeepSeek OCR (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  sv: "DeepSeek OCR är ett kraftfullt open source OCR-verktyg (Optical Character Recognition) baserat på den avancerade DeepSeek-AI-modellen. Det möjliggör exakt textutvinning från bilder och documentskanningar via ett användarvänligt webbgränssnitt och API. Stödjer olika bildformat och erbjuder konfigurationer för bildstorlek, beskärning och uppladdningsgränser. Dessutom har DeepSeek OCR fyra kärnigenkänningslägen: Plain OCR för rå textextrahering, Describe för intelligenta bildinnehållsbeskrivningar, Find för nyckelordslokalisering med visuella begränsningsrutor, och Freeform för flexibla bildförståelseuppgifter baserade på anpassade uppmaningar.\n\n**Nyckelfunktioner:**\n- Hög noggrannhet textigenkänning med DeepSeek-OCR, stöder bilder och flersidiga PDF-dokument\n- Bevarar dokumentlayout inklusive tabeller, formler och strukturerad formatering\n- Webb-frontend (React) och REST API (FastAPI) för enkel användning och systemintegration\n- Exportera resultat till Markdown, HTML, DOCX eller JSON-format\n- Automatisk extrahering och inbäddning av bilder från PDF-filer\n- GPU-acceleration och Docker-distribution för snabb och skalbar bearbetning\n\n**Läs Mer:**\n- [DeepSeek OCR App (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  tr: "DeepSeek OCR, gelişmiş DeepSeek-AI modeline dayalı güçlü açık kaynaklı bir OCR (Optik Karakter Tanıma) aracıdır. Kullanıcı dostu web arayüzü ve API aracılığıyla görüntülerden ve belge taramalarından doğru metin çıkarma sağlar. Çeşitli görüntü formatlarını destekler ve görüntü boyutu, kırpma ve yükleme limitleri için yapılandırmalar sunar. Ayrıca, DeepSeek OCR dört temel tanıma modu sunar: ham metin çıkarma için Plain OCR, akıllı görüntü içeriği açıklamaları için Describe, görsel sınırlayıcı kutu dönüşleriyle anahtar kelime konumlandırma için Find ve özel istemlere dayalı esnek görüntü anlama görevleri için Freeform.\n\n**Temel Özellikler:**\n- DeepSeek-OCR ile yüksek doğrulukta metin tanıma, görüntüleri ve çok sayfalı PDF belgelerini destekler\n- Tablolar, formüller ve yapısal biçimlendirme dahil olmak üzere belge düzenini korur\n- Kolay kullanım ve sistem entegrasyonu için web ön yüz (React) ve REST API (FastAPI)\n- Sonuçları Markdown, HTML, DOCX veya JSON formatlarında dışa aktar\n- PDF dosyalarından görüntülerin otomatik çıkarılması ve gömülmesi\n- Hızlı ve ölçeklenebilir işlem için GPU hızlandırma ve Docker dağıtımı\n\n**Daha Fazla Bilgi:**\n- [DeepSeek OCR Uygulaması (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+  zh: "DeepSeek OCR 是一个基于先进 DeepSeek-AI 模型的强大开源 OCR（光学字符识别）工具。它通过用户友好的 Web 界面和 API，从图像和文档扫描中实现精确文本提取。支持多种图像格式，并提供图像大小、裁剪和上传限制配置。同时，DeepSeek OCR 内置四种核心识别模式：Plain OCR 用于原始文本抽取，Describe 提供智能图像内容描述，Find 支持关键词定位并返回视觉边界框，Freeform 则允许基于自定义提示进行灵活的图像理解任务。\n\n**主要功能：**\n- 使用 DeepSeek-OCR 的高精度文本识别，支持图像和多页 PDF 文档\n- 保留文档布局，包括表格、公式和结构化格式\n- Web 前端（React）和 REST API（FastAPI），便于使用和系统集成\n- 将结果导出为 Markdown、HTML、DOCX 或 JSON 格式\n- 从 PDF 文件中自动提取和嵌入图像\n- GPU 加速和 Docker 部署，实现快速和可扩展的处理\n\n**了解更多：**\n- [DeepSeek OCR 应用（GitHub）](https://github.com/rdumasia303/deepseek_ocr_app)"
+  uk: "DeepSeek OCR — потужний інструмент OCR (оптичного розпізнавання символів) з відкритим кодом на основі сучасної моделі DeepSeek-AI. Він точно витягує текст із зображень і сканів документів через зручний вебінтерфейс та API. Підтримує різні формати зображень і дає змогу налаштувати розмір зображення, обрізання та обмеження завантаження. Також є чотири основні режими розпізнавання: Plain OCR — для витягування звичайного тексту, Describe — для розумного опису вмісту зображення, Find — для пошуку за ключовими словами з поверненням рамок на зображенні, і Freeform — для гнучкого аналізу зображень за вашими власними запитами.\n\n**Основні можливості:**\n- Точне розпізнавання тексту за допомогою DeepSeek-OCR, підтримка зображень і багатосторінкових PDF-документів\n- Збереження розмітки документа, зокрема таблиць, формул і структури\n- Вебінтерфейс (React) і REST API (FastAPI) для зручної роботи та інтеграції\n- Експорт результатів у Markdown, HTML, DOCX або JSON\n- Автоматичне витягування та вбудовування зображень із PDF-файлів\n- Прискорення на GPU й розгортання через Docker для швидкої та масштабованої обробки\n\n**Докладніше:**\n- [DeepSeek OCR App (GitHub)](https://github.com/rdumasia303/deepseek_ocr_app)"
+notes:
+  en: "The first run will download the model (~5-10GB), which may take some time."
+  de: Der erste Start lädt das Modell (~5–10 GB) herunter; das kann einige Zeit dauern.
+  el: "Η πρώτη εκτέλεση θα κατεβάσει το μοντέλο (~5-10GB), οπότε ίσως χρειαστεί λίγη ώρα."
+  fr: "Lors de la première exécution, le modèle (~5-10 Go) sera téléchargé, ce qui peut prendre un certain temps."
+  hr: "Prvo pokretanje preuzet će model (~5-10 GB), što može potrajati neko vrijeme."
+  it: "Al primo avvio verrà scaricato il modello (~5-10 GB), operazione che può richiedere un po' di tempo."
+  ja: 初回起動時にモデル（約5～10GB）がダウンロードされるため、完了まで時間がかかる場合があります。
+  ko: 첫 실행 시 모델(~5~10GB)을 다운로드하므로 다소 시간이 걸릴 수 있습니다.
+  nb: "Første gang du kjører appen lastes modellen ned (~5–10 GB), noe som kan ta litt tid."
+  pt: "Na primeira execução será transferido o modelo (~5-10GB), o que pode demorar algum tempo."
+  ru: При первом запуске будет загружена модель (~5–10 ГБ); это может занять некоторое время.
+  sv: "Vid första körningen laddas modellen ned (~5–10 GB), vilket kan ta en stund."
+  tr: İlk çalıştırmada model (~5-10GB) indirileceği için biraz zaman alabilir.
+  zh: 首次运行会下载模型（约 5-10GB），可能需要一些时间。
+  uk: "Під час першого запуску буде завантажено модель (~5–10 ГБ), це може зайняти деякий час."
+category: ai
+developer: rdumasia303
+website: https://github.com/rdumasia303/deepseek_ocr_app
+source: https://github.com/rdumasia303/deepseek_ocr_app
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyMzBfNzApIj48cGF0aCBkPSJNMjIwLjAzMyA3MC44MDE4QzIxOC4wNDIgNjkuODMxIDIxNy4xODYgNzEuNjgzIDIxNi4wMjEgNzIuNjIzOUMyMTUuNjI4IDcyLjkzMjYgMjE1LjI4OSA3My4zMzU4IDIxNC45NTUgNzMuNjg5M0MyMTIuMDQzIDc2LjgwNTkgMjA4LjY0OCA3OC44NDcxIDIwNC4yMTcgNzguNTk4MUMxOTcuNzI1IDc4LjI0NDcgMTkyLjE4OSA4MC4yODA5IDE4Ny4yOTUgODUuMjU0NEMxODYuMjU0IDc5LjEyNTkgMTgyLjc5NCA3NS40NjY2IDE3Ny41MzcgNzMuMTE2OEMxNzQuNzc5IDcxLjg5NyAxNzEuOTk2IDcwLjY3NzMgMTcwLjA3NCA2OC4wMjM4QzE2OC43MjUgNjYuMTQxOSAxNjguMzYxIDY0LjA0MDkgMTY3LjY3OSA2MS45Njk5QzE2Ny4yNTYgNjAuNzIwMyAxNjYuODIzIDU5LjQzNTggMTY1LjM4OSA1OS4yMjE3QzE2My44MzEgNTguOTcyOCAxNjMuMjE5IDYwLjI4NzEgMTYyLjYxMSA2MS4zODI0QzE2MC4xNTcgNjUuODU4MSAxNTkuMjE2IDcwLjgwMTggMTU5LjMwMSA3NS44MDUyQzE1OS41MTUgODcuMDQ2NyAxNjQuMjY0IDk1Ljk5ODEgMTczLjY4MyAxMDIuMzc2QzE3NC43NTkgMTAzLjEwMiAxNzUuMDMzIDEwMy44NDQgMTc0LjY5NCAxMDQuOTFDMTc0LjA1MiAxMDcuMSAxNzMuMjkgMTA5LjIzMSAxNzIuNjA4IDExMS40MjZDMTcyLjE4NSAxMTIuODMgMTcxLjU0MyAxMTMuMTM5IDE3MC4wNDQgMTEyLjUyMkMxNjQuODcxIDExMC4zNjEgMTYwLjQwMSAxMDcuMTY1IDE1Ni40NTggMTAzLjI4N0MxNDkuNzU3IDk2LjgwNDYgMTQzLjY5OCA4OS42NDA1IDEzNi4xNCA4NC4wMzQ3QzEzNC4zNjMgODIuNzIwMyAxMzIuNTk2IDgxLjUwMDYgMTMwLjc1OSA4MC4zNDU2QzEyMy4wNDcgNzIuODQzIDEzMS43NjkgNjYuNjc5NiAxMzMuNzg2IDY1Ljk1NzdDMTM1LjkwMSA2NS4yMDA5IDEzNC41MTcgNjIuNTc3MyAxMjcuNjk3IDYyLjYwNzFDMTIwLjg4MSA2Mi42MzcgMTE0LjYzMyA2NC45MjIxIDEwNi42ODMgNjcuOTY0QzEwNS41MTggNjguNDI3IDEwNC4yOTggNjguNzY1NiAxMDMuMDM4IDY5LjAyOTRDOTUuODE5NCA2Ny42NzAzIDg4LjMyNjggNjcuMzYxNiA4MC40OTA2IDY4LjI0MjhDNjUuNzQ0MiA2OS44OTU3IDUzLjk2NSA3Ni44NzU2IDQ1LjMwMjQgODguNzk0MUMzNC45MDIzIDEwMy4xMDIgMzIuNDUyOCAxMTkuMzcyIDM1LjQ0OTkgMTM2LjM1OUMzOC42MDEzIDE1NC4yMzcgNDcuNzE3IDE2OS4wNTggNjEuNzM2NSAxODAuNjM4Qzc2LjI2MzggMTkyLjYzNiA5My4wMDE2IDE5OC41MTYgMTEyLjA5NCAxOTcuMzkxQzEyMy42ODkgMTk2LjcyOCAxMzYuNjAzIDE5NS4xNyAxNTEuMTY2IDE4Mi44MzNDMTU0Ljg0IDE4NC42NTYgMTU4LjY5MyAxODUuMzgyIDE2NS4wOTEgMTg1LjkzNUMxNzAuMDE0IDE4Ni4zOTggMTc0Ljc1NCAxODUuNjg2IDE3OC40MjggMTg0LjkyOUMxODQuMTc4IDE4My43MSAxODMuNzggMTc4LjM4MyAxODEuNzA0IDE3Ny4zOTdDMTY0Ljg0MiAxNjkuNTQxIDE2OC41NDEgMTcyLjczNyAxNjUuMTc1IDE3MC4xNThDMTczLjc0MyAxNTkuOTk3IDE4Ni42NTggMTQ5LjQ1MiAxOTEuNzExIDExNS4zQzE5Mi4xMDQgMTEyLjU4MiAxOTEuNzY1IDExMC44ODQgMTkxLjcxMSAxMDguNjc4QzE5MS42ODEgMTA3LjM0OSAxOTEuOTggMTA2LjgyNiAxOTMuNTA4IDEwNi42NzJDMTk3LjczIDEwNi4xOTQgMjAxLjgzMiAxMDUuMDM0IDIwNS41OTYgMTAyLjk1M0MyMTYuNTE5IDk2Ljk3ODggMjIwLjkyIDg3LjE3NjEgMjIxLjk2IDc1LjQwNjlDMjIyLjExNSA3My42MTQ2IDIyMS45MyA3MS43NDc3IDIyMC4wMzggNzAuODA2OEwyMjAuMDMzIDcwLjgwMThaTTEyNC44NDkgMTc2LjY3QzEwOC41MDUgMTYzLjgxIDEwMC41ODQgMTU5LjU3OSA5Ny4zMTMgMTU5Ljc2M0M5NC4yNTYyIDE1OS45MzIgOTQuODAzOCAxNjMuNDM3IDk1LjQ3NTkgMTY1LjcyMkM5Ni4xNzc5IDE2Ny45NzggOTcuMDk4OSAxNjkuNTM2IDk4LjM4ODMgMTcxLjUxMkM5OS4yNzQ1IDE3Mi44MjcgOTkuODg2OSAxNzQuNzgzIDk3LjUwMjIgMTc2LjIzN0M5Mi4yMzk5IDE3OS41MTMgODMuMDg5MyAxNzUuMTQyIDgyLjY1NjIgMTc0LjkyM0M3Mi4wMTIxIDE2OC42NTUgNjMuMTEwNSAxNjAuMzY1IDU2LjgzMjYgMTQ5LjAyOUM1MC43Nzg4IDEzOC4xMTYgNDcuMjU4OSAxMjYuNDEyIDQ2LjY4MTQgMTEzLjkyMUM0Ni41MjcxIDExMC44OTQgNDcuNDEzMyAxMDkuODI4IDUwLjQxMDMgMTA5LjI5MUM1NC4zNTMzIDEwOC41NjQgNTguNDMwNyAxMDguNDEgNjIuMzczNyAxMDguOTgyQzc5LjA0NjggMTExLjQyMiA5My4yNDU1IDExOC44OTQgMTA1LjEzOSAxMzAuNzAzQzExMS45MzUgMTM3LjQ0OSAxMTcuMDczIDE0NS40OTUgMTIyLjM3IDE1My4zNTFDMTI3Ljk5NiAxNjEuNzA1IDEzNC4wNTkgMTY5LjY1NSAxNDEuNzcxIDE3Ni4xNzJDMTQ0LjQ4OSAxNzguNDU3IDE0Ni42NjUgMTgwLjIgMTQ4Ljc0MSAxODEuNDg0QzE0Mi40NzMgMTgyLjE4MSAxMzIuMDAzIDE4Mi4zMzYgMTI0Ljg0OSAxNzYuNjY1VjE3Ni42N1pNMTMyLjY4IDEyNi4yMjhDMTMyLjY4IDEyNC44ODMgMTMzLjc1MSAxMjMuODE4IDEzNS4xMDUgMTIzLjgxOEMxMzUuNDA0IDEyMy44MTggMTM1LjY4MiAxMjMuODc4IDEzNS45MzEgMTIzLjk3MkMxMzYuMjY1IDEyNC4wOTcgMTM2LjU3NCAxMjQuMjgxIDEzNi44MTMgMTI0LjU2QzEzNy4yNDYgMTI0Ljk3OCAxMzcuNDkgMTI1LjU5NSAxMzcuNDkgMTI2LjIyOEMxMzcuNDkgMTI3LjU3MiAxMzYuNDE5IDEyOC42MzcgMTM1LjA3NSAxMjguNjM3QzEzMy43MzEgMTI4LjYzNyAxMzIuNjggMTI3LjU3MiAxMzIuNjggMTI2LjIyOFpNMTU3LjAwNSAxMzguNzM0QzE1NS40NDcgMTM5LjM2NiAxNTMuODg5IDEzOS45MjQgMTUyLjM5IDEzOS45ODNDMTUwLjA2NSAxNDAuMDkzIDE0Ny41MjYgMTM5LjE0NyAxNDYuMTQyIDEzNy45OTJDMTQ0LjAwMiAxMzYuMiAxNDIuNDc4IDEzNS4xOTkgMTQxLjgyNiAxMzIuMDQ4QzE0MS41NTcgMTMwLjcwMyAxNDEuNzExIDEyOC42MzcgMTQxLjk1IDEyNy40NDdDMTQyLjUwOCAxMjQuODgzIDE0MS44OTEgMTIzLjI0NSAxNDAuMDg4IDEyMS43NTJDMTM4LjYxNSAxMjAuNTMyIDEzNi43NTMgMTIwLjIwOSAxMzQuNzAyIDEyMC4yMDlDMTMzLjkzNSAxMjAuMjA5IDEzMy4yMzMgMTE5Ljg3IDEzMi43MSAxMTkuNTkxQzEzMS44NTQgMTE5LjE1OCAxMzEuMTUyIDExOC4wOTMgMTMxLjgyNCAxMTYuNzgzQzEzMi4wMzggMTE2LjM2NSAxMzMuMDg0IDExNS4zMyAxMzMuMzI4IDExNS4xNDVDMTM2LjEwNiAxMTMuNTU3IDEzOS4zMTcgMTE0LjA4IDE0Mi4yODkgMTE1LjI3QzE0NS4wNDcgMTE2LjM5NSAxNDcuMTIzIDExOC40NjYgMTUwLjExNSAxMjEuMzg0QzE1My4xODIgMTI0LjkxOCAxNTMuNzMgMTI1LjkwOSAxNTUuNDcyIDEyOC41NDhDMTU2Ljg0NiAxMzAuNjM0IDE1OC4xMDYgMTMyLjc2NCAxNTguOTYyIDEzNS4yMDRDMTU5LjQ4IDEzNi43MTcgMTU4LjgwOCAxMzcuOTY3IDE1NyAxMzguNzM5TDE1Ny4wMDUgMTM4LjczNFoiIGZpbGw9IiM0RDZCRkUiLz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjMwXzcwIj48cmVjdCB3aWR0aD0iMTg3Ljc0IiBoZWlnaHQ9IjEzOC4zMzMiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNC4yNiA1OS4xOTE0KSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+web:
+  service: deepseek-ocr-frontend
+  port: 80
+settings:
+  - name: DEEPSEEK_OCR_BACKEND_PORT_8000
+    type: port
+    default: 22523
+    label:
+      en: Backend API Port
+      de: Backend API Port
+      el: Θύρα API Backend
+      fr: Port API Backend
+      hr: Backend API Port
+      it: Porta API Backend
+      ja: Backend APIポート
+      ko: Backend API 포트
+      nb: Backend API Port
+      pt: Porta API Backend
+      ru: Порт API Backend
+      sv: Backend API Port
+      tr: Backend API Portu
+      zh: Backend API端口
+      uk: Порт API бекенда
+    advanced: true
+  - name: API_HOST
+    type: text
+    default: 0.0.0.0
+    label:
+      en: API Host
+      de: API-Host
+      el: Κεντρικός Υπολογιστής API
+      fr: Hôte API
+      hr: API Host
+      it: Host API
+      ja: APIホスト
+      ko: API 호스트
+      nb: API Vert
+      pt: Anfitrião API
+      ru: Хост API
+      sv: API Värd
+      tr: API Ana Bilgisayarı
+      zh: API主机
+      uk: Хост API
+  - name: API_PORT
+    type: text
+    default: "8000"
+    label:
+      en: API Port
+      de: API-Port
+      el: Θύρα API
+      fr: Port API
+      hr: API Port
+      it: Porta API
+      ja: APIポート
+      ko: API 포트
+      nb: API Port
+      pt: Porta API
+      ru: Порт API
+      sv: API Port
+      tr: API Portu
+      zh: API端口
+      uk: Порт API
+  - name: FRONTEND_PORT
+    type: text
+    default: "3000"
+    label:
+      en: Frontend Port
+      de: Frontend-Port
+      el: Θύρα Frontend
+      fr: Port Frontend
+      hr: Frontend Port
+      it: Porta Frontend
+      ja: フロントエンドポート
+      ko: 프론트엔드 포트
+      nb: Frontend Port
+      pt: Porta Frontend
+      ru: Порт Frontend
+      sv: Frontend Port
+      tr: Frontend Portu
+      zh: 前端端口
+      uk: Порт фронтенда
+  - name: MODEL_NAME
+    type: text
+    default: deepseek-ai/DeepSeek-OCR
+    label:
+      en: Model Name
+      de: Modellname
+      el: Όνομα Μοντέλου
+      fr: Nom du Modèle
+      hr: Naziv Modela
+      it: Nome Modello
+      ja: モデル名
+      ko: 모델 이름
+      nb: Modellnavn
+      pt: Nome do Modelo
+      ru: Имя модели
+      sv: Modellnamn
+      tr: Model Adı
+      zh: 模型名称
+      uk: Назва моделі
+  - name: HF_HOME
+    type: text
+    default: /models
+    label:
+      en: Hugging Face Home Directory
+      de: Hugging Face Home-Verzeichnis
+      el: Κατάλογος Home Hugging Face
+      fr: Répertoire Hugging Face Home
+      hr: Hugging Face Home Direktorij
+      it: Directory Home Hugging Face
+      ja: Hugging Faceホームディレクトリ
+      ko: Hugging Face 홈 디렉터리
+      nb: Hugging Face Hjemmekatalog
+      pt: Diretório Home Hugging Face
+      ru: Каталог Hugging Face Home
+      sv: Hugging Face Hemma-katalog
+      tr: Hugging Face Ana Dizini
+      zh: Hugging Face主目录
+      uk: Домашня тека Hugging Face
+  - name: MAX_UPLOAD_SIZE_MB
+    type: text
+    default: "100"
+    label:
+      en: Max Upload Size (MB)
+      de: Maximale Upload-Größe (MB)
+      el: Μέγιστο Μέγεθος Ανεβάσματος (MB)
+      fr: Taille Maximale de Téléversement (MB)
+      hr: Maks. Veličina Učitavanja (MB)
+      it: Dimensione Max Upload (MB)
+      ja: 最大アップロードサイズ (MB)
+      ko: 최대 업로드 크기 (MB)
+      nb: Maks Opplastingsstørrelse (MB)
+      pt: Tamanho Máx. de Upload (MB)
+      ru: Максимальный размер загрузки (MB)
+      sv: Max Upplastningsstorlek (MB)
+      tr: Maksimum Yükleme Boyutu (MB)
+      zh: 最大上传大小 (MB)
+      uk: Макс. розмір завантаження (МБ)
+  - name: BASE_SIZE
+    type: text
+    default: "1024"
+    label:
+      en: Base Size
+      de: Basisgröße
+      el: Βασικό Μέγεθος
+      fr: Taille de Base
+      hr: Osnovna Veličina
+      it: Dimensione Base
+      ja: ベースサイズ
+      ko: 기본 크기
+      nb: Basestørrelse
+      pt: Tamanho Base
+      ru: Базовый размер
+      sv: Basstorlek
+      tr: Temel Boyut
+      zh: 基础大小
+      uk: Базовий розмір
+  - name: IMAGE_SIZE
+    type: text
+    default: "640"
+    label:
+      en: Image Size
+      de: Bildgröße
+      el: Μέγεθος Εικόνας
+      fr: "Taille d'Image"
+      hr: Veličina Slike
+      it: Dimensione Immagine
+      ja: 画像サイズ
+      ko: 이미지 크기
+      nb: Bilde Størrelse
+      pt: Tamanho da Imagem
+      ru: Размер изображения
+      sv: Bildstorlek
+      tr: Görüntü Boyutu
+      zh: 图像大小
+      uk: Розмір зображення
+  - name: CROP_MODE
+    type: text
+    default: "true"
+    label:
+      en: Crop Mode
+      de: Zuschneidungsmodus
+      el: Λειτουργία Περιστροφής
+      fr: Mode Recadrage
+      hr: Način Orezivanja
+      it: Modalità Ritaglio
+      ja: クロップモード
+      ko: 자르기 모드
+      nb: Beskjæringsmodus
+      pt: Modo de Corte
+      ru: Режим обрезки
+      sv: Beskärningsläge
+      tr: Kırpma Modu
+      zh: 裁剪模式
+      uk: Режим обрізання
+  - name: WEB_PORT
+    type: port
+    default: 23000
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу

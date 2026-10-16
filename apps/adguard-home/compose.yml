@@ -1,0 +1,22 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  adguard-home:
+    image: adguard/adguardhome:v0.107.79
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${PORT_53:-53}:53"
+      - "${PORT_53:-53}:53/udp"
+      - "${WEB_PORT:-3001}:3000"
+      - "${PORT_853:-853}:853"
+      - "${PORT_784:-784}:784/udp"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/opt/adguardhome/work"
+        target: /opt/adguardhome/work
+      - type: bind
+        source: "${APP_DATA:-.}/opt/adguardhome/conf"
+        target: /opt/adguardhome/conf

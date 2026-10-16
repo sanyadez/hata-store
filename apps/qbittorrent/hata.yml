@@ -1,0 +1,67 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: qBittorrent
+tagline:
+  en: P2P bittorrent download
+  zh: P2P BT 下载
+  ar: مُنزِّل BitTorrent مجاني
+  de: Kostenloser BitTorrent-Downloader
+  es: Descargador de BitTorrent gratuito
+  fr: Téléchargeur BitTorrent gratuit
+  hu: Ingyenes BitTorrent letöltő
+  it: Downloader BitTorrent gratuito
+  ru: Бесплатный загрузчик BitTorrent
+  pl: Darmowy downloader BitTorrent
+  pt: Downloader BitTorrent gratuito
+  sv: Gratis BitTorrent-downladdare
+  uk: Завантаження через торенти (P2P BitTorrent)
+description:
+  en: "**Elevate Your Home Media Experience**. qBittorrent transforms your home media setup with a polished interface reminiscent of µTorrent, minus the ads. Unlike traditional download tools, it offers a streamlined, efficient, and ad-free experience. This makes it a perfect fit for those seeking a hassle-free way to manage and enjoy their media collections at home.\n\n**Feature-Rich and User-Friendly**. With qBittorrent, you gain access to a well-integrated and extensible search engine, allowing simultaneous searches across multiple torrent sites, and category-specific searches for books, music, and software. Its support for RSS feeds with advanced filters, magnet links, encrypted connections, and more, ensures you have complete control over your downloads. Available on all major platforms and in around 70 languages, qBittorrent is both versatile and accessible."
+  zh: "**提升家庭媒体体验**。qBittorrent 通过一个类似于 µTorrent 的精美界面来改造您的家庭媒体设置，但没有广告。与传统下载工具不同，它提供了简洁、高效且无广告的体验，非常适合那些希望在家中轻松管理和享受媒体收藏的人。\n\n**功能丰富且用户友好**。使用 qBittorrent，您可以访问一个集成良好的可扩展搜索引擎，允许同时在多个种子站点进行搜索，并针对书籍、音乐和软件进行分类搜索。它支持带有高级过滤器的 RSS 提要、磁力链接、加密连接等功能，确保您完全控制下载过程。qBittorrent 在所有主要平台上可用，并支持约 70 种语言，既多功能又易于访问。"
+  ar: يهدف مشروع qBittorrent إلى توفير بديل مفتوح المصدر لـ µTorrent.
+  de: "Das qBittorrent-Projekt zielt darauf ab, eine Open-Source-Software-Alternative zu µTorrent zu bieten."
+  es: El objetivo del proyecto qBittorrent es proporcionar una alternativa de software de código abierto a µTorrent.
+  fr: Le projet qBittorrent vise à fournir une alternative open source à µTorrent.
+  hu: "A qBittorrent projekt célja, hogy nyílt forráskódú szoftver alternatívát nyújtson a µTorrent számára."
+  it: "Il progetto qBittorrent mira a fornire un'alternativa open source a µTorrent."
+  ru: Проект qBittorrent стремится предоставить альтернативу с открытым исходным кодом для µTorrent.
+  pl: Projekt qBittorrent ma na celu zapewnienie otwartoźródłowej alternatywy dla µTorrent.
+  pt: O objetivo do projeto qBittorrent é fornecer uma alternativa de software de código aberto ao µTorrent.
+  sv: qBittorrent-projektets mål är att erbjuda en öppen källkodsalternativ till µTorrent.
+  uk: "**Зручні домашні медіа**. qBittorrent оновлює ваші домашні медіа завдяки охайному інтерфейсу, схожому на µTorrent, але без реклами. На відміну від звичайних завантажувачів, він простий, ефективний і не показує реклами. Тому він ідеально підходить для тих, хто хоче без клопоту керувати своїми медіаколекціями вдома.\n\n**Багато можливостей і зручність**. У qBittorrent є добре інтегрований розширюваний пошук: можна одночасно шукати на багатьох торентових сайтах і за окремими категоріями — книги, музика, програми. Підтримка RSS-стрічок із розширеними фільтрами, magnet-посилань, шифрованих з’єднань та іншого дає вам повний контроль над завантаженнями. Застосунок доступний на всіх основних платформах приблизно 70 мовами, тож він і гнучкий, і зручний."
+notes:
+  en: "Default Account\n\n| Username | Password | |----------|----------| | `admin`    | Get from log |\n\nPasswords need to be viewed in the log\n\nDefault Accessible Path in qBittorrent\n\n| Name | Value | | ---- | ----- | | DATA Path | `/DATA` | | Downloads Path | `/DATA/Downloads` | | Media Path | `/DATA/Media` |"
+  zh: "默认账号\n\n| Username | Password   | | -------- | ---------- | | admin    | 从日志中获取 |\n\n需要在日志中查看密码\n\nqBittorrent 默认可访问路径\n\n| 名称 | 值 | | ---- | ----- | | DATA 路径 | `/DATA` | | 下载路径 | `/DATA/Downloads` | | 媒体路径 | `/DATA/Media` |\n\n使用教程\n1. [QB使用教程](https://blog.scio.icu/index.php/archives/12/#cl-13)\n\nFQA:\n1. 下载没有速度怎么办 可以添加tracker。教程：https://www.bilibili.com/read/cv5734112/\n\n2. 如何重置密码 WIP"
+  uk: "Обліковий запис за промовчанням\n\n| Ім'я користувача | Пароль | |----------|----------| | `admin`    | Дивіться в журналі |\n\nПароль потрібно подивитися в журналі\n\nТеки за промовчанням, доступні в qBittorrent\n\n| Назва | Значення | | ---- | ----- | | Тека DATA | `/DATA` | | Тека завантажень | `/DATA/Downloads` | | Тека медіа | `/DATA/Media` |"
+category: media
+developer: qBittorrent
+website: https://www.qbittorrent.org
+source: https://github.com/qbittorrent/qBittorrent
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk1NikiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMV8xMjUxXzg5NTYpIj48cGF0aCBkPSJNMjU2IDBIMFYyNTZIMjU2VjBaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMTI1MV84OTU2KSIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTc4LjIyNCA4My4wOTk3QzE4OS4zMzQgODMuMDk5NyAxOTcuOTQ5IDg2LjkwNTcgMjA0LjA2OSA5NC41MTc1QzIxMC4yNDEgMTAyLjA3OCAyMTMuMzI3IDExMi44MDIgMjEzLjMyNyAxMjYuNjg4QzIxMy4zMjcgMTQwLjU3NSAyMTAuMjE1IDE1MS4zNzYgMjAzLjk5MiAxNTkuMDkxQzE5Ny44MiAxNjYuNzU0IDE4OS4yMzEgMTcwLjU4NiAxNzguMjI0IDE3MC41ODZDMTcyLjcyMSAxNzAuNTg2IDE2Ny42ODEgMTY5LjU4MyAxNjMuMTAzIDE2Ny41NzdDMTU4LjU3NyAxNjUuNTIgMTU0Ljc3MSAxNjIuMzgyIDE1MS42ODUgMTU4LjE2NUgxNTAuNzZMMTQ4LjA2IDE2OS4wNDNIMTM4Ljg3OVY0OUgxNTEuNjg1Vjc4LjE2MjVDMTUxLjY4NSA4NC42OTQzIDE1MS40OCA5MC41NTc2IDE1MS4wNjggOTUuNzUyM0gxNTEuNjg2QzE1Ny42NTIgODcuMzE3MyAxNjYuNDk4IDgzLjA5OTcgMTc4LjIyNCA4My4wOTk3Wk0xNzYuMzczIDkzLjgyMzJDMTY3LjYzIDkzLjgyMzIgMTYxLjMyOSA5Ni4zNDM0IDE1Ny40NzIgMTAxLjM4NEMxNTMuNjE0IDEwNi4zNzMgMTUxLjY4NSAxMTQuODA4IDE1MS42ODUgMTI2LjY4OEMxNTEuNjg1IDEzOC41NjkgMTUzLjY2NiAxNDcuMDgxIDE1Ny42MjYgMTUyLjIyNUMxNjEuNTg2IDE1Ny4zMTYgMTY3LjkzOCAxNTkuODYyIDE3Ni42ODEgMTU5Ljg2MkMxODQuNTUxIDE1OS44NjIgMTkwLjQxNCAxNTcuMDA4IDE5NC4yNzEgMTUxLjI5OUMxOTguMTI5IDE0NS41MzggMjAwLjA1NyAxMzcuMjg0IDIwMC4wNTcgMTI2LjUzNEMyMDAuMDU3IDExNS41MjggMTk4LjEyOSAxMDcuMzI0IDE5NC4yNzEgMTAxLjkyNEMxOTAuNDE0IDk2LjUyMzQgMTg0LjQ0OCA5My44MjMyIDE3Ni4zNzMgOTMuODIzMloiIGZpbGw9IndoaXRlIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03OS4zMTg1IDE1OS44NjNDODcuODU2MyAxNTkuODYzIDk0LjA3OTYgMTU3LjU3NCA5Ny45ODg1IDE1Mi45OTZDMTAxLjg5NyAxNDguNDE5IDEwMy45OCAxNDAuNzA0IDEwNC4yMzcgMTI5Ljg1MlYxMjYuOTk3QzEwNC4yMzcgMTE1LjE2OCAxMDIuMjMyIDEwNi42NTYgOTguMjIgMTAxLjQ2MUM5NC4yMDgzIDk2LjI2NjQgODcuODU2NCA5My42NjkxIDc5LjE2NDIgOTMuNjY5MUM3MS42NTUgOTMuNjY5MSA2NS44OTQ2IDk2LjYwMDcgNjEuODgzIDEwMi40NjRDNTcuOTIyNiAxMDguMjc2IDU1Ljk0MjUgMTE2LjUwNSA1NS45NDI1IDEyNy4xNTJDNTUuOTQyNSAxMzcuNzk4IDU3Ljg5NyAxNDUuOTI0IDYxLjgwNiAxNTEuNTNDNjUuNzY2MSAxNTcuMDg1IDcxLjYwMzYgMTU5Ljg2MiA3OS4zMTg1IDE1OS44NjJWMTU5Ljg2M1pNNzcuMzg5NyAxNzAuNTg2QzY2LjQ4NjIgMTcwLjU4NiA1Ny45NzQyIDE2Ni43NTQgNTEuODUzNyAxNTkuMDkxQzQ1LjczMzIgMTUxLjQyOCA0Mi42NzMgMTQwLjczIDQyLjY3MyAxMjYuOTk3QzQyLjY3MyAxMTMuMTYyIDQ1Ljc1OSAxMDIuMzYxIDUxLjkzMSA5NC41OTQ4QzU4LjEwMjYgODYuODI4NSA2Ni42OTE4IDgyLjk0NTMgNzcuNjk4NSA4Mi45NDUzQzg5LjI3MDYgODIuOTQ1MyA5OC4xNjg0IDg3LjMxNzEgMTA0LjM5MiA5Ni4wNjA2SDEwNS4wODZMMTA2LjkzOCA4NC40ODgzSDExNy4wNDRWMjA3SDEwNC4yMzdWMTcwLjgxOEMxMDQuMjM3IDE2NS42NzQgMTA0LjUyIDE2MS4zMDIgMTA1LjA4NiAxNTcuNzAySDEwNC4wODNDOTguMTY4NSAxNjYuMjkxIDg5LjI3MDcgMTcwLjU4NiA3Ny4zODk3IDE3MC41ODZaIiBmaWxsPSIjQzhFOEZGIi8+PC9nPjwvZz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTI1MV84OTU2IiB4MT0iMCIgeTE9IjAiIHgyPSIyNTYiIHkyPSIyNTYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjNDhBN0Y3Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMEI2MUJEIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9ImNsaXAwXzEyNTFfODk1NiI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9ImNsaXAxXzEyNTFfODk1NiI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: qbittorrent
+  port: 8080
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8181
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DATA_DIR
+    type: folder
+    default: "${DATA_ROOT}"
+    label:
+      en: Data folder
+      uk: Тека даних
+  - name: UMASK
+    type: text
+    default: "002"
+    label:
+      en: Run qBittorrent as specified UMASK
+      zh: 以指定的 UMASK 运行 qBittorrent
+      uk: "UMASK, з яким запускати qBittorrent"

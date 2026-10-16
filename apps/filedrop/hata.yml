@@ -1,0 +1,51 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: FileDrop
+tagline:
+  en: "FileDrop is a free, open source file sharing service"
+  zh: FileDrop 是一项免费的开放源代码文件共享服务。
+  ar: FileDrop هي خدمة مشاركة ملفات مجانية ومفتوحة المصدر
+  de: FileDrop ist ein kostenloser Open-Source-Dienst zur gemeinsamen Nutzung von Dateien.
+  es: FileDrop es un servicio gratuito de código abierto para compartir archivos.
+  fr: "FileDrop est un service de partage de fichiers, open source et gratuit"
+  hu: "A FileDrop egy ingyenes, nyílt forráskódú fájlmegosztó szolgáltatás."
+  it: FileDrop è un servizio di condivisione di file gratuito e open source.
+  ru: FileDrop - это бесплатный файлообменный сервис с открытым исходным кодом.
+  pl: FileDrop to darmowa usługa udostępniania plików typu open source.
+  pt: O FileDrop é um serviço de partilha de ficheiros gratuito e de código aberto.
+  sv: FileDrop är en gratis fildelningstjänst med öppen källkod.
+  ko: FileDrop은 무료 오픈 소스 파일 공유 서비스입니다.
+  uk: FileDrop — безкоштовний сервіс обміну файлами з відкритим кодом
+description:
+  en: "FileDrop is a self-hosted file sharing service that allows you to easily share files with family, friends, or colleagues. It's been designed to be easy to use and light on resources."
+  zh: FileDrop 是一种自托管文件共享服务，可让您与家人、朋友或同事轻松共享文件。它的设计简单易用，占用资源少。
+  ar: FileDrop هي خدمة مشاركة ملفات مستضافة ذاتيًا تتيح لك مشاركة الملفات بسهولة مع العائلة أو الأصدقاء أو الزملاء. لقد تم تصميمه ليكون سهل الاستخدام وخفيفًا على الموارد.
+  de: "FileDrop ist ein selbst gehosteter Dateifreigabedienst, mit dem Sie Dateien ganz einfach mit Familie, Freunden oder Kollegen austauschen können. Er ist benutzerfreundlich und ressourcenschonend gestaltet."
+  es: "FileDrop es un servicio de intercambio de archivos autoalojado que te permite compartir archivos fácilmente con familiares, amigos o compañeros de trabajo. Se ha diseñado para que sea fácil de usar y consuma pocos recursos."
+  fr: "FileDrop est un service de partage de fichiers qui vous permet de partager facilement des fichiers avec votre famille, vos amis ou vos collègues. Il a été conçu pour être facile à utiliser et peu gourmand en ressources."
+  hu: "A FileDrop egy saját tárhelyű fájlmegosztó szolgáltatás, amely lehetővé teszi, hogy egyszerűen megossza a fájlokat a családjával, barátaival vagy kollégáival. Úgy terveztük, hogy könnyen használható és kevés erőforrást igényeljen."
+  it: "FileDrop è un servizio di condivisione di file self-hosted che consente di condividere facilmente i file con familiari, amici o colleghi. È stato progettato per essere facile da usare e leggero nelle risorse."
+  ru: "FileDrop - это самодостаточная служба обмена файлами, позволяющая легко обмениваться файлами с семьей, друзьями или коллегами. Он отличается простотой использования и не требует больших затрат ресурсов."
+  pl: "FileDrop to samoobsługowa usługa udostępniania plików, która umożliwia łatwe udostępnianie plików rodzinie, znajomym lub współpracownikom. Został zaprojektowany tak, aby był łatwy w użyciu i nie wymagał dużych zasobów."
+  pt: "O FileDrop é um serviço de partilha de ficheiros auto-hospedado que lhe permite partilhar facilmente ficheiros com a família, amigos ou colegas. Foi concebido para ser fácil de utilizar e com poucos recursos."
+  tr: "FileDrop, dosyaları aileniz, arkadaşlarınız veya iş arkadaşlarınızla kolayca paylaşmanıza olanak tanıyan, kendi kendine barındırılan bir dosya paylaşım hizmetidir. Kullanımı kolay ve kaynakları hafif olacak şekilde tasarlanmıştır."
+  ja: FileDropは、家族や友人、同僚と簡単にファイルを共有できる、セルフホスト型のファイル共有サービスです。使いやすく、軽いリソースで利用できるように設計されています。
+  nl: "FileDrop is een zelf gehoste dienst voor het delen van bestanden waarmee u eenvoudig bestanden kunt delen met familie, vrienden of collega's. Het is ontworpen met het oog op gebruiksvriendelijkheid en een laag verbruik."
+  ko: "FileDrop은 가족, 친구 또는 동료와 파일을 쉽게 공유할 수 있는 자체 호스팅 파일 공유 서비스입니다. 사용하기 쉽고 리소스를 적게 사용하도록 설계되었습니다."
+  uk: "FileDrop — сервіс обміну файлами для самостійного розгортання, за допомогою якого можна легко ділитися файлами з родиною, друзями чи колегами. Він простий у користуванні й невибагливий до ресурсів."
+category: productivity
+developer: Noé Favier (noe.favier@outlook.com)
+website: https://hub.docker.com/
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+web:
+  service: filedrop
+  port: 8000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8000
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу

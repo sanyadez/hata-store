@@ -1,0 +1,19 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  label-studio:
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+    image: heartexlabs/label-studio:1.23.0
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    ports:
+      - "${WEB_PORT:-3080}:8080"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /label-studio/data

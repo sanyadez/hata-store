@@ -1,0 +1,15 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  opodsync:
+    image: ganeshlab/opodsync:latest@sha256:fe634544126f43366be407d47ceed44b20d04e970218095236270af520b6e2c6
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+    ports:
+      - "${WEB_PORT:-8086}:8080"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}"
+        target: /var/www/server/data
+    restart: unless-stopped

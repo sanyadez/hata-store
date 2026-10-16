@@ -1,0 +1,18 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  llamacpp:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    ports:
+      - "${WEB_PORT:-18080}:8080"
+    environment:
+      LLAMA_ARG_N_GPU_LAYERS: "999"
+      LLAMA_ARG_CONTEXT_SIZE: "8192"
+    devices:
+      - /dev/dri:/dev/dri
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/models"
+        target: /models
+        bind:
+          create_host_path: true
+    restart: unless-stopped

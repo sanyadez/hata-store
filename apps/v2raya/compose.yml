@@ -1,0 +1,22 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  v2raya:
+    image: mzz2017/v2raya:v2.2.7.5
+    deploy:
+      resources:
+        reservations:
+          memory: 128M
+    restart: unless-stopped
+    privileged: true
+    network_mode: host
+    volumes:
+      - type: bind
+        source: /lib/modules
+        target: /lib/modules
+        read_only: true
+      - type: bind
+        source: /etc/resolv.conf
+        target: /etc/resolv.conf
+      - type: bind
+        source: "${APP_DATA:-.}"
+        target: /etc/v2raya

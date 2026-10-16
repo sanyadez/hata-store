@@ -1,0 +1,100 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  archivebox:
+    image: archivebox/archivebox:0.7.4
+    deploy:
+      resources:
+        reservations:
+          memory: 128M
+    restart: unless-stopped
+    networks:
+      - archivebox_network
+    depends_on:
+      - archivebox_sonic
+    ports:
+      - "${WEB_PORT:-18010}:8000"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data
+    environment:
+      ADMIN_USERNAME: "${ADMIN_USERNAME:-admin}"
+      ADMIN_PASSWORD: "${ADMIN_PASSWORD:-hata}"
+      ALLOWED_HOSTS: "${ALLOWED_HOSTS:-*}"
+      CSRF_TRUSTED_ORIGINS: "${CSRF_TRUSTED_ORIGINS:-*}"
+      PUBLIC_INDEX: "${PUBLIC_INDEX:-True}"
+      PUBLIC_SNAPSHOTS: "${PUBLIC_SNAPSHOTS:-True}"
+      PUBLIC_ADD_VIEW: "${PUBLIC_ADD_VIEW:-False}"
+      SEARCH_BACKEND_ENGINE: "${SEARCH_BACKEND_ENGINE:-sonic}"
+      SEARCH_BACKEND_HOST_NAME: "${SEARCH_BACKEND_HOST_NAME:-archivebox_sonic}"
+      SEARCH_BACKEND_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+    healthcheck:
+      test:
+        - CMD
+        - wget
+        - "--no-verbose"
+        - "--tries=1"
+        - "--spider"
+        - http://localhost:8000
+      interval: 1m
+      timeout: 3s
+  archivebox_scheduler:
+    image: archivebox/archivebox:0.7.4
+    deploy:
+      resources:
+        reservations:
+          memory: 128M
+    restart: unless-stopped
+    networks:
+      - archivebox_network
+    depends_on:
+      - archivebox_sonic
+    command:
+      - schedule
+      - "--foreground"
+      - "--update"
+      - "--every=day"
+    environment:
+      TIMEOUT: "${TIMEOUT:-120}"
+      SEARCH_BACKEND_ENGINE: "${SEARCH_BACKEND_ENGINE_2:-sonic}"
+      SEARCH_BACKEND_HOST_NAME: "${SEARCH_BACKEND_HOST_NAME_2:-archivebox_sonic}"
+      SEARCH_BACKEND_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data
+  archivebox_sonic:
+    image: archivebox/sonic:1.4.9
+    deploy:
+      resources:
+        reservations:
+          memory: 128M
+    restart: unless-stopped
+    networks:
+      - archivebox_network
+    expose:
+      - 1491
+    environment:
+      SEARCH_BACKEND_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data/sonic"
+        target: /var/lib/sonic/store
+  archivebox_novnc:
+    image: theasp/novnc:latest@sha256:f2d05e35c8d2550d39bb2e01db36c46f35bf72159666596855e5660c017d847e
+    deploy:
+      resources:
+        reservations:
+          memory: 128M
+    restart: unless-stopped
+    networks:
+      - archivebox_network
+    ports:
+      - "${ARCHIVEBOX_NOVNC_PORT_8080:-18082}:8080"
+    environment:
+      DISPLAY_WIDTH: "${DISPLAY_WIDTH:-1920}"
+      DISPLAY_HEIGHT: "${DISPLAY_HEIGHT:-1080}"
+      RUN_XTERM: "${RUN_XTERM:-no}"
+networks:
+  archivebox_network:
+    driver: bridge

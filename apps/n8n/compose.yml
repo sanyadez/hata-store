@@ -1,0 +1,18 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  n8n:
+    environment:
+      TZ: "${TZ:-UTC}"
+      N8N_SECURE_COOKIE: "false"
+    image: n8nio/n8n:2.22.3
+    deploy:
+      resources:
+        reservations:
+          memory: 320M
+    ports:
+      - "${WEB_PORT:-5678}:5678"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}"
+        target: /home/node/.n8n

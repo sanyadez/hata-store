@@ -1,0 +1,31 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Medusa
+tagline:
+  en: Medusa
+  uk: Medusa
+description:
+  en: "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic."
+  uk: "Автоматичний менеджер відеобібліотеки для серіалів. Стежить за новими серіями ваших улюблених серіалів і, щойно вони з'являються, робить усе сам."
+category: media
+developer: pyMedusa (https://github.com/pymedusa)
+website: https://github.com/pymedusa/Medusa
+source: https://github.com/pymedusa/Medusa
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+  - 5.webp
+  - 6.webp
+web:
+  service: medusa
+  port: 8081
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8081
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу

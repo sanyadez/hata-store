@@ -1,0 +1,21 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  handbrake:
+    image: jlesage/handbrake:v26.03.3
+    ports:
+      - "${WEB_PORT:-5800}:5800"
+    privileged: true
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${DATA_DIR:-./data}"
+        target: /storage
+      - type: bind
+        source: "${APP_DATA:-.}/watch"
+        target: /watch
+      - type: bind
+        source: "${MEDIA_DIR:-./Media}"
+        target: /output
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config

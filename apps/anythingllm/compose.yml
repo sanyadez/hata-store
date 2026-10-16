@@ -1,0 +1,17 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  anythingllm:
+    image: mintplexlabs/anythingllm:latest@sha256:73db67cfac27814325f5d482faa34404498eb360a92bbb5461d4c44cdf87716d
+    ports:
+      - "${WEB_PORT:-3051}:3001"
+    cap_add:
+      - SYS_ADMIN
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/storage"
+        target: /app/server/storage
+    environment:
+      STORAGE_DIR: /app/server/storage
+    restart: always
+    extra_hosts:
+      - host.docker.internal:host-gateway

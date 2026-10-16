@@ -1,0 +1,107 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Project NOMAD
+  it: Project NOMAD
+  nb: Project NOMAD
+  zh: Project NOMAD
+  ja: Project NOMAD
+  ko: Project NOMAD
+  fr: Project NOMAD
+  de: Project NOMAD
+  sv: Project NOMAD
+  el: Project NOMAD
+  hr: Project NOMAD
+  pt: Project NOMAD
+  es: Project NOMAD
+  ru: Project NOMAD
+  tr: Project NOMAD
+tagline:
+  en: Knowledge that never goes offline
+  it: Conoscenze disponibili anche senza connessione
+  nb: Kunnskap tilgjengelig også uten nett
+  zh: 永不离线的知识库
+  ja: オフラインでも使える知識ライブラリ
+  ko: 오프라인에서도 사용할 수 있는 지식
+  fr: Des connaissances accessibles même hors ligne
+  de: "Wissen, das auch offline verfügbar bleibt"
+  sv: Kunskap tillgänglig även utan nätanslutning
+  el: Γνώση διαθέσιμη ακόμη και χωρίς σύνδεση
+  hr: Znanje dostupno i bez interneta
+  pt: Conhecimento disponível mesmo sem ligação
+  es: Conocimiento disponible incluso sin conexión
+  ru: "Знания, доступные даже без интернета"
+  tr: İnternet olmadan da erişilebilen bilgi
+  uk: "Знання, які не зникають без інтернету"
+description:
+  en: "Project NOMAD is an offline knowledge and education server with a browser-based Command Center. Install and manage offline Wikipedia and ebooks with Kiwix, educational courses with Kolibri, local AI with Ollama and Qdrant, offline maps, CyberChef, and notes from one interface.\n\nThis package includes the Command Center, MySQL, Redis, Dozzle for service logs, and host disk monitoring. Optional tools, AI models, and offline content are installed separately from the NOMAD interface."
+  it: "Project NOMAD è un server per conoscenze e formazione offline con un centro di controllo accessibile dal browser. Installa e gestisci Wikipedia e libri digitali con Kiwix, corsi con Kolibri, IA locale con Ollama e Qdrant, mappe offline, CyberChef e note da una sola interfaccia.\n\nQuesto pacchetto include il centro di controllo, MySQL, Redis, Dozzle per i log dei servizi e il monitoraggio dei dischi dell’host. Gli strumenti opzionali, i modelli IA e i contenuti offline si installano separatamente dall’interfaccia NOMAD."
+  nb: "Project NOMAD er en server for kunnskap og utdanning uten nettilkobling, med et kontrollsenter i nettleseren. Installer og administrer Wikipedia og e-bøker med Kiwix, kurs med Kolibri, lokal KI med Ollama og Qdrant, kart uten nett, CyberChef og notater fra ett grensesnitt.\n\nDenne pakken inneholder kontrollsenteret, MySQL, Redis, Dozzle for tjenestelogger og overvåking av vertens disker. Valgfrie verktøy, KI-modeller og innhold installeres separat fra NOMAD."
+  zh: "Project NOMAD 是一个离线知识与教育服务器，通过浏览器中的控制中心统一管理资源。你可以按需安装 Kiwix 离线维基百科和电子书、Kolibri 教育课程、Ollama 与 Qdrant 本地 AI、离线地图、CyberChef 和笔记工具。\n\n本应用包含控制中心、MySQL、Redis、Dozzle 服务日志和主机磁盘监控。可选工具、AI 模型和离线资料需要在 NOMAD 界面中另行安装。"
+  ja: "Project NOMAD は、ブラウザーのコマンドセンターから操作できるオフラインの知識・教育サーバーです。Kiwix による Wikipedia と電子書籍、Kolibri の学習コース、Ollama と Qdrant によるローカル AI、オフライン地図、CyberChef、メモを一つの画面からインストールして管理できます。\n\nこのパッケージにはコマンドセンター、MySQL、Redis、サービスログ用の Dozzle、ホストのディスク監視が含まれます。追加ツール、AI モデル、オフラインコンテンツは NOMAD の画面から別途インストールします。"
+  ko: "Project NOMAD는 브라우저의 제어 센터로 관리하는 오프라인 지식 및 교육 서버입니다. Kiwix의 위키백과와 전자책, Kolibri의 교육 과정, Ollama와 Qdrant의 로컬 AI, 오프라인 지도, CyberChef와 메모 도구를 하나의 인터페이스에서 설치하고 관리할 수 있습니다.\n\n이 패키지에는 제어 센터, MySQL, Redis, 서비스 로그용 Dozzle과 호스트 디스크 모니터링이 포함됩니다. 선택 도구, AI 모델과 오프라인 콘텐츠는 NOMAD 인터페이스에서 별도로 설치합니다."
+  fr: "Project NOMAD est un serveur de connaissances et de formation hors ligne avec un centre de commande accessible dans le navigateur. Installez et gérez Wikipédia et des livres numériques avec Kiwix, des cours avec Kolibri, une IA locale avec Ollama et Qdrant, des cartes hors ligne, CyberChef et des notes depuis une seule interface.\n\nCe paquet comprend le centre de commande, MySQL, Redis, Dozzle pour les journaux des services et la surveillance des disques de la machine hôte. Les outils facultatifs, les modèles IA et les contenus hors ligne se téléchargent séparément depuis NOMAD."
+  de: "Project NOMAD ist ein Server für Offline-Wissen und Bildung mit einer browserbasierten Steuerzentrale. Installieren und verwalten Sie Wikipedia und E-Books mit Kiwix, Lernkurse mit Kolibri, lokale KI mit Ollama und Qdrant, Offline-Karten, CyberChef und Notizen über eine Oberfläche.\n\nDieses Paket enthält die Steuerzentrale, MySQL, Redis, Dozzle für Dienstprotokolle und die Überwachung der Host-Datenträger. Optionale Werkzeuge, KI-Modelle und Offline-Inhalte installieren Sie separat über NOMAD."
+  sv: "Project NOMAD är en server för kunskap och utbildning utan nätanslutning, med ett kontrollcenter i webbläsaren. Installera och hantera Wikipedia och e-böcker med Kiwix, kurser med Kolibri, lokal AI med Ollama och Qdrant, offlinekartor, CyberChef och anteckningar från ett gränssnitt.\n\nPaketet innehåller kontrollcentret, MySQL, Redis, Dozzle för tjänsteloggar och övervakning av värddatorns diskar. Valfria verktyg, AI-modeller och offlineinnehåll installeras separat från NOMAD."
+  el: "Το Project NOMAD είναι διακομιστής γνώσης και εκπαίδευσης χωρίς σύνδεση, με κέντρο ελέγχου στον φυλλομετρητή. Εγκαταστήστε και διαχειριστείτε τη Wikipedia και ηλεκτρονικά βιβλία με το Kiwix, μαθήματα με το Kolibri, τοπική τεχνητή νοημοσύνη με Ollama και Qdrant, χάρτες χωρίς σύνδεση, το CyberChef και σημειώσεις από μία διεπαφή.\n\nΤο πακέτο περιλαμβάνει το κέντρο ελέγχου, MySQL, Redis, Dozzle για αρχεία καταγραφής υπηρεσιών και παρακολούθηση των δίσκων του κεντρικού υπολογιστή. Τα προαιρετικά εργαλεία, τα μοντέλα τεχνητής νοημοσύνης και το περιεχόμενο εγκαθίστανται ξεχωριστά μέσω του NOMAD."
+  hr: "Project NOMAD je poslužitelj za znanje i obrazovanje bez internetske veze s upravljačkim centrom u pregledniku. Instalirajte i upravljajte Wikipedijom i e-knjigama uz Kiwix, tečajevima uz Kolibri, lokalnom umjetnom inteligencijom uz Ollama i Qdrant, kartama bez interneta, CyberChefom i bilješkama iz jednog sučelja.\n\nPaket uključuje upravljački centar, MySQL, Redis, Dozzle za zapisnike usluga i nadzor diskova glavnog računala. Dodatni alati, AI modeli i sadržaj instaliraju se zasebno kroz NOMAD."
+  pt: "O Project NOMAD é um servidor de conhecimento e educação offline com um centro de controlo acessível no navegador. Instale e faça a gestão da Wikipédia e livros digitais com Kiwix, cursos com Kolibri, IA local com Ollama e Qdrant, mapas offline, CyberChef e notas numa única interface.\n\nEste pacote inclui o centro de controlo, MySQL, Redis, Dozzle para os registos dos serviços e monitorização dos discos do anfitrião. As ferramentas opcionais, os modelos de IA e os conteúdos offline são instalados separadamente na interface NOMAD."
+  es: "Project NOMAD es un servidor de conocimiento y educación sin conexión con un centro de control accesible desde el navegador. Instala y gestiona Wikipedia y libros electrónicos con Kiwix, cursos con Kolibri, IA local con Ollama y Qdrant, mapas sin conexión, CyberChef y notas desde una sola interfaz.\n\nEste paquete incluye el centro de control, MySQL, Redis, Dozzle para los registros de los servicios y la supervisión de los discos del equipo anfitrión. Las herramientas opcionales, los modelos de IA y el contenido sin conexión se instalan por separado desde NOMAD."
+  ru: "Project NOMAD представляет собой сервер знаний и обучения без подключения к интернету с центром управления в браузере. Устанавливайте и управляйте Википедией и электронными книгами через Kiwix, курсами через Kolibri, локальным ИИ через Ollama и Qdrant, офлайн-картами, CyberChef и заметками в одном интерфейсе.\n\nПакет включает центр управления, MySQL, Redis, Dozzle для журналов служб и мониторинг дисков хоста. Дополнительные инструменты, модели ИИ и офлайн-материалы устанавливаются отдельно через NOMAD."
+  tr: "Project NOMAD, tarayıcı tabanlı bir kontrol merkeziyle yönetilen çevrimdışı bilgi ve eğitim sunucusudur. Kiwix ile Vikipedi ve e-kitapları, Kolibri ile kursları, Ollama ve Qdrant ile yerel yapay zekâyı, çevrimdışı haritaları, CyberChef ve notları tek arayüzden kurup yönetin.\n\nBu paket kontrol merkezini, MySQL, Redis, hizmet günlükleri için Dozzle ve ana makine disk izlemeyi içerir. İsteğe bağlı araçlar, yapay zekâ modelleri ve çevrimdışı içerikler NOMAD arayüzünden ayrıca kurulur."
+  uk: "Project NOMAD — сервер офлайн-знань і навчання з Командним центром у браузері. З одного інтерфейсу можна встановлювати й обслуговувати офлайн-Вікіпедію та електронні книги через Kiwix, навчальні курси через Kolibri, локальний ШІ через Ollama і Qdrant, офлайн-мапи, CyberChef та нотатки.\n\nУ цей пакет входять Командний центр, MySQL, Redis, Dozzle для журналів служб і моніторинг дисків хоста. Додаткові інструменти, моделі ШІ та офлайн-вміст встановлюються окремо з інтерфейсу NOMAD."
+category: productivity
+developer: Crosstalk Solutions
+website: https://www.projectnomad.us
+source: https://github.com/Crosstalk-Solutions/project-nomad
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+web:
+  service: admin
+  port: 8080
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8080
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: URL
+    type: text
+    default: http://localhost:8080
+    label:
+      en: "Public URL used to access NOMAD, including the web port"
+      zh: 访问 NOMAD 的完整地址，包含 Web 端口
+      uk: "Публічна адреса для доступу до NOMAD, разом із портом вебінтерфейсу"
+  - name: APP_KEY
+    type: secret
+    length: 33
+    label:
+      en: App key
+      uk: Ключ застосунку
+  - name: DB_PASSWORD
+    type: secret
+    label:
+      en: Password between its services
+      uk: Пароль між його сервісами
+  - name: MYSQL_ROOT_PASSWORD
+    type: secret
+    label:
+      en: MYSQL_ROOT_PASSWORD
+  - name: DOZZLE_PORT_8080
+    type: port
+    default: 9999
+    label:
+      en: Port 8080
+      uk: Порт 8080
+    advanced: true
+permissions:
+  docker:
+    en: "It controls the server's Docker: it sees and manages the containers"
+    uk: "Він керує Docker сервера: бачить контейнери й керує ними"
+  host-files:
+    en: "It reaches these places of the system: /"
+    uk: "Він має доступ до цих місць системи: /"

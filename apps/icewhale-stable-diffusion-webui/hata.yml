@@ -1,0 +1,30 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Stable Diffusion
+tagline:
+  en: An AI model used to generate images conditioned on text descriptions.
+  zh: 用于根据文本描述生成图像的AI模型。
+  uk: Модель ШІ для створення зображень за текстовим описом.
+description:
+  en: "Stable Diffusion is a deep learning, text-to-image model released in 2022 based on diffusion techniques. It is primarily used to generate detailed images conditioned on text descriptions, though it can also be applied to other tasks such as inpainting, outpainting, and generating image-to-image translations guided by a text prompt."
+  zh: Stable Diffusion是一种基于扩散技术的深度学习文本到图像模型，于2022年发布。它主要用于根据文本描述生成详细的图像，但也可以应用于其他任务，例如修复、修复和根据文本提示生成图像到图像的转换。
+  uk: "Stable Diffusion — модель глибокого навчання для перетворення тексту на зображення, випущена 2022 року на основі дифузійних технік. Її здебільшого використовують для створення детальних зображень за текстовим описом, але вона також придатна для інших завдань: дозаповнення (inpainting), добудови за межі кадру (outpainting) і перетворення одних зображень на інші за текстовою підказкою."
+category: ai
+developer: stability.ai
+website: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+source: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTIwMS4xMDQgMTA1LjA3QzIwNy4xMTQgMTA1LjA3IDIxMiAxMDkuOTE1IDIxMiAxMTUuOTAyVjE5NS42NThDMjEyIDIwMS42MzMgMjA3LjEyNyAyMDYuNDkgMjAxLjEwNCAyMDYuNDlIMTAzLjQ5NUM5Ny40ODUyIDIwNi40OSA5Mi41OTk2IDIwMS42NDUgOTIuNTk5NiAxOTUuNjU4VjEyOS45MzNIMTAwTDExMC43OTkgMTU3LjE3NVYxODUuMjExTDE1My4wMDEgMTQ1LjU4NUMxNTkuNDU4IDEzOS41MjYgMTY5LjYwNCAxMzkuNjcxIDE3NS44OCAxNDUuOTFMMTkzLjgwMSAxNjMuNzI3VjEyMi4zN0gxNDMuMTk0TDEzNi4xOTIgMTA1LjA3SDIwMS4xMDRaTTk5Ljc5MzkgNDhMMTM4LjAwNyAxNDIuNjY0SDExOS4zOTZMMTA4Ljc2NyAxMTcuMkg3My4xMDY0TDYyLjM5MjYgMTQyLjY2NEg0NEw4MS45OTQxIDQ4SDk5Ljc5MzlaTTgwLjM3NCA5OS45MDA0SDEwMS41NDhMOTEuMDAyOSA3NC42NTMzTDgwLjM3NCA5OS45MDA0WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzEyNTFfODk3MCkiLz48cGF0aCBkPSJNMTU2LjQ3OSA2NS45MDEySDEzMVY0OEgxNTYuNjk2QzE3Ni4yOTggNDggMTkyLjIgNjMuODA5NCAxOTIuMiA4My4zMDk2Vjk2LjUzNDFIMTc0LjE5NFY4My41MjZDMTc0LjE5NCA3My43ODc5IDE2Ni4yNjEgNjUuOTAxMiAxNTYuNDY3IDY1LjkwMTJIMTU2LjQ3OVoiIGZpbGw9IiNEOEQ4RDgiLz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTI1MV84OTcwIiB4MT0iMTI3Ljk3MiIgeTE9IjQ4IiB4Mj0iMTMxLjI0NCIgeTI9IjIwNi40MjMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjMzJDOEZBIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzA4MUYyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PC9zdmc+"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: icewhale-stable-diffusion-webui
+  port: 7860
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 7860
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу

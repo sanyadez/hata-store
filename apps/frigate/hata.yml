@@ -1,0 +1,89 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Frigate
+  zh: Frigate
+  de: Frigate
+  es: Frigate
+  fr: Frigate
+  it: Frigate
+  ja: Frigate
+  ko: Frigate
+  pt: Frigate
+  ru: Frigate
+  ar: Frigate
+tagline:
+  en: Monitor your security cameras with locally processed AI
+  zh: 使用本地处理的 AI 监控您的安防摄像头
+  de: Überwachen Sie Ihre Sicherheitskameras mit lokal verarbeiteter KI
+  es: Supervisa tus cámaras de seguridad con IA procesada localmente
+  fr: Surveillez vos caméras de sécurité avec une IA traitée localement
+  it: Monitora le tue telecamere di sicurezza con IA elaborata localmente
+  ja: ローカル処理 AI でセキュリティカメラを監視
+  ko: 로컬에서 처리되는 AI로 보안 카메라를 모니터링하세요
+  pt: Monitore suas câmeras de segurança com IA processada localmente
+  ru: "Наблюдайте за камерами безопасности с помощью ИИ, обрабатываемого локально"
+  ar: راقب كاميرات الأمان باستخدام ذكاء اصطناعي تتم معالجته محليًا
+  uk: "Стежте за камерами відеоспостереження за допомогою ШІ, що працює локально"
+description:
+  en: "Frigate is an open-source network video recorder (NVR) with real-time AI object detection. It provides local, private camera recording, event review, snapshots, and live viewing through a web interface."
+  zh: Frigate 是一款开源网络录像机（NVR），支持实时 AI 目标检测。它提供本地私有的摄像头录像、事件查看、快照和网页实时预览功能。
+  de: "Frigate ist ein quelloffener Netzwerk-Videorekorder (NVR) mit Echtzeit-KI-Objekterkennung für lokale, private Kameraaufnahmen und Live-Ansichten."
+  es: "Frigate es un grabador de vídeo en red (NVR) de código abierto con detección de objetos mediante IA en tiempo real, grabación local y visualización en directo."
+  fr: "Frigate est un enregistreur vidéo réseau (NVR) open source avec détection d’objets par IA en temps réel, enregistrement local et visionnage en direct."
+  it: "Frigate è un videoregistratore di rete (NVR) open source con rilevamento degli oggetti tramite IA in tempo reale, registrazione locale e visualizzazione live."
+  ja: Frigate はリアルタイム AI 物体検出に対応したオープンソースのネットワークビデオレコーダー（NVR）です。ローカル録画とライブ表示を提供します。
+  ko: "Frigate는 실시간 AI 객체 감지를 지원하는 오픈 소스 네트워크 비디오 레코더(NVR)로, 로컬 녹화와 라이브 보기를 제공합니다."
+  pt: "Frigate é um gravador de vídeo em rede (NVR) de código aberto com detecção de objetos por IA em tempo real, gravação local e visualização ao vivo."
+  ru: "Frigate — это сетевой видеорегистратор (NVR) с открытым исходным кодом и обнаружением объектов с помощью ИИ в реальном времени, локальной записью и просмотром вживую."
+  ar: Frigate هو مسجل فيديو شبكي (NVR) مفتوح المصدر مع اكتشاف الكائنات بالذكاء الاصطناعي في الوقت الفعلي وتسجيل محلي وعرض مباشر.
+  uk: "Frigate — відеореєстратор (NVR) із відкритим кодом і розпізнаванням об’єктів ШІ в реальному часі. Він забезпечує локальний приватний запис з камер, перегляд подій, знімки та перегляд наживо через вебінтерфейс."
+category: home
+developer: Frigate
+website: https://frigate.video/
+source: https://github.com/blakeblackshear/frigate
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: frigate
+  port: 8971
+  scheme: https
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8971
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: PORT_8554
+    type: port
+    default: 8554
+    label:
+      en: Port 8554
+      uk: Порт 8554
+    advanced: true
+  - name: PORT_8555
+    type: port
+    default: 8555
+    label:
+      en: Port 8555
+      uk: Порт 8555
+    advanced: true
+  - name: MEDIA_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media"
+    label:
+      en: Media
+      uk: Медіа
+    hint:
+      en: Inside the app it is /media/frigate
+      uk: У застосунку вона — /media/frigate
+permissions:
+  privileged:
+    en: Its authors run it with full access to the server
+    uk: Автори запускають його з повним доступом до сервера
+  devices:
+    en: "It uses devices of the server: /dev/bus/usb, /dev/apex_0, /dev/video11, /dev/dri/renderD128"
+    uk: "Він користується пристроями сервера: /dev/bus/usb, /dev/apex_0, /dev/video11, /dev/dri/renderD128"

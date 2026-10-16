@@ -1,0 +1,20 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  portainer:
+    image: portainer/portainer-ce:2.31.3
+    deploy:
+      resources:
+        reservations:
+          memory: 32M
+    ports:
+      - "${PORT_8000:-8000}:8000"
+      - "${WEB_PORT:-9000}:9000"
+      - "${PORT_9443:-9443}:9443"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}"
+        target: /data
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock

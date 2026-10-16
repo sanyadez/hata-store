@@ -1,0 +1,42 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: MongoDB 4
+tagline:
+  en: A free and open-source cross-platform document-oriented database program.
+  zh: 一个免费且开源的跨平台面向文档的数据库程序。MongoDB 被归类为 NoSQL 数据库程序，它使用具有模式的类似 JSON 的文档。
+  ar: برنامج قاعدة بيانات وثائقية عابرة المنصات ومفتوح المصدر ومجاني.
+  de: "Ein kostenloses und Open-Source, plattformübergreifendes, dokumentenorientiertes Datenbankprogramm."
+  es: "Un programa de base de datos orientado a documentos, gratuito y de código abierto, que es multiplataforma."
+  fr: "Un programme de base de données orienté documents, gratuit et open source, multiplateforme."
+  hu: "Egy ingyenes, nyílt forráskódú, többplatformos dokumentumorientált adatbázisprogram."
+  it: "Un programma gratuito e open source di database orientato ai documenti, multipiattaforma."
+  ru: "Бесплатная и открытая кросс-платформенная программная система, ориентированная на документы."
+  pl: "Darmowy, otwartoźródłowy program bazodanowy zorientowany na dokumenty, działający na wielu platformach."
+  pt: "Um programa de banco de dados orientado a documentos, gratuito e de código aberto, multiplataforma."
+  uk: Безкоштовна кросплатформна документоорієнтована база даних із відкритим кодом.
+description:
+  en: "MongoDB is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemata. MongoDB is developed by MongoDB Inc., and is published under a combination of the Server Side Public License and the Apache License."
+  zh: MongoDB 是一个免费且开源的跨平台面向文档的数据库程序。MongoDB 被归类为 NoSQL 数据库程序，它使用具有模式的类似 JSON 的文档。MongoDB 由 MongoDB Inc. 开发，并在 Server Side Public License 和 Apache License 的组合下发布。
+  ar: MongoDB هو برنامج قاعدة بيانات وثائقية عابرة للمنصات ومفتوح المصدر ومجاني. يُصنف MongoDB كبرنامج قاعدة بيانات NoSQL، ويستخدم وثائق تشبه JSON مع تخطيطات. تم تطوير MongoDB بواسطة MongoDB Inc. وتم نشره تحت ترخيص Server Side Public وترخيص Apache.
+  de: "MongoDB ist ein kostenloses und Open-Source, plattformübergreifendes, dokumentenorientiertes Datenbankprogramm. MongoDB wird als NoSQL-Datenbankprogramm eingestuft und verwendet JSON-ähnliche Dokumente mit Schemata. MongoDB wird von MongoDB Inc. entwickelt und unter der Kombination der Server Side Public License und der Apache License veröffentlicht."
+  es: "MongoDB es un programa de base de datos orientado a documentos, gratuito y de código abierto, multiplataforma. MongoDB se clasifica como un programa de base de datos NoSQL y utiliza documentos similares a JSON con esquemas. MongoDB es desarrollado por MongoDB Inc. y se publica bajo una combinación de la Licencia Pública del Lado del Servidor y la Licencia Apache."
+  fr: "MongoDB est un programme de base de données orienté documents, gratuit et open source, multiplateforme. MongoDB est classé comme un programme de base de données NoSQL et utilise des documents de type JSON avec des schémas. MongoDB est développé par MongoDB Inc. et est publié sous une combinaison de la Licence Publique du Côté Serveur et de la Licence Apache."
+  hu: "A MongoDB egy ingyenes és nyílt forráskódú, többplatformos dokumentumorientált adatbázisprogram. A MongoDB-t NoSQL adatbázisprogramként sorolják be, JSON-szerű dokumentumokat használ sémákkal. A MongoDB-t a MongoDB Inc. fejleszti és a Server Side Public License és az Apache License kombinációjával jelenteti meg."
+  it: "MongoDB è un programma di database orientato ai documenti, gratuito e open source, multipiattaforma. MongoDB viene classificato come un programma di database NoSQL e utilizza documenti simili a JSON con schemi. MongoDB è sviluppato da MongoDB Inc. ed è pubblicato sotto una combinazione della Server Side Public License e dell'Apache License."
+  ru: MongoDB - это бесплатная и открытая кросс-платформенная программа для работы с документоориентированной базой данных. Она классифицируется как NoSQL-база данных и использует документы в формате JSON с схемами. MongoDB разработана компанией MongoDB Inc. и распространяется под комбинацией лицензий Server Side Public и Apache.
+  pl: "MongoDB to darmowy i otwartoźródłowy, wieloplatformowy program bazodanowy zorientowany na dokumenty. MongoDB jest klasyfikowana jako program bazodanowy NoSQL i wykorzystuje dokumenty w formacie JSON z schematami. MongoDB jest rozwijana przez MongoDB Inc. i jest publikowana na zasadach licencji Server Side Public License oraz licencji Apache."
+  pt: "O MongoDB é um programa de banco de dados orientado a documentos, gratuito e de código aberto, multiplataforma. Classificado como um programa de banco de dados NoSQL, o MongoDB utiliza documentos semelhantes a JSON com esquemas. O MongoDB é desenvolvido pela MongoDB Inc. e é publicado sob uma combinação da Licença Pública do Lado do Servidor e da Licença Apache."
+  uk: "MongoDB — безкоштовна кросплатформна документоорієнтована база даних із відкритим кодом. Це NoSQL-база: вона зберігає JSON-подібні документи зі схемами. MongoDB розробляє MongoDB Inc., а поширюється вона за комбінацією ліцензій Server Side Public License та Apache License."
+category: development
+developer: MongoDB Inc.
+website: https://www.mongodb.com/
+source: https://github.com/mongodb/mongo
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODkxNykiPjxwYXRoIGQ9Ik0xNzEuNDE5IDEwNy45NTFDMTYwLjk2IDYxLjg1MSAxMzkuMTg4IDQ5LjU3MDYgMTMzLjY0OCA0MC44OTNDMTMxLjM2MyAzNy4wNTc4IDEyOS4zMSAzMy4xMDY0IDEyNy41NjYgMjlDMTI3LjI1NiAzMy4xMDY0IDEyNi43NTMgMzUuNjYzMiAxMjMuMjY2IDM4Ljc2MjNDMTE2LjI5MyA0NC45OTk0IDg2LjU4MDEgNjkuMTcyOCA4NC4xMDA3IDEyMS41NDlDODEuNzc2NCAxNzAuMzk5IDEyMC4wMTIgMjAwLjUgMTI1LjA0OCAyMDMuNTk5QzEyOC45MjIgMjA1LjQ5NyAxMzMuNjQ4IDIwMy42MzcgMTM1Ljk3MyAyMDEuODk0QzE1NC4zNzQgMTg5LjI2NSAxNzkuNTU1IDE1NS41NjIgMTcxLjQxOSAxMDcuOTUxWiIgZmlsbD0iIzEwQUE1MCIvPjxwYXRoIGQ9Ik0xMjkuMTU1IDE3Ny42NDRDMTI4LjE4NiAxODkuNzMgMTI3LjQ4OSAxOTYuNzQyIDEyNS4wNDggMjAzLjY3NkMxMjUuMDQ4IDIwMy42NzYgMTI2LjYzNyAyMTUuMTgyIDEyNy43NiAyMjcuMzg1SDEzMS43NUMxMzIuNzE5IDIxOC43ODUgMTM0LjE1MiAyMTAuMjYyIDEzNi4wODkgMjAxLjg1NkMxMzAuOTc1IDE5OS4yOTkgMTI5LjM0OCAxODguMjE5IDEyOS4xNTUgMTc3LjY0NFoiIGZpbGw9IiNCOEM0QzIiLz48cGF0aCBkPSJNMTM2LjEyOCAyMDEuODE3QzEzMC44OTggMTk5LjQxNSAxMjkuMzg3IDE4OC4xNDIgMTI5LjE1NSAxNzcuNjA1QzEzMC40MzMgMTYwLjI0OSAxMzAuODIgMTQyLjg1NSAxMzAuMjc4IDEyNS41QzEzMC4wMDcgMTE2LjM5NiAxMzAuMzk0IDQxLjA0ODEgMTI4LjAzMSAzMC4wMDczQzEyOS42NTggMzMuNzI2MyAxMzEuNTE4IDM3LjM2NzggMTMzLjY0OCA0MC44NTQ0QzEzOS4xODggNDkuNTMyIDE2MC45OTkgNjEuODEyNCAxNzEuNDE5IDEwNy45MTJDMTc5LjU1NSAxNTUuNDg0IDE1NC41MjkgMTg5LjExIDEzNi4xMjggMjAxLjgxN1oiIGZpbGw9IiMxMjkyNEYiLz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjUxXzg5MTciPjxyZWN0IHdpZHRoPSI4OSIgaGVpZ2h0PSIxOTguMzg1IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODQgMjkpIi8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
+settings:
+  - name: PORT_27017
+    type: port
+    default: 27017
+    label:
+      en: MongoDB Port
+      uk: Порт MongoDB
+    advanced: true

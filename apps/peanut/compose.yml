@@ -1,0 +1,21 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  peanut:
+    image: brandawg93/peanut:6.0.0
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+    ports:
+      - "${WEB_PORT:-8084}:8080"
+    environment:
+      WEB_PORT: "${WEB_PORT_2:-8080}"
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    networks:
+      default:
+        aliases:
+          - PeaNUT

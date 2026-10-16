@@ -1,0 +1,48 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  qui:
+    image: ghcr.io/autobrr/qui:v1.28.0
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    deploy:
+      resources:
+        reservations:
+          memory: 128M
+    ports:
+      - "${WEB_PORT:-7476}:7476"
+    volumes:
+      - "${APP_DATA:-.}/qui:/config"
+    environment:
+      QUI__DATABASE_ENGINE: "${QUI__DATABASE_ENGINE:-postgres}"
+      QUI__DATABASE_DSN: "${QUI__DATABASE_DSN:-postgres://qui:qui@qui-postgres:5432/qui?sslmode=disable}"
+    networks:
+      - qui_network
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          memory: 128M
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER:-qui}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}"
+      POSTGRES_DB: "${POSTGRES_DB:-qui}"
+    volumes:
+      - "${APP_DATA:-.}/postgres:/var/lib/postgresql/data"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      qui_network:
+        aliases:
+          - qui-postgres
+networks:
+  qui_network:
+    driver: bridge

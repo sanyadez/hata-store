@@ -1,0 +1,19 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  tautulli:
+    environment:
+      PGID: "1000"
+      PUID: "1000"
+      TZ: "${TZ:-UTC}"
+    image: linuxserver/tautulli:2.17.1
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${WEB_PORT:-8181}:8181"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config

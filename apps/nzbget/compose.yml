@@ -1,0 +1,24 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  nzbget:
+    environment:
+      NZBGET_PASS: "${NZBGET_PASS:?set NZBGET_PASS}"
+      NZBGET_USER: nzbget
+      PGID: "1000"
+      PUID: "1000"
+      TZ: "${TZ:-UTC}"
+    image: linuxserver/nzbget:26.1.20260522
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${WEB_PORT:-6789}:6789"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${DOWNLOADS_DIR:-./Downloads}"
+        target: /downloads

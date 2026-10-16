@@ -1,0 +1,140 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  admin:
+    image: ghcr.io/crosstalk-solutions/project-nomad:1.35.1
+    restart: unless-stopped
+    networks:
+      - default
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - "${WEB_PORT:-8080}:8080"
+    environment:
+      NODE_ENV: production
+      PORT: "8080"
+      HOST: 0.0.0.0
+      URL: "${URL:-http://localhost:8080}"
+      LOG_LEVEL: info
+      APP_KEY: "${APP_KEY:?set APP_KEY}"
+      NOMAD_STORAGE_PATH: /DATA/AppData/project-nomad/storage
+      DB_HOST: mysql
+      DB_PORT: "3306"
+      DB_DATABASE: nomad
+      DB_USER: nomad_user
+      DB_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      DB_SSL: "false"
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      DISABLE_COMPRESSION: "false"
+      TZ: "${TZ:-UTC}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/storage"
+        target: /app/storage
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - "-f"
+        - http://localhost:8080/api/health
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+  mysql:
+    image: mysql:8.0.45
+    restart: unless-stopped
+    networks:
+      - default
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:?set MYSQL_ROOT_PASSWORD}"
+      MYSQL_DATABASE: nomad
+      MYSQL_USER: nomad_user
+      MYSQL_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      TZ: "${TZ:-UTC}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/mysql"
+        target: /var/lib/mysql
+    healthcheck:
+      test:
+        - CMD
+        - mysqladmin
+        - ping
+        - "-h"
+        - 127.0.0.1
+      interval: 10s
+      timeout: 10s
+      retries: 30
+      start_period: 60s
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+  redis:
+    image: redis:7.4.8-alpine
+    restart: unless-stopped
+    networks:
+      - default
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/redis"
+        target: /data
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+  dozzle:
+    image: amir20/dozzle:v10.0.7
+    restart: unless-stopped
+    networks:
+      - default
+    environment:
+      DOZZLE_ENABLE_ACTIONS: "false"
+      DOZZLE_ENABLE_SHELL: "false"
+    ports:
+      - "${DOZZLE_PORT_8080:-9999}:8080"
+    volumes:
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+        read_only: true
+  disk-collector:
+    image: ghcr.io/crosstalk-solutions/project-nomad-disk-collector:v1.31.1
+    restart: unless-stopped
+    networks:
+      - default
+    volumes:
+      - type: bind
+        source: /
+        target: /host
+        read_only: true
+        bind:
+          propagation: rslave
+      - type: bind
+        source: "${APP_DATA:-.}/storage"
+        target: /storage
+networks:
+  default:
+    name: project-nomad_default
+    driver: bridge

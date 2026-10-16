@@ -1,0 +1,24 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  jellyseerr:
+    cpu_shares: 50
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 256M
+    environment:
+      LOG_LEVEL: debug
+      TZ: "${TZ:-UTC}"
+    image: fallenbagel/jellyseerr:2.7.3
+    ports:
+      - "${WEB_PORT:-5055}:5055"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}"
+        target: /app/config
+        bind:
+          create_host_path: true
+    privileged: false

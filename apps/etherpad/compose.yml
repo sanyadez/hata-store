@@ -1,0 +1,37 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  etherpad:
+    image: etherpad/etherpad:3.1.0
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-9001}:9001"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/var"
+        target: /opt/etherpad-lite/var
+    environment:
+      TITLE: "${TITLE:-Etherpad}"
+      DEFAULT_PAD_TEXT: "Welcome to Etherpad!\n\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\nGet involved with Etherpad at https://etherpad.org\n"
+      ADMIN_PASSWORD: "${ADMIN_PASSWORD:?set ADMIN_PASSWORD}"
+      AUTHENTICATION_METHOD: "${AUTHENTICATION_METHOD:-apikey}"
+      DB_TYPE: "${DB_TYPE:-dirty}"
+      DB_FILENAME: "${DB_FILENAME:-/opt/etherpad-lite/var/dirty.db}"
+      TRUST_PROXY: "${TRUST_PROXY:-true}"
+      SHOW_SETTINGS_IN_ADMIN_PAGE: "true"
+      REQUIRE_AUTHENTICATION: "${REQUIRE_AUTHENTICATION:-false}"
+      REQUIRE_AUTHORIZATION: "false"
+    healthcheck:
+      test:
+        - CMD
+        - wget
+        - "-q"
+        - "-O-"
+        - http://localhost:9001/health
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s

@@ -1,0 +1,25 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  deluge:
+    environment:
+      DELUGE_LOGLEVEL: "${DELUGE_LOGLEVEL:-error}"
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+    image: linuxserver/deluge:2.2.0
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    ports:
+      - "${WEB_PORT:-8112}:8112"
+      - "${PORT_6881:-6881}:6881"
+      - "${PORT_6881:-6881}:6881/udp"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${DATA_DIR:-./data}"
+        target: /DATA

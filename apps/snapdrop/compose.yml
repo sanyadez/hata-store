@@ -1,0 +1,17 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  snapdrop:
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+    image: linuxserver/snapdrop:version-eac78009
+    ports:
+      - "${PORT_443:-443}:443"
+      - "${WEB_PORT:-89}:80"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+    privileged: false

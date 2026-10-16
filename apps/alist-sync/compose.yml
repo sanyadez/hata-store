@@ -1,0 +1,13 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  alist-sync:
+    image: xjxjin/alist-sync:1.1.5
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-52441}:52441"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /app/data
+    environment:
+      TZ: "${TZ:-UTC}"

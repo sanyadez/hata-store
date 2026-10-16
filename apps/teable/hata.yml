@@ -1,0 +1,218 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Teable
+  de: Teable
+  el: Teable
+  fr: Teable
+  hr: Teable
+  it: Teable
+  ja: Teable
+  ko: Teable
+  nb: Teable
+  pt: Teable
+  ru: Teable
+  sv: Teable
+  tr: Teable
+  zh: Teable
+tagline:
+  en: "Teable adopts a concise spreadsheet interface, yet creates powerful database applications"
+  de: "Teable verwendet eine prägnante Tabellenkalkulationsoberfläche, erstellt aber leistungsstarke Datenbankanwendungen"
+  el: "Το Teable υιοθετεί μια συνοπτική διεπαφή υπολογιστικού φύλλου, δημιουργεί όμως ισχυρές εφαρμογές βάσεων δεδομένων"
+  fr: "Teable adopte une interface de tableur concise, mais crée des applications de base de données puissantes"
+  hr: "Teable koristi sažeto sučelje proračunske tablice, no stvara moćne aplikacije baze podataka"
+  it: "Teable adotta un'interfaccia foglio di calcolo concisa, ma crea potenti applicazioni di database"
+  ja: Teableはシンプルなスプレッドシート形式のインターフェースを採用しながら、強力なデータベースアプリケーションを作成できます
+  ko: Teable은 간결한 스프레드시트 스타일 인터페이스를 채택하지만 강력한 데이터베이스 애플리케이션을 만들 수 있습니다
+  nb: "Teable benytter et konsist regnearkgrensesnitt, men skaper kraftfulle databaseapplikasjoner"
+  pt: "O Teable adota uma interface de planilha concisa, mas cria aplicativos de banco de dados poderosos"
+  ru: "Teable использует лаконичный интерфейс электронных таблиц, однако создает мощные приложения баз данных"
+  sv: "Teable använder ett koncisst kalkylbladgränssnitt, men skapar kraftfulla databasapplikationer"
+  tr: "Teable sade ve basit bir elektronik tablo arayüzü kullanır, ancak güçlü veritabanı uygulamaları oluşturur"
+  zh: Teable采用简洁的电子表格式界面，却能创建功能强大的数据库应用程序
+  uk: "Teable має лаконічний інтерфейс електронної таблиці, але створює потужні застосунки з базами даних"
+description:
+  en: "Teable is a new generation open-source database platform. It provides an intuitive spreadsheet-like experience, while being powered by a high-performance Postgres database underneath, combining ease of use with powerful data processing capabilities.\n\n**Key Features:**\n- **High Performance**: Built on the Postgres core, it effortlessly handles millions of records with extremely fast response times.\n- **Modern Interface**: Offers multiple views including grid, kanban, gallery, and forms, with a clean and user-friendly design.\n- **Real-time Collaboration**: Supports multi-user online collaboration with real-time data synchronisation.\n- **Automation & API**: Provides powerful RESTful APIs to enable flexible integration and automation.\n\n**Learn More:**\n- [Teable Official Website](https://teable.ai)\n- [Teable GitHub Repository](https://github.com/teableio/teable)\n- [Help Documentation](https://help.teable.ai)"
+  de: "Teable ist eine neue Generation einer Open-Source-Datenbankplattform. Sie bietet eine intuitive, tabellenähnliche Benutzererfahrung, wird jedoch im Hintergrund von einer leistungsstarken Postgres-Datenbank angetrieben und vereint Benutzerfreundlichkeit mit leistungsstarker Datenverarbeitung.\n\n**Hauptfunktionen:**\n- **Hohe Leistung**: Basierend auf dem Postgres-Kern verarbeitet es mühelos Daten im Millionenbereich mit extrem schnellen Reaktionszeiten.\n- **Moderne Oberfläche**: Bietet mehrere Ansichten wie Raster, Kanban, Galerie und Formulare mit einer klaren und benutzerfreundlichen Oberfläche.\n- **Echtzeit-Zusammenarbeit**: Unterstützt die gleichzeitige Online-Zusammenarbeit mehrerer Benutzer mit Echtzeit-Datensynchronisation.\n- **Automatisierung & API**: Bietet leistungsstarke RESTful-APIs für flexible Integration und Automatisierung.\n\n**Mehr erfahren:**\n- [Teable Offizielle Website](https://teable.ai)\n- [Teable GitHub Repository](https://github.com/teableio/teable)\n- [Hilfedokumentation](https://help.teable.ai)"
+  el: "Το Teable είναι μια νέα γενιά πλατφόρμας βάσης δεδομένων ανοιχτού κώδικα. Προσφέρει μια διαισθητική εμπειρία παρόμοια με υπολογιστικό φύλλο, ενώ στο παρασκήνιο υποστηρίζεται από μια υψηλής απόδοσης βάση δεδομένων Postgres, συνδυάζοντας ευχρηστία και ισχυρή επεξεργασία δεδομένων.\n\n**Κύρια χαρακτηριστικά:**\n- **Υψηλή απόδοση**: Βασισμένο στον πυρήνα Postgres, διαχειρίζεται εύκολα δεδομένα εκατομμυρίων εγγραφών με εξαιρετικά γρήγορη απόκριση.\n- **Σύγχρονο περιβάλλον**: Παρέχει πολλαπλές προβολές όπως πλέγμα, kanban, γκαλερί και φόρμες, με καθαρό και εύχρηστο σχεδιασμό.\n- **Συνεργασία σε πραγματικό χρόνο**: Υποστηρίζει ταυτόχρονη διαδικτυακή συνεργασία πολλών χρηστών με άμεσο συγχρονισμό δεδομένων.\n- **Αυτοματισμοί & API**: Παρέχει ισχυρά RESTful API για ευέλικτη ενσωμάτωση και αυτοματοποίηση.\n\n**Μάθετε περισσότερα:**\n- [Επίσημη ιστοσελίδα Teable](https://teable.ai)\n- [Αποθετήριο Teable στο GitHub](https://github.com/teableio/teable)\n- [Τεκμηρίωση βοήθειας](https://help.teable.ai)"
+  fr: "Teable est une plateforme de base de données open source de nouvelle génération. Elle offre une expérience intuitive de type tableur, tout en étant propulsée en arrière-plan par une base de données Postgres haute performance, combinant simplicité d’utilisation et puissantes capacités de traitement des données.\n\n**Fonctionnalités principales :**\n- **Haute performance** : Basée sur le cœur Postgres, elle gère facilement des millions de lignes avec des temps de réponse extrêmement rapides.\n- **Interface moderne** : Propose plusieurs vues telles que grille, kanban, galerie et formulaires, avec une interface claire et conviviale.\n- **Collaboration en temps réel** : Prend en charge la collaboration en ligne multi-utilisateurs avec synchronisation des données en temps réel.\n- **Automatisation & API** : Fournit de puissantes API RESTful pour une intégration et une automatisation flexibles.\n\n**En savoir plus :**\n- [Site officiel de Teable](https://teable.ai)\n- [Dépôt GitHub de Teable](https://github.com/teableio/teable)\n- [Documentation d’aide](https://help.teable.ai)"
+  hr: "Teable je nova generacija open-source platforme baza podataka. Pruža intuitivno iskustvo slično proračunskim tablicama, dok je u pozadini pokreće visokoučinkovita Postgres baza podataka, kombinirajući jednostavnost korištenja i snažnu obradu podataka.\n\n**Glavne značajke:**\n- **Visoke performanse**: Temeljena na Postgres jezgri, bez poteškoća obrađuje milijune zapisa uz iznimno brzo vrijeme odziva.\n- **Moderno sučelje**: Nudi više prikaza poput mreže, kanbana, galerije i obrazaca, s čistim i jednostavnim dizajnom.\n- **Suradnja u stvarnom vremenu**: Podržava istovremenu online suradnju više korisnika uz sinkronizaciju podataka u stvarnom vremenu.\n- **Automatizacija i API**: Omogućuje snažne RESTful API-je za fleksibilnu integraciju i automatizaciju.\n\n**Saznajte više:**\n- [Službena web-stranica Teable](https://teable.ai)\n- [Teable GitHub repozitorij](https://github.com/teableio/teable)\n- [Dokumentacija pomoći](https://help.teable.ai)"
+  it: "Teable è una piattaforma di database open source di nuova generazione. Offre un’esperienza intuitiva simile a un foglio di calcolo, ma è alimentata internamente da un database Postgres ad alte prestazioni, combinando facilità d’uso e potenti capacità di elaborazione dei dati.\n\n**Funzionalità principali:**\n- **Alte prestazioni**: Basata sul core Postgres, gestisce facilmente milioni di record con tempi di risposta estremamente rapidi.\n- **Interfaccia moderna**: Offre diverse viste come griglia, kanban, galleria e moduli, con un’interfaccia pulita e facile da usare.\n- **Collaborazione in tempo reale**: Supporta la collaborazione online multiutente con sincronizzazione dei dati in tempo reale.\n- **Automazione e API**: Fornisce potenti API RESTful per integrazioni e automazioni flessibili.\n\n**Scopri di più:**\n- [Sito ufficiale di Teable](https://teable.ai)\n- [Repository GitHub di Teable](https://github.com/teableio/teable)\n- [Documentazione di supporto](https://help.teable.ai)"
+  ja: "Teable は新世代のオープンソースデータベースプラットフォームです。スプレッドシートのような直感的な操作体験を提供しつつ、背後では高性能な Postgres データベースによって駆動され、使いやすさと強力なデータ処理能力を兼ね備えています。\n\n**主な機能:**\n- **高性能**：Postgres コアを基盤とし、数百万件規模のデータを高速に処理します。\n- **モダンなインターフェース**：グリッド、カンバン、ギャラリー、フォームなど複数のビューを提供し、シンプルで使いやすい UI を実現しています。\n- **リアルタイムコラボレーション**：複数ユーザーによるオンライン同時編集とリアルタイム同期に対応しています。\n- **自動化と API**：柔軟な連携と自動化を可能にする強力な RESTful API を提供します。\n\n**詳細はこちら:**\n- [Teable 公式サイト](https://teable.ai)\n- [Teable GitHub リポジトリ](https://github.com/teableio/teable)\n- [ヘルプドキュメント](https://help.teable.ai)"
+  ko: "Teable은 차세대 오픈 소스 데이터베이스 플랫폼입니다. 스프레드시트와 유사한 직관적인 사용 경험을 제공하면서, 내부적으로는 고성능 Postgres 데이터베이스를 기반으로 하여 사용 편의성과 강력한 데이터 처리 기능을 모두 갖추고 있습니다.\n\n**주요 기능:**\n- **고성능**: Postgres 코어를 기반으로 수백만 건의 데이터를 손쉽게 처리하며 매우 빠른 응답 속도를 제공합니다.\n- **현대적인 인터페이스**: 그리드, 칸반, 갤러리, 폼 등 다양한 뷰를 제공하며 깔끔하고 사용하기 쉬운 UI를 갖추고 있습니다.\n- **실시간 협업**: 여러 사용자가 동시에 온라인으로 협업하며 데이터가 실시간으로 동기화됩니다.\n- **자동화 및 API**: 유연한 통합과 자동화를 지원하는 강력한 RESTful API를 제공합니다.\n\n**자세히 알아보기:**\n- [Teable 공식 웹사이트](https://teable.ai)\n- [Teable GitHub 저장소](https://github.com/teableio/teable)\n- [도움말 문서](https://help.teable.ai)"
+  nb: "Teable er en ny generasjon åpen kildekode-databaseplattform. Den tilbyr en intuitiv regneark-lignende opplevelse, samtidig som den drives av en høyytelses Postgres-database i bakgrunnen, og kombinerer brukervennlighet med kraftig databehandling.\n\n**Hovedfunksjoner:**\n- **Høy ytelse**: Bygget på Postgres-kjernen, håndterer den enkelt millioner av rader med ekstremt raske responstider.\n- **Moderne grensesnitt**: Tilbyr flere visninger som rutenett, kanban, galleri og skjemaer, med et rent og brukervennlig design.\n- **Sanntidssamarbeid**: Støtter samarbeid mellom flere brukere på nett med sanntidssynkronisering av data.\n- **Automatisering og API**: Tilbyr kraftige RESTful API-er for fleksibel integrasjon og automatisering.\n\n**Les mer:**\n- [Teable offisielle nettsted](https://teable.ai)\n- [Teable GitHub-repositorium](https://github.com/teableio/teable)\n- [Hjelpedokumentasjon](https://help.teable.ai)"
+  pt: "Teable é uma plataforma de base de dados open source de nova geração. Oferece uma experiência intuitiva semelhante a uma folha de cálculo, sendo suportada por uma base de dados Postgres de alto desempenho, combinando facilidade de utilização com um poderoso processamento de dados.\n\n**Principais funcionalidades:**\n- **Alto desempenho**: Baseada no núcleo Postgres, lida facilmente com milhões de registos com tempos de resposta extremamente rápidos.\n- **Interface moderna**: Disponibiliza várias vistas como grelha, kanban, galeria e formulários, com um design limpo e intuitivo.\n- **Colaboração em tempo real**: Suporta colaboração online entre vários utilizadores com sincronização de dados em tempo real.\n- **Automação e API**: Fornece APIs RESTful poderosas para integração e automação flexíveis.\n\n**Saber mais:**\n- [Website oficial do Teable](https://teable.ai)\n- [Repositório GitHub do Teable](https://github.com/teableio/teable)\n- [Documentação de ajuda](https://help.teable.ai)"
+  ru: "Teable — это новое поколение платформы баз данных с открытым исходным кодом. Она предоставляет интуитивно понятный интерфейс, похожий на электронные таблицы, при этом работает на базе высокопроизводительной базы данных Postgres, сочетая простоту использования и мощную обработку данных.\n\n**Основные возможности:**\n- **Высокая производительность**: Основана на ядре Postgres и легко обрабатывает миллионы записей с чрезвычайно высокой скоростью отклика.\n- **Современный интерфейс**: Предлагает различные представления, включая таблицу, канбан, галерею и формы, с чистым и удобным дизайном.\n- **Совместная работа в реальном времени**: Поддерживает одновременную онлайн-работу нескольких пользователей с мгновенной синхронизацией данных.\n- **Автоматизация и API**: Предоставляет мощные RESTful API для гибкой интеграции и автоматизации.\n\n**Узнать больше:**\n- [Официальный сайт Teable](https://teable.ai)\n- [Репозиторий Teable на GitHub](https://github.com/teableio/teable)\n- [Документация помощи](https://help.teable.ai)"
+  sv: "Teable är en ny generation av databassplattform med öppen källkod. Den erbjuder en intuitiv kalkylblads-liknande upplevelse, samtidigt som den drivs av en högpresterande Postgres-databas i bakgrunden, och kombinerar användarvänlighet med kraftfull databehandling.\n\n**Huvudfunktioner:**\n- **Hög prestanda**: Byggd på Postgres-kärnan och hanterar enkelt miljontals rader med extremt snabba svarstider.\n- **Modernt gränssnitt**: Erbjuder flera vyer såsom rutnät, kanban, galleri och formulär, med en ren och lättanvänd design.\n- **Samarbete i realtid**: Stöder samarbete mellan flera användare online med datasynkronisering i realtid.\n- **Automatisering och API**: Tillhandahåller kraftfulla RESTful API:er för flexibel integration och automatisering.\n\n**Läs mer:**\n- [Teable officiella webbplats](https://teable.ai)\n- [Teable GitHub-repository](https://github.com/teableio/teable)\n- [Hjälpdokumentation](https://help.teable.ai)"
+  tr: "Teable, yeni nesil bir açık kaynak veritabanı platformudur. Elektronik tabloya benzer sezgisel bir kullanım deneyimi sunarken, arka planda yüksek performanslı bir Postgres veritabanı tarafından desteklenir ve kullanım kolaylığını güçlü veri işleme yetenekleriyle birleştirir.\n\n**Temel özellikler:**\n- **Yüksek performans**: Postgres çekirdeği üzerine inşa edilmiştir ve milyonlarca kaydı son derece hızlı yanıt süreleriyle kolayca işler.\n- **Modern arayüz**: Izgara, kanban, galeri ve formlar gibi birden fazla görünüm sunar; sade ve kullanıcı dostu bir tasarıma sahiptir.\n- **Gerçek zamanlı iş birliği**: Birden fazla kullanıcının çevrim içi olarak aynı anda çalışmasını ve verilerin gerçek zamanlı senkronizasyonunu destekler.\n- **Otomasyon ve API**: Esnek entegrasyon ve otomasyon için güçlü RESTful API’ler sunar.\n\n**Daha fazla bilgi:**\n- [Teable Resmî Web Sitesi](https://teable.ai)\n- [Teable GitHub Deposu](https://github.com/teableio/teable)\n- [Yardım Dokümantasyonu](https://help.teable.ai)"
+  zh: "Teable 是新一代的开源数据库平台。它提供了类似电子表格的直观操作体验，但背后由高性能的 Postgres 数据库驱动，兼具了易用性与强大的数据处理能力。\n\n**主要功能:**\n- **高性能**：基于 Postgres 内核，轻松处理百万级数据，响应速度极快。\n- **现代界面**：提供网格、看板、图库、表单等多种视图，界面简洁易用。\n- **实时协作**：支持多人在线协同编辑，数据实时同步更新。\n- **自动化与 API**：提供强大的 RESTful API，支持灵活的集成与自动化。\n\n**了解更多:**\n- [Teable 官方网站](https://teable.ai)\n- [Teable GitHub 仓库](https://github.com/teableio/teable)\n- [帮助文档](https://help.teable.ai)"
+  uk: "Teable — відкрита платформа баз даних нового покоління. Вона працює як звична електронна таблиця, а під капотом має швидку базу Postgres, тож поєднує простоту використання з потужною обробкою даних.\n\n**Основні можливості:**\n- **Висока продуктивність**: побудована на ядрі Postgres, легко працює з мільйонами записів і відповідає надзвичайно швидко.\n- **Сучасний інтерфейс**: кілька видів подання — таблиця, канбан, галерея та форми — у чистому й зручному дизайні.\n- **Спільна робота в реальному часі**: кілька користувачів працюють онлайн, а дані синхронізуються миттєво.\n- **Автоматизація та API**: потужні RESTful API для гнучкої інтеграції й автоматизації.\n\n**Докладніше:**\n- [Офіційний сайт Teable](https://teable.ai)\n- [Репозиторій Teable на GitHub](https://github.com/teableio/teable)\n- [Довідка](https://help.teable.ai)"
+category: productivity
+developer: teableio
+website: https://teable.ai
+source: https://github.com/teableio/teable
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: teable
+  port: 3000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 3200
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: NEXT_ENV_IMAGES_ALL_REMOTE
+    type: text
+    default: "true"
+    label:
+      en: Next.js image optimization configuration
+      de: Next.js image optimization configuration
+      el: Next.js image optimization configuration
+      fr: Next.js image optimization configuration
+      hr: Next.js image optimization configuration
+      it: Next.js image optimization configuration
+      ja: Next.js image optimization configuration
+      ko: Next.js image optimization configuration
+      nb: Next.js image optimization configuration
+      pt: Next.js image optimization configuration
+      ru: Next.js image optimization configuration
+      sv: Next.js image optimization configuration
+      tr: Next.js image optimization configuration
+      zh: Next.js image optimization configuration
+      uk: Налаштування оптимізації зображень Next.js
+  - name: PUBLIC_ORIGIN
+    type: text
+    default: http://127.0.0.1:3000
+    label:
+      en: Public URL origin for the application
+      de: Public URL origin for the application
+      el: Public URL origin for the application
+      fr: Public URL origin for the application
+      hr: Public URL origin for the application
+      it: Public URL origin for the application
+      ja: Public URL origin for the application
+      ko: Public URL origin for the application
+      nb: Public URL origin for the application
+      pt: Public URL origin for the application
+      ru: Public URL origin for the application
+      sv: Public URL origin for the application
+      tr: Public URL origin for the application
+      zh: Public URL origin for the application
+      uk: Публічна адреса (origin) застосунку
+  - name: PRISMA_DATABASE_URL
+    type: text
+    default: postgresql://example:example@teable-db:5432/teable-db
+    label:
+      en: Database connection string for Prisma ORM
+      de: Database connection string for Prisma ORM
+      el: Database connection string for Prisma ORM
+      fr: Database connection string for Prisma ORM
+      hr: Database connection string for Prisma ORM
+      it: Database connection string for Prisma ORM
+      ja: Database connection string for Prisma ORM
+      ko: Database connection string for Prisma ORM
+      nb: Database connection string for Prisma ORM
+      pt: Database connection string for Prisma ORM
+      ru: Database connection string for Prisma ORM
+      sv: Database connection string for Prisma ORM
+      tr: Database connection string for Prisma ORM
+      zh: Database connection string for Prisma ORM
+      uk: Рядок підключення до бази даних для Prisma ORM
+  - name: BACKEND_CACHE_PROVIDER
+    type: text
+    default: redis
+    label:
+      en: Cache provider for the backend service
+      de: Cache provider for the backend service
+      el: Cache provider for the backend service
+      fr: Cache provider for the backend service
+      hr: Cache provider for the backend service
+      it: Cache provider for the backend service
+      ja: Cache provider for the backend service
+      ko: Cache provider for the backend service
+      nb: Cache provider for the backend service
+      pt: Cache provider for the backend service
+      ru: Cache provider for the backend service
+      sv: Cache provider for the backend service
+      tr: Cache provider for the backend service
+      zh: Cache provider for the backend service
+      uk: Провайдер кешу для бекенду
+  - name: BACKEND_CACHE_REDIS_URI
+    type: text
+    default: redis://default:password@teable-cache:6379/0
+    label:
+      en: Redis connection URI for caching
+      de: Redis connection URI for caching
+      el: Redis connection URI for caching
+      fr: Redis connection URI for caching
+      hr: Redis connection URI for caching
+      it: Redis connection URI for caching
+      ja: Redis connection URI for caching
+      ko: Redis connection URI for caching
+      nb: Redis connection URI for caching
+      pt: Redis connection URI for caching
+      ru: Redis connection URI for caching
+      sv: Redis connection URI for caching
+      tr: Redis connection URI for caching
+      zh: Redis connection URI for caching
+      uk: URI Redis для кешування
+  - name: POSTGRES_DB
+    type: text
+    default: teable-db
+    label:
+      en: PostgreSQL database name
+      de: PostgreSQL database name
+      el: PostgreSQL database name
+      fr: PostgreSQL database name
+      hr: PostgreSQL database name
+      it: PostgreSQL database name
+      ja: PostgreSQL database name
+      ko: PostgreSQL database name
+      nb: PostgreSQL database name
+      pt: PostgreSQL database name
+      ru: PostgreSQL database name
+      sv: PostgreSQL database name
+      tr: PostgreSQL database name
+      zh: PostgreSQL database name
+      uk: Назва бази даних PostgreSQL
+  - name: POSTGRES_USER
+    type: text
+    default: example
+    label:
+      en: PostgreSQL username
+      de: PostgreSQL username
+      el: PostgreSQL username
+      fr: PostgreSQL username
+      hr: PostgreSQL username
+      it: PostgreSQL username
+      ja: PostgreSQL username
+      ko: PostgreSQL username
+      nb: PostgreSQL username
+      pt: PostgreSQL username
+      ru: PostgreSQL username
+      sv: PostgreSQL username
+      tr: PostgreSQL username
+      zh: PostgreSQL username
+      uk: "Ім'я користувача PostgreSQL"
+  - name: POSTGRES_PASSWORD
+    type: secret
+    label:
+      en: PostgreSQL password
+      de: PostgreSQL password
+      el: PostgreSQL password
+      fr: PostgreSQL password
+      hr: PostgreSQL password
+      it: PostgreSQL password
+      ja: PostgreSQL password
+      ko: PostgreSQL password
+      nb: PostgreSQL password
+      pt: PostgreSQL password
+      ru: PostgreSQL password
+      sv: PostgreSQL password
+      tr: PostgreSQL password
+      zh: PostgreSQL password
+      uk: Пароль PostgreSQL

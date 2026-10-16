@@ -1,0 +1,21 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  gopeed:
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 256M
+    image: liwei2633/gopeed:v1.9.3
+    ports:
+      - "${WEB_PORT:-9999}:9999"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /app/storage
+      - type: bind
+        source: "${DOWNLOADS_DIR:-./Downloads}"
+        target: /app/Downloads
+    privileged: false

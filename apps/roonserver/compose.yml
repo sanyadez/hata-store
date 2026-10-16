@@ -1,0 +1,37 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  roonserver:
+    image: ghcr.io/roonlabs/roonserver:1.0.8
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      ROON_INSTALL_BRANCH: production
+      TZ: "${TZ:-UTC}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/Roon"
+        target: /Roon
+      - type: bind
+        source: "${MUSIC_DIR:-./Media/Music}"
+        target: /Music
+      - type: bind
+        source: "${APP_DATA:-.}/RoonBackups"
+        target: /RoonBackups
+      - type: bind
+        source: /run/udev
+        target: /run/udev
+        read_only: true
+    cap_add:
+      - SYS_ADMIN
+      - DAC_READ_SEARCH
+    security_opt:
+      - apparmor:unconfined
+      - label:disable
+    devices:
+      - /dev/snd:/dev/snd
+      - /dev/bus/usb:/dev/bus/usb
+      - /dev/dri:/dev/dri
+    group_add:
+      - audio
+    logging:
+      driver: local

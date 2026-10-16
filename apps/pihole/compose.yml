@@ -1,0 +1,24 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  pihole:
+    environment:
+      TZ: "${TZ:-UTC}"
+      FTLCONF_webserver_api_password: "${FTLCONF_WEBSERVER_API_PASSWORD:-hata}"
+      FTLCONF_dns_listeningMode: "${FTLCONF_DNS_LISTENINGMODE:-all}"
+    image: pihole/pihole:2026.05.0
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${WEB_PORT:-8800}:80"
+      - "${PORT_53:-53}:53"
+      - "${PORT_53:-53}:53/udp"
+      - "${PORT_443:-8443}:443"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/etc/pihole/"
+        target: /etc/pihole
+    cap_add:
+      - NET_ADMIN

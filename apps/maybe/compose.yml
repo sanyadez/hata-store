@@ -1,0 +1,110 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  maybe-web:
+    image: ghcr.io/maybe-finance/maybe:latest@sha256:c2d398bfc334db4d9862f268401dbb46f97848eaaaad8295d1221f2d99d631cc
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/app/storage"
+        target: /rails/storage
+    ports:
+      - "${WEB_PORT:-23000}:3000"
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: maybe_user
+      POSTGRES_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      POSTGRES_DB: maybe_production
+      SECRET_KEY_BASE: "${DB_PASSWORD_2:?set DB_PASSWORD_2}"
+      SELF_HOSTED: "true"
+      RAILS_FORCE_SSL: "false"
+      RAILS_ASSUME_SSL: "false"
+      DB_HOST: maybe-db
+      DB_PORT: 5432
+      REDIS_URL: redis://maybe-redis:6379/1
+      OPENAI_ACCESS_TOKEN: "${OPENAI_ACCESS_TOKEN:-}"
+    depends_on:
+      maybe-db:
+        condition: service_healthy
+      maybe-redis:
+        condition: service_healthy
+    networks:
+      - maybe_net
+    deploy:
+      resources:
+        reservations:
+          memory: 1024M
+  maybe-worker:
+    image: ghcr.io/maybe-finance/maybe:latest@sha256:c2d398bfc334db4d9862f268401dbb46f97848eaaaad8295d1221f2d99d631cc
+    command:
+      - bundle
+      - exec
+      - sidekiq
+    restart: unless-stopped
+    depends_on:
+      maybe-redis:
+        condition: service_healthy
+    environment:
+      POSTGRES_USER: maybe_user
+      POSTGRES_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      POSTGRES_DB: maybe_production
+      SECRET_KEY_BASE: "${DB_PASSWORD_2:?set DB_PASSWORD_2}"
+      SELF_HOSTED: "true"
+      RAILS_FORCE_SSL: "false"
+      RAILS_ASSUME_SSL: "false"
+      DB_HOST: maybe-db
+      DB_PORT: 5432
+      REDIS_URL: redis://maybe-redis:6379/1
+      OPENAI_ACCESS_TOKEN: "${OPENAI_ACCESS_TOKEN:-}"
+    networks:
+      - maybe_net
+    deploy:
+      resources:
+        reservations:
+          memory: 1024M
+  maybe-db:
+    image: postgres:16
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/pgdata"
+        target: /var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: maybe_user
+      POSTGRES_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      POSTGRES_DB: maybe_production
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U maybe_user -d maybe_production
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - maybe_net
+    deploy:
+      resources:
+        reservations:
+          memory: 1024M
+  maybe-redis:
+    image: redis:8.2.1-alpine3.22
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/redis/data"
+        target: /data
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - maybe_net
+    deploy:
+      resources:
+        reservations:
+          memory: 1024M
+networks:
+  maybe_net:
+    driver: bridge

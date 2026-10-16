@@ -1,0 +1,48 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Chatbot UI
+tagline:
+  en: Open source chat UI for AI models
+  zh: 用于AI模型的开源聊天界面
+  ar: واجهة محادثة مفتوحة المصدر لنماذج الذكاء الاصطناعي
+  de: Open-Source-Chat-Benutzeroberfläche für KI-Modelle
+  es: Interfaz de chat de código abierto para modelos de IA
+  fr: "Interface de chat open source pour les modèles d'IA"
+  hu: Nyílt forráskódú chat UI az AI modellekhez
+  it: Interfaccia di chat open source per modelli AI
+  ru: Открытый чат-интерфейс для моделей ИИ
+  pl: Otwarty interfejs czatu dla modeli AI
+  pt: Interface de chat de código aberto para modelos de IA
+  sv: Öppen källkod chattgränssnitt för AI-modeller
+  uk: Чат із відкритим кодом для моделей ШІ
+description:
+  en: Chatbot UI is an open source chat UI for AI models.
+  zh: Chatbot UI是一个开源的AI模型聊天界面。
+  ar: Chatbot UI هو واجهة محادثة مفتوحة المصدر لنماذج الذكاء الاصطناعي.
+  de: Chatbot UI ist eine Open-Source-Chat-Benutzeroberfläche für KI-Modelle.
+  es: Chatbot UI es una interfaz de chat de código abierto para modelos de IA.
+  fr: "Chatbot UI est une interface de chat open source pour les modèles d'IA."
+  hu: A Chatbot UI egy nyílt forráskódú chat UI az AI modellekhez.
+  it: "Chatbot UI è un'interfaccia di chat open source per modelli AI."
+  ru: Chatbot UI - это открытый чат-интерфейс для моделей ИИ.
+  pl: Chatbot UI to otwarty interfejs czatu dla modeli AI.
+  pt: Chatbot UI é uma interface de chat de código aberto para modelos de IA.
+  sv: Chatbot UI är ett öppen källkod chattgränssnitt för AI-modeller.
+  uk: Chatbot UI — чат із відкритим кодом для моделей ШІ.
+category: ai
+developer: Mckay Wrigley
+website: https://www.chatbotui.com
+source: https://github.com/mckaywrigley/chatbot-ui
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9ImJsYWNrIi8+PHBhdGggZD0iTTE3MS41ODIgNTMuMjQyMUg4NC40MTc1QzY0LjEzMzkgNTMuMjQyMSA0Ny42OTA3IDY5LjY4NTMgNDcuNjkwNyA4OS45Njg5VjE0MC44OTdDNDcuNjkwNyAxNjEuMTggNjQuMTMzOSAxNzcuNjI0IDg0LjQxNzUgMTc3LjYyNEgxNzEuNTgyQzE5MS44NjYgMTc3LjYyNCAyMDguMzA5IDE2MS4xOCAyMDguMzA5IDE0MC44OTdWODkuOTY4OUMyMDguMzA5IDY5LjY4NTMgMTkxLjg2NiA1My4yNDIxIDE3MS41ODIgNTMuMjQyMVoiIGZpbGw9ImJsYWNrIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjI0LjQ4NDUiLz48cGF0aCBkPSJNMTA2LjcxMiAxODEuNDk5QzExMS4xNSAxODEuNDg2IDExMy4zMTcgMTg2LjkwOCAxMTAuMDkyIDE4OS45NTZMNzcuMzQwMyAyMjAuOTAzQzc0LjE2OTQgMjIzLjg5OSA2OC45NTg3IDIyMS41NjUgNjkuMDgyMyAyMTcuMjA1TDY5Ljk1NjEgMTg2LjM2MkM3MC4wMzEgMTgzLjcxOSA3Mi4xOTA3IDE4MS42MTIgNzQuODM1MSAxODEuNjA0TDEwNi43MTIgMTgxLjQ5OVoiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTkzLjg5MDMgOTEuNTM2MUgxMDkuNDA0VjEyMy4yNjhDMTA5LjQwNCAxMjUuMjQzIDEwOS44OTcgMTI2Ljg2NCAxMTAuODg1IDEyOC4xMzRDMTExLjkxOSAxMjkuMzU2IDExMy40OTQgMTI5Ljk2NyAxMTUuNjA5IDEyOS45NjdDMTE3LjcyNSAxMjkuOTY3IDExOS4yNzYgMTI5LjM1NiAxMjAuMjYzIDEyOC4xMzRDMTIxLjI5NyAxMjYuODY0IDEyMS44MTQgMTI1LjI0MyAxMjEuODE0IDEyMy4yNjhWOTEuNTM2MUgxMzcuMzI4VjEyNC42NzhDMTM3LjMyOCAxMjguMjA0IDEzNi43NCAxMzEuMTg5IDEzNS41NjUgMTMzLjYzNEMxMzQuNDM2IDEzNi4wMzEgMTMyLjg2MiAxMzcuOTgyIDEzMC44NCAxMzkuNDg3QzEyOC44MTkgMTQwLjk0NCAxMjYuNDkyIDE0Mi4wMDIgMTIzLjg1OSAxNDIuNjZDMTIxLjI3NCAxNDMuMzY1IDExOC41MjQgMTQzLjcxOCAxMTUuNjA5IDE0My43MThDMTEyLjY5NCAxNDMuNzE4IDEwOS45MjEgMTQzLjM2NSAxMDcuMjg4IDE0Mi42NkMxMDQuNzAzIDE0Mi4wMDIgMTAyLjM5OSAxNDAuOTQ0IDEwMC4zNzggMTM5LjQ4N0M5OC4zNTYzIDEzNy45ODIgOTYuNzU3OSAxMzYuMDMxIDk1LjU4MjcgMTMzLjYzNEM5NC40NTQ0IDEzMS4xODkgOTMuODkwMyAxMjguMjA0IDkzLjg5MDMgMTI0LjY3OFY5MS41MzYxWk0xNDYuODU0IDkxLjUzNjFIMTYyLjcyVjE0MC44OTdIMTQ2Ljg1NFY5MS41MzYxWiIgZmlsbD0id2hpdGUiLz48L3N2Zz4="
+screenshots:
+  - 1.webp
+web:
+  service: chatbot-ui
+  port: 3000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 3080
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу

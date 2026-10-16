@@ -1,0 +1,19 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  gitea:
+    environment:
+      USER_GID: "${USER_GID:-1000}"
+      USER_UID: "${USER_UID:-1000}"
+    image: gitea/gitea:1.26.2
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    ports:
+      - "${WEB_PORT:-3002}:3000"
+      - "${PORT_22:-222}:22"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data

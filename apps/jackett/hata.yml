@@ -1,0 +1,59 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Jackett
+tagline:
+  en: Jackett works as a proxy server
+  zh: Jackett作为代理服务器工作
+  ar: يعمل جاكيت كخادم وكيل
+  de: Jackett arbeitet als Proxy-Server
+  es: Jackett funciona como un servidor proxy
+  fr: Jackett fonctionne comme un serveur mandataire
+  hu: A Jackett proxyként működik
+  it: Jackett funziona come server proxy
+  ru: Jackett работает как прокси-сервер
+  pl: Jackett działa jako serwer proxy
+  pt: O Jackett funciona como um servidor proxy
+  sv: Jackett fungerar som en proxyserver
+  uk: Jackett працює як проксі-сервер
+description:
+  en: "it translates queries from apps (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious etc.) into tracker-site-specific http queries, parses the html or json response, and then sends results back to the requesting software. This allows for getting recent uploads (like RSS) and performing searches. Jackett is a single repository of maintained indexer scraping & translation logic - removing the burden from other apps."
+  zh: Jackett是一个代理服务器，它将应用程序（Sonarr，Radarr，SickRage，CouchPotato，Mylar3，Lidarr，DuckieTV，qBittorrent，Nefarious等）的查询转换为特定于跟踪器网站的http查询，解析html或json响应，然后将结果发送回请求软件。这允许获取最近的上传（如RSS）并执行搜索。Jackett是维护的索引器抓取和翻译逻辑的单个存储库-从其他应用程序中删除负担。
+  ar: يترجم Jackett الاستعلامات من التطبيقات (Sonarr و Radarr و SickRage و CouchPotato و Mylar3 و Lidarr و DuckieTV و qBittorrent و Nefarious إلخ) إلى استعلامات http خاصة بموقع المتتبع ، ويحلل الاستجابة html أو json ، ويرسل النتائج بعد ذلك إلى البرنامج المطلوب. هذا يسمح بالحصول على تحميلات حديثة (مثل RSS) وإجراء البحث. Jackett هو مستودع واحد من منطق الاستخراج والترجمة للمؤشرات المحافظ عليها - إزالة الوزن من التطبيقات الأخرى.
+  de: "Jackett übersetzt Abfragen von Apps (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious usw.) in tracker-site-spezifische HTTP-Abfragen, analysiert die HTML- oder JSON-Antwort und sendet dann Ergebnisse an die anfordernde Software zurück. Dies ermöglicht das Abrufen von aktuellen Uploads (wie RSS) und das Ausführen von Suchen. Jackett ist ein einzelnes Repository für wartungsfreie Indexer-Scraping- und Übersetzungslogik - das Entfernen des Lastdrucks von anderen Apps."
+  es: "Jackett traduce las consultas de las aplicaciones (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious, etc.) en consultas HTTP específicas del sitio del rastreador, analiza la respuesta HTML o JSON y luego envía los resultados de vuelta al software solicitante. Esto permite obtener subidas recientes (como RSS) y realizar búsquedas. Jackett es un repositorio único de lógica de raspado y traducción de indexadores mantenidos - eliminando la carga de otras aplicaciones."
+  fr: "Jackett traduit les requêtes des applications (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious, etc.) en requêtes HTTP spécifiques au site de suivi, analyse la réponse HTML ou JSON et envoie ensuite les résultats au logiciel demandeur. Cela permet d'obtenir des téléchargements récents (comme RSS) et d'exécuter des recherches. Jackett est un seul référentiel de logique de balayage et de traduction d'indexeurs maintenus - supprimant la charge des autres applications."
+  hu: "A Jackett alkalmazások (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious stb.) lekérdezéseit fordítja le a követőhely specifikus HTTP-lekérdezésekre, elemzi a HTML vagy JSON választ, majd visszaküldi a kérő szoftvernek az eredményeket. Ez lehetővé teszi a legfrissebb feltöltések (mint például az RSS) lekérdezését és keresését. A Jackett egyetlen tárolóhelye a karbantartott indexelőelemző és fordítási logikának - eltávolítja a többi alkalmazás terhelését."
+  it: "Jackett traduce le query dagli applicativi (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious ecc.) in query HTTP specifiche per il sito del tracker, analizza la risposta HTML o JSON e invia quindi i risultati al software richiedente. Ciò consente di ottenere caricamenti recenti (come RSS) e di eseguire ricerche. Jackett è un singolo repository di logica di scraping e traduzione degli indexer mantenuti - rimuovendo il carico da altre applicazioni."
+  ru: "Jackett переводит запросы из приложений (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious и т. Д.) В запросы HTTP, специфичные для сайта трекера, анализирует ответ HTML или JSON и затем отправляет результаты обратно в запрашивающее программное обеспечение. Это позволяет получать последние загрузки (например, RSS) и выполнять поиски. Jackett - это единственный репозиторий с поддерживаемой логикой сбора и перевода индексаторов - удаляет нагрузку с других приложений."
+  pl: "Jackett przetłumacza zapytania aplikacji (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious itp.) Na zapytania HTTP specyficzne dla witryny śledzenia, analizuje odpowiedź HTML lub JSON i następnie zwraca wyniki do oprogramowania żądającego. Pozwala to na uzyskanie najnowszych przesyłek (takich jak RSS) i przeprowadzenie wyszukiwania. Jackett jest jednym repozytorium z logiką przetwarzania i tłumaczenia indeksatorów - usuwa obciążenie innych aplikacji."
+  pt: "O Jackett traduz as consultas de aplicativos (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious, etc.) em consultas HTTP específicas do site de rastreamento, analisa a resposta HTML ou JSON e, em seguida, envia os resultados de volta ao software solicitante. Isso permite obter uploads recentes (como RSS) e executar pesquisas. O Jackett é um único repositório de lógica de raspagem e tradução de indexadores mantidos - removendo a carga de outras aplicações."
+  sv: "Jackett översätter applikationsförfrågningar (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious, etc.) till specifika HTTP-förfrågningar för spårningssidan, analyserar HTML- eller JSON-svaret och skickar sedan tillbaka resultatet till den begärande mjukvaran. Detta gör det möjligt att hämta senaste uppladdningar (till exempel RSS) och utföra sökningar. Jackett är ett enda repository för skrapnings- och översättningslogiken för indexer - borttagning av belastning från andra appar."
+  uk: "Він перетворює запити застосунків (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious тощо) на HTTP-запити, специфічні для кожного трекера, розбирає відповідь у форматі HTML або JSON і повертає результати застосунку, що запитував. Це дає змогу отримувати свіжі роздачі (як через RSS) і виконувати пошук. Jackett — єдине місце, де підтримується логіка збирання й перетворення даних з індексаторів, тож іншим застосункам цього робити не потрібно."
+category: media
+developer: Jackett
+website: https://github.com/Jackett/Jackett
+source: https://github.com/Jackett/Jackett
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: jackett
+  port: 9117
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 9117
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Downloads
+      uk: Завантаження
+    hint:
+      en: Inside the app it is /downloads
+      uk: У застосунку вона — /downloads

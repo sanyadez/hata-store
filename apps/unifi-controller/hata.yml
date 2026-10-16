@@ -1,0 +1,107 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: "Unifi-controller [legacy]"
+  zh: "Unifi控制器 [legacy]"
+tagline:
+  en: "The Unifi-controller software is a powerful, enterprise wireless software engine ideal for high-density client…"
+  zh: Unifi控制器软件是一种功能强大的企业级无线软件引擎，适用于需要低延迟和高可用性性能的高密度客户端部署。
+  ar: يعد برنامج Unifi-controller محرك برمجيات لاسلكي متطور ومتخصص للمؤسسات، مثالي للتركيبات العميلية ذات الكثافة العالية…
+  de: "Die Unifi-controller-Software ist ein leistungsstarker, unternehmensweiter Wireless-Software-Engine, der für…"
+  es: El software Unifi-controller es un poderoso motor de software inalámbrico empresarial ideal para implementaciones de…
+  fr: "Le logiciel Unifi-controller est un puissant moteur logiciel sans fil d'entreprise idéal pour les déploiements de…"
+  hu: "A Unifi-controller szoftver egy erőteljes, vállalati vezeték nélküli szoftvermotor, amely tökéletesen alkalmas a…"
+  it: Il software Unifi-controller è un potente motore software wireless aziendale ideale per implementazioni client ad…
+  ru: "ПО Unifi-controller - это мощный корпоративный беспроводной программный двигатель, идеально подходящий для реализации…"
+  pl: "Oprogramowanie Unifi-controller to potężny, korporacyjny silnik oprogramowania bezprzewodowego, idealny do…"
+  pt: O software Unifi-controller é um poderoso motor de software sem fio corporativo ideal para implantações de clientes…
+  sv: "Unifi-controller-programvaran är ett kraftfullt, företagsinriktat trådlöst programvarumotor som är idealiskt för…"
+  uk: "UniFi Controller — керування бездротовими мережами UniFi, навіть із великою кількістю клієнтів."
+description:
+  en: "For Unifi to adopt other devices, e.g. an Access Point, it is required to change the inform IP address. Because Unifi runs inside Docker by default it uses an IP address not accessible by other devices. To change this go to Settings > System Settings > Controller Configuration and set the Controller Hostname/IP to a hostname or IP address accessible by your devices. Additionally the checkbox \"Override inform host with controller hostname/IP\" has to be checked, so that devices can connect to the controller during adoption (devices use the inform-endpoint during adoption)."
+  zh: 为了让Unifi控制器能够管理其他设备，例如无线接入点，需要修改inform IP地址。因为Unifi控制器默认运行在Docker中，所以它使用的IP地址不可被其他设备访问。要修改这个设置，请前往设置>系统设置>控制器配置，将控制器主机名/ IP设置为可被您的设备访问的主机名或IP地址。此外，必须选中“使用控制器主机名/ IP覆盖inform主机”复选框，以便在采用期间设备可以连接到控制器（设备在采用期间使用inform-endpoint）。
+  ar: "يجب تغيير عنوان IP inform لـ Unifi للسماح لـ Unifi بالتحكم في أجهزة أخرى ، على سبيل المثال نقطة الوصول. لأن Unifi يعمل داخل Docker بشكل افتراضي ، فإنه يستخدم عنوان IP غير قابل للوصول من قبل أجهزة أخرى. لتغيير ذلك ، انتقل إلى الإعدادات> إعدادات النظام> تكوين المراقب وقم بتعيين اسم المضيف / IP للمضيف أو عنوان IP الذي يمكن الوصول إليه من قبل الأجهزة الخاصة بك. بالإضافة إلى ذلك ، يجب عليك تحديد مربع الاختيار \"تجاوز مضيف inform بمضيف المضيف / IP للمراقب\" ، حتى يتمكن الأجهزة من الاتصال بالمراقبة أثناء الاستيفاء (تستخدم الأجهزة نقطة الاتصال inform أثناء الاستيفاء)."
+  de: "Um Unifi zu anderen Geräten, z. B. einem Access Point, zu übernehmen, muss die Inform-IP-Adresse geändert werden. Da Unifi standardmäßig in Docker läuft, verwendet es eine IP-Adresse, die von anderen Geräten nicht erreichbar ist. Um dies zu ändern, gehen Sie zu Einstellungen> Systemeinstellungen> Controller-Konfiguration und setzen Sie den Controller-Hostname / IP auf einen Hostname oder eine IP-Adresse, die von Ihren Geräten erreichbar ist. Zusätzlich muss die Option \"Inform-Host mit Controller-Hostname / IP überschreiben\" aktiviert sein, damit Geräte während der Übernahme mit dem Controller verbunden werden können (Geräte verwenden während der Übernahme den Inform-Endpunkt)."
+  es: "Para que Unifi adopte otros dispositivos, por ejemplo, un punto de acceso, es necesario cambiar la dirección IP inform. Debido a que Unifi se ejecuta en Docker de forma predeterminada, utiliza una dirección IP que no es accesible para otros dispositivos. Para cambiar esto, vaya a Configuración> Configuración del sistema> Configuración del controlador y establezca el nombre de host / IP del controlador en un nombre de host o una dirección IP accesible para sus dispositivos. Además, la casilla de verificación \"Anular el host inform con el nombre de host / IP del controlador\" debe estar marcada para que los dispositivos puedan conectarse al controlador durante la adopción (los dispositivos utilizan el punto final inform durante la adopción)."
+  fr: "Pour que Unifi adopte d'autres appareils, par exemple un point d'accès, il est nécessaire de modifier l'adresse IP inform. Comme Unifi s'exécute par défaut dans Docker, il utilise une adresse IP non accessible par d'autres appareils. Pour modifier cela, allez dans Paramètres> Paramètres système> Configuration du contrôleur et définissez le nom d'hôte / IP du contrôleur sur un nom d'hôte ou une adresse IP accessible par vos appareils. De plus, la case \"Remplacer l'hôte inform avec le nom d'hôte / IP du contrôleur\" doit être cochée pour que les appareils puissent se connecter au contrôleur lors de l'adoption (les appareils utilisent le point de terminaison inform lors de l'adoption)."
+  hu: "A Unifi-hez más eszközök, például egy hozzáférési pont, csatlakoztatásához meg kell változtatni az inform IP-címet. Mivel az Unifi alapértelmezetten Dockerben fut, használ egy IP-címet, amely nem elérhető más eszközöktől. Ehhez menj a Beállítások> Rendszerbeállítások> Vezérlő konfigurációhoz és állítsd be a Vezérlő hosztnevet / IP-címét egy hosztnévre vagy egy IP-címre, amely elérhető a készülékeidről. Továbbá a \"Inform hoszt felülírása a vezérlő hosztnevével / IP-címmel\" jelölőnégyzetet be kell jelölni, hogy a készülékek csatlakozhassanak a vezérlőhöz az öröklés során (a készülékek az inform végpontot használják az öröklés során)."
+  it: "Per far adottare a Unifi altri dispositivi, ad esempio un access point, è necessario modificare l'indirizzo IP inform. Poiché Unifi viene eseguito di default in Docker, utilizza un indirizzo IP non accessibile da altri dispositivi. Per modificarlo, vai su Impostazioni> Impostazioni di sistema> Configurazione del controller e imposta il nome host / IP del controller su un nome host o un indirizzo IP accessibile dai tuoi dispositivi. Inoltre, la casella di controllo \"Sovrascrivi host inform con nome host / IP del controller\" deve essere selezionata per consentire ai dispositivi di connettersi al controller durante l'adozione (i dispositivi utilizzano il punto di terminazione inform durante l'adozione)."
+  ru: "Чтобы Unifi принял другие устройства, например, точку доступа, необходимо изменить IP-адрес inform. Поскольку Unifi по умолчанию запускается в Docker, он использует IP-адрес, который недоступен для других устройств. Чтобы это изменить, перейдите в Настройки> Системные настройки> Конфигурация контроллера и установите имя хоста / IP-адреса контроллера на имя хоста или IP-адрес, доступный для ваших устройств. Кроме того, флажок \"Перезаписать хост inform с именем хоста / IP-адресом контроллера\" должен быть установлен, чтобы устройства могли подключиться к контроллеру во время принятия (устройства используют конечную точку inform во время принятия)."
+  pl: "Aby Unifi przyjął inne urządzenia, na przykład punkt dostępu, należy zmienić adres IP inform. Ponieważ Unifi jest domyślnie uruchamiany w Dockerze, używa adresu IP, który nie jest dostępny dla innych urządzeń. Aby to zmienić, przejdź do Ustawienia> Ustawienia systemowe> Konfiguracja kontrolera i ustaw nazwę hosta / adres IP kontrolera na nazwę hosta lub adres IP dostępny dla Twoich urządzeń. Ponadto pole wyboru \"Nadpisz host inform na nazwę hosta / adres IP kontrolera\" musi być zaznaczone, aby urządzenia mogły połączyć się z kontrolerem podczas adopcji (urządzenia korzystają z punktu końcowego inform podczas adopcji)."
+  pt: "Para que o Unifi aceite outros dispositivos, como um ponto de acesso, é necessário modificar o endereço IP inform. Como o Unifi é executado por padrão no Docker, ele usa um endereço IP não acessível por outros dispositivos. Para modificá-lo, vá para Configurações> Configurações do sistema> Configuração do controlador e defina o nome do host / IP do controlador em um nome de host ou um endereço IP acessível por seus dispositivos. Além disso, a caixa de seleção \"Substituir host inform pelo nome do host / IP do controlador\" deve ser marcada para permitir que os dispositivos se conectem ao controlador durante a adoção (os dispositivos usam o ponto de extremidade inform durante a adoção)."
+  sv: "För att Unifi ska acceptera andra enheter, till exempel en accesspunkt, måste du ändra IP-adressen inform. Eftersom Unifi körs som standard i Docker använder den en IP-adress som inte är tillgänglig för andra enheter. För att ändra detta, gå till Inställningar> Systeminställningar> Kontrollerns konfiguration och ange kontrollerns värdnamn / IP-adress till ett värdnamn eller en IP-adress som är tillgänglig för dina enheter. Dessutom måste kryssrutan \"Ersätt informhost med kontrollerns värdnamn / IP-adress\" vara markerad för att enheterna ska kunna ansluta till kontrollern under adoption (enheterna använder informändpunkten under adoption)."
+  uk: "Щоб Unifi міг підхоплювати інші пристрої, наприклад точку доступу, потрібно змінити inform IP-адресу. Оскільки Unifi за замовчуванням працює в Docker, він використовує IP-адресу, недоступну для інших пристроїв. Щоб це змінити, перейдіть у Settings > System Settings > Controller Configuration і задайте Controller Hostname/IP як ім’я хоста або IP-адресу, доступну вашим пристроям. Крім того, потрібно поставити позначку «Override inform host with controller hostname/IP», щоб пристрої могли підключатися до контролера під час підхоплення (під час підхоплення пристрої використовують inform-endpoint)."
+category: network
+developer: LinuxServer.io
+website: https://ui.com
+source: https://github.com/linuxserver/docker-unifi-controller
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: unifi-controller
+  port: 8080
+settings:
+  - name: PORT_3478
+    type: port
+    default: 3478
+    label:
+      en: Port 3478
+      uk: Порт 3478
+    advanced: true
+  - name: PORT_10001
+    type: port
+    default: 10001
+    label:
+      en: Port 10001
+      uk: Порт 10001
+    advanced: true
+  - name: WEB_PORT
+    type: port
+    default: 8383
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: PORT_8443
+    type: port
+    default: 8443
+    label:
+      en: Port 8443
+      uk: Порт 8443
+    advanced: true
+  - name: PORT_1900
+    type: port
+    default: 1900
+    label:
+      en: Port 1900
+      uk: Порт 1900
+    advanced: true
+  - name: PORT_8843
+    type: port
+    default: 8843
+    label:
+      en: Port 8843
+      uk: Порт 8843
+    advanced: true
+  - name: PORT_8880
+    type: port
+    default: 8880
+    label:
+      en: Port 8880
+      uk: Порт 8880
+    advanced: true
+  - name: PORT_6789
+    type: port
+    default: 6789
+    label:
+      en: Port 6789
+      uk: Порт 6789
+    advanced: true
+  - name: PORT_5514
+    type: port
+    default: 5514
+    label:
+      en: Port 5514
+      uk: Порт 5514
+    advanced: true

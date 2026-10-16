@@ -1,0 +1,53 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Plex
+tagline:
+  en: Stream Movies & TV Shows
+  zh: 流式播放电影和电视剧
+  uk: Потокове відтворення фільмів і серіалів
+description:
+  en: "Transform your home into a cinematic oasis with your very own media server. Unlike streaming platforms that compress and limit the quality of your content, a Plex server in your home allows you to maintain the pristine, high-bitrate glory of Blu-ray and beyond. Imagine pairing this high-fidelity, uninterrupted media access with cutting-edge home theater tech like VR headsets, 75-inch UHD TVs, or 100-inch laser projectors. The result? A breathtaking visual and auditory experience that streams seamlessly across TVs and mobile devices alike, right from the comfort of your couch."
+  zh: 将您的家变成一个电影的绿洲，拥有您自己的媒体服务器。与压缩和限制内容质量的流媒体平台不同，家中的 Plex 服务器可以让您保持 Blu-ray 及更高格式的原始高比特率荣耀。想象一下，将这种高保真、无中断的媒体访问与前沿的家庭影院技术相结合，如 VR 头戴显示器、75 英寸 UHD 电视或 100 英寸激光投影仪。结果是什么？在您家中沙发上就能享受的令人惊叹的视觉和听觉体验，流畅地在电视和移动设备上播放。
+  uk: "Перетворіть свій дім на кінотеатр зі власним медіасервером. На відміну від стрімінгових платформ, які стискають і обмежують якість вмісту, сервер Plex удома дає змогу зберегти бездоганну якість з високим бітрейтом, як на Blu-ray і вище. Уявіть, що цей якісний і нічим не обмежений доступ до медіа поєднано з сучасною технікою для домашнього кінотеатру: VR-шоломами, UHD-телевізорами на 75 дюймів чи лазерними проєкторами на 100 дюймів. Результат — приголомшливі враження для очей і слуху, що без збоїв транслюються на телевізори й мобільні пристрої просто з вашого дивана."
+notes:
+  en: "## Plex\n\n#### Stream Movies & TV Shows <br>\n\n*FAQ* Authorized Files and Data to Plex\n\n1. Click setting via top right menu of App icon\n2. map your device's media location in 'Host Path' and link it to Plex's 'Container Path' at /Media for seamless access. To add a media library in Plex\n3. Go to Plex settings\n4. click 'Add Library'\n5. select your media type, and specify the path, such as /Media, where your media files are stored for Plex to catalog and include in your library."
+  zh: "## Plex\n\n#### 常见问题解答\n\n*FAQ* 授权文件和数据给 Plex\n\n1. 点击应用程序图标右上角的设置菜单。\n2. 在“主机路径”中映射您设备的媒体位置，并将其链接到 Plex 的“容器路径”/Media 以实现无缝访问。 要在 Plex 中添加媒体库：\n3. 进入 Plex 设置。\n4. 点击“添加库”。\n5. 选择您的媒体类型，并指定路径，例如 /Media，Plex 将存储和编目您的媒体文件，并将其包含在您的库中。"
+  uk: "## Plex\n\n#### Потокове відтворення фільмів і серіалів <br>\n\n*Поширені запитання* Як дати Plex доступ до файлів і даних\n\n1. Натисніть налаштування в меню значка застосунку у верхньому правому куті\n2. Вкажіть розташування медіа вашого пристрою в «Host Path» і зв'яжіть його з «Container Path» Plex за адресою /Media для безперешкодного доступу. Щоб додати медіатеку в Plex:\n3. Відкрийте налаштування Plex\n4. Натисніть «Add Library»\n5. Виберіть тип медіа й вкажіть шлях, наприклад /Media, де зберігаються ваші медіафайли, щоб Plex каталогізував їх і додав до вашої бібліотеки."
+category: media
+developer: Plex
+website: https://www.plex.tv
+source: https://github.com/linuxserver/docker-plex
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk0OSkiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMV8xMjUxXzg5NDkpIj48bWFzayBpZD0ibWFzazBfMTI1MV84OTQ5IiBzdHlsZT0ibWFzay10eXBlOmx1bWluYW5jZSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiPjxwYXRoIGQ9Ik0yNTYgMEgwVjI1NkgyNTZWMFoiIGZpbGw9IndoaXRlIi8+PC9tYXNrPjxnIG1hc2s9InVybCgjbWFzazBfMTI1MV84OTQ5KSI+PG1hc2sgaWQ9Im1hc2sxXzEyNTFfODk0OSIgc3R5bGU9Im1hc2stdHlwZTpsdW1pbmFuY2UiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2Ij48cGF0aCBkPSJNMjU2IDBIMFYyNTZIMjU2VjBaIiBmaWxsPSJ3aGl0ZSIvPjwvbWFzaz48ZyBtYXNrPSJ1cmwoI21hc2sxXzEyNTFfODk0OSkiPjxwYXRoIGQ9Ik0yNTYgMEgwVjI1NkgyNTZWMFoiIGZpbGw9InVybCgjcGFpbnQwX3JhZGlhbF8xMjUxXzg5NDkpIi8+PHBhdGggZD0iTTc1IDQxSDEyNS4zOTNMMTgxIDEyOEwxMjUuMzkzIDIxNUg3NUwxMzAuNjA3IDEyOEw3NSA0MVoiIGZpbGw9InVybCgjcGFpbnQxX3JhZGlhbF8xMjUxXzg5NDkpIi8+PC9nPjwvZz48L2c+PC9nPjxkZWZzPjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQwX3JhZGlhbF8xMjUxXzg5NDkiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI4IDEyOCkgcm90YXRlKDkwKSBzY2FsZSgxMjgpIj48c3RvcCBzdG9wLWNvbG9yPSIjMjgxQjA3Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMEUwQzA4Ii8+PC9yYWRpYWxHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9InBhaW50MV9yYWRpYWxfMTI1MV84OTQ5IiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OS41MDkgMTI3LjU1Mikgc2NhbGUoOTguMDUxOCAxNjAuOTQ3KSI+PHN0b3Agc3RvcC1jb2xvcj0iI0Y5QkUwMyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0NDN0MxOSIvPjwvcmFkaWFsR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjUxXzg5NDkiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJjbGlwMV8xMjUxXzg5NDkiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: plex
+  port: 32400
+  path: /web/index.html
+settings:
+  - name: MEDIA_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media"
+    label:
+      en: Plex Media directory
+      zh: Plex媒体目录
+      uk: Тека медіа Plex
+    hint:
+      en: Inside the app it is /Media
+      uk: У застосунку вона — /Media
+  - name: VERSION
+    type: text
+    default: docker
+    label:
+      en: Let Docker handle the Plex Version
+      zh: 让Docker处理Plex版本
+      uk: Доручити Docker вибір версії Plex
+permissions:
+  host-network:
+    en: "Its authors run it on the server's own network: it reaches the devices of the home network, and its ports are the server's"
+    uk: "Автори запускають його в мережі самого сервера: він бачить пристрої домашньої мережі, а його порти — порти сервера"
+  devices:
+    en: "It uses devices of the server: /dev/dri, /dev/dvb"
+    uk: "Він користується пристроями сервера: /dev/dri, /dev/dvb"

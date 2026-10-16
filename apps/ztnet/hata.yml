@@ -1,0 +1,256 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: ZTnet
+tagline:
+  en: Self-hosted ZeroTier network controller with web UI for centralized management.
+  it: Controller di rete ZeroTier self-hosted con UI web per gestione centralizzata.
+  nb: Selvhostet ZeroTier nettverkskontroller med web-UI for sentralisert styring.
+  zh: 带有Web UI的自托管ZeroTier网络控制器，用于集中管理。
+  ja: 集中管理のためのWeb UIを備えたセルフホスト型ZeroTierネットワークコントローラー。
+  ko: 중앙 집중식 관리를 위한 웹 UI가 있는 자체 호스팅 ZeroTier 네트워크 컨트롤러입니다.
+  fr: Contrôleur de réseau ZeroTier auto-hébergé avec interface web pour gestion centralisée.
+  de: Selbst gehosteter ZeroTier Netzwerk-Controller mit Web-UI für zentrale Verwaltung.
+  sv: Självhostad ZeroTier nätverkskontroller med webb-UI för centraliserad hantering.
+  el: Αυτο-φιλοξενούμενος ελεγκτής δικτύου ZeroTier με web UI για κεντρική διαχείριση.
+  hr: Samohostovani ZeroTier mrežni kontroler s web sučeljem za centralizirano upravljanje.
+  pt: Controlador de rede ZeroTier auto-hospedado com interface web para gestão centralizada.
+  ru: Самостоятельно размещаемый сетевой контроллер ZeroTier с веб-интерфейсом для централизованного управления.
+  tr: "Merkezi yönetim için web UI'si olan kendi kendine barındırılan ZeroTier ağ kontrolcüsü."
+  uk: Контролер мережі ZeroTier для самостійного розгортання з вебінтерфейсом для централізованого керування.
+description:
+  en: "ZTNET is a powerful ZeroTier network management tool that simplifies network configuration and management through an intuitive Web interface, ideal for teams and individual users. Its modern design and rich features provide an efficient solution for building secure, scalable virtual networks.\n\nThe tool centers on an intuitive Web interface and organization with multi-user support. Developed in TypeScript, it acts as an intermediary between users and the ZeroTier Controller API, enabling collaborative network management within organizations to streamline team tasks. Integration with ZeroTier Central API allows direct management of networks, nodes, and members through a user-friendly interface, enhancing configuration efficiency.\n\nIt supports custom private root servers to create isolated network environments, improving privacy and control. Personalized user spaces enable users to independently create and manage networks. Support for 6plane and rfc4193 IPv6 addressing enriches enterprise or personal networking capabilities. Compatibility with ARM64 and AMD64 architectures ensures broad device support. The tool focuses on user-friendly and flexible design to deliver a modern network management experience.\n\n**Key Features:**\n- Intuitive Web interface for simplified ZeroTier network management\n- Organization and multi-user support for team collaboration\n- Integration with ZeroTier Central API for managing networks and nodes\n- Custom private root server for enhanced privacy and control\n- Personalized user spaces for independent network creation and management\n- Support for 6plane and rfc4193 IPv6 addressing\n- Compatibility with ARM64 and AMD64 architectures for diverse devices\n\n**Learn More:**\n- [ZTnet Official Website](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  it: "ZTNET è un potente strumento di gestione reti ZeroTier che semplifica la configurazione e gestione delle reti attraverso un'interfaccia Web intuitiva, ideale per team e utenti individuali. Il suo design moderno e le ricche funzionalità forniscono una soluzione efficiente per costruire reti virtuali sicure e scalabili.\n\nLo strumento si concentra su un'interfaccia Web intuitiva e organizzazione con supporto multi-utente. Sviluppato in TypeScript, agisce come intermediario tra utenti e l'API del Controller ZeroTier, consentendo la gestione collaborative delle reti all'interno delle organizzazioni per semplificare le attività del team. L'integrazione con l'API ZeroTier Central consente la gestione diretta di reti, nodi e membri attraverso un'interfaccia user-friendly, migliorando l'efficienza di configurazione.\n\nSupporta server root privati personalizzati per creare ambienti di rete isolati, migliorando privacy e controllo. Gli spazi utente personalizzati consentono agli utenti di creare e gestire reti indipendentemente. Il supporto per l'indirizzamento IPv6 6plane e rfc4193 arricchisce le capacità di networking aziendale o personale. La compatibilità con architetture ARM64 e AMD64 garantisce un ampio supporto dei dispositivi. Lo strumento si concentra su design user-friendly e flessibile per offrire un'esperienza di gestione rete moderna.\n\n**Caratteristiche Principali:**\n- Interfaccia Web intuitiva per gestione semplificata delle reti ZeroTier\n- Supporto organizzazione e multi-utente per collaborazione del team\n- Integrazione con API ZeroTier Central per gestire reti e nodi\n- Server root privato personalizzato per maggiore privacy e controllo\n- Spazi utente personalizzati per creazione e gestione indipendente delle reti\n- Supporto per indirizzamento IPv6 6plane e rfc4193\n- Compatibilità con architetture ARM64 e AMD64 per dispositivi diversi\n\n**Scopri di più:**\n- [Sito Web Ufficiale ZTnet](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  nb: "ZTNET er et kraftig ZeroTier nettverksstyringsverktøy som forenkler nettverkskonfigurasjon og -administrasjon gjennom et intuitivt webgrensesnitt, ideelt for team og individuelle brukere. Dets moderne design og rike funksjoner gir en effektiv løsning for å bygge sikre, skalerbare virtuelle nettverk.\n\nVerktøyet sentrerer rundt et intuitivt webgrensesnitt og organisering med flerbrukerstøtte. Utviklet i TypeScript, fungerer det som en mellommann mellom brukere og ZeroTier Controller API, som muliggjør samarbeidende nettverksadministrasjon innenfor organisasjoner for å effektivisere teamoppgaver. Integrasjon med ZeroTier Central API tillater direkto administrasjon av nettverk, noder og medlemmer gjennom et brukervennlig grensesnitt, som forbedrer konfigurasjonseffektivitet.\n\nDet støtter tilpassede private rotservere for å skape isolerte nettverksmiljøer, forbedre personvern og kontroll. Personaliserte brukerrom gjør at brukere kan uavhengig opprette og administrere nettverk. Støtte for 6plane og rfc4193 IPv6-adressering beriker bedrifts- eller personlige nettverksmuligheter. Kompatibilitet med ARM64 og AMD64 arkitekturer sikrer brett enhetsstøtte. Verktøyet fokuserer på brukervennlig og fleksibelt design for å levere en moderne nettverksadministrasjonsopplevelse.\n\n**Hovedfunksjoner:**\n- Intuitivt webgrensesnitt for forenklet ZeroTier nettverksadministrasjon\n- Organisering og flerbrukerstøtte for teamsamarbeid\n- Integrasjon med ZeroTier Central API for administrering av nettverk og noder\n- Tilpasset privat rotserver for forbedret personvern og kontroll\n- Personaliserte brukerrom for uavhengig opprettelse og administrasjon av nettverk\n- Støtte for 6plane og rfc4193 IPv6-adressering\n- Kompatibilitet med ARM64 og AMD64 arkitekturer for diverse enheter\n\n**Lær mer:**\n- [ZTnet Offisiell Nettside](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  zh: "ZTNET 是一款强大的 ZeroTier 网络管理工具，通过直观的 Web 界面简化网络配置和管理，适合团队和个人用户。其现代化的设计和丰富的功能，为构建安全、可扩展的虚拟网络提供高效解决方案。\n\n该工具以直观的 Web 界面和组织化多用户支持为核心。它通过 TypeScript 开发，作为用户与 ZeroTier 控制器 API 的中介，支持组织内多用户协作管理网络，简化团队任务。集成 ZeroTier Central API，允许通过直观界面直接管理网络、节点和成员，提升配置效率。\n\n它支持自定义私有根服务器，打造隔离的网络环境，增强隐私和控制力。提供个性化用户空间，用户可独立创建和管理网络。支持 6plane 和 rfc4193 IPv6 寻址，丰富企业或个人网络功能。适配 ARM64 和 AMD64 架构，确保多设备兼容性。该工具以用户友好性和灵活性为中心，提供现代化的网络管理体验。\n\n**主要功能：**\n- 直观的 Web 界面，简化 ZeroTier 网络管理\n- 组织和多用户支持，方便团队协作\n- 集成 ZeroTier Central API，管理网络和节点\n- 自定义私有根服务器，增强隐私和控制\n- 个性化用户空间，独立创建和管理网络\n- 支持 6plane 和 rfc4193 IPv6 寻址\n- 支持 ARM64 和 AMD64 架构，适配多种设备\n\n**了解更多：**\n- [ZTnet 官方网站](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  ja: "ZTNETは、直感的なWebインターフェースを通じてネットワーク設定と管理を簡素化する強力なZeroTierネットワーク管理ツールで、チームと個人ユーザーに最適です。モダンなデザインと豊富な機能により、安全でスケーラブルな仮想ネットワークを構築するための効率的なソリューションを提供します。\n\nこのツールは直感的なWebインターフェースとマルチユーザーサポートによる組織化を中心としています。TypeScriptで開発され、ユーザーとZeroTier Controller APIの仲介として機能し、組織内でのコラボレーティブネットワーク管理を可能にしてチームタスクを効率化します。ZeroTier Central APIとの統合により、ユーザーフレンドリーなインターフェースを通じてネットワーク、ノード、メンバーの直接管理が可能になり、設定効率を向上させます。\n\n独立したネットワーク環境を作成するためのカスタムプライベートルートサーバーをサポートし、プライバシーと制御を向上させます。パーソナライズされたユーザースペースにより、ユーザーは独立してネットワークを作成・管理できます。6planeとrfc4193 IPv6アドレッシングのサポートにより、企業や個人のネットワーク機能が充実します。ARM64とAMD64アーキテクチャとの互換性により、幅広いデバイスサポートを保証します。このツールはユーザーフレンドリーで柔軟な設計に焦点を当て、モダンなネットワーク管理体験を提供します。\n\n**主な機能:**\n- ZeroTierネットワーク管理を簡素化する直感的なWebインターフェース\n- チームコラボレーションのための組織とマルチユーザーサポート\n- ネットワークとノードを管理するためのZeroTier Central API統合\n- プライバシーと制御を強化するカスタムプライベートルートサーバー\n- 独立したネットワーク作成と管理のためのパーソナライズされたユーザースペース\n- 6planeとrfc4193 IPv6アドレッシングのサポート\n- 多様なデバイス用のARM64とAMD64アーキテクチャとの互換性\n\n**詳細情報:**\n- [ZTnet公式ウェブサイト](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  ko: "ZTNET은 직관적인 웹 인터페이스를 통해 네트워크 구성 및 관리를 단순화하는 강력한 ZeroTier 네트워크 관리 도구로, 팀과 개인 사용자에게 이상적입니다. 현대적인 디자인과 풍부한 기능으로 안전하고 확장 가능한 가상 네트워크 구축을 위한 효율적인 솔루션을 제공합니다.\n\n이 도구는 직관적인 웹 인터페이스와 다중 사용자 지원을 통한 조직화를 중심으로 합니다. TypeScript로 개발되어 사용자와 ZeroTier Controller API 간의 중개자 역할을 하며, 조직 내에서 협업 네트워크 관리를 가능하게 하여 팀 작업을 간소화합니다. ZeroTier Central API와의 통합을 통해 사용자 친화적인 인터페이스를 통해 네트워크, 노드 및 멤버를 직접 관리할 수 있어 구성 효율성을 향상시킵니다.\n\n격리된 네트워크 환경을 만들기 위한 사용자 정의 프라이빗 루트 서버를 지원하여 개인정보 보호와 제어를 향상시킵니다. 개인화된 사용자 공간을 통해 사용자가 독립적으로 네트워크를 생성하고 관리할 수 있습니다. 6plane과 rfc4193 IPv6 주소 지정 지원으로 기업 또는 개인 네트워킹 기능을 향상시킵니다. ARM64 및 AMD64 아키텍처와의 호환성으로 광범위한 장치 지원을 보장합니다. 이 도구는 사용자 친화적이고 유연한 설계에 중점을 두어 현대적인 네트워크 관리 경험을 제공합니다.\n\n**주요 기능:**\n- ZeroTier 네트워크 관리를 단순화하는 직관적인 웹 인터페이스\n- 팀 협업을 위한 조직 및 다중 사용자 지원\n- 네트워크와 노드 관리를 위한 ZeroTier Central API 통합\n- 향상된 개인정보 보호와 제어를 위한 사용자 정의 프라이빗 루트 서버\n- 독립적인 네트워크 생성 및 관리를 위한 개인화된 사용자 공간\n- 6plane 및 rfc4193 IPv6 주소 지정 지원\n- 다양한 장치를 위한 ARM64 및 AMD64 아키텍처 호환성\n\n**자세히 알아보기:**\n- [ZTnet 공식 웹사이트](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  fr: "ZTNET est un puissant outil de gestion de réseau ZeroTier qui simplifie la configuration et la gestion de réseau grâce à une interface Web intuitive, idéal pour les équipes et les utilisateurs individuels. Son design moderne et ses fonctionnalités riches fournissent une solution efficace pour construire des réseaux virtuels sécurisés et évolutifs.\n\nL'outil se centre sur une interface Web intuitive et une organisation avec support multi-utilisateur. Développé en TypeScript, il agit comme un intermédiaire entre les utilisateurs et l'API du Contrôleur ZeroTier, permettant la gestion collaborative de réseau au sein des organisations pour rationaliser les tâches d'équipe. L'intégration avec l'API ZeroTier Central permet la gestion directe des réseaux, nœuds et membres via une interface conviviale, améliorant l'efficacité de configuration.\n\nIl supporte des serveurs racine privés personnalisés pour créer des environnements réseau isolés, améliorant la confidentialité et le contrôle. Les espaces utilisateur personnalisés permettent aux utilisateurs de créer et gérer des réseaux indépendamment. Le support pour l'adressage IPv6 6plane et rfc4193 enrichit les capacités de réseau d'entreprise ou personnel. La compatibilité avec les architectures ARM64 et AMD64 assure un large support d'appareils. L'outil se concentre sur un design convivial et flexible pour offrir une expérience de gestion réseau moderne.\n\n**Fonctionnalités Principales :**\n- Interface Web intuitive pour la gestion simplifiée des réseaux ZeroTier\n- Support d'organisation et multi-utilisateur pour la collaboration d'équipe\n- Intégration avec l'API ZeroTier Central pour gérer les réseaux et nœuds\n- Serveur racine privé personnalisé pour une confidentialité et un contrôle améliorés\n- Espaces utilisateur personnalisés pour la création et gestion indépendante de réseaux\n- Support pour l'adressage IPv6 6plane et rfc4193\n- Compatibilité avec les architectures ARM64 et AMD64 pour des appareils divers\n\n**En savoir plus :**\n- [Site Web Officiel ZTnet](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  de: "ZTNET ist ein leistungsstarkes ZeroTier-Netzwerk-Management-Tool, das Netzwerkkonfiguration und -verwaltung durch eine intuitive Web-Schnittstelle vereinfacht, ideal für Teams und Einzelnutzer. Sein modernes Design und reichhaltige Funktionen bieten eine effiziente Lösung zum Aufbau sicherer, skalierbarer virtueller Netzwerke.\n\nDas Tool konzentriert sich auf eine intuitive Web-Schnittstelle und Organisation mit Multi-User-Unterstützung. In TypeScript entwickelt, fungiert es als Vermittler zwischen Benutzern und der ZeroTier Controller API, ermöglicht kollaborative Netzwerkverwaltung innerhalb von Organisationen zur Rationalisierung von Teamaufgaben. Die Integration mit der ZeroTier Central API ermöglicht direkte Verwaltung von Netzwerken, Knoten und Mitgliedern durch eine benutzerfreundliche Schnittstelle, was die Konfigurationseffizienz verbessert.\n\nEs unterstützt benutzerdefinierte private Root-Server zur Erstellung isolierter Netzwerkumgebungen, verbessert Datenschutz und Kontrolle. Personalisierte Benutzerbereiche ermöglichen es Nutzern, Netzwerke unabhängig zu erstellen und zu verwalten. Unterstützung für 6plane und rfc4193 IPv6-Adressierung bereichert Unternehmens- oder persönliche Netzwerkfähigkeiten. Kompatibilitaet mit ARM64- und AMD64-Architekturen gewährleistet breite Gerätunterstützung. Das Tool fokussiert auf benutzerfreundliches und flexibles Design, um eine moderne Netzwerkverwaltungserfahrung zu liefern.\n\n**Hauptmerkmale:**\n- Intuitive Web-Schnittstelle für vereinfachte ZeroTier-Netzwerkverwaltung\n- Organisation und Multi-User-Unterstützung für Teamzusammenarbeit\n- Integration mit ZeroTier Central API zur Verwaltung von Netzwerken und Knoten\n- Benutzerdefinierter privater Root-Server für verbesserten Datenschutz und Kontrolle\n- Personalisierte Benutzerbereiche für unabhängige Netzwerkerstellung und -verwaltung\n- Unterstützung für 6plane und rfc4193 IPv6-Adressierung\n- Kompatibilitaet mit ARM64- und AMD64-Architekturen für verschiedene Geräte\n\n**Mehr erfahren:**\n- [ZTnet Offizielle Website](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  sv: "ZTNET är ett kraftfullt ZeroTier-nätverkshanteringsverktyg som förenklar nätverkskonfiguration och -hantering genom ett intuitivt webbgränssnitt, idealiskt för team och enskilda användare. Dess moderna design och rika funktioner ger en effektiv lösning för att bygga säkra, skalbara virtuella nätverk.\n\nVerktyget centrerar kring ett intuitivt webbgränssnitt och organisation med stöd för flera användare. Utvecklat i TypeScript fungerar det som en mellanhand mellan användare och ZeroTier Controller API, möjliggör samarbetande nätverkshantering inom organisationer för att effektivisera teamuppgifter. Integration med ZeroTier Central API tillåter direkto hantering av nätverk, noder och medlemmar genom ett användarvänligt gränssnitt, förbättrar konfigurationseffektivitet.\n\nDet stöder anpassade privata rotservrar för att skapa isolerade nätverksmiljöer, förbättrar integritet och kontroll. Personaliserade användarutrymmen gör det möjligt för användare att självständigt skapa och hantera nätverk. Stöd för 6plane och rfc4193 IPv6-adressering berikar företags- eller personliga nätverksmöjligheter. Kompatibilitet med ARM64- och AMD64-arkitekturer säkerställer brett enhetsstöd. Verktyget fokuserar på användarvänlig och flexibel design för att leverera en modern nätverkshanteringsupplevelse.\n\n**Huvudfunktioner:**\n- Intuitivt webbgränssnitt för förenklad ZeroTier-nätverkshantering\n- Organisation och stöd för flera användare för teamsamarbete\n- Integration med ZeroTier Central API för hantering av nätverk och noder\n- Anpassad privat rotserver för förbättrad integritet och kontroll\n- Personaliserade användarutrymmen för oberoende nätverksskapande och -hantering\n- Stöd för 6plane och rfc4193 IPv6-adressering\n- Kompatibilitet med ARM64- och AMD64-arkitekturer för olika enheter\n\n**Läs mer:**\n- [ZTnet Officiella Webbplats](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  el: "Το ZTNET είναι ένα ισχυρό εργαλείο διαχείρισης δικτύου ZeroTier που απλοποιεί τη διαμόρφωση και διαχείριση δικτύου μέσω ενός διαισθητικού Web interface, ιδανικό για ομάδες και μεμονωμένους χρήστες. Ο σύγχρονος σχεδιασμός και οι πλούσιες λειτουργίες του παρέχουν μια αποδοτική λύση για την κατασκευή ασφαλών, επεκτάσιμων εικονικών δικτύων.\n\nΤο εργαλείο επικεντρώνεται σε ένα διαισθητικό Web interface και οργάνωση με υποστήριξη πολλαπλών χρηστών. Αναπτυγμένο σε TypeScript, λειτουργεί ως μεσολαβητής μεταξύ χρηστών και του ZeroTier Controller API, επιτρέποντας συνεργατική διαχείριση δικτύου εντός οργανισμών για τον εξορθολογισμό των εργασιών της ομάδας. Η ενσωμάτωση με το ZeroTier Central API επιτρέπει την άμεση διαχείριση δικτύων, κόμβων και μελών μέσω ενός φιλικού προς το χρήστη interface, βελτιώνοντας την αποδοτικότητα διαμόρφωσης.\n\nΥποστηρίζει προσαρμοσμένους ιδιωτικούς root servers για τη δημιουργία απομονωμένων περιβαλλόντων δικτύου, βελτιώνοντας την ιδιωτικότητα και τον έλεγχο. Οι εξατομικευμένοι χώροι χρήστη επιτρέπουν στους χρήστες να δημιουργούν και να διαχειρίζονται δίκτυα ανεξάρτητα. Η υποστήριξη για 6plane και rfc4193 IPv6 addressing εμπλουτίζει τις δυνατότητες εταιρικής ή προσωπικής δικτύωσης. Η συμβατότητα με αρχιτεκτονικές ARM64 και AMD64 εξασφαλίζει ευρεία υποστήριξη συσκευών. Το εργαλείο εστιάζει στον φιλικό προς το χρήστη και ευέλικτο σχεδιασμό για την παροχή μιας σύγχρονης εμπειρίας διαχείρισης δικτύου.\n\n**Κύρια Χαρακτηριστικά:**\n- Διαισθητικό Web interface για απλοποιημένη διαχείριση δικτύου ZeroTier\n- Οργάνωση και υποστήριξη πολλαπλών χρηστών για συνεργασία ομάδας\n- Ενσωμάτωση με ZeroTier Central API για διαχείριση δικτύων και κόμβων\n- Προσαρμοσμένος ιδιωτικός root server για βελτιωμένη ιδιωτικότητα και έλεγχο\n- Εξατομικευμένοι χώροι χρήστη για ανεξάρτητη δημιουργία και διαχείριση δικτύου\n- Υποστήριξη για 6plane και rfc4193 IPv6 addressing\n- Συμβατότητα με αρχιτεκτονικές ARM64 και AMD64 για διάφορες συσκευές\n\n**Μάθετε περισσότερα:**\n- [Επίσημη Ιστοσελίδα ZTnet](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  hr: "ZTNET je moćan alat za upravljanje ZeroTier mrežama koji pojednostavljuje mrežnu konfiguraciju i upravljanje kroz intuitivno Web sučelje, idealan za timove i individualne korisnike. Njegov moderni dizajn i bogate funkcionalnosti pružaju efikasno rješenje za izgradnju sigurnih, skalabilnih virtualnih mreža.\n\nAlat se usredotočuje na intuitivno Web sučelje i organizaciju s podrškom za više korisnika. Razvijen u TypeScript-u, djeluje kao posrednik između korisnika i ZeroTier Controller API-ja, omogućavajući suradničko upravljanje mrežama unutar organizacija za racionalizaciju timskih zadataka. Integracija s ZeroTier Central API-jem omogućava direkto upravljanje mrežama, čvorovima i članovima kroz korisno sučelje, poboljšavajući efikasnost konfiguracije.\n\nPodržava prilagođene privatne root servere za stvaranje izoliranih mrežnih okruženja, poboljšavajući privatnost i kontrolu. Personalizirani korisnički prostori omogućavaju korisnicima da neovisno stvaraju i upravljaju mrežama. Podrška za 6plane i rfc4193 IPv6 adresiranje obogaćuje poslovne ili osobne mrežne mogućnosti. Kompatibilnost s ARM64 i AMD64 arhitekturama osigurava široku podršku uređaja. Alat se usredotočuje na korisnički prihvatljiv i fleksibilan dizajn za pružanje modernog iskustva upravljanja mrežama.\n\n**Ključne Značajke:**\n- Intuitivno Web sučelje za pojednostavljeno upravljanje ZeroTier mrežama\n- Organizacija i podrška za više korisnika za timsku suradnju\n- Integracija s ZeroTier Central API-jem za upravljanje mrežama i čvorovima\n- Prilagođeni privatni root server za poboljšanu privatnost i kontrolu\n- Personalizirani korisnički prostori za neovisno stvaranje i upravljanje mrežama\n- Podrška za 6plane i rfc4193 IPv6 adresiranje\n- Kompatibilnost s ARM64 i AMD64 arhitekturama za raznolike uređaje\n\n**Saznajte više:**\n- [ZTnet Službena Web Stranica](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  pt: "O ZTNET é uma ferramenta poderosa de gestão de rede ZeroTier que simplifica a configuração e gestão de rede através de uma interface Web intuitiva, ideal para equipas e utilizadores individuais. O seu design moderno e funcionalidades ricas fornecem uma solução eficiente para construir redes virtuais seguras e escaláveis.\n\nA ferramenta centra-se numa interface Web intuitiva e organização com suporte multi-utilizador. Desenvolvida em TypeScript, actua como intermediário entre utilizadores e a API do ZeroTier Controller, permitindo gestão colaborativa de rede dentro de organizações para simplificar tarefas de equipa. A integração com a API ZeroTier Central permite gestão directa de redes, nós e membros através de uma interface amigável ao utilizador, melhorando a eficiência de configuração.\n\nSuporta servidores root privados personalizados para criar ambientes de rede isolados, melhorando privacidade e controlo. Espaços de utilizador personalizados permitem aos utilizadores criar e gerir redes independentemente. O suporte para endereçamento IPv6 6plane e rfc4193 enriquece as capacidades de rede empresarial ou pessoal. A compatibilidade com arquitecturas ARM64 e AMD64 garante amplo suporte de dispositivos. A ferramenta foca-se em design amigável ao utilizador e flexível para entregar uma experiência moderna de gestão de rede.\n\n**Funcionalidades Principais:**\n- Interface Web intuitiva para gestão simplificada de rede ZeroTier\n- Organização e suporte multi-utilizador para colaboração de equipa\n- Integração com API ZeroTier Central para gerir redes e nós\n- Servidor root privado personalizado para privacidade e controlo melhorados\n- Espaços de utilizador personalizados para criação e gestão independente de rede\n- Suporte para endereçamento IPv6 6plane e rfc4193\n- Compatibilidade com arquitecturas ARM64 e AMD64 para dispositivos diversos\n\n**Saiba mais:**\n- [Website Oficial ZTnet](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  ru: "ZTNET - это мощный инструмент управления сетью ZeroTier, который упрощает конфигурацию и управление сетью через интуитивный веб-интерфейс, идеальный для команд и индивидуальных пользователей. Его современный дизайн и богатые функции предоставляют эффективное решение для построения безопасных, масштабируемых виртуальных сетей.\n\nИнструмент сосредоточен на интуитивном веб-интерфейсе и организации с поддержкой нескольких пользователей. Разработанный на TypeScript, он действует как посредник между пользователями и API контроллера ZeroTier, обеспечивая совместное управление сетью в организациях для упрощения командных задач. Интеграция с API ZeroTier Central позволяет прямое управление сетями, узлами и участниками через дружественный интерфейс, повышая эффективность конфигурации.\n\nОн поддерживает пользовательские частные корневые серверы для создания изолированных сетевых сред, улучшая конфиденциальность и контроль. Персонализированные пользовательские пространства позволяют пользователям независимо создавать и управлять сетями. Поддержка адресации IPv6 6plane и rfc4193 обогащает возможности корпоративных или личных сетей. Совместимость с архитектурами ARM64 и AMD64 обеспечивает широкую поддержку устройств. Инструмент фокусируется на удобном для пользователя и гибком дизайне для обеспечения современного опыта управления сетью.\n\n**Ключевые Особенности:**\n- Интуитивный веб-интерфейс для упрощенного управления сетью ZeroTier\n- Организация и поддержка нескольких пользователей для командного сотрудничества\n- Интеграция с API ZeroTier Central для управления сетями и узлами\n- Пользовательский частный корневой сервер для улучшенной конфиденциальности и контроля\n- Персонализированные пользовательские пространства для независимого создания и управления сетью\n- Поддержка адресации IPv6 6plane и rfc4193\n- Совместимость с архитектурами ARM64 и AMD64 для различных устройств\n\n**Узнать больше:**\n- [Официальный сайт ZTnet](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  tr: "ZTNET, takımlar ve bireysel kullanıcılar için ideal olan, sezgisel bir Web arayüzü aracılığıyla ağ yapılandırmasını ve yönetimini basitleştiren güçlü bir ZeroTier ağ yönetimi aracıdır. Modern tasarımı ve zengin özellikleri, güvenli, ölçeklenebilir sanal ağlar oluşturmak için etkili bir çözüm sağlar.\n\nAraç, sezgisel bir Web arayüzü ve çok kullanıcılı destekle organizasyona odaklanır. TypeScript ile geliştirilmiş olan araç, kullanıcılar ile ZeroTier Controller API arasında aracı görevi görür, organizasyonlar içinde işbirlikçi ağ yönetimini mümkün kılarak takım görevlerini kolaylaştırır. ZeroTier Central API ile entegrasyon, kullanıcı dostu bir arayüz aracılığıyla ağlar, düğümler ve üyelerin doğrudan yönetimini sağlayarak yapılandırma verimliliğini artırır.\n\nİzole ağ ortamları oluşturmak için özel özel kök sunucuları destekler, gizlilik ve kontrolü artırır. Kişiselleştirilmiş kullanıcı alanları, kullanıcıların bağımsız olarak ağlar oluşturmasını ve yönetmesini sağlar. 6plane ve rfc4193 IPv6 adresleme desteği, kurumsal veya kişisel ağ yeteneklerini zenginleştirir. ARM64 ve AMD64 mimarileri ile uyumluluk, geniş cihaz desteği sağlar. Araç, modern bir ağ yönetimi deneyimi sunmak için kullanıcı dostu ve esnek tasarıma odaklanır.\n\n**Ana Özellikler:**\n- ZeroTier ağ yönetimini basitleştiren sezgisel Web arayüzü\n- Takım işbirliği için organizasyon ve çok kullanıcılı destek\n- Ağları ve düğümleri yönetmek için ZeroTier Central API entegrasyonu\n- Gelişmiş gizlilik ve kontrol için özel özel kök sunucu\n- Bağımsız ağ oluşturma ve yönetimi için kişiselleştirilmiş kullanıcı alanları\n- 6plane ve rfc4193 IPv6 adresleme desteği\n- Çeşitli cihazlar için ARM64 ve AMD64 mimarileri ile uyumluluk\n\n**Daha fazla bilgi:**\n- [ZTnet Resmi Web Sitesi](https://ztnet.network/)\n- [ZTnet GitHub](https://github.com/sinamics/ztnet)"
+  uk: "ZTNET — потужний засіб керування мережами ZeroTier, що спрощує налаштування й адміністрування мережі через зручний вебінтерфейс. Він підходить і командам, і окремим користувачам, а сучасний дизайн та багаті можливості допомагають будувати захищені масштабовані віртуальні мережі.\n\nВ основі інструмента — зрозумілий вебінтерфейс та організації з підтримкою кількох користувачів. Він написаний на TypeScript і є посередником між користувачами та API контролера ZeroTier, тож команди можуть разом керувати мережею в межах організації. Інтеграція з API ZeroTier Central дозволяє безпосередньо керувати мережами, вузлами й учасниками через зручний інтерфейс, що прискорює налаштування.\n\nПідтримуються власні приватні кореневі сервери для створення ізольованих мереж із кращою приватністю та контролем. Персональні простори дають змогу кожному користувачу самостійно створювати мережі та керувати ними. Підтримка адресації IPv6 6plane і rfc4193 розширює можливості корпоративних і особистих мереж. Сумісність з архітектурами ARM64 і AMD64 дозволяє працювати на різних пристроях. Інструмент орієнтований на зручність і гнучкість, щоб керування мережею було сучасним.\n\n**Основні можливості:**\n- Зручний вебінтерфейс для простого керування мережами ZeroTier\n- Організації та підтримка кількох користувачів для командної роботи\n- Інтеграція з API ZeroTier Central для керування мережами та вузлами\n- Власний приватний кореневий сервер для кращої приватності й контролю\n- Персональні простори для самостійного створення мереж і керування ними\n- Підтримка адресації IPv6 6plane і rfc4193\n- Сумісність з ARM64 та AMD64 для різних пристроїв\n\n**Докладніше:**\n- [Офіційний сайт ZTnet](https://ztnet.network/)\n- [ZTnet на GitHub](https://github.com/sinamics/ztnet)"
+category: network
+developer: sinamics
+website: https://ztnet.network/
+source: https://github.com/sinamics/ztnet
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+  - 5.webp
+  - 6.webp
+web:
+  service: ztnet
+  port: 3000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 3050
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: ZT_ADDR
+    type: text
+    default: http://172.17.0.1:9993
+    label:
+      en: ZeroTier controller address
+      it: Indirizzo controller ZeroTier
+      nb: ZeroTier controller adresse
+      zh: ZeroTier控制器地址
+      ja: ZeroTierコントローラーのアドレス
+      ko: ZeroTier 컨트롤러 주소
+      fr: Adresse du contrôleur ZeroTier
+      de: ZeroTier Controller Adresse
+      sv: ZeroTier Controller Adress
+      el: Διεύθυνση ελεγκτή ZeroTier
+      hr: Adresa ZeroTier kontrolera
+      pt: Endereço do controlador ZeroTier
+      ru: Адрес контроллера ZeroTier
+      tr: ZeroTier kontrolör adresi
+      uk: Адреса контролера ZeroTier
+  - name: POSTGRES_HOST
+    type: text
+    default: ztnet-postgres
+    label:
+      en: PostgreSQL Host
+      it: Host PostgreSQL
+      nb: PostgreSQL Vert
+      zh: PostgreSQL主机
+      ja: PostgreSQLホスト
+      ko: PostgreSQL 호스트
+      fr: Hôte PostgreSQL
+      de: PostgreSQL Host
+      sv: PostgreSQL Värd
+      el: Διακομιστής PostgreSQL
+      hr: PostgreSQL Host
+      pt: Host PostgreSQL
+      ru: Хост PostgreSQL
+      tr: PostgreSQL Ana Bilgisayar
+      uk: Хост PostgreSQL
+  - name: POSTGRES_PORT
+    type: text
+    default: "5432"
+    label:
+      en: PostgreSQL Port
+      it: Porta PostgreSQL
+      nb: PostgreSQL Port
+      zh: PostgreSQL端口
+      ja: PostgreSQLポート
+      ko: PostgreSQL 포트
+      fr: Port PostgreSQL
+      de: PostgreSQL Port
+      sv: PostgreSQL Port
+      el: Θύρα PostgreSQL
+      hr: PostgreSQL Port
+      pt: Porta PostgreSQL
+      ru: Порт PostgreSQL
+      tr: PostgreSQL Portu
+      uk: Порт PostgreSQL
+  - name: POSTGRES_USER
+    type: text
+    default: ztnet
+    label:
+      en: PostgreSQL User
+      it: Utente PostgreSQL
+      nb: PostgreSQL Bruker
+      zh: PostgreSQL用户
+      ja: PostgreSQLユーザー
+      ko: PostgreSQL 사용자
+      fr: Utilisateur PostgreSQL
+      de: PostgreSQL Benutzer
+      sv: PostgreSQL Användare
+      el: Χρήστης PostgreSQL
+      hr: PostgreSQL Korisnik
+      pt: Utilizador PostgreSQL
+      ru: Пользователь PostgreSQL
+      tr: PostgreSQL Kullanıcısı
+      uk: Користувач PostgreSQL
+  - name: DB_PASSWORD
+    type: secret
+    label:
+      en: Password between its services
+      uk: Пароль між його сервісами
+  - name: POSTGRES_DB
+    type: text
+    default: ztnet
+    label:
+      en: PostgreSQL Database Name
+      it: Nome Database PostgreSQL
+      nb: PostgreSQL Database Navn
+      zh: PostgreSQL数据库名称
+      ja: PostgreSQLデータベース名
+      ko: PostgreSQL 데이터베이스 이름
+      fr: Nom de Base de Données PostgreSQL
+      de: PostgreSQL Datenbankname
+      sv: PostgreSQL Databasnamn
+      el: Όνομα Βάσης Δεδομένων PostgreSQL
+      hr: Naziv PostgreSQL Baze Podataka
+      pt: Nome da Base de Dados PostgreSQL
+      ru: Имя базы данных PostgreSQL
+      tr: PostgreSQL Veritabanı Adı
+      uk: Назва бази даних PostgreSQL
+  - name: NEXTAUTH_URL
+    type: text
+    default: http://0.0.0.0:3050
+    label:
+      en: Canonical URL of your site
+      it: URL Canonica del tuo sito
+      nb: Kanonisk URL for din nettside
+      zh: 您网站的规范URL
+      ja: サイトの正規URL
+      ko: 사이트의 정규 URL
+      fr: URL canonique de votre site
+      de: Kanonische URL Ihrer Website
+      sv: Kanonisk URL för din webbplats
+      el: Κανονικό URL του ιστότοπου σας
+      hr: Kanonski URL vaše stranice
+      pt: URL Canónico do seu site
+      ru: Канонический URL вашего сайта
+      tr: "Site URL'nizin Kanonik URL'si"
+      uk: Канонічна адреса вашого сайту
+  - name: NEXTAUTH_SECRET
+    type: secret
+    length: 23
+    label:
+      en: NextAuth Secret Key
+      it: Chiave Segreta NextAuth
+      nb: NextAuth Hemmelig Nøkkel
+      zh: NextAuth密钥
+      ja: NextAuth秘密鍵
+      ko: NextAuth 비밀 키
+      fr: Clé Secrète NextAuth
+      de: NextAuth Geheimer Schlüssel
+      sv: NextAuth Hemlig Nyckel
+      el: Μυστικό Κλειδί NextAuth
+      hr: NextAuth Tajni Ključ
+      pt: Chave Secreta NextAuth
+      ru: Секретный ключ NextAuth
+      tr: NextAuth Gizli Anahtar
+      uk: Секретний ключ NextAuth
+  - name: NEXTAUTH_URL_INTERNAL
+    type: text
+    default: http://ztnet:3000
+    label:
+      en: Server-side URL for NEXTAUTH
+      it: URL Interno per NEXTAUTH
+      nb: Server-side URL for NEXTAUTH
+      zh: NEXTAUTH服务器端URL
+      ja: NEXTAUTHサーバーサイドURL
+      ko: NEXTAUTH 서버 사이드 URL
+      fr: URL Interne pour NEXTAUTH
+      de: Server-seitige URL für NEXTAUTH
+      sv: Server-sidig URL för NEXTAUTH
+      el: Εσωτερικό URL για NEXTAUTH
+      hr: Server-side URL za NEXTAUTH
+      pt: URL Interno para NEXTAUTH
+      ru: Внутренний URL для NEXTAUTH
+      tr: NEXTAUTH için Sunucu Tarafı URL
+      uk: Серверна адреса для NEXTAUTH
+  - name: POSTGRES_USER_2
+    type: text
+    default: ztnet
+    label:
+      en: PostgreSQL User
+      it: Utente PostgreSQL
+      nb: PostgreSQL Bruker
+      zh: PostgreSQL用户
+      ja: PostgreSQLユーザー
+      ko: PostgreSQL 사용자
+      fr: Utilisateur PostgreSQL
+      de: PostgreSQL Benutzer
+      sv: PostgreSQL Användare
+      el: Χρήστης PostgreSQL
+      hr: PostgreSQL Korisnik
+      pt: Utilizador PostgreSQL
+      ru: Пользователь PostgreSQL
+      tr: PostgreSQL Kullanıcısı
+      uk: Користувач PostgreSQL
+  - name: POSTGRES_DB_2
+    type: text
+    default: ztnet
+    label:
+      en: PostgreSQL Database Name
+      it: Nome Database PostgreSQL
+      nb: PostgreSQL Database Navn
+      zh: PostgreSQL数据库名称
+      ja: PostgreSQLデータベース名
+      ko: PostgreSQL 데이터베이스 이름
+      fr: Nom de Base de Données PostgreSQL
+      de: PostgreSQL Datenbankname
+      sv: PostgreSQL Databasnamn
+      el: Όνομα Βάσης Δεδομένων PostgreSQL
+      hr: Naziv PostgreSQL Baze Podataka
+      pt: Nome da Base de Dados PostgreSQL
+      ru: Имя базы данных PostgreSQL
+      tr: PostgreSQL Veritabanı Adı
+      uk: Назва бази даних PostgreSQL
+permissions:
+  host-files:
+    en: "It reaches these places of the system: /var/lib/zerotier-one"
+    uk: "Він має доступ до цих місць системи: /var/lib/zerotier-one"

@@ -1,0 +1,71 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Sonarr
+tagline:
+  en: The PVR for Usenet and BitTorrent users
+  zh: 用于Usenet和BitTorrent用户的PVR
+  ar: PVR لمستخدمي Usenet و BitTorrent
+  de: Der PVR für Usenet und BitTorrent Nutzer
+  es: El PVR para usuarios de Usenet y BitTorrent
+  fr: Le PVR pour les utilisateurs de Usenet et de BitTorrent
+  hu: A PVR Usenet és BitTorrent felhasználók számára
+  it: Il PVR per gli utenti di Usenet e BitTorrent
+  ru: PVR для пользователей Usenet и BitTorrent
+  pl: PVR dla użytkowników Usenet i BitTorrent
+  pt: O PVR para usuários de Usenet e BitTorrent
+  sv: PVR för användare av Usenet och BitTorrent
+  uk: PVR для користувачів Usenet і BitTorrent
+description:
+  en: "Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available."
+  zh: Sonarr是一个用于Usenet和BitTorrent用户的PVR。它可以监视多个RSS源以获取您最喜欢的节目的新剧集，并且可以抓取，排序和重命名它们。它还可以配置为在出现更好的质量格式时自动升级已下载文件的质量。
+  ar: Sonarr هو PVR لمستخدمي Usenet و BitTorrent. يمكنه مراقبة مزودي RSS متعددين للحصول على حلقات جديدة من البرامج التلفزيونية المفضلة لديك وسوف يقبض، وترتيب وإعادة تسميتها. يمكنه أيضًا أن يكون مكونًا لترقية الجودة تلقائيًا للملفات التي تم تنزيلها بالفعل عندما يصبح هناك تنسيق جودة أفضل متاحًا.
+  de: "Sonarr ist ein PVR für Usenet- und BitTorrent-Nutzer. Es kann mehrere RSS-Feeds überwachen, um neue Episoden Ihrer Lieblingssendungen zu finden und sie zu fangen, zu sortieren und umzubenennen. Es kann auch so konfiguriert werden, dass es die Qualität von bereits heruntergeladenen Dateien automatisch aktualisiert, wenn eine bessere Qualität verfügbar ist."
+  es: "Sonarr es un PVR para usuarios de Usenet y BitTorrent. Puede monitorear múltiples fuentes RSS para nuevos episodios de sus programas favoritos y atraparlos, ordenarlos y renombrarlos. También se puede configurar para que actualice automáticamente la calidad de los archivos ya descargados cuando una mejor calidad esté disponible."
+  fr: "Sonarr est un PVR pour les utilisateurs de Usenet et de BitTorrent. Il peut surveiller plusieurs flux RSS pour de nouveaux épisodes de vos émissions préférées et les attraper, les trier et les renommer. Il peut également être configuré pour mettre automatiquement à niveau la qualité des fichiers déjà téléchargés lorsque une meilleure qualité est disponible."
+  hu: "A Sonarr egy PVR Usenet és BitTorrent felhasználók számára. Követni tudja több RSS hírcsatornát az Ön kedvenc műsorainak új részeire, és elkapja, rendezni és átnevezni őket. Beállítható arra is, hogy automatikusan frissítse a már letöltött fájlok minőségét, ha egy jobb minőség áll rendelkezésre."
+  it: "Sonarr è un PVR per gli utenti di Usenet e BitTorrent. Può monitorare più feed RSS per nuovi episodi dei tuoi programmi preferiti e catturarli, ordinarli e rinominarli. Può anche essere configurato per aggiornare automaticamente la qualità dei file già scaricati quando una qualità migliore è disponibile."
+  ru: "Sonarr - это PVR для пользователей Usenet и BitTorrent. Он может отслеживать несколько RSS-каналов для новых серий ваших любимых шоу и захватывать, сортировать и переименовывать их. Он также может быть настроен для автоматического обновления качества уже загруженных файлов, когда лучшее качество становится доступным."
+  pl: "Sonarr to PVR dla użytkowników Usenet i BitTorrent. Może monitorować wiele kanałów RSS dla nowych odcinków ulubionych programów telewizyjnych i łapać, sortować i zmieniać nazwy. Może być również skonfigurowany do automatycznego ulepszania jakości już pobranych plików, gdy lepsza jakość staje się dostępna."
+  pt: "O Sonarr é um PVR para usuários de Usenet e BitTorrent. Ele pode monitorar vários feeds RSS para novos episódios de seus programas favoritos e capturá-los, classificá-los e renomeá-los. Ele também pode ser configurado para atualizar automaticamente a qualidade dos arquivos já baixados quando uma qualidade melhor estiver disponível."
+  sv: "Sonarr är en PVR för användare av Usenet och BitTorrent. Den kan övervaka flera RSS-flöden för nya avsnitt av dina favoritprogram och fånga dem, sortera dem och döpa om dem. Den kan också konfigureras för att automatiskt uppgradera kvaliteten på de redan nedladdade filerna när en bättre kvalitet blir tillgänglig."
+  uk: "Sonarr — PVR для користувачів Usenet і BitTorrent. Він може стежити за кількома RSS-стрічками, шукаючи нові епізоди ваших улюблених серіалів, а також знаходить, сортує та перейменовує їх. Його також можна налаштувати так, щоб він автоматично замінював уже завантажені файли на кращу якість, коли така з’являється."
+category: media
+developer: Sonarr
+website: https://sonarr.tv
+source: https://github.com/Sonarr/Sonarr
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk2OSkiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMV8xMjUxXzg5NjkpIj48bWFzayBpZD0ibWFzazBfMTI1MV84OTY5IiBzdHlsZT0ibWFzay10eXBlOmx1bWluYW5jZSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiPjxwYXRoIGQ9Ik0yNTYgMEgwVjI1NkgyNTZWMFoiIGZpbGw9IndoaXRlIi8+PC9tYXNrPjxnIG1hc2s9InVybCgjbWFzazBfMTI1MV84OTY5KSI+PHBhdGggZD0iTTI1NiAwSDBWMjU2SDI1NlYwWiIgZmlsbD0iIzIzMjYzMiIvPjxtYXNrIGlkPSJtYXNrMV8xMjUxXzg5NjkiIHN0eWxlPSJtYXNrLXR5cGU6bHVtaW5hbmNlIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIzMyIgeT0iMzMiIHdpZHRoPSIxOTAiIGhlaWdodD0iMTkwIj48cGF0aCBkPSJNMjIzIDMzSDMzVjIyM0gyMjNWMzNaIiBmaWxsPSJ3aGl0ZSIvPjwvbWFzaz48ZyBtYXNrPSJ1cmwoI21hc2sxXzEyNTFfODk2OSkiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjIzIDEyOEMyMjMgMTU0LjEzMyAyMTMuNzY1IDE3Ni41MjkgMTk1LjI5NCAxOTUuMTg4QzE5NC42OCAxOTUuOTE3IDE5My45OTMgMTk2LjU4OSAxOTMuMjMzIDE5Ny4yMDJDMTkwLjE5NCAyMDAuMTgxIDE4Ni45NzkgMjAyLjg4MiAxODMuNTg4IDIwNS4zMDVDMTY3LjU3MiAyMTcuMTAyIDE0OS4wNzIgMjIzIDEyOC4wODggMjIzQzEwNy4wNzQgMjIzIDg4LjYwMzMgMjE3LjEwMiA3Mi42NzQ3IDIwNS4zMDVDNjguNDY2MSAyMDIuMzI3IDY0LjUyMDUgMTk4Ljk1NCA2MC44MzggMTk1LjE4OEM0Ni40ODc2IDE4MC45MzkgMzcuNjc1OSAxNjQuMzgyIDM0LjQwMjkgMTQ1LjUyQzMzLjc2MDIgMTQxLjg0IDMzLjMzNTggMTM4LjEwMyAzMy4xMzE1IDEzNC4zMDdDMzMuMDQzOCAxMzIuMjA1IDMzIDEzMC4xMDIgMzMgMTI4QzMzIDEyNS43ODEgMzMuMDQzOCAxMjMuNjY0IDMzLjEzMTUgMTIxLjY0OUMzMy4xMzE1IDEyMS40NDUgMzMuMTg5NCAxMjEuMjQgMzMuMzA2OSAxMjEuMDM2QzM0LjY4MDggOTcuNzM0OSA0My44NTczIDc3LjYwMjMgNjAuODM4IDYwLjYzNzJDNzkuNTEzNiA0Mi4yMTI3IDEwMS45MyAzMyAxMjguMDg4IDMzQzE1NC4zMzMgMzMgMTc2LjczNSA0Mi4yMTI3IDE5NS4yOTQgNjAuNjM3MkMyMTMuNzY1IDc5LjQxMiAyMjMgMTAxLjg2NyAyMjMgMTI4WiIgZmlsbD0iI0VFRUVFRSIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAzLjY2NyA3MC4yMjk2TDE4NC4wMjcgODkuODUxNUMxNzIuNTQzIDEwMS4zMjUgMTcxLjUzMyAxMTEuMzEzIDE3MS41MzMgMTI4LjkyQzE3MS41MzMgMTQ0LjYzIDE3NC4wMzMgMTU5LjAxMiAxODUuNzM2IDE3MC43MDRDMTk0LjI4MiAxNzkuMjQyIDIwMi4zOTUgMTg3LjMwNCAyMDIuMzk1IDE4Ny4zMDRDMjAwLjIwMyAxODkuOTkxIDE5Ny44MzYgMTkyLjYxOSAxOTUuMjkzIDE5NS4xODhDMTk0LjY4IDE5NS45MTggMTkzLjk5MyAxOTYuNTkgMTkzLjIzMyAxOTcuMjAzQzE5MS4wMTIgMTk5LjM5MyAxODguNzAzIDIwMS40MjIgMTg2LjMwNiAyMDMuMjkxTDE3MC45MTkgMTg3LjkxN0MxNTcuMjQzIDE3NC4yNTIgMTQ2LjM3MiAxNzIuOTM4IDEyOC4zMDcgMTcyLjkzOEMxMTAuOTczIDE3Mi45MzggOTkuMTc3MyAxNzQuNTM0IDg2LjQ4NDEgMTg3LjIxN0M3OC45MDI1IDE5NC43OTEgNzAuMjE5NyAyMDMuNTEgNzAuMjE5NyAyMDMuNTFDNjYuOTE2OCAyMDAuOTk4IDYzLjc5MDIgMTk4LjIyNCA2MC44MzggMTk1LjE4OEM1OC4zODMgMTkyLjczNSA1Ni4wODg1IDE5MC4yMjQgNTMuOTU1MiAxODcuNjU1QzUzLjk1NTIgMTg3LjY1NSA2Mi41NDYgMTc5LjAyOCA3MC43NDU3IDE3MC44MzZDODIuODkxIDE1OC43MDEgODQuODYyIDE0NC42MyA4NC44NjIgMTI4LjkyQzg0Ljg2MiAxMTMuNTkxIDgyLjM0MjEgOTkuMjkxOSA3MS4xODQxIDg4LjE0MzNDNjMuNDM3NyA4MC40MDMyIDUyLjcyNzcgNjkuNzQ3OCA1Mi43Mjc3IDY5Ljc0NzhDNTUuMjExNyA2Ni41OTQyIDU3LjkxNTcgNjMuNTU3MiA2MC44MzggNjAuNjM3NkM2My40MTA1IDU4LjEyNjEgNjYuMDQwOSA1NS43NzU5IDY4LjcyOTEgNTMuNTg1OUw4Ni41NzE4IDcxLjQxMjFDOTcuOTcxOCA4Mi44MDE2IDExMi41ODMgODUuNzM0NCAxMjguMzA3IDg1LjczNDRDMTQ0LjQ5OSA4NS43MzQ0IDE1OS4wNjIgODIuNjAxIDE3MC45MTkgNzAuNzU1MUMxNzguMjE0IDYzLjQ2NyAxODcuODQxIDUzLjg5MjUgMTg3Ljg0MSA1My44OTI1QzE5MC4zODMgNTUuOTY2IDE5Mi44NjcgNTguMjEzNyAxOTUuMjkzIDYwLjYzNzZDMTk4LjMzMyA2My43MzI0IDIwMS4xMjQgNjYuOTI5NyAyMDMuNjY3IDcwLjIyOTZaIiBmaWxsPSIjM0EzRjUxIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMDIuMDAzIDEzMi44NTdDMTAxLjgyOCAxMzEuODM0IDEwMS43MTIgMTMwLjc5OCAxMDEuNjUzIDEyOS43NDdDMTAxLjYyNCAxMjkuMTYzIDEwMS42MDkgMTI4LjU3OSAxMDEuNjA5IDEyNy45OTVDMTAxLjYwOSAxMjcuMzgyIDEwMS42MjQgMTI2Ljc5OCAxMDEuNjUzIDEyNi4yNDNDMTAxLjY1MyAxMjYuMTg0IDEwMS42NjggMTI2LjEyNyAxMDEuNjk2IDEyNi4wNjhDMTAyLjA3OCAxMTkuNjE1IDEwNC42MiAxMTQuMDM4IDEwOS4zMjQgMTA5LjMzN0MxMTQuNDk3IDEwNC4yMjcgMTIwLjcwOSAxMDEuNjcyIDEyNy45NTYgMTAxLjY3MkMxMzUuMjM0IDEwMS42NzIgMTQxLjQ0NSAxMDQuMjI3IDE0Ni41ODggMTA5LjMzN0MxNTEuNzAzIDExNC41MzUgMTU0LjI2IDEyMC43NTMgMTU0LjI2IDEyNy45OTVDMTU0LjI2IDEzNS4yMzcgMTUxLjcwMyAxNDEuNDQxIDE0Ni41ODggMTQ2LjYxQzE0Ni40MTMgMTQ2LjgxNCAxNDYuMjIzIDE0Ny4wMDQgMTQ2LjAxOCAxNDcuMTc5QzE0NS4xNzEgMTQ3Ljk5NiAxNDQuMjggMTQ4Ljc0MSAxNDMuMzQ0IDE0OS40MTNDMTM4LjkwMyAxNTIuNjgzIDEzMy43NzMgMTU0LjMxOCAxMjcuOTU2IDE1NC4zMThDMTIyLjE0IDE1NC4zMTggMTE3LjAyNiAxNTIuNjg0IDExMi42MTIgMTQ5LjQxM0MxMTEuNDQ0IDE0OC41OTUgMTEwLjM0OSAxNDcuNjYxIDEwOS4zMjQgMTQ2LjYxQzEwNS4zNTEgMTQyLjY2OCAxMDIuOTEgMTM4LjA4MyAxMDIuMDAzIDEzMi44NTdaIiBmaWxsPSIjMDBDQ0ZGIi8+PHBhdGggZD0iTTE1OC4yMDUgOTguMTcwNkwxNzEuMzU3IDg1LjMzNzVMMTk2LjAwNiA2MS4zNjcyTTU5Ljk5MTkgNjEuNDg5OEw5NS44MjE5IDk3LjE2MzJNMTY5Ljk5OCAxNzAuOTY1TDE5NC4zOCAxOTYuMTc1TTYxLjM2NDEgMTk1LjcxMUw4NS4zNDQzIDE3MS43MDkiIHN0cm9rZT0iIzAwQ0NGRiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMSIvPjxwYXRoIGQ9Ik0xNzEuMzU3IDg1LjMzNTlMMTU2LjQ5NiAxMDAuNDAzTTg0LjcwNDIgODYuMDg0TDk5Ljc4NSAxMDEuMTA3TTg1LjI3NjcgMTcxLjc3OEw5OS45NjI5IDE1Ni41MzZNMTU0LjI2MSAxNTUuMzEzTDE3MC4wNjcgMTcxLjAzMiIgc3Ryb2tlPSIjMDBDQ0ZGIiBzdHJva2Utd2lkdGg9IjciIHN0cm9rZS1taXRlcmxpbWl0PSIxIi8+PC9nPjwvZz48L2c+PC9nPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDBfMTI1MV84OTY5Ij48cmVjdCB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgZmlsbD0id2hpdGUiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0iY2xpcDFfMTI1MV84OTY5Ij48cmVjdCB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgZmlsbD0id2hpdGUiLz48L2NsaXBQYXRoPjwvZGVmcz48L3N2Zz4="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+web:
+  service: sonarr
+  port: 8989
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8989
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: TV_SHOWS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media/TV Shows"
+    label:
+      en: Sonarr tv directory
+      zh: Sonarr TV目录
+      uk: Тека серіалів Sonarr
+    hint:
+      en: Inside the app it is /tv
+      uk: У застосунку вона — /tv
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Sonarr downloads directory
+      zh: Sonarr下载目录
+      uk: Тека завантажень Sonarr
+    hint:
+      en: Inside the app it is /downloads
+      uk: У застосунку вона — /downloads

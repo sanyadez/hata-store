@@ -1,0 +1,66 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Unifi Network Application
+tagline:
+  en: "The Unifi network application software is a powerful, enterprise wireless software engine ideal for high-density…"
+  zh: Unifi控制器软件是一种功能强大的企业级无线软件引擎，适用于需要低延迟和高可用性性能的高密度客户端部署。
+  uk: "UniFi Network Application — керування бездротовими мережами UniFi, навіть із великою кількістю пристроїв."
+description:
+  en: "Only mandatory ports are enabled by default, to extend functionality consider exposing 1900:1900/udp, 8843:8843, 8880:8880, 6789:6789, 5514:5514/udp. Other ports specifications [here](https://docs.linuxserver.io/images/docker-unifi-network-application/#ports-p).\n\nBecause the network application runs inside Docker by default it uses an IP address not accessible by other devices. So, for it to adopt other devices, it is required to use port `8080` and change the inform IP address. To do so, go in settings and search for the `Inform Host` option, there select override and set the address to that of the host. Often, it is also needed to ssh into the devices you want to adopt and manually set the inform IP address, the command needed for doing so is `set-inform http://HOST-ADDRESS:8080/inform`.\n\nFor more [information](https://docs.linuxserver.io/images/docker-unifi-network-application/)"
+  zh: "默认情况下仅启用强制端口，要扩展功能，请考虑公开 1900:1900/udp、8843:8843、8880:8880、6789:6789、5514:5514/udp。 其他端口规范[此处](https://docs.linuxserver.io/images/docker-unifi-network-application/#ports-p)。\n\n由于网络应用程序默认在 Docker 内部运行，因此它使用其他设备无法访问的 IP 地址。 因此，要采用其他设备，需要使用端口“8080”并更改通知IP地址。 为此，请进入设置并搜索“通知主机”选项，选择覆盖并将地址设置为主机的地址。 通常，还需要 ssh 到您想要采用的设备并手动设置通知 IP 地址，所需的命令是“set-inform http://HOST-ADDRESS:8080/inform”。\n\n了解更多[信息](https://docs.linuxserver.io/images/docker-unifi-network-application/)"
+  uk: "Типово ввімкнено лише обов'язкові порти. Щоб розширити можливості, розгляньте відкриття 1900:1900/udp, 8843:8843, 8880:8880, 6789:6789, 5514:5514/udp. Опис інших портів — [тут](https://docs.linuxserver.io/images/docker-unifi-network-application/#ports-p).\n\nОскільки застосунок працює всередині Docker, він типово має IP-адресу, недоступну іншим пристроям. Тому, щоб він міг приймати інші пристрої, потрібно використати порт `8080` і змінити inform-адресу. Для цього відкрийте налаштування, знайдіть параметр `Inform Host`, виберіть override і вкажіть адресу хоста. Часто також потрібно підключитися до пристроїв, які ви хочете прийняти, через ssh і вручну задати inform-адресу такою командою: `set-inform http://HOST-ADDRESS:8080/inform`.\n\nДокладніше — у [документації](https://docs.linuxserver.io/images/docker-unifi-network-application/)"
+notes:
+  en: "Only mandatory ports are enabled by default, to extend functionality consider exposing 1900:1900/udp, 8843:8843, 8880:8880, 6789:6789, 5514:5514/udp. Other ports specifications [here](https://docs.linuxserver.io/images/docker-unifi-network-application/#ports-p).\n\nBecause the network application runs inside Docker by default it uses an IP address not accessible by other devices. So, for it to adopt other devices, it is required to use port `8080` and change the inform IP address. To do so, go in settings and search for the `Inform Host` option, there select override and set the address to that of the host. Often, it is also needed to ssh into the devices you want to adopt and manually set the inform IP address, the command needed for doing so is `set-inform http://HOST-ADDRESS:8080/inform`.\n\nFor more [information](https://docs.linuxserver.io/images/docker-unifi-network-application/)"
+  zh: "默认情况下仅启用强制端口，要扩展功能，请考虑公开 1900:1900/udp、8843:8843、8880:8880、6789:6789、5514:5514/udp。 其他端口规范[此处](https://docs.linuxserver.io/images/docker-unifi-network-application/#ports-p)。\n\n由于网络应用程序默认在 Docker 内部运行，因此它使用其他设备无法访问的 IP 地址。 因此，要采用其他设备，需要使用端口“8080”并更改通知IP地址。 为此，请进入设置并搜索“通知主机”选项，选择覆盖并将地址设置为主机的地址。 通常，还需要 ssh 到您想要采用的设备并手动设置通知 IP 地址，所需的命令是“set-inform http://HOST-ADDRESS:8080/inform”。\n\n了解更多[信息](https://docs.linuxserver.io/images/docker-unifi-network-application/)"
+  uk: "Типово ввімкнено лише обов'язкові порти. Щоб розширити можливості, розгляньте відкриття 1900:1900/udp, 8843:8843, 8880:8880, 6789:6789, 5514:5514/udp. Опис інших портів — [тут](https://docs.linuxserver.io/images/docker-unifi-network-application/#ports-p).\n\nОскільки застосунок працює всередині Docker, він типово має IP-адресу, недоступну іншим пристроям. Тому, щоб він міг приймати інші пристрої, потрібно використати порт `8080` і змінити inform-адресу. Для цього відкрийте налаштування, знайдіть параметр `Inform Host`, виберіть override і вкажіть адресу хоста. Часто також потрібно підключитися до пристроїв, які ви хочете прийняти, через ssh і вручну задати inform-адресу такою командою: `set-inform http://HOST-ADDRESS:8080/inform`.\n\nДокладніше — у [документації](https://docs.linuxserver.io/images/docker-unifi-network-application/)"
+category: network
+developer: Ubiquiti and Linuxserver.io
+website: https://ui.com
+source: https://github.com/linuxserver/docker-unifi-network-application
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk4OCkiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSIjMDU1OUM5Ii8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAxXzEyNTFfODk4OCkiPjxwYXRoIGQ9Ik0xMjggMjU2QzE5OC42OTIgMjU2IDI1NiAxOTguNjkyIDI1NiAxMjhDMjU2IDU3LjMwNzUgMTk4LjY5MiAwIDEyOCAwQzU3LjMwNzUgMCAwIDU3LjMwNzUgMCAxMjhDMCAxOTguNjkyIDU3LjMwNzUgMjU2IDEyOCAyNTZaIiBmaWxsPSIjMDU1OUM5Ii8+PHBhdGggZD0iTTE1My4zMDEgODQuOTMxQzE1My4zMDEgNzcuOTk3MyAxNTUuNTgyIDcxLjU1MjQgMTYwLjE0NCA2NS41OTY0QzE2NC43MDYgNTkuNjQwMyAxNzYuNTYxIDU2LjY2NzggMTk1LjcwOSA1Ni42Nzg4VjEyOC44NThMMTkyLjQzNiAxMzkuNDA0QzE5MC44OTggMTQ0LjQzMiAxODguODAyIDE0OS4yNzMgMTg2LjE4NyAxNTMuODM0QzE4My44MjQgMTU3LjkzNSAxODAuODY1IDE2MS42NjMgMTc3LjQwOCAxNjQuODk1QzE3NC4wMjkgMTY4LjAyNSAxNzAuMTkxIDE3MC42MTkgMTY2LjAyNiAxNzIuNTg3QzE2MS41OTUgMTc0LjY1NyAxNTYuOTIgMTc2LjE1OCAxNTIuMTEyIDE3Ny4wNTZDMTUyLjg4NyAxNzIuODUzIDE1My4yODYgMTY4LjU4OCAxNTMuMzA0IDE2NC4zMTRMMTUzLjMwMSA4NC45MzFaTTg1LjcyNTQgNjQuODVIOTQuMjEwM1Y3My4wNDA5SDg1LjcyNTRWNjQuODVaTTk0LjIxMDMgNzcuMjk4MkgxMDIuNzAyVjg1LjUwNTdIOTQuMjIzNUw5NC4yMTAzIDc3LjI5ODJaTTg1LjcyNTQgODcuNjk4N0g5NC4yMTM2Vjk1LjkwNjJIODUuNzI1NFY4Ny42OTg3Wk03Ny4yNDcxIDEwMC4wMDhIODUuNzI1NFYxMDguMzU0SDc3LjI1N0w3Ny4yNDcxIDEwMC4wMDhaTTYwLjI5MzggNTYuNTAwNUg2OC43NzIxVjY0Ljg1SDYwLjI5MzhWNTYuNTAwNVpNMTAyLjcwMiAxNjQuMzE0QzEwMi43MDIgMTcxLjQ0MSAxMDQuMDE2IDE3Ny42NDMgMTA2LjY0NSAxODIuOTE4QzEwOS4yNzQgMTg4LjE5NCAxMTIuMTc3IDE5Mi41ODggMTE1LjM1NSAxOTYuMUMxMTguNTI1IDE5OS42MjMgMTIxLjQyNiAyMDIuMjM3IDEyNC4wNTggMjAzLjk0MUwxMjguMDAxIDIwNi41QzExNy4zOSAyMDYuNSAxMDcuODkzIDIwNS4wMTIgOTkuNTA3OSAyMDIuMDM1QzkxLjEyMzIgMTk5LjA1OCA4NC4wMjg4IDE5NC45MDggNzguMjI0NyAxODkuNTg0QzcyLjQ3OTcgMTg0LjM0MiA2Ny45MzY3IDE3Ny45MiA2NC45MDc4IDE3MC43NThDNjEuODI1MiAxNjMuNTI3IDYwLjI4MzkgMTU1LjcxIDYwLjI4MzkgMTQ3LjMwOFY3OS4zNTI2SDY4Ljc2MjJWMTI0Ljc2M0g3Ny4yNTA0VjExNi41NjJIODUuNzI1NFYxMzQuODY5SDk0LjIxMDNWMTA0LjExSDEwMi43MDJWMTY0LjMxNFpNMTMzLjk0NiAxODEuNDUyQzE0MS43ODUgMTgxLjc0MyAxNDguOTc4IDE4MS4xNTYgMTU1LjUyNyAxNzkuNjkyQzE2MS43ODkgMTc4LjMzNyAxNjcuNzU5IDE3NS44NzYgMTczLjE1NyAxNzIuNDI1QzE3OC40NDEgMTY4Ljk4MyAxODMuMDE0IDE2NC41NTYgMTg2LjYyNiAxNTkuMzg2QzE5MC4zOTYgMTU0LjA2OSAxOTMuNDIxIDE0Ny42OTcgMTk1LjcwMiAxNDAuMjczVjE0Ny4zMjFDMTk1LjcwMiAxNTUuMzI5IDE5NC4zMzggMTYyLjc3NiAxOTEuNjEgMTY5LjY2MUMxODguOTIzIDE3Ni40ODQgMTg0Ljg0MSAxODIuNjcxIDE3OS42MjcgMTg3LjgyNkMxNzQuMzcxIDE5My4wNTQgMTY3Ljk3MyAxOTcuMjc4IDE2MC40MzEgMjAwLjQ5OUMxNTIuODkgMjAzLjcyMSAxNDQuMzEyIDIwNS42MjQgMTM0LjY5NiAyMDYuMjFMMTI5LjYzMyAyMDMuNTY4QzEyOS4yMzkgMjAzLjI3NyAxMjUuOTY2IDIwMC43MTMgMTE5LjgxNCAxOTUuODc1QzExMy42NjIgMTkxLjAzOCAxMDkuNDQ1IDE4My43MzkgMTA3LjE2NCAxNzMuOTc4QzExMC44MjggMTc2LjE1MiAxMTQuNzU1IDE3Ny44NSAxMTguODQ5IDE3OS4wMzFDMTIzLjI2NCAxODAuMzUyIDEyOC4yOTYgMTgxLjE1OSAxMzMuOTQ2IDE4MS40NTJaTTc3LjI1NyA3My4xOTYxSDg1LjU5MzJWODEuNDAzNkg3Ny4yNTdWNzMuMTk2MVoiIGZpbGw9IndoaXRlIi8+PC9nPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9ImNsaXAwXzEyNTFfODk4OCI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9ImNsaXAxXzEyNTFfODk4OCI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
+screenshots:
+  - 1.webp
+  - 2.webp
+web:
+  service: unifi-network-application
+  port: 8443
+  scheme: https
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8443
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: PORT_3478
+    type: port
+    default: 3478
+    label:
+      en: Port 3478
+      uk: Порт 3478
+    advanced: true
+  - name: PORT_10001
+    type: port
+    default: 10001
+    label:
+      en: Port 10001
+      uk: Порт 10001
+    advanced: true
+  - name: PORT_8080
+    type: port
+    default: 8080
+    label:
+      en: Port 8080
+      uk: Порт 8080
+    advanced: true
+  - name: MONGO_PASS
+    type: secret
+    label:
+      en: MONGO_PASS
+  - name: UNIFI_DB_PORT_27017
+    type: port
+    default: 27017
+    label:
+      en: Port 27017
+      uk: Порт 27017
+    advanced: true

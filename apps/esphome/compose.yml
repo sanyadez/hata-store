@@ -1,0 +1,20 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  esphome:
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+    image: ghcr.io/esphome/esphome:2026.5.1
+    restart: always
+    ports:
+      - "${WEB_PORT:-6052}:6052"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+    environment:
+      ESPHOME_DASHBOARD_USE_PING: "${ESPHOME_DASHBOARD_USE_PING:-false}"
+      TZ: "${TZ:-UTC}"
+    network_mode: host
+    privileged: false

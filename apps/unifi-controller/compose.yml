@@ -1,0 +1,28 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  unifi-controller:
+    environment:
+      MEM_LIMIT: "1024"
+      MEM_STARTUP: "1024"
+      PGID: "1000"
+      PUID: "1000"
+    image: linuxserver/unifi-controller:8.0.7
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${PORT_3478:-3478}:3478/udp"
+      - "${PORT_10001:-10001}:10001/udp"
+      - "${WEB_PORT:-8383}:8080"
+      - "${PORT_8443:-8443}:8443"
+      - "${PORT_1900:-1900}:1900/udp"
+      - "${PORT_8843:-8843}:8843"
+      - "${PORT_8880:-8880}:8880"
+      - "${PORT_6789:-6789}:6789"
+      - "${PORT_5514:-5514}:5514/udp"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config

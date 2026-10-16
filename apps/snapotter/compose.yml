@@ -1,0 +1,36 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  snapotter:
+    image: snapotter/snapotter:2.2.0
+    deploy:
+      resources:
+        reservations:
+          memory: 1024M
+    ports:
+      - "${WEB_PORT:-1349}:1349"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data
+      - type: bind
+        source: "${APP_DATA:-.}/workspace"
+        target: /tmp/workspace
+    environment:
+      AUTH_ENABLED: "${AUTH_ENABLED:-true}"
+      DEFAULT_USERNAME: "${DEFAULT_USERNAME:-admin}"
+      DEFAULT_PASSWORD: "${DEFAULT_PASSWORD:?set DEFAULT_PASSWORD}"
+      MAX_UPLOAD_SIZE_MB: "${MAX_UPLOAD_SIZE_MB:-0}"
+      MAX_BATCH_SIZE: "${MAX_BATCH_SIZE:-0}"
+      CONCURRENT_JOBS: "${CONCURRENT_JOBS:-0}"
+      REDIS_MAXMEMORY: "${REDIS_MAXMEMORY:-512mb}"
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - "-fsS"
+        - http://localhost:1349/api/v1/health
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 90s

@@ -1,0 +1,23 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  flaresolverr:
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+      UMASK: "002"
+      LOG_LEVEL: info
+      LOG_HTML: "false"
+      CAPTCHA_SOLVER: none
+    cpu_shares: 50
+    command:
+      []
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    image: ghcr.io/flaresolverr/flaresolverr:v3.4.6
+    ports:
+      - "${WEB_PORT:-8191}:8191"
+    restart: unless-stopped
+    privileged: false

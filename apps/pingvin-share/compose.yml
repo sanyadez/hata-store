@@ -1,0 +1,20 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  pingvin-share:
+    image: stonith404/pingvin-share:v1.13.0
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-3410}:3000"
+    environment:
+      TRUST_PROXY: "${TRUST_PROXY:-false}"
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /opt/app/backend/data
+      - type: bind
+        source: "${APP_DATA:-.}/images"
+        target: /opt/app/frontend/public/img

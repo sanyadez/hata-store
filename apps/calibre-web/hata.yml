@@ -1,0 +1,63 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Calibre-web
+tagline:
+  en: "Web app for browsing, reading and downloading eBooks stored in a Calibre database"
+  zh: 用于浏览，阅读和下载存储在Calibre数据库中的电子书的Web应用程序
+  ar: تطبيق ويب للتصفح والقراءة وتنزيل الكتب الإلكترونية المخزنة في قاعدة بيانات Calibre
+  de: "Web-App zum Durchsuchen, Lesen und Herunterladen von E-Books, die in einer Calibre-Datenbank gespeichert sind"
+  es: "Aplicación web para navegar, leer y descargar libros electrónicos almacenados en una base de datos Calibre"
+  fr: "Application Web pour parcourir, lire et télécharger des livres électroniques stockés dans une base de données Calibre"
+  hu: "Webalkalmazás a Calibre adatbázisban tárolt könyvek böngészéséhez, olvasásához és letöltéséhez"
+  it: "Applicazione web per esplorare, leggere e scaricare eBook memorizzati in un database Calibre"
+  ru: "Веб-приложение для просмотра, чтения и загрузки электронных книг, хранящихся в базе данных Calibre"
+  pl: "Aplikacja internetowa do przeglądania, czytania i pobierania e-booków przechowywanych w bazie danych Calibre"
+  pt: "Aplicativo da web para navegar, ler e baixar eBooks armazenados em um banco de dados Calibre"
+  sv: "Webbapplikation för att bläddra, läsa och ladda ner e-böcker som lagras i en Calibre-databas"
+  uk: "Вебзастосунок для перегляду, читання й завантаження електронних книг із бази Calibre"
+description:
+  en: "Calibre-web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself."
+  zh: Calibre-web是一个Web应用程序，提供了一个干净的界面，用于浏览，阅读和下载使用现有Calibre数据库的电子书。也可以通过应用程序本身集成谷歌驱动器并编辑元数据和您的calibre库。
+  ar: Calibre-web هو تطبيق ويب يوفر واجهة نظيفة لاستعراض وقراءة وتنزيل الكتب الإلكترونية باستخدام قاعدة بيانات Calibre الحالية. من الممكن أيضًا دمج جوجل درايف وتحرير البيانات الوصفية ومكتبتك الخاصة من خلال التطبيق نفسه.
+  de: "Calibre-web ist eine Web-App, die eine saubere Schnittstelle für das Durchsuchen, Lesen und Herunterladen von E-Books mit einer vorhandenen Calibre-Datenbank bietet. Es ist auch möglich, Google Drive zu integrieren und Metadaten und Ihre Calibre-Bibliothek über die App selbst zu bearbeiten."
+  es: "Calibre-web es una aplicación web que proporciona una interfaz limpia para navegar, leer y descargar libros electrónicos utilizando una base de datos Calibre existente. También es posible integrar Google Drive y editar metadatos y tu biblioteca de Calibre a través de la propia aplicación."
+  fr: "Calibre-web est une application Web offrant une interface propre pour parcourir, lire et télécharger des livres électroniques à l'aide d'une base de données Calibre existante. Il est également possible d'intégrer Google Drive et de modifier les métadonnées et votre bibliothèque Calibre via l'application elle-même."
+  hu: "A Calibre-web egy webalkalmazás, amely egy tiszta felületet biztosít a könyvek böngészéséhez, olvasásához és letöltéséhez egy meglévő Calibre adatbázis használatával. Lehetőség van továbbá a Google Drive integrálására és a metaadatok és a Calibre könyvtár szerkesztésére az alkalmazás magában."
+  it: "Calibre-web è un'applicazione web che fornisce un'interfaccia pulita per esplorare, leggere e scaricare eBook utilizzando un database Calibre esistente. È anche possibile integrare Google Drive e modificare i metadati e la tua libreria di Calibre attraverso l'applicazione stessa."
+  ru: "Calibre-web - это веб-приложение, предоставляющее чистый интерфейс для просмотра, чтения и загрузки электронных книг с использованием существующей базы данных Calibre. Также возможно интегрировать Google Drive и редактировать метаданные и вашу библиотеку Calibre через само приложение."
+  pl: "Calibre-web to aplikacja internetowa zapewniająca czysty interfejs do przeglądania, czytania i pobierania e-booków za pomocą istniejącej bazy danych Calibre. Możliwe jest również zintegrowanie Google Drive i edycja metadanych i biblioteki Calibre za pośrednictwem samej aplikacji."
+  pt: "Calibre-web é um aplicativo da web que fornece uma interface limpa para navegar, ler e baixar eBooks usando um banco de dados Calibre existente. Também é possível integrar o Google Drive e editar metadados e sua biblioteca Calibre através do próprio aplicativo."
+  sv: "Calibre-web är en webbapplikation som ger en ren gränssnitt för att bläddra, läsa och ladda ner e-böcker med hjälp av en befintlig Calibre-databas. Det är också möjligt att integrera Google Drive och redigera metadata och din Calibre-bibliotek via appen själv."
+  uk: "Calibre-web — вебзастосунок із зручним інтерфейсом для перегляду, читання й завантаження електронних книг зі збереженої бази Calibre. Також можна підключити Google Drive та редагувати метадані й бібліотеку Calibre просто в застосунку."
+notes:
+  en: "| Username | Password | | -------- | -------- | | `admin`    | `admin123` |"
+  zh: "| 用户名 | 密码 | | -------- | -------- | | `admin`    | `admin123` |"
+  uk: "| Користувач | Пароль | | -------- | -------- | | `admin`    | `admin123` |"
+category: media
+developer: linuxserver
+website: https://github.com/janeczku/calibre-web
+source: https://github.com/janeczku/calibre-web
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyMjlfMjcxKSI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTI1NiAwSDBWMjU2SDI1NlYwWiIgZmlsbD0iIzNBNjE4NyIvPjxwYXRoIGQ9Ik0xOTMuNTQ2IDcxLjc1MjdDMTk2LjI5MSA3Mi40MjM0IDE5OS43ODIgNzAuNTkwNSAyMDEuNjU2IDc0LjE3NDVDMjAxLjY1NiAxMTguMzUgMjAxLjY2NyAxNjIuNTI1IDIwMS42MzEgMjA2LjcwNkMyMDEuNjMxIDIwOS4zODMgMjAyLjIwNCAyMTIuMTg0IDIwMC42NTMgMjE0LjY5M0MxOTguOTM4IDIxNS45NDIgMTk2Ljk0MSAyMTUuNjkxIDE5NS4wMjEgMjE1LjY5MUMxNjEuNzc3IDIxNS43MTIgMTI4LjUyNyAyMTUuNzEyIDk1LjI4MzIgMjE1LjY5MUM5My41NDc1IDIxNS42OTEgOTEuNzcwOSAyMTUuODg2IDkwLjExNzEgMjE1LjA4N0M4Ny42MDMyIDIxMy4xMTYgODcuODMzNiAyMTAuMjIzIDg3LjgyMzQgMjA3LjU2MUM4Ny42NDkzIDE2NS40NzQgODcuNjM5IDEyMy4zODggODcuODI4NSA4MS4zMDE1Qzg3LjgzODcgNzguODIzNCA4Ny42Njk4IDc2LjE2MSA4OS43NjkgNzQuMjAwMUM5MC4yOTEyIDczLjk2NDYgOTAuNzgyNyA3My42NDcxIDkxLjM5NzEgNzMuNjQyQzExOS43ODggNzMuNDk4NiAxNDguMTczIDczLjYyNjYgMTY5LjYzNiA3My41ODA2QzE1MC4wODMgNzMuNTgwNiAxMjMuNjAyIDczLjU4NTcgOTcuMTIxMyA3My41NjUyQzk0Ljk5MTQgNzMuNTY1MiA5Mi44MzU4IDczLjgyNjMgOTAuNzE2MiA3My4yODg3QzkwLjIxOTUgNzIuNjAyNiA5MC4yMDQyIDcxLjkxNjYgOTAuNjcwMSA3MS4yMUM5Mi4zNDk0IDY5LjExNTkgOTQuNzkxNyA2OS4xMjYyIDk3LjA4MDMgNjkuMTIxQzEyNS45OTMgNjkuMDQ0MiAxNTQuOTExIDY4LjU4ODYgMTgzLjgyMyA2OS4zNDEyQzE4Ny4yNDQgNjkuNDI4MiAxOTAuODk0IDY4LjU3ODMgMTkzLjU1MSA3MS43NDc2TDE5My41NDYgNzEuNzUyN1oiIGZpbGw9IiNGREJDNDYiLz48cGF0aCBkPSJNMTkzLjU0NiA3MS43NTI3QzE5MC4zNzcgNzEuNzQyNSAxODcuMjA4IDcxLjczNzQgMTg0LjAzOCA3MS43MjcxQzE4MC40MjQgNjguNzgzMSAxODEuNDUzIDY0LjYzMDggMTgxLjMyIDYwLjg1MjJDMTgxLjAyMyA1Mi41OTg4IDE3OS45MTcgNTEuMzA4NiAxNzEuNzQgNTEuMjkzMkMxNDAuOTc0IDUxLjIzNjkgMTEwLjIxMyA1MS4yNDcxIDc5LjQ0NyA1MS4yODNDNzguNjY4OCA1MS4yODMgNzcuODkwNiA1MS4yODMgNzcuMTEyMyA1MS4zMzQyQzcwLjk2MzIgNTEuNzEzIDY2LjkxMzMgNTQuNjMxNCA2Ni4yMzc0IDU5LjE2MjZDNjUuNTgyMSA2My41NzEgNjguMjI5MSA2Ni44NjgyIDc0LjI2NTYgNjkuMDQ5NEM3NS41NDU2IDY5LjUxMDIgNzYuOTAyNCA2OS43ODE1IDc3LjgyOTEgNzAuOTA3OUM3OS40MDEgNzIuODc0IDc5LjQzMTcgNzUuMTU3NSA3OS40MjY2IDc3LjU0ODZDNzkuMzI0MiAxMTcuMzEgNzkuNTkwNCAxNTcuMDc4IDc5LjIxMTUgMTk2LjgzOUM3OS4xMjk2IDIwNS41NTkgNzkuNzQ5MSAyMTIuNjkxIDg5Ljg0NTggMjE0Ljg0NkM5MC41ODgyIDIxNS4yNDEgOTAuODQ5MyAyMTUuODQgOTAuNjI5MSAyMTYuNjQ5Qzg1LjU3NTcgMjE2LjY3OSA4MC41MDE4IDIxNy4wNDggNzUuNDc5IDIxNi42NzlDNjIuNDEyOCAyMTUuNzIyIDUzLjMyOTkgMjA2LjM3MyA1My4yODM4IDE5My4zMzdDNTMuMTMwMiAxNDguOTUyIDUzLjE1MDcgMTA0LjU2MiA1My4yNzM2IDYwLjE3NjRDNTMuMjk5MiA0OS44ODUyIDU5LjY5OTIgNDIuMzY5IDY5LjQ2ODIgNDAuMTY3NEMxMTAuMDE5IDQwLjM0NjYgMTUwLjU2OSA0MC4xNTcyIDE5MS4xMTkgNDAuMjY0N0MxOTMuOTEgNDEuNzg1NCAxOTMuMzUyIDQ0LjQ4ODcgMTkzLjM4MiA0Ni45MjA3QzE5My40NzUgNTUuMTk0NiAxOTMuNSA2My40NzM3IDE5My41NDYgNzEuNzQ3NlY3MS43NTI3WiIgZmlsbD0iI0M1OEM1NiIvPjxwYXRoIGQ9Ik0yMDAuNDk0IDIxNC41MjRDMjAwLjQ5NCAxNzAuMzkgMjAwLjQ3OSAxMjYuMjU1IDIwMC40OTkgODIuMTIwN0MyMDAuNDk5IDc5LjQzMjcgMjAwLjAxOCA3Ni42NDIzIDIwMS42NTEgNzQuMTc0NUMyMDMuMzQxIDc1Ljk3NjcgMjAyLjcwMSA3OC4yMjQ0IDIwMi43MDYgODAuMjg3OEMyMDIuNzQyIDEyMy4wMDQgMjAyLjc0MiAxNjUuNzE1IDIwMi43MDYgMjA4LjQzMUMyMDIuNzA2IDIxMC40ODkgMjAzLjM0NiAyMTIuNzQ3IDIwMS42MTUgMjE0LjUyOUMyMDEuMjQyIDIxNS4wNzcgMjAwLjg2OCAyMTUuMDcyIDIwMC40OTQgMjE0LjUyOVYyMTQuNTI0WiIgZmlsbD0iI0ZFQkU0MiIvPjxwYXRoIGQ9Ik0xOTEuMTE0IDQwLjI2OThDMTg4LjgyNiA0MS43ODAyIDE4Ni4yMzUgNDEuNDAxNCAxODMuNzMxIDQxLjQwMTRDMTQ4LjA5MSA0MS40MTY3IDExMi40NTYgNDEuNDE2NyA3Ni44MTU0IDQxLjQwMTRDNzQuMzExNyA0MS40MDE0IDcxLjcxNTggNDEuNzcgNjkuNDYzIDQwLjE3MjZDNzEuNjE4NiAzOC45NTQgNzMuOTk0MiAzOS4yMDQ5IDc2LjMxMzYgMzkuMTk5OEMxMTIuNTIyIDM5LjE4NDQgMTQ4LjcyNiAzOS4xNzkzIDE4NC45MzQgMzkuMjA0OUMxODcuMDM0IDM5LjIwNDkgMTg5LjI1NiAzOC43NDkyIDE5MS4xMDkgNDAuMjY0N0wxOTEuMTE0IDQwLjI2OThaIiBmaWxsPSIjQzk4RDU0Ii8+PHBhdGggZD0iTTIwMC40OTQgMjE0LjUyNEMyMDAuODY4IDIxNC41MjQgMjAxLjI0MiAyMTQuNTI0IDIwMS42MTUgMjE0LjUyNEMyMDAuNDY4IDIxNi45NzYgMTk4LjIxMSAyMTYuNzU2IDE5Ni4wOTYgMjE2Ljc1MUMxNjAuOTQyIDIxNi43MjYgMTI1Ljc4MyAyMTYuNjg1IDkwLjYyOTEgMjE2LjY0OUM5MC41OTg0IDIxNi4zNjIgOTAuNTQ3MiAyMTYuMDc1IDkwLjQ4MDYgMjE1Ljc4OUM5MC4yMDQyIDIxNS40ODEgOTAuMTMyNSAyMTUuMTk1IDkwLjI2MDUgMjE0LjkyM0M5MC4zODM0IDIxNC42NjIgOTAuNDk2IDIxNC41MzQgOTAuNTk4NCAyMTQuNTM0TDIwMC40OTQgMjE0LjUxOVYyMTQuNTI0WiIgZmlsbD0iI0ZFQkU0MiIvPjxwYXRoIGQ9Ik03Ni43MjMyIDcyLjE0MThDNzUuMTc3IDcxLjk5ODUgNzMuNjA1MSA3MS45ODMxIDcyLjA4NDUgNzEuNjkxM0M2Ni42NDcgNzAuNjUxOSA2Mi43ODY2IDY2LjA3OTggNjIuNjEyNSA2MC42MTY3QzYyLjQ0MzUgNTUuMzk0MyA2NS43MzU3IDUwLjY2MzQgNzAuODU1NyA0OS4xODM4QzcyLjY4MzUgNDguNjU2NCA3NC42ODU0IDQ4LjU1NCA3Ni42MTA2IDQ4LjU0ODlDMTEwLjQ2OSA0OC41MTMgMTQ0LjMyOCA0OC41OTUgMTc4LjE4MSA0OC40MzYyQzE4Mi42MiA0OC40MTU4IDE4NC41MDQgNDkuNDE5MyAxODQuMTU2IDU0LjIyMThDMTgzLjczNiA2MC4wMzMgMTg0LjA0NCA2NS44OTAzIDE4NC4wMzMgNzEuNzMyMkMxNTUuNzk2IDcxLjc5ODggMTI3LjU2IDcxLjg2MDIgOTkuMzI4IDcxLjk0MjJDOTYuNDA5NiA3MS45NTI0IDkzLjQ5NjMgNzIuMDkwNiA5MC41Nzc5IDcyLjE2NzRDODUuOTU0NiA3NS44MjMxIDgxLjMzNjMgNzQuODc1OSA3Ni43MjMyIDcyLjE0N1Y3Mi4xNDE4WiIgZmlsbD0iI0Y5RjZFQyIvPjxwYXRoIGQ9Ik03Ni43MjMyIDcyLjE0MThMOTAuNTc3OSA3Mi4xNjIzQzkwLjU5MzMgNzIuNDU0MiA5MC42MTM4IDcyLjc0NiA5MC42MzQyIDczLjAzNzhDOTEuMzYxMyA3My40MzcyIDkxLjM1MSA3My44MjEyIDkwLjYwMzUgNzQuMTc5NkM5MC42MDM1IDEyMS4yODQgOTAuNjAzNSAxNjguMzg4IDkwLjU5ODQgMjE1LjQ5MkM5MC41NjI2IDIxNS45MTEgOTAuNTIxNiAyMTYuMzMxIDkwLjQ4MDYgMjE2Ljc1MUM3NC43MDA4IDIxNi41NDEgNzYuNjUxNSAyMTguODQgNzYuNjM2MiAyMDIuNTg5Qzc2LjU5NTIgMTU5LjEwNSA3Ni42ODIyIDExNS42MjEgNzYuNzE4MSA3Mi4xMzY3TDc2LjcyMzIgNzIuMTQxOFoiIGZpbGw9IiNGMEE1NEMiLz48cGF0aCBkPSJNMTQxLjg1NSAxNzkuNDI2QzEzMS4zNTkgMTc5LjQyNiAxMjAuODY4IDE3OS40NjIgMTEwLjM3MiAxNzkuMzlDMTA4LjU0NCAxNzkuMzggMTA1LjgxNSAxNzkuODE1IDEwNS42ODcgMTc3LjIzQzEwNS41NTQgMTc0LjU1MiAxMDguMjYyIDE3NC44MTggMTEwLjEgMTc0LjgxM0MxMzEuMjgyIDE3NC43NjIgMTUyLjQ2MyAxNzQuNzYyIDE3My42NDUgMTc0LjgwOEMxNzUuNDczIDE3NC44MDggMTc4LjI5NCAxNzQuNDA0IDE3OC4zMTkgMTc2Ljk2NEMxNzguMzUgMTgwLjAzIDE3NS4yODggMTc5LjM3IDE3My4zMzIgMTc5LjM5QzE2Mi44NDIgMTc5LjQ4MyAxNTIuMzQ2IDE3OS40MzcgMTQxLjg1IDE3OS40MzFMMTQxLjg1NSAxNzkuNDI2WiIgZmlsbD0iI0YwQTY0QyIvPjxwYXRoIGQ9Ik0xNDEuODc1IDE4OC44MTFDMTQ4LjY2OSAxODguODExIDE1NS40NjQgMTg4Ljc3IDE2Mi4yNTggMTg4Ljg0N0MxNjQuMDkxIDE4OC44NjggMTY2LjcxMiAxODguNTcxIDE2Ni42NTYgMTkxLjI4OUMxNjYuNjEgMTkzLjU2MyAxNjQuMTkzIDE5My40MDQgMTYyLjUxNCAxOTMuNDA5QzE0OC45MjUgMTkzLjQ2IDEzNS4zMzcgMTkzLjQ3IDEyMS43NDggMTkzLjQwOUMxMTkuOTIxIDE5My40MDQgMTE3LjIwMiAxOTMuNjc1IDExNy4zNjYgMTkwLjk3MkMxMTcuNTI0IDE4OC4zOTcgMTIwLjI0MyAxODguODU3IDEyMi4wNzEgMTg4LjgzMkMxMjguNjcxIDE4OC43NDUgMTM1LjI3IDE4OC43OTYgMTQxLjg3IDE4OC44MDFMMTQxLjg3NSAxODguODExWiIgZmlsbD0iI0YwQTY0QyIvPjxwYXRoIGQ9Ik05MC42MDg2IDc0LjE2NDJDOTAuNjAzNSA3My43ODU0IDkwLjYwODYgNzMuNDA2NSA5MC42Mzk0IDczLjAyNzZDMTIwLjk1IDczLjAyNzYgMTUxLjI1NSA3My4wMjc2IDE4MS41NiA3My4wMjc2QzE4MS41NiA3My40MDY1IDE4MS41NiA3My43ODU0IDE4MS41NiA3NC4xNjQySDkwLjYwODZaIiBmaWxsPSIjRkVCQjQwIi8+PC9nPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDBfMTIyOV8yNzEiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: calibre-web
+  port: 8083
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8083
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: BOOKS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media/Books"
+    label:
+      en: Media/Books
+      uk: Медіа/Книжки
+    hint:
+      en: Inside the app it is /books
+      uk: У застосунку вона — /books

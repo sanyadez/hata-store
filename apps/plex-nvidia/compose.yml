@@ -1,0 +1,31 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  plex:
+    devices:
+      - /dev/dri:/dev/dri
+      - /dev/dvb:/dev/dvb
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      VERSION: "${VERSION:-docker}"
+      CPU_FALLBACK: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+    image: lscr.io/linuxserver/plex:1.43.3
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities:
+                - gpu
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${MEDIA_DIR:-./Media}"
+        target: /Media

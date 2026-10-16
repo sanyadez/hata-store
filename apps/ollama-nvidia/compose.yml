@@ -1,0 +1,22 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  ollama:
+    image: ollama/ollama:0.9.5
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 2G
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities:
+                - gpu
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-11434}:11434"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/"
+        target: /root/.ollama

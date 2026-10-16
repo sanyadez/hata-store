@@ -1,0 +1,25 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  bazarr:
+    environment:
+      PGID: "1000"
+      PUID: "1000"
+      TZ: "${TZ:-UTC}"
+    image: linuxserver/bazarr:1.5.6
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${WEB_PORT:-6767}:6767"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${MOVIES_DIR:-./Media/Movies}"
+        target: /movies
+      - type: bind
+        source: "${TV_SHOWS_DIR:-./Media/TV Shows}"
+        target: /tv
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config

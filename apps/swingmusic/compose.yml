@@ -1,0 +1,14 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  swingmusic:
+    image: ghcr.io/swingmx/swingmusic:v2.1.4
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${MUSIC_DIR:-./Media/Music}"
+        target: /music
+    ports:
+      - "${WEB_PORT:-1970}:1970"
+    restart: unless-stopped

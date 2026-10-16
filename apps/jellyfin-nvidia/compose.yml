@@ -1,0 +1,42 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  jellyfin:
+    devices:
+      - /dev/dri:/dev/dri
+      - /dev/vcsm:/dev/vcsm
+      - /dev/vchiq:/dev/vchiq
+      - /dev/video10:/dev/video10
+      - /dev/video11:/dev/video11
+      - /dev/video12:/dev/video12
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+      CPU_FALLBACK: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+    image: linuxserver/jellyfin:10.10.6
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities:
+                - gpu
+    ports:
+      - "${WEB_PORT:-8097}:8096"
+      - "${PORT_8920:-8921}:8920"
+      - "${PORT_7359:-7359}:7359"
+      - "${PORT_1900:-1901}:1900"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${MEDIA_DIR:-./Media}"
+        target: /Media
+      - type: bind
+        source: /opt/vc/lib
+        target: /opt/vc/lib

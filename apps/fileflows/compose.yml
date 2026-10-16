@@ -1,0 +1,33 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  fileflows:
+    devices:
+      - /dev/dri:/dev/dri
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+    hostname: fileflows
+    image: revenz/fileflows:26.09
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-19200}:5000"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /app/Data
+      - type: bind
+        source: "${APP_DATA:-.}/logs"
+        target: /app/Logs
+      - type: bind
+        source: "${APP_DATA:-.}/common"
+        target: /app/common
+      - type: bind
+        source: "${APP_DATA:-.}/temp"
+        target: /temp
+      - type: bind
+        source: "${MEDIA_DIR:-./Media}"
+        target: /Media
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock

@@ -1,0 +1,22 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  index-tts-nvidia:
+    image: icewhaletech/index-tts:2.0
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-7867}:7860"
+    environment:
+      NVIDIA_VISIBLE_DEVICES: "${NVIDIA_VISIBLE_DEVICES:-all}"
+    deploy:
+      resources:
+        reservations:
+          memory: 8G
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities:
+                - gpu
+    networks:
+      default:
+        aliases:
+          - index-tts

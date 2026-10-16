@@ -1,0 +1,23 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  glances:
+    image: nicolargo/glances:4.5.4
+    pid: host
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    environment:
+      GLANCES_OPT: "${GLANCES_OPT:--w}"
+    restart: unless-stopped
+    privileged: false
+    volumes:
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+      - type: bind
+        source: /mnt
+        target: /mnt
+    ports:
+      - "${WEB_PORT:-61208}:61208"
+      - "${PORT_61209:-61209}:61209"

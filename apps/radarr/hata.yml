@@ -1,0 +1,71 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Radarr
+tagline:
+  en: The movie collection manager for Usenet and BitTorrent users
+  zh: 为Usenet和BitTorrent用户提供的电影集合管理器
+  ar: مدير مجموعة أفلام لمستخدمي Usenet و BitTorrent
+  de: Der Film-Sammlungs-Manager für Usenet- und BitTorrent-Nutzer
+  es: El administrador de colecciones de películas para usuarios de Usenet y BitTorrent
+  fr: Le gestionnaire de collections de films pour les utilisateurs de Usenet et de BitTorrent
+  hu: A Usenet és BitTorrent felhasználók filmgyűjteménye
+  it: Il gestore di collezioni di film per gli utenti di Usenet e BitTorrent
+  ru: Менеджер коллекций фильмов для пользователей Usenet и BitTorrent
+  pl: Menedżer kolekcji filmów dla użytkowników Usenet i BitTorrent
+  pt: O gerenciador de coleções de filmes para usuários de Usenet e BitTorrent
+  sv: Filmkolektionshanteraren för användare av Usenet och BitTorrent
+  uk: Менеджер колекції фільмів для користувачів Usenet і BitTorrent
+description:
+  en: "Radarr is a movie collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new movies and will interface with clients and indexers to grab, sort, and rename them. It can also be configured to automatically upgrade the quality of existing files in the library when a better quality format becomes available. Note that only one type of a given movie is supported. If you want both an 4k version and 1080p version of a given movie you will need multiple instances."
+  zh: Radarr是一个为Usenet和BitTorrent用户提供的电影集合管理器。它可以监视多个RSS源以获取新电影，并且可以与客户端和索引器进行交互以获取，排序和重命名它们。它还可以配置为在更好的质量格式可用时自动升级库中现有文件的质量。请注意，只支持给定电影的一种类型。如果您想要4k版本和1080p版本的给定电影，则需要多个实例。
+  ar: Radarr هو مدير مجموعة أفلام لمستخدمي Usenet و BitTorrent. يمكنه مراقبة مزودي RSS متعددين للحصول على أفلام جديدة وسيتم التفاعل مع العملاء والمؤشرات للتقاط وفرز وإعادة تسمية. يمكنه أيضًا تكوينه لترقية الجودة التلقائية للملفات الموجودة في المكتبة عندما يصبح هناك تنسيق جودة أفضل. يرجى ملاحظة أن نوع واحد فقط من الفيلم المعطى مدعوم. إذا كنت ترغب في إصدار 4k وإصدار 1080p من الفيلم المعطى ، فستحتاج إلى عدة مثيلات.
+  de: "Radarr ist ein Film-Sammlungsmanager für Usenet- und BitTorrent-Nutzer. Es kann mehrere RSS-Feeds überwachen, um neue Filme zu finden und mit Clients und Indexern interagieren, um sie zu sortieren, umbenennen und herunterzuladen. Es kann auch so konfiguriert werden, dass die Qualität vorhandener Dateien in der Bibliothek automatisch aktualisiert wird, wenn eine bessere Qualität verfügbar ist. Beachten Sie, dass nur ein Typ eines bestimmten Films unterstützt wird. Wenn Sie sowohl eine 4k-Version als auch eine 1080p-Version eines bestimmten Films haben möchten, benötigen Sie mehrere Instanzen."
+  es: "Radarr es un administrador de colecciones de películas para usuarios de Usenet y BitTorrent. Puede monitorear múltiples fuentes RSS para encontrar nuevas películas y se comunicará con clientes e indexadores para clasificarlas, renombrarlas y descargarlas. También se puede configurar para que actualice automáticamente la calidad de los archivos existentes en la biblioteca cuando una calidad mejor esté disponible. Tenga en cuenta que solo se admite un tipo de película determinada. Si desea una versión 4k y una versión 1080p de una película determinada, necesitará varias instancias."
+  fr: "Radarr est un gestionnaire de collections de films pour les utilisateurs de Usenet et de BitTorrent. Il peut surveiller plusieurs flux RSS pour trouver de nouveaux films et interagir avec des clients et des indexeurs pour les classer, les renommer et les télécharger. Il peut également être configuré pour mettre automatiquement à jour la qualité des fichiers existants dans la bibliothèque lorsque une meilleure qualité est disponible. Veuillez noter qu'un seul type de film donné est pris en charge. Si vous souhaitez une version 4k et une version 1080p d'un film donné, vous aurez besoin de plusieurs instances."
+  it: "Radarr è un gestore di collezioni di film per gli utenti di Usenet e BitTorrent. Può monitorare più feed RSS per trovare nuovi film e interagire con client e indexer per ordinarli, rinominarli e scaricarli. Può anche essere configurato per aggiornare automaticamente la qualità dei file esistenti nella libreria quando una qualità migliore è disponibile. Si noti che viene supportato solo un tipo di film specifico. Se si desidera una versione 4k e una versione 1080p di un film specifico, è necessario avere più istanze."
+  ru: "Radarr - это менеджер коллекций фильмов для пользователей Usenet и BitTorrent. Он может мониторить несколько RSS-каналов для поиска новых фильмов и взаимодействовать с клиентами и индексаторами для их сортировки, переименования и загрузки. Он также может быть настроен для автоматического обновления качества существующих файлов в библиотеке, когда становится доступным более высокое качество. Обратите внимание, что поддерживается только один тип определенного фильма. Если вы хотите версию 4k и версию 1080p определенного фильма, вам понадобится несколько экземпляров."
+  pl: "Radarr to menedżer kolekcji filmów dla użytkowników Usenet i BitTorrent. Może monitorować wiele kanałów RSS, aby znaleźć nowe filmy i komunikować się z klientami i indeksatorami, aby je sortować, zmieniać nazwy i pobierać. Może również być skonfigurowany do automatycznego aktualizowania jakości istniejących plików w bibliotece, gdy dostępna jest lepsza jakość. Zauważ, że obsługiwany jest tylko jeden typ określonego filmu. Jeśli chcesz wersję 4k i wersję 1080p określonego filmu, potrzebujesz kilku instancji."
+  pt: "Radarr é um gerenciador de coleções de filmes para usuários de Usenet e BitTorrent. Ele pode monitorar vários feeds RSS para encontrar novos filmes e interagir com clientes e indexadores para classificá-los, renomeá-los e baixá-los. Ele também pode ser configurado para atualizar automaticamente a qualidade dos arquivos existentes na biblioteca quando uma qualidade melhor estiver disponível. Observe que apenas um tipo de filme específico é suportado. Se você deseja uma versão 4k e uma versão 1080p de um filme específico, você precisará de várias instâncias."
+  sv: "Radarr är en filmkolektionshanterare för användare av Usenet och BitTorrent. Den kan övervaka flera RSS-flöden för att hitta nya filmer och interagera med klienter och indexer för att sortera, döpa om och ladda ner dem. Den kan också konfigureras för att automatiskt uppdatera kvaliteten på befintliga filer i biblioteket när en bättre kvalitet är tillgänglig. Observera att endast en typ av specifik film stöds. Om du vill ha en 4k-version och en 1080p-version av en specifik film behöver du flera instanser."
+  uk: "Radarr — менеджер колекції фільмів для користувачів Usenet і BitTorrent. Він може стежити за кількома RSS-стрічками, шукаючи нові фільми, і взаємодіє з клієнтами та індексаторами, щоб знаходити, сортувати й перейменовувати їх. Його також можна налаштувати так, щоб він автоматично замінював файли в бібліотеці на кращу якість, коли така з’являється. Зверніть увагу: для кожного фільму підтримується лише один варіант. Якщо вам потрібні і версія 4K, і 1080p одного фільму, знадобиться кілька екземплярів."
+category: media
+developer: Radarr
+website: https://radarr.video
+source: https://github.com/Radarr/Radarr
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk1NykiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMV8xMjUxXzg5NTcpIj48bWFzayBpZD0ibWFzazBfMTI1MV84OTU3IiBzdHlsZT0ibWFzay10eXBlOmx1bWluYW5jZSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiPjxwYXRoIGQ9Ik0yNTYgMEgwVjI1NkgyNTZWMFoiIGZpbGw9IndoaXRlIi8+PC9tYXNrPjxnIG1hc2s9InVybCgjbWFzazBfMTI1MV84OTU3KSI+PHBhdGggZD0iTTI1NiAwSDBWMjU2SDI1NlYwWiIgZmlsbD0iIzQ3NEI1MCIvPjxwYXRoIGQ9Ik02OC41NjU5IDY4LjMxODJMNjkuODkyMiAxOTQuMzAxQzU5LjI4MyAxOTUuNjI4IDUxLjMyNjEgMTkwLjMyMyA1MS4zMjYxIDE3OS43MTRMNTAgNzQuOTQ4OEM1MCA0MS43OTU0IDgwLjUwMTIgMzMuODM4NSA5OS4wNjcxIDQ3LjA5OTlMMTkzLjIyMyAxMDEuNDcyQzIwNi40ODQgMTEwLjc1NSAyMDkuMTM3IDEyNy45OTQgMjAyLjUwNiAxMzkuOTNDMjAxLjE4IDEzMC42NDcgMTk3LjIwMiAxMjUuMzQyIDE4OS4yNDUgMTIwLjAzOEw4My4xNTM0IDYwLjM2MTNDNzUuMTk2NyA1NS4wNTY3IDY4LjU2NTkgNTYuMzgyOSA2OC41NjU5IDY4LjMxODJaIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGQ9Ik02MC42MDkxIDIwMC45MzJDNjguNTY1OSAyMDMuNTg0IDc2LjUyMjggMjAyLjI1OCA4My4xNTM1IDE5OC4yOEwxOTEuODk3IDEzNC42MjVDMTk4LjUyOCAxNDMuOTA4IDE5Ny4yMDIgMTUzLjE5MSAxODkuMjQ1IDE1OC40OTVMOTcuNzQxIDIxMS41NDFDODQuNDc5NiAyMTguMTcyIDY3LjIzOTggMjExLjU0MSA2MC42MDkxIDIwMC45MzJaIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGQ9Ik05Mi40MzY0IDE2My43OTdMMTU3LjQxNyAxMjYuNjY1TDkzLjc2MjYgOTAuODU5NEw5Mi40MzY0IDE2My43OTdaIiBmaWxsPSIjRkZDMjMwIi8+PC9nPjwvZz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjUxXzg5NTciPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJjbGlwMV8xMjUxXzg5NTciPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+  - 5.webp
+web:
+  service: radarr
+  port: 7878
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 7878
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: MOVIES_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media/Movies"
+    label:
+      en: Radarr movies directory
+      zh: Radarr电影目录
+      uk: Тека фільмів Radarr
+    hint:
+      en: Inside the app it is /movies
+      uk: У застосунку вона — /movies
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Radarr downloads directory
+      zh: Radarr下载目录
+      uk: Тека завантажень Radarr
+    hint:
+      en: Inside the app it is /downloads
+      uk: У застосунку вона — /downloads

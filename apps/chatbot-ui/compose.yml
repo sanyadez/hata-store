@@ -1,0 +1,11 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  chatbot-ui:
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+    image: ghcr.io/mckaywrigley/chatbot-ui:main@sha256:81cc705b47a52583e3f1718dc824fe3576d85b7ff298985c10bd15c03d0adcd5
+    ports:
+      - "${WEB_PORT:-3080}:3000"
+    restart: unless-stopped

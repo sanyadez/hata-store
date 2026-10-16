@@ -1,0 +1,24 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  medusa:
+    deploy:
+      resources:
+        limits:
+          memory: 7848M
+    environment:
+      TZ: "${TZ:-UTC}"
+    image: pymedusa/medusa:master@sha256:0c2fc9980ce2f4a9abb7cdccacf7678d503b68a2e6822bc143a52f42171c2e6e
+    ports:
+      - "${WEB_PORT:-8081}:8081"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}"
+        target: /config
+      - type: bind
+        source: "${APP_DATA:-.}/Downloads/Television"
+        target: /downloads
+      - type: bind
+        source: "${APP_DATA:-.}/Media/Television"
+        target: /tv
+    privileged: false

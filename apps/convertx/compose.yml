@@ -1,0 +1,18 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  convertx:
+    image: c4illin/convertx:v0.17.0
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          memory: 500M
+    ports:
+      - "${WEB_PORT:-3333}:3000"
+    environment:
+      JWT_SECRET: "${JWT_SECRET:?set JWT_SECRET}"
+      HTTP_ALLOWED: "${HTTP_ALLOWED:-true}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /app/data

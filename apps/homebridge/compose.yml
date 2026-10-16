@@ -1,0 +1,13 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  homebridge:
+    image: homebridge/homebridge:latest@sha256:d2370beb6a0208d3f20f869288bc070b5cc34d86b52a5872311ce2bcff02a670
+    restart: always
+    network_mode: host
+    volumes:
+      - "${APP_DATA:-.}/config:/homebridge"
+    logging:
+      driver: json-file
+      options:
+        max-size: 10mb
+        max-file: "1"

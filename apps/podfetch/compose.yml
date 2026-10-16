@@ -1,0 +1,19 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  podfetch:
+    image: samuel19982/podfetch:v5.2.3
+    environment:
+      DATABASE_URL: "${DATABASE_URL:-sqlite:///app/db/podcast.db}"
+      POLLING_INTERVAL: "${POLLING_INTERVAL:-300}"
+      BASIC_AUTH: "${BASIC_AUTH:-false}"
+      GPODDER_INTEGRATION_ENABLED: "${GPODDER_INTEGRATION_ENABLED:-false}"
+    ports:
+      - "${WEB_PORT:-8000}:8000"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/podcasts"
+        target: /app/podcasts
+      - type: bind
+        source: "${APP_DATA:-.}/db"
+        target: /app/db

@@ -1,0 +1,19 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  siyuan-note:
+    command: "--accessAuthCode=${ACCESS_CODE:?set ACCESS_CODE} --workspace=/siyuan/workspace/"
+    environment:
+      PUID: "1000"
+      PGID: "1000"
+    image: b3log/siyuan:v3.6.5
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+    ports:
+      - "${WEB_PORT:-6806}:6806"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/workspace"
+        target: /siyuan/workspace

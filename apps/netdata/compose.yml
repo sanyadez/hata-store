@@ -1,0 +1,47 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  netdata:
+    cap_add:
+      - SYS_PTRACE
+      - SYS_ADMIN
+    cpu_shares: 90
+    deploy:
+      resources:
+        limits:
+          memory: 1794M
+    image: netdata/netdata:v2.10.3
+    pid: host
+    ports:
+      - "${WEB_PORT:-19999}:19999"
+    restart: unless-stopped
+    security_opt:
+      - apparmor:unconfined
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /etc/netdata
+      - type: bind
+        source: "${APP_DATA:-.}/lib"
+        target: /var/lib/netdata
+      - type: bind
+        source: "${APP_DATA:-.}/cache"
+        target: /var/cache/netdata
+      - type: bind
+        source: /etc/passwd
+        target: /host/etc/passwd
+      - type: bind
+        source: /etc/group
+        target: /host/etc/group
+      - type: bind
+        source: /proc
+        target: /host/proc
+      - type: bind
+        source: /sys
+        target: /host/sys
+      - type: bind
+        source: /etc/os-release
+        target: /host/etc/os-release
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+    privileged: false

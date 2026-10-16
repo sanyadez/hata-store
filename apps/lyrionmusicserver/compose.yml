@@ -1,0 +1,35 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  lyrionmusicserver:
+    image: lmscommunity/lyrionmusicserver:9.1.1
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-9000}:9000"
+      - "${PORT_9090:-9090}:9090"
+      - "${PORT_3483:-3483}:3483"
+      - "${PORT_3483:-3483}:3483/udp"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${MUSIC_DIR:-./Media/Music}"
+        target: /music
+        read_only: true
+      - type: bind
+        source: "${APP_DATA:-.}/playlists"
+        target: /playlist
+      - type: bind
+        source: /etc/localtime
+        target: /etc/localtime
+        read_only: true
+      - type: bind
+        source: /etc/timezone
+        target: /etc/timezone
+        read_only: true
+    environment:
+      HTTP_PORT: "${HTTP_PORT:-9000}"

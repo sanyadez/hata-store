@@ -1,0 +1,68 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Lazylibrarian
+tagline:
+  en: eBook Auto Downloader
+  zh: eBook自动下载器
+  ar: محمّل كتب إلكترونية تلقائي
+  de: eBook Auto Downloader
+  es: Descargador automático de libros electrónicos
+  fr: Téléchargeur de livres électroniques automatique
+  hu: eBook automatikus letöltő
+  it: eBook Auto Downloader
+  ru: Автоматический загрузчик электронных книг
+  pl: Automatyczny pobieracz e-booków
+  pt: eBook Auto Downloader
+  sv: eBook Auto Downloader
+  uk: Автоматичне завантаження електронних книг
+description:
+  en: Lazylibrarian is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info. This container is based on the DobyTang fork.
+  zh: Lazylibrarian是一个程序，用于跟踪作者并获取所有数字阅读需求的元数据。它使用Goodreads Librarything和可选的GoogleBooks作为作者信息和书籍信息的来源。此容器基于DobyTang分支。
+  ar: Lazylibrarian هو برنامج لمتابعة المؤلفين والحصول على بيانات التعريف لجميع احتياجات القراءة الرقمية الخاصة بك. يستخدم مزيجًا من Goodreads Librarything واختياريًا GoogleBooks كمصادر لمعلومات المؤلف ومعلومات الكتاب. يعتمد هذا الحاوية على تفريع DobyTang.
+  de: "Lazylibrarian ist ein Programm, um Autoren zu verfolgen und Metadaten für alle Ihre digitalen Lesebedürfnisse zu erhalten. Es verwendet eine Kombination aus Goodreads Librarything und optional GoogleBooks als Quellen für Autoren- und Buchinformationen. Dieser Container basiert auf dem DobyTang-Fork."
+  es: Lazylibrarian es un programa para seguir autores y obtener metadatos para todas sus necesidades de lectura digital. Usa una combinación de Goodreads Librarything y opcionalmente GoogleBooks como fuentes de información de autor y libro. Este contenedor se basa en el bifurcación de DobyTang.
+  fr: "Lazylibrarian est un programme pour suivre les auteurs et obtenir des métadonnées pour tous vos besoins de lecture numérique. Il utilise une combinaison de Goodreads Librarything et éventuellement GoogleBooks comme sources d'informations sur l'auteur et le livre. Ce conteneur est basé sur la fourchette DobyTang."
+  hu: "A Lazylibrarian egy program, amely követi az írókat és lekérdezi az összes digitális olvasási igényének metadatáit. Goodreads Librarything és opcionálisan GoogleBooks kombinációját használja az írói és könyvi információk forrásaként. Ez a tároló a DobyTang fork alapján épül fel."
+  it: "Lazylibrarian è un programma per seguire gli autori e ottenere i metadati per tutte le vostre esigenze di lettura digitali. Usa una combinazione di Goodreads Librarything e opzionalmente GoogleBooks come fonti di informazioni sull'autore e sul libro. Questo contenitore si basa sulla biforcazione di DobyTang."
+  ru: Lazylibrarian - это программа для отслеживания авторов и получения метаданных для всех ваших цифровых потребностей в чтении. Он использует комбинацию Goodreads Librarything и по желанию GoogleBooks в качестве источников информации об авторе и книге. Этот контейнер основан на форке DobyTang.
+  pl: Lazylibrarian to program do śledzenia autorów i pobierania metadanych dla wszystkich potrzeb czytania cyfrowego. Używa połączenia Goodreads Librarything i opcjonalnie GoogleBooks jako źródeł informacji o autorze i książce. Ten kontener oparty jest na forku DobyTang.
+  pt: Lazylibrarian é um programa para seguir autores e obter metadados para todas as suas necessidades de leitura digital. Usa uma combinação de Goodreads Librarything e opcionalmente GoogleBooks como fontes de informações do autor e do livro. Este contêiner é baseado no fork DobyTang.
+  sv: Lazylibrarian är ett program för att följa författare och hämta metadata för alla dina digitala läsningsbehov. Det använder en kombination av Goodreads Librarything och valfritt GoogleBooks som källor för författar- och bokinformation. Denna behållare baseras på DobyTang-forken.
+  uk: "Lazylibrarian — програма, що стежить за авторами й збирає метадані для всього, що ви читаєте в цифровому форматі. Як джерела відомостей про авторів і книги вона поєднує Goodreads та Librarything, а за бажання ще й GoogleBooks. Цей контейнер ґрунтується на форку DobyTang."
+category: media
+developer: Lazylibrarian Team
+website: https://lazylibrarian.gitlab.io/
+source: https://github.com/lazylibrarian/LazyLibrarian
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: lazylibrarian
+  port: 5299
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 5299
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: LazyLibrarian downloads directory
+      uk: Тека завантажень LazyLibrarian
+    hint:
+      en: Inside the app it is /downloads
+      uk: У застосунку вона — /downloads
+  - name: BOOKS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media/Books"
+    label:
+      en: LazyLibrarian Books directory
+      uk: Тека книг LazyLibrarian
+    hint:
+      en: Inside the app it is /books
+      uk: У застосунку вона — /books

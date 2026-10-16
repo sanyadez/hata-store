@@ -1,0 +1,24 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  pdfding:
+    image: mrmn/pdfding:v1.7.2
+    deploy:
+      resources:
+        reservations:
+          memory: 128M
+    ports:
+      - "${WEB_PORT:-8000}:8000"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/db"
+        target: /home/nonroot/pdfding/db
+      - type: bind
+        source: "${APP_DATA:-.}/media"
+        target: /home/nonroot/pdfding/media
+    environment:
+      HOST_NAME: "*"
+      SECRET_KEY: "${SECRET_KEY:?set SECRET_KEY}"
+      CSRF_COOKIE_SECURE: "FALSE"
+      SESSION_COOKIE_SECURE: "FALSE"
+      DEBUG: "FALSE"

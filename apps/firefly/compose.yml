@@ -1,0 +1,20 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  firefly:
+    image: uusec/firefly:latest@sha256:6d32aa84560ba81786d708b7c67b2f20c8321caf1bb164156335ccd1765c87d4
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    network_mode: host
+    volumes:
+      - /lib/modules:/lib/modules
+      - "${APP_DATA:-.}/conf:/firefly/conf"
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    restart: unless-stopped
+    environment:
+      FIREFLY_PASSWORD: "${FIREFLY_PASSWORD:?set FIREFLY_PASSWORD}"
+    deploy:
+      resources:
+        reservations:
+          memory: 32M

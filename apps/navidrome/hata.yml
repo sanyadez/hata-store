@@ -1,0 +1,72 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Navidrome
+tagline:
+  en: Music Collection and Streaming Server
+  zh: 音乐收藏和流媒体服务器
+  uk: Сервер музичної колекції та стримінгу
+description:
+  en: "Navidrome is an open source web-based music collection server and streamer. It gives you freedom to listen to your music collection from any browser or mobile device. It's like your personal Spotify!"
+  zh: Navidrome是一个开源的基于Web的音乐收藏服务器和流媒体服务器。它让您可以在任何浏览器或移动设备上自由收听音乐收藏。就像您个人的Spotify一样！
+  uk: Navidrome — вебсервер музичної колекції та стримінгу з відкритим кодом. Він дає змогу слухати вашу музику з будь-якого браузера чи мобільного пристрою. Це як ваш особистий Spotify!
+category: media
+developer: The Navidrome Authors
+website: https://www.navidrome.org
+source: https://github.com/navidrome/navidrome
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODkyMykiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMV8xMjUxXzg5MjMpIj48bWFzayBpZD0ibWFzazBfMTI1MV84OTIzIiBzdHlsZT0ibWFzay10eXBlOmx1bWluYW5jZSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiPjxwYXRoIGQ9Ik0yNTYgMEgwVjI1NkgyNTZWMFoiIGZpbGw9IndoaXRlIi8+PC9tYXNrPjxnIG1hc2s9InVybCgjbWFzazBfMTI1MV84OTIzKSI+PHBhdGggZD0iTTI1NiAwSDBWMjU2SDI1NlYwWiIgZmlsbD0iIzBEMTgyMiIvPjxwYXRoIGQ9Ik0xMjcuOTk5IDIyMS4wNzJDMTc5LjQwMiAyMjEuMDcyIDIyMS4wNzIgMTc5LjQwMiAyMjEuMDcyIDEyNy45OThDMjIxLjA3MiA3Ni41OTUzIDE3OS40MDIgMzQuOTI0OCAxMjcuOTk5IDM0LjkyNDhDNzYuNTk1NyAzNC45MjQ4IDM0LjkyNTIgNzYuNTk1MyAzNC45MjUyIDEyNy45OThDMzQuOTI1MiAxNzkuNDAyIDc2LjU5NTcgMjIxLjA3MiAxMjcuOTk5IDIyMS4wNzJaIiBmaWxsPSIjMDA4NEZGIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEwLjM2NDEiLz48cGF0aCBkPSJNMTI3Ljk5OSAxNjEuMTQyQzE0Ni4zMDQgMTYxLjE0MiAxNjEuMTQzIDE0Ni4zMDMgMTYxLjE0MyAxMjcuOTk4QzE2MS4xNDMgMTA5LjY5MyAxNDYuMzA0IDk0Ljg1NDUgMTI3Ljk5OSA5NC44NTQ1QzEwOS42OTQgOTQuODU0NSA5NC44NTUgMTA5LjY5MyA5NC44NTUgMTI3Ljk5OEM5NC44NTUgMTQ2LjMwMyAxMDkuNjk0IDE2MS4xNDIgMTI3Ljk5OSAxNjEuMTQyWiIgZmlsbD0id2hpdGUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iOS45OTk5NCIvPjxwYXRoIGQ9Ik0xODMuODk0IDEyNy45OTlDMTgzLjg5NCAxNTguODY5IDE1OC44NjkgMTgzLjg5NCAxMjcuOTk5IDE4My44OTRNNzIuMTA0NyAxMjcuOTk5QzcyLjEwNDcgOTcuMTI5NCA5Ny4xMjk2IDcyLjEwNDUgMTI3Ljk5OSA3Mi4xMDQ1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjkuOTk5OTQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMDEuNDI5IDEyNy45OTlDMjAxLjQyOSAxMjguOTQ0IDIwMS40MTIgMTI5Ljg4NSAyMDEuMzc2IDEzMC44MjFNMTk5LjY1NSAxNDQuMTE3QzE5Mi4zMDggMTc2LjkxOCAxNjMuMDE2IDIwMS40MjkgMTI3Ljk5OSAyMDEuNDI5TTU0LjU2OTYgMTI3Ljk5OUM1NC41Njk2IDEyNy4xNTYgNTQuNTgzOSAxMjYuMzE1IDU0LjYxMiAxMjUuNDc4TTU2LjAzNCAxMTMuMzM1QzYyLjgyOTMgNzkuODA3MSA5Mi40NjcgNTQuNTY5MyAxMjcuOTk5IDU0LjU2OTMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iOS45OTk5NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTEyNy45OTkgMTM0Ljg0NkMxMzEuNzgxIDEzNC44NDYgMTM0Ljg0NiAxMzEuNzggMTM0Ljg0NiAxMjcuOTk4QzEzNC44NDYgMTI0LjIxNiAxMzEuNzgxIDEyMS4xNSAxMjcuOTk5IDEyMS4xNUMxMjQuMjE3IDEyMS4xNSAxMjEuMTUxIDEyNC4yMTYgMTIxLjE1MSAxMjcuOTk4QzEyMS4xNTEgMTMxLjc4IDEyNC4yMTcgMTM0Ljg0NiAxMjcuOTk5IDEzNC44NDZaIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSI5Ljk5OTk0Ii8+PC9nPjwvZz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjUxXzg5MjMiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJjbGlwMV8xMjUxXzg5MjMiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+web:
+  service: navidrome
+  port: 4533
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 4533
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: MUSIC_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media/Music"
+    label:
+      en: Music folder
+      zh: 音乐文件夹
+      uk: Тека з музикою
+    hint:
+      en: Inside the app it is /music
+      uk: У застосунку вона — /music
+  - name: ND_SCANSCHEDULE
+    type: text
+    default: 1h
+    label:
+      en: Configure periodic scans using cron syntax
+      zh: 使用cron语法配置定期扫描
+      uk: Налаштуйте періодичне сканування у синтаксисі cron
+  - name: ND_LOGLEVEL
+    type: text
+    default: info
+    label:
+      en: Log level
+      zh: 日志级别
+      uk: Рівень журналу
+  - name: ND_SESSIONTIMEOUT
+    type: text
+    default: 24h
+    label:
+      en: Nd sessiontimeout
+      uk: Тайм-аут сеансу
+    hint:
+      en: How long Navidrome will wait before closing web ui idle sessions
+      zh: Navidrome在关闭Web UI空闲会话之前等待多长时间
+      uk: "Скільки Navidrome чекатиме, перш ніж закрити неактивні сеанси вебінтерфейсу."
+  - name: ND_BASEURL
+    type: text
+    label:
+      en: Nd baseurl
+      uk: Базова адреса
+    hint:
+      en: "Base URL (only the path part) to configure Navidrome behind a proxy (ex: /music)"
+      zh: 配置Navidrome在代理后面的基本URL（仅路径部分）（例如：/music）
+      uk: "Базова адреса (лише шлях) для роботи Navidrome за проксі (наприклад: /music)."

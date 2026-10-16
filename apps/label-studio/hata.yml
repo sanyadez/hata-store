@@ -1,0 +1,28 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Label Studio
+tagline:
+  en: Label Studio is an open source data labeling tool.
+  zh: Label Studio 是一个开源数据标记工具。 它允许您使用简单直观的 UI 来标记音频、文本、图像、视频和时间序列等数据类型，并导出为各种模型格式。 它可用于准备原始数据或改进现有训练数据以获得更准确的机器学习模型。
+  uk: Label Studio — інструмент розмітки даних з відкритим кодом.
+description:
+  en: "Label Studio is an open source data labeling tool. It lets you label data types like audio, text, images, videos, and time series with a simple and straightforward UI and export to various model formats. It can be used to prepare raw data or improve existing training data to get more accurate ML models."
+  zh: Label Studio 是一个开源数据标记工具。 它允许您使用简单直观的 UI 来标记音频、文本、图像、视频和时间序列等数据类型，并导出为各种模型格式。 它可用于准备原始数据或改进现有训练数据以获得更准确的机器学习模型。
+  uk: "Label Studio — інструмент розмітки даних з відкритим кодом. У простому й зрозумілому інтерфейсі в ньому можна розмічати дані різних типів — аудіо, текст, зображення, відео та часові ряди — і експортувати їх у різні формати моделей. Ним можна підготувати сирі дані або покращити наявні навчальні дані, щоб отримати точніші моделі машинного навчання."
+category: ai
+developer: Yidadaa
+website: https://labelstud.io/
+source: https://github.com/HumanSignal/label-studio
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMjQuODQ2IDg1LjM2MTVIMTcwLjMzMVY2Ny4yMzg1SDg1LjUyMzFWNDkuMTIzMUgxNzAuMzMxVjMxSDIyNC44NDZWODUuMzYxNVpNODUuNTIzMSA4NS4zNjE1SDY3LjM0NjJWMTY5LjkzMUg0OS4xNzY5Vjg1LjM2MTVIMzFWMzFIODUuNTIzMVY4NS4zNjE1Wk04NS41MjMxIDIyNC4yOTJWMTY5LjkzMUgzMVYyMjQuMjkySDg1LjUyMzFaTTIyNC44NDYgMTY5LjkzMVYyMjQuMjkySDE3MC4zMjNWMjA2LjE2OUg4NS41MjMxVjE4OC4wNTRIMTcwLjMzMVYxNjkuOTMxSDIyNC44NDZaTTIwNi42NjkgMTY5LjkzMVY4NS4zNjE1SDE4OC40OTJWMTY5LjkzMUgyMDYuNjY5WiIgZmlsbD0iI0ZGNzU1NyIvPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+web:
+  service: label-studio
+  port: 8080
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 3080
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу

@@ -1,0 +1,16 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  node-red:
+    image: nodered/node-red:4.1.10
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    network_mode: host
+    ports:
+      - "${WEB_PORT:-1880}:1880"
+    restart: always
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data

@@ -1,0 +1,96 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Emby(Nvidia GPU)
+tagline:
+  en: TAKE YOUR MEDIA ANYWHERE WITH EMBY
+  zh: 用EMBY随时随地带着媒体
+  ar: احضر ميدياك في أي مكان مع EMBY
+  de: MIT EMBY IHRE MEDIEN ÜBERALL MITNEHMEN
+  es: LLEVA TUS MEDIOS A CUALQUIER LUGAR CON EMBY
+  fr: PRENEZ VOS MÉDIAS PARTOUT AVEC EMBY
+  hu: VEGYE MAGÁVAL A MÉDIÁT EMBY-VAL
+  it: PORTA I TUOI MEDIAS OVUNQUE CON EMBY
+  ru: ВЗЯТЬ СЕБЕ МЕДИА ВСЮДУ С EMBY
+  pl: PRZYNIEŚ SWOJE MEDIA WSZĘDZIE Z EMBY
+  pt: LEVE SEUS MÍDIAS PARA QUALQUER LUGAR COM EMBY
+  sv: TA DINA MEDIA VAR SOM HELST MED EMBY
+  uk: ВЗЯТИ СВОЇ МЕДІА З СОБОЮ З EMBY
+description:
+  en: "Bringing all of your home videos, music, and photos together into one place has never been easier. Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device."
+  zh: 将所有的家庭视频，音乐和照片集中在一个地方从未如此简单。您的个人Emby服务器会自动转换和流媒体，以便在任何设备上播放。
+  ar: جمع جميع مقاطع الفيديو المنزلية والموسيقى والصور الخاصة بك في مكان واحد لم يكن أسهل من ذلك من قبل. يقوم خادم Emby الشخصي الخاص بك بتحويل وتدفق الوسائط الخاصة بك تلقائيًا لتشغيلها على أي جهاز.
+  de: "Alle Ihre Heimvideos, Musik und Fotos an einem Ort zusammenzubringen, war noch nie einfacher. Ihr persönlicher Emby-Server wandelt Ihre Medien automatisch um und streamt sie in Echtzeit, um sie auf jedem Gerät abzuspielen."
+  es: "Juntar todos tus videos, música y fotos en un solo lugar nunca ha sido más fácil. Tu servidor Emby personal convierte y transmite tus medios en tiempo real para reproducirlos en cualquier dispositivo."
+  fr: "Rassembler toutes vos vidéos, musique et photos à un seul endroit n'a jamais été aussi facile. Votre serveur Emby personnel convertit et diffuse vos médias en temps réel pour les lire sur n'importe quel appareil."
+  hu: "A házimédia, zenék és fényképek összegyűjtése egy helyre soha nem volt ennyire egyszerű. Az Emby szervere automatikusan konvertálja és streameli a médiafájlokat, hogy bármilyen eszközön lejátszhassuk."
+  it: "Raccogliere tutti i tuoi video, musica e foto in un unico posto non è mai stato così semplice. Il tuo server Emby personale converte e trasmette i tuoi contenuti in tempo reale per riprodurli su qualsiasi dispositivo."
+  ru: "Сбор всех ваших домашних видео, музыки и фотографий в одном месте никогда не был таким простым. Ваш личный сервер Emby автоматически конвертирует и потоково передает ваши медиа-файлы для воспроизведения на любом устройстве."
+  pl: "Zebranie wszystkich filmów domowych, muzyki i zdjęć w jednym miejscu nigdy nie było takie proste. Twój osobisty serwer Emby automatycznie konwertuje i przesyła strumieniowo twoje media, aby odtworzyć je na dowolnym urządzeniu."
+  pt: "Juntar todos os seus vídeos, músicas e fotos em um só lugar nunca foi tão fácil. Seu servidor Emby pessoal converte e transmite seus arquivos de mídia em tempo real para reproduzi-los em qualquer dispositivo."
+  sv: "Att samla alla dina hemvideor, musik och foton på ett ställe har aldrig varit enklare. Din personliga Emby-server konverterar och strömmar dina mediefiler i realtid för att spela upp dem på vilket som helst enhet."
+  uk: "Зібрати домашнє відео, музику й фото в одному місці ще ніколи не було так просто. Ваш особистий сервер Emby сам перетворює медіа та передає їх потоком на льоту, щоб їх можна було відтворити на будь-якому пристрої."
+category: media
+developer: Emby Team
+website: https://emby.media/
+source: https://hub.docker.com/r/emby/embyserver
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyMzBfNDMxKSI+PHBhdGggZD0iTTY1LjkyOTcgNzkuNzE4N0w3Ni4yODEyIDkwLjA3MDNMMjggMTM4LjM1Mkw3OS43MTg3IDE5MC4wN0w5MC4wNzAzIDE3OS43MTlMMTM4LjM1MiAyMjhMMTkzLjUwOCAxNzIuODQ0TDE4My4xNTYgMTYyLjQ5MkwyMjggMTE3LjY0OEwxNzYuMjgxIDY1LjkyOTdMMTY1LjkzIDc2LjI4MTNMMTE3LjY0OCAyOEw2NS45Mjk3IDc5LjcxODdaIiBmaWxsPSIjNTJCNTRCIi8+PHBhdGggZD0iTTEwNC44NzUgMTY1LjE4OFY4OS43OTdMMTcwLjk2OSAxMjcuNDkyTDEzNy45MjIgMTQ2LjM1OUwxMDQuODc1IDE2NS4xODhaIiBmaWxsPSJ3aGl0ZSIvPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9ImNsaXAwXzEyMzBfNDMxIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4IDI4KSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+web:
+  service: emby
+  port: 8096
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8096
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: PORT_8920
+    type: port
+    default: 8920
+    label:
+      en: Port 8920
+      uk: Порт 8920
+    advanced: true
+  - name: TV_SHOWS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media/TV Shows"
+    label:
+      en: Media/TV Shows
+      uk: Медіа/Серіали
+    hint:
+      en: Inside the app it is /data/tvshows
+      uk: У застосунку вона — /data/tvshows
+  - name: MOVIES_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media/Movies"
+    label:
+      en: Media/Movies
+      uk: Медіа/Фільми
+    hint:
+      en: Inside the app it is /data/movies
+      uk: У застосунку вона — /data/movies
+  - name: UID
+    type: text
+    default: "1000"
+    label:
+      en: UID used to run Emby
+      uk: "UID, від імені якого працює Emby"
+  - name: GID
+    type: text
+    default: "100"
+    label:
+      en: Primary GID used to run Emby
+      uk: "Основний GID, від імені якого працює Emby"
+  - name: GIDLIST
+    type: text
+    default: "100"
+    label:
+      en: Gidlist
+      uk: Список GID
+    hint:
+      en: "Comma-separated supplementary group IDs. The default includes users (100), video (44), and render (109); adjust these IDs if the host uses different values."
+      uk: "Ідентифікатори додаткових груп через кому. Типово це users (100), video (44) і render (109); змініть їх, якщо на хості інші значення."
+permissions:
+  devices:
+    en: "It uses devices of the server: /dev/dri, /dev/vchiq, /dev/video10, /dev/video11, /dev/video12"
+    uk: "Він користується пристроями сервера: /dev/dri, /dev/vchiq, /dev/video10, /dev/video11, /dev/video12"

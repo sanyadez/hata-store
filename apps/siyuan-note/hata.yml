@@ -1,0 +1,41 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: SiYuan Note
+  zh: 思源笔记
+tagline:
+  en: Private personal knowledge management
+  zh: 隐私优先的个人知识管理
+  uk: Приватне особисте керування знаннями
+description:
+  en: "Experience Seamless Knowledge Management with SiYuan. SiYuan redefines knowledge management by seamlessly integrating with your home TV, mobile devices, and other platforms. Unlike traditional knowledge systems, SiYuan offers a cohesive and flexible environment that adapts to your lifestyle, allowing you to access and organize information effortlessly across all your devices. Whether you are a creator or a regular consumer, SiYuan's innovative approach ensures your knowledge is always at your fingertips.\n\nPowerful Features, Minimal Cost. SiYuan stands out with its robust set of features, most of which are free, even for commercial use. Enjoy block-level referencing, two-way links, custom attributes, SQL query embeds, and the unique protocol siyuan://. The editor supports block-style, markdown WYSIWYG, list outlines, and block zoom-in. Handle large documents with ease and include mathematical formulas, charts, flowcharts, and more. Capture web content, annotate PDFs, and export in various formats including Markdown, PDF, Word, and HTML. SiYuan also offers AI-powered writing and Q/A chat via OpenAI API, Tesseract OCR, and multi-tab support for a comprehensive and seamless experience."
+  zh: "通过思源体验无缝的知识管理。思源通过与家庭电视、移动设备和其他平台的无缝集成，重新定义了知识管理。与传统的知识系统不同，思源提供了一个连贯而灵活的环境，适应您的生活方式，让您可以轻松地在所有设备上访问和组织信息。无论您是创作者还是普通用户，思源的创新方法都确保您的知识始终触手可及。\n\n强大的功能，最低的成本。思源以其强大的功能集脱颖而出，其中大多数功能都是免费的，即使是商业用途。享受块级引用、双向链接、自定义属性、SQL 查询嵌入和独特的协议 siyuan://。编辑器支持块样式、markdown WYSIWYG、列表大纲和块放大。轻松处理大型文档，并包括数学公式、图表、流程图等。捕获网络内容、注释 PDF 并以多种格式导出，包括 Markdown、PDF、Word 和 HTML。思源还提供了基于 AI 的写作和 Q/A 聊天，通过 OpenAI API、Tesseract OCR 和多标签支持，提供全面而无缝的体验。"
+  uk: "Керуйте знаннями легко з SiYuan. SiYuan по-новому підходить до керування знаннями: він інтегрується з вашим домашнім телевізором, мобільними пристроями та іншими платформами. На відміну від традиційних систем, SiYuan пропонує цілісне й гнучке середовище, що підлаштовується під ваш спосіб життя, і дає змогу без зусиль отримувати доступ до інформації та впорядковувати її на всіх пристроях. Чи ви автор, чи звичайний користувач, підхід SiYuan гарантує, що ваші знання завжди під рукою.\n\nПотужні можливості за мінімальну ціну. SiYuan вирізняється широким набором функцій, більшість з яких безкоштовні, навіть для комерційного використання. Це посилання на рівні блоків, двосторонні посилання, власні атрибути, вбудовані SQL-запити та унікальний протокол siyuan://. Редактор підтримує блоковий стиль, markdown WYSIWYG, списки-структури та наближення блоків. Він легко працює з великими документами й дозволяє додавати математичні формули, діаграми, блок-схеми тощо. Можна зберігати вебвміст, робити позначки в PDF та експортувати у різні формати, зокрема Markdown, PDF, Word і HTML. SiYuan також пропонує письмо за допомогою ШІ та чат запитань і відповідей через OpenAI API, розпізнавання тексту Tesseract OCR і підтримку кількох вкладок для зручної роботи."
+category: productivity
+developer: siyuan-note
+website: https://b3log.org/siyuan/
+source: https://github.com/siyuan-note/siyuan
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk2NikiPjxwYXRoIGQ9Ik0yOCA5OC44MzY5TDg0LjgzNTkgNDIuMDAxVjE1Ny44OTlMMjggMjE0LjczNVY5OC44MzY5WiIgZmlsbD0iI0QyM0YzMSIvPjxwYXRoIGQ9Ik04NC44MzU5IDQyLjAwMUwxMjggODUuMjA0MVYyMDEuMTAzTDg0LjgzNTkgMTU3Ljg5OVY0Mi4wMDFaIiBmaWxsPSIjM0IzRTQzIi8+PHBhdGggZD0iTTEyOCA4NS4yMDQxTDE3MS4xNjQgNDIuMDAxVjE1Ny44OTlMMTI4IDIwMS4xMDNWODUuMjA0MVoiIGZpbGw9IiNEMjNGMzEiLz48cGF0aCBkPSJNMTcxLjE2NCA0Mi4wMDFMMjI4IDk4LjgzNjlWMjE0LjczNUwxNzEuMTY0IDE1Ny44OTlWNDIuMDAxWiIgZmlsbD0iIzNCM0U0MyIvPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9ImNsaXAwXzEyNTFfODk2NiI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxNzIuNzM0IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjggNDIuMDAwNSkiLz48L2NsaXBQYXRoPjwvZGVmcz48L3N2Zz4="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+web:
+  service: siyuan-note
+  port: 6806
+settings:
+  - name: ACCESS_CODE
+    type: password
+    required: true
+    label:
+      en: Access code
+      uk: Код доступу
+    hint:
+      en: Asked for when the notes are opened
+      uk: "Його питають, коли відкривають нотатки"
+  - name: WEB_PORT
+    type: port
+    default: 6806
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу

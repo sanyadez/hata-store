@@ -1,0 +1,35 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  frigate:
+    image: ghcr.io/blakeblackshear/frigate:0.17.2
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+      - /dev/apex_0:/dev/apex_0
+      - /dev/video11:/dev/video11
+      - /dev/dri/renderD128:/dev/dri/renderD128
+    privileged: true
+    ports:
+      - "${WEB_PORT:-8971}:8971"
+      - "${PORT_8554:-8554}:8554"
+      - "${PORT_8555:-8555}:8555"
+      - "${PORT_8555:-8555}:8555/udp"
+    restart: unless-stopped
+    stop_grace_period: 30s
+    shm_size: 512mb
+    tmpfs:
+      - /tmp/cache:size=1000000000
+    volumes:
+      - type: bind
+        source: /etc/localtime
+        target: /etc/localtime
+        read_only: true
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${MEDIA_DIR:-./Media}"
+        target: /media/frigate

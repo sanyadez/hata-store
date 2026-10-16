@@ -1,0 +1,21 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  obsidian:
+    image: lscr.io/linuxserver/obsidian:1.12.7
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+    shm_size: 1gb
+    ports:
+      - "${PORT_3000:-15323}:3000"
+      - "${WEB_PORT:-15324}:3001"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+    environment:
+      PUID: "${PUID_2:-1000}"
+      PGID: "${PGID_2:-1000}"
+      TZ: "${TZ:-UTC}"

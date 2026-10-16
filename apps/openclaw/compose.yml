@@ -1,0 +1,61 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  openclaw-init:
+    image: ghcr.io/openclaw/openclaw:2026.9.6
+    user: 0:0
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}"
+        target: /home/node/.openclaw
+      - type: bind
+        source: "${APP_DATA:-.}/auth-profile-secrets"
+        target: /home/node/.config/openclaw
+    entrypoint:
+      - /bin/sh
+      - "-c"
+    command:
+      - chown -R 1000:1000 /home/node/.openclaw /home/node/.config/openclaw
+    restart: "no"
+  openclaw:
+    image: ghcr.io/openclaw/openclaw:2026.9.6
+    environment:
+      HOME: /home/node
+      OPENCLAW_HOME: /home/node
+      OPENCLAW_STATE_DIR: /home/node/.openclaw
+      OPENCLAW_CONFIG_PATH: /home/node/.openclaw/openclaw.json
+      OPENCLAW_CONFIG_DIR: /home/node/.openclaw
+      OPENCLAW_WORKSPACE_DIR: /home/node/.openclaw/workspace
+      OPENCLAW_GATEWAY_PORT: "18789"
+      TERM: xterm-256color
+      OPENCLAW_GATEWAY_TOKEN: hata
+    depends_on:
+      openclaw-init:
+        condition: service_completed_successfully
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}"
+        target: /home/node/.openclaw
+      - type: bind
+        source: "${APP_DATA:-.}/auth-profile-secrets"
+        target: /home/node/.config/openclaw
+    ports:
+      - "${WEB_PORT:-24190}:18789"
+      - "${PORT_18790:-18790}:18790"
+    init: true
+    restart: unless-stopped
+    cap_drop:
+      - NET_RAW
+      - NET_ADMIN
+    security_opt:
+      - no-new-privileges:true
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    command:
+      - node
+      - dist/index.js
+      - gateway
+      - "--bind"
+      - lan
+      - "--allow-unconfigured"
+      - "--port"
+      - "18789"

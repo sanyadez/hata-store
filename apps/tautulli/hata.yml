@@ -1,0 +1,51 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Tautulli
+tagline:
+  en: Monitor your Plex Media Server and much more.
+  zh: 监视您的Plex Media Server以及更多内容。
+  ar: اراقب خادم وسائط Plex الخاص بك والكثير من الأشياء الأخرى.
+  de: Überwachen Sie Ihren Plex Media Server und vieles mehr.
+  es: Monitoree su servidor de medios Plex y mucho más.
+  fr: Surveillez votre serveur de médias Plex et bien plus encore.
+  hu: Figyelje a Plex Media Serverét és még sok más dolgot is.
+  it: Monitora il tuo server multimediale Plex e molto altro ancora.
+  ru: Отслеживайте свой сервер мультимедиа Plex и многое другое.
+  pl: Monitoruj swój serwer mediów Plex i wiele innych.
+  pt: Monitore seu servidor de mídia Plex e muito mais.
+  sv: Övervaka din Plex Media Server och mycket mer.
+  uk: Моніторинг вашого медіасервера Plex і не тільки.
+description:
+  en: Tautulli is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics.
+  zh: Tautulli是您可以在Plex Media Server旁边运行的第三方应用程序，用于监视活动并跟踪各种统计信息。
+  ar: Tautulli هو تطبيق ثالث يمكنك تشغيله جنبا إلى جنب مع خادم وسائط Plex الخاص بك لمراقبة النشاط وتتبع مختلف الإحصاءات.
+  de: "Tautulli ist eine Drittanwendung, die Sie neben Ihrem Plex Media Server ausführen können, um Aktivitäten zu überwachen und verschiedene Statistiken zu verfolgen."
+  es: Tautulli es una aplicación de terceros que puede ejecutar junto con su servidor de medios Plex para monitorear la actividad y rastrear varias estadísticas.
+  fr: "Tautulli est une application tierce que vous pouvez exécuter en parallèle de votre serveur de médias Plex pour surveiller l'activité et suivre diverses statistiques."
+  hu: "A Tautulli egy harmadik fél alkalmazása, amelyet a Plex Media Server mellett futtathat, hogy nyomon követhesse az aktivitást és különböző statisztikákat nyomon követhessen."
+  it: "Tautulli è un'applicazione di terze parti che puoi eseguire insieme al tuo server multimediale Plex per monitorare l'attività e tenere traccia di varie statistiche."
+  ru: "Tautulli - это стороннее приложение, которое вы можете запустить вместе с вашим сервером мультимедиа Plex, чтобы отслеживать активность и отслеживать различные статистические данные."
+  pl: "Tautulli to aplikacja trzecia, którą możesz uruchomić obok swojego serwera mediów Plex, aby monitorować aktywność i śledzić różne statystyki."
+  pt: O Tautulli é um aplicativo de terceiros que você pode executar junto com seu servidor de mídia Plex para monitorar a atividade e rastrear várias estatísticas.
+  sv: Tautulli är en tredjepartsapplikation som du kan köra bredvid din Plex Media Server för att övervaka aktiviteten och spåra olika statistik.
+  uk: "Tautulli — сторонній застосунок, який можна запустити поруч із медіасервером Plex, щоб стежити за активністю та збирати різну статистику."
+category: media
+developer: Tautulli Team
+website: https://tautulli.com
+source: https://github.com/Tautulli/Tautulli
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IiMyOTJCMkYiLz48ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMTI1MV84OTgwKSI+PHBhdGggZD0iTTEyOCAyMjhDMTgzLjIyOCAyMjggMjI4IDE4My4yMjggMjI4IDEyOEMyMjggNzIuNzcxNSAxODMuMjI4IDI4IDEyOCAyOEM3Mi43NzE1IDI4IDI4IDcyLjc3MTUgMjggMTI4QzI4IDE4My4yMjggNzIuNzcxNSAyMjggMTI4IDIyOFoiIGZpbGw9IiMyOTJCMkYiLz48cGF0aCBkPSJNMTc2LjY3MiAxNjIuNDE0QzE3MC44OTEgMTYyLjQxNCAxNjUuOTMgMTY1Ljc3MyAxNjMuNTg2IDE3MC42NTZMMTQyLjgwNSAxNjcuNjQ4QzE0Mi43MjcgMTU5LjcxOSAxMzYuMjgxIDE1My4yNzMgMTI4LjMxMiAxNTMuMjczQzEyNS40NjEgMTUzLjI3MyAxMjIuODQ0IDE1NC4wOTQgMTIwLjU3OCAxNTUuNUw5MS4wNDY5IDEyMi4wNjJDOTIuNzY1NiAxMTkuNjggOTMuNzQyMiAxMTYuNzg5IDkzLjc0MjIgMTEzLjYyNUM5My43NDIyIDEwNS42MTcgODcuMjU3OCA5OS4xMzI4IDc5LjI1IDk5LjEzMjhDNzEuMjQyMiA5OS4xMzI4IDY0Ljc1NzggMTA1LjYxNyA2NC43NTc4IDExMy42MjVDNjQuNzU3OCAxMjEuNjMzIDcxLjI0MjIgMTI4LjExNyA3OS4yNSAxMjguMTE3QzgxLjcxMDkgMTI4LjExNyA4NC4wNTQ3IDEyNy40OTIgODYuMDg1OSAxMjYuMzk4TDExNS45MyAxNjAuMTg3QzExNC42MDIgMTYyLjM3NSAxMTMuODIgMTY0Ljk1MyAxMTMuODIgMTY3LjcyN0MxMTMuODIgMTc1LjczNCAxMjAuMzA1IDE4Mi4yMTkgMTI4LjMxMiAxODIuMjE5QzEzNC4wNTUgMTgyLjIxOSAxMzkuMDE2IDE3OC44OTggMTQxLjM1OSAxNzQuMDU1TDE2Mi4xOCAxNzcuMDYyQzE2Mi4yOTcgMTg0Ljk1MyAxNjguNzQyIDE5MS4zMiAxNzYuNjcyIDE5MS4zMkMxODQuNjggMTkxLjMyIDE5MS4xNjQgMTg0LjgzNiAxOTEuMTY0IDE3Ni44MjhDMTkxLjIwMyAxNjguODk4IDE4NC42OCAxNjIuNDE0IDE3Ni42NzIgMTYyLjQxNFoiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTE3Ni42NzIgNjQuNjAxMUMxNjguNjY0IDY0LjYwMTEgMTYyLjE4IDcxLjA4NTUgMTYyLjE4IDc5LjA5MzNDMTYyLjE4IDgzLjAzODYgMTYzLjc0MiA4Ni41OTMzIDE2Ni4zMiA4OS4yMTA0TDEzNC4xNzIgMTM0LjY0QzEzMi4zNzUgMTMzLjg1OSAxMzAuNDIyIDEzMy40MjkgMTI4LjMxMiAxMzMuNDI5QzEyMC4zMDUgMTMzLjQyOSAxMTMuODIgMTM5LjkxNCAxMTMuODIgMTQ3LjkyMUMxMTMuODIgMTQ5LjM2NyAxMTQuMDE2IDE1MC43MzQgMTE0LjQwNiAxNTIuMDIzTDg5Ljk5MjIgMTY3LjE0Qzg3LjMzNTkgMTY0LjI1IDgzLjUwNzggMTYyLjQxNCA3OS4yODkxIDE2Mi40MTRDNzEuMjgxMyAxNjIuNDE0IDY0Ljc5NjkgMTY4Ljg5OCA2NC43OTY5IDE3Ni45MDZDNjQuNzk2OSAxODQuOTE0IDcxLjI4MTMgMTkxLjM5OCA3OS4yODkxIDE5MS4zOThDODcuMjk2OSAxOTEuMzk4IDkzLjc4MTIgMTg0LjkxNCA5My43ODEyIDE3Ni45MDZDOTMuNzgxMiAxNzUuNTM5IDkzLjU4NTkgMTc0LjE3MSA5My4yMzQ0IDE3Mi45MjFMMTE3LjY4OCAxNTcuNzY1QzEyMC4zNDQgMTYwLjYxNyAxMjQuMTMzIDE2Mi40MTQgMTI4LjMxMiAxNjIuNDE0QzEzNi4zMiAxNjIuNDE0IDE0Mi44MDUgMTU1LjkyOSAxNDIuODA1IDE0Ny45MjFDMTQyLjgwNSAxNDQuNDA2IDE0MS41NTUgMTQxLjE2NCAxMzkuNDQ1IDEzOC42MjVMMTcxLjg2NyA5Mi44MDQyQzE3My4zNTIgOTMuMzEyIDE3NC45NTMgOTMuNjI0NSAxNzYuNjMzIDkzLjYyNDVDMTg0LjY0MSA5My42MjQ1IDE5MS4xMjUgODcuMTQwMSAxOTEuMTI1IDc5LjEzMjNDMTkxLjEyNSA3MS4xMjQ1IDE4NC42OCA2NC42MDExIDE3Ni42NzIgNjQuNjAxMVoiIGZpbGw9IiNFNUEwMEQiLz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjUxXzg5ODAiPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjggMjgpIi8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+web:
+  service: tautulli
+  port: 8181
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8181
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу

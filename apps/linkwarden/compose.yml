@@ -1,0 +1,76 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  linkwarden:
+    image: ghcr.io/linkwarden/linkwarden:v2.14.1
+    restart: unless-stopped
+    depends_on:
+      linkwarden-postgres:
+        condition: service_healthy
+      linkwarden-meilisearch:
+        condition: service_started
+    ports:
+      - "${WEB_PORT:-3428}:3000"
+    environment:
+      TZ: "${TZ:-UTC}"
+      NEXTAUTH_URL: "${NEXTAUTH_URL:-http://localhost:3000/api/v1/auth}"
+      NEXTAUTH_SECRET: "${DB_PASSWORD:?set DB_PASSWORD}"
+      DATABASE_URL: "${DATABASE_URL:-postgresql://postgres:abc123@linkwarden-postgres:5432/linkwarden}"
+      STORAGE_FOLDER: "${STORAGE_FOLDER:-/data}"
+      MEILI_HOST: "${MEILI_HOST:-http://linkwarden-meilisearch:7700}"
+      MEILI_MASTER_KEY: "${DB_PASSWORD_2:?set DB_PASSWORD_2}"
+      NEXT_PUBLIC_DISABLE_REGISTRATION: "${NEXT_PUBLIC_DISABLE_REGISTRATION:-false}"
+      NEXT_PUBLIC_CREDENTIALS_ENABLED: "${NEXT_PUBLIC_CREDENTIALS_ENABLED:-true}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data/data
+    networks:
+      - linkwarden-net
+    deploy:
+      resources:
+        reservations:
+          memory: 512m
+  linkwarden-postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER:-postgres}"
+      POSTGRES_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      POSTGRES_DB: "${POSTGRES_DB:-linkwarden}"
+      TZ: "${TZ:-UTC}"
+    networks:
+      - linkwarden-net
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/pgdata"
+        target: /var/lib/postgresql/data
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U postgres -d linkwarden
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    deploy:
+      resources:
+        reservations:
+          memory: 256m
+  linkwarden-meilisearch:
+    image: getmeili/meilisearch:v1.12.8
+    restart: unless-stopped
+    environment:
+      MEILI_MASTER_KEY: "${DB_PASSWORD_2:?set DB_PASSWORD_2}"
+      MEILI_ENV: "${MEILI_ENV:-production}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/meili_data"
+        target: /meili_data
+    networks:
+      - linkwarden-net
+    deploy:
+      resources:
+        reservations:
+          memory: 256m
+networks:
+  linkwarden-net:
+    driver: bridge

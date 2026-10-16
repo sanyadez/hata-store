@@ -1,0 +1,24 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  mineos:
+    image: hexparrot/mineos:latest@sha256:247be835fbdc48932e92dc3dee9e2a9fcee5fa877ce5cbb0edf7abda6f0323f5
+    networks:
+      - mineos
+    restart: unless-stopped
+    stop_grace_period: 10m
+    volumes:
+      - /var/games/mineos/minecraft:/var/games/minecraft
+    environment:
+      USE_HTTPS: "${USE_HTTPS:-true}"
+      SERVER_PORT: "${SERVER_PORT:-8443}"
+      USER_NAME: "${USER_NAME:-mc}"
+      USER_UID: "${USER_UID:-1000}"
+      USER_PASSWORD: "${USER_PASSWORD:?set USER_PASSWORD}"
+    ports:
+      - "${WEB_PORT:-8444}:8443"
+      - 25565-25570:25565-25570/tcp
+      - 25565-25570:25565-25570/udp
+volumes:
+  mineos_data: null
+networks:
+  mineos: null

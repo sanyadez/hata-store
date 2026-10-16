@@ -1,0 +1,63 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Sabnzbd
+tagline:
+  en: Free and easy binary newsreader
+  zh: 免费易用的二进制新闻阅读器
+  ar: قارئ أخبار متعدد الوسائط مجاني وسهل الاستخدام
+  de: Freier und einfacher Binär-Newsreader
+  es: Lector de noticias binarias gratuito y fácil de usar
+  fr: Lecteur de nouvelles binaire gratuit et facile à utiliser
+  hu: Ingyenes és egyszerű bináris hír olvasó
+  it: Lettore di notizie binarie gratuito e facile da usare
+  ru: Бесплатный и простой бинарный новостной читатель
+  pl: Darmowy i prosty czytnik wiadomości binarnych
+  pt: Leitor de notícias binárias gratuito e fácil de usar
+  sv: Gratis och enkel binär nyhetsläsare
+  uk: Безкоштовний і простий завантажувач бінарних файлів з новинних груп
+description:
+  en: "SABnzbd is an Open Source Binary Newsreader written in Python. It's totally free, easy to use, and works practically everywhere. SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction. SABnzbd offers an easy setup wizard and has self-analysis tools to verify your setup."
+  zh: SABnzbd是一个开源的二进制新闻阅读器，由Python编写。它完全免费，易于使用，几乎可以在任何地方使用。 SABnzbd通过自动化我们可以实现的所有内容来使Usenet尽可能简单和流畅。您所要做的就是添加一个.nzb。 SABnzbd从那里开始，它将自动下载，验证，修复，提取和归档，零人工干预。 SABnzbd提供了一个简单的安装向导，并具有自我分析工具来验证您的设置。
+  ar: SABnzbd هو مستقل مصدر الأخبار الثنائية المكتوبة بلغة بايثون. إنه مجاني تمامًا وسهل الاستخدام ويعمل في معظم الأماكن. يجعل SABnzbd Usenet بسهولة وبساطة قدر الإمكان من خلال تلقائيات كل شيء يمكننا القيام به. كل ما عليك فعله هو إضافة .nzb. يتولى SABnzbd من هناك، حيث سيتم تنزيله تلقائيًا والتحقق منه وإصلاحه واستخراجه وترتيبه دون تدخل بشري. يقدم SABnzbd معالجًا سهلًا للإعداد وأدوات تحليل متخصصة للتحقق من إعدادك.
+  de: "SABnzbd ist ein Open Source Binary Newsreader, der in Python geschrieben ist. Es ist völlig kostenlos, einfach zu bedienen und praktisch überall einsetzbar. SABnzbd macht Usenet so einfach und effizient wie möglich, indem es alles automatisiert, was wir tun können. Alles, was Sie tun müssen, ist eine .nzb hinzuzufügen. SABnzbd übernimmt dann die Kontrolle, wo es automatisch heruntergeladen, überprüft, repariert, extrahiert und archiviert wird, ohne menschliches Eingreifen. SABnzbd bietet einen einfachen Einrichtungsassistenten und hat selbstanalysierende Tools, um Ihre Einrichtung zu überprüfen."
+  es: "SABnzbd es un lector de noticias binarias de código abierto escrito en Python. Es totalmente gratuito, fácil de usar y funciona prácticamente en todas partes. SABnzbd hace que Usenet sea lo más simple y eficiente posible mediante la automatización de todo lo que podemos hacer. Todo lo que tienes que hacer es agregar un .nzb. SABnzbd toma el control desde ahí, donde se descargará automáticamente, se verificará, reparará, extraerá y archivará sin intervención humana. SABnzbd ofrece un asistente de configuración fácil y tiene herramientas de análisis autónomas para verificar su configuración."
+  fr: "SABnzbd est un lecteur de nouvelles binaires open source écrit en Python. Il est entièrement gratuit, facile à utiliser et fonctionne pratiquement partout. SABnzbd rend Usenet aussi simple et efficace que possible en automatisant tout ce que nous pouvons faire. Tout ce que vous avez à faire est d'ajouter un .nzb. SABnzbd prend le contrôle de là, où il sera automatiquement téléchargé, vérifié, réparé, extrait et archivé sans intervention humaine. SABnzbd offre un assistant de configuration facile et dispose d'outils d'analyse autonomes pour vérifier votre configuration."
+  hu: "A SABnzbd egy nyílt forráskódú bináris hírlapíró, amelyet Python írt. Teljesen ingyenes, könnyen használható és majdnem bárhol használható. A SABnzbd automatizálja az összes olyan dolgot, amit tehetünk, hogy Usenetet lehetőleg egyszerű és hatékony legyen. Minden, amit tenned kell, az egy .nzb hozzáadása. A SABnzbd innentől kezdve átvette a kontrollt, ahol automatikusan letölti, ellenőrzi, javítja, kicsomagolja és archiválja, anélkül, hogy emberi beavatkozást igényelne. A SABnzbd könnyen beállítható varázslóval és önálló elemzési eszközökkel rendelkezik a beállítások ellenőrzéséhez."
+  it: "SABnzbd è un lettore di notizie binarie open source scritto in Python. È completamente gratuito, facile da usare e funziona praticamente ovunque. SABnzbd rende Usenet il più semplice e efficiente possibile automatizzando tutto ciò che possiamo fare. Tutto ciò che devi fare è aggiungere un .nzb. SABnzbd prende il controllo da lì, dove verrà scaricato automaticamente, verificato, riparato, estratto e archiviato senza intervento umano. SABnzbd offre un assistente di configurazione facile e dispone di strumenti di analisi autonome per verificare la tua configurazione."
+  ru: "SABnzbd - это открытый исходный код бинарного новостного читателя, написанный на Python. Он полностью бесплатен, прост в использовании и работает практически везде. SABnzbd делает Usenet как можно проще и эффективнее, автоматизируя все, что мы можем сделать. Все, что вам нужно сделать, - это добавить .nzb. SABnzbd берет на себя контроль оттуда, где он будет автоматически загружен, проверен, восстановлен, извлечен и архивирован без человеческого вмешательства. SABnzbd предлагает простой мастер настройки и имеет самостоятельные инструменты анализа для проверки вашей конфигурации."
+  pl: "SABnzbd to oprogramowanie open source do czytania wiadomości binarnych napisane w Pythonie. Jest całkowicie darmowe, łatwe w obsłudze i działa praktycznie wszędzie. SABnzbd sprawia, że Usenet jest jak najprostszy i najbardziej wydajny, automatyzując wszystko, co możemy zrobić. Wszystko, co musisz zrobić, to dodać .nzb. SABnzbd przejmuje kontrolę od tamtego miejsca, gdzie zostanie pobrany automatycznie, zweryfikowany, naprawiony, wypakowany i zarchiwizowany bez udziału człowieka. SABnzbd oferuje prosty kreator konfiguracji i dysponuje samodzielnymi narzędziami do analizy konfiguracji."
+  pt: "O SABnzbd é um leitor de notícias binárias de código aberto escrito em Python. É totalmente gratuito, fácil de usar e funciona praticamente em qualquer lugar. O SABnzbd torna o Usenet o mais simples e eficiente possível, automatizando tudo o que podemos fazer. Tudo o que você precisa fazer é adicionar um .nzb. O SABnzbd assume o controle de lá, onde será baixado automaticamente, verificado, reparado, extraído e arquivado sem intervenção humana. O SABnzbd oferece um assistente de configuração fácil e possui ferramentas de análise autônomas para verificar sua configuração."
+  sv: "SABnzbd är en öppen källkod binär nyhetsläsare skriven i Python. Det är helt gratis, lätt att använda och fungerar praktiskt taget överallt. SABnzbd gör Usenet så enkelt och effektivt som möjligt genom att automatisera allt vi kan göra. Allt du behöver göra är att lägga till en .nzb. SABnzbd tar över kontrollen därifrån, där det automatiskt laddas ner, verifieras, repareras, packas upp och arkiveras utan mänsklig inblandning. SABnzbd erbjuder en enkel konfigurationsguide och har självständiga analysverktyg för att kontrollera din konfiguration."
+  uk: "SABnzbd — завантажувач бінарних файлів з новинних груп із відкритим кодом, написаний на Python. Він повністю безкоштовний, простий у користуванні та працює практично всюди. SABnzbd робить Usenet максимально простим, автоматизуючи все, що можна. Вам лишається тільки додати .nzb, а далі SABnzbd сам завантажить, перевірить, відновить, розпакує та розкладе файли без жодної участі людини. У SABnzbd є простий майстер налаштування та засоби самоперевірки, щоб упевнитися, що все налаштовано правильно."
+category: media
+developer: Sabnzbd Team
+website: https://sabnzbd.org
+source: https://github.com/sabnzbd/sabnzbd
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk2NCkiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMV8xMjUxXzg5NjQpIj48cGF0aCBkPSJNMjU2IDBIMFYyNTZIMjU2VjBaIiBmaWxsPSIjMTcxNzE3Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03My40NjI4IDQ0LjAyNzNIMTgyLjU0VjEyMy44NjhIMjExLjkwNkwxMjguMDAxIDIxMS45NzNMNDQuMDk2NiAxMjMuODY4SDczLjQ2MjhWNDQuMDI5OFY0NC4wMjczWiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxMy40OTMzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMS40MTQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTczLjQ1OTcgNDQuMDI3M0gxODIuNTM3VjEyMy44NzFIMjExLjkwM0wxMjcuOTk5IDIxMS45NzRMNDQuMDkzOCAxMjMuODcxSDczLjQ1OTdWNDQuMDI3M1oiIGZpbGw9IiNGRkIzMDAiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEyOC4wMTMgMjExLjk3NUw3My41OTc3IDQ0LjAyNzNIMTgyLjQyOEwxMjguMDEzIDIxMS45NzRWMjExLjk3NVoiIGZpbGw9IiNGRkNBMjgiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTk2Ljg4NTIgMTkxLjMyNUg1MS41NTg2VjE4MS43ODZINzguNDUzNVYxNzMuMzIySDUxLjU1ODZWMTQ1LjkyNEg5Ni44ODUyVjE1NS4zOTJINjkuOTkwMlYxNjMuODU1SDk2Ljg4NTJWMTkxLjMyNVpNMTIzLjc4IDE4MS43ODZIMTMyLjI0M1YxNzMuMzIySDEyMy43OFYxODEuNzg2Wk0xNTAuNjc1IDE5MS4zMjVIMTA1LjM0OFYxNjMuODU1SDEzMi4yNDNWMTU1LjM5MkgxMDUuMzQ4VjE0NS45MjRIMTUwLjY3NFYxOTEuMzI1SDE1MC42NzVaTTE3Ny41NjkgMTgxLjc4NkgxODYuMDMyVjE1NS4zOTJIMTc3LjU2OVYxODEuNzg2Wk0xNTkuMTM3IDE5MS4zMjVWMTI3Ljk5NEgxNzcuNTY5VjE0NS45MjVIMjA0LjQ2NFYxOTEuMzI1SDE1OS4xMzdaIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEzLjUwMDEiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQxNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTk2Ljg4NTIgMTkxLjMyNUg1MS41NTg2VjE4MS43ODZINzguNDUzNVYxNzMuMzIySDUxLjU1ODZWMTQ1LjkyNEg5Ni44ODUyVjE1NS4zOTJINjkuOTkwMlYxNjMuODU1SDk2Ljg4NTJWMTkxLjMyNVpNMTIzLjc4IDE4MS43ODZIMTMyLjI0M1YxNzMuMzIySDEyMy43OFYxODEuNzg2Wk0xNTAuNjc1IDE5MS4zMjVIMTA1LjM0OFYxNjMuODU1SDEzMi4yNDNWMTU1LjM5MkgxMDUuMzQ4VjE0NS45MjRIMTUwLjY3NFYxOTEuMzI1SDE1MC42NzVaTTE3Ny41NjkgMTgxLjc4NkgxODYuMDMyVjE1NS4zOTJIMTc3LjU2OVYxODEuNzg2Wk0xNTkuMTM3IDE5MS4zMjVWMTI3Ljk5NEgxNzcuNTY5VjE0NS45MjVIMjA0LjQ2NFYxOTEuMzI1SDE1OS4xMzdaIiBmaWxsPSJ3aGl0ZSIvPjwvZz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjUxXzg5NjQiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJjbGlwMV8xMjUxXzg5NjQiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+  - 5.webp
+  - 6.webp
+  - 7.webp
+web:
+  service: sabnzbd
+  port: 8080
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8282
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Downloads
+      uk: Завантаження
+    hint:
+      en: Inside the app it is /incomplete-downloads
+      uk: У застосунку вона — /incomplete-downloads

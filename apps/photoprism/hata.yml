@@ -1,0 +1,78 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: PhotoPrism
+tagline:
+  en: Browse Your Life in Images
+  zh: 用照片回忆您的生活
+  ar: تصفح وتنظيم ومشاركة مجموعة صورك
+  de: "Durchsuchen, Organisieren und Teilen Ihrer Foto-Sammlung"
+  es: "Navegar, organizar y compartir su colección de fotos"
+  fr: "Parcourir, organiser et partager votre collection de photos"
+  hu: "A fényképek böngészése, rendezése és megosztása"
+  it: "Sfogliare, organizzare e condividere la tua collezione di foto"
+  ru: "Просмотр, организация и обмен фотоколлекцией"
+  pl: "Przeglądanie, organizowanie i udostępnianie kolekcji zdjęć"
+  pt: "Navegando, organizando e compartilhando sua coleção de fotos"
+  sv: "Bläddra, organisera och dela din fotokollektion"
+  uk: Перегляд вашого життя в зображеннях
+description:
+  en: "Your AI-Powered Photos App for the Decentralized Web\n\nPhotoPrism brings the magic of AI to your home TV, phone, and multiple devices, revolutionizing the way you manage and share your photos. Unlike traditional photo albums that require manual organization, PhotoPrism automatically tags and finds your pictures, making it easier than ever to relive your memories. Whether you're showing family photos on your TV or sharing vacation snapshots on your phone, PhotoPrism makes the experience seamless and enjoyable.\n\nPhotoPrism offers a host of features designed to enhance your photo management experience. With powerful search capabilities, automatic tagging, and a user-friendly interface, you'll find it easy to keep your photo collection organized. The app is free to use, with premium options available for those seeking additional features and support. Users can expect a smooth, intuitive experience that blends cutting-edge technology with everyday convenience."
+  zh: "您的去中心化的，AI驱动的照片应用程序\n\nPhotoPrism 将 AI 的魔力带入您的家庭电视、手机和多设备中，彻底改变了您管理和分享照片的方式。不像传统的照片相册需要手动整理，PhotoPrism 自动标记和查找您的照片，让您更轻松地重温美好回忆。无论是通过电视展示家庭照片，还是在手机上分享度假快照，PhotoPrism 都能使这一过程变得无缝且愉快。\n\nPhotoPrism 提供了一系列旨在增强您照片管理体验的功能。借助强大的搜索功能、自动标记和用户友好的界面，您将发现整理照片收藏变得轻而易举。该应用程序免费使用，并为那些寻求更多功能和支持的用户提供高级选项。用户可以期待一种融合前沿技术与日常便利的顺畅、直观的体验。"
+  ar: PhotoPrism® هو تطبيق يعمل بقوة AI لاستعراض وتنظيم ومشاركة مجموعة صورك. يستخدمها التقنيات الأحدث للتسمية والعثور على الصور بشكل تلقائي دون أن يتدخل في طريقك. يمكنك تشغيله في المنزل أو على خادم خاص أو في السحابة.
+  de: "PhotoPrism® ist eine mit AI betriebene App zum Durchsuchen, Organisieren und Teilen Ihrer Foto-Sammlung. Es nutzt die neuesten Technologien, um Bilder automatisch zu kennzeichnen und zu finden, ohne Sie dabei zu stören. Sie können es zu Hause, auf einem privaten Server oder in der Cloud ausführen."
+  es: "PhotoPrism® es una aplicación impulsada por IA para navegar, organizar y compartir su colección de fotos. Hace uso de las últimas tecnologías para etiquetar y encontrar fotos automáticamente sin molestarte. Puedes ejecutarlo en casa, en un servidor privado o en la nube."
+  fr: "PhotoPrism® est une application alimentée par l'IA pour parcourir, organiser et partager votre collection de photos. Il utilise les dernières technologies pour étiqueter et trouver des photos automatiquement sans vous déranger. Vous pouvez l'exécuter à la maison, sur un serveur privé ou dans le cloud."
+  hu: "A PhotoPrism® egy AI-meghajtott alkalmazás, amely lehetővé teszi a fényképek böngészését, rendezését és megosztását. A legújabb technológiákat használja a képek automatikus címkézéséhez és megtalálásához, anélkül, hogy bármit is akadályozna. Otthon, egy privát szerveren vagy felhőben futtathatja."
+  it: "PhotoPrism® è un'app alimentata da IA per sfogliare, organizzare e condividere la tua collezione di foto. Fa uso delle ultime tecnologie per etichettare e trovare le foto automaticamente senza disturbarti. Puoi eseguirlo a casa, su un server privato o in cloud."
+  ru: "PhotoPrism® - это приложение, работающее на AI, для просмотра, организации и обмена фотоколлекцией. Оно использует последние технологии для автоматической маркировки и поиска фотографий без помех. Вы можете запустить его дома, на частном сервере или в облаке."
+  pl: "PhotoPrism® to aplikacja napędzana przez AI do przeglądania, organizowania i udostępniania kolekcji zdjęć. Wykorzystuje najnowsze technologie do automatycznego oznaczania i wyszukiwania zdjęć bez przeszkadzania. Możesz uruchomić ją w domu, na prywatnym serwerze lub w chmurze."
+  pt: "PhotoPrism® é um aplicativo alimentado por IA para navegar, organizar e compartilhar sua coleção de fotos. Ele usa as últimas tecnologias para marcar e encontrar fotos automaticamente sem te incomodar. Você pode executá-lo em casa, em um servidor privado ou na nuvem."
+  sv: "PhotoPrism® är en AI-drivet app för att bläddra, organisera och dela din fotokollektion. Den använder de senaste teknologierna för att märka och hitta bilder automatiskt utan att störa dig. Du kan köra det hemma, på en privat server eller i molnet."
+  uk: "Застосунок для фотографій на основі ШІ для децентралізованого вебу\n\nPhotoPrism приносить можливості ШІ на ваш домашній телевізор, телефон і інші пристрої та змінює те, як ви керуєте фотографіями й ділитеся ними. На відміну від звичайних фотоальбомів, які потрібно впорядковувати вручну, PhotoPrism сам позначає мітками та знаходить ваші знімки, тож згадувати події стало простіше, ніж будь-коли. Чи показуєте ви сімейні фото на телевізорі, чи ділитеся відпускними знімками з телефона, PhotoPrism робить це легким і приємним.\n\nPhotoPrism має багато функцій, які полегшують роботу з фотографіями. Завдяки потужному пошуку, автоматичним міткам і зручному інтерфейсу вашу колекцію легко тримати впорядкованою. Застосунком можна користуватися безкоштовно, а для тих, кому потрібні додаткові можливості та підтримка, є платні варіанти. Він працює плавно та інтуїтивно, поєднуючи сучасні технології зі щоденною зручністю."
+notes:
+  en: "## PhotoPrism\n\nDefault Account"
+  zh: "## PhotoPrism\n\n默认账号"
+  uk: "## PhotoPrism\n\nОбліковий запис за замовчуванням"
+category: media
+developer: PhotoPrism
+website: https://www.photoprism.app
+source: https://github.com/photoprism/photoprism
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTEyOCAyMjYuNTA4QzE4Mi40MDQgMjI2LjUwOCAyMjYuNTA3IDE4Mi40MDQgMjI2LjUwNyAxMjhDMjI2LjUwNyA3My41OTYgMTgyLjQwNCAyOS40OTI3IDEyOCAyOS40OTI3QzczLjU5NTggMjkuNDkyNyAyOS40OTI2IDczLjU5NiAyOS40OTI2IDEyOEMyOS40OTI2IDE4Mi40MDQgNzMuNTk1OCAyMjYuNTA4IDEyOCAyMjYuNTA4WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzEyNTFfODk0MykiLz48cGF0aCBkPSJNMTk2LjA1MiAxNjAuNDcxTDE5My4wNjcgMTc4LjUyM00xOTYuMDUyIDE2MC40NzFDMTk2LjA2MiAxNjAuNDg0IDE5Ni4wNjggMTYwLjUgMTk2LjA2OSAxNjAuNTE3QzE5Ni4wNyAxNjAuNTMzIDE5Ni4wNjcgMTYwLjU1IDE5Ni4wNTkgMTYwLjU2NUMxOTYuMDUxIDE2MC41NzkgMTk2LjAzOSAxNjAuNTkyIDE5Ni4wMjUgMTYwLjZDMTk2LjAxMSAxNjAuNjA4IDE5NS45OTQgMTYwLjYxMyAxOTUuOTc4IDE2MC42MTJMNjAuMDIyNCAxNjEuMjA5TTE5Ni4wNTIgMTYwLjQ3MUwxMjcuOTYzIDU5LjAxNTRDMTI3Ljk1NSA1OS4wMDE0IDEyNy45NDQgNTguOTg5NyAxMjcuOTMgNTguOTgxNkMxMjcuOTE2IDU4Ljk3MzUgMTI3LjkgNTguOTY5MiAxMjcuODg0IDU4Ljk2OTJDMTI3Ljg2OCA1OC45NjkyIDEyNy44NTMgNTguOTczNSAxMjcuODM5IDU4Ljk4MTZDMTI3LjgyNSA1OC45ODk3IDEyNy44MTQgNTkuMDAxNCAxMjcuODA2IDU5LjAxNTRMNTkuOTQwMyAxNjEuMDY4QzU5LjkzMjggMTYxLjA4MiA1OS45MjkgMTYxLjA5OCA1OS45MjkzIDE2MS4xMTVDNTkuOTI5NyAxNjEuMTMxIDU5LjkzNDIgMTYxLjE0NyA1OS45NDI0IDE2MS4xNjFDNTkuOTUwNiAxNjEuMTc1IDU5Ljk2MjIgMTYxLjE4NyA1OS45NzYyIDE2MS4xOTZDNTkuOTkwMiAxNjEuMjA0IDYwLjAwNjEgMTYxLjIwOSA2MC4wMjI0IDE2MS4yMDlNMTkzLjA2NyAxNzguNTIzQzE5My4wNzMgMTc4LjUzNCAxOTMuMDc1IDE3OC41NDYgMTkzLjA3NCAxNzguNTU4QzE5My4wNzMgMTc4LjU3IDE5My4wNjkgMTc4LjU4MSAxOTMuMDYyIDE3OC41OTFDMTkzLjA1NiAxNzguNjAxIDE5My4wNDYgMTc4LjYwOSAxOTMuMDM1IDE3OC42MTRDMTkzLjAyNCAxNzguNjE5IDE5My4wMTIgMTc4LjYyMSAxOTMgMTc4LjYyTDcxLjA1MjMgMTcxLjYyN0M3MS4wMzkxIDE3MS42MjggNzEuMDI2MSAxNzEuNjI0IDcxLjAxNDkgMTcxLjYxN0M3MS4wMDM3IDE3MS42MTEgNzAuOTk0NyAxNzEuNjAxIDcwLjk4OTIgMTcxLjU4OUM3MC45ODM2IDE3MS41NzcgNzAuOTgxNyAxNzEuNTYzIDcwLjk4MzYgMTcxLjU1QzcwLjk4NTUgMTcxLjUzNyA3MC45OTEyIDE3MS41MjUgNzEgMTcxLjUxNUwxNDIuNTM3IDY4LjkzMzNDMTQyLjU1MyA2OC45MjE0IDE0Mi41NzMgNjguOTE2MyAxNDIuNTkzIDY4LjkxOTFDMTQyLjYxMiA2OC45MjE5IDE0Mi42MyA2OC45MzI0IDE0Mi42NDIgNjguOTQ4MkwxOTMuMDY3IDE3OC41MjNaTTYwLjAyMjQgMTYxLjIwOUw3MS4wNzQ2IDE3MS42NTdNMTI3Ljg4OCA1OC44OTZMMTQyLjY0MiA2OC44MzYzIiBzdHJva2U9IiMxRDFEMUIiIHN0cm9rZS13aWR0aD0iNC40Nzc2MSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzEyNTFfODk0MyIgeDE9IjU4LjM0MzMiIHkxPSIxOTcuNjU3IiB4Mj0iMTk3LjY1NyIgeTI9IjU4LjM0MzQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjQjhFREZGIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRDRCOEZGIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PC9zdmc+"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: photoprism
+  port: 2342
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 2342
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: GALLERY_DIR
+    type: folder
+    default: "${DATA_ROOT}/Gallery"
+    label:
+      en: PhotoPrism originals directory
+      zh: PhotoPrism 原始文件目录
+      uk: Тека оригіналів PhotoPrism
+    hint:
+      en: Inside the app it is /photoprism/originals
+      uk: У застосунку вона — /photoprism/originals
+  - name: PHOTOPRISM_ADMIN_PASSWORD
+    type: text
+    default: hata
+    label:
+      en: The password of admin
+      zh: 管理员密码
+      uk: Пароль адміністратора
+  - name: PHOTOPRISM_UPLOAD_NSFW
+    type: text
+    default: "true"
+    label:
+      en: "true or false, is it possible to upload NSFW"
+      zh: true 或 false，是否允许上传 NSFW
+      uk: "true або false: чи можна завантажувати NSFW"

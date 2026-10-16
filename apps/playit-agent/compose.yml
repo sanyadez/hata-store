@@ -1,0 +1,5 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  playit-agent:
+    restart: unless-stopped
+    image: ghcr.io/mafen/playit-docker:latest@sha256:41e7201cd7a08796440343db2b67b5eb4f0effa79418f2da03d412f5b875c0a0

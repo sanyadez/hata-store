@@ -1,0 +1,47 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  monica:
+    image: monica:4.1.2
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 256M
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-18930}:80"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/storage"
+        target: /var/www/html/storage
+    environment:
+      APP_KEY: "${APP_KEY:?set APP_KEY}"
+      DB_HOST: "${DB_HOST:-monica-db}"
+      DB_USERNAME: "${DB_USERNAME:-monicauser}"
+      DB_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+    networks:
+      - monica_network
+    depends_on:
+      - monica-db
+  monica-db:
+    image: mariadb:11.8.2
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/mysql"
+        target: /var/lib/mysql
+    environment:
+      MARIADB_RANDOM_ROOT_PASSWORD: "${MARIADB_RANDOM_ROOT_PASSWORD:?set MARIADB_RANDOM_ROOT_PASSWORD}"
+      MARIADB_DATABASE: "${MARIADB_DATABASE:-monica}"
+      MARIADB_USER: "${MARIADB_USER:-monicauser}"
+      MARIADB_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+    restart: unless-stopped
+    networks:
+      - monica_network
+networks:
+  monica_network:
+    driver: bridge

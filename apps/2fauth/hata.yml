@@ -1,0 +1,54 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: 2FAuth
+tagline:
+  en: A web app to manage your Two-Factor Authentication (2FA) accounts and generate their security codes
+  zh: 一个用于管理您的两步验证（2FA）帐户并生成其安全代码的Web应用程序
+  ar: تطبيق ويب لإدارة حسابات المصادقة الثنائية (2FA) الخاصة بك وإنشاء رموز أمانها
+  de: Eine Web-App zum Verwalten Ihrer Zwei-Faktor-Authentifizierung (2FA) Konten und zum Erstellen ihrer Sicherheitscodes
+  es: Una aplicación web para administrar sus cuentas de autenticación de dos factores (2FA) y generar sus códigos de…
+  fr: "Une application Web pour gérer vos comptes d'authentification à deux facteurs (2FA) et générer leurs codes de sécurité"
+  hu: Egy webalkalmazás a kétlépcsős hitelesítés (2FA) fiókok kezeléséhez és biztonsági kódjuk generálásához
+  it: "Un'applicazione web per gestire i tuoi account di autenticazione a due fattori (2FA) e generare i loro codici di…"
+  ru: Веб-приложение для управления учетными записями двухфакторной аутентификации (2FA) и генерации их кодов безопасности
+  pl: Aplikacja internetowa do zarządzania kontami uwierzytelniania dwuskładnikowego (2FA) i generowania ich kodów…
+  pt: Um aplicativo da web para gerenciar suas contas de autenticação de dois fatores (2FA) e gerar seus códigos de segurança
+  sv: En webbapp för att hantera dina tvåfaktorsautentiserings (2FA) -konton och generera deras säkerhetskoder
+  uk: Вебзастосунок для керування обліковими записами з двофакторною автентифікацією (2FA) і створення їхніх кодів безпеки
+description:
+  en: "2FAuth is a web based self-hosted alternative to One Time Passcode (OTP) generators like Google Authenticator, designed for both mobile and desktop."
+  zh: 2FAuth是一个基于Web的自托管的替代Google Authenticator的一次性密码（OTP）生成器，旨在为移动和桌面设备提供服务。
+  ar: 2FAuth هو بديل مستضاف لنفسه لمولدات رمز واحد (OTP) مثل Google Authenticator ، مصممة للجوال وسطح المكتب.
+  de: "2FAuth ist eine webbasierte selbst gehostete Alternative zu One Time Passcode (OTP) Generatoren wie Google Authenticator, die für mobile und Desktop-Geräte entwickelt wurde."
+  es: "2FAuth es una alternativa autohospedada basada en web a los generadores de códigos de un solo uso (OTP) como Google Authenticator, diseñada para móviles y escritorio."
+  fr: "2FAuth est une alternative auto-hébergée basée sur le web aux générateurs de codes à usage unique (OTP) tels que Google Authenticator, conçus pour les appareils mobiles et de bureau."
+  hu: "A 2FAuth egy webes, önállóan kiszolgáló alternatíva a Google Authenticator egyetlen használatú kódjainak (OTP) generátorának, amelyet mobil és asztali eszközök számára terveztek."
+  it: "2FAuth è un'alternativa auto-hosted basata su web ai generatori di codici a tempo singolo (OTP) come Google Authenticator, progettati per dispositivi mobili e desktop."
+  ru: "2FAuth - это веб-базовая самохостинговая альтернатива генераторам одноразовых кодов (OTP) вроде Google Authenticator, разработанные для мобильных и настольных устройств."
+  pl: "2FAuth to alternatywa samohostowana na podstawie sieci web do generatorów kodów jednorazowych (OTP) takich jak Google Authenticator, zaprojektowana dla urządzeń mobilnych i stacjonarnych."
+  pt: "2FAuth é uma alternativa auto-hospedada baseada na web aos geradores de códigos de uso único (OTP) como o Google Authenticator, projetados para dispositivos móveis e desktop."
+  sv: "2FAuth är en självhärdad webbaserad alternativ till One Time Passcode (OTP) -genererare som Google Authenticator, utformad för både mobila och skrivbordsenheter."
+  uk: "2FAuth — вебзастосунок для власного сервера, альтернатива генераторам одноразових кодів (OTP), як-от Google Authenticator. Працює і на телефоні, і на комп’ютері."
+category: productivity
+developer: Bubka
+website: https://2fauth.app
+source: https://github.com/Bubka/2FAuth
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: 2fauth
+  port: 8000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8000
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: APP_KEY
+    type: secret
+    label:
+      en: APP_KEY

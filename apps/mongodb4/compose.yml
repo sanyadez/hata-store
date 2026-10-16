@@ -1,0 +1,18 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  mongodb4:
+    image: mongo:4.4.22
+    restart: unless-stopped
+    environment:
+      PUID: "${PUID:-1000}"
+      PGID: "${PGID:-1000}"
+      TZ: "${TZ:-UTC}"
+    ports:
+      - "${PORT_27017:-27017}:27017"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data/configdb"
+        target: /data/configdb
+      - type: bind
+        source: "${APP_DATA:-.}/data/db"
+        target: /data/db

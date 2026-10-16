@@ -1,0 +1,25 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  sonarr:
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+    image: linuxserver/sonarr:4.0.19
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    ports:
+      - "${WEB_PORT:-8989}:8989"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${TV_SHOWS_DIR:-./Media/TV Shows}"
+        target: /tv
+      - type: bind
+        source: "${DOWNLOADS_DIR:-./Downloads}"
+        target: /downloads

@@ -1,0 +1,72 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: WireGuard Easy
+tagline:
+  en: WEB UI to manage WireGuard VPN.
+  zh: 管理 WireGuard VPN 的 WEB UI。
+  de: WEB UI zur Verwaltung von WireGuard VPN.
+  es: WEB UI para gestionar WireGuard VPN.
+  fr: WEB UI pour gérer WireGuard VPN.
+  hu: WEB felhasználói felület a WireGuard VPN kezeléséhez.
+  it: Interfaccia WEB per la gestione di WireGuard VPN.
+  ru: WEB-интерфейс для управления WireGuard VPN.
+  pl: WEB UI do zarządzania WireGuard VPN.
+  pt: WEB UI para gerenciar o WireGuard VPN.
+  sv: WEB UI för att hantera WireGuard VPN.
+  uk: Вебінтерфейс для керування VPN WireGuard.
+description:
+  en: You have found the easiest way to install & manage WireGuard on any Linux host!
+  zh: 您已经找到了在任何 Linux 主机上安装和管理 WireGuard 的最简单方法！
+  de: "Sie haben den einfachsten Weg gefunden, WireGuard auf jedem Linux-Host zu installieren und zu verwalten!"
+  es: Ha encontrado la forma más sencilla de instalar y gestionar WireGuard en cualquier host Linux.
+  fr: "Vous avez trouvé le moyen le plus simple d'installer et de gérer WireGuard sur n'importe quel hôte Linux !"
+  hu: Megtalálta a WireGuard telepítésének és kezelésének legegyszerűbb módját bármely Linux hoszton!
+  it: Avete trovato il modo più semplice per installare e gestire WireGuard su qualsiasi host Linux!
+  ru: Вы нашли самый простой способ установки и управления WireGuard на любом Linux-хосте!
+  pl: Znalazłeś najłatwiejszy sposób instalacji i zarządzania WireGuard na dowolnym hoście z systemem Linux!
+  pt: Você encontrou a maneira mais fácil de instalar e gerenciar o WireGuard em qualquer host Linux!
+  sv: Du har hittat det enklaste sättet att installera och hantera WireGuard på en Linux-värd!
+  uk: Ви знайшли найпростіший спосіб установити WireGuard на будь-який хост Linux і керувати ним!
+notes:
+  en: "🔧 Settings\n\n⚠️ Warning!\n\nYou need to change at least change the mandatory parameter `WG_HOST` for this app to work properly. It's value has to be a domain (or an IP address) that points to this server (accesible from WAN).\n\nSame applies to the `WG_PORT` parameter. Change it to the port accessible from outside your LAN if it differs from the default 51820."
+  zh: "🔧 设置\n\n⚠️ 警告！\n\n您至少需要更改强制参数 `WG_HOST` 才能使本应用程序正常工作。 其值必须是指向本服务器的域（或 IP 地址）（可从广域网访问）。\n\n同样，`WG_PORT` 参数也是如此。如果与默认的 51820 不同，请将其更改为局域网外可以访问的端口。"
+  uk: "🔧 Налаштування\n\n⚠️ Увага!\n\nЩоб застосунок працював правильно, потрібно змінити принаймні обов'язковий параметр `WG_HOST`. Його значення має бути доменом (або IP-адресою), що вказує на цей сервер і доступний із WAN.\n\nТе саме стосується параметра `WG_PORT`: змініть його на порт, доступний ззовні вашої локальної мережі, якщо він відрізняється від типового 51820."
+category: network
+developer: WeejeWel
+website: https://github.com/wg-easy/wg-easy
+source: https://github.com/wg-easy/wg-easy
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk5NykiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMV8xMjUxXzg5OTcpIj48bWFzayBpZD0ibWFzazBfMTI1MV84OTk3IiBzdHlsZT0ibWFzay10eXBlOmx1bWluYW5jZSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiPjxwYXRoIGQ9Ik0yNTYgMEgwVjI1NkgyNTZWMFoiIGZpbGw9IndoaXRlIi8+PC9tYXNrPjxnIG1hc2s9InVybCgjbWFzazBfMTI1MV84OTk3KSI+PHBhdGggZD0iTTI1NiAwSDBWMjU2SDI1NlYwWiIgZmlsbD0iIzg4MTcxQSIvPjxtYXNrIGlkPSJtYXNrMV8xMjUxXzg5OTciIHN0eWxlPSJtYXNrLXR5cGU6bHVtaW5hbmNlIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiI+PHBhdGggZD0iTTI1NiAwSDBWMjU2SDI1NlYwWiIgZmlsbD0id2hpdGUiLz48L21hc2s+PGcgbWFzaz0idXJsKCNtYXNrMV8xMjUxXzg5OTcpIj48cGF0aCBkPSJNMjU2IDBIMFYyNTZIMjU2VjBaIiBmaWxsPSIjODgxNzFBIi8+PHBhdGggZD0iTTExOSAyNi41TDEzNi41IDMwLjVWMzEuNUMxMjkgMzIuNSAxMjEuNSAyOS41IDExNCAyOUMxMTkuNSAzMi41IDEyNS41IDM0LjUgMTMxLjUgMzYuNUMxMjIgNDQuNSAxMTQgMzQgMTAzLjUgNDFDMTEzLjUgNDYgMTEzIDQ1IDExNCA1NC41QzEwOS41IDU1IDEwMiA1OS41IDEwMC41IDYyLjVDMTA3IDY0IDExNC41IDYyLjUgMTIxIDY2LjVDMTE5IDY4IDExNCA3MCAxMTIgNzEuNUMxMTYuNSA3Mi41IDEyMiA3MC41IDEyNC41IDcyQzEzNCA4MCAxNTEuNSA5MSAxNTYuNSAxMDJDMTY1IDEyMC41IDE0NS41IDE0MC41IDEyNi41IDE0My41QzEwMCAxNDkgODUgMTc2LjUgOTQuNSAyMDJDMTA0IDIyNyAxMzMuNSAyMzggMTU3IDIyNUMxOTAgMjA1IDE4NSAxNzEgMTY1IDE1Mi41QzE2NCAxNTEuNSAxNjMgMTUxLjUgMTYyIDE1Mi41QzE1NSAxNTcgMTQ3LjUgMTYxIDEzOS41IDE2NC41QzE1Ny41IDE2OC41IDE2MCAxODIgMTU4IDE5MS41QzE1MS41IDIxNS41IDExOSAyMTAgMTE1LjUgMTg5LjVDMTE0IDE4MCAxMTkgMTcwLjUgMTI3LjUgMTY2LjVDMTU3IDE1My41IDE3MSAxNTEuNSAxNzkuNSAxMThDMTgyLjUgOTkgMTc4IDg5IDE2NCA3OEMxNTguNSA3Mi41IDE0Ny41IDY5IDE0NCA2MC41QzE0My41IDU5LjUgMTQ0LjUgNTcuNSAxNDUuNSA1Ny41QzE1MC41IDU2LjUgMTcwIDU2IDE3MCA1N0MxNzMuNSA2MC41IDE3Ni41IDU1IDE3OCA1Mi41QzE3MyA1MS41IDE2Ny41IDUyIDE2My41IDUyQzE2MyA1MiAxNjIgNTEgMTYxLjUgNTAuNUMxNjIgNTAgMTYzIDQ5LjUgMTYzLjUgNDkuNUgxODRDMTg0IDQ2IDE3OS41IDQxIDE3NSA0MFY0MS41QzE3MSA0MiAxNjcgNDEgMTYzIDM5LjVDMTYxIDM4IDE1OS41IDM1IDE1Ny41IDM0QzE0OS41IDI5LjUgMTQxIDI2IDEzMC41IDI2QzEyNS41IDI2IDEyMiAyNi41IDExOSAyNi41Wk0xNTYgNDEuNUwxNTcuNSA0M0wxNTUuNSA0NEMxNTQuNSA0NC41IDE1NCA0NCAxNTMuNSA0My41QzE1Mi41IDQyIDE1NS41IDQxIDE1NiA0MS41Wk05NiA4OS41QzY5IDEwNiA3MC41IDE0NCA5NC41IDE1OUM5Ni41IDE2MCA5Ny41IDE2MCA5OC41IDE1OC41QzEwNC41IDE1MSAxMTAgMTQ3LjUgMTE2LjUgMTQzLjVDMTA0IDE0MS41IDk3LjUgMTM1LjUgOTggMTI3Qzk2IDk3IDEzOS41IDEwMCAxMzUgMTI4QzEzNCAxMzMgMTMxIDEzNy41IDEyNyAxNDAuNUMxNDAuNSAxMzcuNSAxNTAuNSAxMzAgMTU0LjUgMTE2LjVDMTU1LjUgMTEyLjUgMTU1LjUgMTA3IDE1My41IDEwMy41QzEzOC41IDgxLjUgMTE2IDc3IDk2IDg5LjVaTTY1IDE4N0M3MyAxODMuNSA4MS41IDE4MiA4OS41IDE4MC41QzkwIDE3NCA5MiAxNjcuNSA5NiAxNjIuNUM4MSAxNjIuNSA2OC41IDE3Mi41IDY1IDE4N1oiIGZpbGw9IndoaXRlIi8+PC9nPjwvZz48L2c+PC9nPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDBfMTI1MV84OTk3Ij48cmVjdCB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgZmlsbD0id2hpdGUiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0iY2xpcDFfMTI1MV84OTk3Ij48cmVjdCB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgZmlsbD0id2hpdGUiLz48L2NsaXBQYXRoPjwvZGVmcz48L3N2Zz4="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: wg-easy
+  port: 51821
+settings:
+  - name: WG_HOST
+    type: text
+    required: true
+    label:
+      en: "The server's address from outside"
+      uk: Адреса сервера ззовні
+    hint:
+      en: The public IP address or name the devices connect to; the port has to be forwarded to this server by the router
+      uk: "Публічна IP-адреса або ім'я, до якого під'єднуються пристрої; порт має бути переадресований роутером на цей сервер"
+  - name: PORT_51820
+    type: port
+    default: 51820
+    label:
+      en: Wireguard VPN port
+      uk: Порт Wireguard VPN
+    advanced: true
+  - name: WEB_PORT
+    type: port
+    default: 51821
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+permissions:
+  capabilities:
+    en: "It asks for extra rights of the system: NET_ADMIN, SYS_MODULE"
+    uk: "Він просить додаткових прав у системі: NET_ADMIN, SYS_MODULE"

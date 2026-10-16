@@ -1,0 +1,33 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  emby:
+    devices:
+      - /dev/dri:/dev/dri
+      - /dev/vchiq:/dev/vchiq
+      - /dev/video10:/dev/video10
+      - /dev/video11:/dev/video11
+      - /dev/video12:/dev/video12
+    environment:
+      UID: "${UID:-1000}"
+      GID: "${GID:-100}"
+      GIDLIST: "${GIDLIST:-100}"
+      TZ: "${TZ:-UTC}"
+    image: emby/embyserver:4.9.5.0
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+    ports:
+      - "${WEB_PORT:-8096}:8096"
+      - "${PORT_8920:-8920}:8920"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${TV_SHOWS_DIR:-./Media/TV Shows}"
+        target: /data/tvshows
+      - type: bind
+        source: "${MOVIES_DIR:-./Media/Movies}"
+        target: /data/movies

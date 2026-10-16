@@ -1,0 +1,24 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  open-webui-ollama:
+    image: ghcr.io/open-webui/open-webui:ollama
+    runtime: nvidia
+    ipc: host
+    environment:
+      CPU_FALLBACK: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+    ports:
+      - "${WEB_PORT:-3050}:8080"
+    restart: always
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/open-webui"
+        target: /app/backend/data
+      - type: bind
+        source: "${APP_DATA:-.}/ollama"
+        target: /root/.ollama
+    privileged: false

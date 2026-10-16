@@ -1,0 +1,27 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  rdtclient:
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+      UMASK: "002"
+    cpu_shares: 50
+    command:
+      []
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    image: rogerfar/rdtclient:2.0.136
+    ports:
+      - "${WEB_PORT:-6500}:6500"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${DOWNLOADS_DIR:-./Downloads}"
+        target: /data/downloads
+      - type: bind
+        source: "${APP_DATA:-.}/db"
+        target: /data/db
+    privileged: false

@@ -1,0 +1,202 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Blinko
+tagline:
+  en: Blinko is an AI-powered card note-taking project.
+  de: Blinko ist ein KI-gestütztes Projekt für Kartennotizen.
+  el: Το Blinko είναι ένα έργο σημειώσεων σε κάρτες με τεχνητή νοημοσύνη.
+  fr: "Blinko est un projet de prise de notes par carte alimenté par l'IA."
+  hr: Blinko je projekt za bilježenje kartica napajen umjetnom inteligencijom.
+  it: "Blinko è un progetto di appunti su carta potenziato dall'IA."
+  ja: Blinko は、AI 搭載のカード形式ノートアプリです。瞬念的な思考を素早くキャプチャし、整理したい個人向けに設計されています。アイデアが閃いた瞬間にシームレスにメモを取ることができ、創造性の火花を失くすことはありません。
+  ko: Blinko 는 AI 기반 카드 노트 작성 프로젝트입니다.
+  nb: Blinko er et AI-drevet prosjekt for kortnotattekning.
+  pt: O Blinko é um projeto de notas em cartões alimentado por IA.
+  ru: Blinko — это проект для заметок на карточках с использованием искусственного интеллекта.
+  sv: Blinko är ett AI-drivet projekt för anteckningar på kort.
+  tr: "Blinko, yapay zeka destekli bir kart not alma projesidir."
+  zh: Blinko 是一个由人工智能驱动的卡片笔记项目。专为希望快速捕捉和整理转瞬即逝想法的个人设计。Blinko 允许用户无缝地记录下灵光乍现的瞬间，确保每一个创意的火花都不会流失。
+  uk: Blinko — проєкт для нотаток-карток зі штучним інтелектом.
+description:
+  en: "Blinko is an open-source personal knowledge management and information recording platform, focused on providing users with a lightweight, efficient, and scalable note-taking and knowledge organization experience. Through modular design and a modern technology stack, it enables users to quickly capture ideas, organize knowledge, and build their own information system.\n\nThe project emphasizes simplicity and customizability, supporting flexible combinations of various content types (text, tags, links, etc.), while its clear structured design helps users efficiently retrieve and connect information. Blinko also provides excellent extensibility, making it easy for developers to customize and enhance functionality according to their needs.\n\nIn practical use, Blinko balances usability and functionality, offering a smooth experience for daily note-taking, knowledge accumulation, or project document management - an ideal knowledge tool for long-term personal growth.\n\n**Main features:**\n\n- Lightweight note system for quick content recording and editing\n- Tags and structured organization to improve information retrieval efficiency\n- Support for multiple content types (text, links, etc.)\n- Extensible architecture for custom functionality and plugin development\n- Clean interface design focused on content rather than complex operations\n\n**Learn more:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  de: "Blinko ist eine Open-Source-Plattform für persönliches Wissensmanagement und Informationsaufzeichnung, die sich darauf konzentriert, Benutzern ein leichtes, effizientes und skalierbares Erlebnis für Notizen und Wissensorganisation zu bieten. Durch modulares Design und moderne Technologie-Stack ermöglicht es Benutzern, schnell Ideen festzuhalten, Wissen zu strukturieren und ihr eigenes Informationssystem aufzubauen.\n\nDas Projekt legt Wert auf Einfachheit und Anpassbarkeit, unterstützt flexible Kombinationen verschiedener Inhaltstypen (Text, Tags, Links usw.) und hilft Benutzern durch klares strukturiertes Design, effiziente Suche und Verknüpfung in großen Informationsmengen zu erreichen. Blinko bietet auch gute Erweiterbarkeit, sodass Entwickler Funktionen nach ihren Bedürfnissen anpassen und erweitern können.\n\nIn der praktischen Anwendung vereint Blinko Benutzerfreundlichkeit und Funktionalität und bietet ein reibungsloses Erlebnis für alltägliche Notizen, Wissenssammlung oder Projektmanagement – ein ideales Wissenswerkzeug für langfristiges persönliches Wachstum.\n\n**Hauptfunktionen:**\n\n- Leichtgewichtiges Notizsystem für schnelle Aufzeichnung und Bearbeitung\n- Tags und strukturierte Organisation zur Verbesserung der Informationssuche\n- Unterstützung für mehrere Inhaltstypen (Text, Links usw.)\n- Erweiterbare Architektur für benutzerdefinierte Funktionen und Plugin-Entwicklung\n- Sauberes Interface-Design, das sich auf Inhalte konzentriert\n\n**Mehr erfahren:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  el: "Το Blinko είναι μια ανοιχτού κώδικα πλατφόρμα διαχείρισης προσωπικής γνώσης και καταγραφής πληροφοριών, επικεντρωμένη στην παροχή ελαφριάς, αποτελεσματικής και επεκτάσιμης εμπειρίας λήψης σημειώσεων και οργάνωσης γνώσης στους χρήστες. Μέσω αρθρωτού σχεδιασμού και σύγχρονης τεχνολογικής υποδομής, επιτρέπει στους χρήστες να καταγράφουν γρήγορα ιδέες, να οργανώνουν γνώση και να δημιουργούν το δικό τους σύστημα πληροφοριών.\n\nΤο έργο δίνει έμφαση στην απλότητα και την προσαρμογή, υποστηρίζει ευέλικτους συνδυασμούς διαφόρων τύπων περιεχομένου (κείμενο, ετικέτες, σύνδεσμοι κ.λπ.), ενώ μέσω σαφούς δομημένου σχεδιασμού βοηθά τους χρήστες να επιτυγχάνουν αποτελεσματική ανάκτηση και συσχετισμό σε τεράστιες ποσότητες πληροφοριών. Το Blinko παρέχει επίσης καλές δυνατότητες επέκτασης, διευκολύνοντας τους προγραμματιστές να προσαρμόζουν και να βελτιώνουν λειτουργίες σύμφωνα με τις ανάγκες τους.\n\nΣτην πρακτική χρήση, το Blinko συνδυάζει ευκολία χρήσης και λειτουργικότητα, προσφέροντας μια ομαλή εμπειρία είτε για καθημερινές σημειώσεις, συσσώρευση γνώσης είτε για διαχείριση εγγράφων έργων – ένα ιδανικό εργαλείο γνώσης για μακροπρόθεσμη προσωπική ανάπτυξη.\n\n**Κύριες λειτουργίες:**\n\n- Ελαφρύ σύστημα σημειώσεων για γρήγορη καταγραφή και επεξεργασία\n- Ετικέτες και δομημένη οργάνωση για βελτίωση της αποτελεσματικότητας αναζήτησης\n- Υποστήριξη πολλαπλών τύπων περιεχομένου (κείμενο, σύνδεσμοι κ.λπ.)\n- Επεκτάσιμη αρχιτεκτονική για προσαρμοσμένες λειτουργίες και ανάπτυξη προσθηκών\n- Καθαρός σχεδιασμός διεπαφής που εστιάζει στο περιεχόμενο\n\n**Μάθετε περισσότερα:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  fr: "Blinko est une plateforme open-source de gestion des connaissances personnelles et d'enregistrement d'informations, axée sur la fourniture aux utilisateurs d'une expérience légère, efficace et évolutive de prise de notes et d'organisation des connaissances. Grâce à une conception modulaire et une pile technologique moderne, elle permet aux utilisateurs d capturer rapidement des idées, d'organiser leurs connaissances et de construire leur propre système d'information.\n\nLe projet met l'accent sur la simplicité et la personnalisation, prenant en charge des combinaisons flexibles de différents types de contenu (texte, tags, liens, etc.), tout en aidant les utilisateurs à obtenir une récupération et une association efficaces des informations grâce à une conception structurée claire. Blinko offre également d'excellentes possibilités d'extension, facilitant la personnalisation et l'amélioration des fonctionnalités par les développeurs selon leurs besoins.\n\nDans la pratique, Blinko équilibre ergonomie et fonctionnalité, offrant une expérience fluide que ce soit pour la prise de notes quotidienne, l'accumulation de connaissances ou la gestion de documents de projet – un outil de connaissances idéal pour la croissance personnelle à long terme.\n\n**Fonctionnalités principales :**\n\n- Système de notes léger pour un enregistrement et un edição rapides du contenu\n- Tags et organisation structurée pour améliorer l'efficacité de la recherche d'informations\n- Prise en charge de plusieurs types de contenu (texte, liens, etc.)\n- Architecture évolutive pour le développement de fonctionnalités personnalisées et de plugins\n- Conception d'interface épurée axée sur le contenu\n\n**En savoir plus :**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  hr: "Blinko je open-source platforma za osobno upravljanje znanjem i bilježenje informacija, usmjerena na pružanje laganog, učinkovitog i proširivog iskustva bilježenja i organiziranja znanja korisnicima. Kroz modularni dizajn i moderni tehnološki skup, omogućava korisnicima brzo bilježenje ideja, organiziranje znanja i izgradnju vlastitog informacijskog sustava.\n\nProjekt naglašava jednostavnost i prilagodljivost, podržava fleksibilne kombinacije različitih vrsta sadržaja (tekst, oznake, veze itd.), dok jasno strukturirani dizajn pomaže korisnicima postići učinkovito pretraživanje i povezivanje u velikim količinama informacija. Blinko također pruža izvrsnu proširivost, olakšavajući programerima prilagodbu i poboljšanje funkcionalnosti prema njihovim potrebama.\n\nU praktičnoj upotrebi, Blinko balansira jednostavnost korištenja i funkcionalnost, nudeći glatko iskustvo bilo za svakodnevno bilježenje, akumulaciju znanja ili upravljanje projektnom dokumentacijom – idealan alat za znanje za dugoročni osobni rast.\n\n**Glavne značajke:**\n\n- Lagan sustav bilježaka za brzo bilježenje i uređivanje sadržaja\n- Oznake i strukturirana organizacija za poboljšanje učinkovitosti pretraživanja informacija\n- Podrška za više vrsta sadržaja (tekst, veze itd.)\n- Proširiva arhitektura za prilagođene funkcionalnosti i razvoj dodataka\n- Čist dizajn sučelja usmjeren na sadržaj\n\n**Saznajte više:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  it: "Blinko è una piattaforma open-source per la gestione della conoscenza personale e la registrazione di informazioni, focalizzata sul fornire agli utenti un'esperienza leggera, efficiente e scalabile di take di appunti e organizzazione della conoscenza. Attraverso un design modulare e uno stack tecnologico moderno, consente agli utenti di catturare rapidamente idee, organizzare la conoscenza e costruire il proprio sistema informativo.\n\nIl progetto enfatizza la semplicità e la personalizzazione, supportando combinazioni flessibili di vari tipi di contenuto (testo, tag, link, ecc.), mentre il suo design strutturato chiaro aiuta gli utenti a ottenere un recupero e un'associazione efficienti in grandi quantità di informazioni. Blinko offre anche un'eccellente estensibilità, facilitando gli sviluppatori nella personalizzazione e nel miglioramento delle funzionalità secondo le loro esigenze.\n\nNell'uso pratico, Blinko bilancia usabilità e funzionalità, offrendo un'esperienza fluida sia per l'appuntamento quotidiano, l'accumulo di conoscenza che per la gestione della documentazione di progetto – uno strumento di conoscenza ideale per la crescita personale a lungo termine.\n\n**Funzionalità principali:**\n\n- Sistema di note leggero per una rapida registrazione e modifica dei contenuti\n- Tag e organizzazione strutturata per migliorare l'efficienza di ricerca delle informazioni\n- Supporto per più tipi di contenuto (testo, link, ecc.)\n- Architettura estensibile per funzionalità personalizzate e sviluppo di plugin\n- Design dell'interfaccia pulito, focalizzato sui contenuti\n\n**Scopri di più:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  ja: "Blinkoは、軽量で効率的かつスケーラブルなノート取りと知識整理のエクスペリエンスをユーザーに提供することに焦点を当てた、オープンソースの個人知識管理与情報記録プラットフォームです。モジュール式デザインと最新のテクノロジースタックにより、ユーザーはアイデアを素早く記録し、知識を整理し、独自の情報システムを構築ことができます。\n\nこのプロジェクトはシンプルさとカスタマイズ性を重視し、各种コンテンツタイプ（テキスト、タグ、リンクなど）の柔軟な組み合わせをサポート的同时に、明確な構造化デザインで大量の情報を効率的に検索·関連付けすることを支援します。Blinkoはまた、優れた拡張性を 提供し、開発者がニーズに応じて機能をカスタマイズ·強化することを容易にします。\n\n実際の使用では、Blinkoは使いやすさと機能性を両立させ、日常のノート、知識の蓄積、プロジェクト資料管理などに関わらずスムーズなエクスペリエンスを提供し、長期的な個人的な成長に理想的な知識ツールです。\n\n**主な機能：**\n\n- 軽量なノートシステムで、コンテンツの быструю записьと編集\n- 情報検索効率を向上させるタグと構造化された整理\n- 複数タイプのコンテンツ管理をサポート（テキスト、リンクなど）\n- カスタマイズ機能とプラグイン開発のための拡張可能なアーキテクチャ\n- コンテンツに焦点を当てたシンプルなインターフェース設計\n\n**詳細を見る：**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  ko: "Blinko는 사용자에게 가볍고 효율적이며 확장 가능한 메모 및 지식 조직 경험을 제공하는 데 중점을 둔 오픈소스 개인 지식 관리 및 정보 기록 플랫폼입니다. 모듈식 디자인과 최신 기술 스택을 통해 사용자가 아이디어를 빠르게 기록하고, 지식을 정리하며, 자신만의 정보 시스템을 구축할 수 있습니다.\n\n이 프로젝트는 단순함과 맞춤 설정을 강조하며, 다양한 콘텐츠 유형(텍스트, 태그, 링크 등)의 유연한 조합을 지원하고, 명확한 구조화 디자인을 통해 사용자가 대량의 정보에서 효율적인 검색과 연관을 달성할 수 있도록 도와줍니다. Blinko는 또한 우수한 확장성을 제공하여 개발자가 자신의 필요에 따라 기능을 맞춤 설정하고 강화할 수 있도록 합니다.\n\n실제 사용에서 Blinko는 사용 편의성과 기능성을 균형 있게 갖추고 있으며, 일상적인 메모, 지식 축적 또는 프로젝트 문서 관리에 관계없이 원활한 경험을 제공합니다 – 장기적인 개인적 성장에 이상적인 지식 도구입니다.\n\n**주요 기능:**\n\n- 콘텐츠를 빠르게 기록하고 편집할 수 있는 경량 메모 시스템\n- 정보 검색 효율성을 높이는 태그 및 구조화된 조직\n- 여러 유형의 콘텐츠 관리 지원(텍스트, 링크 등)\n- 사용자 정의 기능 및 플러그인 개발을 위한 확장 가능한 아키텍처\n- 콘텐츠에 집중하는 깔끔한 인터페이스 디자인\n\n**자세히 알아보기:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  nb: "Blinko er en åpen kildekode-plattform for personlig kunnskapsstyring og informasjonsregistrering, fokusert på å gi brukerne en lett, effektiv og skalerbar opplevelse for notat og kunnskapsorganisering. Gjennom modulær design og moderne teknologistack lar det brukere raskt fange ideer, organisere kunnskap og bygge sitt eget informasjonssystem.\n\nProsjektet legger vekt på enkelhet og tilpasning, støtter fleksible kombinasjoner av ulike innholdstyper (tekst, tags, lenker, etc.), samtidig som dets klare strukturerte design hjelper brukere med å oppnå effektiv gjenfinning og assosiasjon i enorme mengder informasjon. Blinko gir også utmerket utvidelsesmuligheter, noe som gjør det enkelt for utviklere å tilpasse og forbedre funksjonalitet etter deres behov.\n\nI praktisk bruk balanserer Blinko brukervennlighet og funksjonalitet, og tilbyr en jevn opplevelse enten det er for daglige notater, kunnskapsakkumulering eller prosjektdokumentasjon – et ideelt kunnskapsverktøy for langsiktig personlig vekst.\n\n**Hovedfunksjoner:**\n\n- Lettvekts notatsystem for rask innholdsinregistrering og redigering\n- Tags og strukturert organisering for å forbedre informasjonssøkeeffektiviteten\n- Støtte for flere innholdstyper (tekst, lenker, etc.)\n- Utvidbar arkitektur for tilpasset funksjonalitet og plugin-utvikling\n- Ren grensesnittdesign fokusert på innhold\n\n**Lær mer:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  pt: "Blinko é uma plataforma open-source de gestão de conhecimento pessoal e gravação de informações, focada em proporcionar aos utilizadores uma experiência leve, eficiente e escalável de tomada de notas e organização de conhecimento. Através de design modular e stack tecnológico moderno, permite aos utilizadores capturar rapidamente ideias, organizar conhecimento e construir o seu próprio sistema de informação.\n\nO projeto enfatiza simplicidade e personalização, suportando combinações flexíveis de vários tipos de conteúdo (texto, tags, links, etc.), enquanto o seu design estruturado claro ajuda os utilizadores a alcançar recuperação e associação eficientes em grandes quantidades de informação. Blinko também fornece excelente extensibilidade, facilitando o desenvolvimento personalizado e melhoria de funcionalidades pelos programadores de acordo com as suas necessidades.\n\nNa utilização prática, Blinko equilibra usabilidade e funcionalidade, oferecendo uma experiência fluida tanto para notas diárias, acumulação de conhecimento como gestão de documentação de projetos – uma ferramenta de conhecimento ideal para crescimento pessoal a longo prazo.\n\n**Funcionalidades principais:**\n\n- Sistema de notas leve para gravação e edição rápida de conteúdo\n- Tags e organização estruturada para melhorar a eficiência de pesquisa de informação\n- Suporte para múltiplos tipos de conteúdo (texto, links, etc.)\n- Arquitetura extensível para funcionalidade personalizada e desenvolvimento de plugins\n- Design de interface limpo focado no conteúdo\n\n**Saiba mais:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  ru: "Blinko — это платформа управления персональными знаниями и записи информации с открытым исходным кодом, ориентированная на предоставление пользователям легкого, эффективного и масштабируемого опыта ведения заметок и организации знаний. Благодаря модульному дизайну и современному технологическому стеку она позволяет пользователям быстро записывать идеи, систематизировать знания и создавать собственную информационную систему.\n\nПроект делает акцент на простоте и настраиваемости, поддерживая гибкие комбинации различных типов контента (текст, теги, ссылки и т. д.), а также помогает пользователям эффективно находить и связывать информацию в огромных объемах данных благодаря четкому структурированному дизайну. Blinko также обеспечивает отличную расширяемость, облегчая разработчикам настройку и улучшение функциональности в соответствии с их потребностями.\n\nНа практике Blinko сочетает удобство использования и функциональность, обеспечивая плавный опыт как для повседневных заметок, накопления знаний, так и для управления проектной документацией — идеальный инструмент знаний для долгосрочного личного роста.\n\n**Основные функции:**\n\n- Легковесная система заметок для быстрой записи и редактирования контента\n- Теги и структурированная организация для повышения эффективности поиска информации\n- Поддержка нескольких типов контента (текст, ссылки и т. д.)\n- Расширяемая архитектура для пользовательской функциональности и разработки плагинов\n- Чистый дизайн интерфейса, ориентированный на контент\n\n**Узнать больше:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  sv: "Blinko är en öppen källkodsplattform för personlig kunskapshantering och informationsregistrering, fokuserad på att ge användarna en lätt, effektiv och skalbar upplevelse för anteckningar och kunskapsorganisation. Genom modulär design och modern teknikstack låter den användare snabbt fånga idéer, organisera kunskap och bygga sitt eget informationssystem.\n\nProjektet betonar enkelhet och anpassningsbarhet, stödjer flexibla kombinationer av olika innehållstyper (text, taggar, länkar, etc.), medan dess tydliga strukturerade design hjälper användare att uppnå effektiv hämtning och association i stora mängder information. Blinko ger också utmärkt utvidgbarhet, vilket gör det lätt för utvecklare att anpassa och förbättra funktionalitet enligt sina behov.\n\nI praktisk användning balanserar Blinko användbarhet och funktionalitet, och erbjuder en smidig upplevelse antingen för dagliga anteckningar, kunskapsackumulering eller projektdokumentation – ett idealiskt kunskapsverktyg för långsiktig personlig tillväxt.\n\n**Huvudfunktioner:**\n\n- Lättviktigt anteckningssystem för snabb innehållsregistrering och redigering\n- Taggar och strukturerad organisation för att förbättra informationssökeffektiviteten\n- Stöd för flera innehållstyper (text, länkar, etc.)\n- Utvidgbar arkitektur för anpassad funktionalitet och plugin-utveckling\n- Ren gränssnittsdesign fokuserad på innehåll\n\n**Läs mer:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  tr: "Blinko, kullanıcılara hafif, verimli ve ölçeklenebilir bir not alma ve bilgi organizasyonu deneyimi sunmaya odaklanan açık kaynak kodlu bir kişisel bilgi yönetimi ve bilgi kayıt platformudur. Modüler tasarım ve modern teknoloji yığını aracılığıyla, kullanıcıların fikirleri hızla kaydetmelerini, bilgiyi düzenlemelerini ve kendi bilgi sistemlerini oluşturmalarını sağlar.\n\nProje, çeşitli içerik türlerinin (metin, etiket, bağlantı vb.) esnek kombinasyonlarını desteklerken sadelik ve özelleştirilebilirliğe vurgu yapar; ayrıca net yapılandırılmış tasarımı, kullanıcıların büyük miktarlardaki bilgi içinde verimli alma ve ilişkilendirme elde etmelerine yardımcı olur. Blinko ayrıca mükemmel genişletilebilirlik sunarak, geliştiricilerin ihtiyaçlarına göre işlevselliği özelleştirmelerini ve geliştirmelerini kolaylaştırır.\n\nPratik kullanımda Blinko, kullanılabilirlik ve işlevselliği dengeleyerek, günlük notlar, bilgi birikimi veya proje dokümantasyonu yönetimi için sorunsuz bir deneyim sunar – uzun vadeli kişisel büyüme için ideal bir bilgi aracıdır.\n\n**Ana özellikler:**\n\n- İçeriği hızla kaydetmek ve düzenlemek için hafif not sistemi\n- Bilgi arama verimliliğini artıran etiketler ve yapılandırılmış organizasyon\n- Birden fazla içerik türü desteği (metin, bağlantılar vb.)\n- Özel işlevsellik ve eklenti geliştirme için genişletilebilir mimari\n- Karmaşık işlemler yerine içeriğe odaklanan temiz arayüz tasarımı\n\n**Daha fazla bilgi edinin:**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  zh: "Blinko 是一个开源的个人知识管理与信息记录平台，专注于为用户提供轻量、高效且可扩展的笔记与知识组织体验。它通过模块化设计与现代化技术栈，使用户能够快速记录灵感、整理知识，并构建属于自己的信息体系。\n\n该项目强调简洁与可定制性，支持多种内容形式（如文本、标签、链接等）的灵活组合，同时通过清晰的结构化设计，帮助用户在海量信息中实现高效检索与关联。Blinko 还提供良好的扩展能力，便于开发者根据自身需求进行二次开发与功能增强。\n\n在实际使用中，Blinko 兼顾易用性与功能性，无论是日常笔记、知识沉淀，还是项目资料管理，都能够提供流畅的使用体验，是一个适合个人长期积累与成长的知识工具。\n\n**主要功能：**\n\n- 轻量化笔记系统，快速记录与编辑内容\n- 标签与结构化组织，提升信息检索效率\n- 支持多类型内容管理（文本、链接等）\n- 可扩展架构，便于自定义功能与插件开发\n- 简洁界面设计，专注内容而非复杂操作\n\n**了解更多：**\n\n- [Blinko GitHub](https://github.com/blinkospace/blinko)"
+  uk: "Blinko — платформа з відкритим кодом для особистого керування знаннями та запису інформації, що має забезпечити легке, ефективне й масштабоване ведення нотаток та впорядкування знань. Модульна конструкція й сучасний технологічний стек дають змогу швидко фіксувати ідеї, впорядковувати знання та будувати власну інформаційну систему.\n\nПроєкт робить ставку на простоту й можливість налаштування: можна гнучко поєднувати різні типи вмісту (текст, теги, посилання тощо), а чітка структура допомагає ефективно шукати інформацію та пов’язувати її між собою. Blinko також легко розширюється, тож розробники можуть без труднощів налаштовувати й доповнювати функціонал під свої потреби.\n\nНа практиці Blinko поєднує зручність і функціональність: він забезпечує комфортну роботу в щоденних нотатках, накопиченні знань чи веденні проєктної документації — це ідеальний інструмент знань для довготривалого особистого розвитку.\n\n**Основні можливості:**\n\n- Легка система нотаток для швидкого запису й редагування\n- Теги та структурована організація для ефективнішого пошуку інформації\n- Підтримка різних типів вмісту (текст, посилання тощо)\n- Розширювана архітектура для власних функцій і розробки плагінів\n- Чистий інтерфейс, зосереджений на вмісті, а не на складних діях\n\n**Дізнатися більше:**\n\n- [Blinko на GitHub](https://github.com/blinkospace/blinko)"
+category: productivity
+developer: blinkospace
+website: https://blinko.space/
+source: https://github.com/blinkospace/blinko
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: blinko
+  port: 1111
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 1111
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: NODE_ENV
+    type: text
+    default: production
+    label:
+      en: "Node.js environment mode (development, production, or test)"
+      de: "Node.js-Umgebungsmodus (Entwicklung, Produktion oder Test)"
+      el: "Λειτουργία περιβάλλοντος Node.js (ανάπτυξη, παραγωγή ή δοκιμές)"
+      fr: "Mode de l'environnement Node.js (développement, production ou test)"
+      hr: "Mod Node.js za okruženje (razvojno, proizvodno ili testiranje)"
+      it: "Modalità ambiente Node.js (sviluppo, produzione o test)"
+      ja: Node.js の環境モード（開発、本番、またはテスト）
+      ko: "Node.js 환경 모드 (개발, 프로덕션 또는 테스트)"
+      nb: "Modus for Node.js-miljøet (utvikling, produksjon eller testing)"
+      pt: "Modo de ambiente do Node.js (desenvolvimento, produção ou teste)"
+      ru: "Режим среды Node.js (разработка, производство или тестирование)"
+      sv: "Node.js-miljöläge (utveckling, produktion eller test)"
+      tr: "Node.js ortam modu (geliştirme, üretim veya test)"
+      zh: Node.js 环境模式（开发、生产或测试）
+      uk: "Режим середовища Node.js (development, production або test)"
+  - name: NEXTAUTH_URL
+    type: text
+    default: http://localhost:1111
+    label:
+      en: Base URL for NextAuth.js authentication provider
+      de: Basis-URL für den NextAuth.js-Authentifizierungsanbieter
+      el: Διεύθυνση βάσης δεδομένων για τον προμηθευτή αναγνώρισης NextAuth.js
+      fr: "URL de base pour le fournisseur d'authentification NextAuth.js"
+      hr: Osnovna URL adresa za pružatelja autentičnosti NextAuth.js
+      it: URL base per il provider di autenticazione NextAuth.js
+      ja: NextAuth.js 認証プロバイダーのベースURL
+      ko: NextAuth.js 인증 제공자를 위한 기본 URL
+      nb: Base-URL for NextAuth.js-autentiseringsleverandør
+      pt: URL base para o provedor de autenticação do NextAuth.js
+      ru: Основной URL для провайдера аутентификации NextAuth.js
+      sv: Bas-URL för NextAuth.js-autentiseringsleverantör
+      tr: NextAuth.js kimlik doğrulama sağlayıcısı için temel URL
+      zh: NextAuth.js 认证提供器的基础 URL
+      uk: Базова адреса для постачальника автентифікації NextAuth.js
+  - name: NEXT_PUBLIC_BASE_URL
+    type: text
+    default: http://localhost:1111
+    label:
+      en: Public base URL for client-side Next.js application
+      de: Öffentliche Basis-URL für eine clientseitige Next.js-Anwendung
+      el: Δημόσιο baseUrl για εφαρμογή Next.js στο πλευρό του πελάτη
+      fr: URL de base public pour une application côté client Next.js
+      hr: Javna osnovna URL adresa za klijentsku Next.js aplikaciju
+      it: "URL di base pubblico per un'applicazione Next.js lato client"
+      ja: クライアントサイドの Next.js アプリケーション用の公開ベースURL
+      ko: 클라이언트 측 Next.js 애플리케이션을 위한 공인 기본 URL
+      nb: Offentlig base-URL for klient-siden Next.js-applikasjon
+      pt: URL base público para aplicação do lado do cliente do Next.js
+      ru: Публичный базовый URL для клиентского приложения Next.js
+      sv: Public basadress för klientbaserad Next.js-app
+      tr: İstemci tarafı Next.js uygulaması için public temel URL
+      zh: 客户端 Next.js 应用的公共基础 URL
+      uk: Публічна базова адреса клієнтської частини Next.js
+  - name: NEXTAUTH_SECRET
+    type: secret
+    length: 44
+    label:
+      en: Secret key used to encrypt NextAuth.js JWT tokens
+      de: Geheimer Schlüssel zum Verschlüsseln von NextAuth.js-JWT-Token
+      fr: Clé secrète utilisée pour chiffrer les jetons JWT de NextAuth.js
+      hr: Tajna ključica korištena za šifriranje NextAuth.js JWT tokena
+      it: Chiave segreta utilizzata per criptare i token JWT di NextAuth.js
+      ja: NextAuth.js の JWT トークンを暗号化するために使用されるシークレットキー
+      ko: NextAuth.js JWT 토큰을 암호화하는 데 사용되는 시크릿 키
+      nb: Hemmelig nøkkel som brukes til å kryptere NextAuth.js JWT-tokener
+      pt: Chave secreta usada para encriptar os tokens JWT do NextAuth.js
+      ru: "Секретный ключ, используемый для шифрования токенов JWT NextAuth.js"
+      sv: Sekret nyckel som används för att kryptera NextAuth.js JWT-token
+      tr: NextAuth.js JWT tokenlarını şifrelemek için kullanılan gizli anahtar
+      zh: 用于加密 NextAuth.js JWT 令牌的密钥
+      uk: Секретний ключ для шифрування JWT-токенів NextAuth.js
+  - name: DATABASE_URL
+    type: text
+    default: postgresql://postgres:JWD9bxUR7Um9PaGg7FQZ@blinko-postgres:5432/postgres
+    label:
+      en: PostgreSQL database connection string with credentials
+      de: Verbindungshinweis zur PostgreSQL-Datenbank mit Anmeldeinformationen
+      el: Συμβολοσειρά σύνδεσης με βάση PostgreSQL με πιστοποιητικά
+      fr: Chaîne de connexion à la base de données PostgreSQL avec les identifiants
+      hr: Veznica za bazu podataka PostgreSQL s vjerodajnicama
+      it: String di connessione al database PostgreSQL con credenziali
+      ja: PostgreSQL データベース接続文字列と認証情報
+      ko: PostgreSQL 데이터베이스 연결 문자열 및 인증 정보
+      nb: PostgreSQL-databas tilkoblingsstreng med påloggingsopplysninger
+      pt: String de ligação à base de dados PostgreSQL com credenciais
+      ru: Строка подключения к базе данных PostgreSQL с учетными данными
+      sv: Anslutningssträng för PostgreSQL-databas med autentiseringsuppgifter
+      tr: PostgreSQL veritabanı bağlantı dizini ve kimlik bilgileri
+      zh: PostgreSQL 数据库连接字符串（含凭据）
+      uk: Рядок підключення до бази PostgreSQL з обліковими даними
+  - name: POSTGRES_DB
+    type: text
+    default: postgres
+    label:
+      en: Name of the PostgreSQL database to create and use
+      de: Name der zu erstellenden und zu verwendenden PostgreSQL-Datenbank
+      fr: Nom de la base de données PostgreSQL à créer et utiliser
+      hr: Ime baze podataka PostgreSQL-a koju treba stvoriti i koristiti
+      it: Nome del database PostgreSQL da creare e utilizzare
+      ja: 作成して使用する PostgreSQL データベースの名前
+      ko: PostgreSQL 데이터베이스를 생성하고 사용할 이름
+      nb: Navnet på PostgreSQL-databasen som skal opprettes og brukes
+      pt: Nome da base de dados PostgreSQL a criar e utilizar
+      ru: Имя базы данных PostgreSQL для создания и использования
+      sv: Namnet på den PostgreSQL-databas som ska skapas och användas
+      tr: PostgreSQL veritabanı oluşturulacak ve kullanılacak ad
+      zh: 要创建并使用的 PostgreSQL 数据库名称
+      uk: "Назва бази PostgreSQL, яку буде створено й використано"
+  - name: POSTGRES_USER
+    type: text
+    default: postgres
+    label:
+      en: PostgreSQL database user for authentication
+      de: PostgreSQL-Datenbankbenutzer für die Authentifizierung
+      el: Χρήστης βάσης δεδομένων PostgreSQL για πιστοποίηση
+      fr: "Utilisateur de base de données PostgreSQL pour l'authentification"
+      hr: Baza podataka PostgreSQL korisnik za autentifikaciju
+      it: "Utente del database PostgreSQL per l'autenticazione"
+      ja: PostgreSQL データベースユーザーの認証用
+      ko: PostgreSQL 데이터베이스 사용자를 인증을 위한
+      nb: Bruker for PostgreSQL-databasen til autentisering
+      pt: Utilizador da base de dados PostgreSQL para autenticação
+      ru: Пользователь базы данных PostgreSQL для аутентификации
+      sv: Användare för databas PostgreSQL för autentisering
+      tr: PostgreSQL veritabanı kullanıcısı kimlik doğrulama için
+      zh: PostgreSQL 数据库用户用于身份验证
+      uk: Користувач бази PostgreSQL для автентифікації
+  - name: POSTGRES_PASSWORD
+    type: secret
+    label:
+      en: PostgreSQL database user password for authentication
+      de: PostgreSQL-Datenbankbenutzerpasswort für die Authentifizierung
+      el: Λέξη κωδικού χρήστη βάσης δεδομένων PostgreSQL για πιστοποίηση
+      hr: Lozinka korisnika baze podataka PostgreSQL za autentifikaciju
+      it: "Password dell'utente del database PostgreSQL per l'autenticazione"
+      ja: PostgreSQL データベースユーザーのパスワード（認証用）
+      ko: PostgreSQL 데이터베이스 사용자 비밀번호 인증
+      nb: Passord for PostgreSQL-databasbruker for autentisering
+      pt: Palavra-passe do utilizador da base de dados PostgreSQL para autenticação
+      ru: Пароль пользователя базы данных PostgreSQL для аутентификации
+      sv: Lösenord för användare i PostgreSQL-databasen för autentisering
+      tr: PostgreSQL veritabanı kullanıcı şifresi kimlik doğrulama için
+      zh: PostgreSQL 数据库用户密码用于身份验证
+      uk: Пароль користувача бази PostgreSQL для автентифікації

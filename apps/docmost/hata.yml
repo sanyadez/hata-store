@@ -1,0 +1,190 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Docmost
+tagline:
+  en: A modern wiki and knowledge base for teams
+  it: Un wiki moderno e base di conoscenze per i team
+  nb: En moderne wiki og kunnskapsbase for team
+  zh: 现代化的团队知识库和wiki平台
+  ja: チーム向けのモダンなwikiと知識ベース
+  ko: 팀을 위한 현대적인 위키 및 지식 기반
+  fr: Un wiki moderne et une base de connaissances pour les équipes
+  de: Ein modernes Wiki und eine Wissensbasis für Teams
+  sv: En modern wiki och kunskapsbas för team
+  el: Ένα σύγχρονο wiki και βάση γνώσεων για ομάδες
+  hr: Moderni wiki i baza znanja za timove
+  pt: Um wiki moderno e base de conhecimento para equipas
+  ru: Современная вики и база знаний для команд
+  tr: Takımlar için modern bir wiki ve bilgi tabanı
+  uk: Сучасна вікі та база знань для команд
+description:
+  en: "Docmost is a self-hosted collaborative wiki and documentation tool designed for real-time collaboration, allowing multiple users to edit the same page simultaneously without conflicts. Its intuitive interface is ideal for teams managing knowledge bases, project documentation, or wikis, offering an efficient knowledge creation and sharing experience.\n\nThe tool's core features include real-time collaborative editing and space organization. It supports multiple users editing pages in real time for seamless collaboration and organizes pages into 'spaces' for teams, projects, or departments, each with independent permission settings. A rich text editor with Markdown shortcuts simplifies content creation. Built-in Draw.io, Excalidraw, and Mermaid tools provide robust diagramming capabilities.\n\nIt offers permissions management, assigning access via user groups for content security. Pages can be publicly shared via links for external access. Comments enhance communication and feedback, while page history tracks changes. Features like nested navigation, quick search, file attachments, and Markdown/HTML import/export are supported. The tool’s collaboration and flexibility deliver a modern documentation solution.\n\n**Key Features:**\n- Real-time collaborative editing for multiple users\n- Spaces for organizing pages by team, project or department\n- Permissions management with user group access control\n- Rich text editor with Markdown shortcuts\n- Built-in Draw.io, Excalidraw, Mermaid diagramming tools\n- Public page sharing via links\n- Page comments for communication and feedback\n- Page history, nested navigation, search, and file attachments\n\n**Learn More:**\n- [Docmost Official Website](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  it: "Docmost è uno strumento collaborativo di wiki e documentazione self-hosted progettato per la collaborazione in tempo reale, che consente a più utenti di modificare la stessa pagina simultaneamente senza conflitti. La sua interfaccia intuitiva è ideale per team che gestiscono basi di conoscenze, documentazione di progetti o wiki, offrendo un'esperienza efficiente di creazione e condivisione della conoscenza.\n\nLe funzionalità principali dello strumento includono l'editing collaborativo in tempo reale e l'organizzazione degli spazi. Supporta più utenti che modificano le pagine in tempo reale per una collaborazione senza interruzioni e organizza le pagine in 'spazi' per team, progetti o dipartimenti, ciascuno con impostazioni di permessi indipendenti. Un editor di testo ricco con scorciatoie Markdown semplifica la creazione di contenuti. Gli strumenti integrati Draw.io, Excalidraw e Mermaid forniscono robuste capacità di diagrammi.\n\nOffre gestione dei permessi, assegnando l'accesso tramite gruppi di utenti per la sicurezza dei contenuti. Le pagine possono essere condivise pubblicamente tramite link per l'accesso esterno. I commenti migliorano la comunicazione e il feedback, mentre la cronologia delle pagine traccia le modifiche. Sono supportate funzionalità come navigazione nidificata, ricerca rapida, allegati di file e importazione/esportazione Markdown/HTML. La collaborazione e flessibilità dello strumento offrono una soluzione di documentazione moderna.\n\n**Caratteristiche Principali:**\n- Editing collaborativo in tempo reale per più utenti\n- Spazi per organizzare pagine per team, progetto o dipartimento\n- Gestione permessi con controllo accesso gruppi utenti\n- Editor di testo ricco con scorciatoie Markdown\n- Strumenti di diagrammi integrati Draw.io, Excalidraw, Mermaid\n- Condivisione pubblica pagine tramite link\n- Commenti pagina per comunicazione e feedback\n- Cronologia pagine, navigazione nidificata, ricerca e allegati file\n\n**Scopri di Più:**\n- [Sito Ufficiale Docmost](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  nb: "Docmost er et selvhostet samarbeidsverktøy for wiki og dokumentasjon designet for sanntidssamarbeid, som lar flere brukere redigere samme side samtidig uten konflikter. Det intuitive grensesnittet er ideelt for team som administrerer kunnskapsbaser, prosjektdokumentasjon eller wikier, og tilbyr en effektiv opplevelse for kunnskapsopprettelse og -deling.\n\nVerktøyets kjernefunksjoner inkluderer sanntids samarbeidsredigering og romorganisering. Det støtter flere brukere som redigerer sider i sanntid for sømløst samarbeid og organiserer sider i 'rom' for team, prosjekter eller avdelinger, hver med uavhengige tillatelsesinnstillinger. En rik tekstredigerer med Markdown-snarveier forenkler innholdsopprettelse. Innebygde Draw.io, Excalidraw og Mermaid-verktøy gir robuste diagramfunksjoner.\n\nDet tilbyr tillatelseshåndtering, tildeling av tilgang via brukergrupper for innholdssikkerhet. Sider kan deles offentlig via lenker for ekstern tilgang. Kommentarer forbedrer kommunikasjon og tilbakemelding, mens sidehistorikk sporer endringer. Funksjoner som nestet navigasjon, hurtigsøk, filvedlegg og Markdown/HTML import/eksport støttes. Verktøyets samarbeid og fleksibilitet leverer en moderne dokumentasjonsløsning.\n\n**Hovedfunksjoner:**\n- Sanntids samarbeidsredigering for flere brukere\n- Rom for organisering av sider etter team, prosjekt eller avdeling\n- Tillatelseshåndtering med brukergruppes tilgangskontroll\n- Rik tekstredigerer med Markdown-snarveier\n- Innebygde Draw.io, Excalidraw, Mermaid diagramverktøy\n- Offentlig sidedeling via lenker\n- Sidekommentarer for kommunikasjon og tilbakemelding\n- Sidehistorikk, nestet navigasjon, søk og filvedlegg\n\n**Lær Mer:**\n- [Docmost Offisielle Nettside](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  zh: "Docmost 是一款自托管的协作式 wiki 和文档管理工具，专为实时协作设计，允许多用户同时编辑同一页面而不相互覆盖。其直观的界面适合团队管理知识库、项目文档或 wiki，提供高效的知识创建与分享体验。\n\n该工具的核心功能包括实时协作编辑和空间组织。它支持多人实时编辑页面，确保无缝协作，并通过‘空间’功能按团队、项目或部门组织页面，每一空间拥有独立权限设置。富文本编辑器支持 Markdown 快捷方式，简化内容创作。内置 Draw.io、Excalidraw 和 Mermaid 工具，提供强大的图表功能。\n\n它提供权限管理，通过用户组统一分配访问权限，确保内容安全。页面支持公开分享，允许通过链接与外部用户共享。评论功能促进沟通与反馈，页面历史记录跟踪更改。支持嵌套导航、快速搜索、文件附件以及 Markdown 和 HTML 格式的导入导出。该工具以协作性和灵活性为核心，提供现代化的文档管理解决方案。\n\n**主要功能：**\n- 实时协作编辑，支持多人同时编辑\n- 空间功能，按团队、项目或部门组织页面\n- 权限管理，通过用户组控制访问\n- 富文本编辑器，支持 Markdown 快捷方式\n- 内置 Draw.io、Excalidraw、Mermaid 图表工具\n- 公开分享页面，通过链接访问\n- 页面评论，促进沟通与反馈\n- 页面历史、嵌套导航、搜索和文件附件\n\n**了解更多：**\n- [Docmost 官方网站](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  ja: "Docmostは、リアルタイムコラボレーション用に設計されたセルフホスト型のコラボレーションwikiおよびドキュメントツールで、複数のユーザーが競合することなく同じページを同時に編集できます。その直感的なインターフェースは、ナレッジベース、プロジェクトドキュメント、またはwikiを管理するチームに最適で、効率的な知識作成と共有体験を提供します。\n\nこのツールの中核機能には、リアルタイムコラボレーション編集とスペース組織化が含まれます。複数のユーザーがリアルタイムでページを編集してシームレスなコラボレーションを実現し、チーム、プロジェクト、または部門ごとにページを「スペース」に整理し、それぞれが独立した権限設定を持ちます。Markdownショートカット付きのリッチテキストエディターがコンテンツ作成を簡素化します。内蔵のDraw.io、Excalidraw、Mermaidツールが堅牢な図表作成機能を提供します。\n\nコンテンツセキュリティのためユーザーグループを介してアクセスを割り当てる権限管理を提供します。ページは外部アクセス用にリンク経由で公開共有できます。コメントがコミュニケーションとフィードバックを向上させ、ページ履歴が変更を追跡します。ネストされたナビゲーション、クイック検索、ファイル添付、Markdown/HTMLインポート/エクスポートなどの機能がサポートされています。このツールのコラボレーションと柔軟性が現代的なドキュメントソリューションを提供します。\n\n**主な機能：**\n- 複数ユーザー向けリアルタイムコラボレーション編集\n- チーム、プロジェクト、部門別ページ整理用スペース\n- ユーザーグループアクセス制御による権限管理\n- Markdownショートカット付きリッチテキストエディター\n- 内蔵Draw.io、Excalidraw、Mermaid図表ツール\n- リンク経由での公開ページ共有\n- コミュニケーションとフィードバック用ページコメント\n- ページ履歴、ネストナビゲーション、検索、ファイル添付\n\n**詳細はこちら：**\n- [Docmost公式ウェブサイト](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  ko: "Docmost는 실시간 협업을 위해 설계된 셀프호스팅 협업 위키 및 문서화 도구로, 여러 사용자가 충돌 없이 동일한 페이지를 동시에 편집할 수 있습니다. 직관적인 인터페이스는 지식 기반, 프로젝트 문서 또는 위키를 관리하는 팀에게 이상적이며, 효율적인 지식 생성 및 공유 경험을 제공합니다.\n\n이 도구의 핵심 기능에는 실시간 협업 편집과 공간 구성이 포함됩니다. 여러 사용자가 실시간으로 페이지를 편집하여 원활한 협업을 지원하고, 각각 독립적인 권한 설정을 가진 팀, 프로젝트 또는 부서별로 페이지를 '공간'으로 구성합니다. Markdown 단축키가 있는 리치 텍스트 편집기가 콘텐츠 생성을 단순화합니다. 내장된 Draw.io, Excalidraw, Mermaid 도구가 강력한 다이어그램 기능을 제공합니다.\n\n콘텐츠 보안을 위해 사용자 그룹을 통해 액세스를 할당하는 권한 관리를 제공합니다. 페이지는 외부 액세스를 위해 링크를 통해 공개적으로 공유할 수 있습니다. 댓글이 커뮤니케이션과 피드백을 향상시키고, 페이지 기록이 변경 사항을 추적합니다. 중첩 내비게이션, 빠른 검색, 파일 첨부, Markdown/HTML 가져오기/내보내기와 같은 기능이 지원됩니다. 이 도구의 협업과 유연성이 현대적인 문서화 솔루션을 제공합니다.\n\n**주요 기능:**\n- 여러 사용자를 위한 실시간 협업 편집\n- 팀, 프로젝트 또는 부서별 페이지 구성을 위한 공간\n- 사용자 그룹 액세스 제어를 통한 권한 관리\n- Markdown 단축키가 있는 리치 텍스트 편집기\n- 내장된 Draw.io, Excalidraw, Mermaid 다이어그램 도구\n- 링크를 통한 공개 페이지 공유\n- 커뮤니케이션 및 피드백을 위한 페이지 댓글\n- 페이지 기록, 중첩 내비게이션, 검색 및 파일 첨부\n\n**자세히 알아보기:**\n- [Docmost 공식 웹사이트](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  fr: "Docmost est un outil de wiki et de documentation collaboratif auto-hébergé conçu pour la collaboration en temps réel, permettant à plusieurs utilisateurs de modifier la même page simultanément sans conflits. Son interface intuitive est idéale pour les équipes gérant des bases de connaissances, de la documentation de projet ou des wikis, offrant une expérience efficace de création et de partage de connaissances.\n\nLes fonctionnalités principales de l'outil incluent l'édition collaborative en temps réel et l'organisation d'espaces. Il prend en charge plusieurs utilisateurs éditant des pages en temps réel pour une collaboration transparente et organise les pages en 'espaces' pour les équipes, projets ou départements, chacun avec des paramètres de permissions indépendants. Un éditeur de texte riche avec des raccourcis Markdown simplifie la création de contenu. Les outils intégrés Draw.io, Excalidraw et Mermaid fournissent des capacités de diagrammes robustes.\n\nIl offre la gestion des permissions, attribuant l'accès via les groupes d'utilisateurs pour la sécurité du contenu. Les pages peuvent être partagées publiquement via des liens pour l'accès externe. Les commentaires améliorent la communication et les retours, tandis que l'historique des pages suit les modifications. Des fonctionnalités comme la navigation imbriquée, la recherche rapide, les pièces jointes et l'import/export Markdown/HTML sont prises en charge. La collaboration et la flexibilité de l'outil offrent une solution de documentation moderne.\n\n**Fonctionnalités Principales :**\n- Édition collaborative en temps réel pour plusieurs utilisateurs\n- Espaces pour organiser les pages par équipe, projet ou département\n- Gestion des permissions avec contrôle d'accès par groupe d'utilisateurs\n- Éditeur de texte riche avec raccourcis Markdown\n- Outils de diagrammes intégrés Draw.io, Excalidraw, Mermaid\n- Partage public de pages via liens\n- Commentaires de page pour communication et retours\n- Historique des pages, navigation imbriquée, recherche et pièces jointes\n\n**En Savoir Plus :**\n- [Site Officiel Docmost](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  de: "Docmost ist ein selbst-gehostetes kollaboratives Wiki- und Dokumentations-Tool, das für Echtzeit-Zusammenarbeit entwickelt wurde und es mehreren Benutzern ermöglicht, dieselbe Seite gleichzeitig ohne Konflikte zu bearbeiten. Seine intuitive Oberfläche ist ideal für Teams, die Wissensbasen, Projektdokumentation oder Wikis verwalten, und bietet eine effiziente Erfahrung bei der Wissenserstellung und -weitergabe.\n\nDie Kernfunktionen des Tools umfassen kollaborative Echtzeitbearbeitung und Raumorganisation. Es unterstützt mehrere Benutzer, die Seiten in Echtzeit für nahtlose Zusammenarbeit bearbeiten, und organisiert Seiten in 'Räume' für Teams, Projekte oder Abteilungen, jeweils mit unabhängigen Berechtigungseinstellungen. Ein Rich-Text-Editor mit Markdown-Shortcuts vereinfacht die Inhaltserstellung. Integrierte Draw.io-, Excalidraw- und Mermaid-Tools bieten robuste Diagrammfunktionen.\n\nEs bietet Berechtigungsverwaltung durch Zuweisung von Zugriff über Benutzergruppen für Inhaltssicherheit. Seiten können öffentlich über Links für externen Zugriff geteilt werden. Kommentare verbessern Kommunikation und Feedback, während Seitenverlauf Änderungen verfolgt. Funktionen wie verschachtelte Navigation, Schnellsuche, Dateianhänge und Markdown/HTML-Import/Export werden unterstützt. Die Zusammenarbeit und Flexibilität des Tools liefern eine moderne Dokumentationslösung.\n\n**Hauptmerkmale:**\n- Kollaborative Echtzeitbearbeitung für mehrere Benutzer\n- Räume zur Seitenorganisation nach Team, Projekt oder Abteilung\n- Berechtigungsverwaltung mit Benutzergruppenns-Zugriffskontrolle\n- Rich-Text-Editor mit Markdown-Shortcuts\n- Integrierte Draw.io-, Excalidraw-, Mermaid-Diagramm-Tools\n- Öffentliches Seitenteilen über Links\n- Seitenkommentare für Kommunikation und Feedback\n- Seitenverlauf, verschachtelte Navigation, Suche und Dateianhänge\n\n**Mehr Erfahren:**\n- [Docmost Offizielle Website](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  sv: "Docmost är ett självhostnat samarbetsverktyg för wiki och dokumentation designat för realtidssamarbete, som låter flera användare redigera samma sida samtidigt utan konflikter. Dess intuitiva gränssnitt är idealiskt för team som hanterar kunskapsbaser, projektdokumentation eller wikis, och erbjuder en effektiv upplevelse för kunskapsskapande och delning.\n\nVerktygets kärnfunktioner inkluderar samarbetsredigering i realtid och rymdorganisation. Det stöder flera användare som redigerar sidor i realtid för sömlöst samarbete och organiserar sidor i 'rymder' för team, projekt eller avdelningar, var och en med oberoende behörighetsinställningar. En rik textredigerare med Markdown-genvägar förenklar innehållsskapande. Inbyggda Draw.io-, Excalidraw- och Mermaid-verktyg ger robusta diagramfunktioner.\n\nDet erbjuder behörighetshantering genom att tilldela åtkomst via användargrupper för innehållssäkerhet. Sidor kan delas offentligt via länkar för extern åtkomst. Kommentarer förbättrar kommunikation och feedback, medan sidhistorik spårar ändringar. Funktioner som nästlad navigation, snabbsökning, filbilagor och Markdown/HTML-import/export stöds. Verktygets samarbete och flexibilitet levererar en modern dokumentationslösning.\n\n**Huvudfunktioner:**\n- Samarbetsredigering i realtid för flera användare\n- Rymder för sidorganisation per team, projekt eller avdelning\n- Behörighetshantering med användargruppåtkomstkontroll\n- Rik textredigerare med Markdown-genvägar\n- Inbyggda Draw.io-, Excalidraw-, Mermaid-diagramverktyg\n- Offentlig siddelning via länkar\n- Sidkommentarer för kommunikation och feedback\n- Sidhistorik, nästlad navigation, sökning och filbilagor\n\n**Lär Dig Mer:**\n- [Docmost Officiell Webbplats](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  el: "Το Docmost είναι ένα αυτο-φιλοξενούμενο συνεργατικό εργαλείο wiki και τεκμηρίωσης σχεδιασμένο για συνεργασία σε πραγματικό χρόνο, επιτρέποντας σε πολλαπλούς χρήστες να επεξεργάζονται την ίδια σελίδα ταυτόχρονα χωρίς συγκρούσεις. Η διαισθητική του διεπαφή είναι ιδανική για ομάδες που διαχειρίζονται βάσεις γνώσεων, τεκμηρίωση έργων ή wikis, προσφέροντας μια αποδοτική εμπειρία δημιουργίας και κοινοποίησης γνώσης.\n\nΤα βασικά χαρακτηριστικά του εργαλείου περιλαμβάνουν συνεργατική επεξεργασία σε πραγματικό χρόνο και οργάνωση χώρων. Υποστηρίζει πολλαπλούς χρήστες που επεξεργάζονται σελίδες σε πραγματικό χρόνο για απρόσκοπτη συνεργασία και οργανώνει σελίδες σε 'χώρους' για ομάδες, έργα ή τμήματα, ο καθένας με ανεξάρτητες ρυθμίσεις αδειών. Ένας πλούσιος επεξεργαστής κειμένου με συντομεύσεις Markdown απλοποιεί τη δημιουργία περιεχομένου. Τα ενσωματωμένα εργαλεία Draw.io, Excalidraw και Mermaid παρέχουν ισχυρές δυνατότητες διαγραμμάτων.\n\nΠροσφέρει διαχείριση αδειών, εκχωρώντας πρόσβαση μέσω ομάδων χρηστών για ασφάλεια περιεχομένου. Οι σελίδες μπορούν να κοινοποιηθούν δημόσια μέσω συνδέσμων για εξωτερική πρόσβαση. Τα σχόλια βελτιώνουν την επικοινωνία και τα σχόλια, ενώ το ιστορικό σελίδων παρακολουθεί τις αλλαγές. Υποστηρίζονται χαρακτηριστικά όπως ένθετη πλοήγηση, γρήγορη αναζήτηση, συνημμένα αρχεία και εισαγωγή/εξαγωγή Markdown/HTML. Η συνεργασία και ευελιξία του εργαλείου παρέχουν μια σύγχρονη λύση τεκμηρίωσης.\n\n**Βασικά Χαρακτηριστικά:**\n- Συνεργατική επεξεργασία σε πραγματικό χρόνο για πολλαπλούς χρήστες\n- Χώροι για οργάνωση σελίδων ανά ομάδα, έργο ή τμήμα\n- Διαχείριση αδειών με έλεγχο πρόσβασης ομάδων χρηστών\n- Πλούσιος επεξεργαστής κειμένου με συντομεύσεις Markdown\n- Ενσωματωμένα εργαλεία διαγραμμάτων Draw.io, Excalidraw, Mermaid\n- Δημόσια κοινοποίηση σελίδων μέσω συνδέσμων\n- Σχόλια σελίδων για επικοινωνία και σχόλια\n- Ιστορικό σελίδων, ένθετη πλοήγηση, αναζήτηση και συνημμένα αρχεία\n\n**Μάθετε Περισσότερα:**\n- [Επίσημος Ιστότοπος Docmost](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  hr: "Docmost je samo-hostiran suradnički wiki i dokumentacijski alat dizajniran za suradnju u stvarnom vremenu, omogućavajući više korisnika da uređuju istu stranicu istovremeno bez sukoba. Njegovo intuitivno sučelje idealno je za timove koji upravljaju bazama znanja, projektnom dokumentacijom ili wikijima, pružajući učinkovito iskustvo stvaranja i dijeljenja znanja.\n\nOsnovne značajke alata uključuju suradničko uređivanje u stvarnom vremenu i organizaciju prostora. Podržava više korisnika koji uređuju stranice u stvarnom vremenu za besprijekorno suradništvo i organizira stranice u 'prostore' za timove, projekte ili odjele, svaki s neovisnim postavkama dozvola. Bogati tekst editor s Markdown prečacima pojednostavljuje stvaranje sadržaja. Ugrađeni Draw.io, Excalidraw i Mermaid alati pružaju robusne mogućnosti dijagrama.\n\nNudi upravljanje dozvolama, dodjeljujući pristup putem korisničkih grupa za sigurnost sadržaja. Stranice se mogu javno dijeliti putem veza za vanjski pristup. Komentari poboljšavaju komunikaciju i povratne informacije, dok povijest stranica prati promjene. Podržane su značajke poput ugniježđene navigacije, brzog pretraživanja, privitaka datoteka i Markdown/HTML uvoza/izvoza. Suradnja i fleksibilnost alata pružaju moderno rješenje dokumentacije.\n\n**Ključne Značajke:**\n- Suradničko uređivanje u stvarnom vremenu za više korisnika\n- Prostori za organizaciju stranica po timu, projektu ili odjelu\n- Upravljanje dozvolama s kontrolom pristupa korisničkih grupa\n- Bogati tekst editor s Markdown prečacima\n- Ugrađeni Draw.io, Excalidraw, Mermaid alati za dijagrame\n- Javno dijeljenje stranica putem veza\n- Komentari stranica za komunikaciju i povratne informacije\n- Povijest stranica, ugniježđena navigacija, pretraživanje i privici datoteka\n\n**Saznajte Više:**\n- [Docmost Službena Web Stranica](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  pt: "O Docmost é uma ferramenta colaborativa de wiki e documentação auto-hospedada projetada para colaboração em tempo real, permitindo que múltiplos utilizadores editem a mesma página simultaneamente sem conflitos. A sua interface intuitiva é ideal para equipas que gerem bases de conhecimento, documentação de projeto ou wikis, oferecendo uma experiência eficiente de criação e partilha de conhecimento.\n\nAs funcionalidades principais da ferramenta incluem edição colaborativa em tempo real e organização de espaços. Suporta múltiplos utilizadores editando páginas em tempo real para colaboração perfeita e organiza páginas em 'espaços' para equipas, projetos ou departamentos, cada um com configurações de permissões independentes. Um editor de texto rico com atalhos Markdown simplifica a criação de conteúdo. As ferramentas integradas Draw.io, Excalidraw e Mermaid fornecem capacidades robustas de diagramas.\n\nOferece gestão de permissões, atribuindo acesso através de grupos de utilizadores para segurança de conteúdo. As páginas podem ser partilhadas publicamente através de links para acesso externo. Os comentários melhoram a comunicação e feedback, enquanto o histórico de páginas rastreia alterações. São suportadas funcionalidades como navegação aninhada, pesquisa rápida, anexos de ficheiros e importação/exportação Markdown/HTML. A colaboração e flexibilidade da ferramenta oferecem uma solução moderna de documentação.\n\n**Funcionalidades Principais:**\n- Edição colaborativa em tempo real para múltiplos utilizadores\n- Espaços para organizar páginas por equipa, projeto ou departamento\n- Gestão de permissões com controlo de acesso por grupos de utilizadores\n- Editor de texto rico com atalhos Markdown\n- Ferramentas de diagramas integradas Draw.io, Excalidraw, Mermaid\n- Partilha pública de páginas através de links\n- Comentários de página para comunicação e feedback\n- Histórico de páginas, navegação aninhada, pesquisa e anexos de ficheiros\n\n**Saber Mais:**\n- [Website Oficial Docmost](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  ru: "Docmost — это самохостинговый инструмент для совместной работы с вики и документацией, разработанный для совместной работы в реальном времени, позволяющий нескольким пользователям одновременно редактировать одну и ту же страницу без конфликтов. Его интуитивный интерфейс идеален для команд, управляющих базами знаний, проектной документацией или вики, предлагая эффективный опыт создания и обмена знаниями.\n\nОсновные функции инструмента включают совместное редактирование в реальном времени и организацию пространств. Он поддерживает нескольких пользователей, редактирующих страницы в реальном времени для бесшовной совместной работы, и организует страницы в 'пространства' для команд, проектов или отделов, каждое с независимыми настройками разрешений. Редактор форматированного текста с ярлыками Markdown упрощает создание контента. Встроенные инструменты Draw.io, Excalidraw и Mermaid обеспечивают надежные возможности создания диаграмм.\n\nПредлагает управление разрешениями, назначая доступ через группы пользователей для безопасности контента. Страницы могут быть публично опубликованы через ссылки для внешнего доступа. Комментарии улучшают коммуникацию и обратную связь, а история страниц отслеживает изменения. Поддерживаются функции, такие как вложенная навигация, быстрый поиск, вложения файлов и импорт/экспорт Markdown/HTML. Совместная работа и гибкость инструмента обеспечивают современное решение для документации.\n\n**Ключевые Особенности:**\n- Совместное редактирование в реальном времени для нескольких пользователей\n- Пространства для организации страниц по команде, проекту или отделу\n- Управление разрешениями с контролем доступа групп пользователей\n- Редактор форматированного текста с ярлыками Markdown\n- Встроенные инструменты диаграмм Draw.io, Excalidraw, Mermaid\n- Публичная публикация страниц через ссылки\n- Комментарии страниц для коммуникации и обратной связи\n- История страниц, вложенная навигация, поиск и вложения файлов\n\n**Узнать Больше:**\n- [Официальный Сайт Docmost](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  tr: "Docmost, gerçek zamanlı işbirliği için tasarlanmış, birden fazla kullanıcının aynı sayfayı çakışma olmadan aynı anda düzenlemesine olanak tanıyan, kendi kendine barındırılan işbirlikçi bir wiki ve dokümantasyon aracıdır. Sezgisel arayüzü, bilgi tabanları, proje belgeleri veya wiki'leri yöneten takımlar için idealdir ve verimli bilgi oluşturma ve paylaşım deneyimi sunar.\n\nAracın temel özellikleri arasında gerçek zamanlı işbirlikçi düzenleme ve alan organizasyonu bulunur. Sorunsuz işbirliği için birden fazla kullanıcının gerçek zamanlı olarak sayfaları düzenlemesini destekler ve sayfaları takımlar, projeler veya departmanlar için 'alanlara' düzenler, her biri bağımsız izin ayarlarına sahiptir. Markdown kısayollarına sahip zengin metin editörü içerik oluşturmayı basitleştirir. Yerleşik Draw.io, Excalidraw ve Mermaid araçları güçlü diyagram yetenekleri sağlar.\n\nİçerik güvenliği için kullanıcı grupları aracılığıyla erişim atayan izin yönetimi sunar. Sayfalar harici erişim için bağlantılar aracılığıyla herkese açık olarak paylaşılabilir. Yorumlar iletişim ve geri bildirimi geliştirir, sayfa geçmişi değişiklikleri izler. İç içe navigasyon, hızlı arama, dosya ekleri ve Markdown/HTML içe/dışa aktarma gibi özellikler desteklenir. Aracın işbirliği ve esnekliği modern bir dokümantasyon çözümü sunar.\n\n**Ana Özellikler:**\n- Birden fazla kullanıcı için gerçek zamanlı işbirlikçi düzenleme\n- Takım, proje veya departmana göre sayfa düzenleme için alanlar\n- Kullanıcı grubu erişim kontrolü ile izin yönetimi\n- Markdown kısayollarına sahip zengin metin editörü\n- Yerleşik Draw.io, Excalidraw, Mermaid diyagram araçları\n- Bağlantılar aracılığıyla herkese açık sayfa paylaşımı\n- İletişim ve geri bildirim için sayfa yorumları\n- Sayfa geçmişi, iç içe navigasyon, arama ve dosya ekleri\n\n**Daha Fazla Bilgi:**\n- [Docmost Resmi Web Sitesi](https://docmost.com/)\n- [Docmost GitHub](https://github.com/docmost/docmost)"
+  uk: "Docmost — вікі та інструмент для документації для самостійного розгортання, створений для спільної роботи в реальному часі: кілька користувачів можуть одночасно редагувати одну сторінку без конфліктів. Зручний інтерфейс підійде командам, що ведуть бази знань, проєктну документацію чи вікі, і робить створення та поширення знань ефективним.\n\nГоловні можливості — спільне редагування в реальному часі та організація за просторами. Кілька користувачів редагують сторінки одночасно, а сторінки групуються в «простори» для команд, проєктів або відділів, кожен із власними налаштуваннями прав. Текстовий редактор із Markdown-скороченнями спрощує створення вмісту. Вбудовані Draw.io, Excalidraw і Mermaid дають змогу малювати діаграми.\n\nДоступ до вмісту захищено керуванням правами через групи користувачів. Сторінками можна ділитися публічно за посиланням. Коментарі полегшують обговорення, а історія сторінки відстежує зміни. Також є вкладена навігація, швидкий пошук, вкладення файлів та імпорт і експорт у Markdown/HTML. Завдяки спільній роботі й гнучкості Docmost — сучасне рішення для документації.\n\n**Основні можливості:**\n- Спільне редагування для кількох користувачів у реальному часі\n- Простори для організації сторінок за командами, проєктами чи відділами\n- Керування правами з доступом через групи користувачів\n- Текстовий редактор із Markdown-скороченнями\n- Вбудовані інструменти діаграм Draw.io, Excalidraw, Mermaid\n- Публічний доступ до сторінок за посиланням\n- Коментарі до сторінок для обговорення\n- Історія сторінок, вкладена навігація, пошук і вкладення файлів\n\n**Докладніше:**\n- [Офіційний сайт Docmost](https://docmost.com/)\n- [Docmost на GitHub](https://github.com/docmost/docmost)"
+category: productivity
+developer: docmost
+website: https://docmost.com/
+source: https://github.com/docmost/docmost
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+  - 5.webp
+  - 6.webp
+  - 7.webp
+  - 8.webp
+web:
+  service: docmost
+  port: 3000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 3000
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: APP_URL_2
+    type: text
+    default: http://localhost:3000
+    label:
+      en: The base URL of your application
+      it: "L'URL base della tua applicazione"
+      nb: Basis-URL for applikasjonen din
+      zh: 应用程序的基础URL
+      ja: アプリケーションのベースURL
+      ko: 애플리케이션의 기본 URL
+      fr: "L'URL de base de votre application"
+      de: Die Basis-URL Ihrer Anwendung
+      sv: Bas-URL för din applikation
+      el: Η βασική διεύθυνση URL της εφαρμογής σας
+      hr: Osnovni URL vaše aplikacije
+      pt: O URL base da sua aplicação
+      ru: Базовый URL вашего приложения
+      tr: "Uygulamanızın temel URL'si"
+      uk: Базова URL-адреса вашого застосунку
+  - name: APP_SECRET
+    type: secret
+    label:
+      en: Application Secret Key
+      it: "Chiave segreta dell'applicazione"
+      nb: Applikasjons hemmelig nøkkel
+      zh: 应用程序密钥
+      ja: アプリケーションシークレットキー
+      ko: 애플리케이션 비밀 키
+      fr: "Clé secrète de l'application"
+      de: Anwendungs-Geheimschlüssel
+      sv: Applikationens hemliga nyckel
+      el: Μυστικό κλειδί εφαρμογής
+      hr: Tajni ključ aplikacije
+      pt: Chave secreta da aplicação
+      ru: Секретный ключ приложения
+      tr: Uygulama gizli anahtarı
+      uk: Секретний ключ застосунку
+  - name: DATABASE_URL
+    type: text
+    default: postgresql://docmost:jcui51lw747yuuk4zrpm@docmost-db:5432/docmost?schema=public
+    label:
+      en: Database Connection URL
+      it: URL di connessione al database
+      nb: Database tilkoblings-URL
+      zh: 数据库连接URL
+      ja: データベース接続URL
+      ko: 데이터베이스 연결 URL
+      fr: URL de connexion à la base de données
+      de: Datenbank-Verbindungs-URL
+      sv: Databasanslutnings-URL
+      el: URL σύνδεσης βάσης δεδομένων
+      hr: URL veze s bazom podataka
+      pt: URL de ligação à base de dados
+      ru: URL подключения к базе данных
+      tr: "Veritabanı bağlantı URL'si"
+      uk: URL підключення до бази даних
+  - name: REDIS_URL
+    type: text
+    default: redis://docmost-redis:6379
+    label:
+      en: Redis Connection URL
+      it: URL di connessione Redis
+      nb: Redis tilkoblings-URL
+      zh: Redis连接URL
+      ja: Redis接続URL
+      ko: Redis 연결 URL
+      fr: URL de connexion Redis
+      de: Redis-Verbindungs-URL
+      sv: Redis-anslutnings-URL
+      el: URL σύνδεσης Redis
+      hr: Redis URL veze
+      pt: URL de ligação Redis
+      ru: URL подключения Redis
+      tr: "Redis bağlantı URL'si"
+      uk: URL підключення до Redis
+  - name: POSTGRES_DB
+    type: text
+    default: docmost
+    label:
+      en: PostgreSQL Database Name
+      it: Nome del database PostgreSQL
+      nb: PostgreSQL databasenavn
+      zh: PostgreSQL数据库名称
+      ja: PostgreSQLデータベース名
+      ko: PostgreSQL 데이터베이스 이름
+      fr: Nom de la base de données PostgreSQL
+      de: PostgreSQL-Datenbankname
+      sv: PostgreSQL databasnamn
+      el: Όνομα βάσης δεδομένων PostgreSQL
+      hr: PostgreSQL naziv baze podataka
+      pt: Nome da base de dados PostgreSQL
+      ru: Имя базы данных PostgreSQL
+      tr: PostgreSQL veritabanı adı
+      uk: Назва бази даних PostgreSQL
+  - name: POSTGRES_USER
+    type: text
+    default: docmost
+    label:
+      en: PostgreSQL User
+      it: Utente PostgreSQL
+      nb: PostgreSQL bruker
+      zh: PostgreSQL用户
+      ja: PostgreSQLユーザー
+      ko: PostgreSQL 사용자
+      fr: Utilisateur PostgreSQL
+      de: PostgreSQL-Benutzer
+      sv: PostgreSQL-användare
+      el: Χρήστης PostgreSQL
+      hr: PostgreSQL korisnik
+      pt: Utilizador PostgreSQL
+      ru: Пользователь PostgreSQL
+      tr: PostgreSQL kullanıcısı
+      uk: Користувач PostgreSQL
+  - name: POSTGRES_PASSWORD
+    type: secret
+    label:
+      en: PostgreSQL Password
+      it: Password PostgreSQL
+      nb: PostgreSQL passord
+      zh: PostgreSQL密码
+      ja: PostgreSQLパスワード
+      ko: PostgreSQL 비밀번호
+      fr: Mot de passe PostgreSQL
+      de: PostgreSQL-Passwort
+      sv: PostgreSQL-lösenord
+      el: Κωδικός πρόσβασης PostgreSQL
+      hr: PostgreSQL lozinka
+      pt: Palavra-passe PostgreSQL
+      ru: Пароль PostgreSQL
+      tr: PostgreSQL şifresi
+      uk: Пароль PostgreSQL

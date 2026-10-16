@@ -1,0 +1,69 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Readarr
+tagline:
+  en: Ebook and audiobook collection manager for Usenet and BitTorrent users.
+  zh: 用于Usenet和BitTorrent用户的电子书和有声书收藏管理器。
+  ar: مدير مجموعة كتب إلكترونية وكتب صوتية لمستخدمي Usenet و BitTorrent.
+  de: E-Book- und Hörbuch-Sammlungsmanager für Usenet- und BitTorrent-Nutzer.
+  es: Administrador de colecciones de libros electrónicos y audiolibros para usuarios de Usenet y BitTorrent.
+  fr: "Gestionnaire de collection de livres électroniques et d'audiolivres pour les utilisateurs de Usenet et de BitTorrent."
+  hu: Usenet és BitTorrent felhasználók számára elektronikus könyv- és hangoskönyvgyűjteménykezelő.
+  it: Gestore di collezioni di libri elettronici e audiolibri per utenti Usenet e BitTorrent.
+  ru: Менеджер коллекций электронных книг и аудиокниг для пользователей Usenet и BitTorrent.
+  pl: Menadżer kolekcji e-booków i audiobooków dla użytkowników Usenet i BitTorrent.
+  pt: Gerenciador de coleções de livros eletrônicos e audiolivros para usuários de Usenet e BitTorrent.
+  sv: E-bokssamling för användare av Usenet och BitTorrent.
+  uk: Менеджер колекції е-книг і аудіокниг для користувачів Usenet і BitTorrent.
+description:
+  en: "Readarr is a ebook collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will interface with clients and indexers to grab, sort, and rename them."
+  zh: Readarr是一个用于Usenet和BitTorrent用户的电子书收藏管理器。它可以监视多个RSS源以获取您最喜欢的作者的新书，并且可以与客户端和索引器进行交互以获取，排序和重命名它们。
+  ar: Readarr هو مدير مجموعة كتب إلكترونية لمستخدمي Usenet و BitTorrent. يمكنه مراقبة مزودي RSS متعددة للكتب الجديدة من مؤلفيك المفضلين وسيتم تفاعله مع العملاء والمؤشرات للتقاط وفرز وإعادة تسمية.
+  de: "Readarr ist ein E-Book-Sammlungsmanager für Usenet- und BitTorrent-Nutzer. Es kann mehrere RSS-Feeds überwachen, um neue Bücher von Ihren Lieblingsautoren zu erhalten und wird mit Clients und Indexern interagieren, um sie zu erhalten, zu sortieren und umzubenennen."
+  es: "Readarr es un administrador de colecciones de libros electrónicos para usuarios de Usenet y BitTorrent. Puede monitorear múltiples fuentes RSS para obtener nuevos libros de sus autores favoritos y se comunicará con clientes e indexadores para obtener, clasificar y renombrarlos."
+  fr: "Readarr est un gestionnaire de collection de livres électroniques pour les utilisateurs de Usenet et de BitTorrent. Il peut surveiller plusieurs flux RSS pour obtenir de nouveaux livres de vos auteurs préférés et interagira avec des clients et des indexeurs pour les obtenir, les trier et les renommer."
+  hu: "A Readarr egy elektronikus könyvgyűjteménykezelő a Usenet és a BitTorrent felhasználók számára. Követni tudja a kedvenc szerzői könyvek új könyveinek több RSS-hírcsatornáját, és a kliensekkel és indexelőkkel kommunikálhat, hogy beszerezze, rendezze és átnevezze őket."
+  it: "Readarr è un gestore di collezioni di libri elettronici per utenti Usenet e BitTorrent. Può monitorare più feed RSS per ottenere nuovi libri dai tuoi autori preferiti e interagirà con client e indexer per ottenerli, ordinarli e rinominarli."
+  ru: "Readarr - это менеджер коллекций электронных книг для пользователей Usenet и BitTorrent. Он может отслеживать несколько RSS-каналов для получения новых книг от ваших любимых авторов и будет взаимодействовать с клиентами и индексаторами для получения, сортировки и переименования их."
+  pl: "Readarr to menedżer kolekcji e-booków dla użytkowników Usenet i BitTorrent. Może monitorować wiele kanałów RSS do uzyskania nowych książek od ulubionych autorów i będzie komunikować się z klientami i indeksatorami, aby uzyskać, posortować i zmienić nazwę."
+  pt: "Readarr é um gerenciador de coleções de livros eletrônicos para usuários de Usenet e BitTorrent. Ele pode monitorar vários feeds RSS para obter novos livros de seus autores favoritos e interagir com clientes e indexadores para obtê-los, classificá-los e renomeá-los."
+  sv: "Readarr är en e-bokssamling för användare av Usenet och BitTorrent. Den kan övervaka flera RSS-flöden för nya böcker från dina favoritförfattare och kommer att interagera med klienter och index för att hämta, sortera och döpa om dem."
+  uk: "Readarr — менеджер колекції е-книг для користувачів Usenet і BitTorrent. Він може стежити за кількома RSS-стрічками, шукаючи нові книги ваших улюблених авторів, і взаємодіє з клієнтами та індексаторами, щоб знаходити, сортувати й перейменовувати їх."
+category: media
+developer: Readarr Team
+website: https://readarr.com
+source: https://github.com/Readarr/Readarr
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk2MCkiPjxwYXRoIGQ9Ik0xMjggMjI4QzE4My4yMjggMjI4IDIyOCAxODMuMjI4IDIyOCAxMjhDMjI4IDcyLjc3MTUgMTgzLjIyOCAyOCAxMjggMjhDNzIuNzcxNSAyOCAyOCA3Mi43NzE1IDI4IDEyOEMyOCAxODMuMjI4IDcyLjc3MTUgMjI4IDEyOCAyMjhaIiBmaWxsPSIjRUVFRUVFIiBzdHJva2U9IiM0NDNDM0MiIHN0cm9rZS13aWR0aD0iMS41Ii8+PHBhdGggZD0iTTEyOCAyMTQuMjg5QzE3NS42NTYgMjE0LjI4OSAyMTQuMjg5IDE3NS42NTYgMjE0LjI4OSAxMjhDMjE0LjI4OSA4MC4zNDM5IDE3NS42NTYgNDEuNzEwOSAxMjggNDEuNzEwOUM4MC4zNDM5IDQxLjcxMDkgNDEuNzEwOSA4MC4zNDM5IDQxLjcxMDkgMTI4QzQxLjcxMDkgMTc1LjY1NiA4MC4zNDM5IDIxNC4yODkgMTI4IDIxNC4yODlaIiBmaWxsPSIjNDQzQzNDIiBzdHJva2U9IiM0NDNDM0MiIHN0cm9rZS13aWR0aD0iMS41Ii8+PHBhdGggZD0iTTEyOCAyMDMuODk4QzE2OS45MTggMjAzLjg5OCAyMDMuODk4IDE2OS45MTggMjAzLjg5OCAxMjhDMjAzLjg5OCA4Ni4wODI1IDE2OS45MTggNTIuMTAxNiAxMjggNTIuMTAxNkM4Ni4wODI1IDUyLjEwMTYgNTIuMTAxNiA4Ni4wODI1IDUyLjEwMTYgMTI4QzUyLjEwMTYgMTY5LjkxOCA4Ni4wODI1IDIwMy44OTggMTI4IDIwMy44OThaIiBmaWxsPSIjOEUyMjIyIiBzdHJva2U9IiM0NDNDM0MiIHN0cm9rZS13aWR0aD0iMS41Ii8+PHBhdGggZD0iTTEyOCAyMDIuMTAyQzE2OC45MjUgMjAyLjEwMiAyMDIuMTAyIDE2OC45MjUgMjAyLjEwMiAxMjhDMjAyLjEwMiA4Ny4wNzQ4IDE2OC45MjUgNTMuODk4NCAxMjggNTMuODk4NEM4Ny4wNzQ4IDUzLjg5ODQgNTMuODk4NCA4Ny4wNzQ4IDUzLjg5ODQgMTI4QzUzLjg5ODQgMTY4LjkyNSA4Ny4wNzQ4IDIwMi4xMDIgMTI4IDIwMi4xMDJaIiBmaWxsPSIjRUVFRUVFIiBzdHJva2U9IiM4RTIyMjIiIHN0cm9rZS13aWR0aD0iMS41Ii8+PHBhdGggZD0iTTEyNy43MjcgMTgwLjIyN0MxNTYuNDE5IDE4MC4yMjcgMTc5LjY4IDE1Ni45NjYgMTc5LjY4IDEyOC4yNzNDMTc5LjY4IDk5LjU4MDUgMTU2LjQxOSA3Ni4zMjAzIDEyNy43MjcgNzYuMzIwM0M5OS4wMzM2IDc2LjMyMDMgNzUuNzczNCA5OS41ODA1IDc1Ljc3MzQgMTI4LjI3M0M3NS43NzM0IDE1Ni45NjYgOTkuMDMzNiAxODAuMjI3IDEyNy43MjcgMTgwLjIyN1oiIGZpbGw9IiM0NDNDM0MiIHN0cm9rZT0iIzQ0M0MzQyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48cGF0aCBkPSJNNjIuMDYyNSAxNjEuMjAzQzYyLjA2MjUgMTYxLjIwMyA2MS4wODU5IDkxLjM5ODQgNjAuOTI5NyA5MS4yODEyQzYxLjA0NjkgODAuODUxNiA2NC4zNjcyIDgxLjkwNjIgNjYuOTA2MiA4MS41OTM4QzEwNS44NTIgODMuNzAzMSAxMjAuMDMxIDk1LjU3ODEgMTIwLjg5MSA5Ni4wMDc4QzEyMy41MDggOTYuOTg0NCAxMjQuOTkyIDEwMi4yNTggMTI0Ljg3NSAxMDIuMTAyQzEyNC45OTIgMTAyLjIxOSAxMjUuNzM0IDE4NC41NjIgMTI1LjYxNyAxODQuNDQ1QzEyNi4yNDIgMTg4Ljg1OSAxMjMgMTg4LjU0NyAxMjIuODgzIDE4OC40M0M5OC4zOTA2IDE2OS4xNzIgNjQuNTIzNCAxNjQuMzI4IDY0LjQwNjIgMTY0LjIxMUM2Mi4wNjI1IDE2NC4wMTYgNjIuMDYyNSAxNjEuMjAzIDYyLjA2MjUgMTYxLjIwM1oiIGZpbGw9IiNFRUVFRUUiIHN0cm9rZT0iIzhFMjIyMiIgc3Ryb2tlLXdpZHRoPSIxMCIvPjxwYXRoIGQ9Ik0xOTMuNDMgMTYxLjM1OUMxOTMuNDMgMTYxLjM1OSAxOTQuNDA2IDkxLjM5ODQgMTk0LjU2MyA5MS4yNDIyQzE5NC40NDUgODAuODEyNSAxOTEuMTI1IDgxLjgyODEgMTg4LjU4NiA4MS41MTU2QzE0OS42NDEgODMuNjI1IDEzNS40NjEgOTUuNTM5MSAxMzQuNjAyIDk1Ljk2ODdDMTMxLjk4NCA5Ni45NDUzIDEzMC41IDEwMi4yMTkgMTMwLjYxNyAxMDIuMTAyQzEzMC41IDEwMi4yMTkgMTI5Ljc1OCAxODQuNzU4IDEyOS44NzUgMTg0LjY0MUMxMjkuMjUgMTg5LjA1NSAxMzIuNDkyIDE4OC43ODEgMTMyLjYwOSAxODguNjI1QzE1Ny4xMDIgMTY5LjMyOCAxOTAuOTY5IDE2NC40ODQgMTkxLjA4NiAxNjQuMzI4QzE5My40MyAxNjQuMjExIDE5My40MyAxNjEuMzU5IDE5My40MyAxNjEuMzU5WiIgZmlsbD0iI0VFRUVFRSIgc3Ryb2tlPSIjOEUyMjIyIiBzdHJva2Utd2lkdGg9IjEwIi8+PHBhdGggZD0iTTYxLjU1NDcgMTcyLjQxNEM2MS41NTQ3IDE3Mi40MTQgNjAuNTM5MSAxMDIuNjA5IDYwLjQyMTkgMTAyLjQ5MkM2MC41MzkxIDkyLjA2MjUgNjMuODk4NCA5My4xMTcyIDY2LjQ3NjYgOTIuODA0N0MxMDYuMDQ3IDk0LjkxNDEgMTIwLjQ2MSAxMDYuNzg5IDEyMS4zMiAxMDcuMjE5QzEyMy45NzcgMTA4LjE5NSAxMjUuNSAxMTMuNDY5IDEyNS4zODMgMTEzLjMxMkMxMjUuNSAxMTMuNDMgMTI2LjI4MSAxOTUuNzczIDEyNi4xMjUgMTk1LjY1NkMxMjYuNzUgMjAwLjA3IDEyMy40NjkgMTk5Ljc1OCAxMjMuMzUyIDE5OS42NDFDOTguNDI5NyAxODAuMzgzIDY0LjA1NDcgMTc1LjUzOSA2My45Mzc1IDE3NS40MjJDNjEuNTU0NyAxNzUuMjY2IDYxLjU1NDcgMTcyLjQxNCA2MS41NTQ3IDE3Mi40MTRaIiBmaWxsPSIjOEUyMjIyIiBzdHJva2U9IiM4RTIyMjIiIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik0xOTMuOTM3IDE3Mi41MzFDMTkzLjkzNyAxNzIuNTMxIDE5NC45NTMgMTAyLjU3IDE5NS4wNyAxMDIuNDE0QzE5NC45NTMgOTEuOTg0NCAxOTEuNTk0IDkzIDE4OS4wMTYgOTIuNjg3NUMxNDkuNDQ1IDk0Ljc5NjkgMTM1LjAzMSAxMDYuNzExIDEzNC4xMzMgMTA3LjE0MUMxMzEuNDc3IDEwOC4xMTcgMTI5Ljk1MyAxMTMuMzkxIDEzMC4wNyAxMTMuMjczQzEyOS45NTMgMTEzLjM5MSAxMjkuMTcyIDE5NS45MyAxMjkuMzI4IDE5NS44MTJDMTI4LjcwMyAyMDAuMjI3IDEzMS45ODQgMTk5Ljk1MyAxMzIuMTAyIDE5OS43OTdDMTU3LjAyMyAxODAuNSAxOTEuMzk4IDE3NS42NTYgMTkxLjUxNiAxNzUuNUMxOTMuOTM3IDE3NS4zODMgMTkzLjkzNyAxNzIuNTMxIDE5My45MzcgMTcyLjUzMVoiIGZpbGw9IiM4RTIyMjIiIHN0cm9rZT0iIzhFMjIyMiIgc3Ryb2tlLXdpZHRoPSI1Ii8+PC9nPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDBfMTI1MV84OTYwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4IDI4KSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+web:
+  service: readarr
+  port: 8787
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8787
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: BOOKS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media/Books"
+    label:
+      en: Readarr books directory
+      uk: Тека книг Readarr
+    hint:
+      en: Inside the app it is /books
+      uk: У застосунку вона — /books
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Readarr downloads directory
+      uk: Тека завантажень Readarr
+    hint:
+      en: Inside the app it is /downloads
+      uk: У застосунку вона — /downloads

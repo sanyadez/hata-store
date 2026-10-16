@@ -1,0 +1,51 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: duckdns
+tagline:
+  en: "Dynamic DNS for your domain, supporting both IPv4 and IPv6"
+  zh: 为您的域名提供动态DNS服务，支持IPv4和IPv6
+  ar: DNS ديناميكي لنطاقك، يدعم كلاً من IPv4 و IPv6
+  de: "Dynamisches DNS für Ihre Domain, unterstützt sowohl IPv4 als auch IPv6"
+  es: "DNS dinámico para su dominio, compatible con IPv4 e IPv6"
+  fr: "DNS dynamique pour votre domaine, prenant en charge IPv4 et IPv6"
+  hu: "Dinamikus DNS a domainjéhez, támogatja az IPv4 és IPv6 protokollokat"
+  it: "DNS dinamico per il tuo dominio, supporta sia IPv4 che IPv6"
+  ru: "Динамический DNS для вашего домена, поддерживает как IPv4, так и IPv6"
+  pl: "Dynamiczny DNS dla Twojej domeny, obsługujący zarówno IPv4, jak i IPv6"
+  pt: "DNS dinâmico para seu domínio, suportando IPv4 e IPv6"
+  sv: "Dynamisk DNS för din domän, stöder både IPv4 och IPv6"
+  uk: Динамічний DNS для вашого домену з підтримкою IPv4 та IPv6
+description:
+  en: "duckdns is a DDNS (Dynamic DNS) application that dynamically binds IP addresses to domain names, supporting both IPv4 and IPv6."
+  zh: duckdns是一个DDNS（动态DNS）应用，能够动态地将IP地址绑定到域名，支持IPv4和IPv6。
+  ar: duckdns هو تطبيق DDNS (نظام أسماء النطاقات الديناميكي) يربط عناوين IP بالأسماء المجالية ديناميكيًا، ويدعم كلاً من IPv4 و IPv6.
+  de: "duckdns ist eine DDNS (Dynamic DNS)-Anwendung, die IP-Adressen dynamisch an Domainnamen bindet und sowohl IPv4 als auch IPv6 unterstützt."
+  es: "duckdns es una aplicación DDNS (DNS dinámico) que vincula dinámicamente direcciones IP a nombres de dominio, compatible con IPv4 e IPv6."
+  fr: "duckdns est une application DDNS (DNS dynamique) qui lie dynamiquement des adresses IP à des noms de domaine, prenant en charge IPv4 et IPv6."
+  hu: "A duckdns egy DDNS (dinamikus DNS) alkalmazás, amely dinamikusan köti az IP-címeket a domainnevekhez, és támogatja az IPv4 és IPv6 protokollokat."
+  it: "duckdns è un'applicazione DDNS (DNS dinamico) che lega dinamicamente gli indirizzi IP ai nomi di dominio, supportando sia IPv4 che IPv6."
+  ru: "duckdns - это приложение DDNS (динамический DNS), которое динамически связывает IP-адреса с доменными именами, поддерживая как IPv4, так и IPv6."
+  pl: "duckdns to aplikacja DDNS (dynamiczny DNS), która dynamicznie wiąże adresy IP z nazwami domen, obsługując zarówno IPv4, jak i IPv6."
+  pt: "duckdns é um aplicativo DDNS (DNS dinâmico) que vincula dinamicamente endereços IP a nomes de domínio, suportando IPv4 e IPv6."
+  sv: duckdns är en DDNS (dynamisk DNS)-applikation som dynamiskt binder IP-adresser till domännamn och stöder både IPv4 och IPv6.
+  uk: "duckdns — застосунок для DDNS (динамічного DNS), який автоматично прив’язує IP-адреси до доменних імен. Підтримує IPv4 та IPv6."
+notes:
+  en: "Attention Please Will update IPv6 address by default. You can modify it by settings.\n\nPlease register sub-domain on https://www.duckdns.org/ and gain your token."
+  zh: "请注意 将默认更新IPv6，你可以在设置面板更改。\n\n请在https://www.duckdns.org/注册子域名并获取token。"
+  uk: "Увага! За замовчуванням оновлюється й адреса IPv6. Це можна змінити в налаштуваннях.\n\nЗареєструйте піддомен на https://www.duckdns.org/ і отримайте свій токен."
+category: network
+developer: DuckDNS Team
+website: https://www.duckdns.org
+source: https://github.com/linuxserver/docker-duckdns
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyMzBfOTMpIj48cGF0aCBkPSJNMTE3LjM4MiAxMTIuNjg2QzExMS43NTIgMTEyLjY4NiA5OC44NTc2IDExNS40MSA5NC4yMDg0IDExMi42NDlDOTAuNzk0MiAxMTAuNjE1IDg4LjU0MjIgMTA1Ljg1NyA4NS43ODE4IDEwMy4wMjRDODAuNjYwNCA5Ny43OTM2IDc0LjY2NzMgOTMuNDcxMyA2OC4wOTMxIDkwLjI3NUM2NS4xNTEgODguODIyMiA2MC45NzQgODYuMzUyMyA1Ny41OTYxIDg3LjQ3ODJDNTEuMjM5OCA4OS41ODQ5IDQ2LjQ4MTcgOTkuOTAwMyA0My41NzU5IDEwNS40MjFDMzIuMDk4MyAxMjcuMDY5IDMyLjg5NzMgMTU0Ljg1NSA0MS41MDU2IDE3Ny4zMzhDNDcuNzE2NiAxOTMuNTc0IDU4Ljc1ODQgMTk4Ljk4NiA3NC41OTQ3IDIwNC4yNTNDOTguMDIyMiAyMTIuMDYyIDEyNi43NTMgMjEzLjU4NyAxNTAuNTQzIDIwNi41NzdDMTY1LjE0NSAyMDIuMjU1IDE3NS43MTQgMTk5LjYwMyAxODMuNDE1IDE4NS40MDJDMTkwLjc4OCAxNzEuNzgxIDE5NC40MiAxNTQuNzgyIDE5Mi4yMDQgMTM5LjM0NkMxOTEuMjYgMTMyLjc3MSAxODUuMDg1IDEyMS4xODUgMTg2LjIxMSAxMTUuMTU1QzE4Ny4xMTkgMTEwLjM2MSAxOTcuMDM1IDExMS45MjMgMjAwLjYzMSAxMTAuNTc5QzIxMS4yMzcgMTA2LjU0NyAyMjcuMjkxIDg3LjIyNCAyMTguNDI5IDc0Ljk4MzZDMjEzLjg1MiA2OC42NjM2IDE5OS4wMzMgNzYuMjE4NSAxOTIuODk1IDcyLjI5NThDMTg5LjI5OSA3MC4wMDc1IDE4Ny4zMzcgNjMuNTQyMiAxODQuNjUgNjAuMjAwNkMxNzguNjU2IDUyLjY4MiAxNzAuMzc1IDQ4LjA2OTIgMTYxLjA3NyA0NS45OTg4QzEzNS4zMjUgNDAuMjIzNyAxMTEuNjQzIDYwLjI3MzMgMTEwLjE5IDg2LjAyNTRDMTA5LjY0NSA5NS44MzIyIDExMy42NDEgMTAzLjk2OCAxMTcuMzgyIDExMi42ODZaIiBmaWxsPSIjMDQwNTAyIi8+PHBhdGggZD0iTTE0NS42NzYgNTQuODk3OUMxMjUuMDQ1IDU4Ljc4NDMgMTE1LjMxMSA4Mi4wMzAyIDEyMi4xMzkgMTAwLjU1NEMxMjMuOTU1IDEwNS40NTggMTM2Ljg1IDExNi42ODEgMTMxLjY5MiAxMjEuMDc2QzEyOS4yMjIgMTIzLjE4MyAxMjQuNDY0IDEyMi4zODQgMTIxLjQ0OSAxMjIuMzg0QzExNC4xNDkgMTIyLjMxMSAxMDYuOTU3IDEyMS43MyA5OS42MTk5IDEyMi42MDJDOTUuNTg4MiAxMjMuMDc0IDkxLjA0OCAxMjQuNzA4IDg3LjgxNTQgMTIxLjM2N0M4MS4xNjg1IDExNC41NzQgNzcuNDI3MyAxMDYuNjkzIDY4LjkyODEgMTAxLjQyNkM2Ni40NTgyIDk5LjkwMDUgNjIuNDI2NSA5Ni44ODU4IDU5LjQ4NDQgOTguNzAxOUM1NC4yOTA0IDEwMS45MzUgNTAuODc2MiAxMTEuMjMzIDQ4LjgwNTggMTE2LjcxN0M0Mi42MzExIDEzMi45OSA0My42NDgxIDE1Mi4wMjIgNDguNTE1MiAxNjguNDRDNTAuMjIyNCAxNzQuMTQyIDUyLjUxMDYgMTgxLjc3IDU2Ljk3ODIgMTg1LjkxQzYyLjU3MTggMTkxLjA2OCA3Mi4yMzMzIDE5My45NzQgNzkuNDI1IDE5Ni4wNDRDOTkuNzI4OSAyMDEuODkyIDEyMS43MDQgMjAzLjIzNiAxNDIuNDQzIDE5OC45NUMxNTAuMjUyIDE5Ny4zMTUgMTYyLjY3NCAxOTUuMjQ1IDE2OC44NDkgMTg5LjkwNkMxODEuOTk4IDE3OC40NjQgMTg0LjU3NiAxNTQuNjM3IDE4Mi42MTUgMTM4LjYxOUMxODEuNjM0IDEzMC41OTIgMTc1LjcxNCAxMjIuODIgMTc1LjIwNSAxMTUuMTkyQzE3NC44MDYgMTA4LjkwOCAxODMuMTk2IDEwMS4xNzIgMTg0LjIxMyA5NC4xOThDMTg3LjQ4MiA3MS4zNTE2IDE2OS40NjcgNTAuMzk0IDE0NS42NzYgNTQuODk3OVoiIGZpbGw9IiNGQ0ZDMDEiLz48cGF0aCBkPSJNMTU4LjYwNiA2OS42NDQ4QzE0Ny45NjQgNzMuNzEyOSAxNTQuOTc0IDg5LjM2NzUgMTY1LjAzNSA4NS4xOTA1QzE3NS41MzIgODAuOTA0NiAxNjguNzA0IDY1Ljc5NDcgMTU4LjYwNiA2OS42NDQ4WiIgZmlsbD0iIzA0MDUwMiIvPjxwYXRoIGQ9Ik0xOTMuMzMgNzkuNTYwM0MxOTUuMTEgODkuMjU4MiAxOTIuMjc3IDk2Ljg0OTUgMTkwLjg5NiAxMDYuMjJDMjA1Ljc4OCAxMDQuOTEzIDIxMy40ODkgOTMuODM0NyAyMTMuNTI1IDc5LjU2MDNIMTkzLjMzWiIgZmlsbD0iI0ZEMDEwMSIvPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9ImNsaXAwXzEyMzBfOTMiPjxyZWN0IHdpZHRoPSIxODYiIGhlaWdodD0iMTY2LjA2NyIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1IDQ1KSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+settings:
+  - name: TOKEN
+    type: secret
+    label:
+      en: TOKEN
+permissions:
+  host-network:
+    en: "Its authors run it on the server's own network: it reaches the devices of the home network, and its ports are the server's"
+    uk: "Автори запускають його в мережі самого сервера: він бачить пристрої домашньої мережі, а його порти — порти сервера"

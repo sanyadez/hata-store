@@ -1,0 +1,33 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  libredb-studio:
+    image: libredb/libredb-studio:0.18.2
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-3016}:3000"
+    environment:
+      ADMIN_EMAIL: "${ADMIN_EMAIL:-admin@libredb.org}"
+      ADMIN_PASSWORD: "${ADMIN_PASSWORD:-}"
+      JWT_SECRET: "${JWT_SECRET:-}"
+      STORAGE_PROVIDER: "${STORAGE_PROVIDER:-sqlite}"
+      STORAGE_SQLITE_PATH: "${STORAGE_SQLITE_PATH:-/app/data/libredb-storage.db}"
+      AUTH_COOKIE_SECURE: "${AUTH_COOKIE_SECURE:-false}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /app/data
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - "-e"
+        - "require('http').get('http://127.0.0.1:3000/api/db/health',r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))"
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 40s
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    privileged: false

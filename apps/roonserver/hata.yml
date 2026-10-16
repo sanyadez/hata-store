@@ -1,0 +1,68 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Roon Server
+  de: Roon Server
+  es: Roon Server
+  fr: Roon Server
+  ja: Roon Server
+  ko: Roon Server
+  zh: Roon Server
+tagline:
+  en: Music software that transforms your listening experience
+  de: "Musiksoftware, die Ihr Hörerlebnis verändert"
+  es: Software musical que transforma tu experiencia auditiva
+  fr: "Un logiciel musical qui transforme votre expérience d'écoute"
+  ja: 音楽体験を変える音楽ソフトウェア
+  ko: 음악 감상 경험을 바꾸는 음악 소프트웨어
+  zh: 改变音乐聆听体验的音乐软件
+  uk: "Музичне програмне забезпечення, що змінює те, як ви слухаєте музику"
+description:
+  en: "Roon music software transforms your listening experience with rich metadata, discovery features, and audiophile sound. It works with streaming services and local files.\n\nRoon brings all your music together and adds bios, reviews, photos, lyrics, tour dates, and cross-linked credits for performers, songwriters, producers, engineers, and composers. Everything about music - browsing, discovery, collecting, and listening - is more engaging with Roon.\n\nRoonServer is the central server component. It runs on a Linux amd64/x86_64 host, stores the Roon database and settings, and serves your library to Roon Remote clients and audio endpoints on your local network. It is controlled from the Roon app and does not provide a browser-based WebUI."
+  zh: "Roon 音乐软件通过丰富的元数据、发现功能和发烧级音质改变您的聆听体验，同时支持流媒体服务和本地文件。\n\nRoon 将您的所有音乐集中在一起，并补充艺术家简介、评论、照片、歌词、巡演日期，以及演奏者、词曲作者、制作人、工程师和作曲家的交叉关联信息。音乐浏览、发现、收藏和聆听都因此更加精彩。\n\nRoonServer 是中央服务器组件，运行于 Linux amd64/x86_64 主机，保存 Roon 数据库和设置，并向局域网中的 Roon Remote 客户端和音频终端提供音乐库。它由 Roon 应用管理，不提供基于浏览器的 WebUI。"
+  de: "Roon ist Musiksoftware mit umfangreichen Metadaten, Entdeckungsfunktionen und audiophiler Klangqualität. Sie funktioniert mit Streaming-Diensten und lokalen Dateien. RoonServer ist die zentrale Serverkomponente für Ihre Bibliothek und wird über die Roon-App gesteuert; eine browserbasierte WebUI gibt es nicht."
+  es: "Roon es un software musical con metadatos enriquecidos, funciones de descubrimiento y sonido para audiófilos. Funciona con servicios de streaming y archivos locales. RoonServer es el componente central de tu biblioteca y se controla desde la aplicación Roon; no ofrece WebUI."
+  fr: "Roon est un logiciel musical avec des métadonnées riches, des fonctions de découverte et un son audiophile. Il fonctionne avec les services de streaming et les fichiers locaux. RoonServer est le composant central de votre bibliothèque et se contrôle depuis l'application Roon ; il ne fournit pas de WebUI."
+  ja: Roonは豊富なメタデータ、音楽発見機能、オーディオファイル向けの音質を備え、ストリーミングサービスとローカルファイルに対応します。RoonServerはライブラリの中央サーバーで、Roonアプリから操作し、ブラウザ用WebUIはありません。
+  ko: "Roon은 풍부한 메타데이터, 음악 발견 기능, 오디오파일 수준의 음질을 제공하며 스트리밍 서비스와 로컬 파일을 지원합니다. RoonServer는 라이브러리의 중앙 서버로 Roon 앱에서 제어하며 브라우저 WebUI는 제공하지 않습니다."
+  uk: "Музичне програмне забезпечення Roon змінює те, як ви слухаєте музику: багаті метадані, можливості відкриття нового та якісний звук для аудіофілів. Воно працює зі стрімінговими сервісами й локальними файлами.\n\nRoon збирає всю вашу музику докупи й додає біографії, рецензії, фото, тексти пісень, дати турів та взаємопов'язані відомості про виконавців, авторів пісень, продюсерів, звукорежисерів і композиторів. З Roon усе, що пов'язане з музикою, — перегляд, відкриття нового, колекціонування й прослуховування — стає цікавішим.\n\nRoonServer — головна серверна складова. Вона працює на хості Linux amd64/x86_64, зберігає базу даних і налаштування Roon та віддає вашу бібліотеку клієнтам Roon Remote і аудіопристроям у вашій локальній мережі. Керувати нею потрібно із застосунку Roon, вебінтерфейсу в браузері вона не має."
+notes:
+  en: "RoonServer has no WebUI. After installation, use the Roon app on a device on the same LAN to discover and configure this server."
+  de: "RoonServer verfügt über keine WebUI. Verwenden Sie nach der Installation die Roon-App im selben LAN, um den Server zu finden und zu konfigurieren."
+  es: "RoonServer no tiene WebUI. Después de la instalación, usa la aplicación Roon en un dispositivo de la misma LAN para descubrir y configurar este servidor."
+  fr: "RoonServer ne possède pas de WebUI. Après l'installation, utilisez l'application Roon sur un appareil du même réseau local pour découvrir et configurer ce serveur."
+  ja: RoonServerにはWebUIがありません。インストール後、同じLAN上の端末でRoonアプリを使用してサーバーを検出・設定してください。
+  ko: RoonServer에는 WebUI가 없습니다. 설치 후 같은 LAN의 기기에서 Roon 앱으로 서버를 검색하고 설정하세요.
+  zh: RoonServer 没有 WebUI。安装后，请在同一局域网内的手机、平板、电脑或其他 Roon Remote 设备上使用 Roon 应用发现并配置此服务器。
+  uk: "RoonServer не має вебінтерфейсу. Після встановлення скористайтеся застосунком Roon на пристрої в тій самій локальній мережі, щоб знайти й налаштувати цей сервер."
+category: media
+developer: Roon Labs
+website: https://roon.app
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJSb29uIj48c3R5bGU+CiAgICAucm9vbi1iYWNrZ3JvdW5kIHsgZmlsbDogI2ZmZmZmZjsgfQogICAgLnJvb24tbWFyayB7IGZpbGw6ICMxMTExMTE7IHN0cm9rZTogIzExMTExMTsgfQogICAgQG1lZGlhIChwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyaykgewogICAgICAucm9vbi1iYWNrZ3JvdW5kIHsgZmlsbDogIzExMTExMTsgfQogICAgICAucm9vbi1tYXJrIHsgZmlsbDogI2Y1ZjVmNTsgc3Ryb2tlOiAjZjVmNWY1OyB9CiAgICB9CiAgPC9zdHlsZT48cmVjdCBjbGFzcz0icm9vbi1iYWNrZ3JvdW5kIiB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIvPjxzdmcgeD0iMjQiIHk9Ijk3LjUiIHdpZHRoPSIyMDgiIGhlaWdodD0iNjEiIHZpZXdCb3g9Ii0zMCAtMzAgMzY3MSAxMDg0IiBhcmlhLWhpZGRlbj0idHJ1ZSI+PHBhdGggY2xhc3M9InJvb24tbWFyayIgc3Ryb2tlLXdpZHRoPSIzMCIgZD0iTTE1NDMuNjkyIDUxNS43OWMwIDI4MC42NTMtMjE5Ljk3OCA1MDguMjEtNDg5LjI3NyA1MDguMjEtMjY3LjQwNCAwLTQ4Ny4zODItMjI3LjU1Ny00ODcuMzgyLTUwOC4yMSAwLTI4NC40NDMgMjE5Ljk5Mi01MTUuNzkgNDg3LjM4Mi01MTUuNzkgMjY5LjI5OSAwIDQ4OS4yNzcgMjMxLjM0NyA0ODkuMjc3IDUxNS43OXpNMTQ3MS42MzQgNTE1Ljc5YzAtMjQ4LjQxNC0xODUuODQ0LTQ0OS40My00MTcuMjE5LTQ0OS40My0yMjkuNDY2IDAtNDE3LjIxOSAyMDEuMDAyLTQxNy4yMTkgNDQ5LjQzIDAgMjQyLjcyOSAxODcuNzM5IDQ0MS44MzcgNDE3LjIxOSA0NDEuODM3IDIzMS4zNzUgMCA0MTcuMjE5LTE5OS4xMDcgNDE3LjIxOS00NDEuODM3ek0yNjUxLjIxOCA1MTUuNzljMCAyODAuNjUzLTIxOS45OTIgNTA4LjIxLTQ4OS4yNzcgNTA4LjIxLTI2Ny4zOSAwLTQ4Ny4zODItMjI3LjU1Ny00ODcuMzgyLTUwOC4yMS0wLjAxNC0yODQuNDQzIDIxOS45NzgtNTE1Ljc5IDQ4Ny4zNjgtNTE1Ljc5IDI2OS4yOTkgMCA0ODkuMjkxIDIzMS4zNDcgNDg5LjI5MSA1MTUuNzl6TTI1NzkuMTQ2IDUxNS43OWMwLTI0OC40MTQtMTg1Ljg0NC00NDkuNDMtNDE3LjIxOS00NDkuNDMtMjI5LjQ2NiAwLTQxNy4yMTkgMjAxLjAwMi00MTcuMjE5IDQ0OS40MyAwIDI0Mi43MjkgMTg3LjczOSA0NDEuODM3IDQxNy4yMTkgNDQxLjgzNyAyMzEuMzYxIDAgNDE3LjIxOS0xOTkuMTA3IDQxNy4yMTktNDQxLjgzN3pNMzIwMS4xNTYgMGMtMjM4Ljk0IDAtNDExLjUyIDE3Mi41NjYtNDExLjUyIDQxMS40OTJ2NTc3LjQyNmMwIDE5LjM3MiAxNS43MSAzNS4wODIgMzUuMDgyIDM1LjA4MnMzNS4wODItMTUuNzEgMzUuMDgyLTM1LjA4MnYwLTU3Ny40MjZjMC0xOTcuMjEyIDE0NC4xMy0zMzkuNDM0IDM0MS4zNTctMzM5LjQzNHMzMzkuNDYyIDE0Mi4yMjEgMzM5LjQ2MiAzMzkuNDM0djU3Ny40MTJjMCAxOS4zNzIgMTUuNzEgMzUuMDgyIDM1LjA4MiAzNS4wODJzMzUuMDgyLTE1LjcxIDM1LjA4Mi0zNS4wODJ2LTU3Ny40MTJjMC0yMzguOTI2LTE3Mi41NjYtNDExLjQ5Mi00MDkuNjI1LTQxMS40OTJ6TTQ2OC40MDYgNS43Njl2LTAuMDg1Yy0yOTIuMDM2LTMwLjMzMS00NjguNDA2IDEzNC42NDItNDY4LjQwNiA0MDUuODA4djU3Ny40MjZjMCAxOS4zNzIgMTUuNzEgMzUuMDgyIDM1LjA4MiAzNS4wODJzMzUuMDgyLTE1LjcxIDM1LjA4Mi0zNS4wODJ2LTU3Ny40MjZjMC0yNDAuODM1IDE0Ny4yNDEtMzYwLjg5OSAzOTMuMzM2LTM0MS43MWwwLjAxNC0wLjEyN2MwLjc0OSAwLjA1NyAxLjQ3MSAwLjIyNiAyLjIzNCAwLjIyNiAxNy43NzQgMCAzMi4xOTctMTQuNDA5IDMyLjE5Ny0zMi4xODMgMC0xNi44ODMtMTMuMDIzLTMwLjU1Ny0yOS41MzktMzEuOTI4eiIvPjwvc3ZnPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+settings:
+  - name: MUSIC_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media/Music"
+    label:
+      en: Media/Music
+      uk: Медіа/Музика
+    hint:
+      en: Inside the app it is /Music
+      uk: У застосунку вона — /Music
+permissions:
+  host-network:
+    en: "Its authors run it on the server's own network: it reaches the devices of the home network, and its ports are the server's"
+    uk: "Автори запускають його в мережі самого сервера: він бачить пристрої домашньої мережі, а його порти — порти сервера"
+  devices:
+    en: "It uses devices of the server: /dev/snd, /dev/bus/usb, /dev/dri"
+    uk: "Він користується пристроями сервера: /dev/snd, /dev/bus/usb, /dev/dri"
+  capabilities:
+    en: "It asks for extra rights of the system: SYS_ADMIN, DAC_READ_SEARCH"
+    uk: "Він просить додаткових прав у системі: SYS_ADMIN, DAC_READ_SEARCH"
+  host-files:
+    en: "It reaches these places of the system: /run/udev"
+    uk: "Він має доступ до цих місць системи: /run/udev"

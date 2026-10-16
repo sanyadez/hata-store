@@ -1,0 +1,22 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  hermes:
+    image: nousresearch/hermes-agent:v2026.6.5
+    deploy:
+      resources:
+        reservations:
+          memory: 1G
+    restart: unless-stopped
+    command:
+      - gateway
+      - run
+    ports:
+      - "${PORT_8642:-8642}:8642"
+      - "${WEB_PORT:-9119}:9119"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/"
+        target: /opt/data
+    environment:
+      HERMES_DASHBOARD: "${HERMES_DASHBOARD:-1}"
+      HERMES_DASHBOARD_INSECURE: "${HERMES_DASHBOARD_INSECURE:-1}"

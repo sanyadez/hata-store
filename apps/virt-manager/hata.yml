@@ -1,0 +1,73 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Virtual Machine Manager
+tagline:
+  en: A GTK Broadway web UI for libvirt and virt-manager.
+  zh: Libvirt 和 virt-manager 的 GTK Broadway Web UI。
+  de: Ein GTK Broadway Web UI für libvirt und virt-manager.
+  es: Una interfaz web GTK Broadway para libvirt y virt-manager.
+  fr: Une interface web GTK Broadway pour libvirt et virt-manager.
+  hu: GTK Broadway webes felhasználói felület a libvirt és a virt-manager számára.
+  it: "Un'interfaccia web GTK Broadway per libvirt e virt-manager."
+  ru: Веб-интерфейс GTK Broadway для libvirt и virt-manager.
+  pl: Interfejs sieciowy GTK Broadway dla libvirt i virt-manager.
+  pt: Uma interface de usuário da Web GTK Broadway para libvirt e virt-manager.
+  sv: Ett GTK Broadway webbgränssnitt för libvirt och virt-manager.
+  uk: Вебінтерфейс GTK Broadway для libvirt і virt-manager.
+description:
+  en: "A GTK Broadway web UI for libvirt and virt-manager, to run virtual machines using QEMU/KVM."
+  zh: Libvirt 和 virt-manager 的 GTK Broadway Web UI，用于使用 QEMU/KVM 运行虚拟机。
+  ar: واجهة مستخدم ويب GTK Broadway لواجهة مستخدم الويب ل libvirt و libvirt-manager، لتشغيل الأجهزة الافتراضية باستخدام QEMU/KVM。
+  de: "Ein GTK Broadway Web UI für libvirt und virt-manager, um virtuelle Maschinen mit QEMU/KVM zu betreiben。"
+  es: "Una interfaz web GTK Broadway para libvirt y virt-manager, para ejecutar máquinas virtuales usando QEMU/KVM."
+  fr: "Une interface web GTK Broadway pour libvirt et virt-manager, pour exécuter des machines virtuelles utilisant QEMU/KVM."
+  hu: "GTK Broadway webes felhasználói felület a libvirt és a virt-manager számára, virtuális gépek futtatásához QEMU/KVM használatával。"
+  it: "Un'interfaccia web GTK Broadway per libvirt e virt-manager, per eseguire macchine virtuali utilizzando QEMU/KVM."
+  ru: "Веб-интерфейс GTK Broadway для libvirt и virt-manager, позволяющий запускать виртуальные машины с помощью QEMU/KVM."
+  pl: Interfejs sieciowy GTK Broadway dla libvirt i virt-manager do uruchamiania maszyn wirtualnych przy użyciu QEMU/KVM.
+  pt: "Uma interface de usuário da Web GTK Broadway para libvirt e virt-manager, para executar máquinas virtuais usando QEMU/KVM."
+  sv: "Ett GTK Broadway webbgränssnitt för libvirt och virt-manager, för att köra virtuella maskiner med QEMU/KVM."
+  uk: "Вебінтерфейс GTK Broadway для libvirt і virt-manager, щоб запускати віртуальні машини через QEMU/KVM."
+notes:
+  en: "# PLEASE READ WELL!\n## Installing Necessary Dependencies on Host\n\nTo make sure that everything works, you should first install ``qemu`` and ``libvirt`` on your system for the Virtual Machine Manager application to work, because otherwise it doesn't and won't be able to connect to the QEMU/KVM connection (this always applies if you have left HOST at the default).\n\nUbuntu/Debian/Raspberry Pi OS: ``` sudo apt update sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients ``` Alpine Linux: ``` sudo apk update sudo apk add qemu libvirt qemu-img sudo rc-update add libvirtd default sudo systemctl enable --now libvirtd ``` OpenWrt (compile from source): ```\n# Install necessary packages to compile from source sudo opkg update sudo opkg install build-essential libtool automake autoconf pkg-config libudev-dev libnl-tiny-dev glib2-dev libssl-dev\n\n# Clone QEMU and libvirt repositories git clone https://github.com/qemu/qemu.git git clone https://github.com/libvirt/libvirt.git\n\n# Build and install QEMU cd qemu ./configure make -j$(nproc) sudo make install\n\n# Build and install libvirt cd ../libvirt ./autogen.sh ./configure make -j$(nproc) sudo make install ``` Arch Linux: ``` sudo pacman -S --noconfirm qemu libvirt virt-manager sudo systemctl enable --now libvirtd ```\n\n## Setting up Directories (for ISO Images, Hard Disk Images etc.)\n\nIn order to set up directories and volumes for storing and accessing things (ISO and hard disk images for example), you can go to the panel for Virtual Machine Manager, right click on the 'QEMU/KVM' text at the homepage of Virtual Machine Manager and click on on 'Details'. From there, go to 'Storage' and click on the green plus icon. From there, you can choose a pool name and use 'Target Path' to choose the desired directory. E.g. for ISO images you can choose /DATA/Downloads (mounted on container at default) as directory to store ISO images. Then create it, and you're good to go! You can do the same if you'd want to store the hard disk images on another location or another drive (a volume/mount first needs to be configured with the settings of the Docker container of Virtual Machine Manager) and make sure to point it to the same path as on the host, in order to resolve conflicts when connecting to the server remotely! Also, if you desire you could also choose the ISO images manually from a path later on, but it has to be on the drive that the server uses and mounted.\n## Troubleshooting\n### No Connection Found\n\nJust go to 'File' > 'Add Connection...'. Make sure that the hypervisor is on QEMU/KVM and do NOT check the SSH option. I'd recommend to leave the automatic connection option turned on, and click 'Connect'. It should then be fixed!"
+  uk: "# ПРОЧИТАЙТЕ УВАЖНО!\n## Встановлення потрібних залежностей на хості\n\nЩоб усе працювало, спершу встановіть у системі ``qemu`` і ``libvirt``: без них Virtual Machine Manager не зможе під'єднатися до з'єднання QEMU/KVM (це завжди так, якщо HOST залишено типовим).\n\nUbuntu/Debian/Raspberry Pi OS: ``` sudo apt update sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients ``` Alpine Linux: ``` sudo apk update sudo apk add qemu libvirt qemu-img sudo rc-update add libvirtd default sudo systemctl enable --now libvirtd ``` OpenWrt (збирання з вихідного коду): ```\n# Install necessary packages to compile from source sudo opkg update sudo opkg install build-essential libtool automake autoconf pkg-config libudev-dev libnl-tiny-dev glib2-dev libssl-dev\n\n# Clone QEMU and libvirt repositories git clone https://github.com/qemu/qemu.git git clone https://github.com/libvirt/libvirt.git\n\n# Build and install QEMU cd qemu ./configure make -j$(nproc) sudo make install\n\n# Build and install libvirt cd ../libvirt ./autogen.sh ./configure make -j$(nproc) sudo make install ``` Arch Linux: ``` sudo pacman -S --noconfirm qemu libvirt virt-manager sudo systemctl enable --now libvirtd ```\n\n## Налаштування тек (для образів ISO, образів жорстких дисків тощо)\n\nЩоб налаштувати теки й томи для зберігання та доступу до файлів (наприклад, образів ISO і жорстких дисків), відкрийте панель Virtual Machine Manager, клацніть правою кнопкою на тексті «QEMU/KVM» на головній сторінці й виберіть «Details». Перейдіть до «Storage» і натисніть зелений плюс. Там можна вибрати назву пулу та через «Target Path» вказати потрібну теку. Наприклад, для образів ISO можна вибрати /DATA/Downloads (типово змонтовано в контейнер). Потім створіть пул — і все готово. Так само можна зберігати образи жорстких дисків в іншому місці чи на іншому диску (спершу потрібно налаштувати том або монтування в параметрах Docker-контейнера Virtual Machine Manager). Вказуйте той самий шлях, що й на хості, щоб уникнути конфліктів під час віддаленого підключення до сервера. Також образи ISO можна пізніше вибрати вручну за шляхом, але вони мають лежати на диску, який використовує сервер, і бути змонтованими.\n## Усунення неполадок\n### З'єднання не знайдено\n\nПерейдіть у «File» > «Add Connection...». Переконайтеся, що гіпервізор — QEMU/KVM, і НЕ вмикайте параметр SSH. Раджу залишити ввімкненим автоматичне підключення й натиснути «Connect». Це має допомогти!"
+category: development
+developer: Red Hat
+website: https://virt-manager.org
+source: https://github.com/m-bers/docker-virt-manager
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+web:
+  service: virt-manager
+  port: 80
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8185
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Downloads directory
+      uk: Тека завантажень
+    hint:
+      en: Inside the app it is /DATA/Downloads
+      uk: У застосунку вона — /DATA/Downloads
+  - name: DARK_MODE
+    type: text
+    default: "false"
+    label:
+      en: Set DARK_MODE to true to enable dark mode
+      uk: "Задайте DARK_MODE=true, щоб увімкнути темну тему"
+permissions:
+  devices:
+    en: "It uses devices of the server: /dev/kvm"
+    uk: "Він користується пристроями сервера: /dev/kvm"
+  host-files:
+    en: "It reaches these places of the system: /var/run/libvirt/libvirt-sock, /var/lib/libvirt"
+    uk: "Він має доступ до цих місць системи: /var/run/libvirt/libvirt-sock, /var/lib/libvirt"

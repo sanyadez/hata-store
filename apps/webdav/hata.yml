@@ -1,0 +1,68 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: WebDAV
+tagline:
+  en: A web-based file sharing and management protocol
+  zh: 基于 Web 的文件共享和管理协议
+  ar: بروتوكول مشاركة وإدارة الملفات قائم على الويب
+  de: Ein webbasiertes Dateifreigabe- und Verwaltungsprotokoll
+  es: Un protocolo de intercambio y gestión de archivos basado en web
+  fr: Un protocole de partage et de gestion de fichiers basé sur le web
+  hu: Webalapú fájlmegosztási és -kezelési protokoll
+  it: Un protocollo di condivisione e gestione dei file basato sul web
+  ru: Веб-протокол обмена и управления файлами
+  pl: Protokół udostępniania i zarządzania plikami oparty na sieci web
+  pt: Um protocolo de compartilhamento e gerenciamento de arquivos baseado na web
+  sv: Ett webbaserat protokoll för fildelning och hantering
+  uk: Вебпротокол для обміну файлами та керування ними
+description:
+  en: "WebDAV is a web-based protocol that allows you to share and manage files over the internet, providing a collaborative environment for file editing and versioning."
+  zh: WebDAV 是一个基于 Web 的协议，允许您通过互联网共享和管理文件，提供一个协作环境来进行文件编辑和版本控制。
+  ar: WebDAV هو بروتوكول قائم على الويب يسمح لك بمشاركة وإدارة الملفات عبر الإنترنت، مما يوفر بيئة تعاونية لتحرير الملفات والتحكم في الإصدارات.
+  de: "WebDAV ist ein webbasiertes Protokoll, das es Ihnen ermöglicht, Dateien über das Internet zu teilen und zu verwalten und eine kollaborative Umgebung für die Dateibearbeitung und Versionskontrolle bietet."
+  es: "WebDAV es un protocolo basado en web que le permite compartir y administrar archivos a través de Internet, proporcionando un entorno colaborativo para la edición y el control de versiones de archivos."
+  fr: "WebDAV est un protocole basé sur le web qui vous permet de partager et de gérer des fichiers sur Internet, offrant un environnement collaboratif pour l'édition et le contrôle de version des fichiers."
+  hu: "A WebDAV egy webalapú protokoll, amely lehetővé teszi a fájlok megosztását és kezelését az interneten keresztül, együttműködési környezetet biztosítva a fájlszerkesztéshez és a verziókövetéshez."
+  it: "WebDAV è un protocollo basato sul web che consente di condividere e gestire file su Internet, fornendo un ambiente collaborativo per la modifica e il controllo delle versioni dei file."
+  ru: "WebDAV - это веб-протокол, который позволяет вам обмениваться файлами и управлять ими через Интернет, обеспечивая совместную среду для редактирования файлов и контроля версий."
+  pl: "WebDAV to protokół oparty na sieci web, który umożliwia udostępnianie i zarządzanie plikami przez Internet, zapewniając środowisko współpracy do edycji plików i kontroli wersji."
+  pt: "WebDAV é um protocolo baseado na web que permite compartilhar e gerenciar arquivos pela Internet, fornecendo um ambiente colaborativo para edição e controle de versão de arquivos."
+  sv: "WebDAV är ett webbaserat protokoll som låter dig dela och hantera filer över internet, vilket ger en samarbetsmiljö för filredigering och versionskontroll."
+  uk: "WebDAV — вебпротокол, який дає змогу ділитися файлами та керувати ними через інтернет, створюючи середовище для спільного редагування файлів і ведення їхніх версій."
+notes:
+  en: Default Account
+  zh: 默认账号
+  uk: Типовий обліковий запис
+category: productivity
+developer: ugeek
+website: https://github.com/ugeek/docker-webdav
+source: https://github.com/ugeek/docker-webdav
+icon: "data:image/webp;base64,UklGRgoVAABXRUJQVlA4WAoAAAAgAAAA/wAA/wAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggHBMAAPBSAJ0BKgABAAE+MRiKRCIhoRGIrPwgAwSm7hc/D+kF/lu0Ulx0P8ev7Z+2PzXU9+Q/d/+jf+n/ZcenUX0gfC74x+Xf3n/Afuz/ef/////vd/av6X7APuX9wD+I/yH/Uf4v91f9J80f8p+uXuO8wH6mf8n+3/v/82P8z/XL3F/r3/z/7f/afkA/kH9k9ID2APQA/kX9z/7nrT/tJ/3fkz/af9q/gZ/nv+A/9fsAegB1H/S/+79m/9P+1XsefD/iVy5+jPM3+L/Uf755If6b8JfyA9k+AF+Gfy7/P/1D9rPa8ebuAu6P+h/LrzOv6L0Q+rX+79wD+b/zz/P/bnzkXlvsAfyj+s/9P+5/mB8Vn+z/iv8r6RPzr/Af+n/K/Af/Nv7H/yf757YXsZ/dL2Q/2qHY855RyxO7u7u7u7u7u7u7u7u7u7u7u7u7u7ud0bH4VlNjCkr1mZmK7Epk3NPuVLdm3wUSlhk7S06Ron4GKRnlLhCw1mpCTR1eEYbGXyVjpBoTgsh6Lko6bbxXQ5tkOjBmyVI7HorI/XRfFYtth10Obnmqk01mjnGHw+wGMT/kjMLJ4g/4hclrm9UVTzwfl/pHYWn5YAst33kcza8a8drCoLI5e83FrjlQLLYYHRxG/qLlAUH78isKCp9dNA8o+bO7YBz0O+vles6nKrXYgk8jSLxvbaYBXNedzDYKMo196UafFh7d5Ii01zhpNhB5fdMbobLdkF6wKRRUGbJeBKtUkaxsqKQFTg5daXBEqyzKEn0KG+tV2oXBcR21hiywLgiqFHGplAPHROggtvAmV9N88XOCwLIJSYQmcyIoJPSuMttZrX88aZKRJPO8Pu+/kr1mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZgAAD+/9mcAAAAAYJaph8OBfio0wEOdmPgp5n/tlGAes/DlkqFgwpy7AXteWTIL5QAQb15Amt6EfEu+l59mW4rSH4fx9q0aQ1PEq0bJD8VYwclW0HxGxaVKNBV039Az61b5JWEvggnA8jdH0hKBWU810tddkS/6Vtp6vZ0XMy0QZ3bPgIu/DjswP5UARk41iFe7g5OmdayDNd6F1GNTmG5Ew2cOj5JQl6+C7eFRecPG8TPU5BNVFy7vxGKbd5gO0RjP1o/M+skBwBLnbLlUKlbrhO7efAk8vv1hpuAESBj5yqL8OpQvY+061YT6aK0rY+L9PVr/PcIiqEBXDK1K0YxjblfIhXk8nmmGHP26AJmhTLLMb9Yor57k/vbIbTmxirgSdqyw/JR6VLQNqAaEWU4BBKtpAor+VZyq7rHp2lt5s1vdzrfjGZvzmP6oHo01M8taUVW6OgotD57Axg9s9PBXfuOsuCFj5xK4xWSdRnJiTOFsIJ2rXUrNrnNnLhxBb9iB9XAH2p+dZRSJyvVyfBeB1VJ1O+X+evw425Ufk40SLjsloqAMQJLVkgOk3Zs7oWwozHY6pOwZROLlfeAET71plCkYQ28XIAHFgbrowlBqGzp/dmm/N7muKS8ygUxapAcmSKUb2i59jr8wJ1aNQcMp1C7F+Nkzx3eqBun7tHap4YwPf9BB+mdiQWYvwOzzK/PGAkYiYMZap8LTAubOBFEVJdwA8QXE0i1ssqOnD2VMjZJiF4UnMw81qLh/SDOOz38l6KMxEmQgzSR3uv/eMh3bmKWT0+aJabJpTSVlgf5nkP+NnxTs57FppmcFwJV/hYKLwFBefkD5rKNTGJnAHZ56uraeeYS1T3KhDW2t0lDN+gXi4lMVShVDWS6SSr+5GTPnDAganBTDnnbHISZd37JOyn5ukDMtYu+8GqncC4BkzH3Yxgi5HKmXSvDD4G+FpreePYJnbYoMrvvoF1ms/tnS2o1HlqtgX84OwYZgfhamPQV3AdCGBXA4eutpMIBCeQEtoHO2pctsr2i22IZtqFci+KIaaYdivzlhjUMjqMzbKS7Q5mRq3SuBjThQlRYIY1CgcsnICdD6AQvNcGSyDSf5RhxIrXQ1mWVQVyl3Ku2HnZWA8D0LWadDvOEZhuWAbMXz00yZydQ18KM4GVffq9ds3uO2ICY77whj600mQncDNftf+QfPKtl6Uxu+nElIYlqhl0t7H8N367bzxrGEEwB/MjJ3i0DLQs0C8QNa8cmaFy0vQpW2+78M22ZuzA8qQlW2wrEIfh98Vbt4Re5WOX6Soi5g8DeDouQf2ziLlqaCZDTsSUespS/iMChLkJvBBIj7oj3z3/qgx28lQs11rIebaJo5Qu9euTuMGZZVBYoaov2A46CP88Sk+MynRk3IBfKJogozgrg/Fs28w3f7t/pSmSlezbavG4DkttFEfChBV1nyadghGIbFEO3hO10n5iXxo5U3r0VwQX7RuU1kZsnSDtgRjqZ5mK2/zkuLda1tHFNRCLlakZtGAnBV2EyL+/RwKOdyB8r9LV4DhCPydDq50R8VLF7x/Iz5id1fKQWXncOubBWeFg7Mj7BNTUQ9OV0MS0ZPf0vLumYeybPEjPDEsNoL4GUJac0GqA9TUBfv1B3h/7vJ8pFaEsxZk0ElOM2xfYLns5N90OjvByHtdvL7psG+FxNsL4PuvrOsGbK65xROAyZU7b/2tEDWrihvQb8ymNqSB8Fxz88zZtdJtZcalkcvbm5dGFQiRklIMSfp9HS9TiabxW+92arvUtW5G8CVUkvC5LT70Xzany5DpMTL9vNYxP9D6qJloYxjJMo7j27Wqv2jGB3j206pDm5POsdBgm8MmVjvi4y6QDwjUOFL9Sf4V5viTJbrahTK3rryFMaxQiUdID1EbiioI2itSs/2RzFvzMX1LwMRjAT6hqFAi+LqFgRfrunZ0Ae8J7GeubM85PwrW5dPco9tNk6t4DH7zaMvdqzukKIo8Ts5eKjL7K/xQp56oWysn7Vbw54dZI44Hs/wyRwtln9ShNmzRvK5eZ4lr707Kivik0p/H+tLUiKuCV00K2g7Q8qZmeXTKfC05Dc32kzAnGQB4AUW0j6rFos180RKEUNDX9ICTxbI+hf1JN1Fmr6l/BdmhkS89LBdIdZaxrXtEzCEqi/yIILhguw7F73HRYqfIzo6bffwgzVSrZw7xjavEM5NjcTgrI5kI58ws/5B3SfFBfxpGnxAR/BmyYb7fn486c5UwGxCoLLiuNDrKLV/OHz+cMMwag6uhTF3qcc0Nsa/2koqvm0ba1h2uYr8fYIXOmfPtK9w8G6iBSyBsHIWSN/ZviuGXyNJd5XjlK17EflBjzssj8CSePNQu361UsfeIut/iIMIYbqLz8glfrIquDYbfKRpVnrTzXBUY7gAy6YstmChLYlPnk7LvBHZw3Ar596hOtqHLY3CVsXu6XIjLKh+ZFqQ0Snqk4uhbp1o6Nbb7+vGtxA7cg9qEH+tCPUrxyZcuzrg9xi5rXSYc2G+HCsVU4rka+Q+mSqts0uSTKJHNUv7SBiUKdEInaqwDYKnhw3KNaiGNV6nTPWZk3LWRCv5zdDogW5ZXka6yCL5Y7c9Qs51usg0/fuOxbW17vlo7yQ1ocjJlz+8AdlREO1X8mUmh3JfTq7ilyqC5AYPtW2Z2tJ3dZNE+NDcPWhGFjcDm0a9vCcxkRPzCbOnORje1ns7GyYdjRa/6GPEeFqrx5HbDqJ+IfQPs1ZL7H0zfcbLBI4/vcnRkjtlWVyUvObupkVb8rs1KCdbHnheBS7Uhi8yhXhIfrBsnR79t5i0GrTPaaNzJfWblRgYIj/D0scQonFN1Fxp9lt1fnaY7b0GaNimvPvFQgaJ5U2OK9NzZwQzlcB/UB4lNXwQwlotXOwVroHPwIEyrm4TCdpYW2yI2nuOCsqRy+4bSIc/N7lLTzqbbkpq5k5AqK2BP5P/6wEuMIY396SzBrSAnktlb115ClywhY0PxFlc/CFGall1IzfudmIEycXe5Wu6UxpaaViDYz756vhZXrJLpLUd0QH5pWPycQ1lBu+fLvsjZmrgPBAlqQC6747OaZKr8zeDkWMGRyI1lihpom8t0eiyN2ogf0MOABBpBwjuhyov7QUHFY+wXEJBXE7/wuP6+XJQ95HfK61eYbYOOGOcqXC9DnwAs1RG5CEiUGqdoZDYKF3OZOpFo2MgRePYRNKKBeNbWoDa+QWbH4Mf9dY4dWRy5I6n7eqT4BSicWudD7FHOJlQWkCz5GWbXf4HrmDGwHDKmQjvU+F3smEFOCpZuMVsUaoh48epRtwU3Upaokb//nyPE/yZFtN2+q8Jk36Mt6+8OoR/rkifdNu8TuJKGBibMAkbEA6Dl0q4s8ZKmkPD0Yc7AV95v8VYw2tTYKAH6HA8fqB5y153zgML2qCZYuQ3knGSoS0qRMG/5qqNgAW5TwuaxWC0XGkRtwJs/NvgzD/blIr6Iyh+rWOu/6qakvcBpLnPiODxx1+Q8O49C0UyIOVGVkTtn6xOBresmi/sWFocbjxz56sBEuhXJwC6T0NShg48HmwTs7BOiPiLin4CNWIWmZcGaqVtOfgGDH0W69TEV1z/DvT9uoc3ryAQcwnarRmu8WQCuFRaOEv3O9l3ptbmtDs91F2y8eCtqM+geyr8l7Rz39nYbBOLkdYsqkQoOXYWBV8BHRmOimggYXtZQl8gBmVcooBT+sh65aizsKY0Pz0nj3QzUceA7i4UELRJRNXG4s4Q6usFy5ybpuB5EJRX4tzsIzZH9sIIUqd0z1l3Bi3gisRvnI0XKH8sSUc1jNfawKhOKS9a/+OnWoLfJOKdJ2edusnm3UAzJ+XfylbVhBEWX13kZeGHL0wDg2LGWful0Qgd3eV4imt+8qIth5IWhk9cre1CjM7hx2XxikCYHtGHZucH/oy5o5pUYO6/0hb1neh1RGb6d/KfXqMBv8RJjpAH8bg21d1V2az2LLDXxG/fjjwUP7dpJDDXx1l4fkrrUx6x1LxCXZAavSZvjovU7sSiM30ODCY9UX/HZ+OYKoRmOKLbh8eHLCj7g34qhbtLdEWkxk8+ThWapQN3SFYyhYnHk+WFKnAc0W5m3KS3Ga5Y2XiHwwwRVelnFugYjG5CRAOeGGQNzNXv4uw5BFmkZw5ok9EnC4dqcLXk87sBrSApHc28RYK9LDXdY/Pm+8eJbuIJhKyylFQqTghveeEVKp8UbYR3VryIodgu70gnZpD0Y7j1T7Of8+WBevpQczR3bMZ8gWkyAWmEfJyOtVxlRPdYZw+CIjn0b2sK+2pHVzPwP2gNMZ01UqsQd0qEv72zJf59S0sZOSfT8peBcPCgQ+4d6b50TDapWOU3HGzgQgF28NkqVemRshV78tXIKO3j5s0TVraSpgqFv273TuyuNx804Yr5JCzX/w6fDyPj4ZyutwbgKhPUpGeSmsFpgCh7D/CH9muaeHjfo6ZKdkrPRZWx/mSH+zWIXg/wqt79lUls5QblzVl14Xt3vIUtwvqWn8WQ4kCl5VnvfT9fqXIZ/21+LzsE7ipH9GpuljHRNwsivwm67pF53kmuc3qr7XDKAG5ZZrohCBlF66TPKOOYATIDRf8NHq/yHMB9C+p0OL9WLeDBtzZXqwGRdGkYJ1chRKaZunjVQKLt/KSyXwEHzDPmNgW1po+Gwwnwgv4ZxrtZX/npFiIP54DYvyDFH9cghGJYaTUpVx1vUhw2QRQth7x3WUJUzfzpsvvHF4lhyBMuSXxerjQ8MA4wjHJ6A2OempzIRCAL9gxC+yrWB06fksuWjbaFpXmzJz75/46SenP1e4XWuueaHY9n8sHTN3DvKhuNcBUx/j2gtjq+WUpq9aQFoywwdi7fj1pK7hcFm/UKdpXaPjf+SJP72+P9n0e1GrZPzQOCWM6Cks57Gh0yY24q+bS0qOZ9TuPCHwciPN4N4o/Wt10LTJBlA8s1Frwhtpt3Ik8zuMu+rR180vzkGD9LnxIgJGkqbXza0vlDXGVG+AdAsWHCXCQsMwitPd0UN9T3PQRe5x0ruBWaWE0rkt1DCDYMkAE1tPc0So+0JDkzINAnIRqcLZ/jFKGRpcifNDNXaZOya6vpDSwowT61tIyn5wwq1CI5/0oqfrvZ9ETkmb41npr29Z4ZOzG7jOUitjOl9TXTDAgM9JEycnR50CFnZ5BZgBC6vM7SPid88bwpzEOkfb9EACT4A8kdalCCRnfZzGY8mx2ai0ayPE6dKmhHgZ9Wu6jJ9y7ULhhMylB3VdH/n2bDpG4OklLwGJOxmMoso69x3DbwwLwBVLG1ltyy0EydsctZMFo6mm9PXYpZJHJ6lmq1YqU8GoXiVFrg/k9NK6BOw9cc7hcJaEP1jQOKPeRRKjB06nc3H422Qz7wlLNMI9FI1tHNIL2oOG9voFJVRviXSmyTxBnHcrM2TaLj78sLEsAmCn/v5oAEKek+CAHdZ6JrDfbPmsensd5I+wqQknHMftxHO0DytQPsKp02f/oi/BK3zAcFzM17kiMW1vYFMl1gWlNqg9CGogd2r3xxLU+Qv1iiiIImA8ByOYFAMsoBcMmyWkbrzqnN2jCw0IlrM0DufeqorCAAAAAAAAAAAAA"
+screenshots:
+  - 1.webp
+web:
+  service: webdav
+  port: 80
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 5005
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: MEDIA_DIR
+    type: folder
+    default: "${DATA_ROOT}/Media"
+    label:
+      en: Media
+      uk: Медіа
+    hint:
+      en: Inside the app it is /media
+      uk: У застосунку вона — /media
+  - name: USERNAME
+    type: text
+    default: admin
+    required: true
+    label:
+      en: User name
+      uk: "Ім'я користувача"

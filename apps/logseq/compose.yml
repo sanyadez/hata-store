@@ -1,0 +1,23 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  logseq:
+    environment:
+      PGID: "0"
+      PUID: "0"
+    image: correctroad/logseq:v0.10.10
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${WEB_PORT:-3325}:3000"
+      - "${PORT_12315:-12315}:12315"
+    privileged: true
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${NOTES_DIR:-./Documents/Notes}"
+        target: /notes

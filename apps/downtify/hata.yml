@@ -1,0 +1,40 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Downtify
+tagline:
+  en: Download Spotify music with album art and metadata
+  pt: Baixe músicas do Spotify com a capa do álbum e metadados
+  uk: Завантажуйте музику зі Spotify з обкладинками та метаданими
+description:
+  en: "With Downtify you can download Spotify musics containing album art, track names, album title and other metadata about the songs. Just copy the Spotify link, whether it's a single song, an album, etc. As soon as your downloads are complete you will be notified!"
+  pt: "Com o Downtify você pode baixar músicas do Spotify contendo capas de álbuns, nomes de faixas, títulos de álbuns e outros metadados sobre as músicas. Basta copiar o link do Spotify, seja uma música única, um álbum, etc. Assim que seus downloads forem concluídos, você será notificado!"
+  uk: "За допомогою Downtify можна завантажувати музику зі Spotify разом з обкладинками, назвами треків, назвами альбомів та іншими метаданими. Просто скопіюйте посилання на Spotify — на окрему пісню, альбом тощо. Щойно завантаження завершиться, ви отримаєте сповіщення!"
+category: media
+developer: Henrique Sebastião
+website: https://downtify.henriquesebastiao.com
+source: https://github.com/henriquesebastiao/downtify
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: downtify
+  port: 8000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8582
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DOWNTIFY_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads/downtify"
+    label:
+      en: Directory where the files will be saved
+      pt: Diretório onde os arquivos serão salvos
+      uk: Тека для збереження файлів
+    hint:
+      en: Inside the app it is /downloads
+      uk: У застосунку вона — /downloads

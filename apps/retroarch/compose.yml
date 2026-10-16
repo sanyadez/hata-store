@@ -1,0 +1,13 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  retroarch:
+    image: inglebard/retroarch-web:latest@sha256:bf03014db81776a715b6289f017be2fc988688f9302590413cd6dcb615f07393
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    restart: unless-stopped
+    environment:
+      ROOT_WWW_PATH: "\"/var/www/html\""
+    ports:
+      - "${WEB_PORT:-8183}:80"

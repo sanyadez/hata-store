@@ -1,0 +1,11 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  adminer:
+    image: adminer:5.4.2
+    deploy:
+      resources:
+        reservations:
+          memory: 32M
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-8080}:8080"

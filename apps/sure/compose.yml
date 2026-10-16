@@ -1,0 +1,114 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  sure-web:
+    image: ghcr.io/we-promise/sure:0.6.5-hotfix.1
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/app/storage"
+        target: /rails/storage
+    ports:
+      - "${WEB_PORT:-23000}:3000"
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sure_user
+      POSTGRES_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      POSTGRES_DB: sure_production
+      SECRET_KEY_BASE: "${DB_PASSWORD_2:?set DB_PASSWORD_2}"
+      SELF_HOSTED: "true"
+      RAILS_FORCE_SSL: "false"
+      RAILS_ASSUME_SSL: "false"
+      DB_HOST: sure-db
+      DB_PORT: 5432
+      REDIS_URL: redis://sure-redis:6379/1
+      OPENAI_ACCESS_TOKEN: "${OPENAI_ACCESS_TOKEN:-}"
+    depends_on:
+      sure-db:
+        condition: service_healthy
+      sure-redis:
+        condition: service_healthy
+    networks:
+      - sure_net
+    deploy:
+      resources:
+        reservations:
+          memory: 1024M
+  sure-worker:
+    image: ghcr.io/we-promise/sure:0.6.5-hotfix.1
+    command:
+      - bundle
+      - exec
+      - sidekiq
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/app/storage"
+        target: /rails/storage
+    depends_on:
+      sure-redis:
+        condition: service_healthy
+    environment:
+      POSTGRES_USER: sure_user
+      POSTGRES_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      POSTGRES_DB: sure_production
+      SECRET_KEY_BASE: "${DB_PASSWORD_2:?set DB_PASSWORD_2}"
+      SELF_HOSTED: "true"
+      RAILS_FORCE_SSL: "false"
+      RAILS_ASSUME_SSL: "false"
+      DB_HOST: sure-db
+      DB_PORT: 5432
+      REDIS_URL: redis://sure-redis:6379/1
+      OPENAI_ACCESS_TOKEN: "${OPENAI_ACCESS_TOKEN:-}"
+    networks:
+      - sure_net
+    deploy:
+      resources:
+        reservations:
+          memory: 1024M
+  sure-db:
+    image: postgres:16
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/pgdata"
+        target: /var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: sure_user
+      POSTGRES_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      POSTGRES_DB: sure_production
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U sure_user -d sure_production
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sure_net
+    deploy:
+      resources:
+        reservations:
+          memory: 1024M
+  sure-redis:
+    image: redis:8.2.1-alpine3.22
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/redis/data"
+        target: /data
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sure_net
+    deploy:
+      resources:
+        reservations:
+          memory: 1024M
+networks:
+  sure_net:
+    driver: bridge

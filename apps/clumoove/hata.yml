@@ -1,0 +1,44 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Clumoove
+  de: Clumoove
+tagline:
+  en: Self-hosted cloud data migration & sync manager
+  de: Self-hosted Cloud-Datenmigration & Synchronisation
+  uk: Self-hosted менеджер міграції та синхронізації хмарних даних
+description:
+  en: "Clumoove is a modern, self-hosted cloud data migration and synchronization platform for files, calendars, and contacts.\n\nEasily connect, transfer, and synchronize data between cloud storage providers including Nextcloud, Google Drive, Dropbox, OneDrive, HiDrive, S3, WebDAV, SMB, SFTP, FTP, Immich, Seafile, Koofr, MEGA, and local storage.\n\nKey Features:\n- Zero-disk streaming transfers (no local temporary storage retention during migration)\n- Multi-threaded background migrations and cron-based synchronization schedules\n- Robust 3-way hash integrity verification & flexible conflict resolution\n- Integrated cloud file manager with multi-format previews and thumbnails\n- Multi-channel notification delivery (Gotify, ntfy, Telegram, Discord, Email)\n- Enterprise-grade security with AES-256-GCM encryption, TOTP 2FA, and audit logging"
+  de: "Clumoove ist eine moderne, selbstgehostete Plattform zur Migration und Synchronisation von Cloud-Daten für Dateien, Kalender und Kontakte.\n\nVerbinden, übertragen und synchronisieren Sie Ihre Daten mühelos zwischen Anbietern wie Nextcloud, Google Drive, Dropbox, OneDrive, HiDrive, S3, WebDAV, SMB, SFTP, FTP, Immich, Seafile, Koofr, MEGA und lokalem Speicher.\n\nHauptfunktionen:\n- Streaming-Übertragungen im RAM ohne Zwischenspeichern auf der Festplatte\n- Parallele Hintergrund-Migrationen und automatisierte Cron-Synchronisationszeitpläne\n- 3-Wege-Hash-Integritätsprüfung & anpassbare Konfliktlösungsstrategien\n- Integrierter Cloud-Dateimanager mit Vorschauen und Thumbnail-Unterstützung\n- Benachrichtigungen über mehrere Kanäle (Gotify, ntfy, Telegram, Discord, E-Mail)\n- Höchste Sicherheit durch AES-256-GCM-Verschlüsselung, 2FA (TOTP) und Audit-Logs"
+  uk: "Clumoove — сучасна self-hosted платформа для міграції та синхронізації хмарних даних: файлів, календарів і контактів.\n\nЛегко підключайте сховища, переносьте та синхронізуйте дані між ними: Nextcloud, Google Drive, Dropbox, OneDrive, HiDrive, S3, WebDAV, SMB, SFTP, FTP, Immich, Seafile, Koofr, MEGA і локальне сховище.\n\nОсновні можливості:\n- Потокове перенесення без запису на диск (під час міграції локально нічого тимчасово не зберігається)\n- Багатопотокові фонові міграції та синхронізація за розкладом cron\n- Надійна тристороння перевірка цілісності за хешами та гнучке розв’язання конфліктів\n- Вбудований файловий менеджер хмари з переглядом різних форматів і мініатюрами\n- Сповіщення через різні канали (Gotify, ntfy, Telegram, Discord, пошта)\n- Захист корпоративного рівня: шифрування AES-256-GCM, двофакторна автентифікація TOTP і журнал аудиту"
+category: productivity
+developer: Marcel Meyer
+website: https://clumoove.com
+source: https://github.com/xXRoxXeRXx/clumoove
+icon: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKIHdpZHRoPSIxMTAxLjAwMDAwMHB0IiBoZWlnaHQ9IjExMDEuMDAwMDAwcHQiIHZpZXdCb3g9IjAgMCAxMTAxLjAwMDAwMCAxMTAxLjAwMDAwMCIKIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDExMDEuMDAwMDAwKSBzY2FsZSgwLjEwMDAwMCwtMC4xMDAwMDApIgpmaWxsPSIjMDAwMDAwIiBzdHJva2U9Im5vbmUiPjxwYXRoIGQ9Ik00OTYyIDEwNTcwIGMtNTMzIC0zNSAtOTgzIC0xMzkgLTE0ODMgLTM0MSAtNzg4IC0zMTggLTE1ODYgLTk0MwotMjExNCAtMTY1NCAtMjAxIC0yNzAgLTM0MiAtNTAwIC00OTUgLTgwNiAtMjc3IC01NTYgLTQyOSAtMTA5OSAtNDkyIC0xNzU0Ci0xNiAtMTcxIC0xNiAtNjU1IDEgLTgyMCA3OCAtNzg2IDMxOCAtMTUwMCA3MDkgLTIxMDUgNDEgLTYzIDg1IC0xMzAgOTkgLTE0OApsMjUgLTM0IDk1IDEyOSBjMTI2IDE2OSAzNTYgNTE3IDQ4MiA3MjcgbDEwMSAxNjggLTE5IDMyIGMtMjcgNDMgLTEyMSAyNjIKLTE2NCAzODEgLTEyMCAzMzAgLTE3OCA2MzcgLTIyMiAxMTg1IC0zMyAzOTcgLTQyIDcwOSAtMjYgOTA2IDU5IDcyOCAyNDkKMTMxNSA1OTYgMTgzOSAxMjcgMTkxIDI0NCAzMzUgNDA1IDQ5NSA0MDkgNDA5IDg5NCA2ODQgMTQ1NSA4MjUgMzA0IDc2IDUzMwoxMDAgODg1IDkyIDI0MSAtNiAzNTIgLTE3IDU4MCAtNTcgNDI4IC03NyA5MzEgLTI2OCAxMzI0IC01MDQgNDQ4IC0yNzAgNTgxCi0zNTcgNzU4IC00OTggNTUgLTQ0IDEwMSAtNzggMTAzIC03NiA3IDggNjI3IDk0MyA2MzUgOTU5IDggMTQgLTkgMzAgLTEwOAoxMDIgLTM2MCAyNTkgLTc1MSA0ODIgLTEwNjIgNjA1IC01MTEgMjAzIC04NjMgMjkxIC0xMzUzIDMzNyAtMjAzIDE5IC01NDQgMjYKLTcxNSAxNXoiLz48cGF0aCBkPSJNNDQyNSA5Mzk0IGMtMjIgLTIgLTEwNCAtMTMgLTE4MiAtMjQgLTU5NiAtODQgLTExNDMgLTM1OCAtMTU3MwotNzg5IC0zMzMgLTMzNCAtNTg3IC03NDkgLTc0OSAtMTIyNSAtNDggLTE0MSAtMTI2IC00MzQgLTExOCAtNDQyIDIgLTMgMTQgMjQKMjcgNTggMzggMTA1IDEzNyAzMTYgMjAyIDQzMyAzNzEgNjY1IDkzNiAxMjE2IDE1ODggMTU0OSA0NzcgMjQ0IDk0MSAzNjYKMTQ5MCAzOTQgbDEzNSA3IC0xMjAgMTkgYy05MCAxNCAtMTg2IDE5IC0zOTAgMjEgLTE0OCAyIC0yODggMSAtMzEwIC0xeiIvPjxwYXRoIGQ9Ik00MjA1IDgwNDMgYy0yODEgLTYxNSAtODY4IC0xODQ4IC0xMjA5IC0yNTM4IC03NDAgLTE0OTggLTExOTYKLTIyNjcgLTE3NjcgLTI5ODAgLTI0MyAtMzA0IC01NTcgLTY0MyAtNzYzIC04MjUgLTQ2IC00MSAtODUgLTc4IC04NSAtODIgLTEKLTEyIDE3NSAtMTAgMjg3IDMgNDkwIDUzIDk1NyAyNzAgMTM5NyA2NDggMTIwIDEwMyAzNDAgMzM0IDQ2NiA0ODcgMzM4IDQxMgo1OTcgODEwIDk1NiAxNDY0IDEyNSAyMjYgNTYxIDEwOTcgODE5IDE2MzIgNjAgMTI1IDExMiAyMjggMTE1IDIyOCAxMiAwIDgyNgotMTM2NSAxNTE2IC0yNTQwIDE5OCAtMzM4IDMzMCAtNTYwIDMzOCAtNTY4IDEgLTIgMzMgNTAgNzAgMTE1IDQyOCA3NDcgMTc3NQozMDA3IDE3ODYgMjk5NiA0IC01IDg2IC0yMDYgMTgyIC00NDggMjI4IC01NzQgMzAyIC03NDYgNDU3IC0xMDYwIDQ0NiAtOTA3Cjg3OSAtMTMzNCAxNDkwIC0xNDcwIDg1IC0xOSA0NjEgLTMyIDUyMSAtMTggbDM3IDggLTcxIDEyMCBjLTM4IDY2IC0xMjggMjI2Ci0xOTkgMzU1IC03MiAxMjkgLTE2OCAzMDMgLTIxMyAzODUgLTIwNSAzNjkgLTY2OCAxMjgxIC04ODMgMTc0MCAtNDQgOTQgLTEzMwoyODUgLTE5OSA0MjUgLTY2IDE0MCAtMTY2IDM1MiAtMjIxIDQ3MCAtNTUgMTE4IC0yNDcgNTMwIC00MjcgOTE1IC0xODAgMzg1Ci0zMzUgNzE4IC0zNDQgNzM5IGwtMTcgMzkgLTI5IC00OSBjLTE2IC0yNyAtMjA0IC0zMzUgLTQxOCAtNjg0IC00ODIgLTc4NQotNzU4IC0xMjQ0IC0xMDk3IC0xODI1IC0zMTggLTU0NyAtNDI0IC03MDkgLTUzNCAtODE5IC0xMTkgLTEyMCAtMjU5IC0yMDMKLTM3MSAtMjIxIGwtNDAgLTYgNTYgMzEgYzE5OCAxMTEgMzIxIDMwNSAzMjIgNTEwIDEgNjQgLTQgODYgLTMwIDE0MSAtMzYgNzgKLTEyMiAyMjIgLTI1MyA0MjQgLTUzIDgzIC0xODAgMjg1IC0yODIgNDUwIC00OTEgNzk1IC05NTAgMTU0NCAtMTA4OCAxNzc1Ci04NCAxNDAgLTE1NSAyNTggLTE1OSAyNjMgLTQgNCAtNTYgLTEwMCAtMTE2IC0yMzB6Ii8+PHBhdGggZD0iTTg2OTAgMjk3NCBjLTE5OSAtMjAxIC01MDAgLTQ1OCAtNzE4IC02MTMgLTQ2NiAtMzMwIC0xMDU0IC01NzYKLTE2MTIgLTY3NiAtMjc0IC00OCAtNjcxIC02OCAtOTQ0IC00NiAtODc3IDcxIC0xNzU0IDQ0MiAtMjQ1NiAxMDQwIC01MiA0NAotOTggODEgLTEwMiA4MSAtMyAwIC0yMSAtMTkgLTM5IC00MiAtMTYyIC0yMDkgLTQ5MiAtNTU2IC02NjcgLTcwMyBsLTcyIC02MAozNyAtMzMgYzUzNCAtNDY5IDEyMzcgLTg2OCAxOTI4IC0xMDk1IDM4NSAtMTI3IDc0MCAtMTk5IDExODUgLTI0MyAyMTUgLTIxCjcyOSAtMjQgOTMwIC01IDQ0NSA0MSA4MjMgMTE5IDEyMDcgMjQ2IDY1MiAyMTcgMTE3NiA1MDMgMTY2MyA5MDkgMTM3IDExNAo0MzEgMzg4IDQ3NyA0NDQgbDM2IDQ0IC01MCA1MSBjLTI3IDI5IC0xMjMgMTM0IC0yMTIgMjM0IGwtMTYyIDE4MiAtMTAwIC0xMDMKYy00MzAgLTQ0NyAtMTAxMSAtODE3IC0xNTk3IC0xMDE3IC0zMDQgLTEwMyAtNzk2IC0yMDEgLTk5NyAtMTk4IC00NyAxIC00NiAyCjMwIDE1IDQ4MiA4NiA5ODYgMjg5IDE0MjAgNTcyIDIxMyAxMzkgMzk1IDI4NiA2MDAgNDg0IDE3NyAxNzEgNDI1IDQ1MiA0MjUKNDgyIDAgMTQgLTk5IDEzMCAtMTE0IDEzNCAtNiAxIC00OSAtMzYgLTk2IC04NHoiLz48L2c+PC9zdmc+"
+screenshots:
+  - 1.webp
+  - 2.webp
+web:
+  service: frontend
+  port: 3000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8380
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DB_PASSWORD
+    type: secret
+    label:
+      en: Password between its services
+      uk: Пароль між його сервісами
+  - name: JWT_SECRET_KEY
+    type: secret
+    length: 46
+    label:
+      en: JWT_SECRET_KEY
+  - name: POSTGRES_PASSWORD
+    type: secret
+    label:
+      en: POSTGRES_PASSWORD

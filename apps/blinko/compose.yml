@@ -1,0 +1,62 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  blinko:
+    image: blinkospace/blinko:1.8.7
+    restart: unless-stopped
+    networks:
+      - blinko-net
+    depends_on:
+      blinko-postgres:
+        condition: service_healthy
+    ports:
+      - "${WEB_PORT:-1111}:1111"
+    environment:
+      NODE_ENV: "${NODE_ENV:-production}"
+      NEXTAUTH_URL: "${NEXTAUTH_URL:-http://localhost:1111}"
+      NEXT_PUBLIC_BASE_URL: "${NEXT_PUBLIC_BASE_URL:-http://localhost:1111}"
+      NEXTAUTH_SECRET: "${NEXTAUTH_SECRET:?set NEXTAUTH_SECRET}"
+      DATABASE_URL: "${DATABASE_URL:-postgresql://postgres:JWD9bxUR7Um9PaGg7FQZ@blinko-postgres:5432/postgres}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/blinko_data"
+        target: /app/.blinko
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    deploy:
+      resources:
+        reservations:
+          memory: 512m
+  blinko-postgres:
+    image: postgres:14
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: "${POSTGRES_DB:-postgres}"
+      POSTGRES_USER: "${POSTGRES_USER:-postgres}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}"
+      TZ: "${TZ:-UTC}"
+    networks:
+      - blinko-net
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/postgres_data"
+        target: /var/lib/postgresql/data
+    deploy:
+      resources:
+        reservations:
+          memory: 256m
+    healthcheck:
+      test:
+        - CMD
+        - pg_isready
+        - "-U"
+        - postgres
+        - "-d"
+        - postgres
+      interval: 5s
+      timeout: 10s
+      retries: 5
+networks:
+  blinko-net:
+    driver: bridge

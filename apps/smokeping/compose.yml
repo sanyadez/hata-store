@@ -1,0 +1,22 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  smokeping:
+    environment:
+      PGID: "1000"
+      PUID: "1000"
+      TZ: "${TZ:-UTC}"
+    image: linuxserver/smokeping:2.9.0
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${WEB_PORT:-10280}:80"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data

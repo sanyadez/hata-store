@@ -1,0 +1,64 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: resilio-sync
+tagline:
+  en: Unleash the power of seamless file synchronization.
+  zh: 发挥无缝文件同步的力量。
+  ar: استعن بقوة المزامنة المتناغمة للملفات.
+  de: Entfessle die Kraft der nahtlosen Dateisynchronisierung.
+  es: Libera el poder de la sincronización de archivos sin problemas.
+  fr: Libérez la puissance de la synchronisation de fichiers sans faille.
+  hu: Engedje szabadon a zavartalan fájlszinkronizáció erejét.
+  it: Scatena il potere della sincronizzazione dei file senza soluzione di continuità.
+  ru: Разблокируйте мощь безупречной синхронизации файлов.
+  pl: Uwolnij moc bezproblemowej synchronizacji plików.
+  pt: Desperte o poder da sincronização perfeita de arquivos.
+  sv: Frigör kraften i sömlös filsynkronisering.
+  uk: Безперебійна синхронізація файлів у повну силу.
+description:
+  en: resilio-sync is a Docker-based application that enables fast and secure file synchronization and sharing.
+  zh: resilio-sync是一个基于Docker的应用，可以实现无缝快速、安全的文件同步和共享。
+  ar: resilio-sync هو تطبيق مبني على دوكر يتيح مزامنة ومشاركة الملفات بسرعة وبأمان.
+  de: "resilio-sync ist eine Docker-basierte Anwendung, die schnelle und sichere Dateisynchronisierung und -freigabe ermöglicht."
+  es: resilio-sync es una aplicación basada en Docker que permite la sincronización y compartición de archivos de forma rápida y segura.
+  fr: resilio-sync est une application basée sur Docker permettant une synchronisation et un partage de fichiers rapides et sécurisés.
+  hu: "A resilio-sync egy Docker-alapú alkalmazás, amely lehetővé teszi a gyors és biztonságos fájlszinkronizációt és megosztást."
+  it: "resilio-sync è un'applicazione basata su Docker che consente la sincronizzazione e la condivisione rapida e sicura di file."
+  ru: "resilio-sync - это приложение на основе Docker, которое обеспечивает быструю и безопасную синхронизацию и обмен файлами."
+  pl: "resilio-sync to aplikacja oparta na Dockerze, umożliwiająca szybką i bezpieczną synchronizację i udostępnianie plików."
+  pt: resilio-sync é um aplicativo baseado em Docker que permite a sincronização e compartilhamento de arquivos de forma rápida e segura.
+  sv: resilio-sync är en Docker-baserad applikation som möjliggör snabb och säker filsynkronisering och delning.
+  uk: resilio-sync — застосунок у Docker для швидкої та безпечної синхронізації файлів і обміну ними.
+category: productivity
+developer: self
+website: https://www.resilio.com/sync/
+source: https://github.com/linuxserver/docker-resilio-sync
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IiMxMDg4RkYiLz48ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMTI1MV84OTYxKSI+PHBhdGggZD0iTTEyOCAyOEgxMjhDNzIuNzcxNSAyOCAyOCA3Mi43NzE1IDI4IDEyOFYxMjhDMjggMTgzLjIyOSA3Mi43NzE1IDIyOCAxMjggMjI4SDEyOEMxODMuMjI5IDIyOCAyMjggMTgzLjIyOSAyMjggMTI4VjEyOEMyMjggNzIuNzcxNSAxODMuMjI5IDI4IDEyOCAyOFoiIGZpbGw9IiMxMDg4RkYiLz48cGF0aCBkPSJNODcuMzE3MyAxNzEuMDQ5TDEwMy4yMjUgMTQzLjc1NUM5OS4zOTE1IDEzNy43NDUgOTQuNTg0NyAxMzIuNDE4IDg5LjAyMzUgMTI3Ljk5M0M3OC4xMDEzIDEzNi42ODcgNjMuNDgwOCAxNDEuODYgNDguNDY2MyAxNDEuODZDNjguNDIxOCAxNDEuODYgODUuNDA5NyAxNTguMDkyIDg1LjQwOTcgMTc4LjA0OEg4NS40MzgzQzg1LjQzNTggMTc1LjY2NyA4Ni4wMzIzIDE3My4yNTUgODcuMzE3MyAxNzEuMDQ5WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNODcuMzE3MyAxNzEuMDQ5TDEwMy4yMjUgMTQzLjc1NUM5OS4zOTE1IDEzNy43NDUgOTQuNTg0NyAxMzIuNDE4IDg5LjAyMzUgMTI3Ljk5M0M3OC4xMDEzIDEzNi42ODcgNjMuNDgwOCAxNDEuODYgNDguNDY2MyAxNDEuODZDNjguNDIxOCAxNDEuODYgODUuNDA5NyAxNTguMDkyIDg1LjQwOTcgMTc4LjA0OEg4NS40MzgzQzg1LjQzNTggMTc1LjY2NyA4Ni4wMzIzIDE3My4yNTUgODcuMzE3MyAxNzEuMDQ5WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzEyNTFfODk2MSkiLz48cGF0aCBkPSJNMjA3LjUzNCAxMTQuMTM1QzE4Ny42OSAxMTQuMDQyIDE3MS41NDYgOTcuODIxOCAxNzEuNTQ2IDc3Ljk1N0MxNzEuNTQ5IDgwLjMzODEgMTcwLjk1MiA4Mi43NTAyIDE2OS42NjcgODQuOTU2TDE1My43NTkgMTEyLjI1QzE1Ny41OTMgMTE4LjI2IDE2Mi40IDEyMy41ODcgMTY3Ljk2MSAxMjguMDExQzE3OC44NDEgMTE5LjM1MSAxOTIuNTg4IDExNC4xNzUgMjA3LjUzNCAxMTQuMTM1WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMjA3LjUzNCAxMTQuMTM1QzE4Ny42OSAxMTQuMDQyIDE3MS41NDYgOTcuODIxOCAxNzEuNTQ2IDc3Ljk1N0MxNzEuNTQ5IDgwLjMzODEgMTcwLjk1MiA4Mi43NTAyIDE2OS42NjcgODQuOTU2TDE1My43NTkgMTEyLjI1QzE1Ny41OTMgMTE4LjI2IDE2Mi40IDEyMy41ODcgMTY3Ljk2MSAxMjguMDExQzE3OC44NDEgMTE5LjM1MSAxOTIuNTg4IDExNC4xNzUgMjA3LjUzNCAxMTQuMTM1WiIgZmlsbD0idXJsKCNwYWludDFfbGluZWFyXzEyNTFfODk2MSkiLz48cGF0aCBkPSJNMTEzLjIyIDc3Ljk1NzFDMTEzLjIyIDcwLjI4MDkgMTA2Ljk5OSA2NC4wNTg2IDk5LjMyMzEgNjQuMDU4NkM5MS42NDY4IDY0LjA1ODYgODUuNDI1OCA3MC4yODA5IDg1LjQyNTggNzcuOTU3MUM4NS40MjU4IDk3LjgyMzEgNjkuMzEyOCAxMTMuOTg4IDQ5LjQ2NzkgMTE0LjA5NEM0OS40MDMyIDExNC4wOTQgNDkuMzQxMSAxMTQuMTA0IDQ5LjI3NTIgMTE0LjEwNEM0OS4wMzI5IDExNC4xMDQgNDguNzk2OCAxMTQuMTI4IDQ4LjU1NjkgMTE0LjE0TDQ4LjQ2MzcgMTQxLjg2QzYzLjQ3NyAxNDEuODYgNzguMDk4OCAxMzYuNjg3IDg5LjAyMSAxMjcuOTkzQzEwMy43NTEgMTE2LjI2OCAxMTMuMjE5IDk4LjIwMzQgMTEzLjIxOSA3Ny45NTcxTDExMy4yMiA3Ny45NTcxWiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMTY3Ljk2MSAxMjguMDExQzE1My4yMzIgMTM5LjczNiAxNDMuNzY0IDE1Ny44MDIgMTQzLjc2NCAxNzguMDQ4QzE0My43NjQgMTg1LjcwNiAxNDkuOTU2IDE5MS45MTQgMTU3LjYwNiAxOTEuOTQ0SDE1Ny43MTVDMTY1LjM2NSAxOTEuOTE0IDE3MS41NTcgMTg1LjcwNiAxNzEuNTU3IDE3OC4wNDhDMTcxLjU1NyAxNTguMjA0IDE4Ny42MzIgMTQyLjA1OCAyMDcuNDQgMTQxLjkxNEwyMDcuNTM0IDExNC4xMzVDMTkyLjU4OCAxMTQuMTc1IDE3OC44NDEgMTE5LjM1IDE2Ny45NjEgMTI4LjAxMVoiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTE3MS41NDYgNzcuOTU3MUMxNzEuNTQxIDczLjE3ODkgMTY5LjA4NCA2OC41Mjk5IDE2NC42NTkgNjUuOTQ4OEMxNTguMDI1IDYyLjA4MzkgMTQ5LjUxOSA2NC4zMjcgMTQ1LjY1NCA3MC45NTgxTDEwMy4yMjUgMTQzLjc1NEw4Ny4zMTcyIDE3MS4wNDhDODYuMDMyMyAxNzMuMjUzIDg1LjQzNTggMTc1LjY2NiA4NS40MzgyIDE3OC4wNDdDODUuNDQzMiAxODIuODI1IDg3LjkwMDEgMTg3LjQ3NCA5Mi4zMjU0IDE5MC4wNTVDOTQuNTAyNiAxOTEuMzI0IDk2Ljg3OTkgMTkxLjkyOSA5OS4yMzExIDE5MS45NDNIOTkuMzkxNEMxMDQuMTQ1IDE5MS45MTUgMTA4Ljc2MyAxODkuNDUgMTExLjMzIDE4NS4wNDZMMTUzLjc1OSAxMTIuMjVMMTY5LjY2NyA4NC45NTYxQzE3MC45NTIgODIuNzUwMiAxNzEuNTQ4IDgwLjMzODEgMTcxLjU0NiA3Ny45NTcxWiIgZmlsbD0id2hpdGUiLz48L2c+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzEyNTFfODk2MSIgeDE9Ijc1Ljg0NTgiIHkxPSIxNzguMDQ4IiB4Mj0iNzUuODQ1OCIgeTI9IjExNC4wODkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjMDAwMDRDIiBzdG9wLW9wYWNpdHk9IjAuOCIvPjxzdG9wIG9mZnNldD0iMC4xOSIgc3RvcC1vcGFjaXR5PSIwLjU1Ii8+PHN0b3Agb2Zmc2V0PSIwLjU1IiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48c3RvcCBvZmZzZXQ9IjAuNzUiIHN0b3AtY29sb3I9IiMwMDAwNEMiIHN0b3Atb3BhY2l0eT0iMCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDFfbGluZWFyXzEyNTFfODk2MSIgeDE9IjE0My43NDYiIHkxPSIxMDIuOTg0IiB4Mj0iMjA3LjcwNSIgeTI9IjEwMi45ODQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjMDAwMDRDIiBzdG9wLW9wYWNpdHk9IjAuOCIvPjxzdG9wIG9mZnNldD0iMC4xOSIgc3RvcC1vcGFjaXR5PSIwLjU1Ii8+PHN0b3Agb2Zmc2V0PSIwLjU1IiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48c3RvcCBvZmZzZXQ9IjAuNzUiIHN0b3AtY29sb3I9IiMwMDAwNEMiIHN0b3Atb3BhY2l0eT0iMCIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjUxXzg5NjEiPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjggMjgpIi8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
+screenshots:
+  - 1.webp
+web:
+  service: resilio-sync
+  port: 8888
+settings:
+  - name: PORT_55555
+    type: port
+    default: 55555
+    label:
+      en: Port 55555
+      uk: Порт 55555
+    advanced: true
+  - name: WEB_PORT
+    type: port
+    default: 8888
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Downloads
+      uk: Завантаження
+    hint:
+      en: Inside the app it is /downloads
+      uk: У застосунку вона — /downloads

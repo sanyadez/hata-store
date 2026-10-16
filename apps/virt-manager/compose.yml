@@ -1,0 +1,22 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  virt-manager:
+    restart: always
+    devices:
+      - /dev/kvm:/dev/kvm
+    environment:
+      DARK_MODE: "${DARK_MODE:-false}"
+      HOSTS: "['qemu:///system']"
+    image: mber5/virt-manager:latest@sha256:111674d877635e0f85baabfb202bba560e7ec5ccdf0d2f1ebcb48fc9c32bfd48
+    ports:
+      - "${WEB_PORT:-8185}:80"
+    volumes:
+      - type: bind
+        source: /var/run/libvirt/libvirt-sock
+        target: /var/run/libvirt/libvirt-sock
+      - type: bind
+        source: /var/lib/libvirt
+        target: /var/lib/libvirt
+      - type: bind
+        source: "${DOWNLOADS_DIR:-./Downloads}"
+        target: /DATA/Downloads

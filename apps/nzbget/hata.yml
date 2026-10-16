@@ -1,0 +1,69 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Nzbget
+tagline:
+  en: Efficient Usenet downloader
+  zh: 高效的Usenet下载器
+  ar: مُنزِّل Usenet فعال
+  de: Effizienter Usenet-Downloader
+  es: Descargador de Usenet eficiente
+  fr: Téléchargeur Usenet efficace
+  hu: Hatékony Usenet letöltő
+  it: Downloader Usenet efficiente
+  ru: Эффективный загрузчик Usenet
+  pl: Wydajny pobieracz Usenet
+  pt: Downloader Usenet eficiente
+  sv: Effektiv Usenet-downladdare
+  uk: Ефективний завантажувач із Usenet
+description:
+  en: "NZBGet can run on almost any device - classic PC, NAS, media player, SAT-receiver, WLAN-router, etc. The download area provides precompiled binaries for Windows, macOS, Linux (compatible with many CPUs and platform variants), FreeBSD and Android. For other platforms the program can be compiled from sources."
+  zh: NZBGet可以在几乎任何设备上运行-经典PC，NAS，媒体播放器，SAT接收器，WLAN路由器等。下载区提供了Windows，macOS，Linux（兼容许多CPU和平台变体），FreeBSD和Android的预编译二进制文件。对于其他平台，可以从源代码编译程序。
+  ar: يمكن لـ NZBGet تشغيل أي جهاز - جهاز PC التقليدي و NAS و مشغل وسائط ومستقبل SAT وموجه WLAN وما إلى ذلك. يوفر المنطقة التي تحمل النسخ المسبقة الثنائية لـ Windows و macOS و Linux (متوافق مع العديد من المعالجات والمنصات المختلفة) و FreeBSD و Android. للمنصات الأخرى ، يمكن تجميع البرنامج من المصادر.
+  de: "NZBGet kann auf fast jedem Gerät ausgeführt werden - klassischer PC, NAS, Mediaplayer, SAT-Receiver, WLAN-Router usw. Das Download-Bereich bietet vorkompilierte Binärdateien für Windows, macOS, Linux (kompatibel mit vielen CPUs und Plattformvarianten), FreeBSD und Android. Für andere Plattformen kann das Programm aus den Quellen kompiliert werden."
+  es: "NZBGet puede ejecutarse en casi cualquier dispositivo PC clásico, NAS, reproductor multimedia, receptor SAT, router WLAN, etc. La zona de descarga proporciona binarios precompilados para Windows, macOS, Linux (compatible con muchas CPUs y variantes de plataforma), FreeBSD y Android. Para otras plataformas, el programa se puede compilar a partir de fuentes."
+  fr: "NZBGet peut fonctionner sur presque n'importe quel appareil - PC classique, NAS, lecteur multimédia, récepteur SAT, routeur WLAN, etc. La zone de téléchargement fournit des binaires précompilés pour Windows, macOS, Linux (compatible avec de nombreuses CPUs et variantes de plate-forme), FreeBSD et Android. Pour d'autres plates-formes, le programme peut être compilé à partir de sources."
+  hu: "A NZBGet szinte bármilyen eszközön futtatható - klasszikus PC, NAS, médialejátszó, SAT-vetítő, WLAN-router stb. A letöltési terület előre fordított bináris állományokat tartalmaz Windows, macOS, Linux (több CPU és platformváltozat kompatibilitása), FreeBSD és Android esetében. Más platformok esetén a program forráskódból fordítható."
+  it: "NZBGet può essere eseguito su quasi qualsiasi dispositivo - PC classico, NAS, lettore multimediale, ricevitore SAT, router WLAN, ecc. La zona download fornisce binari precompilati per Windows, macOS, Linux (compatibile con molte CPU e varianti di piattaforma), FreeBSD e Android. Per altre piattaforme, il programma può essere compilato dalle fonti."
+  ru: "NZBGet может работать на практически любом устройстве - классическом ПК, NAS, медиаплеере, SAT-приемнике, WLAN-маршрутизаторе и т.д. Зона загрузки предоставляет предварительно скомпилированные бинарные файлы для Windows, macOS, Linux (совместим с многими процессорами и платформенными вариантами), FreeBSD и Android. Для других платформ программу можно скомпилировать из исходных кодов."
+  pl: "NZBGet może działać na prawie każdym urządzeniu - klasycznym PC, NAS, odtwarzaczu multimedialnym, odbiorniku SAT, routerze WLAN itp. Strefa pobierania dostarcza wstępnie skompilowane pliki binarne dla systemów Windows, macOS, Linux (zgodne z wieloma procesorami i wariantami platformy), FreeBSD i Android. Dla innych platform program można skompilować z źródeł."
+  pt: "O NZBGet pode ser executado em quase qualquer dispositivo - PC clássico, NAS, leitor multimídia, receptor SAT, roteador WLAN, etc. A área de download fornece binários pré-compilados para Windows, macOS, Linux (compatível com muitos CPUs e variantes de plataforma), FreeBSD e Android. Para outras plataformas, o programa pode ser compilado a partir de fontes."
+  sv: "NZBGet kan köras på nästan vilket enhet - klassisk PC, NAS, mediaspelare, SAT-mottagare, WLAN-router, etc. Nedladdningsområdet tillhandahåller förinstallerade binära filer för Windows, macOS, Linux (kompatibel med många CPU och plattformsversioner), FreeBSD och Android. För andra plattformar kan programmet kompileras från källkod."
+  uk: "NZBGet може працювати майже на будь-якому пристрої: звичайному комп’ютері, NAS, медіаплеєрі, супутниковому ресивері, Wi-Fi-маршрутизаторі тощо. У розділі завантажень є готові збірки для Windows, macOS, Linux (для багатьох процесорів і варіантів платформ), FreeBSD та Android. Для інших платформ програму можна зібрати з вихідного коду."
+notes:
+  en: "Default Account\n\n| Username | Password | | -------- | -------- | | nzbget   | tegbzn6789 |"
+  zh: "默认账号\n\n| 用户名 | 密码 | | -------- | -------- | | nzbget   | tegbzn6789 |"
+  uk: "Типовий обліковий запис\n\n| Ім'я користувача | Пароль | | -------- | -------- | | nzbget   | tegbzn6789 |"
+category: media
+developer: Nzbget Team
+website: https://nzbget.com
+source: https://github.com/nzbgetcom/nzbget
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODkyOSkiPjxwYXRoIGQ9Ik0yOC4wMDE1IDEyOC4wMDFDMjguMDAxNSAxODMuMjI5IDcyLjc3MyAyMjguMDAxIDEyOC4wMDEgMjI4LjAwMUMxODMuMjMgMjI4LjAwMSAyMjguMDAxIDE4My4yMjkgMjI4LjAwMSAxMjguMDAxQzIyOC4wMDEgNzIuNzcyNSAxODMuMjMgMjguMDAxIDEyOC4wMDEgMjguMDAxQzcyLjc3MyAyOC4wMDEgMjguMDAxNSA3Mi43NzI1IDI4LjAwMTUgMTI4LjAwMVoiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8xMjUxXzg5MjkpIi8+PHBhdGggZD0iTTIxOC40MDYgMTI4LjI1NEMyMTguNDA2IDc4LjA3NTUgMTc3Ljc2MSAzNy4zOTgxIDEyNy42MjMgMzcuMzk4MUM3Ny40ODQ3IDM3LjM5ODEgMzYuODM5OCA3OC4wNzU1IDM2LjgzOTggMTI4LjI1NEMzNi44Mzk4IDE3OC40MzIgNzcuNDg0NyAyMTkuMTA5IDEyNy42MjMgMjE5LjEwOUMxNzcuNzYxIDIxOS4xMDkgMjE4LjQwNiAxNzguNDMyIDIxOC40MDYgMTI4LjI1NFoiIGZpbGw9InVybCgjcGFpbnQxX2xpbmVhcl8xMjUxXzg5MjkpIi8+PHBhdGggZD0iTTEyNy41NjkgMjEzLjIyOEMxNzQuODQ4IDIxMy4yMjggMjEzLjE3NiAxNzQuOTAxIDIxMy4xNzYgMTI3LjYyMkMyMTMuMTc2IDgwLjM0MzMgMTc0Ljg0OCA0Mi4wMTYxIDEyNy41NjkgNDIuMDE2MUM4MC4yOTA1IDQyLjAxNjEgNDEuOTYzNCA4MC4zNDMzIDQxLjk2MzQgMTI3LjYyMkM0MS45NjM0IDE3NC45MDEgODAuMjkwNSAyMTMuMjI4IDEyNy41NjkgMjEzLjIyOFoiIGZpbGw9IiMzN0QxMzQiLz48cGF0aCBkPSJNMTcyLjI3IDEzMy4yMzVMMTI4LjE0MSAxNzcuNDI3TDg0LjAxMjUgMTMzLjIzNUgxNzIuMjdaIiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIwLjM3ODc4OCIvPjxwYXRoIGQ9Ik0xNDUuNzUxIDExMy43MzNIMTA5Ljg5M1YxMzMuMTc4SDE0NS43NTFWMTEzLjczM1oiIGZpbGw9ImJsYWNrIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjAuMzc4Nzg4Ii8+PHBhdGggZD0iTTExMC4xNDUgOTQuMjg5MUgxNDUuMjQ2VjEwNi45MTVIMTEwLjE0NVY5NC4yODkxWiIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMC4zNzg3ODgiLz48cGF0aCBkPSJNMTEwLjE0NSA3NC44NDQ3SDE0NS4yNDZWODcuNDcxSDExMC4xNDVWNzQuODQ0N1oiIGZpbGw9ImJsYWNrIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjAuMzc4Nzg4Ii8+PC9nPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8xMjUxXzg5MjkiIHgxPSIyMjguMDAxIiB5MT0iMjguMDAxIiB4Mj0iMjI4LjAwMSIgeTI9IjIyOC4wMDEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjRkFGQUZBIiBzdG9wLW9wYWNpdHk9IjAuOTg4MjgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzMzM3MzMiIHN0b3Atb3BhY2l0eT0iMC45ODgyOCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDFfbGluZWFyXzEyNTFfODkyOSIgeDE9IjM2LjgzOTgiIHkxPSIyMTkuMTA5IiB4Mj0iMzYuODM5OCIgeTI9IjM3LjM5ODEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjRkFGQUZBIiBzdG9wLW9wYWNpdHk9IjAuOTg4MjgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzMzM3MzMiIHN0b3Atb3BhY2l0eT0iMC45ODgyOCIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjUxXzg5MjkiPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjggMjgpIi8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+web:
+  service: nzbget
+  port: 6789
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 6789
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Downloads
+      uk: Завантаження
+    hint:
+      en: Inside the app it is /downloads
+      uk: У застосунку вона — /downloads
+  - name: NZBGET_PASS
+    type: password
+    required: true
+    label:
+      en: NZBGET_PASS

@@ -1,0 +1,18 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  chatgpt-next-web:
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+      CODE: "${CODE:-}"
+      PROXY_URL: "${PROXY_URL:-}"
+      BASE_URL: "${BASE_URL:-https://api.openai.com}"
+    image: yidadaa/chatgpt-next-web:v2.16.1
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    restart: unless-stopped

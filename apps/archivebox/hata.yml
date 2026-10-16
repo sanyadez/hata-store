@@ -1,0 +1,394 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: ArchiveBox
+  it: ArchiveBox
+  nb: ArchiveBox
+  zh: ArchiveBox
+  ja: ArchiveBox
+  ko: ArchiveBox
+  fr: ArchiveBox
+  de: ArchiveBox
+  sv: ArchiveBox
+  el: ArchiveBox
+  hr: ArchiveBox
+  pt: ArchiveBox
+  ru: ArchiveBox
+  tr: ArchiveBox
+tagline:
+  en: Self-hosted internet archiving solution
+  it: Soluzione di archiviazione internet self-hosted
+  nb: Selvbetjent internettarkiveringsløsning
+  zh: 自托管互联网存档解决方案
+  ja: セルフホスト型インターネットアーカイブソリューション
+  ko: 셀프 호스팅 인터넷 아카이빙 솔루션
+  fr: "Solution d'archivage Internet auto-hébergée"
+  de: Selbst gehostete Internet-Archivierungslösung
+  sv: Självhostad internetarkiveringslösning
+  el: Αυτο-φιλοξενούμενη λύση αρχειοθέτησης διαδικτύου
+  hr: Samo-hostano rješenje za arhiviranje interneta
+  pt: Solução de Arquivamento de Internet Auto-hospedada
+  ru: Самохостинговое решение для архивирования интернета
+  tr: Kendi barındırdığınız internet arşivleme çözümü
+  uk: Self-hosted рішення для архівування інтернету
+description:
+  en: "ArchiveBox is a powerful, self-hosted internet archiving solution that allows you to create your own personal archive of web pages, PDFs, videos, and more. It functions as a personal internet archive, saving content in multiple formats for long-term preservation.\n\nThe system consists of multiple components:\n- **ArchiveBox**: The main application providing the web interface and archiving capabilities\n- **Sonic**: A fast search backend for full-text search across archived content\n- **ArchiveBox Scheduler**: A background service for scheduled archiving tasks\n- **NoVNC**: A web-based VNC client for browser-based archiving\n\n**Key Features:**\n- Save web pages in multiple formats (HTML, PDF, screenshots, etc.)\n- Full-text search across all archived content\n- Scheduled archiving of websites and RSS feeds\n- Browser-based archiving with NoVNC\n- User authentication and access control\n- Extract and save media files (videos, audio, PDFs, etc.)\n\n**Learn More:**\n- [ArchiveBox Official Website](https://archivebox.io)\n- [ArchiveBox GitHub Repository](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Documentation](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  it: "ArchiveBox è una potente soluzione di archiviazione internet self-hosted che ti permette di creare il tuo archivio personale di pagine web, PDF, video e altro ancora. Funziona come un archivio internet personale, salvando i contenuti in più formati per la conservazione a lungo termine.\n\nIl sistema è composto da più componenti:\n- **ArchiveBox**: L'applicazione principale che fornisce l'interfaccia web e le capacità di archiviazione\n- **Sonic**: Un backend di ricerca veloce per la ricerca full-text nei contenuti archiviati\n- **ArchiveBox Scheduler**: Un servizio in background per le attività di archiviazione pianificate\n- **NoVNC**: Un client VNC basato sul web per l'archiviazione basata su browser\n\n**Caratteristiche principali:**\n- Salva pagine web in più formati (HTML, PDF, screenshot, ecc.)\n- Ricerca full-text su tutti i contenuti archiviati\n- Archiviazione pianificata di siti web e feed RSS\n- Archiviazione basata su browser con NoVNC\n- Autenticazione utente e controllo degli accessi\n- Estrai e salva file multimediali (video, audio, PDF, ecc.)\n\n**Scopri di più:**\n- [Sito web ufficiale di ArchiveBox](https://archivebox.io)\n- [Repository GitHub di ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Documentazione](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  nb: "ArchiveBox er en kraftfull, selvbetjent internettarkiveringsløsning som lar deg lage ditt eget personlige arkiv av nettsider, PDF-er, videoer og mer. Den fungerer som et personlig internettarkiv, og lagrer innhold i flere formater for langtidsbevaring.\n\nSystemet består av flere komponenter:\n- **ArchiveBox**: Hovedapplikasjonen som gir webgrensesnitt og arkiveringsmuligheter\n- **Sonic**: Et rask søkebackend for fulltekstsøk i arkivert innhold\n- **ArchiveBox Scheduler**: En bakgrunnstjeneste for planlagte arkiveringsoppgaver\n- **NoVNC**: En nettleserbasert VNC-klient for nettleserbasert arkivering\n\n**Nøkkelegenskaper:**\n- Lagre nettsider i flere formater (HTML, PDF, skjermbilder, etc.)\n- Fulltekstsøk på alt arkivert innhold\n- Planlagt arkivering av nettsteder og RSS-feeds\n- Nettleserbasert arkivering med NoVNC\n- Brukerautentisering og tilgangskontroll\n- Ekstraher og lagre mediefiler (videoer, lyd, PDF-er, etc.)\n\n**Lær mer:**\n- [ArchiveBox offisielt nettsted](https://archivebox.io)\n- [ArchiveBox GitHub Repository](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Dokumentasjon](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  zh: "ArchiveBox是一个强大的自托管互联网存档解决方案，允许您创建自己的网页、PDF、视频等个人存档。它作为个人互联网存档运行，以多种格式保存内容以供长期保存。\n\n该系统由多个组件组成：\n- **ArchiveBox**: 提供Web界面和存档功能的主应用程序\n- **Sonic**: 用于在存档内容中进行全文搜索的快速搜索后端\n- **ArchiveBox Scheduler**: 用于计划存档任务的后台服务\n- **NoVNC**: 用于基于浏览器的存档的基于Web的VNC客户端\n\n**主要功能：**\n- 以多种格式保存网页（HTML、PDF、截图等）\n- 在所有存档内容中进行全文搜索\n- 计划存档网站和RSS源\n- 使用NoVNC进行基于浏览器的存档\n- 用户身份验证和访问控制\n- 提取和保存媒体文件（视频、音频、PDF等）\n\n**了解更多：**\n- [ArchiveBox官方网站](https://archivebox.io)\n- [ArchiveBox GitHub仓库](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox 文档](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  ja: "ArchiveBoxは、Webページ、PDF、ビデオなどの独自の個人アーカイブを作成できる強力なセルフホスト型インターネットアーカイブソリューションです。個人用インターネットアーカイブとして機能し、長期保存のために複数の形式でコンテンツを保存します。\n\nこのシステムは複数のコンポーネントで構成されています：\n- **ArchiveBox**: Webインターフェースとアーカイブ機能を提供するメインアプリケーション\n- **Sonic**: アーカイブされたコンテンツ全体で全文検索を行うための高速検索バックエンド\n- **ArchiveBox Scheduler**: スケジュールされたアーカイブタスク用のバックグラウンドサービス\n- **NoVNC**: ブラウザベースのアーカイブ用のWebベースのVNCクライアント\n\n**主な機能：**\n- 複数の形式でWebページを保存（HTML、PDF、スクリーンショットなど）\n- すべてのアーカイブされたコンテンツで全文検索\n- WebサイトとRSSフィードのスケジュールされたアーカイブ\n- NoVNCを使用したブラウザベースのアーカイブ\n- ユーザー認証とアクセス制御\n- メディアファイルの抽出と保存（ビデオ、オーディオ、PDFなど）\n\n**詳細情報：**\n- [ArchiveBox公式ウェブサイト](https://archivebox.io)\n- [ArchiveBox GitHubリポジトリ](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox ドキュメント](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  ko: "ArchiveBox는 웹 페이지, PDF, 비디오 등의 개인 아카이브를 생성할 수 있는 강력한 셀프 호스팅 인터넷 아카이빙 솔루션입니다. 장기 보존을 위해 여러 형식으로 콘텐츠를 저장하는 개인 인터넷 아카이브로 기능합니다.\n\n이 시스템은 여러 구성 요소로 이루어져 있습니다:\n- **ArchiveBox**: 웹 인터페이스와 아카이빙 기능을 제공하는 주요 애플리케이션\n- **Sonic**: 아카이브된 콘텐츠 전체에서 전체 텍스트 검색을 위한 빠른 검색 백엔드\n- **ArchiveBox Scheduler**: 예약된 아카이빙 작업을 위한 백그라운드 서비스\n- **NoVNC**: 브라우저 기반 아카이빙을 위한 웹 기반 VNC 클라이언트\n\n**주요 기능:**\n- 여러 형식으로 웹 페이지 저장(HTML, PDF, 스크린샷 등)\n- 모든 아카이브된 콘텐츠에서 전체 텍스트 검색\n- 웹사이트 및 RSS 피드의 예약된 아카이빙\n- NoVNC를 사용한 브라우저 기반 아카이빙\n- 사용자 인증 및 접근 제어\n- 미디어 파일 추출 및 저장(비디오, 오디오, PDF 등)\n\n**더 알아보기:**\n- [ArchiveBox 공식 웹사이트](https://archivebox.io)\n- [ArchiveBox GitHub 저장소](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox 문서](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  fr: "ArchiveBox est une puissante solution d'archivage Internet auto-hébergée qui vous permet de créer votre propre archive personnelle de pages Web, de PDF, de vidéos et plus encore. Elle fonctionne comme une archive Internet personnelle, sauvegardant le contenu dans plusieurs formats pour une préservation à long terme.\n\nLe système se compose de plusieurs composants :\n- **ArchiveBox** : L'application principale fournissant l'interface Web et les capacités d'archivage\n- **Sonic** : Un backend de recherche rapide pour la recherche en texte intégral dans le contenu archivé\n- **ArchiveBox Scheduler** : Un service d'arrière-plan pour les tâches d'archivage planifiées\n- **NoVNC** : Un client VNC basé sur le Web pour l'archivage basé sur le navigateur\n\n**Fonctionnalités clés :**\n- Sauvegardez les pages Web dans plusieurs formats (HTML, PDF, captures d'écran, etc.)\n- Recherche en texte intégral dans tout le contenu archivé\n- Archivage planifié de sites Web et de flux RSS\n- Archivage basé sur le navigateur avec NoVNC\n- Authentification utilisateur et contrôle d'accès\n- Extrayez et sauvegardez des fichiers multimédias (vidéos, audio, PDF, etc.)\n\n**En savoir plus :**\n- [Site officiel d'ArchiveBox](https://archivebox.io)\n- [Dépôt GitHub d'ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Documentation](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  de: "ArchiveBox ist eine leistungsstarke, selbst gehostete Internet-Archivierungslösung, mit der Sie Ihr eigenes persönliches Archiv von Webseiten, PDFs, Videos und mehr erstellen können. Es funktioniert als persönliches Internet-Archiv und speichert Inhalte in mehreren Formaten für die langfristige Aufbewahrung.\n\nDas System besteht aus mehreren Komponenten:\n- **ArchiveBox**: Die Hauptanwendung, die die Weboberfläche und Archivierungsfunktionen bereitstellt\n- **Sonic**: Ein schnelles Such-Backend für die Volltextsuche in archivierten Inhalten\n- **ArchiveBox Scheduler**: Ein Hintergrunddienst für geplante Archivierungsaufgaben\n- **NoVNC**: Ein webbasierter VNC-Client für die browserbasierte Archivierung\n\n**Hauptmerkmale:**\n- Speichern Sie Webseiten in mehreren Formaten (HTML, PDF, Screenshots, etc.)\n- Volltextsuche über alle archivierten Inhalte\n- Geplante Archivierung von Websites und RSS-Feeds\n- Browserbasierte Archivierung mit NoVNC\n- Benutzerauthentifizierung und Zugriffskontrolle\n- Extrahieren und Speichern von Mediendateien (Videos, Audio, PDFs, etc.)\n\n**Mehr erfahren:**\n- [ArchiveBox offizielle Website](https://archivebox.io)\n- [ArchiveBox GitHub Repository](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Dokumentation](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  sv: "ArchiveBox är en kraftfull, självhostad internetarkiveringslösning som låter dig skapa ditt eget personliga arkiv av webbsidor, PDF:er, videor och mer. Den fungerar som ett personligt internetarkiv och sparar innehåll i flera format för långtidsbevarande.\n\nSystemet består av flera komponenter:\n- **ArchiveBox**: Huvudapplikationen som tillhandahåller webbgränssnitt och arkiveringsfunktioner\n- **Sonic**: Ett snabbt sökbackend för fulltextsökning över arkiverat innehåll\n- **ArchiveBox Scheduler**: En bakgrundstjänst för schemalagda arkiveringsuppgifter\n- **NoVNC**: En webbaserad VNC-klient för webbläsarbaserad arkivering\n\n**Nyckelfunktioner:**\n- Spara webbsidor i flera format (HTML, PDF, skärmdumpar, etc.)\n- Fulltextsökning över allt arkiverat innehåll\n- Schemalagd arkivering av webbplatser och RSS-flöden\n- Webbläsarbaserad arkivering med NoVNC\n- Användarautentisering och åtkomstkontroll\n- Extrahera och spara mediefiler (videor, ljud, PDF:er, etc.)\n\n**Läs mer:**\n- [ArchiveBox officiella webbplats](https://archivebox.io)\n- [ArchiveBox GitHub Repository](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Dokumentation](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  el: "Το ArchiveBox είναι μια ισχυρή, αυτο-φιλοξενούμενη λύση αρχειοθέτησης διαδικτύου που σας επιτρέπει να δημιουργήσετε το δικό σας προσωπικό αρχείο ιστοσελίδων, PDF, βίντεο και άλλα. Λειτουργεί ως προσωπικό αρχείο διαδικτύου, αποθηκεύοντας περιεχόμενο σε πολλαπλές μορφές για μακροπρόθεσμη διατήρηση.\n\nΤο σύστημα αποτελείται από πολλαπλά στοιχεία:\n- **ArchiveBox**: Η κύρια εφαρμογή που παρέχει τη διαδικτυακή διεπαφή και τις δυνατότητες αρχειοθέτησης\n- **Sonic**: Ένα γρήγορο backend αναζήτησης για πλήρη αναζήτηση κειμένου σε αρχειοθετημένο περιεχόμενο\n- **ArchiveBox Scheduler**: Μια υπηρεσία παρασκηνίου για προγραμματισμένες εργασίες αρχειοθέτησης\n- **NoVNC**: Ένας web-based VNC client για αρχειοθέτηση βασισμένη σε πρόγραμμα περιήγησης\n\n**Βασικά Χαρακτηριστικά:**\n- Αποθήκευση ιστοσελίδων σε πολλαπλές μορφές (HTML, PDF, στιγμιότυπα οθόνης, κ.λπ.)\n- Πλήρη αναζήτηση κειμένου σε όλο το αρχειοθετημένο περιεχόμενο\n- Προγραμματισμένη αρχειοθέτηση ιστοσελίδων και RSS feeds\n- Αρχειοθέτηση βασισμένη σε πρόγραμμα περιήγησης με NoVNC\n- Ταυτοποίηση χρήστη και έλεγχος πρόσβασης\n- Εξαγωγή και αποθήκευση αρχείων πολυμέσων (βίντεο, ήχος, PDF, κ.λπ.)\n\n**Μάθετε Περισσότερα:**\n- [Επίσημη Ιστοσελίδα ArchiveBox](https://archivebox.io)\n- [Αποθήκη GitHub ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Τεκμηρίωση](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  hr: "ArchiveBox je snažno, samo-hostano rješenje za arhiviranje interneta koje vam omogućuje stvaranje vlastitog osobnog arhiva web stranica, PDF-ova, videozapisa i više. Funkcionira kao osobni internet arhiv, pohranjujući sadržaj u više formata za dugoročno čuvanje.\n\nSustav se sastoji od više komponenti:\n- **ArchiveBox**: Glavna aplikacija koja pruža web sučelje i mogućnosti arhiviranja\n- **Sonic**: Brz backend za pretraživanje za pretragu cjelokupnog teksta u arhiviranom sadržaju\n- **ArchiveBox Scheduler**: Usluga u pozadini za zakazane zadatke arhiviranja\n- **NoVNC**: Web-based VNC klijent za arhiviranje temeljeno na pregledniku\n\n**Ključne značajke:**\n- Pohranjivanje web stranica u više formata (HTML, PDF, snimke zaslona, itd.)\n- Pretraga cjelokupnog teksta u svom arhiviranom sadržaju\n- Zakazano arhiviranje web stranica i RSS feedova\n- Arhiviranje temeljeno na pregledniku s NoVNC-om\n- Autentifikacija korisnika i kontrola pristupa\n- Ekstrakcija i pohrana medijskih datoteka (videozapisi, audio, PDF-ovi, itd.)\n\n**Saznajte više:**\n- [Službena web stranica ArchiveBox](https://archivebox.io)\n- [ArchiveBox GitHub Repozitorij](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Dokumentacija](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  pt: "ArchiveBox é uma poderosa solução de arquivamento de internet auto-hospedada que lhe permite criar o seu próprio arquivo pessoal de páginas web, PDFs, vídeos e mais. Funciona como um arquivo de internet pessoal, guardando conteúdo em múltiplos formatos para preservação a longo prazo.\n\nO sistema consiste em múltiplos componentes:\n- **ArchiveBox**: A aplicação principal que fornece a interface web e capacidades de arquivamento\n- **Sonic**: Um backend de pesquisa rápido para pesquisa de texto completo em conteúdo arquivado\n- **ArchiveBox Scheduler**: Um serviço de fundo para tarefas de arquivamento agendadas\n- **NoVNC**: Um cliente VNC baseado na web para arquivamento baseado em navegador\n\n**Características Principais:**\n- Guardar páginas web em múltiplos formatos (HTML, PDF, capturas de ecrã, etc.)\n- Pesquisa de texto completo em todo o conteúdo arquivado\n- Arquivamento agendado de websites e feeds RSS\n- Arquivamento baseado em navegador com NoVNC\n- Autenticação de utilizador e controlo de acesso\n- Extrair e guardar ficheiros multimédia (vídeos, áudio, PDFs, etc.)\n\n**Saiba Mais:**\n- [Website Oficial ArchiveBox](https://archivebox.io)\n- [Repositório GitHub ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Documentação](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  ru: "ArchiveBox - это мощное самохостинговое решение для архивирования интернета, которое позволяет создавать собственный личный архив веб-страниц, PDF-файлов, видео и многого другого. Оно функционирует как личный интернет-архив, сохраняя контент в нескольких форматах для долгосрочного хранения.\n\nСистема состоит из нескольких компонентов:\n- **ArchiveBox**: Основное приложение, предоставляющее веб-интерфейс и возможности архивирования\n- **Sonic**: Быстрый бэкенд поиска для полнотекстового поиска по заархивированному контенту\n- **ArchiveBox Scheduler**: Фоновая служба для запланированных задач архивирования\n- **NoVNC**: Веб-клиент VNC для архивирования на основе браузера\n\n**Ключевые особенности:**\n- Сохранение веб-страниц в нескольких форматах (HTML, PDF, скриншоты и т.д.)\n- Полнотекстовый поиск по всему заархивированному контенту\n- Запланированное архивирование веб-сайтов и RSS-лент\n- Архивирование на основе браузера с помощью NoVNC\n- Аутентификация пользователей и контроль доступа\n- Извлечение и сохранение медиафайлов (видео, аудио, PDF и т.д.)\n\n**Узнать больше:**\n- [Официальный сайт ArchiveBox](https://archivebox.io)\n- [Репозиторий ArchiveBox на GitHub](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Документация](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  tr: "ArchiveBox, web sayfalarının, PDF'lerin, videoların ve daha fazlasının kendi kişisel arşivinizi oluşturmanıza olanak tanıyan güçlü, kendi kendine barındırılan bir internet arşivleme çözümüdür. Uzun süreli koruma için içeriği birden çok formatta kaydeden kişisel bir internet arşivi olarak işlev görür.\n\nSistem birden fazla bileşenden oluşur:\n- **ArchiveBox**: Web arayüzünü ve arşivleme yeteneklerini sağlayan ana uygulama\n- **Sonic**: Arşivlenmiş içeriklerde tam metin araması için hızlı bir arama arka ucu\n- **ArchiveBox Scheduler**: Zamanlanmış arşivleme görevleri için bir arka plan hizmeti\n- **NoVNC**: Tarayıcı tabanlı arşivleme için web tabanlı bir VNC istemcisi\n\n**Ana Özellikler:**\n- Web sayfalarını birden çok formatta kaydetme (HTML, PDF, ekran görüntüleri vb.)\n- Tüm arşivlenmiş içerikte tam metin arama\n- Web sitelerinin ve RSS akışlarının zamanlanmış arşivlenmesi\n- NoVNC ile tarayıcı tabanlı arşivleme\n- Kullanıcı kimlik doğrulaması ve erişim kontrolü\n- Medya dosyalarını çıkarma ve kaydetme (videolar, ses, PDF'ler vb.)\n\n**Daha Fazla Bilgi Edinin:**\n- [ArchiveBox Resmi Web Sitesi](https://archivebox.io)\n- [ArchiveBox GitHub Deposu](https://github.com/ArchiveBox/ArchiveBox)\n- [ArchiveBox Belgelendirme](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+  uk: "ArchiveBox — потужне self-hosted рішення для архівування інтернету, що дає змогу створити власний архів вебсторінок, PDF, відео й не тільки. Він працює як особистий інтернет-архів і зберігає вміст у кількох форматах для довготривалого зберігання.\n\nСистема складається з кількох компонентів:\n- **ArchiveBox**: головний застосунок із вебінтерфейсом і можливостями архівування\n- **Sonic**: швидкий пошуковий бекенд для повнотекстового пошуку в архівованому вмісті\n- **ArchiveBox Scheduler**: фоновий сервіс для архівування за розкладом\n- **NoVNC**: вебклієнт VNC для архівування через браузер\n\n**Основні можливості:**\n- Збереження вебсторінок у кількох форматах (HTML, PDF, знімки екрана тощо)\n- Повнотекстовий пошук по всьому архівованому вмісту\n- Архівування сайтів і RSS-стрічок за розкладом\n- Архівування через браузер за допомогою NoVNC\n- Автентифікація користувачів і керування доступом\n- Вилучення й збереження медіафайлів (відео, аудіо, PDF тощо)\n\n**Дізнатися більше:**\n- [Офіційний сайт ArchiveBox](https://archivebox.io)\n- [Репозиторій ArchiveBox на GitHub](https://github.com/ArchiveBox/ArchiveBox)\n- [Документація ArchiveBox](https://github.com/ArchiveBox/ArchiveBox/wiki)"
+notes:
+  en: "**Default Account**"
+  it: "**Account Predefinito**"
+  nb: "**Standardkonto**"
+  zh: "**默认账户**"
+  ja: "**デフォルトアカウント**"
+  ko: "**기본 계정**"
+  fr: "**Compte par Défaut**"
+  de: "**Standardkonto**"
+  sv: "**Standardkonto**"
+  el: "**Προεπιλεγμένος Λογαριασμός**"
+  hr: "**Zadani Račun**"
+  pt: "**Conta Padrão**"
+  ru: "**Учетная запись по умолчанию**"
+  tr: "**Varsayılan Hesap**"
+  uk: "**Обліковий запис за замовчуванням**"
+category: productivity
+developer: ArchiveBox
+website: https://archivebox.io
+source: https://github.com/ArchiveBox/ArchiveBox
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PG1hc2sgaWQ9Im1hc2swXzEyMjlfMTg2IiBzdHlsZT0ibWFzay10eXBlOmx1bWluYW5jZSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMjQiIHk9IjI3IiB3aWR0aD0iMjA4IiBoZWlnaHQ9IjIwMyI+PHBhdGggZD0iTTIzMS4yOTUgMjcuM0gyNC44MTA1VjIyOS43SDIzMS4yOTVWMjcuM1oiIGZpbGw9IndoaXRlIi8+PC9tYXNrPjxnIG1hc2s9InVybCgjbWFzazBfMTIyOV8xODYpIj48cGF0aCBkPSJNNzAuNTk5OCAyMDAuMzM4QzY4Ljk2NjEgMjAwLjE1NyA2OC45NjYxIDIwMC4xNTcgNjguNjkzOCAxOTEuOTQzQzY4LjUxMjMgMTg3LjQwNSA2OC4zNzYxIDE2MS45IDY4LjM3NjEgMTM1LjIxNlY4Ni43NDkxSDYyLjExMzVDNTcuNDM5MyA4Ni43NDkxIDU1LjYyNCA4Ni41Njc2IDU0Ljk4ODcgODYuMTEzOEM1NC4xMjY0IDg1LjUyMzggNTQuMDgxMSA4NC43OTc3IDU0LjA4MTEgNzMuOTUxNkM1NC4wODExIDY3LjY0MzYgNTQuMjE3MiA2MS45MjU2IDU0LjM5ODcgNjEuMjkwM0M1NC43NjE4IDYwLjExMDQgNTQuODA3MiA2MC4xMTA0IDYwLjUyNTIgNTkuODM4MUM2My43NDcyIDU5LjY1NjYgOTYuODMwMSA1OS41MjA0IDEzNC4wODggNTkuNTIwNEMxOTguMTY2IDU5LjUyMDQgMjAxLjg0MiA1OS41NjU4IDIwMi4xNiA2MC4zMzczQzIwMi4zNDEgNjAuNzQ1NyAyMDIuNDc3IDY2LjU1NDUgMjAyLjQ3NyA3My4xODAxQzIwMi40NzcgODIuNzU1NiAyMDIuMzQxIDg1LjM4NzcgMjAxLjg0MiA4NS45Nzc2QzIwMS4zNDMgODYuNjEzIDIwMC4yNTQgODYuNzQ5MSAxOTQuOTQ0IDg2Ljc0OTFIMTg4LjY4MkwxODguNTQ1IDE0Mi43MDRDMTg4LjQ1NSAxODcuMjIzIDE4OC4yNzMgMTk4Ljg0MSAxODcuODE5IDE5OS42NTdDMTg3LjIyOSAyMDAuNjU2IDE4Ny4yMjkgMjAwLjY1NiAxMjkuNzMxIDIwMC41NjVDOTguMTAwOCAyMDAuNTIgNzEuNTA3NCAyMDAuNDI5IDcwLjU5OTggMjAwLjMzOFpNMTgzLjEgMTQxLjExNkwxODIuOTY0IDg3LjQyOThIMTI4LjI3OUg3My41OTVMNzMuNDU4OCAxNDEuMTE2TDczLjM2OCAxOTQuNzU2SDEyOC4yNzlIMTgzLjE5TDE4My4xIDE0MS4xMTZaIiBmaWxsPSIjMDkwMjA1Ii8+PHBhdGggZD0iTTk2LjM3NjIgMTc4LjEwMUM5NS45Njc4IDE3Ny43MzggOTUuOTY3OCAxNzQuNjUyIDk2LjMzMDggMTczLjY5OUM5Ni42MDMxIDE3My4wNjQgOTkuNzc5OCAxNzIuOTczIDEyOC4wMDcgMTcyLjk3M0MxNDUuMjUyIDE3Mi45NzMgMTU5LjYzOCAxNzMuMTU1IDE1OS45NTUgMTczLjM4MkMxNjAuMzY0IDE3My42MDkgMTYwLjUgMTc0LjUxNiAxNjAuNDA5IDE3NS45NjhDMTYwLjI3MyAxNzguMTkyIDE2MC4yNzMgMTc4LjE5MiAxMjguNDYxIDE3OC4zMjhDMTEwLjk4OSAxNzguMzc0IDk2LjUxMjQgMTc4LjI4MyA5Ni4zNzYyIDE3OC4xMDFaIiBmaWxsPSIjMDkwMjA1Ii8+PHBhdGggZD0iTTEwMS4zNjggMTYwLjQwM0MxMDEuMTg3IDE2MC4yNjcgMTAxLjA1MSAxNTEuNTA4IDEwMS4wNTEgMTQwLjk4QzEwMS4wNTEgMTI2LjczIDEwMS4xODcgMTIxLjczOCAxMDEuNTk1IDEyMS4zM0MxMDIuMzIxIDEyMC42MDMgMTUzLjczOCAxMjAuNTU4IDE1NS4xIDEyMS4yMzlDMTU1LjkxNiAxMjEuNjkzIDE1NS45NjIgMTIyLjQxOSAxNTUuOTYyIDE0MC42NjJDMTU1Ljk2MiAxNTQuODIxIDE1NS44MjYgMTU5Ljc2NyAxNTUuNDE3IDE2MC4xNzZDMTU1LjAwOSAxNjAuNTg0IDE0OC4zMzggMTYwLjcyIDEyOC4yNzkgMTYwLjcyQzExMy42MjEgMTYwLjcyIDEwMS41MDQgMTYwLjU4NCAxMDEuMzY4IDE2MC40MDNaTTExMy41MyAxNTQuMjc2QzExMy42NjcgMTUzLjY4NiAxMTMuNzEyIDE0Ny4zMzMgMTEzLjY2NyAxNDAuMDcyTDExMy41MyAxMjYuOTExSDExMC4xMjdIMTA2LjcyM0wxMDYuNTg3IDE0MC41MjZDMTA2LjU0MiAxNDguMDE0IDEwNi41ODcgMTU0LjM2NyAxMDYuNzIzIDE1NC42ODVDMTA2Ljg1OSAxNTUuMDkzIDEwNy45NDggMTU1LjI3NSAxMTAuMDgxIDE1NS4yNzVDMTEzLjAzMSAxNTUuMjc1IDExMy4zMDMgMTU1LjE4NCAxMTMuNTMgMTU0LjI3NloiIGZpbGw9IiMwOTAyMDUiLz48cGF0aCBkPSJNMzcuMjkwMiAyMjYuMTE1QzMzLjE2MDUgMjI1LjM4OSAzMS4yMDkyIDIyMi45ODQgMzAuNjY0NiAyMTcuOTQ2QzMwLjIxMDggMjEzLjQ1NCAzMC4yMTA4IDQyLjYzOSAzMC42NjQ2IDM4LjE0NjNDMzEuMTE4NCAzNC4wNjIgMzIuMTE2OCAzMi4zMzc1IDM0LjkzMDQgMzAuNzk0NUMzNi44MzY0IDI5Ljc5NjEgMzYuODM2NCAyOS43OTYxIDEyNy4xIDI5LjY2QzE4NS4wNTEgMjkuNjE0NiAyMTguMjcgMjkuNzA1NCAyMTkuODEzIDMwLjAyM0MyMjIuNzE4IDMwLjUyMjIgMjI0Ljk4NyAzMi4xNTU5IDIyNi4xNjcgMzQuNDcwNEMyMjYuOTM4IDM2LjEwNDEgMjI2Ljk4MyAzOS43MzQ2IDIyNi45ODMgMTI4LjA0NkMyMjYuOTgzIDIxNy4yNjYgMjI2LjkzOCAyMTkuOTg5IDIyNi4xMjEgMjIxLjY2OEMyMjUuMDc3IDIyMy43NTUgMjIzLjA4MSAyMjUuMzQ0IDIyMC42MyAyMjYuMDI0QzIxOC41ODggMjI2LjU2OSA0MC41MTIzIDIyNi42NiAzNy4yOTAyIDIyNi4xMTVaTTE4Ni40NTggMTk4LjI1MUMxODYuOTEyIDE5Ny40OCAxODcuMDkzIDE4NS41OSAxODcuMTg0IDE0MS4zNDNMMTg3LjMyIDg1LjM4ODFIMTkzLjU4M0MxOTguODkzIDg1LjM4ODEgMTk5Ljk4MiA4NS4yNTE5IDIwMC40ODEgODQuNjE2NkMyMDAuOTggODQuMDI2NiAyMDEuMTE2IDgxLjU3NiAyMDEuMTE2IDczLjE4MDVDMjAxLjExNiA2Ny4yODEgMjAwLjk4IDYyLjEwNzUgMjAwLjc5OSA2MS42OTkxQzIwMC40ODEgNjAuOTI3NiAxOTYuODk2IDYwLjg4MjIgMTM0LjA4OCA2MC44ODIyQzk3LjU1NjQgNjAuODgyMiA2NS4xMDg5IDYxLjAxODQgNjEuODg2OCA2MS4xOTk5QzU2LjE2ODggNjEuNDcyMiA1Ni4xMjM0IDYxLjQ3MjIgNTUuNzYwNCA2Mi42NTIxQzU1LjU3ODggNjMuMjg3NCA1NS40NDI3IDY4LjQxNTUgNTUuNDQyNyA3My45OTc0QzU1LjQ4ODEgODMuMzkxMyA1NS41MzM1IDg0LjE2MjggNTYuMzUwMyA4NC43NTI3QzU2Ljk4NTcgODUuMjA2NSA1OC44NDYzIDg1LjM4ODEgNjMuNDc1MiA4NS4zODgxSDY5LjczNzhWMTMzLjg1NUM2OS43Mzc4IDE2MC41MzkgNjkuODczOSAxODYuMDQzIDcwLjA1NTQgMTkwLjU4MkM3MC4zMjc3IDE5OC43OTYgNzAuMzI3NyAxOTguNzk2IDcxLjk2MTQgMTk4Ljk3N0M3Mi44NjkxIDE5OS4wNjggOTguODcyNSAxOTkuMTU5IDEyOS43MzIgMTk5LjIwNEMxODUuOTE0IDE5OS4yOTUgMTg1LjkxNCAxOTkuMjk1IDE4Ni40NTggMTk4LjI1MVoiIGZpbGw9IiM5QzJFNTUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS4xMzQ1MyIvPjxwYXRoIGQ9Ik0xMjcuNjkgMTk2LjIwOUw3Mi4wMDY4IDE5Ni4xMThMNzIuMDk3NiAxNDEuMDdMNzIuMjMzNyA4Ni4wNjg1SDEyOC4yNzlIMTg0LjMyNUwxODQuNDYxIDE0MS4wMjVDMTg0LjU1MiAxODQuODE4IDE4NC40NjEgMTk2LjA3MiAxODQuMDA4IDE5Ni4xNjNDMTgzLjY5IDE5Ni4yNTQgMTU4LjM2NyAxOTYuMjk5IDEyNy42OSAxOTYuMjA5Wk0xNTkuMDQ4IDE3NS45NjlDMTU5LjEzOSAxNzUuNTE1IDE1OC45NTcgMTc0Ljk3IDE1OC41OTQgMTc0Ljc0M0MxNTguMjc2IDE3NC41MTYgMTQ0LjQ4MSAxNzQuMzM1IDEyNy45NjIgMTc0LjMzNUM5OC4zNzMzIDE3NC4zMzUgOTcuOTE5NSAxNzQuMzM1IDk3LjY0NzIgMTc1LjI0MkM5Ny41MTExIDE3NS43NDIgOTcuNTExMSAxNzYuMzMyIDk3LjY0NzIgMTc2LjYwNEM5Ny44Mjg3IDE3Ni45MjIgMTA4LjEzIDE3Ny4wMTIgMTI4LjQxNiAxNzYuOTY3QzE1Ny44MjMgMTc2LjgzMSAxNTguOTEyIDE3Ni43ODUgMTU5LjA0OCAxNzUuOTY5Wk0xNTQuMDU2IDE1OC44MTRDMTU0LjQ2NCAxNTguNDA2IDE1NC42MDEgMTUzLjc3NyAxNTQuNjAxIDE0MC42NjJDMTU0LjYwMSAxMjMuNzM1IDE1NC41NTUgMTIzLjA1NCAxNTMuNzM4IDEyMi42QzE1Mi4zNzcgMTIxLjkyIDEwMy42ODMgMTIxLjk2NSAxMDIuOTU3IDEyMi42OTFDMTAyLjU0OCAxMjMuMDk5IDEwMi40MTIgMTI3Ljc3NCAxMDIuNDEyIDE0MC45OEMxMDIuNDEyIDE1MC43ODIgMTAyLjU0OCAxNTguOTA1IDEwMi43MyAxNTkuMDQxQzEwMi44NjYgMTU5LjIyMyAxMTQuMzkzIDE1OS4zNTkgMTI4LjI3OSAxNTkuMzU5QzE0Ny4yOTQgMTU5LjM1OSAxNTMuNjQ4IDE1OS4yMjMgMTU0LjA1NiAxNTguODE0WiIgZmlsbD0iI0ZFRkVGRSIvPjxwYXRoIGQ9Ik0xMDUuMzYyIDE1Ni4wNDdDMTA1LjIyNiAxNTUuNzc0IDEwNS4xODEgMTQ4Ljc0IDEwNS4yMjYgMTQwLjUyNkwxMDUuMzYyIDEyNS41NUgxMTAuMTI3SDExNC44OTJMMTE1LjAyOCAxNDAuMDcyQzExNS4wNzQgMTQ4LjA2IDExNS4wMjggMTU1LjA0OCAxMTQuODkyIDE1NS42MzhDMTE0LjY2NSAxNTYuNTkxIDExNC40MzggMTU2LjYzNyAxMTAuMDgyIDE1Ni42MzdDMTA2Ljg2IDE1Ni42MzcgMTA1LjQ5OCAxNTYuNDU1IDEwNS4zNjIgMTU2LjA0N1oiIGZpbGw9IiNGRUZFRkUiLz48L2c+PC9zdmc+"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: archivebox
+  port: 8000
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 18010
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: ADMIN_USERNAME
+    type: text
+    default: admin
+    required: true
+    label:
+      en: Admin Username for Authentication
+      it: "Nome utente amministratore per l'autenticazione"
+      nb: Administratorbrukernavn for autentisering
+      zh: 管理员用户名，用于身份验证
+      ja: 認証用管理者ユーザー名
+      ko: 인증을 위한 관리자 사용자 이름
+      fr: "Nom d'utilisateur administrateur pour l'authentification"
+      de: Administrator-Benutzername für die Authentifizierung
+      sv: Admin-användarnamn för autentisering
+      el: Όνομα χρήστη διαχειριστή για αυθεντικοποίηση
+      hr: Administrator korisničko ime za autentifikaciju
+      pt: Nome de Utilizador Administrador para Autenticação
+      ru: Имя администратора для аутентификации
+      tr: Kimlik Doğrulama için Yönetici Kullanıcı Adı
+      uk: Ім’я адміністратора для входу
+  - name: ADMIN_PASSWORD
+    type: text
+    default: hata
+    label:
+      en: Admin Password for Authentication
+      it: "Password amministratore per l'autenticazione"
+      nb: Administratorpassord for autentisering
+      zh: 管理员密码，用于身份验证
+      ja: 認証用管理者パスワード
+      ko: 인증을 위한 관리자 암호
+      fr: "Mot de passe administrateur pour l'authentification"
+      de: Administrator-Passwort für die Authentifizierung
+      sv: Admin-lösenord för autentisering
+      el: Κωδικός πρόσβασης διαχειριστή για αυθεντικοποίηση
+      hr: Administrator lozinka za autentifikaciju
+      pt: Palavra-passe de Administrador para Autenticação
+      ru: Пароль администратора для аутентификации
+      tr: Kimlik Doğrulama için Yönetici Parolası
+      uk: Пароль адміністратора для входу
+  - name: ALLOWED_HOSTS
+    type: text
+    default: "*"
+    label:
+      en: Allowed Hosts for Web Interface
+      it: "Host consentiti per l'interfaccia web"
+      nb: Tillatte verter for webgrensesnitt
+      zh: Web界面的允许主机
+      ja: Webインターフェースの許可ホスト
+      ko: 웹 인터페이스에 허용된 호스트
+      fr: "Hôtes autorisés pour l'interface web"
+      de: Zugelassene Hosts für die Weboberfläche
+      sv: Tillåtna värdar för webbgränssnitt
+      el: Επιτρεπόμενοι κεντρικοί υπολογιστές για τη διαδικτυακή διεπαφή
+      hr: Dopušteni hostovi za web sučelje
+      pt: Hosts Permitidos para a Interface Web
+      ru: Разрешенные хосты для веб-интерфейса
+      tr: Web Arayüzü için İzin Verilen Hostlar
+      uk: Дозволені хости для вебінтерфейсу
+  - name: CSRF_TRUSTED_ORIGINS
+    type: text
+    default: "*"
+    label:
+      en: Trusted Origins for CSRF Protection
+      it: Origini attendute per la protezione CSRF
+      nb: Betrodde opprinnelser for CSRF-beskyttelse
+      zh: CSRF保护的可信来源
+      ja: CSRF保護の信頼できるオリジン
+      ko: CSRF 보호를 위한 신뢰할 수 있는 출처
+      fr: Origines de confiance pour la protection CSRF
+      de: Vertrauenswürdige Ursprünge für den CSRF-Schutz
+      sv: Betrodda ursprunger för CSRF-skydd
+      el: Εμπιστευόμενες προελεύσεις για προστασία CSRF
+      hr: Pouzdani izvori za CSRF zaštitu
+      pt: Origens Confiáveis para Proteção CSRF
+      ru: Доверенные источники для CSRF-защиты
+      tr: CSRF Koruması için Güvenilir Kaynaklar
+      uk: Довірені джерела для захисту від CSRF
+  - name: PUBLIC_INDEX
+    type: text
+    default: "True"
+    label:
+      en: Allow Public Access to Snapshot List
+      it: "Consenti accesso pubblico all'elenco snapshot"
+      nb: Tillat offentlig tilgang til snapshot-liste
+      zh: 允许公开访问快照列表
+      ja: スナップショットリストへの公開アクセスを許可
+      ko: 스냅샷 목록에 대한 공개 액세스 허용
+      fr: "Autoriser l'accès public à la liste des instantanés"
+      de: Öffentlichen Zugriff auf die Snapshot-Liste zulassen
+      sv: Tillåt offentlig åtkomst till snapshot-lista
+      el: Να επιτραπεί η δημόσια πρόσβαση στη λίστα στιγμιότυπων
+      hr: Dozvoli javni pristup popisu snimaka
+      pt: Permitir Acesso Público à Lista de Snapshots
+      ru: Разрешить публичный доступ к списку снимков
+      tr: Anlık Görüntü Listesine Genel Erişime İzin Ver
+      uk: Публічний доступ до списку знімків
+  - name: PUBLIC_SNAPSHOTS
+    type: text
+    default: "True"
+    label:
+      en: Allow Public Access to Snapshot Content
+      it: Consenti accesso pubblico ai contenuti snapshot
+      nb: Tillat offentlig tilgang til snapshot-innhold
+      zh: 允许公开访问快照内容
+      ja: スナップショットコンテンツへの公開アクセスを許可
+      ko: 스냅샷 콘텐츠에 대한 공개 액세스 허용
+      fr: "Autoriser l'accès public au contenu des instantanés"
+      de: Öffentlichen Zugriff auf den Snapshot-Inhalt zulassen
+      sv: Tillåt offentlig åtkomst till snapshot-innehåll
+      el: Να επιτραπεί η δημόσια πρόσβαση στο περιεχόμενο των στιγμιότυπων
+      hr: Dozvoli javni pristup sadržaju snimaka
+      pt: Permitir Acesso Público ao Conteúdo do Snapshot
+      ru: Разрешить публичный доступ к содержимому снимков
+      tr: Anlık Görüntü İçeriğine Genel Erişime İzin Ver
+      uk: Публічний доступ до вмісту знімків
+  - name: PUBLIC_ADD_VIEW
+    type: text
+    default: "False"
+    label:
+      en: Allow Public URL Submission
+      it: Consenti invio URL pubblico
+      nb: Tillat offentlig URL-innsending
+      zh: 允许公开URL提交
+      ja: 公開URLの送信を許可
+      ko: 공개 URL 제출 허용
+      fr: "Autoriser la soumission d'URL publique"
+      de: Öffentliche URL-Übermittlung zulassen
+      sv: Tillåt offentlig URL-inlämning
+      el: Να επιτραπεί η δημόσια υποβολή URL
+      hr: Dozvoli javno slanje URL-a
+      pt: Permitir Submissão Pública de URL
+      ru: Разрешить публичную отправку URL
+      tr: Genel URL Gönderimine İzin Ver
+      uk: Публічне додавання адрес
+  - name: SEARCH_BACKEND_ENGINE
+    type: text
+    default: sonic
+    label:
+      en: Search Backend Engine
+      it: Motore di ricerca backend
+      nb: Søkemotor backend
+      zh: 搜索后端引擎
+      ja: 検索バックエンドエンジン
+      ko: 검색 백엔드 엔진
+      fr: Moteur de recherche backend
+      de: Such-Backend-Engine
+      sv: Sök backend-motor
+      el: Μηχανή αναζήτησης backend
+      hr: Pretraživački backend motor
+      pt: Motor de Busca do Backend
+      ru: Поисковый движок бэкенда
+      tr: Arama Backend Motoru
+      uk: Рушій пошукового бекенда
+  - name: SEARCH_BACKEND_HOST_NAME
+    type: text
+    default: archivebox_sonic
+    label:
+      en: Search Backend Host Name
+      it: Nome host backend ricerca
+      nb: Søkemotor backend vertsnavn
+      zh: 搜索后端主机名
+      ja: 検索バックエンドホスト名
+      ko: 검색 백엔드 호스트 이름
+      fr: "Nom d'hôte du backend de recherche"
+      de: Hostname des Such-Backends
+      sv: Sök backend-värdnamn
+      el: Όνομα κεντρικού υπολογιστή backend αναζήτησης
+      hr: Naziv hosta za pretraživački backend
+      pt: Nome do Host do Backend de Busca
+      ru: Имя хоста поискового бэкенда
+      tr: Arama Backend Ana Makine Adı
+      uk: Ім’я хоста пошукового бекенда
+  - name: DB_PASSWORD
+    type: secret
+    label:
+      en: Password between its services
+      uk: Пароль між його сервісами
+  - name: TIMEOUT
+    type: text
+    default: "120"
+    label:
+      en: Timeout for Download Operations
+      it: Timeout per le operazioni di download
+      nb: Tidsavbrudd for nedlastingsoperasjoner
+      zh: 下载操作超时时间
+      ja: ダウンロード操作のタイムアウト
+      ko: 다운로드 작업 제한 시간
+      fr: "Délai d'attente pour les opérations de téléchargement"
+      de: Zeitüberschreitung für Download-Vorgänge
+      sv: Timeout för nedladdningsoperationer
+      el: Χρονικό όριο για λειτουργίες λήψης
+      hr: Vremensko ograničenje za operacije preuzimanja
+      pt: Tempo Limite para Operações de Download
+      ru: Тайм-аут для операций загрузки
+      tr: İndirme İşlemleri için Zaman Aşımı
+      uk: Тайм-аут завантаження
+  - name: SEARCH_BACKEND_ENGINE_2
+    type: text
+    default: sonic
+    label:
+      en: Search Backend Engine
+      it: Motore di ricerca backend
+      nb: Søkemotor backend
+      zh: 搜索后端引擎
+      ja: 検索バックエンドエンジン
+      ko: 검색 백엔드 엔진
+      fr: Moteur de recherche backend
+      de: Such-Backend-Engine
+      sv: Sök backend-motor
+      el: Μηχανή αναζήτησης backend
+      hr: Pretraživački backend motor
+      pt: Motor de Busca do Backend
+      ru: Поисковый движок бэкенда
+      tr: Arama Backend Motoru
+      uk: Рушій пошукового бекенда
+  - name: SEARCH_BACKEND_HOST_NAME_2
+    type: text
+    default: archivebox_sonic
+    label:
+      en: Search Backend Host Name
+      it: Nome host backend ricerca
+      nb: Søkemotor backend vertsnavn
+      zh: 搜索后端主机名
+      ja: 検索バックエンドホスト名
+      ko: 검색 백엔드 호스트 이름
+      fr: "Nom d'hôte du backend de recherche"
+      de: Hostname des Such-Backends
+      sv: Sök backend-värdnamn
+      el: Όνομα κεντρικού υπολογιστή backend αναζήτησης
+      hr: Naziv hosta za pretraživački backend
+      pt: Nome do Host do Backend de Busca
+      ru: Имя хоста поискового бэкенда
+      tr: Arama Backend Ana Makine Adı
+      uk: Ім’я хоста пошукового бекенда
+  - name: ARCHIVEBOX_NOVNC_PORT_8080
+    type: port
+    default: 18082
+    label:
+      en: NoVNC Web Interface Port
+      it: Porta interfaccia web NoVNC
+      nb: NoVNC webgrensesnittport
+      zh: NoVNC Web界面端口
+      ja: NoVNC Webインターフェースポート
+      ko: NoVNC 웹 인터페이스 포트
+      fr: "Port de l'interface web NoVNC"
+      de: NoVNC Web-Oberflächen-Port
+      sv: NoVNC webbgränssnittsport
+      el: Θύρα διαδικτυακής διεπαφής NoVNC
+      hr: NoVNC web sučelje port
+      pt: Porta da Interface Web NoVNC
+      ru: Порт веб-интерфейса NoVNC
+      tr: NoVNC Web Arayüz Portu
+      uk: Порт вебінтерфейсу NoVNC
+    advanced: true
+  - name: DISPLAY_WIDTH
+    type: text
+    default: "1920"
+    label:
+      en: Display Width in Pixels
+      it: Larghezza display in pixel
+      nb: Skjermbredde i piksler
+      zh: 显示器宽度（像素）
+      ja: ディスプレイ幅（ピクセル）
+      ko: 디스플레이 너비(픽셀)
+      fr: "Largeur d'affichage en pixels"
+      de: Anzeigebreite in Pixeln
+      sv: Skärmbredd i pixlar
+      el: Πλάτος οθόνης σε pixels
+      hr: Širina zaslona u pikselima
+      pt: Largura do Ecrã em Píxeis
+      ru: Ширина дисплея в пикселях
+      tr: Piksel Cinsinden Ekran Genişliği
+      uk: Ширина екрана в пікселях
+  - name: DISPLAY_HEIGHT
+    type: text
+    default: "1080"
+    label:
+      en: Display Height in Pixels
+      it: Altezza display in pixel
+      nb: Skjermhøyde i piksler
+      zh: 显示器高度（像素）
+      ja: ディスプレイ高さ（ピクセル）
+      ko: 디스플레이 높이(픽셀)
+      fr: "Hauteur d'affichage en pixels"
+      de: Anzeigehöhe in Pixeln
+      sv: Skärmhöjd i pixlar
+      el: Ύψος οθόνης σε pixels
+      hr: Visina zaslona u pikselima
+      pt: Altura do Ecrã em Píxeis
+      ru: Высота дисплея в пикселях
+      tr: Piksel Cinsinden Ekran Yüksekliği
+      uk: Висота екрана в пікселях
+  - name: RUN_XTERM
+    type: text
+    default: "no"
+    label:
+      en: Run XTerm Terminal
+      it: Esegui terminale XTerm
+      nb: Kjør XTerm-terminal
+      zh: 运行XTerm终端
+      ja: XTermターミナルを実行
+      ko: XTerm 터미널 실행
+      fr: Exécuter le terminal XTerm
+      de: XTerm-Terminal ausführen
+      sv: Kör XTerm-terminal
+      el: Εκτέλεση τερματικού XTerm
+      hr: Pokreni XTerm terminal
+      pt: Executar Terminal XTerm
+      ru: Запустить терминал XTerm
+      tr: XTerm Terminalini Çalıştır
+      uk: Запускати термінал XTerm

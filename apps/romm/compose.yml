@@ -1,0 +1,60 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  romm:
+    image: rommapp/romm:4.8.1
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+    networks:
+      - romm-network
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-8285}:8080"
+    environment:
+      DB_HOST: "${DB_HOST:-romm-db}"
+      DB_NAME: "${DB_NAME:-romm}"
+      DB_USER: "${DB_USER:-romm-user}"
+      DB_PASSWD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      ROMM_AUTH_SECRET_KEY: "\"\""
+      IGDB_CLIENT_ID: "\"\""
+      IGDB_CLIENT_SECRET: "\"\""
+      SCREENSCRAPER_USER: "\"\""
+      SCREENSCRAPER_PASSWORD: "\"\""
+      STEAMGRIDDB_API_KEY: "\"\""
+    volumes:
+      - "${APP_DATA:-.}/resources:/romm/resources"
+      - "${APP_DATA:-.}/redis-data:/redis-data"
+      - "${APP_DATA:-.}/library:/romm/library"
+      - "${APP_DATA:-.}/assets:/romm/assets"
+      - "${APP_DATA:-.}/config:/romm/config"
+    depends_on:
+      romm-db:
+        condition: service_healthy
+        restart: true
+  romm-db:
+    image: mariadb:11.8.2
+    restart: unless-stopped
+    networks:
+      - romm-network
+    environment:
+      MARIADB_ROOT_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      MARIADB_DATABASE: "${MARIADB_DATABASE:-romm}"
+      MARIADB_USER: "${MARIADB_USER:-romm-user}"
+      MARIADB_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+    volumes:
+      - "${APP_DATA:-.}/mysql:/var/lib/mysql"
+    healthcheck:
+      test:
+        - CMD
+        - healthcheck.sh
+        - "--connect"
+        - "--innodb_initialized"
+      start_period: 30s
+      start_interval: 10s
+      interval: 10s
+      timeout: 5s
+      retries: 5
+networks:
+  romm-network:
+    driver: bridge

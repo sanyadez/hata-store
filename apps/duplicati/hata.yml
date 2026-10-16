@@ -1,0 +1,68 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Duplicati
+tagline:
+  en: Store securely encrypted backups in the cloud!
+  zh: 在云端存储安全加密的备份文件！
+  ar: حفظ النسخ الاحتياطية المشفرة بأمان في السحابة!
+  de: Sicher verschlüsselte Backups in der Cloud speichern!
+  es: ¡Almacena copias de seguridad cifradas de forma segura en la nube!
+  fr: Stockez des sauvegardes chiffrées de manière sécurisée dans le cloud !
+  hu: Biztonságosan tárolhatja az adattárolót felhőben titkosítva!
+  it: Memorizza in modo sicuro i backup crittografati nella cloud!
+  ru: Храните безопасные зашифрованные резервные копии в облаке!
+  pl: Bezpiecznie przechowuj zaszyfrowane kopie zapasowe w chmurze!
+  pt: Armazene backups criptografados de forma segura na nuvem!
+  sv: Lagra säkert krypterade säkerhetskopior i molnet!
+  uk: Надійні зашифровані резервні копії в хмарі!
+description:
+  en: "Duplicati is a free, open source, backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers."
+  zh: Duplicati是一个免费的开源备份客户端，它可以安全地存储加密的、增量的、压缩的备份文件到云存储服务和远程文件服务器。
+  ar: Duplicati هو عميل احتياطي مفتوح المصدر مجاني ، يخزن بشكل آمن ومشفر ، مضغوط ، متزايد ، مضغوط على خدمات تخزين السحابة وخوادم الملفات البعيدة.
+  de: "Duplicati ist ein kostenloser Open-Source-Backup-Client, der verschlüsselte, inkrementelle, komprimierte Backups sicher auf Cloud-Speicherdiensten und Remote-Dateiservern speichert."
+  es: "Duplicati es un cliente de copia de seguridad gratuito y de código abierto que almacena de forma segura copias de seguridad cifradas, incrementales y comprimidas en servicios de almacenamiento en la nube y servidores de archivos remotos."
+  fr: "Duplicati est un client de sauvegarde gratuit et open source qui stocke de manière sécurisée des sauvegardes chiffrées, incrémentales et compressées sur des services de stockage dans le cloud et des serveurs de fichiers distants."
+  hu: "A Duplicati egy ingyenes és nyílt forráskódú biztonsági másolat kliens, amely biztonságosan tárolja az inkrementálisan, tömörített módon titkosított biztonsági mentéseket felhőtárhelyeken és távoli fájl szervereken."
+  it: "Duplicati è un client di backup gratuito e open source che memorizza in modo sicuro backup crittografati, incrementali e compressi su servizi di archiviazione in cloud e server file remoti."
+  ru: "Duplicati - это бесплатный клиент резервного копирования с открытым исходным кодом, который безопасно хранит зашифрованные, инкрементальные, сжатые резервные копии на облачных службах хранения и удаленных файловых серверах."
+  pl: "Duplicati to darmowy klient kopii zapasowych open source, który bezpiecznie przechowuje zaszyfrowane, inkrementalne, skompresowane kopie zapasowe na usługach chmurowych i zdalnych serwerach plików."
+  pt: "O Duplicati é um cliente de backup gratuito e de código aberto que armazena de forma segura backups criptografados, incrementais e compactados em serviços de armazenamento em nuvem e servidores de arquivos remotos."
+  sv: "Duplicati är en gratis, öppen källkod, backup-klient som säkert lagrar krypterade, inkrementella, komprimerade säkerhetskopior på molntjänster och fjärrfiler."
+  uk: "Duplicati — безкоштовний клієнт резервного копіювання з відкритим кодом. Він надійно зберігає зашифровані, інкрементні, стиснуті резервні копії в хмарних сховищах і на віддалених файлових серверах."
+category: productivity
+developer: duplicati
+website: https://duplicati.com/
+source: https://github.com/duplicati/duplicati
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyMzBfMTExKSI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAxXzEyMzBfMTExKSI+PG1hc2sgaWQ9Im1hc2swXzEyMzBfMTExIiBzdHlsZT0ibWFzay10eXBlOmx1bWluYW5jZSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiPjxwYXRoIGQ9Ik0yNTYgMEgwVjI1NkgyNTZWMFoiIGZpbGw9IndoaXRlIi8+PC9tYXNrPjxnIG1hc2s9InVybCgjbWFzazBfMTIzMF8xMTEpIj48cGF0aCBkPSJNMjU2IDBIMFYyNTZIMjU2VjBaIiBmaWxsPSIjRURFREVEIi8+PHBhdGggZD0iTTEyMS44NzUgMTk4LjQzOEMxMTEuNDYyIDE5OC40MzggMTAzLjUgMTkwLjQ3NSAxMDMuNSAxODAuMDYzVjE0OS40MzhDMTAzLjUgMTM5LjAyNSAxMTEuNDYyIDEzMS4wNjMgMTIxLjg3NSAxMzEuMDYzSDE3MC44NzVDMTgxLjI4NyAxMzEuMDYzIDE4OS4yNSAxMzkuMDI1IDE4OS4yNSAxNDkuNDM4VjE4MC4wNjNDMTg5LjI1IDE5MC40NzUgMTgxLjI4NyAxOTguNDM4IDE3MC44NzUgMTk4LjQzOEgxMjEuODc1WiIgZmlsbD0iIzY1QjFERCIvPjxwYXRoIGQ9Ik0xNzAuODc1IDEzNy4xODhDMTc3LjYxMyAxMzcuMTg4IDE4My4xMjUgMTQyLjcgMTgzLjEyNSAxNDkuNDM4VjE4MC4wNjNDMTgzLjEyNSAxODYuOCAxNzcuNjEzIDE5Mi4zMTMgMTcwLjg3NSAxOTIuMzEzSDEyMS44NzVDMTE1LjEzOCAxOTIuMzEzIDEwOS42MjUgMTg2LjggMTA5LjYyNSAxODAuMDYzVjE0OS40MzhDMTA5LjYyNSAxNDIuNyAxMTUuMTM4IDEzNy4xODggMTIxLjg3NSAxMzcuMTg4SDE3MC44NzVaTTE3MC44NzUgMTI0LjkzOEgxMjEuODc1QzEwOC40IDEyNC45MzggOTcuMzc1IDEzNS45NjMgOTcuMzc1IDE0OS40MzhWMTgwLjA2M0M5Ny4zNzUgMTkzLjUzOCAxMDguNCAyMDQuNTYzIDEyMS44NzUgMjA0LjU2M0gxNzAuODc1QzE4NC4zNSAyMDQuNTYzIDE5NS4zNzUgMTkzLjUzOCAxOTUuMzc1IDE4MC4wNjNWMTQ5LjQzOEMxOTUuMzc1IDEzNS45NjMgMTg0LjM1IDEyNC45MzggMTcwLjg3NSAxMjQuOTM4WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNNTQuNSAyMTAuNjg4QzQ0LjA4NzUgMjEwLjY4OCAzNi4xMjUgMjAyLjcyNSAzNi4xMjUgMTkyLjMxM1YxNDkuNDM4QzM2LjEyNSAxMzkuMDI1IDQ0LjA4NzUgMTMxLjA2MyA1NC41IDEzMS4wNjNIMTE1Ljc1QzEyNi4xNjIgMTMxLjA2MyAxMzQuMTI1IDEzOS4wMjUgMTM0LjEyNSAxNDkuNDM4VjE5Mi4zMTNDMTM0LjEyNSAyMDIuNzI1IDEyNi4xNjIgMjEwLjY4OCAxMTUuNzUgMjEwLjY4OEg1NC41WiIgZmlsbD0iIzMzNjY5NyIvPjxwYXRoIGQ9Ik0xMTUuNzUgMTM3LjE4OEMxMjIuNDg4IDEzNy4xODggMTI4IDE0Mi43IDEyOCAxNDkuNDM4VjE5Mi4zMTNDMTI4IDE5OS4wNSAxMjIuNDg4IDIwNC41NjMgMTE1Ljc1IDIwNC41NjNINTQuNUM0Ny43NjI1IDIwNC41NjMgNDIuMjUgMTk5LjA1IDQyLjI1IDE5Mi4zMTNWMTQ5LjQzOEM0Mi4yNSAxNDIuNyA0Ny43NjI1IDEzNy4xODggNTQuNSAxMzcuMTg4SDExNS43NVpNMTE1Ljc1IDEyNC45MzhINTQuNUM0MS4wMjUgMTI0LjkzOCAzMCAxMzUuOTYzIDMwIDE0OS40MzhWMTkyLjMxM0MzMCAyMDUuNzg4IDQxLjAyNSAyMTYuODEzIDU0LjUgMjE2LjgxM0gxMTUuNzVDMTI5LjIyNSAyMTYuODEzIDE0MC4yNSAyMDUuNzg4IDE0MC4yNSAxOTIuMzEzVjE0OS40MzhDMTQwLjI1IDEzNS45NjMgMTI5LjIyNSAxMjQuOTM4IDExNS43NSAxMjQuOTM4WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMTAzLjUgMTU1LjU2M0M5My4wODc1IDE1NS41NjMgODUuMTI1IDE0Ny42IDg1LjEyNSAxMzcuMTg4VjYzLjY4OEM4NS4xMjUgNTMuMjc1NSA5My4wODc1IDQ1LjMxMyAxMDMuNSA0NS4zMTNIMjAxLjVDMjExLjkxMiA0NS4zMTMgMjE5Ljg3NSA1My4yNzU1IDIxOS44NzUgNjMuNjg4VjEzNy4xODhDMjE5Ljg3NSAxNDcuNiAyMTEuOTEyIDE1NS41NjMgMjAxLjUgMTU1LjU2M0gxMDMuNVoiIGZpbGw9IiMxRDQ3NzUiLz48cGF0aCBkPSJNMjAxLjUgNTEuNDM4QzIwOC4yMzggNTEuNDM4IDIxMy43NSA1Ni45NTA1IDIxMy43NSA2My42ODhWMTM3LjE4OEMyMTMuNzUgMTQzLjkyNSAyMDguMjM4IDE0OS40MzggMjAxLjUgMTQ5LjQzOEgxMDMuNUM5Ni43NjI1IDE0OS40MzggOTEuMjUgMTQzLjkyNSA5MS4yNSAxMzcuMTg4VjYzLjY4OEM5MS4yNSA1Ni45NTA1IDk2Ljc2MjUgNTEuNDM4IDEwMy41IDUxLjQzOEgyMDEuNVpNMjAxLjUgMzkuMTg4SDEwMy41QzkwLjAyNSAzOS4xODggNzkgNTAuMjEzIDc5IDYzLjY4OFYxMzcuMTg4Qzc5IDE1MC42NjMgOTAuMDI1IDE2MS42ODggMTAzLjUgMTYxLjY4OEgyMDEuNUMyMTQuOTc1IDE2MS42ODggMjI2IDE1MC42NjMgMjI2IDEzNy4xODhWNjMuNjg4QzIyNiA1MC4yMTMgMjE0Ljk3NSAzOS4xODggMjAxLjUgMzkuMTg4WiIgZmlsbD0id2hpdGUiLz48L2c+PC9nPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9ImNsaXAwXzEyMzBfMTExIj48cmVjdCB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgZmlsbD0id2hpdGUiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0iY2xpcDFfMTIzMF8xMTEiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: duplicati
+  port: 8200
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8200
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: BACKUPS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Duplicati/backups"
+    label:
+      en: Duplicati/backups
+      uk: Duplicati/backups
+    hint:
+      en: Inside the app it is /backups
+      uk: У застосунку вона — /backups
+  - name: SOURCE_DIR
+    type: folder
+    default: "${DATA_ROOT}/Duplicati/source"
+    label:
+      en: Duplicati/source
+      uk: Duplicati/source
+    hint:
+      en: Inside the app it is /source
+      uk: У застосунку вона — /source

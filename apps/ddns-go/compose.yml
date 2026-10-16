@@ -1,0 +1,15 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  ddns-go:
+    image: jeessy/ddns-go:v6.17.1
+    deploy:
+      resources:
+        reservations:
+          memory: 32M
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /root
+    ports:
+      - "${WEB_PORT:-9876}:9876"

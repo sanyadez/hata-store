@@ -1,0 +1,11 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  databag:
+    image: balzack/databag:0.1.18
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-7000}:7000"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /var/lib/databag

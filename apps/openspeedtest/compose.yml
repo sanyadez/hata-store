@@ -1,0 +1,11 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  openspeedtest:
+    image: openspeedtest/latest:v2.0.6
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${WEB_PORT:-3004}:3000"
+    restart: always

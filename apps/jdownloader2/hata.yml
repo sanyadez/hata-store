@@ -1,0 +1,80 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: JDownloader2
+tagline:
+  en: Free & open-source download management tool
+  zh: 免费且开源的下载管理工具
+  uk: Безкоштовний завантажувач із відкритим кодом
+description:
+  en: "JDownloader is a free, open-source download management tool with a huge community that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwith limitations, auto-extract archives and much more. It's an easy-to-extend framework that can save hours of your valuable time every day!"
+  zh: JDownloader是一个免费的、开源的下载管理工具，拥有庞大的社区，使下载变得简单而快速。用户可以启动、停止或暂停下载，设置带宽限制，自动解压缩存档等等。它是一个易于扩展的框架，可以每天节省您宝贵时间的数小时！
+  uk: "JDownloader — безкоштовний завантажувач із відкритим кодом і величезною спільнотою, який робить завантаження таким простим і швидким, яким воно має бути. Можна запускати, зупиняти чи ставити завантаження на паузу, обмежувати швидкість, автоматично розпаковувати архіви й багато іншого. Це фреймворк, який легко розширювати і який щодня економить години вашого часу!"
+category: media
+developer: jdownloader
+website: https://hub.docker.com/
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+web:
+  service: jdownloader2
+  port: 5800
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 5800
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: PORT_5900
+    type: port
+    default: 5900
+    label:
+      en: Port 5900
+      uk: Порт 5900
+    hint:
+      en: "Port to access the application's GUI via the VNC protocol. Mapping to the host is optional if access through the VNC protocol is not wanted. For a container not using the default bridge network, the port can be changed with the VNC_LISTENING_PORT environment variable."
+      zh: 通过VNC协议访问应用程序GUI的端口。如果不想通过VNC协议访问，则将其映射到主机是可选的。对于未使用默认桥接网络的容器，可以使用VNC_LISTENING_PORT环境变量更改端口。
+      uk: "Порт для доступу до графічного інтерфейсу застосунку через протокол VNC. Прив'язувати його до хоста необов'язково, якщо доступ через VNC не потрібен. Якщо контейнер не використовує типову мережу bridge, порт можна змінити змінною середовища VNC_LISTENING_PORT."
+    advanced: true
+  - name: PORT_3129
+    type: port
+    default: 3129
+    label:
+      en: Port 3129
+      uk: Порт 3129
+    hint:
+      en: "Port used by MyJDownloader mobile applications and browser extensions to establish a direct connect to the JDownloader Docker container instance. Port needs to be exposed only if MyJDownloader is enabled and configured in Direct Connection mode. NOTE: Since this port is being reported to the MyJDownloader online service, the port mapped on the host side must be the same (i.e. 3129)."
+      zh: MyJDownloader移动应用程序和浏览器扩展使用的端口，用于与JDownloader Docker容器实例建立直接连接。仅在启用并配置了直接连接模式的情况下，才需要公开端口。注意：由于此端口正在报告给MyJDownloader在线服务，因此在主机端映射的端口必须相同（即3129）。
+      uk: "Порт, яким мобільні застосунки та розширення браузера MyJDownloader встановлюють пряме з'єднання з контейнером JDownloader. Відкривати його потрібно лише тоді, коли MyJDownloader увімкнено й налаштовано в режимі прямого з'єднання. Увага: цей порт повідомляється онлайн-сервісу MyJDownloader, тому порт на боці хоста має бути таким самим (тобто 3129)."
+    advanced: true
+  - name: DOWNLOADS_DIR
+    type: folder
+    default: "${DATA_ROOT}/Downloads"
+    label:
+      en: Downloads
+      zh: 下载
+      uk: Завантаження
+    hint:
+      en: Inside the app it is /output
+      uk: У застосунку вона — /output
+  - name: MYJDOWNLOADER_EMAIL
+    type: text
+    label:
+      en: MYJDOWNLOADER_EMAIL
+      uk: MYJDOWNLOADER_EMAIL
+  - name: MYJDOWNLOADER_PASSWORD
+    type: password
+    label:
+      en: MYJDOWNLOADER_PASSWORD
+      uk: MYJDOWNLOADER_PASSWORD
+  - name: MYJDOWNLOADER_DEVICE_NAME
+    type: text
+    label:
+      en: MYJDOWNLOADER_DEVICE_NAME
+      uk: MYJDOWNLOADER_DEVICE_NAME
+  - name: JDOWNLOADER_HEADLESS
+    type: text
+    label:
+      en: JDOWNLOADER_HEADLESS
+      uk: JDOWNLOADER_HEADLESS

@@ -1,0 +1,18 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  openhands:
+    image: ghcr.io/all-hands-ai/openhands:0.59
+    environment:
+      SANDBOX_RUNTIME_CONTAINER_IMAGE: "${SANDBOX_RUNTIME_CONTAINER_IMAGE:-ghcr.io/all-hands-ai/runtime:main-nikolaik}"
+      WORKSPACE_MOUNT_PATH: /DATA/AppData/openhands/workspace
+    ports:
+      - "${WEB_PORT:-13333}:3000"
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - "${APP_DATA:-.}/openhands:/.openhands"
+      - "${APP_DATA:-.}/workspace:/opt/workspace_base"
+    stdin_open: true
+    tty: true
+    restart: unless-stopped

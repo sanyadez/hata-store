@@ -1,0 +1,19 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  openlist:
+    image: openlistteam/openlist:v4.2.2
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    restart: unless-stopped
+    user: 999:1000
+    ports:
+      - "${WEB_PORT:-5244}:5244"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /opt/openlist/data
+    environment:
+      UMASK: "${UMASK:-022}"
+      OPENLIST_ADMIN_PASSWORD: hata

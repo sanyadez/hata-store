@@ -1,0 +1,25 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  syncthing:
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+    image: linuxserver/syncthing:1.29.7
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    ports:
+      - "${WEB_PORT:-8384}:8384"
+      - "${PORT_22000:-22000}:22000"
+      - "${PORT_22000:-22000}:22000/udp"
+      - "${PORT_21027:-21027}:21027/udp"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${DATA_DIR:-./data}"
+        target: /DATA

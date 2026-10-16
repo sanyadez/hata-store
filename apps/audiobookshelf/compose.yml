@@ -1,0 +1,16 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  audiobookshelf:
+    image: ghcr.io/advplyr/audiobookshelf:2.35.0
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    restart: unless-stopped
+    volumes:
+      - "${AUDIOBOOKS_DIR:-./Media/Audiobooks}:/audiobooks"
+      - "${PODCASTS_DIR:-./Media/Podcasts}:/podcasts"
+      - "${APP_DATA:-.}/config:/config"
+      - "${APP_DATA:-.}/metadata:/metadata"
+    ports:
+      - "${WEB_PORT:-13378}:80"

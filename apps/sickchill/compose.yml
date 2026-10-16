@@ -1,0 +1,25 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  sickchill:
+    environment:
+      PGID: "1000"
+      PUID: "1000"
+      TZ: "${TZ:-UTC}"
+    image: linuxserver/sickchill:2023.6.27
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    ports:
+      - "${WEB_PORT:-8081}:8081"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${DOWNLOADS_DIR:-./Downloads}"
+        target: /downloads
+      - type: bind
+        source: "${TV_SHOWS_DIR:-./Media/TV Shows}"
+        target: /tv

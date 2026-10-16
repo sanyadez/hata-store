@@ -1,0 +1,53 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Dify
+tagline:
+  en: LLM App Development Platform
+  uk: Платформа для розробки застосунків на основі LLM
+description:
+  en: Dify is an open-source large language model (LLM) application development platform. It combines the concepts of Backend-as-a-Service and LLMOps to enable developers to quickly build production-grade generative AI applications. Even non-technical personnel can participate in the definition and data operations of AI applications.
+  zh: Dify 是一款开源的大语言模型(LLM) 应用开发平台。它融合了后端即服务（Backend as Service）和 LLMOps 的理念，使开发者可以快速搭建生产级的生成式 AI 应用。即使你是非技术人员，也能参与到 AI 应用的定义和数据运营过程中。
+  ja: Difyはオープンソースの大規模言語モデル（LLM）開発プラットフォームです。Backend as ServiceとLLMOpsの理念を融合し、開発者が迅速に生成AIアプリケーションを構築できるようにします。技術者でなくても、AIアプリケーションの定義やデータ運用に参加することができます。
+  uk: "Dify — платформа з відкритим кодом для розробки застосунків на основі великих мовних моделей (LLM). Вона поєднує ідеї Backend-as-a-Service та LLMOps, щоб розробники могли швидко створювати генеративні ШІ-застосунки промислового рівня. Навіть нетехнічні фахівці можуть брати участь у визначенні ШІ-застосунків і роботі з даними."
+category: ai
+developer: LangGenius
+website: https://dify.ai
+source: https://github.com/langgenius/dify
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTk0Ljk1MzUgOTEuMjQ2NUMxMDUuODU0IDkxLjI0NjUgMTA5Ljg5NCA4NC41NTk4IDEwOS44OTQgNzYuMjkzMUMxMDkuODk0IDY4LjAyNjUgMTA1Ljg3NCA2MS4zMzMxIDk0Ljk2MDIgNjEuMzMzMUM4NC4wMzM1IDYxLjMzMzEgODAuMDA2OCA2OC4wMTk4IDgwLjAwNjggNzYuMjkzMUM4MC4wMDY4IDg0LjU1OTggODQuMDMzNSA5MS4yNDY1IDk0Ljk0NjggOTEuMjQ2NUg5NC45NTM1WiIgZmlsbD0iIzAwMzNGRiIvPjxwYXRoIGQ9Ik0xNDcuMjIgOTQuNDY2MlYxMDQuMDg2SDEyMi42OTNWMTI1LjQ0SDE0Ny4yMjdWMTc4Ljg1M0gxMDYuNjczVjEwNC4wNjZINTMuMzRWMTI1LjQySDgzLjIwNjdWMTc4LjgzM0g0OFYyMDAuMTg2SDIwOFYxNzguODMzSDE3MC42NjdWMTI1LjQySDIwOFYxMDQuMDY2SDE3MC42NjdWODIuNzA2MkgyMDhWNjEuMzUyOUgxODAuMjZDMTcxLjQ4NiA2MS4zNjg4IDE2My4wNzcgNjQuODYzOSAxNTYuODc3IDcxLjA3MTVDMTUwLjY3NyA3Ny4yNzkyIDE0Ny4xOTIgODUuNjkyNiAxNDcuMTg3IDk0LjQ2NjJIMTQ3LjIyWiIgZmlsbD0iIzAwMzNGRiIvPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+settings:
+  - name: DB_PASSWORD
+    type: secret
+    label:
+      en: Password between its services
+      uk: Пароль між його сервісами
+  - name: DB_PASSWORD_2
+    type: secret
+    label:
+      en: Password between its services
+      uk: Пароль між його сервісами
+  - name: DB_PASSWORD_3
+    type: secret
+    label:
+      en: Password between its services
+      uk: Пароль між його сервісами
+  - name: DB_PASSWORD_4
+    type: secret
+    label:
+      en: Password between its services
+      uk: Пароль між його сервісами
+  - name: INDEXING_MAX_SEGMENTATION_TOKENS_LENGTH
+    type: secret
+    label:
+      en: INDEXING_MAX_SEGMENTATION_TOKENS_LENGTH
+  - name: NGINX_PORT_80
+    type: port
+    default: 3701
+    label:
+      en: Port 80
+      uk: Порт 80
+    advanced: true

@@ -1,0 +1,24 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  netronome:
+    image: ghcr.io/autobrr/netronome:v0.13.0
+    restart: unless-stopped
+    entrypoint:
+      - /sbin/tini
+      - "--"
+      - /bin/sh
+      - "-c"
+    command:
+      - "config=/data/.config/netronome/config.toml\nif [ ! -f \"$$config\" ]; then\n  netronome generate-config\nfi\nexec netronome serve"
+    ports:
+      - "${WEB_PORT:-7575}:7575"
+    environment:
+      TZ: "${TZ:-UTC}"
+      NETRONOME__HOST: 0.0.0.0
+      NETRONOME__PORT: 7575
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data
+    cap_add:
+      - NET_RAW

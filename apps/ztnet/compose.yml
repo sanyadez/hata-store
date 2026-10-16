@@ -1,0 +1,50 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  ztnet:
+    image: sinamics/ztnet:0.7.18
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    restart: unless-stopped
+    working_dir: /app
+    ports:
+      - "${WEB_PORT:-3050}:3000"
+    volumes:
+      - type: bind
+        source: /var/lib/zerotier-one
+        target: /var/lib/zerotier-one
+    environment:
+      ZT_ADDR: "${ZT_ADDR:-http://172.17.0.1:9993}"
+      POSTGRES_HOST: "${POSTGRES_HOST:-ztnet-postgres}"
+      POSTGRES_PORT: "${POSTGRES_PORT:-5432}"
+      POSTGRES_USER: "${POSTGRES_USER:-ztnet}"
+      POSTGRES_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      POSTGRES_DB: "${POSTGRES_DB:-ztnet}"
+      NEXTAUTH_URL: "${NEXTAUTH_URL:-http://0.0.0.0:3050}"
+      NEXTAUTH_SECRET: "${NEXTAUTH_SECRET:?set NEXTAUTH_SECRET}"
+      NEXTAUTH_URL_INTERNAL: "${NEXTAUTH_URL_INTERNAL:-http://ztnet:3000}"
+    networks:
+      - ztnet-network
+    depends_on:
+      - ztnet-postgres
+  ztnet-postgres:
+    image: postgres:15.2-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER_2:-ztnet}"
+      POSTGRES_PASSWORD: "${DB_PASSWORD:?set DB_PASSWORD}"
+      POSTGRES_DB: "${POSTGRES_DB_2:-ztnet}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/postgres-data"
+        target: /var/lib/postgresql/data
+    networks:
+      - ztnet-network
+networks:
+  ztnet-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.31.255.0/29

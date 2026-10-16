@@ -1,0 +1,55 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: snapdrop
+tagline:
+  en: Cross-platform file sharing made easy.
+  zh: 轻松实现跨平台文件共享。
+  ar: تبادل الملفات عبر المنصات بكل سهولة.
+  de: Einfacher plattformübergreifender Dateiaustausch.
+  es: Compartir archivos entre plataformas nunca fue tan fácil.
+  fr: Partage de fichiers multiplateforme simplifié.
+  hu: Egyszerűsített többplatformos fájlmegosztás.
+  it: Condivisione di file multi-piattaforma resa facile.
+  ru: Простой обмен файлами между платформами.
+  pl: Proste udostępnianie plików międzyplatformowych.
+  pt: Compartilhamento de arquivos entre plataformas feito fácil.
+  sv: Enkel filöverföring mellan olika plattformar.
+  uk: Простий обмін файлами між різними платформами.
+description:
+  en: Snapdrop is a Progressive Web App (PWA) that allows you to transfer files between devices in the same network without having to install anything.
+  zh: Snapdrop是一个渐进式Web应用程序（PWA），允许您在同一网络中的设备之间传输文件，而无需安装任何内容。
+  ar: Snapdrop هو تطبيق ويب تدريجي (PWA) يتيح لك نقل الملفات بين الأجهزة في نفس الشبكة دون الحاجة إلى تثبيت أي شيء.
+  de: "Snapdrop ist eine Progressive Web App (PWA), mit der Sie Dateien zwischen Geräten im selben Netzwerk übertragen können, ohne etwas installieren zu müssen."
+  es: Snapdrop es una aplicación web progresiva (PWA) que le permite transferir archivos entre dispositivos en la misma red sin tener que instalar nada.
+  fr: Snapdrop est une application Web progressive (PWA) qui vous permet de transférer des fichiers entre des appareils sur le même réseau sans avoir à installer quoi que ce soit.
+  hu: "A Snapdrop egy progresszív webalkalmazás (PWA), amely lehetővé teszi a fájlok átvitelét a hálózaton belüli eszközök között anélkül, hogy telepítenie kellene bármit is."
+  it: "Snapdrop è un'app Web progressiva (PWA) che consente di trasferire file tra dispositivi nella stessa rete senza dover installare nulla."
+  ru: "Snapdrop - это прогрессивное веб-приложение (PWA), которое позволяет передавать файлы между устройствами в одной сети без необходимости устанавливать что-либо."
+  pl: "Snapdrop to progresywna aplikacja internetowa (PWA), która umożliwia przesyłanie plików między urządzeniami w tej samej sieci bez konieczności instalowania czegokolwiek."
+  pt: Snapdrop é um aplicativo da Web progressivo (PWA) que permite transferir arquivos entre dispositivos na mesma rede sem precisar instalar nada.
+  sv: Snapdrop är en progressiv webbapp (PWA) som låter dig överföra filer mellan enheter i samma nätverk utan att behöva installera något.
+  uk: "Snapdrop — прогресивний вебзастосунок (PWA), який дає змогу передавати файли між пристроями в одній мережі, нічого не встановлюючи."
+category: productivity
+developer: self
+website: https://snapdrop.net
+source: https://github.com/RobinLinus/snapdrop
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk2OCkiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMV8xMjUxXzg5NjgpIj48cGF0aCBkPSJNMjU2IDBIMFYyNTZIMjU2VjBaIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGQ9Ik0xMjguMDAxIDExOS4zMzNDMTE4LjQ2NyAxMTkuMzMzIDExMC42NjcgMTI3LjEzMyAxMTAuNjY3IDEzNi42NjdDMTEwLjY2NyAxNDYuMiAxMTguNDY3IDE1NCAxMjguMDAxIDE1NEMxMzcuNTM0IDE1NCAxNDUuMzM0IDE0Ni4yIDE0NS4zMzQgMTM2LjY2N0MxNDUuMzM0IDEyNy4xMzMgMTM3LjUzNCAxMTkuMzMzIDEyOC4wMDEgMTE5LjMzM1pNMTgwLjAwMSAxMzYuNjY3QzE4MC4wMDEgMTA3Ljk4IDE1Ni42ODcgODQuNjY2NyAxMjguMDAxIDg0LjY2NjdDOTkuMzE0IDg0LjY2NjcgNzYuMDAwNiAxMDcuOTggNzYuMDAwNiAxMzYuNjY3Qzc2LjAwMDYgMTU1LjkwNyA4Ni40ODczIDE3Mi42MzMgMTAyLjAwMSAxODEuNjQ3TDExMC42NjcgMTY2LjU2N0MxMDAuMzU0IDE2MC41IDkzLjMzNCAxNDkuNDkzIDkzLjMzNCAxMzYuNjY3QzkzLjMzNCAxMTcuNTEzIDEwOC44NDcgMTAyIDEyOC4wMDEgMTAyQzE0Ny4xNTQgMTAyIDE2Mi42NjcgMTE3LjUxMyAxNjIuNjY3IDEzNi42NjdDMTYyLjY2NyAxNDkuNDkzIDE1NS42NDcgMTYwLjUgMTQ1LjMzNCAxNjYuNTY3TDE1NC4wMDEgMTgxLjY0N0MxNjkuNTE0IDE3Mi42MzMgMTgwLjAwMSAxNTUuOTA3IDE4MC4wMDEgMTM2LjY2N1pNMTI4LjAwMSA1MEM4MC4xNjA2IDUwIDQxLjMzNCA4OC44MjY3IDQxLjMzNCAxMzYuNjY3QzQxLjMzNCAxNjguNzMzIDU4Ljc1NCAxOTYuNjQgODQuNTgwNiAyMTEuNjMzTDkzLjI0NzMgMTk2LjY0QzcyLjYyMDYgMTg0LjU5MyA1OC42NjczIDE2Mi4zMiA1OC42NjczIDEzNi42NjdDNTguNjY3MyA5OC4zNiA4OS42OTQgNjcuMzMzMyAxMjguMDAxIDY3LjMzMzNDMTY2LjMwNyA2Ny4zMzMzIDE5Ny4zMzQgOTguMzYgMTk3LjMzNCAxMzYuNjY3QzE5Ny4zMzQgMTYyLjMyIDE4My4zODEgMTg0LjU5MyAxNjIuNjY3IDE5Ni42NEwxNzEuMzM0IDIxMS42MzNDMTk3LjI0NyAxOTYuNjQgMjE0LjY2NyAxNjguNzMzIDIxNC42NjcgMTM2LjY2N0MyMTQuNjY3IDg4LjgyNjcgMTc1Ljg0MSA1MCAxMjguMDAxIDUwWiIgZmlsbD0iIzQyODVGNCIvPjwvZz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjUxXzg5NjgiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJjbGlwMV8xMjUxXzg5NjgiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+web:
+  service: snapdrop
+  port: 80
+settings:
+  - name: PORT_443
+    type: port
+    default: 443
+    label:
+      en: Port 443
+      uk: Порт 443
+    advanced: true
+  - name: WEB_PORT
+    type: port
+    default: 89
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу

@@ -1,0 +1,27 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  icewhale-stable-diffusion-webui:
+    image: johnguan/stable-diffusion-webui:v1.7.0
+    runtime: nvidia
+    ipc: host
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+      CPU_FALLBACK: "true"
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+    ports:
+      - "${WEB_PORT:-7860}:7860"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/models"
+        target: /data/models
+      - type: bind
+        source: "${APP_DATA:-.}/outputs"
+        target: /data/outputs
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /data/config
+    privileged: false

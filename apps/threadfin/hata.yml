@@ -1,0 +1,42 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Threadfin
+  zh: Threadfin
+tagline:
+  en: M3U proxy server
+  zh: M3U代理服务器
+  uk: Проксі-сервер M3U
+description:
+  en: "Threadfin is a M3U proxy server for Plex, Emby, Jellyfin and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats."
+  zh: Threadfin是一个M3U代理服务器，适用于Plex、Emby、Jellyfin以及任何支持的客户端和提供商。TS和。M3U8（HLS）流格式。
+  uk: "Threadfin — проксі-сервер M3U для Plex, Emby, Jellyfin та будь-якого клієнта й провайдера, що підтримує потокові формати .TS і .M3U8 (HLS)."
+category: media
+developer: jdownloader
+website: https://github.com/Threadfin/Threadfin
+source: https://github.com/Threadfin/Threadfin
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNTFfODk4MikiPjxwYXRoIGQ9Ik0xMTUuMTY5IDEzNi45MkgxMzkuOTk3VjIyMi4zNTRDMTM5Ljk5NyAyMjUuNjM2IDEzNy4zMzMgMjI4LjMgMTM0LjA1MSAyMjguM0gxMjEuMTE0QzExNy44MzMgMjI4LjMgMTE1LjE2OSAyMjUuNjM2IDExNS4xNjkgMjIyLjM1NFYxMzYuOTJaIiBmaWxsPSIjRTk1MDI4Ii8+PHBhdGggZD0iTTExNS4xNjkgMTE4LjNIMTM5Ljk5N1YxMzYuOTIxSDExNS4xNjlWMTE4LjNaIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGQ9Ik0yMDIuMzI3IDI4LjI5OThINTIuODM4NkM0OS41NTUxIDI4LjI5OTggNDYuODkzMyAzMC45NjE2IDQ2Ljg5MzMgMzQuMjQ1MVY0My4wNDQyQzQ2Ljg5MzMgNDYuMzI3NyA0OS41NTUxIDQ4Ljk4OTUgNTIuODM4NiA0OC45ODk1SDIwMi4zMjdDMjA1LjYxMSA0OC45ODk1IDIwOC4yNzMgNDYuMzI3NyAyMDguMjczIDQzLjA0NDJWMzQuMjQ1MUMyMDguMjczIDMwLjk2MTYgMjA1LjYxMSAyOC4yOTk4IDIwMi4zMjcgMjguMjk5OFoiIGZpbGw9IiM1QzVDNUMiLz48cGF0aCBkPSJNMTE1LjE2OSA0OC4yOTk4SDEzOS45OTdWMTE4LjQxNUgxMTUuMTY5VjQ4LjI5OThaIiBmaWxsPSIjNUM1QzVDIi8+PC9nPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDBfMTI1MV84OTgyIj48cmVjdCB3aWR0aD0iMTYxLjM4MyIgaGVpZ2h0PSIyMDAiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0Ni44OTMzIDI4LjI5OTgpIi8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
+web:
+  service: threadfin
+  port: 34400
+  path: /web/
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 34400
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: THREADFIN_BRANCH
+    type: text
+    default: main
+    label:
+      en: "Set Threadfin git branch [ main, beta, dev ] Default: beta"
+      zh: "设置Threadfin git分支 [ main, beta, dev ] 默认: beta"
+      uk: "Гілка git Threadfin [ main, beta, dev ], типово: beta"
+  - name: THREADFIN_DEBUG
+    type: text
+    default: "0"
+    label:
+      en: "Set Threadfin debug level [ 0-3 ] Default: 0=OFF"
+      zh: "设置Threadfin调试级别 [ 0-3 ] 默认: 0=关闭"
+      uk: "Рівень налагодження Threadfin [ 0-3 ], типово: 0 (вимкнено)"

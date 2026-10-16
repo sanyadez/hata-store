@@ -1,0 +1,55 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  unifi-network-application:
+    depends_on:
+      unifi-db:
+        condition: service_started
+        required: true
+    environment:
+      MONGO_DBNAME: unifi-db
+      MONGO_HOST: unifi-db
+      MONGO_PASS: "${MONGO_PASS:?set MONGO_PASS}"
+      MONGO_PORT: "27017"
+      MONGO_USER: unifi
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+    image: lscr.io/linuxserver/unifi-network-application:10.6.106-ls150
+    ports:
+      - "${WEB_PORT:-8443}:8443"
+      - "${PORT_3478:-3478}:3478/udp"
+      - "${PORT_10001:-10001}:10001/udp"
+      - "${PORT_8080:-8080}:8080"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}"
+        target: /config
+    networks:
+      - unifi-bridge
+    privileged: false
+  unifi-db:
+    image: docker.io/mongo:3.6
+    configs:
+      - source: init-mongo.js
+        target: /docker-entrypoint-initdb.d/init-mongo.js
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+    ports:
+      - "${UNIFI_DB_PORT_27017:-27017}:27017"
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}"
+        target: /data/db
+    networks:
+      - unifi-bridge
+    privileged: false
+networks:
+  unifi-bridge:
+    driver: bridge
+configs:
+  init-mongo.js:
+    content: "db.getSiblingDB(\"unifi-db\").createUser({user: \"unifi\", pwd: \"pass\", roles: [{role: \"dbOwner\", db: \"unifi-db\"}]}); \ndb.getSiblingDB(\"unifi-db_stat\").createUser({user: \"unifi\", pwd: \"pass\", roles: [{role: \"dbOwner\", db: \"unifi-db_stat\"}]});\n"

@@ -1,0 +1,76 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: NetBird
+tagline:
+  en: "Connect your devices into a secure WireGuard®-based overlay network with SSO, MFA and granular access controls."
+  zh: 将设备连接到安全的 WireGuard® 覆盖网络，支持 SSO、MFA 和细粒度访问控制。
+  ja: SSO、MFA、きめ細かなアクセス制御を備えた安全なWireGuard®ベースのオーバーレイネットワークにデバイスを接続します。
+  uk: "Об'єднайте свої пристрої в захищену оверлейну мережу на основі WireGuard® з SSO, MFA та гнучким керуванням доступом."
+description:
+  en: "NetBird combines a WireGuard®-based overlay network with Zero Trust Network Access, providing a unified open source platform for reliable and secure connectivity.\n\n- Secure Remote Access – Enable least privilege network access in a few clicks\n- Zero-Config Deployment – Replace legacy VPNs with a peer-to-peer WireGuard®-based network\n- Seamless SSO with MFA – Secure your network access with session-based SSO & MFA\n- Dynamic Posture Checks – Grant access only to devices meeting your security rules\n- Centralized Network Management – Control your private network from a single place\n- Detailed Activity Logging – Identify who did what, and when in your network\n\n**Learn More:**\n- [NetBird Website](https://netbird.io)\n- [Documentation](https://docs.netbird.io)\n- [Self-Hosting Guide](https://docs.netbird.io/selfhosted/selfhosted-quickstart)\n- [NetBird GitHub](https://github.com/netbirdio/netbird)\n- [Slack Community](https://docs.netbird.io/slack-url)"
+  zh: "NetBird 将基于 WireGuard® 的覆盖网络与零信任网络访问相结合，提供一个统一的开源平台，实现可靠且安全的连接。\n\n- 安全远程访问 – 轻松实现最小权限网络访问\n- 零配置部署 – 使用点对点 WireGuard® 网络取代传统 VPN\n- 无缝 SSO 与 MFA – 通过基于会话的 SSO 和 MFA 保护网络访问\n- 动态 Posture 检查 – 仅允许符合安全规则的设备访问\n- 集中网络管理 – 从单一位置控制您的私有网络\n- 详细活动日志 – 识别网络中的操作者和操作时间\n\n**了解更多：**\n- [NetBird 官网](https://netbird.io)\n- [文档](https://docs.netbird.io)\n- [自托管指南](https://docs.netbird.io/selfhosted/selfhosted-quickstart)\n- [NetBird GitHub](https://github.com/netbirdio/netbird)\n- [Slack 社区](https://docs.netbird.io/slack-url)"
+  ja: "NetBirdはWireGuard®ベースのオーバーレイネットワークとゼロトラストネットワークアクセスを組み合わせ、信頼性とセキュリティを備えた統合オープンソースプラットフォームを提供します。\n\n- 安全なリモートアクセス – 数回のクリックで最小権限ネットワークアクセスを有効化\n- ゼロ設定デプロイメント – ピアツーピアWireGuard®ベースネットワークでレガシーVPNを置き換え\n- シームレスなSSOとMFA – セッションベースのSSOとMFAでネットワークアクセスを保護\n- 動的ポスチャチェック – セキュリティルールを満たすデバイスにのみアクセスを許可\n- 集中ネットワーク管理 – 単一の場所からプライベートネットワークを制御\n- 詳細なアクティビティログ – ネットワーク内で誰が、いつ、何を行ったかを特定\n\n**詳細：**\n- [NetBird ウェブサイト](https://netbird.io)\n- [ドキュメント](https://docs.netbird.io)\n- [セルフホストガイド](https://docs.netbird.io/selfhosted/selfhosted-quickstart)\n- [NetBird GitHub](https://github.com/netbirdio/netbird)\n- [Slack コミュニティ](https://docs.netbird.io/slack-url)"
+  uk: "NetBird поєднує оверлейну мережу на основі WireGuard® із Zero Trust Network Access, пропонуючи єдину платформу з відкритим кодом для надійного та безпечного з'єднання.\n\n- Безпечний віддалений доступ — надавайте мережевий доступ за принципом найменших привілеїв у кілька кліків\n- Розгортання без налаштувань — замініть застарілі VPN одноранговою мережею на основі WireGuard®\n- Зручний SSO з MFA — захистіть доступ до мережі за допомогою SSO та MFA на рівні сеансу\n- Динамічні перевірки стану пристроїв — надавайте доступ лише пристроям, що відповідають вашим правилам безпеки\n- Централізоване керування мережею — керуйте приватною мережею з одного місця\n- Докладний журнал дій — дізнавайтеся, хто, що і коли робив у вашій мережі\n\n**Дізнатися більше:**\n- [Сайт NetBird](https://netbird.io)\n- [Документація](https://docs.netbird.io)\n- [Посібник із самостійного розгортання](https://docs.netbird.io/selfhosted/selfhosted-quickstart)\n- [NetBird на GitHub](https://github.com/netbirdio/netbird)\n- [Спільнота в Slack](https://docs.netbird.io/slack-url)"
+notes:
+  en: "### Getting Started\n\nYour device will now appear in your NetBird dashboard and can connect to other devices in your mesh network."
+  zh: "### 入门\n\n您的设备现在将出现在您的 NetBird 仪表板中，并可以连接到网格网络中的其他设备。"
+  ja: "### はじめに\n\nこれでデバイスがNetBirdダッシュボードに表示され、メッシュネットワーク内の他のデバイスと接続できるようになります。"
+  uk: "### Початок роботи\n\nТепер ваш пристрій з'явиться на панелі NetBird і зможе підключатися до інших пристроїв у вашій mesh-мережі."
+category: network
+developer: NetBird GmbH
+website: https://netbird.io
+source: https://github.com/netbirdio/netbird
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+settings:
+  - name: NB_SETUP_KEY
+    type: password
+    label:
+      en: Nb setup key
+      uk: Ключ налаштування
+    hint:
+      en: NetBird Setup Key (get from your dashboard at app.netbird.io or your self-hosted instance)
+      zh: NetBird 设置密钥（从 app.netbird.io 或您的自托管实例获取）
+      ja: NetBirdセットアップキー（app.netbird.ioまたはセルフホストインスタンスから取得）
+      uk: Ключ налаштування NetBird (отримайте на панелі керування app.netbird.io або на власному сервері).
+  - name: NB_MANAGEMENT_URL
+    type: text
+    label:
+      en: "NetBird Management URL (optional, for self-hosted instances)"
+      zh: NetBird 管理 URL（可选，用于自托管实例）
+      ja: NetBird管理URL（オプション、セルフホストインスタンス用）
+      uk: "URL керування NetBird (необов'язково, для власних серверів)"
+  - name: NB_HOSTNAME
+    type: text
+    default: hata
+    label:
+      en: Hostname for this NetBird client
+      zh: 此 NetBird 客户端的主机名
+      ja: このNetBirdクライアントのホスト名
+      uk: "Ім'я хоста для цього клієнта NetBird"
+  - name: NB_ENABLE_SSH_ROOT
+    type: text
+    default: "true"
+    label:
+      en: Enable SSH access as root user
+      zh: 启用 root 用户 SSH 访问
+      ja: rootユーザーでのSSHアクセスを有効にする
+      uk: Увімкнути SSH-доступ для користувача root
+  - name: NB_ALLOW_SERVER_SSH
+    type: text
+    default: "true"
+    label:
+      en: Allow SSH server access through NetBird
+      zh: 允许通过 NetBird 访问 SSH 服务器
+      ja: NetBird経由のSSHサーバーアクセスを許可
+      uk: Дозволити SSH-доступ до сервера через NetBird
+permissions:
+  host-network:
+    en: "Its authors run it on the server's own network: it reaches the devices of the home network, and its ports are the server's"
+    uk: "Автори запускають його в мережі самого сервера: він бачить пристрої домашньої мережі, а його порти — порти сервера"
+  capabilities:
+    en: "It asks for extra rights of the system: NET_ADMIN, SYS_ADMIN, SYS_RESOURCE"
+    uk: "Він просить додаткових прав у системі: NET_ADMIN, SYS_ADMIN, SYS_RESOURCE"

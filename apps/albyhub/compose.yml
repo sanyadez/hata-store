@@ -1,0 +1,26 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  albyhub:
+    environment:
+      PGID: "${PGID:-1000}"
+      PUID: "${PUID:-1000}"
+      TZ: "${TZ:-UTC}"
+      UMASK: "002"
+      WORK_DIR: /data/albyhub
+      LOG_EVENTS: true
+    command:
+      []
+    image: ghcr.io/getalby/hub:v1.22.2
+    deploy:
+      resources:
+        reservations:
+          memory: 1024M
+    ports:
+      - "${WEB_PORT:-58000}:8080"
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data
+    privileged: false

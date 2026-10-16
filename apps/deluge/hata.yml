@@ -1,0 +1,76 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+title:
+  en: Deluge
+tagline:
+  en: A lightweight and free BitTorrent client.
+  zh: 轻量级且免费的 BitTorrent 客户端。
+  ar: عميل BitTorrent خفيف ومجاني.
+  de: Ein leichtgewichtiger und kostenloser BitTorrent-Client.
+  es: Un cliente ligero y gratuito de BitTorrent.
+  fr: Un client BitTorrent léger et gratuit.
+  hu: Egy könnyűsúlyú és ingyenes BitTorrent kliens.
+  it: Un client BitTorrent leggero e gratuito.
+  ru: Легковесный и бесплатный клиент BitTorrent.
+  pl: Lekki i darmowy klient BitTorrent.
+  pt: Um cliente BitTorrent leve e gratuito.
+  sv: En lättviktig och gratis BitTorrent-klient.
+  uk: Легкий і безкоштовний клієнт BitTorrent.
+description:
+  en: "Deluge contains the common features to BitTorrent clients such as Protocol Encryption, DHT, Local Peer Discovery (LSD), Peer Exchange (PEX), UPnP, NAT-PMP, Proxy support, Web seeds, global and per-torrent speed limits. As Deluge heavily utilises the ​libtorrent library it has a comprehensive list of the ​features provided."
+  zh: Deluge 包含 BitTorrent 客户端的常见功能，如协议加密、DHT、本地对等发现（LSD）、对等交换（PEX）、UPnP、NAT-PMP、代理支持、Web 种子、全局和每个 torrent 速度限制。由于 Deluge 大量利用了 libtorrent 库，因此它具有提供的功能的详细列表。
+  ar: يحتوي Deluge على الميزات الشائعة لعملاء BitTorrent مثل التشفير البروتوكولي و DHT واكتشاف الأقران المحلي (LSD) وتبادل الأقران (PEX) و UPnP و NAT-PMP ودعم الوكيل والبذور على الويب والحد العالمي والحد لكل torrent. لأن Deluge يستخدم بشكل كبير مكتبة libtorrent ، فإنه يحتوي على قائمة شاملة من الميزات المقدمة.
+  de: "Deluge enthält die gängigen Funktionen von BitTorrent-Clients wie Protokollverschlüsselung, DHT, lokales Peersuche (LSD), Peeraustausch (PEX), UPnP, NAT-PMP, Proxy-Unterstützung, Web Seeds, globale und pro Torrent-Geschwindigkeitsbegrenzungen. Da Deluge die libtorrent-Bibliothek stark nutzt, verfügt es über eine umfassende Liste der bereitgestellten Funktionen."
+  es: "Deluge contiene las características comunes de los clientes BitTorrent como el cifrado de protocolo, DHT, descubrimiento de pares locales (LSD), intercambio de pares (PEX), UPnP, NAT-PMP, soporte de proxy, semillas web, límites de velocidad globales y por torrent. Como Deluge utiliza intensamente la biblioteca libtorrent, tiene una lista completa de las características proporcionadas."
+  fr: "Deluge contient les fonctionnalités communes aux clients BitTorrent tels que le chiffrement de protocole, DHT, découverte de pairs locaux (LSD), échange de pairs (PEX), UPnP, NAT-PMP, prise en charge des proxy, les graines Web, les limites de vitesse globales et par torrent. Comme Deluge utilise intensivement la bibliothèque libtorrent, il dispose d'une liste complète des fonctionnalités fournies."
+  hu: "A Deluge a BitTorrent kliensek általános jellemzőit tartalmazza, mint például a protokoll titkosítás, a DHT, a helyi partner felfedezés (LSD), a partner cseréje (PEX), az UPnP, a NAT-PMP, a proxy támogatás, a webmagok, a globális és a torrentenkénti sebességkorlátok. Mivel a Deluge erősen kihasználja a libtorrent könyvtárat, rendelkezik egy teljes listával a szolgáltatott funkciókról."
+  it: "Deluge contiene le caratteristiche comuni dei client BitTorrent come crittografia del protocollo, DHT, scoperta di peer locali (LSD), scambio di peer (PEX), UPnP, NAT-PMP, supporto proxy, semi web, limiti di velocità globali e per torrent. Poiché Deluge utilizza intensivamente la libreria libtorrent, dispone di un elenco completo delle funzionalità fornite."
+  ru: "Deluge содержит общие функции клиентов BitTorrent, такие как шифрование протокола, DHT, локальный поиск пиров (LSD), обмен пиров (PEX), UPnP, NAT-PMP, поддержка прокси, веб-сиды, глобальные и ограничения скорости для каждого торрента. Поскольку Deluge сильно использует библиотеку libtorrent, он имеет полный список предоставляемых функций."
+  pl: "Deluge zawiera wspólne funkcje klientów BitTorrent, takie jak szyfrowanie protokołu, DHT, lokalne odkrywanie par (LSD), wymiana par (PEX), UPnP, NAT-PMP, obsługa proxy, nasiona sieci Web, globalne i ograniczenia prędkości dla każdego torrenta. Ponieważ Deluge mocno wykorzystuje bibliotekę libtorrent, posiada pełną listę dostarczanych funkcji."
+  pt: "O Deluge contém os recursos comuns dos clientes BitTorrent, como criptografia de protocolo, DHT, descoberta de pares locais (LSD), troca de pares (PEX), UPnP, NAT-PMP, suporte a proxy, sementes web, limites globais e por torrent. Como o Deluge usa intensivamente a biblioteca libtorrent, ele possui uma lista completa das funcionalidades fornecidas."
+  sv: "Deluge innehåller de vanliga funktionerna hos BitTorrent-klienter, såsom protokollkryptering, DHT, lokalt parupptäckt (LSD), parbyte (PEX), UPnP, NAT-PMP, proxystöd, webblöss, globala och torrentbaserade hastighetsbegränsningar. Eftersom Deluge använder libtorrent-biblioteket intensivt har den en fullständig lista över tillhandahållna funktioner."
+  uk: "Deluge має всі типові можливості клієнтів BitTorrent: шифрування протоколу, DHT, пошук локальних пірів (LSD), обмін пірами (PEX), UPnP, NAT-PMP, підтримку проксі, веб-сіди, а також загальні й окремі для кожного торента обмеження швидкості. Оскільки Deluge активно використовує бібліотеку libtorrent, він підтримує весь її широкий набір функцій."
+notes:
+  en: "Default Password: `deluge`\n\nDefault Accessible Path in Deluge\n\n| Name | Value | | --- | --- | | DATA Path | `/DATA` | | Downloads Path | `/DATA/Downloads` | | Media Path | `/DATA/Media` |\n\nPlease make sure you use the correct path when using Deluge."
+  zh: "默认密码：`deluge`\n\nDeluge 中可访问的路径\n\n| 名称 | 值 | | --- | --- | | DATA 路径 | `/DATA` | | 下载路径 | `/DATA/Downloads` | | 媒体路径 | `/DATA/Media` |\n\n请确保在使用 Deluge 时使用正确的路径。"
+  uk: "Пароль за замовчуванням: `deluge`\n\nШляхи, доступні в Deluge за замовчуванням\n\n| Назва | Значення | | --- | --- | | Шлях до DATA | `/DATA` | | Шлях до завантажень | `/DATA/Downloads` | | Шлях до медіа | `/DATA/Media` |\n\nПереконайтеся, що в Deluge ви використовуєте правильний шлях."
+category: media
+developer: Deluge Team
+website: https://deluge-torrent.org
+source: https://github.com/deluge-torrent/deluge
+icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IndoaXRlIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyMzBfNzUpIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEyOC40MjEgMjguNjI3M0wxODQuMTA4IDExMy44MDVDMjE5Ljc5NSAxNjguMzk1IDE4Mi4yNjUgMjI3LjM3NiAxMjguMzgyIDIyNy4zNzZDNzQuNDk4NCAyMjcuMzc2IDM2LjkyOSAxNjguMzU1IDcyLjY1NTIgMTEzLjgwNUwxMjguNDIxIDI4LjYyNzNaIiBmaWxsPSIjNEM5MEU4IiBzdHJva2U9IiMwOTQ0OTEiIHN0cm9rZS13aWR0aD0iMS4yNTExNiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQ4LjI2NCAxMjcuNjg4QzExNy44MzIgMTE1LjI1NiAxMDEuODMyIDE0Ni45ODMgMTA2LjkzIDE2MS44MDZDMTE3Ljk4OSAxOTQuMDQyIDE1OS42NzYgMjAyLjEyMSAxOTAuNDIyIDE0OC4zOTRDMTkwLjQyMiAxNDguMzk0IDE5MC43MzYgMTU0Ljg2NSAxOTEuMDg5IDE1Ny45NjNDMTk1LjIwNyAxOTcuMTQgMTYyLjI2NSAyMjIuMDQzIDEyOC44OTIgMjIxLjU3MkM5NS41MTgzIDIyMS4xMDIgODUuMzIyIDIwOC4xMjEgNzUuNDc4NyAxOTMuMjE5QzU5LjUxNzYgMTY5LjAyMiA2My40Nzg1IDEyOS41NyA4NC45Mjk5IDExMS4xQzEwOS40NCA5MC44NjM4IDEzNi4zODIgMTAxLjY4OCAxNDguMjY0IDEyNy42ODhaIiBmaWxsPSIjMDk0NDkxIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMjkuMTI3IDExNS45NjJDOTUuMDA4NSAxMTYuNzg2IDg4LjUzNzggMTU2LjA4MSA5Ny45ODkgMTcyLjk0NEMxMTEuMTI2IDE5Ni4zNTYgMTMxLjA0OCAyMDAuODY2IDE1OC4zMDQgMTkyLjE5OUMxNDIuNzM1IDIwOS4xNDEgMTEwLjc3NCAyMTMuNjExIDg5LjA4NjggMTg5LjQxNUM3NC4xNDU0IDE3Mi43ODcgNzIuODUxMiAxNDkuNTcxIDgzLjIwNDQgMTMwLjE1OUM5My41OTY3IDExMC43ODYgMTE0LjI2NCAxMDUuMzc0IDEyOS4xMjcgMTE1Ljk2MloiIGZpbGw9IiM4M0I4RjkiLz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMF8xMjMwXzc1Ij48cmVjdCB3aWR0aD0iMTQwLjc0OCIgaGVpZ2h0PSIyMDAiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1OCAyNy45OTk5KSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg=="
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+  - 4.webp
+web:
+  service: deluge
+  port: 8112
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 8112
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: PORT_6881
+    type: port
+    default: 6881
+    label:
+      en: Inbound torrent traffic (TCP)
+      zh: 入站 torrent 流量（TCP）
+      uk: Вхідний торентний трафік (TCP)
+    advanced: true
+  - name: DATA_DIR
+    type: folder
+    default: "${DATA_ROOT}"
+    label:
+      en: Data folder
+      uk: Тека даних
+  - name: DELUGE_LOGLEVEL
+    type: text
+    default: error
+    label:
+      en: Deluge Log Level
+      zh: Deluge 日志级别
+      uk: Рівень журналу Deluge

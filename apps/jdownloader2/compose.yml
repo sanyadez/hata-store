@@ -1,0 +1,24 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  jdownloader2:
+    image: jlesage/jdownloader-2:v26.09.1
+    restart: unless-stopped
+    environment:
+      USER_ID: "${PUID:-1000}"
+      GROUP_ID: "${PGID:-1000}"
+      TZ: "${TZ:-UTC}"
+      MYJDOWNLOADER_EMAIL: "${MYJDOWNLOADER_EMAIL:-}"
+      MYJDOWNLOADER_PASSWORD: "${MYJDOWNLOADER_PASSWORD:-}"
+      MYJDOWNLOADER_DEVICE_NAME: "${MYJDOWNLOADER_DEVICE_NAME:-}"
+      JDOWNLOADER_HEADLESS: "${JDOWNLOADER_HEADLESS:-}"
+    ports:
+      - "${WEB_PORT:-5800}:5800"
+      - "${PORT_5900:-5900}:5900"
+      - "${PORT_3129:-3129}:3129"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config
+      - type: bind
+        source: "${DOWNLOADS_DIR:-./Downloads}"
+        target: /output

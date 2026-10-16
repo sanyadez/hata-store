@@ -1,0 +1,17 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  psitransfer:
+    image: psitrax/psitransfer:v2.4.1
+    ports:
+      - "${WEB_PORT:-13001}:3000"
+    environment:
+      PSITRANSFER_ADMIN_PASS: "${PSITRANSFER_ADMIN_PASS:?set PSITRANSFER_ADMIN_PASS}"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    restart: unless-stopped

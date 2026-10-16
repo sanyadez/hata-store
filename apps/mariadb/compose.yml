@@ -1,0 +1,20 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  mariadb:
+    image: linuxserver/mariadb:11.4.8
+    restart: unless-stopped
+    environment:
+      PUID: "${PUID:-1000}"
+      PGID: "${PGID:-1000}"
+      TZ: "${TZ:-UTC}"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-hata}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE:-hata}"
+      MYSQL_USER: "${MYSQL_USER:-admin}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD:-hata}"
+      REMOTE_SQL: "${REMOTE_SQL:-}"
+    ports:
+      - "${PORT_3306:-3306}:3306"
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /config

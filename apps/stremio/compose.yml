@@ -1,0 +1,22 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  stremio:
+    deploy:
+      resources:
+        limits:
+          memory: 1024M
+    environment:
+      NO_CORS: "${NO_CORS:-1}"
+      AUTO_SERVER_URL: "${AUTO_SERVER_URL:-1}"
+    devices:
+      - /dev/dri:/dev/dri
+    image: tsaridas/stremio-docker:v1.3.4
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/config"
+        target: /root/.stremio-server
+    ports:
+      - "${PORT_11470:-11470}:11470"
+      - "${WEB_PORT:-8100}:8080"
+    restart: unless-stopped
+    privileged: false

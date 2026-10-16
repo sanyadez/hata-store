@@ -1,0 +1,60 @@
+# From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
+services:
+  karakeep:
+    image: ghcr.io/karakeep-app/karakeep:0.33.2
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-14592}:3000"
+    networks:
+      - karakeep
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/data"
+        target: /data
+    environment:
+      MEILI_ADDR: http://karakeep-meilisearch:7700
+      BROWSER_WEB_URL: http://karakeep-chrome:9222
+      DATA_DIR: /data
+      NEXTAUTH_URL: "${NEXTAUTH_URL:-http://localhost:14592}"
+      NEXTAUTH_SECRET: "${DB_PASSWORD:?set DB_PASSWORD}"
+      MEILI_MASTER_KEY: "${DB_PASSWORD:?set DB_PASSWORD}"
+      OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
+  karakeep-chrome:
+    image: ghcr.io/karakeep-app/karakeep-chrome:154.0.8037.57-r1
+    deploy:
+      resources:
+        reservations:
+          memory: 512M
+    restart: unless-stopped
+    init: true
+    networks:
+      - karakeep
+    command:
+      - "--disable-gpu"
+      - "--disable-dev-shm-usage"
+      - "--hide-scrollbars"
+      - "--disable-blink-features=AutomationControlled"
+      - "--window-size=1440,900"
+  karakeep-meilisearch:
+    image: getmeili/meilisearch:v1.41.0
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    restart: unless-stopped
+    networks:
+      - karakeep
+    volumes:
+      - type: bind
+        source: "${APP_DATA:-.}/meilisearch"
+        target: /meili_data
+    environment:
+      MEILI_MASTER_KEY: "${DB_PASSWORD:?set DB_PASSWORD}"
+      MEILI_NO_ANALYTICS: "true"
+networks:
+  karakeep:
+    driver: bridge
