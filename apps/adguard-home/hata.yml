@@ -1,0 +1,48 @@
+# Apache-2.0, changed for Hata Store: see NOTICE
+title: AdGuard Home
+tagline:
+  en: Network-wide ad and tracker blocking
+  uk: Блокування реклами й трекерів у всій мережі
+description:
+  en: "Difference from Traditional Ad Blockers. Unlike traditional ad-blocking plugins that work only on individual devices, AdGuard Home offers a network-wide solution. By setting it up, you can block ads and trackers across all your home devices without needing to install any additional software on each device. This means comprehensive protection with minimal effort.\n\nHow AdGuard Home Works and How to Use It. AdGuard Home functions as a DNS server that reroutes tracking domains to a \"black hole,\" effectively preventing your devices from connecting to these servers. This blocks ads and trackers not only on your computer but also on your smartphone and smart home devices. To start using AdGuard Home, deploy it on your device, then change the DNS address assigned by DHCP on your router to the IP address of your AdGuard Home server."
+  uk: "Чим відрізняється від звичайних блокувальників реклами. Звичайні розширення для блокування реклами працюють лише на окремому пристрої, а AdGuard Home блокує рекламу й трекери в усій мережі. Налаштувавши його, ви захистите всі домашні пристрої, не встановлюючи нічого на кожен із них. Повний захист — майже без зусиль.\n\nЯк працює AdGuard Home і як ним користуватися. AdGuard Home працює як DNS-сервер: домени, що стежать за користувачем, він спрямовує в «чорну діру», і ваші пристрої просто не можуть з’єднатися з цими серверами. Так блокується реклама й трекери не лише на комп’ютері, а й на смартфоні та пристроях розумного дому. Щоб почати, запустіть AdGuard Home на своєму пристрої, а потім у налаштуваннях роутера замініть DNS-адресу, яку видає DHCP, на IP-адресу сервера з AdGuard Home."
+category: network
+developer: AdguardTeam
+website: https://adguard.com/en/adguard-home/overview.html
+source: https://github.com/AdguardTeam/AdGuardHome
+icon: "data:image/webp;base64,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"
+screenshots:
+  - 1.webp
+  - 2.webp
+  - 3.webp
+web:
+  service: adguard-home
+  port: 3000
+settings:
+  - name: PORT_53
+    type: port
+    default: 53
+    label:
+      en: Port 53
+      uk: Порт 53
+    advanced: true
+  - name: WEB_PORT
+    type: port
+    default: 3001
+    label:
+      en: Web port
+      uk: Порт вебінтерфейсу
+  - name: PORT_853
+    type: port
+    default: 853
+    label:
+      en: Port 853
+      uk: Порт 853
+    advanced: true
+  - name: PORT_784
+    type: port
+    default: 784
+    label:
+      en: Port 784
+      uk: Порт 784
+    advanced: true
