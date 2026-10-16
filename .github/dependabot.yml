@@ -18,6 +18,9 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # MongoDB's odd minor versions (3.7, 4.5…) and its rapid releases are not for running: patches only
+      - dependency-name: "mongo"
+        update-types: ["version-update:semver-minor"]
       # below 1.0 a minor version may break as much: 0.9 changed the command line and the data of 0.7
       - dependency-name: "archivebox/archivebox"
         update-types: ["version-update:semver-minor"]
@@ -34,6 +37,9 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # MongoDB's odd minor versions (3.7, 4.5…) and its rapid releases are not for running: patches only
+      - dependency-name: "mongo"
+        update-types: ["version-update:semver-minor"]
   - package-ecosystem: docker-compose
     directories:
       - "/apps/g*"
@@ -49,6 +55,9 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # MongoDB's odd minor versions (3.7, 4.5…) and its rapid releases are not for running: patches only
+      - dependency-name: "mongo"
+        update-types: ["version-update:semver-minor"]
     groups:
       # the server and the machine learning of Immich must be of one version
       immich:
@@ -66,6 +75,9 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # MongoDB's odd minor versions (3.7, 4.5…) and its rapid releases are not for running: patches only
+      - dependency-name: "mongo"
+        update-types: ["version-update:semver-minor"]
   - package-ecosystem: docker-compose
     directories:
       - "/apps/n*"
@@ -78,6 +90,9 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # MongoDB's odd minor versions (3.7, 4.5…) and its rapid releases are not for running: patches only
+      - dependency-name: "mongo"
+        update-types: ["version-update:semver-minor"]
   - package-ecosystem: docker-compose
     directories:
       - "/apps/p*"
@@ -91,6 +106,9 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # MongoDB's odd minor versions (3.7, 4.5…) and its rapid releases are not for running: patches only
+      - dependency-name: "mongo"
+        update-types: ["version-update:semver-minor"]
   - package-ecosystem: docker-compose
     directories:
       - "/apps/s*"
@@ -103,6 +121,9 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # MongoDB's odd minor versions (3.7, 4.5…) and its rapid releases are not for running: patches only
+      - dependency-name: "mongo"
+        update-types: ["version-update:semver-minor"]
   - package-ecosystem: docker-compose
     directories:
       - "/apps/u*"
@@ -119,3 +140,6 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # MongoDB's odd minor versions (3.7, 4.5…) and its rapid releases are not for running: patches only
+      - dependency-name: "mongo"
+        update-types: ["version-update:semver-minor"]
