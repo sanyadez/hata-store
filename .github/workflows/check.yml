@@ -78,6 +78,8 @@ jobs:
     needs: check
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    # one at a time, and only the index of what main is now: a run of an older commit must not put it back
+    concurrency: index
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -85,6 +87,8 @@ jobs:
 
       - name: Publish the index
         run: |
+          head=$(git ls-remote "https://github.com/${{ github.repository }}" refs/heads/main | cut -f1)
+          if [ "$head" != "$GITHUB_SHA" ]; then echo "main is at ${head::7} now: its own run publishes"; exit 0; fi
           mkdir out && mv index.json out/ && cd out
           git init -q -b index
           git add index.json

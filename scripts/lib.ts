@@ -527,24 +527,30 @@ export const MANIFEST_TYPES = [
   "application/vnd.docker.distribution.manifest.v2+json",
 ].join(", ");
 
-/** A GET against a registry, with the anonymous token it asks for */
-/** A request again after a dropped connection or a busy answer: registries do both now and then */
+/** A request again after a dropped connection or a busy answer: registries do both now and then, and
+ * several runs at once make them busy for a minute or two — waited out, by Retry-After when they say it */
 async function fetchAgain(url: string, init: RequestInit = {}): Promise<Response> {
+  const ATTEMPTS = 6;
+  const pause = (attempt: number, res?: Response) => {
+    const said = Number(res?.headers.get("retry-after"));
+    return Math.min(60_000, said > 0 ? said * 1000 : 5000 * 2 ** (attempt - 1));
+  };
   for (let attempt = 1; ; attempt++) {
     try {
       const res = await fetch(url, { ...init, signal: AbortSignal.timeout(20_000) });
-      if ((res.status === 429 || res.status >= 500) && attempt < 4) {
-        await Bun.sleep(attempt * 3000);
+      if ((res.status === 429 || res.status >= 500) && attempt < ATTEMPTS) {
+        await Bun.sleep(pause(attempt, res));
         continue;
       }
       return res;
     } catch (e) {
-      if (attempt >= 4) throw e;
-      await Bun.sleep(attempt * 3000);
+      if (attempt >= ATTEMPTS) throw e;
+      await Bun.sleep(pause(attempt));
     }
   }
 }
 
+/** A GET against a registry, with the anonymous token it asks for */
 export async function registryGet(ref: ImageRef, path: string, accept: string, method = "GET"): Promise<Response> {
   const host = ref.registry === "docker.io" ? "registry-1.docker.io" : ref.registry;
   const url = `https://${host}/v2/${ref.repo}/${path}`;
