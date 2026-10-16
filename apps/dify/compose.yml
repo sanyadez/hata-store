@@ -172,7 +172,7 @@ services:
     networks:
       - dify
   sandbox:
-    image: langgenius/dify-sandbox:0.2.11
+    image: langgenius/dify-sandbox:0.2.15
     restart: unless-stopped
     environment:
       API_KEY: "${DB_PASSWORD_4:?set DB_PASSWORD_4}"
