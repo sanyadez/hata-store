@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   autobrr:
-    image: ghcr.io/autobrr/autobrr:v1.79.0
+    image: ghcr.io/autobrr/autobrr:v1.88.0
     restart: unless-stopped
     environment:
       TZ: "${TZ:-UTC}"
