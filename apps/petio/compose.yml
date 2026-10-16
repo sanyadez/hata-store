@@ -21,7 +21,7 @@ services:
         source: "${APP_DATA:-.}/logs"
         target: /app/logs
   mongo:
-    image: mongo:4.4.22
+    image: mongo:4.4.30
     restart: unless-stopped
     hostname: mongo
     networks:
