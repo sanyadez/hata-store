@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   swingmusic:
-    image: ghcr.io/swingmx/swingmusic:v2.1.4
+    image: ghcr.io/swingmx/swingmusic:v2.1.13
     volumes:
       - type: bind
         source: "${APP_DATA:-.}/config"
