@@ -7,7 +7,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: "${TZ:-UTC}"
-    image: linuxserver/nzbget:26.1.20260522
+    image: linuxserver/nzbget:26.3.20261009
     deploy:
       resources:
         reservations:
