@@ -133,7 +133,7 @@ services:
         reservations:
           memory: 500M
   librechat-rag-api:
-    image: ghcr.io/danny-avila/librechat-rag-api-dev-lite:v0.6.0
+    image: ghcr.io/danny-avila/librechat-rag-api-dev-lite:v0.9.0
     environment:
       DB_HOST: "${DB_HOST:-librechat-vectordb}"
       RAG_PORT: "${RAG_PORT_2:-8000}"
