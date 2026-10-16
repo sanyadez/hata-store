@@ -1,7 +1,7 @@
 # From the CasaOS AppStore (https://github.com/IceWhaleTech/CasaOS-AppStore, Apache-2.0), changed for Hata Store.
 services:
   handbrake:
-    image: jlesage/handbrake:v26.03.3
+    image: jlesage/handbrake:v26.09.1
     ports:
       - "${WEB_PORT:-5800}:5800"
     privileged: true
