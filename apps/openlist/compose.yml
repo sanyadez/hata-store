@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   openlist:
-    image: openlistteam/openlist:v4.2.2
+    image: openlistteam/openlist:v4.2.6
     deploy:
       resources:
         reservations:
