@@ -25,6 +25,9 @@ developer: Koushik Dutta
 website: https://www.scrypted.app
 source: https://github.com/koush/scrypted
 icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij48Y2lyY2xlIGN4PSIxMjgiIGN5PSIxMjgiIHI9IjEyNCIgZmlsbD0iIzY3M2FiNyIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cmVjdCB4PSI3OCIgeT0iNzgiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iMTQiLz48cmVjdCB4PSIxMDgiIHk9IjEwOCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iNCIvPjxwYXRoIGQ9Ik0xMDggNTB2MjhNMTQ4IDUwdjI4TTEwOCAxNzh2MjhNMTQ4IDE3OHYyOE01MCAxMDhoMjhNNTAgMTQ4aDI4TTE3OCAxMDhoMjhNMTc4IDE0OGgyOCIvPjwvZz48L3N2Zz4=
+screenshots:
+  - 1.webp
+  - 2.webp
 web:
   service: scrypted
   port: 11080

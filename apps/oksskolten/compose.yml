@@ -1,0 +1,48 @@
+services:
+  oksskolten:
+    image: ghcr.io/babarot/oksskolten:0.5.0
+    restart: unless-stopped
+    user: "${PUID:-1000}:${PGID:-1000}"
+    ports:
+      - "${WEB_PORT:-3017}:3000"
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      TZ: "${TZ:-UTC}"
+      DATABASE_URL: file:/data/rss.db
+      MEILI_URL: http://oksskolten-meilisearch:7700
+      MEILI_MASTER_KEY: "${MEILI_MASTER_KEY:?set MEILI_MASTER_KEY to a long random string}"
+      RSS_BRIDGE_URL: http://oksskolten-rss-bridge:80
+      FETCH_CONCURRENCY: "5"
+      PARSE_MAX_THREADS: "2"
+      CRON_SCHEDULE: "*/5 * * * *"
+    volumes:
+      - ${APP_DATA:-.}/data:/data
+    depends_on:
+      oksskolten-meilisearch:
+        condition: service_healthy
+      oksskolten-rss-bridge:
+        condition: service_started
+
+  oksskolten-meilisearch:
+    image: getmeili/meilisearch:v1.13.3
+    restart: unless-stopped
+    environment:
+      MEILI_ENV: production
+      MEILI_MASTER_KEY: "${MEILI_MASTER_KEY:?set MEILI_MASTER_KEY to a long random string}"
+      MEILI_DB_PATH: /meili_data
+      MEILI_LOG_LEVEL: WARN
+      MEILI_NO_ANALYTICS: "true"
+      # a newer Meilisearch takes over the index of an older one instead of refusing to start
+      MEILI_EXPERIMENTAL_DUMPLESS_UPGRADE: "true"
+    volumes:
+      - ${APP_DATA:-.}/meilisearch:/meili_data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  oksskolten-rss-bridge:
+    image: rssbridge/rss-bridge:2026-09-30
+    restart: unless-stopped
