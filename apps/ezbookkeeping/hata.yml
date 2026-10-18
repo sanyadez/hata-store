@@ -1,0 +1,50 @@
+title: ezBookkeeping
+tagline:
+  en: Light personal bookkeeping for the household, on the desktop and the phone
+  uk: Легкий облік особистих і сімейних фінансів, на комп'ютері й на телефоні
+description:
+  en: >
+    A light personal finance app: accounts and cards, expenses, income and transfers with categories and
+    tags, several currencies with exchange rates, scheduled transactions, pictures and places on a map, and
+    statistics with charts and an explorer of your own questions. Records can be imported from a bank
+    statement or other apps (CSV, OFX, QIF, Firefly III, GnuCash and more). It has a page made for the
+    desktop and one made for the phone, which can be added to the home screen as an app.
+  uk: >
+    Легкий застосунок для особистих фінансів: рахунки й картки, витрати, доходи й перекази з категоріями та
+    мітками, кілька валют із курсами, заплановані операції, фото й місця на мапі, а також статистика з
+    діаграмами й власними запитами до даних. Записи можна завантажити з банківської виписки чи інших
+    застосунків (CSV, OFX, QIF, Firefly III, GnuCash тощо). Має сторінку для комп'ютера й окрему для
+    телефона, яку можна додати на головний екран як застосунок.
+notes:
+  en: >
+    At the first visit press **Create an account**: the first account is yours. Anyone who can open the
+    page can make one too, so once everybody has an account, switch off "Allow new accounts" in the app's
+    settings.
+  uk: >
+    Під час першого відкриття натисніть **Create an account**: перший обліковий запис — ваш. Створити
+    його може кожен, хто відкриє сторінку, тож коли всі вже мають облікові записи, вимкніть «Дозволити
+    нові облікові записи» в налаштуваннях застосунку.
+category: finance
+developer: MaysWind
+website: https://ezbookkeeping.mayswind.net
+source: https://github.com/mayswind/ezbookkeeping
+icon: "data:image/webp;base64,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"
+screenshots: [1.webp, 2.webp, 3.webp, 4.webp, 5.webp, 6.webp]
+web:
+  service: ezbookkeeping
+  port: 8080
+settings:
+  - name: WEB_PORT
+    type: port
+    default: 18087
+    label: { en: Web port, uk: Порт вебінтерфейсу }
+  - name: ENABLE_REGISTER
+    type: switch
+    default: true
+    label: { en: Allow new accounts, uk: Дозволити нові облікові записи }
+    hint:
+      en: Anyone who opens the page can make an account while this is on
+      uk: Поки ввімкнено, обліковий запис може створити кожен, хто відкриє сторінку
+  - name: SECRET_KEY
+    type: secret
+    label: { en: Key that signs the sign-ins, uk: "Ключ, яким підписуються входи" }

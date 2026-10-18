@@ -1,0 +1,16 @@
+services:
+  ezbookkeeping:
+    image: mayswind/ezbookkeeping:2.1.0
+    restart: unless-stopped
+    user: "${PUID:-1000}:${PGID:-1000}"
+    ports:
+      - "${WEB_PORT:-18087}:8080"
+    environment:
+      TZ: "${TZ:-UTC}"
+      EBK_SERVER_ROOT_URL: "${APP_URL:-http://localhost:18087}/"
+      EBK_SECURITY_SECRET_KEY: "${SECRET_KEY:?set SECRET_KEY to a long random string}"
+      EBK_USER_ENABLE_REGISTER: "${ENABLE_REGISTER:-true}"
+      EBK_LOG_MODE: console
+    volumes:
+      - ${APP_DATA:-.}/data:/ezbookkeeping/data
+      - ${APP_DATA:-.}/storage:/ezbookkeeping/storage
