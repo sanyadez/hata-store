@@ -1,0 +1,14 @@
+services:
+  wishlist:
+    image: ghcr.io/cmintey/wishlist:v0.68.0
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-3280}:3280"
+    environment:
+      ORIGIN: "${APP_URL:-http://localhost:3280}"
+      DEFAULT_CURRENCY: "${DEFAULT_CURRENCY:-USD}"
+      TOKEN_TIME: "${TOKEN_TIME:-72}"
+      TZ: "${TZ:-UTC}"
+    volumes:
+      - ${APP_DATA:-.}/data:/usr/src/app/data
+      - ${APP_DATA:-.}/uploads:/usr/src/app/uploads
