@@ -5,7 +5,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: "${TZ:-UTC}"
-    image: linuxserver/bazarr:1.6.1
+    image: linuxserver/bazarr:1.6.2
     deploy:
       resources:
         reservations:
