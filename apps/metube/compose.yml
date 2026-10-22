@@ -1,6 +1,6 @@
 services:
   metube:
-    image: ghcr.io/alexta69/metube:2026.10.09
+    image: ghcr.io/alexta69/metube:2026.10.22
     restart: unless-stopped
     ports:
       - ${WEB_PORT:-8081}:8081
