@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   mongo:
-    image: mongo:8.3.11
+    image: mongo:8.3.13
     restart: unless-stopped
     environment:
       PUID: "${PUID:-1000}"
