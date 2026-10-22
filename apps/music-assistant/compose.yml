@@ -1,6 +1,6 @@
 services:
   music-assistant:
-    image: ghcr.io/music-assistant/server:2.10.6
+    image: ghcr.io/music-assistant/server:2.10.7
     restart: unless-stopped
     # players are found and streamed to on the home network itself (mDNS, AirPlay, Chromecast, DLNA, Sonos)
     network_mode: host
