@@ -7,7 +7,7 @@ services:
           memory: 7848M
     environment:
       TZ: "${TZ:-UTC}"
-    image: pymedusa/medusa:master@sha256:0c2fc9980ce2f4a9abb7cdccacf7678d503b68a2e6822bc143a52f42171c2e6e
+    image: pymedusa/medusa:master@sha256:0caf2991d15030b99864158144903c1d2b5f4f9ff019ec4450c4f1cb33569857
     ports:
       - "${WEB_PORT:-8081}:8081"
     restart: unless-stopped
