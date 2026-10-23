@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   ollama:
-    image: ollama/ollama:0.40.3
+    image: ollama/ollama:0.40.6
     deploy:
       resources:
         limits:
