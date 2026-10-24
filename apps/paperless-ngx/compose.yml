@@ -1,6 +1,6 @@
 services:
   webserver:
-    image: ghcr.io/paperless-ngx/paperless-ngx:3.3.2
+    image: ghcr.io/paperless-ngx/paperless-ngx:3.3.4
     restart: unless-stopped
     depends_on:
       - db
