@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   peanut:
-    image: brandawg93/peanut:6.0.0
+    image: brandawg93/peanut:6.1.2
     restart: unless-stopped
     volumes:
       - type: bind
