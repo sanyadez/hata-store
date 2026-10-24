@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   qui:
-    image: ghcr.io/autobrr/qui:v1.32.0
+    image: ghcr.io/autobrr/qui:v1.33.1
     restart: unless-stopped
     depends_on:
       postgres:
