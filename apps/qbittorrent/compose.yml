@@ -6,7 +6,7 @@ services:
       PUID: "${PUID:-1000}"
       TZ: "${TZ:-UTC}"
       UMASK: "${UMASK:-002}"
-    image: ghcr.io/hotio/qbittorrent:release-v5.2.4
+    image: ghcr.io/hotio/qbittorrent:release-v5.3.0
     deploy:
       resources:
         reservations:
