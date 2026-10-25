@@ -1,6 +1,6 @@
 services:
   vikunja:
-    image: vikunja/vikunja:2.7.0
+    image: vikunja/vikunja:2.7.1
     restart: unless-stopped
     user: ${PUID:-1000}:${PGID:-1000}
     ports:
