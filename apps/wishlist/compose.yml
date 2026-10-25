@@ -1,6 +1,6 @@
 services:
   wishlist:
-    image: ghcr.io/cmintey/wishlist:v0.68.0
+    image: ghcr.io/cmintey/wishlist:v0.69.0
     restart: unless-stopped
     ports:
       - "${WEB_PORT:-3280}:3280"
