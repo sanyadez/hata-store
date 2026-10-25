@@ -10,7 +10,7 @@ services:
       AUTO_SERVER_URL: "${AUTO_SERVER_URL:-1}"
     devices:
       - /dev/dri:/dev/dri
-    image: tsaridas/stremio-docker:v1.3.13
+    image: tsaridas/stremio-docker:v1.3.14
     volumes:
       - type: bind
         source: "${APP_DATA:-.}/config"
