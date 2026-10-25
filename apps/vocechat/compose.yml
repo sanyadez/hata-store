@@ -3,7 +3,7 @@ services:
   vocechat:
     environment:
       TZ: "${TZ:-UTC}"
-    image: privoce/vocechat-server:v0.5.36
+    image: privoce/vocechat-server:v0.5.37
     deploy:
       resources:
         reservations:
