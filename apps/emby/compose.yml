@@ -12,7 +12,7 @@ services:
       GID: "${GID:-100}"
       GIDLIST: "${GIDLIST:-100}"
       TZ: "${TZ:-UTC}"
-    image: emby/embyserver:4.10.1.0
+    image: emby/embyserver:4.10.2.0
     deploy:
       resources:
         reservations:
