@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   homebridge:
-    image: homebridge/homebridge:latest@sha256:d2370beb6a0208d3f20f869288bc070b5cc34d86b52a5872311ce2bcff02a670
+    image: homebridge/homebridge:latest@sha256:3c775f1c761238ea3957d0c83c54b5270eae702236d3f67b6df81e1e621cd6e6
     restart: always
     network_mode: host
     volumes:
