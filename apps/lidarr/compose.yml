@@ -5,7 +5,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: "${TZ:-UTC}"
-    image: linuxserver/lidarr:3.1.0
+    image: linuxserver/lidarr:3.1.6
     deploy:
       resources:
         reservations:
