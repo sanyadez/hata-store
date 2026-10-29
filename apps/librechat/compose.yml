@@ -104,7 +104,7 @@ services:
         reservations:
           memory: 1024M
   librechat-meilisearch:
-    image: getmeili/meilisearch:v1.55.0
+    image: getmeili/meilisearch:v1.56.0
     restart: unless-stopped
     user: 1000:1000
     environment:
