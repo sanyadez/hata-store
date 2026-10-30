@@ -16,7 +16,7 @@ services:
       start_period: 30s
 
   sparkyfitness-server:
-    image: codewithcj/sparkyfitness_server:v1.8.0
+    image: codewithcj/sparkyfitness_server:v1.9.0
     restart: unless-stopped
     environment:
       SPARKY_FITNESS_DB_HOST: sparkyfitness-db
