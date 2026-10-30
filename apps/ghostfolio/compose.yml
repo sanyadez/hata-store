@@ -1,6 +1,6 @@
 services:
   ghostfolio:
-    image: ghostfolio/ghostfolio:3.86.0
+    image: ghostfolio/ghostfolio:3.92.0
     restart: unless-stopped
     init: true
     stop_grace_period: 1m
