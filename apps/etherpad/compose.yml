@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   etherpad:
-    image: etherpad/etherpad:3.3.8
+    image: etherpad/etherpad:3.3.10
     deploy:
       resources:
         reservations:
