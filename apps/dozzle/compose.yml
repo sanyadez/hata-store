@@ -1,6 +1,6 @@
 services:
   dozzle:
-    image: amir20/dozzle:v11.3.2
+    image: amir20/dozzle:v11.3.4
     restart: unless-stopped
     ports:
       - ${WEB_PORT:-8080}:8080
