@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   langflow:
-    image: langflowai/langflow:1.12.6
+    image: langflowai/langflow:1.13.0
     user: 0:0
     ports:
       - "${WEB_PORT:-17860}:7860"
