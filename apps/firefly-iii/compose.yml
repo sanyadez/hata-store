@@ -46,7 +46,7 @@ services:
 
   # Runs Firefly III's daily jobs (recurring transactions, bills, exchange rates) at 03:00.
   cron:
-    image: alpine:3.24.2
+    image: alpine:3.24.3
     restart: unless-stopped
     command:
       - sh
