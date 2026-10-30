@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   node-red:
-    image: nodered/node-red:4.1.16-22
+    image: nodered/node-red:4.1.17-22
     deploy:
       resources:
         reservations:
