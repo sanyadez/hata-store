@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   tailscale:
-    image: tailscale/tailscale:v1.102.5
+    image: tailscale/tailscale:v1.104.2
     deploy:
       resources:
         reservations:
