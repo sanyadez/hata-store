@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   komga:
-    image: gotson/komga:1.29.0
+    image: gotson/komga:1.29.1
     deploy:
       resources:
         reservations:
