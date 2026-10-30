@@ -1,6 +1,6 @@
 services:
   immich-kiosk:
-    image: ghcr.io/damongolding/immich-kiosk:0.45.1
+    image: ghcr.io/damongolding/immich-kiosk:0.45.2
     restart: unless-stopped
     tty: true
     ports:
