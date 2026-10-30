@@ -2,7 +2,7 @@ services:
   # Writes the administrator into the server's config as a declared user: the password is the
   # setting's, so a changed one counts from the next start.
   admin:
-    image: binwiederhier/ntfy:v2.32.0
+    image: binwiederhier/ntfy:v2.34.0
     restart: "no"
     entrypoint: ["/bin/sh", "-c"]
     command:
@@ -16,7 +16,7 @@ services:
       - ${APP_DATA:-.}/data:/var/lib/ntfy
 
   ntfy:
-    image: binwiederhier/ntfy:v2.32.0
+    image: binwiederhier/ntfy:v2.34.0
     restart: unless-stopped
     command: ["serve", "--config", "/var/lib/ntfy/users.yml"]
     init: true
