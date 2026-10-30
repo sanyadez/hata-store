@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   alist:
-    image: xhofe/alist:v3.65.0
+    image: xhofe/alist:v3.66.0
     deploy:
       resources:
         reservations:
