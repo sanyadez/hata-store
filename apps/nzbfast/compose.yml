@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   nzbfast:
-    image: nzbfast/nzbfast:1.7.1
+    image: nzbfast/nzbfast:1.8.0
     restart: unless-stopped
     environment:
       PUID: "${PUID:-1000}"
