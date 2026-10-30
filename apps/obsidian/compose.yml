@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   obsidian:
-    image: lscr.io/linuxserver/obsidian:1.14.4
+    image: lscr.io/linuxserver/obsidian:1.14.5
     deploy:
       resources:
         reservations:
