@@ -9,7 +9,7 @@ services:
       resources:
         limits:
           memory: 1794M
-    image: netdata/netdata:v2.12.1
+    image: netdata/netdata:v2.12.2
     pid: host
     ports:
       - "${WEB_PORT:-19999}:19999"
