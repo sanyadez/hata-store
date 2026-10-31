@@ -11,7 +11,7 @@ services:
       APP_URL: ${APP_URL:-http://localhost:8090}
 
   beszel-agent:
-    image: henrygd/beszel-agent:0.21.0-alpine
+    image: henrygd/beszel-agent:0.21.1-alpine
     restart: unless-stopped
     network_mode: host
     init: true
