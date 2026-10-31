@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   pdfding:
-    image: mrmn/pdfding:v1.14.0
+    image: mrmn/pdfding:v1.14.1
     deploy:
       resources:
         reservations:
