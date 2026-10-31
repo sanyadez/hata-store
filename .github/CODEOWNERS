@@ -1,0 +1,2 @@
+# Dependabot asks the owner for a review of every image bump
+/apps/*/compose.yml @sanyadez
