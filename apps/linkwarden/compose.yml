@@ -56,7 +56,7 @@ services:
         reservations:
           memory: 256m
   linkwarden-meilisearch:
-    image: getmeili/meilisearch:v1.55.0
+    image: getmeili/meilisearch:v1.56.0
     restart: unless-stopped
     environment:
       MEILI_MASTER_KEY: "${DB_PASSWORD_2:?set DB_PASSWORD_2}"
