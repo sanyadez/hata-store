@@ -39,7 +39,7 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD}
 
   broker:
-    image: valkey/valkey:9.1.2-alpine
+    image: valkey/valkey:9.1.3-alpine
     restart: unless-stopped
     volumes:
       - ${APP_DATA:-.}/redis:/data
