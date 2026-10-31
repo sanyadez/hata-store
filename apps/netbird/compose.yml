@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   netbird:
-    image: netbirdio/netbird:0.81.3
+    image: netbirdio/netbird:0.81.5
     network_mode: host
     restart: unless-stopped
     cap_add:
