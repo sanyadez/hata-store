@@ -1,6 +1,6 @@
 services:
   zigbee2mqtt:
-    image: ghcr.io/koenkk/zigbee2mqtt:2.14.2
+    image: ghcr.io/koenkk/zigbee2mqtt:2.14.3
     restart: unless-stopped
     ports:
       - ${WEB_PORT:-8080}:8080
