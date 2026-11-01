@@ -1,6 +1,6 @@
 services:
   tubearchivist:
-    image: bbilly1/tubearchivist:v0.5.12
+    image: bbilly1/tubearchivist:v0.6.0
     restart: unless-stopped
     ports:
       - ${WEB_PORT:-8000}:8000
