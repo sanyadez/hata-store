@@ -1,6 +1,6 @@
 services:
   tubearchivist:
-    image: bbilly1/tubearchivist:v0.5.12
+    image: bbilly1/tubearchivist:v0.6.0
     restart: unless-stopped
     ports:
       - ${WEB_PORT:-8000}:8000
@@ -10,8 +10,6 @@ services:
     environment:
       ES_URL: http://archivist-es:9200
       REDIS_CON: redis://archivist-redis:6379
-      HOST_UID: ${PUID:-1000}
-      HOST_GID: ${PGID:-1000}
       # the address the pages are opened at, with its scheme and port: requests from elsewhere are refused
       TA_HOST: ${APP_URL:-http://localhost:8000}
       TA_USERNAME: ${TA_USERNAME:-admin}
@@ -37,7 +35,7 @@ services:
       - archivist-es
 
   archivist-es:
-    image: bbilly1/tubearchivist-es:8.19.0
+    image: bbilly1/tubearchivist-es:9.5.5
     restart: unless-stopped
     environment:
       ELASTIC_PASSWORD: ${ELASTIC_PASSWORD:?set ELASTIC_PASSWORD}
