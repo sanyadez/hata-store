@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   wallabag:
-    image: wallabag/wallabag:2.6.14
+    image: wallabag/wallabag:2.6.15.1
     deploy:
       resources:
         reservations:
