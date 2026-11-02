@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { bindMounts, brokenLine, checkCompose, checkDependabot, checkHata, checkIcon, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
+import { bindMounts, brokenLine, checkCompose, checkDependabot, checkHata, checkIcon, checkLogin, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
 
 const svg = (body: string) => `data:image/svg+xml;base64,${Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg">${body}</svg>`).toString("base64")}`;
 const store = { categories: { media: { en: "Media" } } };
@@ -152,4 +152,37 @@ describe("dependabot.yml", () => {
       "apps/gamma is in none of its lists: Dependabot would never update it",
     ]);
   });
+});
+
+describe("login", () => {
+  const told = (login: unknown, settings: object[] = []) => {
+    const said: string[] = [];
+    checkLogin(login, settings as never, (text) => said.push(text));
+    return said;
+  };
+  test("every kind in its right form", () => {
+    expect(told({ kind: "default", user: "admin", password: "admin" })).toEqual([]);
+    expect(told({ kind: "default", password: "deluge" })).toEqual([]);
+    expect(told({ kind: "settings", user: "admin", password: "${PW}" }, [{ name: "PW" }])).toEqual([]);
+    expect(told({ kind: "first-visit" })).toEqual([]);
+    expect(told({ kind: "log", user: "admin", find: "temporary password" })).toEqual([]);
+    expect(told({ kind: "none" })).toEqual([]);
+  });
+  test("what is wrong is said", () => {
+    expect(told("admin")[0]).toContain("must be");
+    expect(told({ kind: "guess" })[0]).toContain("one of");
+    expect(told({ kind: "default" })[0]).toContain("needs a user or a password");
+    expect(told({ kind: "default", password: 666 }).join()).toContain("must be a text");
+    expect(told({ kind: "default", password: "${PW}" })[0]).toContain("settings");
+    expect(told({ kind: "settings", user: "admin" })[0]).toContain("at least one setting");
+    expect(told({ kind: "settings", password: "${PW}" })[0]).toContain("no setting PW");
+    expect(told({ kind: "settings", password: "x${PW}" }, [{ name: "PW" }])[0]).toContain("whole");
+    expect(told({ kind: "first-visit", user: "admin" })[0]).toContain("has no user");
+    expect(told({ kind: "log", user: "admin" })[0]).toContain("find");
+  });
+});
+
+test("an app's login goes through its check", () => {
+  expect(texts(checkHata(app as never, hata({ login: { kind: "first-visit" } }), store))).not.toContain("unknown key \"login\"");
+  expect(texts(checkHata(app as never, hata({ login: { kind: "guess" } }), store)).join()).toContain("login.kind");
 });

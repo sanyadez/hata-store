@@ -35,7 +35,40 @@ const FLOATING = new Set(["latest", "stable", "release", "main", "master", "nigh
 /** Files read without a word: the time zone of the host, read-only */
 const HARMLESS = new Set(["/etc/localtime", "/etc/timezone"]);
 
-const HATA_KEYS = ["title", "tagline", "description", "category", "developer", "website", "source", "icon", "screenshots", "web", "settings", "permissions", "notes"];
+const HATA_KEYS = ["title", "tagline", "description", "category", "developer", "website", "source", "icon", "screenshots", "web", "settings", "permissions", "notes", "login"];
+
+const LOGIN_KEYS: Record<string, string[]> = {
+  default: ["user", "password"],
+  settings: ["user", "password"],
+  "first-visit": [],
+  log: ["user", "find"],
+  none: [],
+};
+const SETTING_REF = /^\$\{([A-Z][A-Z0-9_]*)\}$/;
+
+/** How to get into the app: `say` is told what is wrong with it */
+export function checkLogin(login: unknown, settings: Obj[], say: (text: string) => void): void {
+  if (!isObject(login)) return say("login must be { kind, … }");
+  const fields = typeof login.kind === "string" ? LOGIN_KEYS[login.kind] : undefined;
+  if (!fields) return say(`login.kind must be one of ${Object.keys(LOGIN_KEYS).join(", ")}`);
+  for (const key of Object.keys(login)) if (key !== "kind" && !fields.includes(key)) say(`login: a "${login.kind}" login has no ${key}`);
+  for (const key of fields) if (login[key] !== undefined && (typeof login[key] !== "string" || !login[key].trim())) say(`login.${key} must be a text`);
+  const given = ["user", "password"].filter((key) => typeof login[key] === "string");
+  if (login.kind === "default") {
+    if (!given.length) say("login: a default login needs a user or a password");
+    for (const key of given) if (login[key].includes("$")) say(`login.${key}: a default is written as it is; a value of a setting belongs to the kind "settings"`);
+  }
+  if (login.kind === "settings") {
+    const refs = given.filter((key) => login[key].includes("$"));
+    if (!refs.length) say("login: name at least one setting, as ${NAME}");
+    for (const key of refs) {
+      const name = SETTING_REF.exec(login[key])?.[1];
+      if (!name) say(`login.${key} must be a plain text or a whole \${NAME}`);
+      else if (!settings.some((s) => s.name === name)) say(`login.${key}: there is no setting ${name}`);
+    }
+  }
+  if (login.kind === "log" && !(typeof login.find === "string" && login.find.length <= 120)) say("login.find: the words of the log line that holds the password, up to 120 characters");
+}
 
 export interface Problem {
   /** `apps/<id>/hata.yml` and the like */
@@ -369,6 +402,7 @@ export function checkHata(app: AppFiles, hata: unknown, store: Obj): Problem[] {
   checkText(hata.tagline, "tagline", say, 120);
   checkText(hata.description, "description", say);
   if (hata.notes !== undefined) checkText(hata.notes, "notes", say);
+  if (hata.login !== undefined) checkLogin(hata.login, Array.isArray(hata.settings) ? hata.settings.filter(isObject) : [], say);
   const categories = isObject(store.categories) ? Object.keys(store.categories) : [];
   if (!categories.includes(hata.category)) say(`category "${hata.category}" is not in store.yml (${categories.join(", ")})`);
   if (typeof hata.developer !== "string" || !hata.developer.trim()) say("developer is missing");
