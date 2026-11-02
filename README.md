@@ -142,7 +142,8 @@ login: { kind: default, user: admin, password: admin }
 | `none`        | the app has no sign-in of its own                   | nothing                            |
 
 qBittorrent is the example of `log`: `{ kind: log, user: admin, find: temporary password }`. Its password
-changes at every start until one is set in the app.
+changes at every start until one is set in the app. The password is the last word of the newest line with
+these words, so `log` fits only an app that ends the line with it.
 
 ## Updates
 
