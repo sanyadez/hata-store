@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Project NOMAD is an offline knowledge and education server with a browser-based Command Center. Install and manage offline Wikipedia and ebooks with Kiwix, educational courses with Kolibri, local AI with Ollama and Qdrant, offline maps, CyberChef, and notes from one interface.\n\nThis package includes the Command Center, MySQL, Redis, Dozzle for service logs, and host disk monitoring. Optional tools, AI models, and offline content are installed separately from the NOMAD interface."
   uk: "Project NOMAD — сервер офлайн-знань і навчання з Командним центром у браузері. З одного інтерфейсу можна встановлювати й обслуговувати офлайн-Вікіпедію та електронні книги через Kiwix, навчальні курси через Kolibri, локальний ШІ через Ollama і Qdrant, офлайн-мапи, CyberChef та нотатки.\n\nУ цей пакет входять Командний центр, MySQL, Redis, Dozzle для журналів служб і моніторинг дисків хоста. Додаткові інструменти, моделі ШІ та офлайн-вміст встановлюються окремо з інтерфейсу NOMAD."
+login: { kind: none }
 category: productivity
 developer: Crosstalk Solutions
 website: https://www.projectnomad.us

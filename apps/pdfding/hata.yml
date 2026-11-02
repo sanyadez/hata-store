@@ -6,9 +6,6 @@ tagline:
 description:
   en: "PdfDing is a selfhosted PDF manager, viewer and editor offering a seamless user experience on multiple devices. It's designed to be minimal, fast, and easy to set up using Docker.\n\nWith features like seamless browser-based PDF viewing that remembers your current position, multi-level tagging, starring and archiving functionalities, PDF editing with comments, highlighting and drawings, clean intuitive UI with dark mode, SSO support via OIDC, PDF sharing with external audience, markdown notes, and progress bars showing reading progress, PdfDing ensures an excellent PDF management experience."
   uk: "PdfDing — менеджер, переглядач і редактор PDF для самостійного розгортання, зручний на різних пристроях. Він мінімалістичний, швидкий і простий у встановленні через Docker.\n\nPdfDing дає зручну роботу з PDF: перегляд просто в браузері із запам'ятовуванням поточної позиції, багаторівневі теги, зірочки й архівування, редагування PDF із коментарями, виділенням і малюнками, чистий інтуїтивний інтерфейс із темною темою, вхід через SSO за OIDC, надання PDF стороннім користувачам, нотатки в Markdown і смуги прогресу читання."
-notes:
-  en: "After installation, you can access PdfDing at http://your-server-ip:8000. Create your first admin account during the initial setup.\n\nNote: If you encounter access issues, you may need to manually edit the docker-compose.yml file and replace the HOST_NAME environment variable with your actual server IP address."
-  uk: "Після встановлення PdfDing буде доступний за адресою http://your-server-ip:8000. Першого адміністратора створіть під час початкового налаштування.\n\nПримітка: якщо виникають проблеми з доступом, можливо, доведеться вручну відредагувати файл docker-compose.yml і замінити змінну середовища HOST_NAME на реальну IP-адресу вашого сервера."
 category: productivity
 developer: mrmn2
 website: https://www.pdfding.com

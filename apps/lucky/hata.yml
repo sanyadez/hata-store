@@ -7,8 +7,8 @@ description:
   en: "A powerful tool for port forwarding, reverse proxy, dynamic DNS, wake-on-LAN, IPv4 NAT traversal, webdav services, task scheduling, and automatic certificate management."
   uk: "Потужний інструмент для перенаправлення портів, зворотного проксі, динамічного DNS, wake-on-LAN, проходження IPv4 NAT, служб webdav, планування завдань і автоматичного керування сертифікатами."
 notes:
-  en: "Default login account `666`, Default login password `666`,tips:`Before each update, remember to back up the configuration`."
-  uk: "Типовий логін `666`, типовий пароль `666`. Порада: `перед кожним оновленням не забудьте зробити резервну копію конфігурації`."
+  en: Back up the configuration before each update.
+  uk: Перед кожним оновленням зробіть резервну копію конфігурації.
 category: network
 developer: gdy666
 website: https://lucky666.cn/

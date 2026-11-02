@@ -6,6 +6,7 @@ tagline:
 description:
   en: "2FAuth is a web based self-hosted alternative to One Time Passcode (OTP) generators like Google Authenticator, designed for both mobile and desktop."
   uk: "2FAuth — вебзастосунок для власного сервера, альтернатива генераторам одноразових кодів (OTP), як-от Google Authenticator. Працює і на телефоні, і на комп’ютері."
+login: { kind: first-visit }
 category: productivity
 developer: Bubka
 website: https://2fauth.app

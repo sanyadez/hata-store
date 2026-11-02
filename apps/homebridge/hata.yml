@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Homebridge is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of \"smart home\" devices."
   uk: "Homebridge — легкий сервер на NodeJS, який можна запустити у домашній мережі: він емулює API iOS HomeKit. Він підтримує плагіни — модулі від спільноти, що забезпечують простий міст між HomeKit і різними сторонніми API виробників пристроїв «розумного дому»."
+login: { kind: default, user: admin, password: admin }
 category: home
 developer: Homebridge
 website: https://homebridge.io/

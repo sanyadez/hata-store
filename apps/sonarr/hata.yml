@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available."
   uk: "Sonarr — PVR для користувачів Usenet і BitTorrent. Він може стежити за кількома RSS-стрічками, шукаючи нові епізоди ваших улюблених серіалів, а також знаходить, сортує та перейменовує їх. Його також можна налаштувати так, щоб він автоматично замінював уже завантажені файли на кращу якість, коли така з’являється."
+login: { kind: first-visit }
 category: media
 developer: Sonarr
 website: https://sonarr.tv

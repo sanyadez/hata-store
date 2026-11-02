@@ -6,6 +6,13 @@ tagline:
 description:
   en: A server for creating pipelines for Jenkins continuous integration and delivery.
   uk: Сервер для створення конвеєрів безперервної інтеграції та доставки в Jenkins.
+notes:
+  en: >
+    The first time, Jenkins asks for an administrator password. It is in the container's log, and in the
+    file /var/jenkins_home/secrets/initialAdminPassword inside the container.
+  uk: >
+    Під час першого відкриття Jenkins просить пароль адміністратора. Він є в журналі контейнера й у файлі
+    /var/jenkins_home/secrets/initialAdminPassword всередині контейнера.
 category: development
 developer: bepp-boop
 website: https://www.jenkins.io/

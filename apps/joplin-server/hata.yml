@@ -13,12 +13,12 @@ description:
     вебсторінку — без Dropbox чи OneDrive посередині.
 notes:
   en: >
-    Sign in the first time as **admin@localhost** with the password **admin** and change both. In
-    the Joplin apps choose "Joplin Server" for sync and give the address the server is opened at.
+    In the Joplin apps choose "Joplin Server" for sync and give the address the server is opened at.
+    Change the default account's email and password after the first sign-in.
   uk: >
-    Уперше увійдіть як **admin@localhost** з паролем **admin** і змініть обидва. У застосунках
-    Joplin виберіть для синхронізації «Joplin Server» і вкажіть адресу, за якою відкривається
-    сервер.
+    У застосунках Joplin виберіть для синхронізації «Joplin Server» і вкажіть адресу, за якою
+    відкривається сервер. Після першого входу змініть пошту й пароль стандартного облікового запису.
+login: { kind: default, user: admin@localhost, password: admin }
 category: productivity
 developer: Laurent Cozic
 website: https://joplinapp.org

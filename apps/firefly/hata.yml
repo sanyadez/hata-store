@@ -6,9 +6,7 @@ tagline:
 description:
   en: "Firefly is a simple and easy to install WireGuard server software, which can be widely used in scenarios such as remote networking, remote work, and expose a local server behind a NAT or firewall to the internet.  🎯 Features 🟢 Provide a simple and easy-to-use web management UI  🟣 Supports access to all WireGuard clients  🟡 No need for system installation of WireGuard components  🟠 Single file, no additional library dependencies  🔴 Automatically apply for free SSL certificate"
   uk: "Firefly — проста у встановленні серверна програма WireGuard, яку можна застосовувати для віддаленого з'єднання мереж, віддаленої роботи та відкриття в інтернет локального сервера, що стоїть за NAT або брандмауером.  🎯 Можливості 🟢 Простий і зручний вебінтерфейс керування  🟣 Підтримка всіх клієнтів WireGuard  🟡 Не потрібно встановлювати компоненти WireGuard у системі  🟠 Один файл, без додаткових бібліотек  🔴 Автоматичне отримання безкоштовного SSL-сертифіката"
-notes:
-  en: "Default password for admin background `firefly`, you can modify it in environment variables."
-  uk: "Пароль адміністратора за замовчуванням — `firefly`, його можна змінити у змінних середовища."
+login: { kind: settings, password: "${FIREFLY_PASSWORD}" }
 category: network
 developer: Safe3
 website: https://qq.uusec.com/

@@ -13,13 +13,10 @@ description:
     хатніх справ на тиждень, і родина бачить зміни одразу.
 notes:
   en: >
-    Sign in with the administrator's e-mail or user name and the password set here; other people
-    are added by the administrator. This administrator is changed here, in the app's settings, not
-    in PLANKA itself.
+    Other people are added by the administrator. The administrator's own details are changed in this app's settings here, not in PLANKA.
   uk: >
-    Входьте з поштою чи ім'ям користувача адміністратора й паролем, заданими тут; інших людей
-    додає адміністратор. Цього адміністратора змінюють тут, у налаштуваннях застосунку, а не в
-    самій PLANKA.
+    Інших людей додає адміністратор. Дані самого адміністратора змінюють у налаштуваннях цього застосунку тут, а не в PLANKA.
+login: { kind: settings, user: "${ADMIN_USERNAME}", password: "${ADMIN_PASSWORD}" }
 category: productivity
 developer: PLANKA Software
 website: https://planka.app

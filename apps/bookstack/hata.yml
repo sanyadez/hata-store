@@ -13,13 +13,12 @@ description:
     вкладення, пошук усім вмістом і облікові записи з власними правами.
 notes:
   en: >
-    Sign in the first time as **admin@admin.com** with the password **password** and change both at
-    once. Pictures in pages keep the address they were added at: set up Hata's domain before filling
-    the wiki.
+    Change the email and the password at once. Pictures in pages keep the address they were added at: set
+    up Hata's domain before filling the wiki.
   uk: >
-    Уперше увійдіть як **admin@admin.com** з паролем **password** і відразу змініть обидва.
-    Зображення на сторінках зберігають адресу, з якою їх додали: налаштуйте домен Hata, перш ніж
-    наповнювати вікі.
+    Відразу змініть пошту й пароль. Зображення на сторінках зберігають адресу, з якою їх додали:
+    налаштуйте домен Hata, перш ніж наповнювати вікі.
+login: { kind: default, user: admin@admin.com, password: password }
 category: productivity
 developer: Dan Brown
 website: https://www.bookstackapp.com

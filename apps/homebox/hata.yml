@@ -13,11 +13,10 @@ description:
     списку, а пошук за секунду відповідає, де дриль. Досить легкий для будь-якого сервера.
 notes:
   en: >
-    The first account is made by signing up on its page. Once the family has its accounts, turn
-    "Anyone may sign up" off.
+    Once the family has its accounts, turn "Anyone may sign up" off.
   uk: >
-    Перший обліковий запис створюється реєстрацією на його сторінці. Коли вся родина матиме облікові
-    записи, вимкніть «Будь-хто може зареєструватися».
+    Коли вся родина матиме облікові записи, вимкніть «Будь-хто може зареєструватися».
+login: { kind: first-visit }
 category: productivity
 developer: Sysadmins Media
 website: https://homebox.software

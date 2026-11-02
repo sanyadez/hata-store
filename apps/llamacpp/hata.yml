@@ -6,6 +6,7 @@ tagline:
 description:
   en: "llama.cpp is a pure C/C++ inference engine for GGUF large language models, with the official OpenAI-compatible server and a built-in Web UI.\n\n**Key Features:**\n- Run GGUF models (Llama, Qwen, DeepSeek, Gemma, Mistral and more) on CPU or GPU\n- Vulkan backend works on AMD / Intel / NVIDIA GPUs out of the box\n- Great fit for unified-memory machines (e.g. AMD Ryzen AI Max 395)\n- OpenAI-compatible API for integration with Open WebUI, ChatGPT-Next-Web and more\n- Built-in chat Web UI with runtime model loading"
   uk: "llama.cpp — рушій інференсу на чистому C/C++ для великих мовних моделей у форматі GGUF, з офіційним сервером, сумісним з OpenAI, і вбудованим вебінтерфейсом.\n\n**Основні можливості:**\n- Запуск моделей GGUF (Llama, Qwen, DeepSeek, Gemma, Mistral та інших) на CPU або GPU\n- Бекенд Vulkan одразу працює на GPU AMD / Intel / NVIDIA\n- Чудово підходить для машин з уніфікованою пам'яттю (наприклад, AMD Ryzen AI Max 395)\n- API, сумісний з OpenAI, для інтеграції з Open WebUI, ChatGPT-Next-Web та іншими\n- Вбудований чат-вебінтерфейс із завантаженням моделей на льоту"
+login: { kind: none }
 category: ai
 developer: ggml-org
 website: https://github.com/ggml-org/llama.cpp

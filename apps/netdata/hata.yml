@@ -6,6 +6,7 @@ tagline:
 description:
   en: Netdata is a real-time performance and health monitoring solution that helps you visualize and understand the behavior of your systems.
   uk: "Netdata — рішення для моніторингу продуктивності та стану систем у реальному часі, яке допомагає наочно побачити й зрозуміти, як поводяться ваші системи."
+login: { kind: none }
 category: productivity
 developer: f4bio
 website: https://www.netdata.cloud

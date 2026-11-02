@@ -6,9 +6,7 @@ tagline:
 description:
   en: "Handbrake is a Docker-based application for video transcoding and compression, offering powerful and flexible multimedia processing across multiple platforms."
   uk: Handbrake — застосунок у Docker для перекодування та стиснення відео. Він пропонує потужну й гнучку обробку мультимедіа на різних платформах.
-notes:
-  en: "## Handbrake\n#### Professional video transcoding."
-  uk: "## Handbrake\n#### Професійне перекодування відео."
+login: { kind: none }
 category: media
 developer: self
 website: https://handbrake.fr

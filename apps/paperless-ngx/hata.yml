@@ -11,6 +11,7 @@ description:
     Домашній архів для паперів: рахунків, договорів, чеків, листів. Покладіть скан чи PDF у його
     теку або вивантажте в браузері — Paperless розпізнає текст, сам додасть мітки, знайде
     відправника й дату, і будь-який документ потім знайдеться за будь-яким словом із нього.
+login: { kind: settings, user: "${ADMIN_USER}", password: "${ADMIN_PASSWORD}" }
 category: productivity
 developer: Paperless-ngx
 website: https://docs.paperless-ngx.com

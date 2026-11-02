@@ -7,8 +7,10 @@ description:
   en: "duckdns is a DDNS (Dynamic DNS) application that dynamically binds IP addresses to domain names, supporting both IPv4 and IPv6."
   uk: "duckdns — застосунок для DDNS (динамічного DNS), який автоматично прив’язує IP-адреси до доменних імен. Підтримує IPv4 та IPv6."
 notes:
-  en: "Attention Please Will update IPv6 address by default. You can modify it by settings.\n\nPlease register sub-domain on https://www.duckdns.org/ and gain your token."
-  uk: "Увага! За замовчуванням оновлюється й адреса IPv6. Це можна змінити в налаштуваннях.\n\nЗареєструйте піддомен на https://www.duckdns.org/ і отримайте свій токен."
+  en: >
+    Register a subdomain at https://www.duckdns.org/ and copy your token from there. The address is updated over IPv4 unless you change it in the settings.
+  uk: >
+    Зареєструйте піддомен на https://www.duckdns.org/ і скопіюйте звідти свій токен. Адреса оновлюється через IPv4, якщо ви не змінили це в налаштуваннях.
 category: network
 developer: DuckDNS Team
 website: https://www.duckdns.org

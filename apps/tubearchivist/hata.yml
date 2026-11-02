@@ -21,6 +21,7 @@ notes:
     Його пошуковий рушій (Elasticsearch) потребує близько 2 ГБ пам'яті й налаштування сервера
     `vm.max_map_count` щонайменше 262144; якщо він раз у раз зупиняється, задайте його командою
     `sudo sysctl -w vm.max_map_count=262144` і в `/etc/sysctl.conf`. Elasticsearch є лише для x86-64.
+login: { kind: settings, user: "${TA_USERNAME}", password: "${TA_PASSWORD}" }
 category: media
 developer: Tube Archivist
 website: https://www.tubearchivist.com

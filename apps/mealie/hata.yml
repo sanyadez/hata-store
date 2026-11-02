@@ -11,11 +11,7 @@ description:
     Дім для ваших рецептів. Вставте посилання, і Mealie забере рецепт зі сторінки — без довгої
     передмови над ним; сплануйте страви на тиждень, і список покупок складеться сам. Кожен у родині
     має свій обліковий запис, а рецепти перераховуються на будь-яку кількість порцій.
-notes:
-  en: >
-    The first sign-in is **changeme@example.com** with the password **MyPassword**; change both at once.
-  uk: >
-    Перший вхід — **changeme@example.com** з паролем **MyPassword**; одразу змініть обидва.
+login: { kind: default, user: changeme@example.com, password: MyPassword }
 category: productivity
 developer: Mealie
 website: https://mealie.io

@@ -16,14 +16,9 @@ description:
     одне з одним. Застосунок для телефона синхронізується з Apple Health і Health Connect, а з ключем
     сервісу ШІ помічник Sparky записує страву з речення чи фото.
 notes:
-  en: >
-    The first account made is the administrator's. Anyone who can open the page can sign up until
-    "Allow new accounts" is switched off in the app's settings. SparkyFitness is free for personal use
-    only: its licence forbids commercial use.
-  uk: >
-    Перший створений обліковий запис — адміністратора. Зареєструватися може кожен, хто відкриє сторінку,
-    поки в налаштуваннях застосунку не вимкнено «Дозволити нові облікові записи». SparkyFitness
-    безкоштовний лише для особистого використання: його ліцензія забороняє комерційне.
+  en: "Anyone who can open the page can sign up until \"Allow new accounts\" is switched off in the app's settings. SparkyFitness is free for personal use only: its licence forbids commercial use."
+  uk: "Зареєструватися може кожен, хто відкриє сторінку, поки в налаштуваннях застосунку не вимкнено «Дозволити нові облікові записи». SparkyFitness безкоштовний лише для особистого використання: його ліцензія забороняє комерційне."
+login: { kind: first-visit }
 category: productivity
 developer: CodeWithCJ
 website: https://codewithcj.github.io/SparkyFitness/

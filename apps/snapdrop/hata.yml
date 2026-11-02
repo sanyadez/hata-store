@@ -6,6 +6,7 @@ tagline:
 description:
   en: Snapdrop is a Progressive Web App (PWA) that allows you to transfer files between devices in the same network without having to install anything.
   uk: "Snapdrop — прогресивний вебзастосунок (PWA), який дає змогу передавати файли між пристроями в одній мережі, нічого не встановлюючи."
+login: { kind: none }
 category: productivity
 developer: self
 website: https://snapdrop.net

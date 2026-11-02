@@ -11,13 +11,7 @@ description:
     Легкий сервер для коду й інших проєктів у Git: репозиторії, задачі, запити на злиття, вікі,
     випуски й пакунки, а також автоматичні збірки через Forgejo Actions, якщо під'єднати
     виконавця. Дзеркала репозиторіїв з інших місць тримають удома копію того, що вам важливо.
-notes:
-  en: >
-    The first visit opens the setup page: everything is filled in already, just make the
-    administrator's account at the bottom of it.
-  uk: >
-    Перше відкриття показує сторінку налаштування: усе вже заповнено, лише створіть унизу
-    обліковий запис адміністратора.
+login: { kind: first-visit }
 category: development
 developer: Forgejo
 website: https://forgejo.org

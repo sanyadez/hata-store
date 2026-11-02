@@ -6,6 +6,7 @@ tagline:
 description:
   en: "A simple and easy-to-use DDNS tool. Automatically updates domain name resolution to your public IP (supports Alibaba Cloud, Tencent Cloud, Dnspod, Cloudflare, Callback, Huawei Cloud, Baidu Cloud, Porkbun, GoDaddy, and Google Domain)."
   uk: "Простий і зручний інструмент DDNS. Автоматично оновлює DNS-запис домену на вашу публічну IP-адресу (підтримує Alibaba Cloud, Tencent Cloud, Dnspod, Cloudflare, Callback, Huawei Cloud, Baidu Cloud, Porkbun, GoDaddy і Google Domain)."
+login: { kind: first-visit }
 category: network
 developer: jeessy2
 website: https://github.com/jeessy2/ddns-go

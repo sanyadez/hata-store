@@ -6,9 +6,7 @@ tagline:
 description:
   en: "NZBGet can run on almost any device - classic PC, NAS, media player, SAT-receiver, WLAN-router, etc. The download area provides precompiled binaries for Windows, macOS, Linux (compatible with many CPUs and platform variants), FreeBSD and Android. For other platforms the program can be compiled from sources."
   uk: "NZBGet може працювати майже на будь-якому пристрої: звичайному комп’ютері, NAS, медіаплеєрі, супутниковому ресивері, Wi-Fi-маршрутизаторі тощо. У розділі завантажень є готові збірки для Windows, macOS, Linux (для багатьох процесорів і варіантів платформ), FreeBSD та Android. Для інших платформ програму можна зібрати з вихідного коду."
-notes:
-  en: "Default Account\n\n| Username | Password | | -------- | -------- | | nzbget   | tegbzn6789 |"
-  uk: "Типовий обліковий запис\n\n| Ім'я користувача | Пароль | | -------- | -------- | | nzbget   | tegbzn6789 |"
+login: { kind: settings, user: nzbget, password: "${NZBGET_PASS}" }
 category: media
 developer: Nzbget Team
 website: https://nzbget.com

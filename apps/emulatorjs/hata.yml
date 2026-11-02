@@ -6,6 +6,7 @@ tagline:
 description:
   en: "EmulatorJS is a Docker-based emulator application that can simulate various operating systems and device environments within containers for development, testing, and learning purposes."
   uk: "EmulatorJS — емулятор у Docker, який може відтворювати різні операційні системи та середовища пристроїв у контейнерах для розробки, тестування й навчання."
+login: { kind: none }
 category: media
 developer: self
 website: https://emulatorjs.org/

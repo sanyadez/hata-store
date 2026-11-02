@@ -11,11 +11,7 @@ description:
     Облік продуктів і господарства для родини: запаси зі строками придатності, список покупок, що сам
     поповнюється, коли чогось замало, рецепти, які знають, що є вдома, план харчування, хатні справи й
     батарейки, які пора міняти. Камера телефона сканує штрихкоди одразу в запаси.
-notes:
-  en: >
-    The first sign-in is **admin** with the password **admin**; change the password right after it.
-  uk: >
-    Перший вхід — **admin** з паролем **admin**; одразу після нього змініть пароль.
+login: { kind: default, user: admin, password: admin }
 category: productivity
 developer: Bernd Bestel
 website: https://grocy.info

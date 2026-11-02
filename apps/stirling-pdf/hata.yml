@@ -12,12 +12,9 @@ description:
     десятки інструментів, серед них розпізнавання тексту в сканах і перетворення з документів Word
     та зображень. Файли обробляються на вашому сервері й нікуди не надсилаються.
 notes:
-  en: >
-    It asks for no sign-in: anybody on the home network can use it. If that matters, turn on
-    Hata's sign-in for it.
-  uk: >
-    Входу не потребує: ним може користуватися будь-хто в домашній мережі. Якщо це важливо,
-    увімкніть для нього вхід через Hata.
+  en: "Anybody on the home network can use it. If that matters, turn on Hata's sign-in for it."
+  uk: "Ним може користуватися будь-хто в домашній мережі. Якщо це важливо, увімкніть для нього вхід через Hata."
+login: { kind: none }
 category: productivity
 developer: Stirling Tools
 website: https://www.stirlingpdf.com

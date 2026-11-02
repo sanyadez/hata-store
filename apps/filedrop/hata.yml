@@ -6,6 +6,7 @@ tagline:
 description:
   en: "FileDrop is a self-hosted file sharing service that allows you to easily share files with family, friends, or colleagues. It's been designed to be easy to use and light on resources."
   uk: "FileDrop — сервіс обміну файлами для самостійного розгортання, за допомогою якого можна легко ділитися файлами з родиною, друзями чи колегами. Він простий у користуванні й невибагливий до ресурсів."
+login: { kind: none }
 category: productivity
 developer: Noé Favier (noe.favier@outlook.com)
 website: https://hub.docker.com/

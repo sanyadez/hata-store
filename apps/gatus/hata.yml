@@ -18,6 +18,7 @@ notes:
   uk: >
     Що перевіряти, записано у **config/config.yaml** у теці даних застосунку; перший файл перевіряє
     інтернет і DNS та має приклади, які можна скопіювати. Після збереження Gatus сам перечитує файл.
+login: { kind: none }
 category: monitoring
 developer: TwiN
 website: https://gatus.io

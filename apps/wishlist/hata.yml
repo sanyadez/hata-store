@@ -17,12 +17,12 @@ description:
     весілля чи дня народження, де гості бронюють подарунки без облікового запису.
 notes:
   en: >
-    At the first visit Wishlist walks you through making the administrator. Anyone who can open the page
-    can then sign up; to make it invite-only, switch off public sign-up in the administration settings.
+    Anyone who can open the page can sign up after that; to make it invite-only, switch off public
+    sign-up in the administration settings.
   uk: >
-    Під час першого відкриття Wishlist проведе через створення адміністратора. Після цього
-    зареєструватися може кожен, хто відкриє сторінку; щоб пускати лише за запрошеннями, вимкніть
-    відкриту реєстрацію в налаштуваннях адміністрування.
+    Після цього зареєструватися може кожен, хто відкриє сторінку; щоб пускати лише за запрошеннями,
+    вимкніть відкриту реєстрацію в налаштуваннях адміністрування.
+login: { kind: first-visit }
 category: social
 developer: cmintey
 website: https://github.com/cmintey/wishlist

@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Navidrome is an open source web-based music collection server and streamer. It gives you freedom to listen to your music collection from any browser or mobile device. It's like your personal Spotify!"
   uk: Navidrome — вебсервер музичної колекції та стримінгу з відкритим кодом. Він дає змогу слухати вашу музику з будь-якого браузера чи мобільного пристрою. Це як ваш особистий Spotify!
+login: { kind: first-visit }
 category: media
 developer: The Navidrome Authors
 website: https://www.navidrome.org

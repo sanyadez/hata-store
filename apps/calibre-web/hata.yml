@@ -6,9 +6,7 @@ tagline:
 description:
   en: "Calibre-web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself."
   uk: "Calibre-web — вебзастосунок із зручним інтерфейсом для перегляду, читання й завантаження електронних книг зі збереженої бази Calibre. Також можна підключити Google Drive та редагувати метадані й бібліотеку Calibre просто в застосунку."
-notes:
-  en: "| Username | Password | | -------- | -------- | | `admin`    | `admin123` |"
-  uk: "| Користувач | Пароль | | -------- | -------- | | `admin`    | `admin123` |"
+login: { kind: default, user: admin, password: admin123 }
 category: media
 developer: linuxserver
 website: https://github.com/janeczku/calibre-web

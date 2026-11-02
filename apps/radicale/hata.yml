@@ -12,12 +12,9 @@ description:
     адресні книги й завдання замість чиєїсь хмари: Thunderbird, DAVx⁵ на Android і вбудовані
     програми iPhone та macOS під'єднуються до нього напряму.
 notes:
-  en: >
-    Sign in with the name and password you set here. More people are added from the app's terminal:
-    `htpasswd -B /var/lib/radicale/users <name>`.
-  uk: >
-    Входьте з ім'ям і паролем, які задасте тут. Інших людей додають у терміналі застосунку:
-    `htpasswd -B /var/lib/radicale/users <ім'я>`.
+  en: "More people are added from the app's terminal: `htpasswd -B /var/lib/radicale/users <name>`."
+  uk: "Інших людей додають у терміналі застосунку: `htpasswd -B /var/lib/radicale/users <ім'я>`."
+login: { kind: settings, user: "${RADICALE_USER}", password: "${RADICALE_PASSWORD}" }
 category: productivity
 developer: Kozea
 website: https://radicale.org

@@ -6,9 +6,7 @@ tagline:
 description:
   en: "pyLoad is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web."
   uk: "pyLoad — безкоштовний менеджер завантажень з відкритим кодом, написаний на Python. Він дуже легкий, його просто розширювати, а керувати ним можна повністю через вебінтерфейс."
-notes:
-  en: "Default Account\n\n| Username | Password | |----------|----------| | `pyload`    | `pyload` |\n\nDefault Accessible Path in Pyload\n\n| Name | Value | | ---- | ----- | | Downloads Path | `/DATA/Downloads` |"
-  uk: "Обліковий запис за промовчанням\n\n| Ім'я користувача | Пароль | |----------|----------| | `pyload`    | `pyload` |\n\nТека за промовчанням, доступна в PyLoad\n\n| Назва | Значення | | ---- | ----- | | Тека завантажень | `/DATA/Downloads` |"
+login: { kind: default, user: pyload, password: pyload }
 category: media
 developer: linuxserver
 website: https://pyload.net

@@ -6,6 +6,7 @@ tagline:
 description:
   en: "JDownloader is a free, open-source download management tool with a huge community that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwith limitations, auto-extract archives and much more. It's an easy-to-extend framework that can save hours of your valuable time every day!"
   uk: "JDownloader — безкоштовний завантажувач із відкритим кодом і величезною спільнотою, який робить завантаження таким простим і швидким, яким воно має бути. Можна запускати, зупиняти чи ставити завантаження на паузу, обмежувати швидкість, автоматично розпаковувати архіви й багато іншого. Це фреймворк, який легко розширювати і який щодня економить години вашого часу!"
+login: { kind: none }
 category: media
 developer: jdownloader
 website: https://hub.docker.com/

@@ -16,6 +16,7 @@ notes:
     It uses the server's own network, so the port 8123 cannot be changed and must be free.
   uk: >
     Він працює в мережі самого сервера, тож порт 8123 змінити не можна, і він має бути вільним.
+login: { kind: first-visit }
 category: home
 developer: Open Home Foundation
 website: https://www.home-assistant.io

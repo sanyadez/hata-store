@@ -13,11 +13,10 @@ description:
     не зберігає сама, тож легка й не потребує налаштування.
 notes:
   en: >
-    It has no sign-in of its own, and logs may hold secrets: let only administrators open it in
-    Hata's access settings.
+    Logs may hold secrets: let only administrators open it in Hata's access settings.
   uk: >
-    Власного входу в неї немає, а в журналах бувають секрети: дозвольте відкривати її лише
-    адміністраторам у налаштуваннях доступу Hata.
+    У журналах бувають секрети: дозвольте відкривати її лише адміністраторам у налаштуваннях доступу Hata.
+login: { kind: none }
 category: monitoring
 developer: Amir Raminfar
 website: https://dozzle.dev

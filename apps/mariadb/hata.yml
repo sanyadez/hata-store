@@ -6,6 +6,7 @@ tagline:
 description:
   en: "MariaDB Server is one of the most popular open source relational databases. It’s made by the original developers of MySQL and guaranteed to stay open source. It is part of most cloud offerings and the default in most Linux distributions.\n\nIt is built upon the values of performance, stability, and openness, and MariaDB Foundation ensures contributions will be accepted on technical merit. Recent new functionality includes advanced clustering with Galera Cluster 4, compatibility features with Oracle Database and Temporal Data Tables, allowing one to query the data as it stood at any point in the past."
   uk: "MariaDB Server — одна з найпопулярніших реляційних баз даних із відкритим кодом. Її створили оригінальні розробники MySQL, і вона гарантовано лишиться з відкритим кодом. Вона є майже в усіх хмарних пропозиціях і за замовчуванням у більшості дистрибутивів Linux.\n\nВона ґрунтується на продуктивності, стабільності та відкритості, а MariaDB Foundation гарантує, що внески приймаються за технічними заслугами. Серед нових можливостей — розвинена кластеризація з Galera Cluster 4, засоби сумісності з Oracle Database і темпоральні таблиці, які дають змогу запитувати дані в такому стані, у якому вони були в будь-який момент минулого."
+login: { kind: settings, user: "${MYSQL_USER}", password: "${MYSQL_PASSWORD}" }
 category: development
 developer: MariaDB Foundation
 website: https://mariadb.org/

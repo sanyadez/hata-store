@@ -13,14 +13,14 @@ description:
     коли щось перегрівається чи заповнюється. Інші комп'ютери можна додати з власним агентом.
 notes:
   en: >
-    At the first visit Beszel asks to make an account. Then one more step: press **Add system**, give
-    it a name, put **/beszel_socket/beszel.sock** as the host, copy the **public key** from that dialog
-    into the "Hub key" setting of this app and save; then add the system in Beszel.
+    To watch this server, press **Add system**, give it a name, put **/beszel_socket/beszel.sock** as the
+    host, copy the **public key** from that dialog into the "Hub key" setting of this app and save;
+    then add the system in Beszel.
   uk: >
-    Під час першого відкриття Beszel попросить створити обліковий запис. Далі ще один крок: натисніть
-    **Add system**, дайте назву, як адресу вкажіть **/beszel_socket/beszel.sock**, скопіюйте
-    **публічний ключ** із цього вікна в налаштування «Ключ центру» цього застосунку й збережіть; тоді
-    додайте систему в Beszel.
+    Щоб стежити за цим сервером, натисніть **Add system**, дайте назву, як адресу вкажіть
+    **/beszel_socket/beszel.sock**, скопіюйте **публічний ключ** із цього вікна в налаштування
+    «Ключ центру» цього застосунку й збережіть; тоді додайте систему в Beszel.
+login: { kind: first-visit }
 category: monitoring
 developer: henrygd
 website: https://beszel.dev

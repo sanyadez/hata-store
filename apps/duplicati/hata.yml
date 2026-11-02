@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Duplicati is a free, open source, backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers."
   uk: "Duplicati — безкоштовний клієнт резервного копіювання з відкритим кодом. Він надійно зберігає зашифровані, інкрементні, стиснуті резервні копії в хмарних сховищах і на віддалених файлових серверах."
+login: { kind: settings, password: "${WEB_PASSWORD}" }
 category: productivity
 developer: duplicati
 website: https://duplicati.com/

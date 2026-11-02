@@ -6,6 +6,7 @@ tagline:
 description:
   en: MySpeed is a speed test analysis software that stores the speed of your internet for up to 30 days. This can also be useful if you want to know when your network might have drops or if you want to check if your internet matches the booked values from your contract.
   uk: "MySpeed — програма для аналізу тестів швидкості, яка зберігає дані про швидкість вашого інтернету до 30 днів. Це стане в пригоді, якщо ви хочете знати, коли в мережі бувають збої, або перевірити, чи відповідає швидкість інтернету тій, що вказано в договорі."
+login: { kind: none }
 category: network
 developer: Mathias Wagner
 website: https://myspeed.dev

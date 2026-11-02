@@ -13,13 +13,9 @@ description:
     передає їх в Apple HomeKit Secure Video, Google Home, Alexa та Home Assistant майже без затримки,
     а також розпізнає на них людей, автівки й тварин. Цілодобовий запис дає його плагін NVR.
 notes:
-  en: >
-    It works in the server's own network, so its ports (11080 and 10443 among others) cannot be
-    changed and must be free. The first visit to its page makes the administrator's account.
-  uk: >
-    Він працює в мережі самого сервера, тож його порти (серед інших 11080 і 10443) змінити не можна,
-    і вони мають бути вільні. Під час першого відкриття сторінки створюється обліковий запис
-    адміністратора.
+  en: "It works in the server's own network, so its ports (11080 and 10443 among others) cannot be changed and must be free."
+  uk: "Він працює в мережі самого сервера, тож його порти (серед інших 11080 і 10443) змінити не можна, і вони мають бути вільні."
+login: { kind: first-visit }
 category: home
 developer: Koushik Dutta
 website: https://www.scrypted.app

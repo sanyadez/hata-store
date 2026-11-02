@@ -6,9 +6,7 @@ tagline:
 description:
   en: The developer-friendly cloud platform for building and running LLM agents for AI-native applications.
   uk: "Хмарна платформа для розробників, щоб створювати й запускати LLM-агентів для AI-застосунків."
-notes:
-  en: "| Username | Password   | | -------- | ---------- | | admin    | TaskingAI321 |"
-  uk: "| Ім'я користувача | Пароль   | | -------- | ---------- | | admin    | TaskingAI321 |"
+login: { kind: settings, user: admin, password: "${DB_PASSWORD_2}" }
 category: ai
 developer: TaskingAI Team
 website: https://docs.tasking.ai/

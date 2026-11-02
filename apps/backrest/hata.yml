@@ -14,13 +14,14 @@ description:
     з них та повернути файл.
 notes:
   en: >
-    At the first visit Backrest asks for a name and a password of its own. The folder to back up is
-    seen inside as **/userdata** and only read; add a repository at **/repos** for copies on this
-    server. Restored files go to a folder you pick there, for example /repos/restored.
+    The folder to back up is seen inside as **/userdata** and only read; add a repository at
+    **/repos** for copies on this server. Restored files go to a folder you pick there, for example
+    /repos/restored.
   uk: >
-    Під час першого відкриття Backrest попросить придумати власні ім'я й пароль. Тека для копіювання
-    видна всередині як **/userdata** і лише читається; для копій на цьому сервері додайте сховище в
-    **/repos**. Відновлені файли потрапляють у вибрану там теку, наприклад /repos/restored.
+    Тека для копіювання видна всередині як **/userdata** і лише читається; для копій на цьому сервері
+    додайте сховище в **/repos**. Відновлені файли потрапляють у вибрану там теку, наприклад
+    /repos/restored.
+login: { kind: first-visit }
 category: files
 developer: Gareth George
 website: https://garethgeorge.github.io/backrest/

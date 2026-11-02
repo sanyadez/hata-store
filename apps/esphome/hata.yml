@@ -6,6 +6,7 @@ tagline:
 description:
   en: ESPHome is a system to control your microcontrollers by simple yet powerful configuration files and control them remotely through Home Automation systems.
   uk: "ESPHome — система для керування мікроконтролерами за допомогою простих, але потужних файлів конфігурації, яку можна дистанційно контролювати через системи розумного дому."
+login: { kind: none }
 category: home
 developer: kd9lsv
 website: https://esphome.io

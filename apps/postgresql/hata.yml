@@ -6,6 +6,7 @@ tagline:
 description:
   en: "PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.\n\nPostgreSQL is a highly stable database backed by more than 20 years of development by the open-source community.\n\nPostgreSQL is used as a primary database for many web applications as well as mobile and analytics applications."
   uk: "PostgreSQL — потужна об'єктно-реляційна система керування базами даних з відкритим кодом. Вона розвивається понад 35 років і заслужено має репутацію надійної, багатофункціональної та швидкої.\n\nPostgreSQL — дуже стабільна база даних, яку понад 20 років розробляє спільнота відкритого коду.\n\nPostgreSQL використовують як основну базу даних у багатьох вебзастосунках, а також у мобільних та аналітичних застосунках."
+login: { kind: settings, user: "${POSTGRES_USER}", password: "${POSTGRES_PASSWORD}" }
 category: development
 developer: "PostgreSQL Global Dev't Group"
 website: https://www.postgresql.org
