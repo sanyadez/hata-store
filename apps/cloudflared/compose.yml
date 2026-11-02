@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   cloudflared:
-    image: wisdomsky/cloudflared-web:2026.10.0
+    image: wisdomsky/cloudflared-web:2026.10.5
     restart: unless-stopped
     network_mode: host
     ports:
