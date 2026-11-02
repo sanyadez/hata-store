@@ -17,13 +17,10 @@ description:
     телефона, яку можна додати на головний екран як застосунок.
 notes:
   en: >
-    At the first visit press **Create an account**: the first account is yours. Anyone who can open the
-    page can make one too, so once everybody has an account, switch off "Allow new accounts" in the app's
-    settings.
+    Anyone who can open the page can make an account, so once everybody has one, switch off "Allow new accounts" in the app's settings.
   uk: >
-    Під час першого відкриття натисніть **Create an account**: перший обліковий запис — ваш. Створити
-    його може кожен, хто відкриє сторінку, тож коли всі вже мають облікові записи, вимкніть «Дозволити
-    нові облікові записи» в налаштуваннях застосунку.
+    Створити обліковий запис може кожен, хто відкриє сторінку, тож коли всі вже мають облікові записи, вимкніть «Дозволити нові облікові записи» в налаштуваннях застосунку.
+login: { kind: first-visit }
 category: finance
 developer: MaysWind
 website: https://ezbookkeeping.mayswind.net

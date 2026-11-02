@@ -6,6 +6,7 @@ tagline:
 description:
   en: An application for launching HTML5 Network Speed Test Server. You can test download & upload speed from any device within your network with a web browser that is IE10 or new.
   uk: Застосунок для запуску сервера HTML5 для перевірки швидкості мережі. Швидкість завантаження та вивантаження можна перевірити з будь-якого пристрою у вашій мережі через браузер IE10 або новіший.
+login: { kind: none }
 category: network
 developer: OpenSpeedTest
 website: https://github.com/openspeedtest/Speed-Test

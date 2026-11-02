@@ -6,6 +6,7 @@ tagline:
 description:
   en: "SABnzbd is an Open Source Binary Newsreader written in Python. It's totally free, easy to use, and works practically everywhere. SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction. SABnzbd offers an easy setup wizard and has self-analysis tools to verify your setup."
   uk: "SABnzbd — завантажувач бінарних файлів з новинних груп із відкритим кодом, написаний на Python. Він повністю безкоштовний, простий у користуванні та працює практично всюди. SABnzbd робить Usenet максимально простим, автоматизуючи все, що можна. Вам лишається тільки додати .nzb, а далі SABnzbd сам завантажить, перевірить, відновить, розпакує та розкладе файли без жодної участі людини. У SABnzbd є простий майстер налаштування та засоби самоперевірки, щоб упевнитися, що все налаштовано правильно."
+login: { kind: none }
 category: media
 developer: Sabnzbd Team
 website: https://sabnzbd.org

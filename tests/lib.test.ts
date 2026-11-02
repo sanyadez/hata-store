@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { bindMounts, brokenLine, checkCompose, checkDependabot, checkHata, checkIcon, checkLogin, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
+import { SHELL_VARS, bindMounts, brokenLine, checkCompose, checkDependabot, checkHata, checkIcon, checkLogin, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
 
 const svg = (body: string) => `data:image/svg+xml;base64,${Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg">${body}</svg>`).toString("base64")}`;
 const store = { categories: { media: { en: "Media" } } };
@@ -185,4 +185,11 @@ describe("login", () => {
 test("an app's login goes through its check", () => {
   expect(texts(checkHata(app as never, hata({ login: { kind: "first-visit" } }), store))).not.toContain("unknown key \"login\"");
   expect(texts(checkHata(app as never, hata({ login: { kind: "guess" } }), store)).join()).toContain("login.kind");
+});
+
+test("a setting named like a variable of the shell is refused", () => {
+  const refusal = (name: string) => `${name}: ${name} is a variable of the shell, and compose would take the shell's value instead of this setting`;
+  const named = (name: string) => texts(checkHata(app, hata({ settings: [{ name, type: "text", label: name }] }), store));
+  for (const name of SHELL_VARS) expect(named(name)).toContain(refusal(name));
+  expect(named("WEB_USER")).not.toContain(refusal("WEB_USER"));
 });

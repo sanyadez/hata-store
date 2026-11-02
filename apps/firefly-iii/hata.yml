@@ -16,6 +16,7 @@ notes:
     The first account registered on the start page becomes the administrator.
   uk: >
     Перший обліковий запис, зареєстрований на стартовій сторінці, стає адміністратором.
+login: { kind: first-visit }
 category: finance
 developer: James Cole
 website: https://www.firefly-iii.org

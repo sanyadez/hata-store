@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Label Studio is an open source data labeling tool. It lets you label data types like audio, text, images, videos, and time series with a simple and straightforward UI and export to various model formats. It can be used to prepare raw data or improve existing training data to get more accurate ML models."
   uk: "Label Studio — інструмент розмітки даних з відкритим кодом. У простому й зрозумілому інтерфейсі в ньому можна розмічати дані різних типів — аудіо, текст, зображення, відео та часові ряди — і експортувати їх у різні формати моделей. Ним можна підготувати сирі дані або покращити наявні навчальні дані, щоб отримати точніші моделі машинного навчання."
+login: { kind: first-visit }
 category: ai
 developer: Yidadaa
 website: https://labelstud.io/

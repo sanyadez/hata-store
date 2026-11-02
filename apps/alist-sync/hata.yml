@@ -6,9 +6,7 @@ tagline:
 description:
   en: "Alist-Sync is a storage synchronization tool based on the Web interface. It can achieve data synchronization and mutual backup among multiple network disks, and also has practical functions such as multi-task management, scheduled synchronization and difference handling."
   uk: "Alist-Sync — засіб синхронізації сховищ із вебінтерфейсом. Він синхронізує дані та створює взаємні резервні копії між кількома мережевими дисками, а також має корисні функції: керування кількома завданнями, синхронізацію за розкладом і обробку відмінностей."
-notes:
-  en: The default login password is admin/admin.
-  uk: "Типовий логін і пароль для входу: admin/admin."
+login: { kind: default, user: admin, password: admin }
 category: productivity
 developer: xjxjin
 website: https://github.com/xjxjin/alist-sync

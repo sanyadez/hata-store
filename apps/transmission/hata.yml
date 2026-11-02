@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Transmission is a BitTorrent client designed for simplicity and powerful performance, delivering an efficient and user-friendly downloading experience. It comes equipped with all the essential features you expect, including encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.\n\nWith its intuitive interface, Transmission caters to both beginners and advanced users. Whether you’re managing a single download or juggling complex torrent queues, Transmission ensures a seamless experience with optimized resource usage and reliable performance. For casual users and tech enthusiasts alike, Transmission is the ideal BitTorrent solution."
   uk: "Transmission — BitTorrent-клієнт, створений бути простим і швидким, для зручного й ефективного завантаження. Він має все потрібне: шифрування, вебінтерфейс, обмін пірами, magnet-посилання, DHT, µTP, прокидання портів через UPnP і NAT-PMP, підтримку webseed, теки спостереження, редагування трекерів, глобальні та окремі для кожного торента обмеження швидкості тощо.\n\nІнтуїтивний інтерфейс підходить і новачкам, і досвідченим користувачам. Чи ви керуєте одним завантаженням, чи складною чергою торентів, Transmission працює плавно, економно витрачає ресурси та надійно. Для звичайних користувачів і технічних ентузіастів це ідеальне рішення для BitTorrent."
+login: { kind: settings, user: "${WEB_USER}", password: "${PASS}" }
 category: media
 developer: Transmission
 website: https://transmissionbt.com/
@@ -56,7 +57,7 @@ settings:
     label:
       en: Password to sign in
       uk: Пароль для входу
-  - name: USER
+  - name: WEB_USER
     type: text
     default: admin
     required: true

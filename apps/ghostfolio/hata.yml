@@ -13,11 +13,12 @@ description:
     портфеля за активами, країнами й валютами.
 notes:
   en: >
-    The first account made on the start page becomes the administrator. Ghostfolio signs in with a
-    security token instead of a password: it is shown once, so save it right away.
+    Ghostfolio signs in with a security token instead of a password: it is shown once, so save it
+    right away.
   uk: >
-    Перший обліковий запис, створений на стартовій сторінці, стає адміністратором. Замість пароля
-    Ghostfolio дає ключ безпеки для входу: його показують лише раз, тож одразу збережіть його.
+    Замість пароля Ghostfolio дає ключ безпеки для входу: його показують лише раз, тож одразу
+    збережіть його.
+login: { kind: first-visit }
 category: finance
 developer: Ghostfolio
 website: https://ghostfol.io

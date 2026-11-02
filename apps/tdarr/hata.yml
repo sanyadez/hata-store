@@ -20,6 +20,7 @@ notes:
   uk: >
     Власного входу в Tdarr тут немає: увімкніть для нього вхід Hata в налаштуваннях доступу.
     Перекодування замінює початкові файли: спершу спробуйте правила на копії.
+login: { kind: none }
 category: media
 developer: HaveAGitGat
 website: https://tdarr.io

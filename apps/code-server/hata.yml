@@ -20,6 +20,7 @@ notes:
     Деякі частини (перегляд у розширеннях, буфер обміну) працюють лише через **HTTPS**: відкривайте його
     за адресою під доменом Hata. Термінал усередині працює від імені користувача застосунків і бачить
     лише власні теки та теку з проєктами.
+login: { kind: settings, password: "${PASSWORD}" }
 category: development
 developer: Coder
 website: https://coder.com/docs/code-server

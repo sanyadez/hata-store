@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Glances is an open-source system cross-platform monitoring tool. It allows real-time monitoring of various aspects of your system such as CPU, memory, disk, network usage etc."
   uk: "Glances — кросплатформений інструмент моніторингу системи з відкритим кодом. Він показує в реальному часі навантаження процесора, пам’ять, диски, мережу та інші показники вашої системи."
+login: { kind: none }
 category: productivity
 developer: Nicolas Hennion
 website: https://nicolargo.github.io/glances/

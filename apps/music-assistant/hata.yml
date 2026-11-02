@@ -22,6 +22,7 @@ notes:
     Він працює в мережі самого сервера, тож порт 8095 змінити не можна, і він має бути вільним;
     музика йде на програвачі з порту 8097. Теку з музикою додайте в його налаштуваннях як
     локальну теку `/media`.
+login: { kind: first-visit }
 category: media
 developer: Open Home Foundation
 website: https://www.music-assistant.io

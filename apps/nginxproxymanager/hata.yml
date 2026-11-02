@@ -6,9 +6,7 @@ tagline:
 description:
   en: "Nginx Proxy Manager is a simple, powerful tool to help you host multiple websites on a single server."
   uk: "Nginx Proxy Manager — простий і потужний інструмент, який допомагає розмістити кілька вебсайтів на одному сервері."
-notes:
-  en: "Default Administrator User\n\n| Username | Password | | -------- | -------- | | `admin@example.com` | `changeme` |"
-  uk: "Типовий адміністратор\n\n| Ім'я користувача | Пароль | | -------- | -------- | | `admin@example.com` | `changeme` |"
+login: { kind: first-visit }
 category: network
 developer: Nginx Proxy Manager
 website: https://nginxproxymanager.com

@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Netronome is a complete network performance monitoring solution with speed tests, continuous packet-loss monitoring, distributed server agents, automated alerts, visualizations, and historical tracking."
   uk: "Netronome — повноцінне рішення для моніторингу продуктивності мережі: тести швидкості, постійне стеження за втратою пакетів, розподілені серверні агенти, автоматичні сповіщення, візуалізації та історія вимірювань."
+login: { kind: first-visit }
 category: network
 developer: autobrr
 website: https://netrono.me

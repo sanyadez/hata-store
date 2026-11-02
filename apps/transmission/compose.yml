@@ -7,7 +7,7 @@ services:
       PGID: "1000"
       PUID: "1000"
       TZ: "${TZ:-UTC}"
-      USER: "${USER:-admin}"
+      USER: "${WEB_USER:-admin}"
     image: linuxserver/transmission:4.1.3
     deploy:
       resources:

@@ -4,11 +4,12 @@ tagline:
   en: "Self-hosted file toolkit for images, video, audio, PDFs, and files"
   uk: "Власний набір інструментів для зображень, відео, аудіо, PDF та файлів"
 description:
-  en: "SnapOtter is an open-source, self-hosted file manipulation suite with 200+ tools across images, video, audio, PDFs, and files. It includes batch processing, reusable pipelines, local AI tools, a browser image editor, and a REST API so files stay on your own server.\n\nDefault login is admin / admin. SnapOtter asks you to change the default password after first login."
-  uk: "SnapOtter — відкритий власний набір для роботи з файлами, що має понад 200 інструментів для зображень, відео, аудіо, PDF та інших файлів. У ньому є пакетна обробка, повторно використовувані конвеєри, локальні інструменти ШІ, редактор зображень у браузері та REST API, тож файли лишаються на вашому сервері.\n\nЛогін за промовчанням — admin / admin. Після першого входу SnapOtter попросить змінити пароль за промовчанням."
+  en: "SnapOtter is an open-source, self-hosted file manipulation suite with 200+ tools across images, video, audio, PDFs, and files. It includes batch processing, reusable pipelines, local AI tools, a browser image editor, and a REST API so files stay on your own server."
+  uk: "SnapOtter — відкритий власний набір для роботи з файлами, що має понад 200 інструментів для зображень, відео, аудіо, PDF та інших файлів. У ньому є пакетна обробка, повторно використовувані конвеєри, локальні інструменти ШІ, редактор зображень у браузері та REST API, тож файли лишаються на вашому сервері."
 notes:
-  en: "Default login is admin / admin. You will be asked to change the password after first login.\n\nThis package uses SnapOtter embedded mode, so leave DATABASE_URL and REDIS_URL unset unless you are moving to the upstream multi-container PostgreSQL and Redis stack."
-  uk: "Логін за промовчанням — admin / admin. Після першого входу вас попросять змінити пароль.\n\nЦей пакет використовує вбудований режим SnapOtter, тому не задавайте DATABASE_URL і REDIS_URL, якщо не переходите на багатоконтейнерний стек PostgreSQL і Redis від розробників."
+  en: "The password you set here is asked to be changed after the first sign-in."
+  uk: "Після першого входу SnapOtter попросить змінити пароль, заданий тут."
+login: { kind: settings, user: "${DEFAULT_USERNAME}", password: "${DEFAULT_PASSWORD}" }
 category: productivity
 developer: SnapOtter
 website: https://snapotter.com

@@ -9,6 +9,7 @@ description:
 notes:
   en: "After opening the web page for the first time, you will see an error popup. Click the `Advanced options` option to successfully enter the Actual Budget web page."
   uk: "Після першого відкриття вебсторінки ви побачите спливне вікно з помилкою. Натисніть `Advanced options`, щоб потрапити на вебсторінку Actual Budget."
+login: { kind: first-visit }
 category: finance
 developer: ActualBudget
 website: https://actualbudget.org

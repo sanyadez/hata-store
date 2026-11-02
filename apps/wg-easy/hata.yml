@@ -6,9 +6,7 @@ tagline:
 description:
   en: You have found the easiest way to install & manage WireGuard on any Linux host!
   uk: Ви знайшли найпростіший спосіб установити WireGuard на будь-який хост Linux і керувати ним!
-notes:
-  en: "🔧 Settings\n\n⚠️ Warning!\n\nYou need to change at least change the mandatory parameter `WG_HOST` for this app to work properly. It's value has to be a domain (or an IP address) that points to this server (accesible from WAN).\n\nSame applies to the `WG_PORT` parameter. Change it to the port accessible from outside your LAN if it differs from the default 51820."
-  uk: "🔧 Налаштування\n\n⚠️ Увага!\n\nЩоб застосунок працював правильно, потрібно змінити принаймні обов'язковий параметр `WG_HOST`. Його значення має бути доменом (або IP-адресою), що вказує на цей сервер і доступний із WAN.\n\nТе саме стосується параметра `WG_PORT`: змініть його на порт, доступний ззовні вашої локальної мережі, якщо він відрізняється від типового 51820."
+login: { kind: settings, password: "${PASSWORD}" }
 category: network
 developer: WeejeWel
 website: https://github.com/wg-easy/wg-easy

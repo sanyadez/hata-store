@@ -6,6 +6,7 @@ tagline:
 description:
   en: "SickChill is an automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic: automatic torrent/nzb searching, downloading, and processing at the qualities you want."
   uk: "SickChill — автоматичний менеджер відеобібліотеки серіалів. Він стежить за новими епізодами ваших улюблених серіалів і, щойно вони з’являються, робить усе сам: шукає торренти й nzb, завантажує та обробляє їх у потрібній вам якості."
+login: { kind: none }
 category: media
 developer: Sickchill Team
 website: https://sickchill.github.io

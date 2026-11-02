@@ -6,6 +6,7 @@ tagline:
 description:
   en: RDTClient
   uk: RDTClient
+login: { kind: first-visit }
 category: media
 developer: calganaygun
 website: https://github.com/rogerfar/rdt-client

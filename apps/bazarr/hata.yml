@@ -6,6 +6,7 @@ tagline:
 description:
   en: Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.
   uk: "Bazarr — супутній застосунок для Sonarr і Radarr. Він керує субтитрами й завантажує їх відповідно до ваших вимог. Ви задаєте уподобання для кожного серіалу чи фільму, а решту Bazarr робить сам."
+login: { kind: none }
 category: media
 developer: Sabnzbd Team
 website: https://www.bazarr.media

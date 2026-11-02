@@ -7,8 +7,23 @@ description:
   en: "A powerful tool for port forwarding, reverse proxy, dynamic DNS, wake-on-LAN, IPv4 NAT traversal, webdav services, task scheduling, and automatic certificate management."
   uk: "Потужний інструмент для перенаправлення портів, зворотного проксі, динамічного DNS, wake-on-LAN, проходження IPv4 NAT, служб webdav, планування завдань і автоматичного керування сертифікатами."
 notes:
-  en: "Default login account `666`, Default login password `666`,tips:`Before each update, remember to back up the configuration`."
-  uk: "Типовий логін `666`, типовий пароль `666`. Порада: `перед кожним оновленням не забудьте зробити резервну копію конфігурації`."
+  en: >
+    Back up the configuration before each update. Installed before its settings moved to the data folder?
+    The next update resets them and makes a new password. To keep them and your own password, run
+    `docker cp <container>:/app/conf/. <the app's data folder>/` on the server before updating.
+    A Hata that does not show how to sign in: the password is `LUCKY_PASSWORD` in the app's `.env`.
+  uk: >
+    Перед кожним оновленням зробіть резервну копію конфігурації. Встановили до того, як налаштування
+    переїхали в теку даних? Наступне оновлення їх скине й створить новий пароль. Щоб зберегти їх і свій
+    пароль, перед оновленням виконайте на сервері `docker cp <контейнер>:/app/conf/. <тека даних застосунку>/`.
+    Якщо Hata не показує, як увійти: пароль — це `LUCKY_PASSWORD` у файлі `.env` застосунку.
+login: { kind: settings, user: admin, password: "${LUCKY_PASSWORD}" }
+settings:
+  - name: LUCKY_PASSWORD
+    type: secret
+    label:
+      en: Password of the admin page
+      uk: Пароль сторінки керування
 category: network
 developer: gdy666
 website: https://lucky666.cn/

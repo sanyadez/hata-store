@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Autobrr is the modern download automation tool for torrents and usenet. With inspiration and ideas from tools like trackarr, autodl-irssi and flexget we built one tool that can do it all, and then some."
   uk: "Autobrr — сучасний інструмент автоматизації завантажень торентів і usenet. Надихаючись ідеями таких інструментів, як trackarr, autodl-irssi і flexget, ми створили один інструмент, який уміє все це і не тільки."
+login: { kind: first-visit }
 category: media
 developer: Autobrr Team
 website: https://autobrr.com

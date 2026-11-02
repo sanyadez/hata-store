@@ -7,8 +7,12 @@ description:
   en: Your machine learning Env work with Jupyter Lab
   uk: Ваше середовище машинного навчання з Jupyter Lab
 notes:
-  en: "After installation, please check the token in the container log (Settings - TopRight - Terminal and Logs - Logs)."
-  uk: Після встановлення перевірте токен у журналі контейнера (Налаштування — праворуч угорі — Термінал і журнали — Журнали).
+  en: >
+    The password is a token. Open the app's log and find the line with **?token=**: the token is what follows it.
+    The first start takes a few minutes, as JupyterLab is installed then.
+  uk: >
+    Пароль — це токен. Відкрийте журнал застосунку й знайдіть рядок із **?token=**: токен іде одразу після нього.
+    Перший запуск триває кілька хвилин, бо тоді встановлюється JupyterLab.
 category: ai
 developer: LisonEvf
 website: https://www.anaconda.com

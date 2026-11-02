@@ -6,6 +6,7 @@ tagline:
 description:
   en: "With Downtify you can download Spotify musics containing album art, track names, album title and other metadata about the songs. Just copy the Spotify link, whether it's a single song, an album, etc. As soon as your downloads are complete you will be notified!"
   uk: "За допомогою Downtify можна завантажувати музику зі Spotify разом з обкладинками, назвами треків, назвами альбомів та іншими метаданими. Просто скопіюйте посилання на Spotify — на окрему пісню, альбом тощо. Щойно завантаження завершиться, ви отримаєте сповіщення!"
+login: { kind: none }
 category: media
 developer: Henrique Sebastião
 website: https://downtify.henriquesebastiao.com

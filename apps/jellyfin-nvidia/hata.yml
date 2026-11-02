@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Imagine having all your movies, TV shows, and music at your fingertips, ready on any device. Jellyfin transforms your media collection into a personalized entertainment hub, surpassing traditional photo albums. Your media is accessible anywhere and beautifully organized.\n\nJellyfin is free and open-source, offering high-quality streaming, detailed metadata, and personalized recommendations. Multiple users can have their own media libraries."
   uk: "Уявіть, що всі ваші фільми, серіали й музика завжди під рукою на будь-якому пристрої. Jellyfin перетворює вашу медіаколекцію на персональний центр розваг, значно кращий за звичайні фотоальбоми. Ваші медіа доступні звідусіль і гарно впорядковані.\n\nJellyfin безкоштовний і з відкритим кодом: якісне потокове відтворення, докладні метадані та персональні рекомендації. Кілька користувачів можуть мати власні медіабібліотеки."
+login: { kind: first-visit }
 category: media
 developer: Jellyfin
 website: https://jellyfin.org/

@@ -6,6 +6,7 @@ tagline:
 description:
   en: resilio-sync is a Docker-based application that enables fast and secure file synchronization and sharing.
   uk: resilio-sync — застосунок у Docker для швидкої та безпечної синхронізації файлів і обміну ними.
+login: { kind: first-visit }
 category: productivity
 developer: self
 website: https://www.resilio.com/sync/

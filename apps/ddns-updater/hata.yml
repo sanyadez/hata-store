@@ -6,6 +6,7 @@ tagline:
 description:
   en: Program to keep DNS A and/or AAAA records updated for multiple DNS providers
   uk: "Програма, що підтримує актуальними DNS-записи A та/або AAAA у кількох DNS-провайдерів."
+login: { kind: none }
 category: network
 developer: qmcgaw
 website: https://github.com/qdm12/ddns-updater

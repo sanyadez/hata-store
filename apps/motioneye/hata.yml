@@ -6,6 +6,10 @@ tagline:
 description:
   en: motionEye is a web-based frontend for motion. Check out the wiki for more details. Changelog is available on the releases page. https://github.com/motioneye-project/motioneye
   uk: motionEye — вебінтерфейс для motion. Докладніше читайте у вікі. Список змін є на сторінці випусків. https://github.com/motioneye-project/motioneye
+notes:
+  en: The administrator's password is empty. Set one in the settings before saving other changes.
+  uk: Пароль адміністратора порожній. Задайте його в налаштуваннях, перш ніж зберігати інші зміни.
+login: { kind: default, user: admin }
 category: home
 developer: Motioneye
 website: https://github.com/motioneye-project/motioneye

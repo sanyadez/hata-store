@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Bringing all of your home videos, music, and photos together into one place has never been easier. Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device."
   uk: "Зібрати домашнє відео, музику й фото в одному місці ще ніколи не було так просто. Ваш особистий сервер Emby сам перетворює медіа та передає їх потоком на льоту, щоб їх можна було відтворити на будь-якому пристрої."
+login: { kind: first-visit }
 category: media
 developer: Emby Team
 website: https://emby.media/

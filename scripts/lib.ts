@@ -13,6 +13,8 @@ export const HATA_VARS = ["APP_DATA", "APP_URL", "APP_HOST", "PUID", "PGID", "TZ
 export const DEFAULT_VARS = [...HATA_VARS, "DATA_ROOT"] as const;
 
 export const APP_ID_RE = /^[a-z0-9][a-z0-9-]{0,39}$/;
+/** Compose prefers what the process it runs in has to the app's own file: a setting of such a name is silently ignored */
+export const SHELL_VARS = ["USER", "LOGNAME", "HOME", "PATH", "PWD", "OLDPWD", "SHELL", "HOSTNAME", "LANG", "LANGUAGE", "TERM"] as const;
 export const VAR_RE = /^[A-Z][A-Z0-9_]*$/;
 const LANG_RE = /^[a-z]{2}(-[A-Z]{2})?$/;
 const URL_RE = /^https:\/\/[^\s]+$/;
@@ -455,6 +457,7 @@ export function checkHata(app: AppFiles, hata: unknown, store: Obj): Problem[] {
         for (const key of Object.keys(s)) if (!["name", "type", "label", "hint", "default", "required", "options", "length", "chars", "advanced"].includes(key)) say(`${where}: unknown key "${key}"`);
         if (!VAR_RE.test(name)) say(`${at}: name must be like WEB_PORT`);
         if ((DEFAULT_VARS as readonly string[]).includes(name)) say(`${where}: ${name} is Hata's own variable`);
+        if ((SHELL_VARS as readonly string[]).includes(name)) say(`${where}: ${name} is a variable of the shell, and compose would take the shell's value instead of this setting`);
         if (seen.has(name)) say(`${where} is listed twice`);
         seen.add(name);
         if (!SETTING_TYPES.includes(s.type)) say(`${where}: type must be one of ${SETTING_TYPES.join(", ")}`);

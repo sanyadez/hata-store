@@ -6,9 +6,7 @@ tagline:
 description:
   en: "Alist transforms how you manage and access your files at home, whether on your TV, phone, or any other device. Unlike traditional cloud storage, Alist offers a unified experience across multiple platforms, making it a breeze to keep your media and documents at your fingertips.\n\nWith features like easy installation, support for multiple storage providers (local, Aliyundrive, Onedrive, Google Drive), WebDAV support, dark mode, protected routes with password authentication, file previews for videos, audio, office files, PDFs, code, images, package and batch downloads, single sign-on, offline torrent downloads, file encryption, and additional tools like a text editor and Cloudflare workers proxy, Alist ensures a seamless and secure file management experience."
   uk: "Alist змінює спосіб, у який ви керуєте файлами вдома й отримуєте до них доступ — на телевізорі, телефоні чи будь-якому іншому пристрої. На відміну від звичайних хмарних сховищ, Alist дає єдиний зручний інтерфейс на різних платформах, тож ваші медіа й документи завжди під рукою.\n\nПросте встановлення, підтримка кількох сховищ (локальне, Aliyundrive, Onedrive, Google Drive), WebDAV, темна тема, захищені маршрути з паролем, перегляд відео, аудіо, офісних файлів, PDF, коду та зображень, пакетне завантаження, єдиний вхід, офлайн-завантаження торентів, шифрування файлів, а також додаткові інструменти, як-от текстовий редактор і проксі на Cloudflare Workers, — Alist забезпечує зручне й безпечне керування файлами."
-notes:
-  en: "After installation, please check the initial password in the container log (Settings - TopRight - Terminal and Logs - Logs)."
-  uk: Після встановлення перевірте початковий пароль у журналі контейнера (Налаштування — праворуч угорі — Термінал і журнали — Журнали).
+login: { kind: log, user: admin, find: initial password }
 category: productivity
 developer: Xhofe
 website: https://alistgo.com/

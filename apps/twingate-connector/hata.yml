@@ -35,7 +35,7 @@ settings:
     label:
       en: Refresh token
       uk: Токен оновлення
-  - name: HOSTNAME
+  - name: CONNECTOR_NAME
     type: text
     label:
       en: Name of this connector

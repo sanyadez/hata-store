@@ -18,14 +18,13 @@ notes:
     The server's name is part of everyone's address (@anna:matrix.example.com) and **cannot be
     changed** later. Talking to other servers needs Hata's domain with HTTPS reachable from the
     internet on port 443: the app tells other servers to come there, so port 8448 is not needed.
-    The administrator signs in with the account from the settings; the others sign up in Element
-    with the registration code.
+    Others sign up in Element with the registration code.
   uk: >
     Назва сервера входить в адресу кожного (@anna:matrix.example.com), і **змінити її згодом не
     можна**. Щоб листуватися з іншими серверами, потрібен домен Hata з HTTPS, доступний з
     інтернету на порту 443: застосунок скеровує інші сервери туди, тож порт 8448 не потрібен.
-    Адміністратор входить з обліковим записом із налаштувань, решта реєструється в Element з
-    кодом реєстрації.
+    Решта реєструється в Element з кодом реєстрації.
+login: { kind: settings, user: "${ADMIN_USER}", password: "${ADMIN_PASSWORD}" }
 category: social
 developer: Continuwuity and Element
 website: https://continuwuity.org

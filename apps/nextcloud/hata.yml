@@ -20,6 +20,7 @@ notes:
     Перший запуск триває кілька хвилин: Nextcloud налаштовується сам з адміністратором, указаним тут.
     Він відповідає лише за адресами, які знає, — адресою застосунку в Hata і тими, що вписані в
     «Інші адреси» (обидві читаються лише за першого запуску; потім їх змінюють у config.php).
+login: { kind: settings, user: "${ADMIN_USER}", password: "${ADMIN_PASSWORD}" }
 category: files
 developer: Nextcloud
 website: https://nextcloud.com

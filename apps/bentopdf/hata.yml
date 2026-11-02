@@ -7,8 +7,14 @@ description:
   en: "**Your PDFs never leave your device.** BentoPDF is a privacy-first PDF toolkit that runs entirely in your browser. Every merge, split, conversion, and edit happens locally on your machine — no file is ever uploaded to a server. More than 50 tools are bundled into one clean, fast, ad-free interface.\n\n**One app for every PDF job.** Organize and edit your documents (merge, split, reorder, rotate, crop, watermark, page numbers, redaction, annotations and forms), convert to and from PDF (images, Word, Excel, PowerPoint, EPUB, Markdown and more), run OCR, and secure your files with compression, encryption, digital signatures, and metadata cleanup."
   uk: "**Ваші PDF ніколи не залишають ваш пристрій.** BentoPDF — набір інструментів для PDF, який дбає про приватність і працює цілком у вашому браузері. Кожне об’єднання, розділення, перетворення й редагування відбувається локально на вашому комп’ютері — жоден файл не надсилається на сервер. Понад 50 інструментів зібрано в одному чистому, швидкому інтерфейсі без реклами.\n\n**Один застосунок для будь-яких завдань із PDF.** Впорядковуйте й редагуйте документи (об’єднання, розділення, зміна порядку, поворот, обрізання, водяні знаки, номери сторінок, приховування даних, анотації та форми), перетворюйте в PDF і з нього (зображення, Word, Excel, PowerPoint, EPUB, Markdown та інше), запускайте OCR і захищайте файли: стиснення, шифрування, цифрові підписи та очищення метаданих."
 notes:
-  en: "## Getting Started\n\n## HTTPS for Office conversions"
-  uk: "## Початок роботи\n\n## HTTPS для перетворення офісних файлів"
+  en: >
+    Converting Office files (Word, Excel, PowerPoint) works only when the page is opened over HTTPS or at
+    localhost. Over plain HTTP at the server's address it fails; set up Hata's domain with HTTPS to use it.
+  uk: >
+    Перетворення офісних файлів (Word, Excel, PowerPoint) працює, лише коли сторінку відкрито через HTTPS
+    або за адресою localhost. Через звичайний HTTP за адресою сервера воно не працює; щоб ним користуватися,
+    налаштуйте домен Hata з HTTPS.
+login: { kind: none }
 category: productivity
 developer: BentoPDF
 website: https://bentopdf.com

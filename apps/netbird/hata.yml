@@ -7,8 +7,12 @@ description:
   en: "NetBird combines a WireGuard®-based overlay network with Zero Trust Network Access, providing a unified open source platform for reliable and secure connectivity.\n\n- Secure Remote Access – Enable least privilege network access in a few clicks\n- Zero-Config Deployment – Replace legacy VPNs with a peer-to-peer WireGuard®-based network\n- Seamless SSO with MFA – Secure your network access with session-based SSO & MFA\n- Dynamic Posture Checks – Grant access only to devices meeting your security rules\n- Centralized Network Management – Control your private network from a single place\n- Detailed Activity Logging – Identify who did what, and when in your network\n\n**Learn More:**\n- [NetBird Website](https://netbird.io)\n- [Documentation](https://docs.netbird.io)\n- [Self-Hosting Guide](https://docs.netbird.io/selfhosted/selfhosted-quickstart)\n- [NetBird GitHub](https://github.com/netbirdio/netbird)\n- [Slack Community](https://docs.netbird.io/slack-url)"
   uk: "NetBird поєднує оверлейну мережу на основі WireGuard® із Zero Trust Network Access, пропонуючи єдину платформу з відкритим кодом для надійного та безпечного з'єднання.\n\n- Безпечний віддалений доступ — надавайте мережевий доступ за принципом найменших привілеїв у кілька кліків\n- Розгортання без налаштувань — замініть застарілі VPN одноранговою мережею на основі WireGuard®\n- Зручний SSO з MFA — захистіть доступ до мережі за допомогою SSO та MFA на рівні сеансу\n- Динамічні перевірки стану пристроїв — надавайте доступ лише пристроям, що відповідають вашим правилам безпеки\n- Централізоване керування мережею — керуйте приватною мережею з одного місця\n- Докладний журнал дій — дізнавайтеся, хто, що і коли робив у вашій мережі\n\n**Дізнатися більше:**\n- [Сайт NetBird](https://netbird.io)\n- [Документація](https://docs.netbird.io)\n- [Посібник із самостійного розгортання](https://docs.netbird.io/selfhosted/selfhosted-quickstart)\n- [NetBird на GitHub](https://github.com/netbirdio/netbird)\n- [Спільнота в Slack](https://docs.netbird.io/slack-url)"
 notes:
-  en: "### Getting Started\n\nYour device will now appear in your NetBird dashboard and can connect to other devices in your mesh network."
-  uk: "### Початок роботи\n\nТепер ваш пристрій з'явиться на панелі NetBird і зможе підключатися до інших пристроїв у вашій mesh-мережі."
+  en: >
+    Put the setup key from your NetBird dashboard into the settings. The computer then appears in the
+    dashboard and can connect to the other devices of your network.
+  uk: >
+    Уставте в налаштуваннях ключ налаштування з вашої панелі NetBird. Після цього комп'ютер з'явиться
+    в панелі й зможе з'єднуватися з іншими пристроями вашої мережі.
 category: network
 developer: NetBird GmbH
 website: https://netbird.io

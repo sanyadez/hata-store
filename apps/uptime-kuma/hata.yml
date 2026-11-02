@@ -11,6 +11,7 @@ description:
     Моніторинг на власному сервері. Щохвилини перевіряє сайти, порти, записи DNS, контейнери Docker
     тощо, малює історію кожного й надсилає сповіщення в Telegram, ntfy, на пошту чи в десятки інших
     сервісів, коли щось перестає відповідати. Є й публічні сторінки стану.
+login: { kind: first-visit }
 category: monitoring
 developer: Louis Lam
 website: https://uptime.kuma.pet

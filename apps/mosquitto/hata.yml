@@ -13,13 +13,13 @@ description:
     Маленький, швидкий і зберігає зафіксовані повідомлення між перезапусками.
 notes:
   en: >
-    It has no web page. Devices and apps connect to the server's address on the MQTT port with the
-    user name and password chosen here: anonymous access is off, so a device on the home network
-    cannot read or switch anything without them.
+    It has no web page. Devices and apps connect to the server's address on the MQTT port. Anonymous
+    access is off, so a device on the home network cannot read or switch anything without the login.
   uk: >
-    Вебсторінки в нього немає. Пристрої й застосунки під'єднуються до адреси сервера на порт MQTT з
-    обраними тут іменем і паролем: анонімний доступ вимкнено, тож без них жоден пристрій у домашній
-    мережі нічого не прочитає й не перемкне.
+    Вебсторінки в нього немає. Пристрої й застосунки під'єднуються до адреси сервера на порт MQTT.
+    Анонімний доступ вимкнено, тож без логіна й пароля жоден пристрій у домашній мережі нічого не
+    прочитає й не перемкне.
+login: { kind: settings, user: "${MQTT_USER}", password: "${MQTT_PASSWORD}" }
 category: home
 developer: Eclipse Foundation
 website: https://mosquitto.org

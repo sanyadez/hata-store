@@ -19,6 +19,7 @@ notes:
   uk: >
     Покладіть у вибрану теку файли .zim: Вікіпедію та інші сайти можна завантажити з
     library.kiwix.org. Покладений файл з'явиться протягом хвилини.
+login: { kind: none }
 category: media
 developer: Kiwix
 website: https://kiwix.org

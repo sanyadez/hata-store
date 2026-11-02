@@ -6,6 +6,7 @@ tagline:
 description:
   en: "oPodSync is a podcast synchronization service that allows users to sync their podcast subscriptions and listening progress across multiple devices. It provides a server-side solution for managing podcast data and ensures that users can seamlessly switch between their devices.\n\n**Key Features:**\n- Sync podcast subscriptions\n- Track listening progress across devices\n- Web-based management interface\n- Support for multiple podcast clients\n- Centralized data storage\n- Easy setup and configuration\n\n**Learn More:**\n- [oPodSync GitHub Repo](https://github.com/kd2org/oPodSync)"
   uk: "oPodSync — сервіс синхронізації подкастів, що дає змогу синхронізувати підписки на подкасти й прогрес прослуховування між кількома пристроями. Це серверне рішення для керування даними подкастів, завдяки якому можна без проблем переходити з одного пристрою на інший.\n\n**Основні можливості:**\n- Синхронізація підписок на подкасти\n- Відстеження прогресу прослуховування на різних пристроях\n- Вебінтерфейс для керування\n- Підтримка різних клієнтів подкастів\n- Централізоване зберігання даних\n- Просте встановлення й налаштування\n\n**Докладніше:**\n- [Репозиторій oPodSync на GitHub](https://github.com/kd2org/oPodSync)"
+login: { kind: first-visit }
 category: media
 developer: ganeshlab
 website: https://fossil.kd2.org/opodsync/

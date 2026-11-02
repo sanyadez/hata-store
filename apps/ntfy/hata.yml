@@ -15,11 +15,12 @@ description:
     сповіщень Hata.
 notes:
   en: >
-    Sign in to the app on the phone with the administrator's name and password. To send from a
-    script or from Hata, make an access token in the web page: account, then "Access tokens".
+    To send from a script or from Hata, make an access token in the web page: account, then
+    "Access tokens".
   uk: >
-    У застосунку на телефоні входьте з ім'ям і паролем адміністратора. Щоб надсилати зі скрипта чи
-    з Hata, створіть токен доступу на вебсторінці: обліковий запис, далі «Токени доступу».
+    Щоб надсилати зі скрипта чи з Hata, створіть токен доступу на вебсторінці: обліковий запис,
+    далі «Токени доступу».
+login: { kind: settings, user: "${ADMIN_USER}", password: "${ADMIN_PASSWORD}" }
 category: productivity
 developer: Philipp Heckel
 website: https://ntfy.sh

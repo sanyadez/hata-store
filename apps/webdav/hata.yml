@@ -6,9 +6,7 @@ tagline:
 description:
   en: "WebDAV is a web-based protocol that allows you to share and manage files over the internet, providing a collaborative environment for file editing and versioning."
   uk: "WebDAV — вебпротокол, який дає змогу ділитися файлами та керувати ними через інтернет, створюючи середовище для спільного редагування файлів і ведення їхніх версій."
-notes:
-  en: Default Account
-  uk: Типовий обліковий запис
+login: { kind: settings, user: "${USERNAME}", password: "${PASSWORD}" }
 category: productivity
 developer: ugeek
 website: https://github.com/ugeek/docker-webdav

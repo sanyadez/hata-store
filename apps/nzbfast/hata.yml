@@ -9,6 +9,7 @@ description:
 notes:
   en: "Your settings, API key and queue live in the config folder. Keep that mapping pointed at the same host folder when you update or reinstall, or nzbfast comes back looking like a fresh install."
   uk: "Ваші налаштування, ключ API та черга зберігаються в теці конфігурації. Під час оновлення чи перевстановлення залишайте для неї ту саму теку на хості, інакше nzbfast повернеться як щойно встановлений."
+login: { kind: none }
 category: media
 developer: nzbfast
 website: https://nzbfast.github.io/nzbfast/

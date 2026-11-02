@@ -44,7 +44,7 @@ settings:
       - { value: base-int8, label: { en: Base, uk: Базова } }
       - { value: small-int8, label: { en: Small, uk: Мала } }
       - { value: medium-int8, label: { en: Medium, uk: Середня } }
-  - name: LANGUAGE
+  - name: WHISPER_LANGUAGE
     type: text
     default: auto
     label: { en: Language, uk: Мова }

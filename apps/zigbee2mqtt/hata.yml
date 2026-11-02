@@ -22,6 +22,7 @@ notes:
     Під'єднайте адаптер Zigbee до встановлення й майте брокер MQTT (Mosquitto з цього магазину).
     Під час першого відкриття сторінка спитає адаптер і адресу брокера
     (`mqtt://<адреса сервера>:1883`) з іменем і паролем; порт вебсторінки лишіть там 8080.
+login: { kind: none }
 category: home
 developer: Koen Kanters
 website: https://www.zigbee2mqtt.io

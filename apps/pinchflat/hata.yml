@@ -9,6 +9,7 @@ description:
 notes:
   en: "Pinchflat will automatically create the necessary directories and start downloading content based on your configured sources.\n\nMake sure you have enough storage space for your downloads. The app uses /downloads as the default download directory.\n\nAfter installation, access the web interface to configure your YouTube channels and playlists for automatic downloading."
   uk: "Pinchflat сам створить потрібні теки й почне завантажувати вміст згідно з налаштованими джерелами.\n\nПереконайтеся, що вистачає місця для завантажень. Застосунок за замовчуванням використовує теку /downloads.\n\nПісля встановлення відкрийте вебінтерфейс і налаштуйте канали та плейлисти YouTube для автоматичного завантаження."
+login: { kind: none }
 category: media
 developer: kieraneglin
 website: https://github.com/kieraneglin/pinchflat

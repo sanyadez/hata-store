@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Save storage space with efficient file processing.\n\nFileFlows lets you monitor and process any file type with custom flows. Videos, audio, images, archives, comics, eBooks—you name it!"
   uk: "Заощаджуйте місце завдяки ефективній обробці файлів.\n\nFileFlows стежить за файлами будь-якого типу й обробляє їх за вашими власними потоками. Відео, аудіо, зображення, архіви, комікси, електронні книги — що завгодно!"
+login: { kind: none }
 category: media
 developer: FileFlows
 website: https://fileflows.com/

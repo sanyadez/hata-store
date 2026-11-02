@@ -18,6 +18,7 @@ notes:
   uk: >
     Кожна перевірка на пів хвилини повністю займає з'єднання й витрачає трафік: на лімітному тарифі
     виберіть рідший розклад.
+login: { kind: settings, user: "${ADMIN_EMAIL}", password: "${ADMIN_PASSWORD}" }
 category: network
 developer: Alex Justesen
 website: https://docs.speedtest-tracker.dev
