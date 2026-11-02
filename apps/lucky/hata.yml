@@ -7,8 +7,14 @@ description:
   en: "A powerful tool for port forwarding, reverse proxy, dynamic DNS, wake-on-LAN, IPv4 NAT traversal, webdav services, task scheduling, and automatic certificate management."
   uk: "Потужний інструмент для перенаправлення портів, зворотного проксі, динамічного DNS, wake-on-LAN, проходження IPv4 NAT, служб webdav, планування завдань і автоматичного керування сертифікатами."
 notes:
-  en: Back up the configuration before each update.
-  uk: Перед кожним оновленням зробіть резервну копію конфігурації.
+  en: >
+    Back up the configuration before each update. Installed before its settings moved to the data folder?
+    The next update resets them, and the password goes back to the default. Before updating, run
+    `docker cp <container>:/app/conf/. <the app's data folder>/` on the server.
+  uk: >
+    Перед кожним оновленням зробіть резервну копію конфігурації. Встановили до того, як налаштування
+    переїхали в теку даних? Наступне оновлення їх скине, а пароль знову стане типовим. Перед оновленням
+    виконайте на сервері `docker cp <контейнер>:/app/conf/. <тека даних застосунку>/`.
 login: { kind: default, user: "666", password: "666" }
 category: network
 developer: gdy666
