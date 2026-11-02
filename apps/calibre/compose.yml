@@ -1,6 +1,6 @@
 services:
   calibre:
-    image: lscr.io/linuxserver/calibre:9.16.0
+    image: lscr.io/linuxserver/calibre:9.17.0
     restart: unless-stopped
     shm_size: 1gb
     ports:
