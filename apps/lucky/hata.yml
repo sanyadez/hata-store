@@ -9,6 +9,7 @@ description:
 notes:
   en: Back up the configuration before each update.
   uk: Перед кожним оновленням зробіть резервну копію конфігурації.
+login: { kind: default, user: "666", password: "666" }
 category: network
 developer: gdy666
 website: https://lucky666.cn/

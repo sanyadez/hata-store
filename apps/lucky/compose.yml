@@ -10,7 +10,7 @@ services:
     volumes:
       - type: bind
         source: "${APP_DATA:-.}"
-        target: /goodluck
+        target: /app/conf
     environment:
       TZ: "${TZ:-UTC}"
     network_mode: host
