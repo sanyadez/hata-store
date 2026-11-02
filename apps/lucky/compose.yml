@@ -13,10 +13,15 @@ services:
       - -c
       - |
         base=/app/conf/lucky_base.lkcf
+        seed=/app/conf/.hata-seed
+        rm -rf "$$seed"
         if [ -n "$$LUCKY_PASSWORD" ] && [ ! -e "$$base" ]; then
-          /app/lucky -setconf -key AdminAccount -value admin -cd /app/conf &&
-            /app/lucky -setconf -key AdminPassword -value "$$LUCKY_PASSWORD" -cd /app/conf ||
-            { rm -f "$$base"; exit 1; }
+          # Made aside and moved in whole: a start cut short leaves no file with the public login.
+          /app/lucky -setconf -key AdminAccount -value admin -cd "$$seed" &&
+            /app/lucky -setconf -key AdminPassword -value "$$LUCKY_PASSWORD" -cd "$$seed" &&
+            mv "$$seed/lucky_base.lkcf" "$$base" ||
+            exit 1
+          rm -rf "$$seed"
         fi
         exec /app/start.sh
     volumes:
