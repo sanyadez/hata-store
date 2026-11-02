@@ -85,6 +85,7 @@ web:                                 # optional: an app without a web page has n
   path: /                            # optional
   scheme: http                       # optional, http or https
 settings: [ … ]                      # see Settings
+login: { … }                         # optional, see Signing in
 permissions: { … }                   # see Permissions
 ```
 
@@ -122,6 +123,26 @@ settings:
 | `choice`   | a list of `options: [{ value, label }]`                | the chosen value          |
 
 `DATA_ROOT` (the server's data folder) can be used in defaults only, not in the compose file.
+
+### Signing in
+
+How to get into the app the first time. Hata shows it next to the app, on its own, so it does not belong
+in `notes`. Leave it out when you do not know.
+
+```yaml
+login: { kind: default, user: admin, password: admin }
+```
+
+| `kind`        | What it means                                       | With it                            |
+|---------------|-----------------------------------------------------|------------------------------------|
+| `default`     | the app comes with this login; a quoted `"666"` too | `user`, `password`: at least one   |
+| `settings`    | the person chose it in the settings                 | `user`, `password`: at least one is a whole `${NAME}` of a setting, the other may be plain text |
+| `first-visit` | the app asks to make the account at the first visit | nothing                            |
+| `log`         | the app writes the password to its log              | `find`: words of that line; `user` |
+| `none`        | the app has no sign-in of its own                   | nothing                            |
+
+qBittorrent is the example of `log`: `{ kind: log, user: admin, find: temporary password }`. Its password
+changes at every start until one is set in the app.
 
 ## Updates
 

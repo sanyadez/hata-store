@@ -9,6 +9,7 @@ description:
 notes:
   en: "Default Account\n\n| Username | Password | |----------|----------| | `admin`    | Get from log |\n\nPasswords need to be viewed in the log\n\nDefault Accessible Path in qBittorrent\n\n| Name | Value | | ---- | ----- | | DATA Path | `/DATA` | | Downloads Path | `/DATA/Downloads` | | Media Path | `/DATA/Media` |"
   uk: "Обліковий запис за промовчанням\n\n| Ім'я користувача | Пароль | |----------|----------| | `admin`    | Дивіться в журналі |\n\nПароль потрібно подивитися в журналі\n\nТеки за промовчанням, доступні в qBittorrent\n\n| Назва | Значення | | ---- | ----- | | Тека DATA | `/DATA` | | Тека завантажень | `/DATA/Downloads` | | Тека медіа | `/DATA/Media` |"
+login: { kind: log, user: admin, find: temporary password }
 category: media
 developer: qBittorrent
 website: https://www.qbittorrent.org

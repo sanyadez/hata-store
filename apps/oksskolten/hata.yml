@@ -23,6 +23,7 @@ notes:
   uk: >
     Під час першого відкриття Oksskolten попросить створити обліковий запис; користувач у нього один.
     Ключі сервісів ШІ вводяться в його налаштуваннях.
+login: { kind: first-visit }
 category: productivity
 developer: babarot
 website: https://oksskolten.com
