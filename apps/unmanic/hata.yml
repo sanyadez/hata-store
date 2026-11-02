@@ -17,6 +17,7 @@ notes:
     Processing replaces the original files: try your plugins on a copy of a few files first.
   uk: >
     Обробка замінює початкові файли: спершу спробуйте плагіни на копії кількох файлів.
+login: { kind: none }
 category: media
 developer: Josh5
 website: https://docs.unmanic.app

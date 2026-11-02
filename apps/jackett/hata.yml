@@ -6,6 +6,7 @@ tagline:
 description:
   en: "it translates queries from apps (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious etc.) into tracker-site-specific http queries, parses the html or json response, and then sends results back to the requesting software. This allows for getting recent uploads (like RSS) and performing searches. Jackett is a single repository of maintained indexer scraping & translation logic - removing the burden from other apps."
   uk: "Він перетворює запити застосунків (Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious тощо) на HTTP-запити, специфічні для кожного трекера, розбирає відповідь у форматі HTML або JSON і повертає результати застосунку, що запитував. Це дає змогу отримувати свіжі роздачі (як через RSS) і виконувати пошук. Jackett — єдине місце, де підтримується логіка збирання й перетворення даних з індексаторів, тож іншим застосункам цього робити не потрібно."
+login: { kind: none }
 category: media
 developer: Jackett
 website: https://github.com/Jackett/Jackett

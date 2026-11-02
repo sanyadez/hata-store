@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic."
   uk: "Автоматичний менеджер відеобібліотеки для серіалів. Стежить за новими серіями ваших улюблених серіалів і, щойно вони з'являються, робить усе сам."
+login: { kind: none }
 category: media
 developer: pyMedusa (https://github.com/pymedusa)
 website: https://github.com/pymedusa/Medusa

@@ -17,6 +17,7 @@ notes:
     address.
   uk: >
     Під час першого відкриття попросить пошту й пароль адміністратора та адресу сайту.
+login: { kind: first-visit }
 category: productivity
 developer: Requarks
 website: https://js.wiki

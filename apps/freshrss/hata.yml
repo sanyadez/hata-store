@@ -6,6 +6,7 @@ tagline:
 description:
   en: "FreshRSS is a self-hosted RSS and Atom feed aggregator. It is lightweight, easy to work with, powerful, and customizable."
   uk: "FreshRSS — агрегатор RSS- і Atom-стрічок для власного сервера. Він легкий, простий у використанні, потужний і гнучкий у налаштуванні."
+login: { kind: first-visit }
 category: productivity
 developer: FreshRSS
 website: https://freshrss.org/

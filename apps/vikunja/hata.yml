@@ -18,6 +18,7 @@ notes:
   uk: >
     Перший користувач реєструється на сторінці входу. Коли всі матимуть облікові записи, вимкніть
     «Будь-хто може зареєструватися».
+login: { kind: first-visit }
 category: productivity
 developer: Vikunja
 website: https://vikunja.io

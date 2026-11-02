@@ -6,6 +6,7 @@ tagline:
 description:
   en: "Threadfin is a M3U proxy server for Plex, Emby, Jellyfin and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats."
   uk: "Threadfin — проксі-сервер M3U для Plex, Emby, Jellyfin та будь-якого клієнта й провайдера, що підтримує потокові формати .TS і .M3U8 (HLS)."
+login: { kind: none }
 category: media
 developer: jdownloader
 website: https://github.com/Threadfin/Threadfin

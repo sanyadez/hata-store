@@ -6,6 +6,7 @@ tagline:
 description:
   en: You have found the easiest way to install & manage WireGuard on any Linux host!
   uk: Ви знайшли найпростіший спосіб установити WireGuard на будь-який хост Linux і керувати ним!
+login: { kind: settings, password: "${PASSWORD}" }
 category: network
 developer: WeejeWel
 website: https://github.com/wg-easy/wg-easy

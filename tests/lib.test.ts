@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { bindMounts, brokenLine, checkCompose, checkDependabot, checkHata, checkIcon, checkLogin, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
+import { SHELL_VARS, VAR_RE, bindMounts, brokenLine, checkCompose, checkDependabot, checkHata, checkIcon, checkLogin, checkShipped, common, fill, floating, parseImage, permissionsOf, shippedPath, splitVolume, svgDanger, varsIn } from "../scripts/lib.ts";
 
 const svg = (body: string) => `data:image/svg+xml;base64,${Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg">${body}</svg>`).toString("base64")}`;
 const store = { categories: { media: { en: "Media" } } };
@@ -185,4 +185,10 @@ describe("login", () => {
 test("an app's login goes through its check", () => {
   expect(texts(checkHata(app as never, hata({ login: { kind: "first-visit" } }), store))).not.toContain("unknown key \"login\"");
   expect(texts(checkHata(app as never, hata({ login: { kind: "guess" } }), store)).join()).toContain("login.kind");
+});
+
+test("a setting named like a variable of the shell is refused", () => {
+  expect(SHELL_VARS).toContain("USER");
+  expect(SHELL_VARS).toContain("HOSTNAME");
+  expect(VAR_RE.test("WEB_USER") && !SHELL_VARS.includes("WEB_USER" as never)).toBe(true);
 });

@@ -9,6 +9,7 @@ description:
 notes:
   en: The first person to sign up becomes the administrator.
   uk: Перший, хто зареєструється, стає адміністратором.
+login: { kind: first-visit }
 category: productivity
 developer: karakeep-app
 website: https://karakeep.app/

@@ -8,5 +8,5 @@ services:
       - ${APP_DATA:-.}/data:/data
     environment:
       WYO_WHISPER_MODEL: ${MODEL:-auto}
-      WYO_WHISPER_LANGUAGE: ${LANGUAGE:-auto}
+      WYO_WHISPER_LANGUAGE: ${WHISPER_LANGUAGE:-auto}
       TZ: ${TZ:-UTC}

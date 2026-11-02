@@ -16,6 +16,7 @@ notes:
   uk: >
     Вебсховище й застосунки працюють лише через **HTTPS**: відкривайте його за адресою під доменом
     Hata. Коли всі матимуть облікові записи, вимкніть «Будь-хто може зареєструватися».
+login: { kind: first-visit }
 category: security
 developer: Daniel García
 website: https://github.com/dani-garcia/vaultwarden
