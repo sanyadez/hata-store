@@ -7,11 +7,24 @@ services:
           memory: 64M
     image: gdy666/lucky:2.27.2
     restart: unless-stopped
+    # The image's own login is public: an empty folder starts with the password made for this install.
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+        base=/app/conf/lucky_base.lkcf
+        if [ -n "$$LUCKY_PASSWORD" ] && [ ! -e "$$base" ]; then
+          /app/lucky -setconf -key AdminAccount -value admin -cd /app/conf &&
+            /app/lucky -setconf -key AdminPassword -value "$$LUCKY_PASSWORD" -cd /app/conf ||
+            { rm -f "$$base"; exit 1; }
+        fi
+        exec /app/start.sh
     volumes:
       - type: bind
         source: "${APP_DATA:-.}"
         target: /app/conf
     environment:
       TZ: "${TZ:-UTC}"
+      LUCKY_PASSWORD: "${LUCKY_PASSWORD:-}"
     network_mode: host
     privileged: false

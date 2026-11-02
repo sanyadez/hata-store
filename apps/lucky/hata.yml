@@ -9,13 +9,21 @@ description:
 notes:
   en: >
     Back up the configuration before each update. Installed before its settings moved to the data folder?
-    The next update resets them, and the password goes back to the default. Before updating, run
-    `docker cp <container>:/app/conf/. <the app's data folder>/` on the server.
+    The next update resets them and makes a new password. To keep them and your own password, run
+    `docker cp <container>:/app/conf/. <the app's data folder>/` on the server before updating.
+    A Hata that does not show how to sign in: the password is `LUCKY_PASSWORD` in the app's `.env`.
   uk: >
     Перед кожним оновленням зробіть резервну копію конфігурації. Встановили до того, як налаштування
-    переїхали в теку даних? Наступне оновлення їх скине, а пароль знову стане типовим. Перед оновленням
-    виконайте на сервері `docker cp <контейнер>:/app/conf/. <тека даних застосунку>/`.
-login: { kind: default, user: "666", password: "666" }
+    переїхали в теку даних? Наступне оновлення їх скине й створить новий пароль. Щоб зберегти їх і свій
+    пароль, перед оновленням виконайте на сервері `docker cp <контейнер>:/app/conf/. <тека даних застосунку>/`.
+    Якщо Hata не показує, як увійти: пароль — це `LUCKY_PASSWORD` у файлі `.env` застосунку.
+login: { kind: settings, user: admin, password: "${LUCKY_PASSWORD}" }
+settings:
+  - name: LUCKY_PASSWORD
+    type: secret
+    label:
+      en: Password of the admin page
+      uk: Пароль сторінки керування
 category: network
 developer: gdy666
 website: https://lucky666.cn/
