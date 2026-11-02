@@ -1,6 +1,6 @@
 services:
   code-server:
-    image: linuxserver/code-server:4.141.0
+    image: linuxserver/code-server:4.144.0
     restart: unless-stopped
     ports:
       - ${WEB_PORT:-8443}:8443
