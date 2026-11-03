@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   docmost:
-    image: docmost/docmost:0.96.0
+    image: docmost/docmost:0.97.0
     deploy:
       resources:
         reservations:
