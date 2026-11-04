@@ -15,7 +15,7 @@ services:
       - database
 
   immich-machine-learning:
-    image: ghcr.io/immich-app/immich-machine-learning:v3.3.3
+    image: ghcr.io/immich-app/immich-machine-learning:v3.3.5
     restart: unless-stopped
     volumes:
       - model-cache:/cache
