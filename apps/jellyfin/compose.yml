@@ -1,6 +1,6 @@
 services:
   jellyfin:
-    image: jellyfin/jellyfin:12.3.20261023-013714
+    image: jellyfin/jellyfin:12.4.20261026-211555
     restart: unless-stopped
     ports:
       - ${WEB_PORT:-8096}:8096
