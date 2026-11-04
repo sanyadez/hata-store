@@ -14,7 +14,7 @@ services:
         chown ${PUID:-1000}:${PGID:-1000} /config/config.yaml
 
   gatus:
-    image: twinproduction/gatus:v5.37.0
+    image: twinproduction/gatus:v5.38.0
     restart: unless-stopped
     ports:
       - ${WEB_PORT:-8080}:8080
