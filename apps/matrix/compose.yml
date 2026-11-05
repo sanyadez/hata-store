@@ -22,7 +22,7 @@ services:
       CONTINUWUITY_WELL_KNOWN__CLIENT: ${APP_URL:-http://localhost:8008}
 
   element:
-    image: vectorim/element-web:v1.12.32
+    image: vectorim/element-web:v1.12.33
     restart: unless-stopped
     ports:
       - ${WEB_PORT:-8008}:8080
