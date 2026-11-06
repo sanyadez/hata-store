@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   openspeedtest:
-    image: openspeedtest/latest:v2.0.6
+    image: openspeedtest/latest:v2.0.8
     deploy:
       resources:
         reservations:
