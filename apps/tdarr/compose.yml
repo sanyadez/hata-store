@@ -1,6 +1,6 @@
 services:
   tdarr:
-    image: ghcr.io/haveagitgat/tdarr:3.04.00
+    image: ghcr.io/haveagitgat/tdarr:3.06.00
     restart: unless-stopped
     ports:
       - ${WEB_PORT:-8265}:8265
