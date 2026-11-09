@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   adguard-home:
-    image: adguard/adguardhome:v0.107.79
+    image: adguard/adguardhome:v0.107.80
     deploy:
       resources:
         reservations:
