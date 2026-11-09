@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   blinko:
-    image: blinkospace/blinko:1.8.8
+    image: blinkospace/blinko:1.8.9
     restart: unless-stopped
     networks:
       - blinko-net
