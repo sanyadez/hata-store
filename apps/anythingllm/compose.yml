@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   anythingllm:
-    image: mintplexlabs/anythingllm:latest@sha256:73db67cfac27814325f5d482faa34404498eb360a92bbb5461d4c44cdf87716d
+    image: mintplexlabs/anythingllm:latest@sha256:d4f908a2f620456c5833b3abb72bb9d7ee79830969e6c2e76662c666812a823f
     ports:
       - "${WEB_PORT:-3051}:3001"
     cap_add:
