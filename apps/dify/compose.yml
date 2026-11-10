@@ -154,7 +154,7 @@ services:
     networks:
       - dify
   weaviate:
-    image: semitechnologies/weaviate:1.40.3
+    image: semitechnologies/weaviate:1.40.4
     restart: unless-stopped
     volumes:
       - "${APP_DATA:-.}/data/weaviate:/var/lib/weaviate"
