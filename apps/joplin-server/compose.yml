@@ -1,6 +1,6 @@
 services:
   app:
-    image: joplin/server:3.7.3
+    image: joplin/server:3.7.4
     restart: unless-stopped
     depends_on:
       db:
