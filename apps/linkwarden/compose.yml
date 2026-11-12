@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   linkwarden:
-    image: ghcr.io/linkwarden/linkwarden:v2.16.3
+    image: ghcr.io/linkwarden/linkwarden:v2.17.0
     restart: unless-stopped
     depends_on:
       linkwarden-postgres:
