@@ -1,6 +1,6 @@
 services:
   homeserver:
-    image: ghcr.io/continuwuity/continuwuity:v26.9.1
+    image: ghcr.io/continuwuity/continuwuity:v26.9.3
     restart: unless-stopped
     volumes:
       - ${APP_DATA:-.}/db:/var/lib/continuwuity
