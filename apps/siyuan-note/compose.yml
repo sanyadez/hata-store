@@ -5,7 +5,7 @@ services:
     environment:
       PUID: "${PUID:-1000}"
       PGID: "${PGID:-1000}"
-    image: b3log/siyuan:v3.8.9
+    image: b3log/siyuan:v3.8.10
     deploy:
       resources:
         reservations:
