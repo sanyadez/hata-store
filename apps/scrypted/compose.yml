@@ -1,6 +1,6 @@
 services:
   scrypted:
-    image: koush/scrypted:v0.147.0-noble-full
+    image: koush/scrypted:v0.148.0-noble-full
     restart: unless-stopped
     network_mode: host
     volumes:
