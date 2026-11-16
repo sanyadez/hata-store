@@ -51,6 +51,14 @@ describe("the compose file", () => {
     const c = compose({ ports: ["${WEB_PORT:-80}:80"], volumes: ["${APP_DATA:-.}/data:/data"] });
     expect(texts(checkCompose("demo", c, hata({ web: { service: "demo", port: 80 }, settings: [{ name: "WEB_PORT", type: "port", label: "Port" }] })))).toEqual([]);
   });
+  test("Meilisearch is told to upgrade its data", () => {
+    const meili = (environment: unknown) => texts(checkCompose("demo", compose({ image: "getmeili/meilisearch:v1.56.2", environment }), hata())).join("\n");
+    expect(meili({ MEILI_EXPERIMENTAL_DUMPLESS_UPGRADE: "true" })).toContain("needs MEILI_UPGRADE_DB");
+    expect(meili({ MEILI_EXPERIMENTAL_DUMPLESS_UPGRADE: "true", MEILI_UPGRADE_DB: "true" })).toContain("is ignored");
+    expect(meili({ MEILI_UPGRADE_DB: "true" })).not.toContain("MEILI");
+    expect(meili(["MEILI_UPGRADE_DB=true"])).not.toContain("MEILI");
+    expect(meili([])).toContain("needs MEILI_UPGRADE_DB");
+  });
   test("what it may not do", () => {
     const c = compose({ image: "nginx:latest", container_name: "x", env_file: ".env", restart: "no", volumes: ["./data:/data"], environment: { A: "${UNKNOWN}" } }, { "x-casaos": {} });
     const got = texts(checkCompose("demo", c, hata())).join("\n");

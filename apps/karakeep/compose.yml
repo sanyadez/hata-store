@@ -54,7 +54,8 @@ services:
         target: /meili_data
     environment:
       MEILI_MASTER_KEY: "${DB_PASSWORD:?set DB_PASSWORD}"
-      MEILI_EXPERIMENTAL_DUMPLESS_UPGRADE: "true"
+      # a newer Meilisearch takes over the data of an older one instead of refusing to start
+      MEILI_UPGRADE_DB: "true"
       MEILI_NO_ANALYTICS: "true"
 networks:
   karakeep:

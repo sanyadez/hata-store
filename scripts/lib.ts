@@ -283,6 +283,14 @@ export function checkCompose(id: string, compose: unknown, hata: Obj | null, shi
     if (def.env_file !== undefined) say(`service ${name} reads env_file; name the variables in environment instead (.env is Hata's)`);
     // a service that only prepares something and ends is waited for by another, and is not restarted
     const oneShot = Object.values(services(compose)).some((other) => isObject(other.depends_on) && isObject(other.depends_on[name]) && other.depends_on[name].condition === "service_completed_successfully");
+    // Meilisearch refuses data of an older version, even a patch older, unless told to upgrade it;
+    // without that every image update the store takes leaves the app down
+    if (typeof def.image === "string" && parseImage(def.image).repo === "getmeili/meilisearch") {
+      const env = isObject(def.environment) ? def.environment
+        : Object.fromEntries((Array.isArray(def.environment) ? def.environment : []).map((e: unknown) => String(e).split(/=(.*)/s).slice(0, 2)));
+      if (String(env.MEILI_UPGRADE_DB ?? "").toLowerCase() !== "true") say(`service ${name} needs MEILI_UPGRADE_DB: "true", or Meilisearch refuses its own data after an update`);
+      if (env.MEILI_EXPERIMENTAL_DUMPLESS_UPGRADE !== undefined) say(`service ${name}: MEILI_EXPERIMENTAL_DUMPLESS_UPGRADE is ignored by Meilisearch now; MEILI_UPGRADE_DB is the one`);
+    }
     if (!["unless-stopped", "always", "on-failure"].includes(def.restart) && !(oneShot && def.restart === "no")) say(`service ${name} needs restart: unless-stopped (or always), or it stays down after a reboot`);
   }
 
