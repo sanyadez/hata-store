@@ -37,7 +37,7 @@ const FLOATING = new Set(["latest", "stable", "release", "main", "master", "nigh
 /** Files read without a word: the time zone of the host, read-only */
 const HARMLESS = new Set(["/etc/localtime", "/etc/timezone"]);
 
-const HATA_KEYS = ["title", "tagline", "description", "category", "developer", "website", "source", "icon", "screenshots", "web", "settings", "permissions", "notes", "login"];
+const HATA_KEYS = ["title", "tagline", "description", "category", "developer", "website", "source", "icon", "screenshots", "web", "settings", "permissions", "notes", "changes", "login"];
 
 const LOGIN_KEYS: Record<string, string[]> = {
   default: ["user", "password"],
@@ -404,6 +404,8 @@ export function checkHata(app: AppFiles, hata: unknown, store: Obj): Problem[] {
   checkText(hata.tagline, "tagline", say, 120);
   checkText(hata.description, "description", say);
   if (hata.notes !== undefined) checkText(hata.notes, "notes", say);
+  // said in the update window to whoever has the app: short, or it is not read
+  if (hata.changes !== undefined) checkText(hata.changes, "changes", say, 300);
   if (hata.login !== undefined) checkLogin(hata.login, Array.isArray(hata.settings) ? hata.settings.filter(isObject) : [], say);
   const categories = isObject(store.categories) ? Object.keys(store.categories) : [];
   if (!categories.includes(hata.category)) say(`category "${hata.category}" is not in store.yml (${categories.join(", ")})`);
