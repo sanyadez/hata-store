@@ -60,7 +60,8 @@ services:
     restart: unless-stopped
     environment:
       MEILI_MASTER_KEY: "${DB_PASSWORD_2:?set DB_PASSWORD_2}"
-      MEILI_EXPERIMENTAL_DUMPLESS_UPGRADE: "true"
+      # a newer Meilisearch takes over the data of an older one instead of refusing to start
+      MEILI_UPGRADE_DB: "true"
       MEILI_ENV: "${MEILI_ENV:-production}"
     volumes:
       - type: bind

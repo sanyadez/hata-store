@@ -33,8 +33,8 @@ services:
       MEILI_DB_PATH: /meili_data
       MEILI_LOG_LEVEL: WARN
       MEILI_NO_ANALYTICS: "true"
-      # a newer Meilisearch takes over the index of an older one instead of refusing to start
-      MEILI_EXPERIMENTAL_DUMPLESS_UPGRADE: "true"
+      # a newer Meilisearch takes over the data of an older one instead of refusing to start
+      MEILI_UPGRADE_DB: "true"
     volumes:
       - ${APP_DATA:-.}/meilisearch:/meili_data
     healthcheck:

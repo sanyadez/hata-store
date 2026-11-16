@@ -111,7 +111,8 @@ services:
       MEILI_HOST: "${MEILI_HOST_2:-http://librechat-meilisearch:7700}"
       MEILI_NO_ANALYTICS: "${MEILI_NO_ANALYTICS_2:-true}"
       MEILI_MASTER_KEY: "${MEILI_MASTER_KEY:?set MEILI_MASTER_KEY}"
-      MEILI_EXPERIMENTAL_DUMPLESS_UPGRADE: "true"
+      # a newer Meilisearch takes over the data of an older one instead of refusing to start
+      MEILI_UPGRADE_DB: "true"
     volumes:
       - type: bind
         source: "${APP_DATA:-.}/meili_data_v1.12"
