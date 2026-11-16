@@ -10,6 +10,9 @@ notes:
   en: "Default Account\n\n| Username | Password | |----------|----------| | `admin`    | Get from log |\n\nPasswords need to be viewed in the log\n\nDefault Accessible Path in qBittorrent\n\n| Name | Value | | ---- | ----- | | DATA Path | `/DATA` | | Downloads Path | `/DATA/Downloads` | | Media Path | `/DATA/Media` |"
   uk: "Обліковий запис за промовчанням\n\n| Ім'я користувача | Пароль | |----------|----------| | `admin`    | Дивіться в журналі |\n\nПароль потрібно подивитися в журналі\n\nТеки за промовчанням, доступні в qBittorrent\n\n| Назва | Значення | | ---- | ----- | | Тека DATA | `/DATA` | | Тека завантажень | `/DATA/Downloads` | | Тека медіа | `/DATA/Media` |"
 login: { kind: log, user: admin, find: temporary password }
+changes:
+  en: A step run before qBittorrent at every start keeps its page reachable at the address Hata shows — qBittorrent 5.3 answered “Unauthorized” there. Your settings and password stay as they are.
+  uk: Крок, що виконується перед qBittorrent за кожного запуску, тримає його сторінку доступною за адресою, яку показує Hata, — qBittorrent 5.3 відповідав там «Unauthorized». Ваші налаштування й пароль лишаються без змін.
 category: media
 developer: qBittorrent
 website: https://www.qbittorrent.org

@@ -73,6 +73,7 @@ tagline:                             # one line, up to 120
   uk: Ваші фільми, серіали й музика на будь-якому екрані
 description: { en: …, uk: … }        # markdown
 notes: { en: …, uk: … }              # optional, markdown: what to know before installing
+changes: { en: …, uk: … }            # optional, up to 300: what the last change of the app's files does and why (below)
 category: media                      # one of store.yml
 developer: Jellyfin
 website: https://jellyfin.org
@@ -123,6 +124,20 @@ settings:
 | `choice`   | a list of `options: [{ value, label }]`                | the chosen value          |
 
 `DATA_ROOT` (the server's data folder) can be used in defaults only, not in the compose file.
+
+### What changed
+
+`changes` is for people who already have the app. When the compose file or the files next to it change in a
+way a person cannot read off the file — a step added, a setting renamed, a port moved — say in a sentence
+or two what it does and why. Hata shows it at the top of the update window, once: to whoever has the app
+with other words there, or none. A newer version of the program needs no words (the window says "1.2 → 1.3"
+itself), so a version bump leaves the field as it is; the next change of this kind replaces the text.
+
+```yaml
+changes:
+  en: A step run before the app keeps its page reachable at the published port (it answered 401 there).
+  uk: Крок перед запуском застосунку тримає його сторінку доступною на опублікованому порту (там була відповідь 401).
+```
 
 ### Signing in
 
