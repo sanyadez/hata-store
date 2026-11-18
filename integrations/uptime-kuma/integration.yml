@@ -1,0 +1,109 @@
+format: 1
+id: uptime-kuma
+version: 1
+requires: 0.33.0
+title: Uptime Kuma
+icon: chart
+what:
+  en: "Which of the watched sites and services are up, which are down, whose certificates run out soon."
+  uk: "Які з сайтів і сервісів під наглядом працюють, які лежать, чиї сертифікати скоро закінчуються."
+apps: [uptime-kuma]
+images: [uptime-kuma]
+address: { scheme: http, port: 3001 }
+
+signIn:
+  # an API key goes in as the password with no user; a user and a password of Uptime Kuma work too
+  ask: [user, password]
+  hint:
+    en: "Uptime Kuma → Settings → API Keys → Add: the key goes into the password, the user stays empty."
+    uk: "Uptime Kuma → Налаштування → API-ключі → Додати: ключ — у пароль, користувача лишіть порожнім."
+  basic: true
+  check:
+    request: { path: /metrics }
+    is: ok
+
+read:
+  metrics:
+    request: { path: /metrics }
+    every: 30
+    prometheus: true
+  monitors:
+    from: metrics
+    list: ""
+    key: name
+    where: { field: kind, is: monitor_status }
+    fields:
+      kind: name
+      name: labels.monitor_name
+      type: labels.monitor_type
+      target: { first: [labels.monitor_url, labels.monitor_hostname], type: text }
+      status:
+        from: value
+        map: { "0": down, "1": up, "2": pending, "3": maintenance }
+        else: pending
+  certificates:
+    from: metrics
+    list: ""
+    key: name
+    where: { field: kind, is: monitor_cert_days_remaining }
+    fields:
+      kind: name
+      name: labels.monitor_name
+      days: { from: value, type: number, round: 0 }
+
+values:
+  monitors: { count: monitors }
+  up: { count: monitors, where: { field: status, is: up } }
+  down: { count: monitors, where: { field: status, is: down } }
+
+words:
+  status:
+    up: { label: { en: up, uk: працює }, tone: running }
+    down: { label: { en: down, uk: лежить }, tone: restarting }
+    pending: { label: { en: pending, uk: перевіряється } }
+    maintenance: { label: { en: maintenance, uk: обслуговування } }
+
+page:
+  - numbers:
+      - { label: { en: Watched, uk: Під наглядом }, value: monitors, as: number }
+      - { label: { en: Up, uk: Працюють }, value: up, as: number }
+      - { label: { en: Down, uk: Лежать }, value: down, as: number }
+  - table:
+      of: monitors
+      columns:
+        - { label: { en: What, uk: Що }, field: name, under: { field: target, as: mono } }
+        - { label: { en: State, uk: Стан }, field: status, words: status }
+        - { label: { en: Kind, uk: Вид }, field: type, as: mono }
+      search: [name, target]
+      empty: { en: Nothing is watched yet., uk: Ще нічого не під наглядом. }
+  - table:
+      of: certificates
+      title: { en: Certificates, uk: Сертифікати }
+      columns:
+        - { label: { en: Of, uk: Чий }, field: name }
+        - { label: { en: Days left, uk: Днів лишилось }, field: days, as: number }
+
+widgets:
+  status:
+    kind: summary
+    label: { en: Watched, uk: Під наглядом }
+    numbers:
+      - { value: up, as: number }
+      - { value: down, as: number }
+    list: { of: monitors, sort: [{ field: status }, { field: name }], title: name, limit: 8 }
+
+tile: "{up} ↑ · {down} ↓"
+appCard: status
+
+attention:
+  - id: down
+    each: monitors
+    where: { field: status, is: down }
+    severity: danger
+    title: { en: "{name} is down", uk: "{name} лежить" }
+    text: { en: "{server} cannot reach it: {target}", uk: "{server} не може до нього достукатися: {target}" }
+  - id: certificate
+    each: certificates
+    where: { all: [{ field: days, lt: 14 }, { field: days, gt: -1 }] }
+    severity: warn
+    title: { en: "{name}: the certificate ends in {days} days", uk: "{name}: сертифікат закінчиться за {days} дн." }

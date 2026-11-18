@@ -1,0 +1,122 @@
+format: 1
+id: immich
+version: 1
+requires: 0.33.0
+title: Immich
+icon: image
+what:
+  en: "Photos and videos: how many and how much room, the newest ones, whose are they, the jobs that are behind."
+  uk: "Фото й відео: скільки і скільки місця, найновіші, чиї вони, які завдання відстають."
+apps: [immich]
+images: [immich-server]
+address: { scheme: http, port: 2283 }
+
+signIn:
+  ask: [token]
+  hint:
+    en: "Immich → your picture → Account Settings → API Keys → New API Key, with the administrator's account."
+    uk: "Immich → ваше фото → Налаштування облікового запису → API-ключі → Новий, з облікового запису адміністратора."
+  headers: { x-api-key: "{token}" }
+  check:
+    request: { path: /api/server/about }
+    is: { json: version }
+
+read:
+  statistics:
+    request: { path: /api/server/statistics }
+    every: 600
+  storage:
+    request: { path: /api/server/storage }
+    every: 600
+  people:
+    from: statistics
+    list: usageByUser
+    key: id
+    fields:
+      id: userId
+      name: { first: [userName, userId], type: text }
+      photos: { from: photos, type: number }
+      videos: { from: videos, type: number }
+      usage: { from: usage, type: number }
+  jobs:
+    request: { path: /api/jobs }
+    every: 60
+    list: ""
+    key: name
+    fields:
+      name: $key
+      active: { from: jobCounts.active, type: number }
+      waiting: { from: jobCounts.waiting, type: number }
+      failed: { from: jobCounts.failed, type: number }
+      paused: { from: queueStatus.isPaused, type: bool, else: false }
+      busy: { test: { any: [{ field: active, gt: 0 }, { field: waiting, gt: 0 }] } }
+  latest:
+    request: { method: POST, path: /api/search/metadata, json: { size: 12, order: desc } }
+    every: 300
+    list: assets.items
+    private: true
+    fields:
+      id: id
+      name: { from: originalFileName, type: text, else: "" }
+      kind: type
+      taken: { first: [fileCreatedAt, localDateTime], type: text }
+
+values:
+  version: { from: "@check.version" }
+  photos: { from: "@statistics.photos" }
+  videos: { from: "@statistics.videos" }
+  usage: { from: "@statistics.usage" }
+  disk: { from: "@storage.diskUsagePercentage", round: 0 }
+  waiting: { sum: jobs.waiting }
+  failed: { sum: jobs.failed }
+
+pictures:
+  thumb:
+    of: latest
+    request: { path: "/api/assets/{id}/thumbnail", query: { size: thumbnail } }
+
+page:
+  - numbers:
+      - { label: { en: Photos, uk: Фото }, value: photos, as: number }
+      - { label: { en: Videos, uk: Відео }, value: videos, as: number }
+      - { label: { en: Room taken, uk: Займають }, value: usage, as: bytes }
+      - { label: { en: Disk full, uk: Диск заповнено }, value: disk, as: percent }
+  - pictures:
+      of: latest
+      title: { en: The newest, uk: Найновіші }
+      picture: thumb
+      caption: name
+      note: "{taken|ago}"
+  - table:
+      of: people
+      title: { en: Whose, uk: Чиї }
+      columns:
+        - { label: { en: Person, uk: Людина }, field: name }
+        - { label: { en: Photos, uk: Фото }, field: photos, as: number }
+        - { label: { en: Videos, uk: Відео }, field: videos, as: number }
+        - { label: { en: Room, uk: Місце }, field: usage, as: bytes }
+  - table:
+      of: jobs
+      title: { en: Jobs, uk: Завдання }
+      columns:
+        - { label: { en: Job, uk: Завдання }, field: name, as: mono }
+        - { label: { en: Running, uk: Виконуються }, field: active, as: number }
+        - { label: { en: Waiting, uk: Чекають }, field: waiting, as: number }
+        - { label: { en: Failed, uk: Збоїв }, field: failed, as: number }
+
+widgets:
+  library:
+    kind: summary
+    label: { en: Library, uk: Бібліотека }
+    numbers:
+      - { value: photos, as: number }
+      - { value: usage, as: bytes }
+  latest:
+    kind: pictures
+    label: { en: The newest, uk: Найновіші }
+    of: latest
+    picture: thumb
+    caption: name
+
+tile: "{photos} · {usage|bytes}"
+appCard: library

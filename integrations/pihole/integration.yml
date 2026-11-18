@@ -1,0 +1,106 @@
+format: 1
+id: pihole
+version: 1
+requires: 0.33.0
+title: Pi-hole
+icon: shield
+what:
+  en: "Ad blocking for the home: how many questions it answered and blocked, a pause for a few minutes."
+  uk: "Блокування реклами для дому: скільки запитів оброблено й заблоковано, пауза на кілька хвилин."
+apps: [pihole]
+images: [pihole]
+address: { scheme: http, port: 80 }
+
+signIn:
+  ask: [password]
+  hint:
+    en: "The password of Pi-hole's web interface."
+    uk: "Пароль вебінтерфейсу Pi-hole."
+  check:
+    request: { path: /api/stats/summary }
+    is: { json: queries.total }
+  login:
+    request: { method: POST, path: /api/auth, json: { password: "{password}" } }
+    session: { json: session.sid, header: X-FTL-SID }
+    refused: { status: [401] }
+    banned: [429]
+
+read:
+  summary:
+    request: { path: /api/stats/summary }
+    every: 30
+  blocking:
+    request: { path: /api/dns/blocking }
+    every: 20
+  version:
+    # read again in a while: Pi-hole says null while it is still starting
+    request: { path: /api/info/version }
+    every: 600
+  lists:
+    request: { path: /api/lists }
+    every: 600
+    list: lists
+    key: address
+    fields:
+      address: address
+      name: { first: [comment, address], type: text }
+      domains: { from: number, type: number }
+      enabled: { from: enabled, type: bool }
+      type: type
+
+values:
+  version: { from: "@version.version.core.local.version" }
+  blocking: { from: "@blocking.blocking" }
+  queries: { from: "@summary.queries.total" }
+  blocked: { from: "@summary.queries.blocked" }
+  share: { from: "@summary.queries.percent_blocked", round: 1 }
+  domains: { from: "@summary.gravity.domains_being_blocked" }
+  clients: { from: "@summary.clients.active" }
+
+actions:
+  pause:
+    label: { en: Pause for 5 minutes, uk: Пауза на 5 хвилин }
+    icon: pause
+    effect: change
+    when: { field: blocking, is: enabled }
+    request: { method: POST, path: /api/dns/blocking, json: { blocking: false, timer: 300 } }
+    done: { en: Blocking paused for 5 minutes, uk: Блокування призупинено на 5 хвилин }
+  resume:
+    label: { en: Resume blocking, uk: Відновити блокування }
+    icon: play
+    effect: change
+    when: { field: blocking, is: disabled }
+    request: { method: POST, path: /api/dns/blocking, json: { blocking: true } }
+
+page:
+  - numbers:
+      - { label: { en: Questions in 24 hours, uk: Запитів за добу }, value: queries, as: number }
+      - { label: { en: Blocked, uk: Заблоковано }, value: blocked, as: number }
+      - { label: { en: Share blocked, uk: Частка заблокованого }, value: share, as: percent }
+      - { label: { en: Domains on the lists, uk: Доменів у списках }, value: domains, as: number }
+      - { label: { en: Devices, uk: Пристроїв }, value: clients, as: number }
+  - table:
+      of: lists
+      title: { en: Lists, uk: Списки }
+      columns:
+        - { label: { en: List, uk: Список }, field: name, under: { field: address, as: mono } }
+        - { label: { en: Domains, uk: Доменів }, field: domains, as: number }
+        - { label: { en: "On", uk: Увімкнено }, field: enabled, as: bool }
+
+widgets:
+  blocking:
+    kind: summary
+    label: { en: Ad blocking, uk: Блокування реклами }
+    numbers:
+      - { value: blocked, as: number }
+      - { value: share, as: percent }
+
+tile: "{blocked} ⛔ · {share}%"
+appCard: blocking
+
+attention:
+  - id: off
+    when: { field: blocking, is: disabled }
+    severity: warn
+    title: { en: "{server}: blocking is off", uk: "{server}: блокування вимкнено" }
+    text: { en: "Ads and trackers reach the devices of the home until it is on again.", uk: "Реклама й трекери доходять до пристроїв дому, доки його знову не ввімкнуть." }

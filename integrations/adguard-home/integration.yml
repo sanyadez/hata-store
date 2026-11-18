@@ -1,0 +1,98 @@
+format: 1
+id: adguard-home
+version: 1
+requires: 0.33.0
+title: AdGuard Home
+icon: shield
+what:
+  en: "Ad blocking for the home: how many questions it answered and blocked, a pause for a few minutes."
+  uk: "Блокування реклами для дому: скільки запитів оброблено й заблоковано, пауза на кілька хвилин."
+apps: [adguard-home]
+images: [adguardhome]
+address: { scheme: http, port: 3000 }
+
+signIn:
+  ask: [user, password]
+  hint:
+    en: "The user and the password you set in AdGuard Home's first run."
+    uk: "Користувач і пароль, які ви задали під час першого запуску AdGuard Home."
+  basic: true
+  check:
+    request: { path: /control/status }
+    is: { json: version }
+
+read:
+  status:
+    request: { path: /control/status }
+    every: 20
+  stats:
+    request: { path: /control/stats }
+    every: 60
+  filters:
+    request: { path: /control/filtering/status }
+    every: 600
+    list: filters
+    key: url
+    fields:
+      url: url
+      name: name
+      rules: { from: rules_count, type: number }
+      enabled: { from: enabled, type: bool }
+      updated: { from: last_updated, type: text }
+
+values:
+  version: { from: "@check.version" }
+  protecting: { from: "@status.protection_enabled" }
+  queries: { from: "@stats.num_dns_queries" }
+  blocked: { from: "@stats.num_blocked_filtering" }
+  share: { from: "@stats.num_blocked_filtering", over: "@stats.num_dns_queries", times: 100, round: 1 }
+  answerMs: { from: "@stats.avg_processing_time", times: 1000, round: 1 }
+  rules: { sum: filters.rules, where: { field: enabled, is: true } }
+
+actions:
+  pause:
+    label: { en: Pause for 5 minutes, uk: Пауза на 5 хвилин }
+    icon: pause
+    effect: change
+    when: { field: protecting, is: true }
+    request: { method: POST, path: /control/protection, json: { enabled: false, duration: 300000 } }
+    done: { en: Blocking paused for 5 minutes, uk: Блокування призупинено на 5 хвилин }
+  resume:
+    label: { en: Resume blocking, uk: Відновити блокування }
+    icon: play
+    effect: change
+    when: { field: protecting, is: false }
+    request: { method: POST, path: /control/protection, json: { enabled: true } }
+
+page:
+  - numbers:
+      - { label: { en: Questions in 24 hours, uk: Запитів за добу }, value: queries, as: number }
+      - { label: { en: Blocked, uk: Заблоковано }, value: blocked, as: number }
+      - { label: { en: Share blocked, uk: Частка заблокованого }, value: share, as: percent }
+      - { label: { en: Answer in ms, uk: "Відповідь, мс" }, value: answerMs, as: number }
+      - { label: { en: Rules, uk: Правил }, value: rules, as: number }
+  - table:
+      of: filters
+      title: { en: Lists, uk: Списки }
+      columns:
+        - { label: { en: List, uk: Список }, field: name, under: { field: url, as: mono } }
+        - { label: { en: Rules, uk: Правил }, field: rules, as: number }
+        - { label: { en: "On", uk: Увімкнено }, field: enabled, as: bool }
+
+widgets:
+  blocking:
+    kind: summary
+    label: { en: Ad blocking, uk: Блокування реклами }
+    numbers:
+      - { value: blocked, as: number }
+      - { value: share, as: percent }
+
+tile: "{blocked} ⛔ · {share}%"
+appCard: blocking
+
+attention:
+  - id: off
+    when: { field: protecting, is: false }
+    severity: warn
+    title: { en: "{server}: blocking is off", uk: "{server}: блокування вимкнено" }
+    text: { en: "Ads and trackers reach the devices of the home until it is on again.", uk: "Реклама й трекери доходять до пристроїв дому, доки його знову не ввімкнуть." }

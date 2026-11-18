@@ -1,0 +1,142 @@
+format: 1
+id: jellyfin
+version: 1
+requires: 0.33.0
+title: Jellyfin
+icon: film
+what:
+  en: "What is watched right now and by whom, how large the libraries are, a scan of them."
+  uk: "Що зараз дивляться і хто, які великі бібліотеки, їх перескан."
+apps: [jellyfin]
+images: [jellyfin]
+address: { scheme: http, port: 8096 }
+
+signIn:
+  ask: [token]
+  hint:
+    en: "Jellyfin → Dashboard → API Keys → +, named Hata."
+    uk: "Jellyfin → Панель керування → Ключі API → +, з назвою Hata."
+  headers: { Authorization: 'MediaBrowser Client="Hata", Device="Hata", DeviceId="hata", Version="1", Token="{token}"' }
+  check:
+    request: { path: /System/Info }
+    is: { json: Version }
+
+read:
+  counts:
+    request: { path: /Items/Counts }
+    every: 600
+  libraries:
+    request: { path: /Library/VirtualFolders }
+    every: 600
+    list: ""
+    key: id
+    fields:
+      id: ItemId
+      name: Name
+      kind: { from: CollectionType, type: text, else: mixed }
+      folders: { from: Locations, type: list }
+  sessions:
+    request: { path: /Sessions, query: { activeWithinSeconds: "960" } }
+    every: 10
+    list: ""
+    key: id
+    # only those that play something
+    where: { not: { field: title, is: null } }
+    fields:
+      id: Id
+      user: { from: UserName, type: text, else: "" }
+      device: { first: [DeviceName, Client], type: text }
+      title: { from: NowPlayingItem.Name, type: text }
+      series: { from: NowPlayingItem.SeriesName, type: text }
+      item: { from: NowPlayingItem.Id, type: text }
+      paused: { from: PlayState.IsPaused, type: bool, else: false }
+      percent: { from: PlayState.PositionTicks, over: NowPlayingItem.RunTimeTicks, times: 100, round: 0 }
+      name: { first: [NowPlayingItem.SeriesName, NowPlayingItem.Name], type: text }
+
+values:
+  version: { from: "@check.Version" }
+  films: { from: "@counts.MovieCount" }
+  series: { from: "@counts.SeriesCount" }
+  episodes: { from: "@counts.EpisodeCount" }
+  songs: { from: "@counts.SongCount" }
+  playing: { count: sessions }
+
+words:
+  kind:
+    movies: { label: { en: films, uk: фільми } }
+    tvshows: { label: { en: series, uk: серіали } }
+    music: { label: { en: music, uk: музика } }
+    books: { label: { en: books, uk: книги } }
+    homevideos: { label: { en: home videos, uk: домашнє відео } }
+    mixed: { label: { en: mixed, uk: змішане } }
+
+pictures:
+  poster:
+    of: sessions
+    request: { path: "/Items/{item}/Images/Primary", query: { maxHeight: "{height}" } }
+
+actions:
+  scan:
+    label: { en: Scan the libraries, uk: Пересканувати бібліотеки }
+    icon: refresh
+    effect: change
+    request: { method: POST, path: /Library/Refresh }
+    done: { en: Jellyfin is scanning, uk: Jellyfin сканує }
+  pause:
+    label: { en: Pause, uk: Пауза }
+    icon: pause
+    on: sessions
+    when: { field: paused, is: false }
+    effect: change
+    request: { method: POST, path: "/Sessions/{id}/Playing/Pause" }
+  stop:
+    label: { en: Stop playing, uk: Зупинити відтворення }
+    icon: stop
+    on: sessions
+    effect: change
+    request: { method: POST, path: "/Sessions/{id}/Playing/Stop" }
+
+page:
+  - numbers:
+      - { label: { en: Playing now, uk: Зараз дивляться }, value: playing, as: number }
+      - { label: { en: Films, uk: Фільмів }, value: films, as: number }
+      - { label: { en: Series, uk: Серіалів }, value: series, as: number }
+      - { label: { en: Songs, uk: Пісень }, value: songs, as: number }
+  - pictures:
+      of: sessions
+      title: { en: Playing now, uk: Зараз дивляться }
+      picture: poster
+      caption: name
+      note: "{user} · {percent}%"
+  - table:
+      of: sessions
+      columns:
+        - { label: { en: What, uk: Що }, field: title, under: { field: series, as: text } }
+        - { label: { en: Who, uk: Хто }, field: user, under: { field: device, as: text } }
+        - { label: { en: Watched, uk: Переглянуто }, field: percent, as: progress }
+      actions: [pause, stop]
+      empty: { en: Nothing is playing., uk: Зараз нічого не дивляться. }
+  - table:
+      of: libraries
+      title: { en: Libraries, uk: Бібліотеки }
+      columns:
+        - { label: { en: Library, uk: Бібліотека }, field: name, under: { field: folders, as: mono } }
+        - { label: { en: Kind, uk: Вид }, field: kind, words: kind }
+
+widgets:
+  playing:
+    kind: summary
+    label: { en: Playing now, uk: Зараз дивляться }
+    numbers:
+      - { value: playing, as: number }
+    list: { of: sessions, sort: [{ field: percent, desc: true }], title: name, bar: percent, limit: 6 }
+  posters:
+    kind: pictures
+    label: { en: Playing now, uk: Зараз дивляться }
+    of: sessions
+    picture: poster
+    caption: name
+    note: "{user}"
+
+tile: "{playing} ▶"
+appCard: playing

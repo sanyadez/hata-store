@@ -1,0 +1,163 @@
+format: 1
+id: sonarr
+version: 1
+requires: 0.33.0
+title: Sonarr
+icon: tv
+what:
+  en: "Series: what is downloading and waits to be imported, what is missing, what Sonarr says is wrong."
+  uk: "Серіали: що завантажується й чекає імпорту, чого бракує, що Sonarr вважає несправним."
+apps: [sonarr]
+images: [sonarr]
+address: { scheme: http, port: 8989 }
+
+signIn:
+  ask: [token]
+  hint:
+    en: "Sonarr → Settings → General → Security: the API key."
+    uk: "Sonarr → Settings → General → Security: API key."
+  headers: { X-Api-Key: "{token}" }
+  check:
+    request: { path: /api/v3/system/status }
+    is: { json: version }
+
+read:
+  series:
+    request: { path: /api/v3/series }
+    every: 600
+    list: ""
+    fields:
+      id: id
+      name: title
+      monitored: { from: monitored, type: bool }
+      size: statistics.sizeOnDisk
+  missing:
+    request: { path: /api/v3/wanted/missing, query: { pageSize: "1" } }
+    every: 600
+  queue:
+    request: { path: /api/v3/queue, query: { pageSize: "100", includeSeries: "true", includeEpisode: "true" } }
+    every: 20
+    list: records
+    fields:
+      id: id
+      name: { first: [series.title, title], type: text }
+      episode: { from: episode.title, type: text }
+      release: title
+      status: status
+      tracked: trackedDownloadStatus
+      state: trackedDownloadState
+      percent: { from: size, minus: sizeleft, over: size, times: 100, round: 0 }
+      size: size
+      left: timeleft
+      client: downloadClient
+      problem: { from: statusMessages.0.messages.0, type: text }
+      stuck: { test: { any: [{ field: tracked, in: [warning, error] }, { field: status, in: [failed, warning] }] } }
+  health:
+    request: { path: /api/v3/health }
+    every: 300
+    list: ""
+    key: message
+    where: { field: type, in: [warning, error] }
+    fields:
+      message: message
+      type: type
+      source: source
+
+values:
+  version: { from: "@check.version" }
+  shows: { count: series }
+  size: { sum: series.size }
+  missing: { from: "@missing.totalRecords" }
+  queued: { count: queue }
+  stuck: { count: queue, where: { field: stuck, is: true } }
+  firstStuck: { first: queue, field: name, where: { field: stuck, is: true } }
+
+words:
+  state:
+    downloading: { label: { en: downloading, uk: завантажується }, tone: running }
+    importPending: { label: { en: waits to be imported, uk: чекає імпорту } }
+    importing: { label: { en: importing, uk: імпортується }, tone: running }
+    imported: { label: { en: imported, uk: імпортовано } }
+    failedPending: { label: { en: failed, uk: збій }, tone: restarting }
+    failed: { label: { en: failed, uk: збій }, tone: restarting }
+  type:
+    warning: { label: { en: warning, uk: попередження } }
+    error: { label: { en: error, uk: помилка }, tone: restarting }
+
+actions:
+  rss:
+    label: { en: Check for new episodes, uk: Перевірити нові серії }
+    icon: refresh
+    effect: change
+    request: { method: POST, path: /api/v3/command, json: { name: RssSync } }
+    done: { en: Sonarr is looking, uk: Sonarr шукає }
+  searchMissing:
+    label: { en: Search what is missing, uk: Шукати відсутнє }
+    icon: search
+    effect: change
+    request: { method: POST, path: /api/v3/command, json: { name: MissingEpisodeSearch } }
+    done: { en: Sonarr is looking, uk: Sonarr шукає }
+  remove:
+    label: { en: Remove from the queue, uk: Прибрати з черги }
+    icon: trash
+    on: queue
+    effect: destroy
+    confirm:
+      title: { en: "Remove {release} from the queue?", uk: "Прибрати {release} з черги?" }
+      lead: { en: Sonarr also removes it from the download client., uk: "Sonarr також прибере його з клієнта завантажень." }
+    ask:
+      - name: blocklist
+        kind: check
+        label: { en: Do not take this release again, uk: Більше не брати цей реліз }
+    request: { method: DELETE, path: "/api/v3/queue/{id}", query: { removeFromClient: "true", blocklist: "{blocklist}" } }
+
+page:
+  - numbers:
+      - { label: { en: Series, uk: Серіалів }, value: shows, as: number }
+      - { label: { en: On disk, uk: На диску }, value: size, as: bytes }
+      - { label: { en: Missing, uk: Бракує }, value: missing, as: number }
+      - { label: { en: In the queue, uk: У черзі }, value: queued, as: number }
+  - table:
+      of: queue
+      title: { en: Queue, uk: Черга }
+      columns:
+        - { label: { en: Series, uk: Серіал }, field: name, under: { field: episode, as: text } }
+        - { label: { en: Progress, uk: Прогрес }, field: percent, as: progress, note: "{percent}% · {size|bytes}" }
+        - { label: { en: State, uk: Стан }, field: state, words: state, under: { field: problem, as: text } }
+        - { label: { en: Left, uk: Лишилось }, field: left, as: mono, under: { field: client, as: text } }
+      search: [name, release]
+      actions: [remove]
+      empty: { en: Nothing is downloading., uk: Нічого не завантажується. }
+  - table:
+      of: health
+      title: { en: What Sonarr says is wrong, uk: Що Sonarr вважає несправним }
+      columns:
+        - { label: { en: Message, uk: Повідомлення }, field: message }
+        - { label: { en: Kind, uk: Вид }, field: type, words: type }
+      empty: { en: Nothing., uk: Нічого. }
+
+widgets:
+  queue:
+    kind: summary
+    label: { en: Queue, uk: Черга }
+    numbers:
+      - { value: queued, as: number }
+      - { value: missing, as: number }
+    list: { of: queue, sort: [{ field: percent, desc: true }], title: name, bar: percent, limit: 6 }
+
+tile: "{queued} ↓ · {missing} ?"
+appCard: queue
+
+attention:
+  - id: stuck
+    when: { field: stuck, gt: 0 }
+    severity: warn
+    title: { en: "{server}: downloads that cannot go on: {stuck}", uk: "{server}: завантажень, що не можуть продовжитись: {stuck}" }
+    text:
+      en: "For example: {firstStuck}. Its page says why."
+      uk: "Наприклад: {firstStuck}. Чому — на його сторінці."
+  - id: health
+    each: health
+    where: { field: type, is: error }
+    severity: warn
+    title: { en: "{server}: {message}", uk: "{server}: {message}" }

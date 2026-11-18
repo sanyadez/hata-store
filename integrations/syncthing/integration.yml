@@ -1,0 +1,162 @@
+format: 1
+id: syncthing
+version: 1
+requires: 0.33.0
+title: Syncthing
+icon: share
+what:
+  en: "Folders kept in step with other devices: which devices are connected, what was synced last, the errors."
+  uk: "Теки, що синхронізуються з іншими пристроями: які пристрої на зв'язку, що синхронізувалось останнім, помилки."
+apps: [syncthing]
+images: [syncthing]
+address: { scheme: http, port: 8384 }
+
+signIn:
+  ask: [token]
+  hint:
+    en: "Syncthing → Actions → Settings → General: the API key."
+    uk: "Syncthing → Дії → Налаштування → Загальне: ключ API."
+  headers: { X-API-Key: "{token}" }
+  check:
+    request: { path: /rest/system/version }
+    is: { json: version }
+
+read:
+  status:
+    request: { path: /rest/system/status }
+    every: 600
+  connections:
+    request: { path: /rest/system/connections }
+    every: 20
+  stats:
+    request: { path: /rest/stats/folder }
+    every: 60
+  errors:
+    request: { path: /rest/system/error }
+    every: 60
+    list: errors
+    key: message
+    fields:
+      message: message
+      when: { from: when, type: text }
+  folders:
+    request: { path: /rest/config/folders }
+    every: 60
+    list: ""
+    fields:
+      id: id
+      name: { first: [label, id], type: text }
+      path: path
+      paused: { from: paused, type: bool, else: false }
+      lastFile: { from: "@stats.{id}.lastFile.filename", type: text }
+      lastScan: { from: "@stats.{id}.lastScan", type: text }
+  devices:
+    request: { path: /rest/config/devices }
+    every: 60
+    list: ""
+    key: id
+    # the server itself is among them
+    where: { field: self, is: false }
+    fields:
+      id: deviceID
+      self: { from: deviceID, equals: "@status.myID" }
+      name: { first: [name, deviceID], type: text }
+      paused: { from: paused, type: bool, else: false }
+      connected: { from: "@connections.connections.{id}.connected", type: bool, else: false }
+      address: { from: "@connections.connections.{id}.address", type: text }
+      version: { from: "@connections.connections.{id}.clientVersion", type: text }
+      state:
+        from: $connected
+        map: { "true": connected, "false": away }
+        else: away
+
+values:
+  version: { from: "@check.version" }
+  folders: { count: folders }
+  devices: { count: devices }
+  connected: { count: devices, where: { field: connected, is: true } }
+  errors: { count: errors }
+  firstError: { first: errors, field: message }
+  down: { from: "@connections.total.inBytesTotal" }
+  up: { from: "@connections.total.outBytesTotal" }
+
+words:
+  state:
+    connected: { label: { en: connected, uk: на зв'язку }, tone: running }
+    away: { label: { en: not connected, uk: не на зв'язку } }
+    paused: { label: { en: paused, uk: на паузі } }
+
+actions:
+  scan:
+    label: { en: Scan the folders, uk: Пересканувати теки }
+    icon: refresh
+    effect: change
+    request: { method: POST, path: /rest/db/scan }
+    done: { en: Syncthing is scanning, uk: Syncthing сканує }
+  pauseFolder:
+    label: { en: Pause, uk: Пауза }
+    icon: pause
+    on: folders
+    when: { field: paused, is: false }
+    effect: change
+    request: { method: PATCH, path: "/rest/config/folders/{id}", json: { paused: true } }
+  resumeFolder:
+    label: { en: Resume, uk: Продовжити }
+    icon: play
+    on: folders
+    when: { field: paused, is: true }
+    effect: change
+    request: { method: PATCH, path: "/rest/config/folders/{id}", json: { paused: false } }
+  clearErrors:
+    label: { en: Clear the errors, uk: Очистити помилки }
+    icon: x
+    effect: change
+    when: { field: errors, gt: 0 }
+    request: { method: POST, path: /rest/system/error/clear }
+
+page:
+  - numbers:
+      - { label: { en: Folders, uk: Тек }, value: folders, as: number }
+      - { label: { en: Devices connected, uk: Пристроїв на зв'язку }, value: connected, as: number }
+      - { label: { en: Received, uk: Отримано }, value: down, as: bytes }
+      - { label: { en: Sent, uk: Надіслано }, value: up, as: bytes }
+  - table:
+      of: folders
+      title: { en: Folders, uk: Теки }
+      columns:
+        - { label: { en: Folder, uk: Тека }, field: name, under: { field: path, as: mono } }
+        - { label: { en: Last synced, uk: Останнє синхронізоване }, field: lastFile, as: mono }
+        - { label: { en: Paused, uk: На паузі }, field: paused, as: bool }
+      actions: [pauseFolder, resumeFolder]
+  - table:
+      of: devices
+      title: { en: Devices, uk: Пристрої }
+      columns:
+        - { label: { en: Device, uk: Пристрій }, field: name, under: { field: address, as: mono } }
+        - { label: { en: State, uk: Стан }, field: state, words: state, under: { field: version, as: text } }
+      empty: { en: No other device is added., uk: Інших пристроїв не додано. }
+  - table:
+      of: errors
+      title: { en: Errors, uk: Помилки }
+      columns:
+        - { label: { en: Error, uk: Помилка }, field: message, under: { field: when, as: mono } }
+      empty: { en: None., uk: Немає. }
+
+widgets:
+  devices:
+    kind: summary
+    label: { en: Devices, uk: Пристрої }
+    numbers:
+      - { value: connected, as: number }
+      - { value: folders, as: number }
+    list: { of: devices, sort: [{ field: connected, desc: true }], title: name, limit: 6 }
+
+tile: "{connected}/{devices} ⇄"
+appCard: devices
+
+attention:
+  - id: errors
+    when: { field: errors, gt: 0 }
+    severity: warn
+    title: { en: "{server}: errors: {errors}", uk: "{server}: помилок: {errors}" }
+    text: { en: "The last one: {firstError}", uk: "Остання: {firstError}" }

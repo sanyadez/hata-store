@@ -1,0 +1,187 @@
+format: 1
+id: transmission
+version: 1
+requires: 0.33.0
+title: Transmission
+icon: download
+what:
+  en: "Torrents: speeds, progress, pause and resume, adding by a link or a file."
+  uk: "Торенти: швидкості, прогрес, пауза й продовження, додавання за посиланням або файлом."
+apps: [transmission]
+images: [transmission]
+address: { scheme: http, port: 9091 }
+
+signIn:
+  # a user and a password only when the web interface has them; empty ones are fine otherwise
+  ask: [user, password]
+  basic: true
+  check:
+    request: { method: POST, path: /transmission/rpc, json: { method: session-get, arguments: { fields: [version] } } }
+    is: { json: arguments.version }
+  # Transmission answers 409 with a token to send back, against requests from other pages
+  handshake: { status: 409, header: X-Transmission-Session-Id }
+
+read:
+  stats:
+    request: { method: POST, path: /transmission/rpc, json: { method: session-stats } }
+    every: 15
+  torrents:
+    request:
+      method: POST
+      path: /transmission/rpc
+      json:
+        method: torrent-get
+        arguments:
+          fields: [hashString, name, status, percentDone, totalSize, rateDownload, rateUpload, eta, uploadRatio, addedDate, downloadDir, error, errorString]
+    every: 15
+    list: arguments.torrents
+    key: hash
+    fields:
+      hash: hashString
+      name: name
+      # 0 stopped, 1–2 checking, 3–4 downloading, 5–6 seeding; an error stands over any of them
+      group:
+        from: status
+        map: { "0": paused, "1": checking, "2": checking, "3": downloading, "4": downloading, "5": seeding, "6": seeding }
+        else: downloading
+      failed: { test: { field: error, gt: 0 } }
+      error: error
+      problem: errorString
+      percent: { from: percentDone, type: number, times: 100, round: 1 }
+      size: totalSize
+      down: rateDownload
+      up: rateUpload
+      eta: { from: eta, type: number, between: [0, 8639999] }
+      ratio: { from: uploadRatio, type: number, round: 2 }
+      added: { from: addedDate, type: number, times: 1000 }
+      path: downloadDir
+      moving: { test: { any: [{ field: down, gt: 0 }, { field: up, gt: 0 }] } }
+      tab:
+        from: $group
+        map: { downloading: downloading, checking: downloading, seeding: seeding, paused: paused }
+        else: downloading
+
+values:
+  version: { from: "@check.arguments.version" }
+  down: { from: "@stats.arguments.downloadSpeed" }
+  up: { from: "@stats.arguments.uploadSpeed" }
+  total: { count: torrents }
+  active: { count: torrents, where: { field: moving, is: true } }
+  failed: { count: torrents, where: { field: failed, is: true } }
+  firstFailed: { first: torrents, field: name, where: { field: failed, is: true } }
+
+words:
+  group:
+    downloading: { label: { en: downloading, uk: завантажується }, tone: running }
+    seeding: { label: { en: seeding, uk: роздається }, tone: running }
+    paused: { label: { en: stopped, uk: зупинено } }
+    checking: { label: { en: checking, uk: перевіряється }, tone: running }
+  tab:
+    all: { label: { en: All, uk: Усі } }
+    downloading: { label: { en: Downloading, uk: Завантажуються } }
+    seeding: { label: { en: Seeding, uk: Роздаються } }
+    paused: { label: { en: Stopped, uk: Зупинені } }
+
+actions:
+  add:
+    label: { en: Add a torrent, uk: Додати торент }
+    icon: plus
+    effect: change
+    level: full
+    ask:
+      - name: link
+        kind: text
+        group: what
+        label: { en: A link, uk: Посилання }
+        hint:
+          en: A magnet link or the address of a .torrent file. It downloads to the folder set in Transmission.
+          uk: Magnet-посилання або адреса файлу .torrent. Завантажується в теку, задану в Transmission.
+      - name: file
+        kind: file
+        check: torrent
+        group: what
+        label: { en: Or a .torrent file, uk: Або файл .torrent }
+    requests:
+      - { method: POST, path: /transmission/rpc, json: { method: torrent-add, arguments: { metainfo: "{file}" } }, when: { not: { field: file, is: null } } }
+      - { method: POST, path: /transmission/rpc, json: { method: torrent-add, arguments: { filename: "{link}" } } }
+    # Transmission answers 200 whatever it thought of the torrent: its word is in `result`
+    ok: { json: result, is: success }
+    done: { en: Added to Transmission, uk: Додано в Transmission }
+  stop:
+    label: { en: Stop, uk: Зупинити }
+    icon: pause
+    on: torrents
+    when: { field: group, in: [downloading, seeding, checking] }
+    effect: change
+    request: { method: POST, path: /transmission/rpc, json: { method: torrent-stop, arguments: { ids: "{ids}" } } }
+    ok: { json: result, is: success }
+  start:
+    label: { en: Start, uk: Запустити }
+    icon: play
+    on: torrents
+    when: { field: group, is: paused }
+    effect: change
+    request: { method: POST, path: /transmission/rpc, json: { method: torrent-start, arguments: { ids: "{ids}" } } }
+    ok: { json: result, is: success }
+  remove:
+    label: { en: Remove, uk: Видалити }
+    icon: trash
+    on: torrents
+    effect: destroy
+    confirm:
+      title: { en: "Remove {name}?", uk: "Видалити торент {name}?" }
+      lead: { en: The torrent goes off Transmission's list and stops seeding., uk: "Торент буде видалено з Transmission, роздача припиниться." }
+    ask:
+      - name: withData
+        kind: check
+        label: { en: Its downloaded files too, uk: Також видалити завантажені файли }
+        hint:
+          en: Transmission deletes them itself. They do not go to Hata's trash and cannot be brought back.
+          uk: Файли видаляє сам Transmission. Вони не потрапляють у кошик Hata, і відновити їх не вийде.
+    request: { method: POST, path: /transmission/rpc, json: { method: torrent-remove, arguments: { ids: "{ids}", delete-local-data: "{withData}" } } }
+    ok: { json: result, is: success }
+
+page:
+  - numbers:
+      - { label: { en: Download, uk: Завантаження }, value: down, as: rate }
+      - { label: { en: Upload, uk: Віддача }, value: up, as: rate }
+      - { label: { en: Active, uk: Активні }, value: active, as: number }
+      - { label: { en: Torrents, uk: Торентів }, value: total, as: number }
+  - table:
+      of: torrents
+      columns:
+        - { label: { en: Torrent, uk: Торент }, field: name, under: { field: path, as: mono } }
+        - { label: { en: Progress, uk: Прогрес }, field: percent, as: progress, note: "{percent}% · {size|bytes}" }
+        - { label: { en: State, uk: Стан }, field: group, words: group, under: { field: problem, as: text } }
+        - { label: { en: Speed, uk: Швидкість }, field: down, as: rate, note: "↑ {up|rate}", under: { field: eta, as: duration } }
+      search: [name]
+      tabs: { field: tab, values: [all, downloading, seeding, paused], words: tab }
+      actions: [stop, start, remove]
+      empty: { en: No torrents., uk: Торентів немає. }
+
+widgets:
+  torrents:
+    kind: summary
+    label: { en: Torrents, uk: Торенти }
+    numbers:
+      - { value: down, as: rate }
+      - { value: up, as: rate }
+    list:
+      of: torrents
+      where: { any: [{ field: group, is: downloading }, { field: moving, is: true }] }
+      sort: [{ field: down, desc: true }, { field: up, desc: true }, { field: percent }]
+      title: name
+      bar: percent
+      limit: 6
+
+tile: "↓ {down|rate} · ↑ {up|rate}"
+appCard: torrents
+
+attention:
+  - id: errors
+    when: { field: failed, gt: 0 }
+    severity: warn
+    title: { en: "{server}: torrents with an error: {failed}", uk: "{server}: торентів із помилками: {failed}" }
+    text:
+      en: "For example: {firstFailed}. Usually the files were moved, or the disk is missing or full."
+      uk: "Наприклад: {firstFailed}. Зазвичай файли перемістили, диск відсутній або заповнений."
