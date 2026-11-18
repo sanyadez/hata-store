@@ -17,6 +17,8 @@ apps/
     hata.yml              what Hata needs besides
     screenshots/          optional: PNG, JPEG or WebP, listed in hata.yml
     …                     optional: other files, see below
+integrations/
+  <service>/integration.yml   how Hata talks to a service through its API (below)
 scripts/                  the checks (Bun, no packages)
 ```
 
@@ -201,6 +203,93 @@ bun scripts/icon.ts logo.svg       # prints the URI, the SVG made smaller first
 
 Up to 8 files in `screenshots/`, PNG, JPEG or WebP, up to 600 KB each, about 1280 pixels wide, each one
 listed in `screenshots` in the order they are shown.
+
+## Integrations
+
+An integration is a description of a service Hata connects to through its API: how to sign in, what to
+read, how to show it and what may be done to it. It is data only. Hata makes the requests itself, only to
+the address the person gave and only with the paths written here, so a description cannot reach anything
+else, run anything, or put markup on Hata's page. The building blocks — ways to sign in, formats, blocks
+of a page, kinds of widgets — are Hata's own; a new one comes with a new version of Hata, and `requires`
+names the least Hata that reads a description.
+
+`scripts/integration.ts` is Hata's own reader (the same file as `src/integ/spec.ts` there); the check runs
+it on every description, and what it refuses does not go into the index. `integrations/qbittorrent` and
+`integrations/frigate` are the full examples.
+
+```yaml
+format: 1                      # the set of building blocks it needs
+id: qbittorrent                # the folder's name
+version: 1                     # raised with every change: Hata offers the newer one to take
+requires: 0.33.0               # the least Hata that reads it
+title: qBittorrent
+icon: download                 # one of Hata's icons
+what: { en: …, uk: … }         # one line: what connecting it gives
+apps: [qbittorrent]            # apps of this store that run it: "found on this server"
+images: [qbittorrent]          # pieces of image names, for apps from elsewhere
+address: { scheme: http, port: 8080 }   # what a bare address means
+
+signIn:
+  ask: [user, password]        # what the person types: user, password, token
+  defaults: { user: admin }
+  check:                       # what tells this service from whatever else answers there
+    request: { path: /api/v2/app/webapiVersion }
+    is: version                # version | ok | { json: <path that must be there> }
+  headers: { X-Api-Key: "{token}" }   # sent with every request (for a token)
+  basic: false                 # HTTP basic sign-in with the user and the password
+  login:                       # when the check answers 401 or 403
+    request: { method: POST, path: /api/v2/auth/login, form: { username: "{user}", password: "{password}" } }
+    cookie: [SID, QBT_SID_]    # the session's cookie; a name ending in _ is a prefix
+    session: { json: session.sid, header: X-FTL-SID }   # or a session in the answer, sent back in a header
+    refused: { status: [401], text: Fails. }
+    banned: [403]
+  handshake: { status: 409, header: X-Transmission-Session-Id }   # a token handed out on a refusal
+  once: true                   # a refused sign-in is not tried again by itself (the service would lock the address out)
+  host: bare                   # Host, Origin and Referer without the port
+
+read:                          # sources: an answer, or a list of rows
+  torrents:
+    request: { path: /api/v2/torrents/info, query: { sort: added_on } }
+    every: 15                  # seconds; 0 — only when a page asks
+    list: ""                   # where the list is ("" — the answer); an object's entries become rows, `$key` their names
+    key: hash                  # the field that tells rows apart
+    fields:                    # a dotted path, or { from | first, type, times, round, map, else, between, test }
+      name: name
+      percent: { from: progress, type: number, times: 100, round: 1 }
+      fps: { from: "@stats.cameras.{name}.camera_fps" }   # another source's answer, with this row's fields in it
+    params: { camera: { kind: name } }   # what a page may filter by
+    private: true              # about people: an agent reads it only with a full key, asking each time
+  cameras: { from: config, list: cameras, key: name, fields: { … } }   # read out of another source
+
+values:                        # numbers of the whole: { from: "@source.path" } | { sum } | { count, where } | { first, field, where, sort }
+  down: { sum: torrents.down }
+words:                         # a field's values in words, with the colour of a state: running, stopped, restarting
+  group: { error: { label: { en: error, uk: помилка }, tone: restarting } }
+pictures:                      # pictures of rows, passed on and never kept; `{height}` and `{fps}` are Hata's
+  live: { of: cameras, stream: true, request: { path: "/api/{name}", query: { fps: "{fps}" } } }
+actions:                       # what may be done: to the whole, or to rows (`on`)
+  remove:
+    label: { en: Remove, uk: Видалити }
+    icon: trash
+    on: torrents
+    when: { field: group, in: [paused] }   # for which rows it is offered
+    effect: destroy            # change | destroy; what destroys asks first (`confirm`)
+    level: full                # what an agent's key must be: operate | full
+    confirm: { title: { en: "Remove {name}?" } }
+    ask: [{ name: withData, kind: check, label: … }]   # check | text | lines (check: links) | file (check: torrent)
+    request: { method: POST, path: /api/v2/torrents/delete, form: { hashes: "{ids|pipe}", deleteFiles: "{withData}" } }
+page:                          # the service's page: numbers | table | pictures | events
+widgets:                       # what Home can show: summary | picture | pictures
+tile: "↓ {down|rate} · ↑ {up|rate}"   # under the app's tile
+appCard: torrents              # the widget the app's page shows
+attention:                     # items of "Needs attention": a condition of the values, or each row that meets one
+  - { id: errors, when: { field: failed, gt: 0 }, severity: warn, title: { en: "{server}: {failed} torrents with an error" } }
+```
+
+A template's places are `{name}`, with a format after a bar: `pipe`, `lines`, `comma` join a list; `bytes`,
+`rate`, `percent`, `number`, `duration`, `time`, `ago` are for the page. In a path and a query every place
+is encoded, so a value stays one piece. A condition is `{ field, in | is | gt | lt | atLeast }`, or
+`any`, `all`, `not` of conditions.
 
 ## Checks
 

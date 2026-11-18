@@ -10,6 +10,7 @@
  */
 import { existsSync, lstatSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { readSpec, SpecError } from "./integration.ts";
 import {
   APP_ID_RE, type AppFiles, checkCompose, checkDependabot, checkHata, checkShipped, checkStore, type Shipped, textOf, common, isObject, type Obj, platformsOf, type Problem, parseImage, services,
 } from "./lib.ts";
@@ -129,12 +130,38 @@ if (!offline) {
   }
 }
 
+// --- Integrations: descriptions of services Hata connects to, read by Hata's own reader ---------------
+
+const integrationsDir = join(ROOT, "integrations");
+const integrations: { id: string; text: string; version: number; requires: string; title: string }[] = [];
+for (const id of existsSync(integrationsDir) ? readdirSync(integrationsDir).filter((n) => statSync(join(integrationsDir, n)).isDirectory()).sort() : []) {
+  const file = `integrations/${id}/integration.yml`;
+  const path = join(ROOT, file);
+  if (!existsSync(path)) {
+    problems.push({ file: `integrations/${id}`, text: "has no integration.yml" });
+    continue;
+  }
+  const extra = readdirSync(join(integrationsDir, id)).filter((n) => n !== "integration.yml");
+  if (extra.length) problems.push({ file: `integrations/${id}`, text: `holds only integration.yml, not ${extra.join(", ")}` });
+  const text = readFileSync(path, "utf8");
+  const raw = readYaml(path);
+  if (raw === null) continue;
+  try {
+    const spec = readSpec(raw);
+    if (spec.id !== id) problems.push({ file, text: `its id is the folder's name: ${id}` });
+    for (const app of spec.apps) if (!ids.includes(app)) problems.push({ file, text: `apps: there is no app ${app} in the store` });
+    integrations.push({ id, text, version: spec.version, requires: spec.requires, title: spec.title });
+  } catch (e) {
+    if (e instanceof SpecError) for (const p of e.problems) problems.push({ file, text: p });
+    else throw e;
+  }
+}
 for (const p of problems) console.log(`${p.file}: ${p.text}`);
 if (problems.length) {
   console.log(`\n${problems.length} problem${problems.length === 1 ? "" : "s"}`);
   process.exit(1);
 }
-console.log(`${apps.length} apps, all well${offline ? " (registries not asked)" : ""}`);
+console.log(`${apps.length} apps, ${integrations.length} integrations, all well${offline ? " (registries not asked)" : ""}`);
 
 if (indexAt) {
   const commit = process.env.GITHUB_SHA || Bun.spawnSync(["git", "rev-parse", "HEAD"], { cwd: ROOT }).stdout.toString().trim();
@@ -157,6 +184,7 @@ if (indexAt) {
         files: app.files,
       };
     }),
+    integrations,
   };
   writeFileSync(indexAt, JSON.stringify(index));
   console.log(`index written to ${indexAt}`);
