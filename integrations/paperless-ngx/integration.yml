@@ -1,0 +1,114 @@
+format: 1
+id: paperless-ngx
+version: 1
+requires: 0.33.0
+title: Paperless-ngx
+icon: file
+what:
+  en: "Documents: how many, what waits in the inbox, the newest ones, what failed to be read."
+  uk: "Документи: скільки, що чекає у вхідних, найновіші, що не вдалося обробити."
+apps: [paperless-ngx]
+images: [paperless-ngx]
+address: { scheme: http, port: 8000 }
+
+signIn:
+  ask: [token]
+  hint:
+    en: "Paperless-ngx → your name in the corner → My Profile → API Auth Token."
+    uk: "Paperless-ngx → ваше ім'я в кутку → My Profile → API Auth Token."
+  headers: { Authorization: "Token {token}" }
+  check:
+    request: { path: /api/statistics/ }
+    is: { json: documents_total }
+
+read:
+  documents:
+    request: { path: /api/documents/, query: { page_size: "24", ordering: "-added", fields: "id,title,created,added" } }
+    every: 60
+    list: results
+    fields:
+      id: id
+      name: { from: title, type: text, else: "" }
+      created: created
+      added: added
+  tasks:
+    # Paperless-ngx 3: tasks are pages of results, the file and the error in the task's data
+    request: { path: /api/tasks/, query: { page_size: "50", status: failure, acknowledged: "false" } }
+    every: 60
+    list: results
+    key: id
+    where: { all: [{ field: status, is: failure }, { field: seen, is: false }] }
+    fields:
+      id: id
+      name: { first: [input_data.filename, task_file_name], type: text, else: "" }
+      status: status
+      why: { first: [result_data.error_message, result], type: text }
+      when: { from: date_created, type: text }
+      seen: { from: acknowledged, type: bool, else: false }
+
+values:
+  documents: { from: "@check.documents_total" }
+  inbox: { from: "@check.documents_inbox" }
+  tags: { from: "@check.tag_count" }
+  correspondents: { from: "@check.correspondent_count" }
+  failed: { count: tasks }
+  firstFailed: { first: tasks, field: name }
+
+pictures:
+  thumb:
+    of: documents
+    request: { path: "/api/documents/{id}/thumb/" }
+
+actions:
+  hide:
+    label: { en: Hide, uk: Сховати }
+    icon: check
+    on: tasks
+    effect: change
+    request: { method: POST, path: /api/tasks/acknowledge/, json: { tasks: "{ids}" } }
+
+page:
+  - numbers:
+      - { label: { en: Documents, uk: Документів }, value: documents, as: number }
+      - { label: { en: In the inbox, uk: У вхідних }, value: inbox, as: number }
+      - { label: { en: Tags, uk: Міток }, value: tags, as: number }
+      - { label: { en: Correspondents, uk: Кореспондентів }, value: correspondents, as: number }
+  - pictures:
+      of: documents
+      title: { en: Added last, uk: Додані останніми }
+      picture: thumb
+      caption: name
+      note: "{added|ago}"
+  - table:
+      of: tasks
+      title: { en: Failed to be read, uk: Не вдалося обробити }
+      columns:
+        - { label: { en: File, uk: Файл }, field: name, under: { field: why, as: text } }
+        - { label: { en: When, uk: Коли }, field: when, as: time }
+      actions: [hide]
+      empty: { en: Nothing failed., uk: Збоїв немає. }
+
+widgets:
+  documents:
+    kind: summary
+    label: { en: Documents, uk: Документи }
+    numbers:
+      - { value: documents, as: number }
+      - { value: inbox, as: number }
+    list: { of: documents, title: name, limit: 6 }
+  latest:
+    kind: pictures
+    label: { en: Added last, uk: Додані останніми }
+    of: documents
+    picture: thumb
+    caption: name
+
+tile: "{documents} · {inbox} ✉"
+appCard: documents
+
+attention:
+  - id: failed
+    when: { field: failed, gt: 0 }
+    severity: warn
+    title: { en: "{server}: documents it could not read: {failed}", uk: "{server}: документів, які не вдалося обробити: {failed}" }
+    text: { en: "For example: {firstFailed}.", uk: "Наприклад: {firstFailed}." }
