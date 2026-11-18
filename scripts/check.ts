@@ -12,7 +12,7 @@ import { existsSync, lstatSync, readdirSync, readFileSync, statSync, writeFileSy
 import { join } from "node:path";
 import { readSpec, SpecError } from "./integration.ts";
 import {
-  APP_ID_RE, type AppFiles, checkCompose, checkDependabot, checkHata, checkShipped, checkStore, type Shipped, textOf, common, isObject, type Obj, platformsOf, type Problem, parseImage, services,
+  APP_ID_RE, type AppFiles, checkCompose, checkDependabot, checkHata, checkShipped, checkStore, type Shipped, textOf, common, isObject, MAX_SCREENSHOT, MAX_SCREENSHOTS, sniff, type Obj, platformsOf, type Problem, parseImage, services,
 } from "./lib.ts";
 
 const ROOT = join(import.meta.dir, "..");
@@ -133,7 +133,7 @@ if (!offline) {
 // --- Integrations: descriptions of services Hata connects to, read by Hata's own reader ---------------
 
 const integrationsDir = join(ROOT, "integrations");
-const integrations: { id: string; text: string; version: number; requires: string; title: string }[] = [];
+const integrations: { id: string; text: string; version: number; requires: string; title: string; screenshots: string[] }[] = [];
 for (const id of existsSync(integrationsDir) ? readdirSync(integrationsDir).filter((n) => statSync(join(integrationsDir, n)).isDirectory()).sort() : []) {
   const file = `integrations/${id}/integration.yml`;
   const path = join(ROOT, file);
@@ -141,8 +141,18 @@ for (const id of existsSync(integrationsDir) ? readdirSync(integrationsDir).filt
     problems.push({ file: `integrations/${id}`, text: "has no integration.yml" });
     continue;
   }
-  const extra = readdirSync(join(integrationsDir, id)).filter((n) => n !== "integration.yml");
-  if (extra.length) problems.push({ file: `integrations/${id}`, text: `holds only integration.yml, not ${extra.join(", ")}` });
+  const extra = readdirSync(join(integrationsDir, id)).filter((n) => n !== "integration.yml" && n !== "screenshots");
+  if (extra.length) problems.push({ file: `integrations/${id}`, text: `holds only integration.yml and screenshots/, not ${extra.join(", ")}` });
+  // how Hata shows the service, in the order of the files' names
+  const shotsDir = join(integrationsDir, id, "screenshots");
+  const shots = existsSync(shotsDir) ? readdirSync(shotsDir).sort() : [];
+  if (shots.length > MAX_SCREENSHOTS) problems.push({ file: `integrations/${id}/screenshots`, text: `more than ${MAX_SCREENSHOTS} screenshots` });
+  for (const name of shots) {
+    const at = `integrations/${id}/screenshots/${name}`;
+    const bytes = readFileSync(join(shotsDir, name));
+    if (!/^[\w.-]+\.(png|jpe?g|webp)$/.test(name) || !["png", "jpeg", "webp"].includes(sniff(bytes.subarray(0, 512)))) problems.push({ file: at, text: "is not a PNG, JPEG or WebP" });
+    if (bytes.length > MAX_SCREENSHOT) problems.push({ file: at, text: `is ${Math.round(bytes.length / 1024)} KB, more than ${MAX_SCREENSHOT / 1024}` });
+  }
   const text = readFileSync(path, "utf8");
   const raw = readYaml(path);
   if (raw === null) continue;
@@ -150,7 +160,7 @@ for (const id of existsSync(integrationsDir) ? readdirSync(integrationsDir).filt
     const spec = readSpec(raw);
     if (spec.id !== id) problems.push({ file, text: `its id is the folder's name: ${id}` });
     for (const app of spec.apps) if (!ids.includes(app)) problems.push({ file, text: `apps: there is no app ${app} in the store` });
-    integrations.push({ id, text, version: spec.version, requires: spec.requires, title: spec.title });
+    integrations.push({ id, text, version: spec.version, requires: spec.requires, title: spec.title, screenshots: shots.map((n) => `integrations/${id}/screenshots/${n}`) });
   } catch (e) {
     if (e instanceof SpecError) for (const p of e.problems) problems.push({ file, text: p });
     else throw e;
