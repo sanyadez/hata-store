@@ -1,6 +1,6 @@
 format: 1
 id: pihole
-version: 1
+version: 2
 requires: 0.33.0
 title: Pi-hole
 icon: shield
@@ -92,8 +92,8 @@ widgets:
     kind: summary
     label: { en: Ad blocking, uk: Блокування реклами }
     numbers:
-      - { value: blocked, as: number }
-      - { value: share, as: percent }
+      - { value: blocked, as: number, label: { en: blocked, uk: заблоковано } }
+      - { value: share, as: percent, label: { en: of the questions, uk: від запитів } }
 
 tile: "{blocked} ⛔ · {share}%"
 appCard: blocking

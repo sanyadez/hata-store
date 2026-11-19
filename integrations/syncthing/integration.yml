@@ -1,6 +1,6 @@
 format: 1
 id: syncthing
-version: 1
+version: 2
 requires: 0.33.0
 title: Syncthing
 icon: share
@@ -147,9 +147,9 @@ widgets:
     kind: summary
     label: { en: Devices, uk: Пристрої }
     numbers:
-      - { value: connected, as: number }
-      - { value: folders, as: number }
-    list: { of: devices, sort: [{ field: connected, desc: true }], title: name, limit: 6 }
+      - { value: connected, as: number, label: { en: connected, uk: на зв'язку } }
+      - { value: folders, as: number, label: { en: folders, uk: теки } }
+    list: { of: devices, sort: [{ field: connected, desc: true }], title: name, state: { field: state, words: state }, limit: 6 }
 
 tile: "{connected}/{devices} ⇄"
 appCard: devices

@@ -1,6 +1,6 @@
 format: 1
 id: jellyfin
-version: 1
+version: 2
 requires: 0.33.0
 title: Jellyfin
 icon: film
@@ -128,8 +128,8 @@ widgets:
     kind: summary
     label: { en: Playing now, uk: Зараз дивляться }
     numbers:
-      - { value: playing, as: number }
-    list: { of: sessions, sort: [{ field: percent, desc: true }], title: name, bar: percent, limit: 6 }
+      - { value: playing, as: number, label: { en: watching now, uk: дивляться зараз } }
+    list: { of: sessions, sort: [{ field: percent, desc: true }], title: name, note: "{user}", bar: percent, limit: 6 }
   posters:
     kind: pictures
     label: { en: Playing now, uk: Зараз дивляться }

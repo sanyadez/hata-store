@@ -1,6 +1,6 @@
 format: 1
 id: sonarr
-version: 1
+version: 2
 requires: 0.33.0
 title: Sonarr
 icon: tv
@@ -141,9 +141,9 @@ widgets:
     kind: summary
     label: { en: Queue, uk: Черга }
     numbers:
-      - { value: queued, as: number }
-      - { value: missing, as: number }
-    list: { of: queue, sort: [{ field: percent, desc: true }], title: name, bar: percent, limit: 6 }
+      - { value: queued, as: number, label: { en: in the queue, uk: у черзі } }
+      - { value: missing, as: number, label: { en: missing, uk: бракує } }
+    list: { of: queue, sort: [{ field: percent, desc: true }], title: name, state: { field: state, words: state }, bar: percent, limit: 6 }
 
 tile: "{queued} ↓ · {missing} ?"
 appCard: queue
