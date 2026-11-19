@@ -1,6 +1,6 @@
 format: 1
 id: paperless-ngx
-version: 1
+version: 2
 requires: 0.33.0
 title: Paperless-ngx
 icon: file
@@ -93,9 +93,9 @@ widgets:
     kind: summary
     label: { en: Documents, uk: Документи }
     numbers:
-      - { value: documents, as: number }
-      - { value: inbox, as: number }
-    list: { of: documents, title: name, limit: 6 }
+      - { value: documents, as: number, label: { en: documents, uk: документів } }
+      - { value: inbox, as: number, label: { en: in the inbox, uk: у вхідних } }
+    list: { of: documents, title: name, note: "{added|ago}", limit: 6 }
   latest:
     kind: pictures
     label: { en: Added last, uk: Додані останніми }

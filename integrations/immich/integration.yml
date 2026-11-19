@@ -1,6 +1,6 @@
 format: 1
 id: immich
-version: 1
+version: 2
 requires: 0.33.0
 title: Immich
 icon: image
@@ -109,8 +109,8 @@ widgets:
     kind: summary
     label: { en: Library, uk: Бібліотека }
     numbers:
-      - { value: photos, as: number }
-      - { value: usage, as: bytes }
+      - { value: photos, as: number, label: { en: photos, uk: фото } }
+      - { value: usage, as: bytes, label: { en: taken, uk: займають } }
   latest:
     kind: pictures
     label: { en: The newest, uk: Найновіші }
