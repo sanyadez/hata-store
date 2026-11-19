@@ -19,6 +19,7 @@ apps/
     …                     optional: other files, see below
 integrations/
   <service>/integration.yml   how Hata talks to a service through its API (below)
+  <service>/screenshots/      how Hata shows it (optional): PNG, JPEG or WebP, shown in the order of the names
 scripts/                  the checks (Bun, no packages)
 ```
 
@@ -216,6 +217,10 @@ names the least Hata that reads a description.
 `scripts/integration.ts` is Hata's own reader (the same file as `src/integ/spec.ts` there); the check runs
 it on every description, and what it refuses does not go into the index. `integrations/qbittorrent` and
 `integrations/frigate` are the full examples.
+
+Pictures of how Hata shows the service — its page, a widget on Home — go into `screenshots/` next to the
+description, up to 8, each at most 600 KB, shown in the store in the order of the files' names. Take them
+with made-up data: they are public.
 
 ```yaml
 format: 1                      # the set of building blocks it needs
