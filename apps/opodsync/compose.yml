@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   opodsync:
-    image: ganeshlab/opodsync:latest@sha256:fe634544126f43366be407d47ceed44b20d04e970218095236270af520b6e2c6
+    image: ganeshlab/opodsync:latest@sha256:605c5e78bfe5392cdc4557d3d6f02d28eb709c5d5b5cf1c15d4500fc2e6f8319
     deploy:
       resources:
         reservations:
