@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   podfetch:
-    image: samuel19982/podfetch:v5.2.3
+    image: samuel19982/podfetch:v5.3.0
     environment:
       DATABASE_URL: "${DATABASE_URL:-sqlite:///app/db/podcast.db}"
       POLLING_INTERVAL: "${POLLING_INTERVAL:-300}"
