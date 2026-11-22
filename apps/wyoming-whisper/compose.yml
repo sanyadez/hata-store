@@ -1,6 +1,6 @@
 services:
   whisper:
-    image: rhasspy/wyoming-whisper:3.8.1
+    image: rhasspy/wyoming-whisper:3.9.0
     restart: unless-stopped
     ports:
       - ${WYOMING_PORT:-10300}:10300
