@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   ddns-go:
-    image: jeessy/ddns-go:v6.17.8
+    image: jeessy/ddns-go:v6.18.0
     deploy:
       resources:
         reservations:
