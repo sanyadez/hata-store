@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   holoplay:
-    image: spout8301/holoplay:1.12.3
+    image: spout8301/holoplay:1.13.6
     ports:
       - "${WEB_PORT:-3000}:3000"
     privileged: true
