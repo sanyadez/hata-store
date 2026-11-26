@@ -1,6 +1,6 @@
 services:
   mosquitto:
-    image: eclipse-mosquitto:2.1.2-alpine
+    image: eclipse-mosquitto:2.1.4-alpine
     restart: unless-stopped
     ports:
       - ${MQTT_PORT:-1883}:1883
