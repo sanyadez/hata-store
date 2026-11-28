@@ -1,7 +1,7 @@
 # Apache-2.0, changed for Hata Store: see NOTICE
 services:
   admin:
-    image: ghcr.io/crosstalk-solutions/project-nomad:1.35.1
+    image: ghcr.io/crosstalk-solutions/project-nomad:v1.35.2
     restart: unless-stopped
     networks:
       - default
