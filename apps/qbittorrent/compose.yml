@@ -3,7 +3,7 @@ services:
   # qBittorrent answers 401 to every request whose Host names a port other than the one it listens on inside,
   # which is what a published port looks like. This step, at every start, keeps that one check off and touches nothing else.
   allow-published-port:
-    image: ghcr.io/hotio/qbittorrent:release-v5.3.0
+    image: ghcr.io/hotio/qbittorrent:release-v5.3.1
     entrypoint: ["/bin/sh", "-c"]
     command:
       - |
@@ -34,7 +34,7 @@ services:
       PUID: "${PUID:-1000}"
       TZ: "${TZ:-UTC}"
       UMASK: "${UMASK:-002}"
-    image: ghcr.io/hotio/qbittorrent:release-v5.3.0
+    image: ghcr.io/hotio/qbittorrent:release-v5.3.1
     deploy:
       resources:
         reservations:
